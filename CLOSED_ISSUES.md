@@ -96,8 +96,45 @@ M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2 .
 Appendix~D Target~I repeats the same convention map inside the pole-placement
 theorem target.
 
-**Residual target.** O2b remains open for the current W/Z input audit,
-uncertainty propagation, and source-specific mass/width convention table.
+**Residual target.** Target~I remains active for source-specific pole matching
+and future electroweak-average covariance refinements.
+
+## O2b. Current electroweak input audit
+
+**Closed in Loop 54.**
+
+**Closure evidence.** Section~III now contains a current W/Z input audit using
+PDG mass-dependent-width Breit--Wigner inputs:
+\[
+M_{W,\rm BW}=80.3692\pm0.0133\,{\rm GeV},\qquad
+\Gamma_{W,\rm BW}=2.14\pm0.05\,{\rm GeV},
+\]
+\[
+M_{Z,\rm BW}=91.1879\pm0.0020\,{\rm GeV},\qquad
+\Gamma_{Z,\rm BW}=2.4955\pm0.0023\,{\rm GeV}.
+\]
+The same section converts them with
+\[
+M_{V,\rm pole}=M_{V,\rm BW}/\sqrt{1+\gamma_V^2},
+\qquad
+\gamma_V=\Gamma_{V,\rm BW}/M_{V,\rm BW},
+\]
+and obtains
+\[
+M_{W,\rm pole}=80.3407\pm0.0134\,{\rm GeV},\qquad
+M_{Z,\rm pole}=91.1538\pm0.0020\,{\rm GeV},
+\]
+\[
+\left(s^2_{\rm pole}\right)_{\rm PDG\,audit}=0.2231768\pm0.0002608 .
+\]
+The propagated uncertainty is stated as an uncorrelated-input descriptive
+error.  CDF-II and CMS 2026 are retained as W-mass inputs requiring a common Z
+input, width convention, covariance prescription, and averaging rule before
+they can replace the descriptive W/Z audit line.
+
+**Residual target.** O2b is closed as the current descriptive input audit.
+Future precision updates belong to Target~I or a later calculation phase with
+the covariance matrices and averaging prescription supplied.
 
 ## O5. Electroweak Ray and Forbidden Deformations
 
@@ -407,8 +444,8 @@ and scheme maps.
 
 **Residual target.** O8 is closed as a scheme and scale-placement ledger.  A
 later source route still has to compute \(\Delta_{\rm match}\) in Target~I,
-derive the ordered samples in Target~II, and supply current W/Z input auditing
-in O2b.
+derive the ordered samples in Target~II, and use the current input audit in
+Sec.~\ref{sec:current-wz-audit}.
 
 ## O19. Brane-scaling identity of the two branches
 

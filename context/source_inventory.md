@@ -307,16 +307,33 @@ boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*
     should keep holonomy, effective-potential curvature, and compact gauge
     equivalence in the theorem data.
 - `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.
-  - Loop 32 O3 use: the interval gauge-Higgs route is the priority
-    source-address for a scalar functional.  Hosotani supplies the holonomy
-    variable, CHM supplies interval gauge-fixing and boundary-condition
-    bookkeeping, and Haba-Oda/Bucci supply boundary scalar and radion
-    variables.  The manuscript may state the target
-    \(\partial_{\alpha_H}^2V_{\rm eff}(\alpha_H)\) as a route obligation; a
-    DeVries scalar map requires a common \(\mathcal H_J\), inner product,
-    projection, \(\Lambda_J\), and vector/scalar determinant.
-  - Rendered-PDF formula checks remain required before strengthening endpoint,
-    interval, or \(G_2\) scalar claims beyond theorem-target language.
+
+## Current electroweak input audit -- added 2026-05-22
+
+These are web-audited primary collaboration or PDG inputs used for O2b.  They
+support the descriptive W/Z pole-ratio table in Sec. III.
+
+- PDG live and 2025 W listing — W mass \(80.3692\pm0.0133\) GeV and W width
+  \(2.14\pm0.05\) GeV, quoted as mass-dependent-width Breit--Wigner
+  parameters.
+- PDG live and 2025 Z listing — Z mass \(91.1879\pm0.0020\) GeV and Z width
+  \(2.4955\pm0.0023\) GeV, quoted as mass-dependent-width Breit--Wigner
+  parameters.
+- CMS Collaboration Nature 2026 W-mass paper — W mass
+  \(80.3602\pm0.0099\) GeV.  It is recorded as a W-only update until a common
+  W/Z convention, width, and covariance prescription are supplied.
+
+## O3 scalar-route recall -- Loop 32
+
+- The interval gauge-Higgs route is the priority source-address for a scalar
+  functional.  Hosotani supplies the holonomy variable, CHM supplies interval
+  gauge-fixing and boundary-condition bookkeeping, and Haba-Oda/Bucci supply
+  boundary scalar and radion variables.  The manuscript may state the target
+  \(\partial_{\alpha_H}^2V_{\rm eff}(\alpha_H)\) as a route obligation; a
+  DeVries scalar map requires a common \(\mathcal H_J\), inner product,
+  projection, \(\Lambda_J\), and vector/scalar determinant.
+- Rendered-PDF formula checks remain required before strengthening endpoint,
+  interval, or \(G_2\) scalar claims beyond theorem-target language.
 
 ## Supersymmetric quantum mechanics and electroweak superconnections -- added 2026-05-22 for O20
 

@@ -1,13 +1,5 @@
 # Open analytical issues
 
-## O2b. Current electroweak input audit
-
-**Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
-
-**Current working idea.** Keep the inherited numerical arithmetic as provenance in the appendix while the body defers a current comparison. The CDF-II comparison remains descriptive until all inputs share a pole convention and propagated uncertainty.
-
-**Success criterion.** A table with source, quoted convention, quoted masses and widths, converted pole masses, uncertainty propagation, and the resulting \(\sin^2\theta_{\rm pole}\). This belongs to a later calculation phase approved by the user.
-
 ## O3. Negative branch and Higgs scale
 
 **Question.** Does \(x_-(J)\) encode the Higgs/order-parameter scale, a tachyonic mass term, or an auxiliary branch?

@@ -74,6 +74,14 @@ def poleConventionReady (P : PoleConvention) : Prop :=
 axiom pole_convention_audit_required :
   ∃ P : PoleConvention, poleConventionReady P
 
+/- O2b closure records the current descriptive W/Z input audit.  The
+   remaining precision issue is a future covariance-aware average. -/
+inductive O2bClosureStatus where
+  | descriptiveInputAudit
+
+def o2bClosedAsDescriptiveInputAudit : O2bClosureStatus :=
+  O2bClosureStatus.descriptiveInputAudit
+
 /- GUT contrast as a source-traceable conceptual benchmark. -/
 def gutBenchmark : Prop :=
   True

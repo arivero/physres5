@@ -1,4 +1,4 @@
-# Referee/advisor improvement cycle
+# Referee/advisor working cycle
 
 This file records the autonomous improvement loop to run after each manuscript pass.
 
@@ -17,14 +17,14 @@ This file records the autonomous improvement loop to run after each manuscript p
    - one source to read;
    - one equation or diagram the manuscript needs.
 4. **Implementation pass.** Apply revisions that improve derivational clarity, source traceability, or conceptual structure.
-5. **Closure-output gate.** Each loop must leave one of the following concrete
-   outputs:
+5. **Physics result requirement.** Each loop must end with one of the following
+   outcomes:
    - an issue moved from `OPEN_ISSUES.md` to `CLOSED_ISSUES.md`;
-   - a source route rejected with a stated obstruction and consequence;
+   - a source route ruled out with a stated obstruction and consequence;
    - a derivation attempt recorded with the failed step and a narrower next
-     target;
-   - a source-backed theorem entry added with its acceptance equation and
-     rejection outputs.
+     equation;
+   - a source-backed theorem statement added with its target equation and
+     stated obstructions.
 6. **Editor pass.** Call a lightweight editor subagent, configured below GPT-5.5, to flag banned contrast patterns, journalistic language, hype, adjectival positioning, and deviations from Physical Review D prose. Store the report in `reviews/`, resolve alerts, and run the prose scans.
 7. **Random recall pass.** Choose at least one random bibliography or source-inventory entry and one random local note or Lean-style note. Inspect them with the recall skills, then record any equation, test, source-fragment gap, or issue-ledger consequence in `reviews/`, `context/`, or `notes/lean/`.
 8. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
@@ -34,10 +34,10 @@ The three subagent calls are mandatory for every substantial loop: two referee s
 The editor pass is mandatory for every substantial loop. Use a faster model tier
 than GPT-5.5 so the editor functions as a style sentinel with a separate scope
 from the conceptual referees.
-The closure-output gate is mandatory for every substantial loop after Loop 48.
-Target sharpening alone satisfies the gate only when it adds an acceptance
-equation, rejection outputs, and a named next derivation attempt tied to a
-source fragment.
+The physics result requirement is mandatory for every substantial loop after
+Loop 48.  Sharpening a theorem target counts only when it adds the equation to
+be derived, the obstructions that would rule the route out, and a named next
+derivation attempt tied to a source fragment.
 
 ## Cycle 0 status
 
@@ -83,7 +83,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 28 | 5 | 5 | 5 | 5 | 5 | Added hatted CHM current-entry normalization, recorded the source-scale convention audit, and linked the Hodge/SUSY-QM off-diagonal test to the CHM diagonal-current test as the active proof spine. |
 | 29 | 5 | 5 | 5 | 5 | 5 | Closed O2a, O5, O6, O7, O9, O11, O12, and O16 as structural normalization issues, preserved residual derivational obligations, and normalized Sec. IX fixed-filter prose. |
 | 30 | 5 | 5 | 5 | 5 | 5 | Rendered CHM convention audit, photon-reference subtraction, hatted current-entry theorem target, parent-directory source extraction, and updated O4/source/Lean ledgers. |
-| 31 | 5 | 5 | 5 | 5 | 5 | Added O10 single-source accept/reject package with \(\Lambda_J\), inner product, projection, hatted kernel, endpoint subtargets, optional CHM top extension, and parent-directory source queues. |
+| 31 | 5 | 5 | 5 | 5 | 5 | Added O10 single-source formulation with \(\Lambda_J\), inner product, projection, hatted kernel, endpoint subtargets, optional CHM top extension, and parent-directory source queues. |
 | 32 | 5 | 5 | 5 | 5 | 5 | Tightened O3 into a same-source scalar-functional target with \(J_\star\), \(C_{\rm sc}\), scheme/scale, holonomy-curvature route, auxiliary-branch failure outcome, and parent-directory source queue. |
 | 33 | 5 | 5 | 5 | 5 | 5 | Tightened O1 into a same-source ordered-sampling package with \(P_W\), \(P_Z\), \(P_\gamma\), shared \(\Lambda_J\), CHM \(h_J/W/Z/\gamma\) ledger, Coquereaux grading vocabulary, and parent-directory source queue. |
 | 34 | 5 | 5 | 5 | 5 | 5 | Tightened O4 into an entry-by-entry source-kernel ledger: CHM current entry first, Hodge/SUSY-QM square-root entry second, \(G_2\) local audit third, endpoint/Chan--Paton matrix arena, and parent-directory source queue. |
@@ -99,7 +99,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 44 | 4 | 4 | 4 | 4 | 5 | Added CHM projector-package admissibility, positive projected-norm conditions, \(\Delta_W^{\rm CHM}\) and \(\Delta_Y^{\rm CHM}\), route test ordering, and random Lean/source recall record. |
 | 45 | 4.5 | 4.5 | 4 | 4.5 | 5 | Added the shared CHM admissibility lemma, \(Z_J^{\rm cur}\), the canonical current-entry target \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), and aligned Target 0/III/X plus O1/O4 ledgers. |
 | 46 | 4.5 | 4.75 | 4.25 | 4.5 | 5 | Added the CHM source-equation acceptance/rejection protocol for \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), mirrored it in Target III and O1/O4 ledgers, and queued the \(G_2\) ADE-pairing target. |
-| 47 | 4.5 | 4.75 | 4.5 | 4.5 | 5 | Added Target IIIg for the local \(G_2\) ADE-pairing current test, singular-support pairing, \(A_1\subset A_2\) enhancement, source bindings, completion ledger, and random recall record. |
+| 47 | 4.5 | 4.75 | 4.5 | 4.5 | 5 | Added Target IIIg for the local \(G_2\) ADE-pairing current test, singular-support pairing, \(A_1\subset A_2\) enhancement, source bindings, compact-completion conditions, and random recall record. |
 | 48 | 4.75 | 4.75 | 4.75 | 4.5 | 5 | Added Target IIIh for the local \(G_2\) flow-overlap product with localized wavefunctions, source-normalized flow kernels, bilinear maps, orientation ledger, rejection outputs, source bindings, Lean obligations, and random recall record. |
 
 ## Scoring rubric
@@ -125,7 +125,8 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the O10 dimensional Schur-complement target give a concrete enough bridge among dimensional interpolation, the ordered \(J\)-assignment, the DeVries kernel, and pole placement?
 - Does the parent-workspace normalization audit give strong enough failure-mode tests for the next endpoint, interval, brane, KK, Regge, or \(G_2\) derivation attempt?
 - Does the A1--A3/T1--T3 hierarchy make the main text read as paper-level exposition while preserving all open obligations?
-- Does Target 0 give a complete acceptance test from source theory to reduced kernel, ordered W/Z sampling, and complex-pole matching?
+- Does Target 0 give a complete derivation path from source theory to the
+  reduced kernel, ordered W/Z sampling, and complex-pole matching?
 - Which parent-workspace cluster should receive a targeted audit after the broad `..` inventory: `../prTalks`, `../hans/signed_dbdevries`, `../weak`, or `../phys4/notes`?
 - Does the rank-and-ray theorem make the allowed electroweak deformation precise enough for source-route testing?
 - Can one interval or \(G_2\) source route derive the map from a dimensional or geometric parameter to the electroweak radial ray?

@@ -5,24 +5,25 @@
 - Current compiled draft: 110 REVTeX PRD preprint pages after the Loop 48
   compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
-- Push the next route-comparison entry toward a derivation from source data.
-- Apply the post-Loop48 closure-output gate: the next substantial loop must
-  close an issue, reject a route, record a failed derivation step with a
-  narrower next target, or add a source-backed theorem entry with acceptance and
-  rejection equations.
-- Loop 48 focus: add Target IIIh, the \(G_2\) local flow-overlap target with
-  localized wavefunctions, point/component metric, oriented flow kernels,
-  bilinear maps, shared \(\Lambda_{G_2}\), rejection outputs, and source
-  bindings to Braun--Cizel--Hubner--Schafer-Nameki.
-- Loop 47 retained focus: Target IIIg, the \(G_2\) local ADE-pairing target with an
-  \(A_1\subset A_2\) enhancement, singular-support pairing, canonical
-  current-entry target, flow-overlap target, compact-completion ledger,
-  anomaly/global-form checks, and pole-map obligation.
-- Next derivation step: test whether the Target IIIh flow-line data can support
-  the hatted flow-overlap product
+- Push the next route-comparison subsection to one explicit derivation from
+  source equations.
+- After Loop 48, each substantial pass should end with one physics result:
+  close an issue, rule out a route, isolate a failed derivation step with a
+  narrower next equation, or add a source-backed theorem statement with its
+  target equation and stated obstructions.
+- Loop 48 focus: Target IIIh, the local \(G_2\) flow-overlap problem.  The
+  required ingredients are localized wavefunctions, a point or component metric,
+  oriented flow kernels, bilinear maps, a shared \(\Lambda_{G_2}\), explicit
+  obstructions, and source bindings to Braun--Cizel--Hubner--Schafer-Nameki.
+- Loop 47 retained focus: Target IIIg, the local \(G_2\) ADE-pairing problem
+  with \(A_1\subset A_2\) enhancement, singular-support pairing, a canonical
+  current-entry equation, the flow-overlap follow-up, compact-completion
+  conditions, anomaly/global-form checks, and the pole map.
+- Next derivation step: test whether the Target IIIh flow-line data support the
+  hatted flow-overlap product
   \(\widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J\), then relate
   the result to the same \(P_W,P_Z,P_\gamma\), hypercharge, charge lattice, and
-  pole-map ledger.
+  pole map.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
@@ -109,7 +110,7 @@
   \(u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,K_J,\mathcal F_{\rm sc},
   \mathcal Y_{\rm top})\).
 - Use Loop 27's CHM current-entry extraction as the immediate source-theory
-  target:
+  problem:
   \(K^{\rm cur}_J=\langle a_J,(K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}
   -K^{\rm ref}_{T,J})a_J\rangle_{\rm CHM}\), with
   \(\Sigma_{aa,J}^{\rm CHM}=J\).  The next proof needs \(P_{a,J}\),
@@ -132,7 +133,7 @@
   photon/custodial bookkeeping.  The next proof must derive \(P_{a,J}\),
   \(P_\gamma\), \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), ordered W/Z
   boundary data, and the source-to-pole map.
-- Use Loop 28's proof spine: Hodge/SUSY-QM factorization tests
+- Use Loop 28's working derivation chain: Hodge/SUSY-QM factorization tests
   \(\Sigma_{ha,J}\Sigma_{ah,J}=J\), the hatted CHM current kernel tests
   \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\), and both tests must share one reduced
   basis, one source scale, and one pole map before O3 or O17 consequences are
@@ -143,7 +144,7 @@
   `notes/lean/ParentDirectoryLoop30.lean` record the sibling-workspace source
   queues for O1, O3, O4, O8, O10, O17, and O20.  The PDFs and primary local
   literature remain the source objects for manuscript-facing claims.
-- Use Loop 31's O10 acceptance package in every dimensional-interpolation
+- Use Loop 31's O10 common source package in every dimensional-interpolation
   statement:
   \[
   u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
@@ -161,8 +162,9 @@
 
 - Added Loop 47 Target IIIg: a local \(G_2\) ADE-pairing current test with
   singular-support pairing, \(A_1\subset A_2\) enhancement,
-  \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\) acceptance equation, completion
-  ledger, source bindings, Lean obligations, and referee/advisor/recall reports.
+  target equation \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\), compactification
+  conditions, source bindings, Lean obligations, and
+  referee/advisor/recall reports.
 - Ran referee/advisor normalization round 2 and recorded the two referee reports plus advisor report in `reviews/`.
 - Added Appendix D Target VI for dimensional interpolation and a source-status table plus compatibility diagram in Appendix E.
 - Added the interval Schur-complement target as the active O10/O4 bridge.
@@ -210,8 +212,8 @@
   Appendix D and Lean notes.
 - Added Loop 22 normalization: Appendix D Target IX for branch scaling and
   brane-duality admissibility, Sec. VI.B and VI.F bridge prose, concept-matrix
-  row, Lean obligations, parent-root refresh, and Appendix D acceptance
-  conditions.
+  row, Lean obligations, parent-root refresh, and Appendix D derivation
+  criteria.
 - Added Loop 23 normalization: Appendix D Target X for the Hodge/SUSY-QM route,
   local source fragments/PDFs for Witten, Fayet, Gates--Rana, and Coquereaux,
   interval and \(G_2\) subroute text, concept-matrix updates, and Lean
@@ -228,7 +230,7 @@
   and recorded Loop 25 parent-directory sidecar reads.
 - Added Loop 26 normalization: claim-status taxonomy in Appendix E,
   single-source interpolation diagram, O17 dependency chain, CHM top-sector
-  localization/boundary-mixing pressure, \(G_2\) compact-embedding acceptance
+  localization/boundary-mixing pressure, the \(G_2\) compact-embedding
   criterion, and `notes/lean/DimensionalInterpolation.lean`.
 - Added Loop 28 normalization: hatted CHM current-entry variables, a
   \(\Lambda_J\) source-scale obligation, CHM convention-audit source notes,
@@ -240,7 +242,7 @@
   subtraction, shared \(\Lambda_{\rm CHM}\) current-entry target, parent
   directory source-fragment extraction, and Lean/source ledgers for the new
   source queues.
-- Added Loop 31 normalization: O10 hatted middle-line acceptance theorem,
+- Added Loop 31 normalization: O10 hatted middle-line theorem,
   source package with \(\Lambda_J\), inner product, projection, extra-channel
   rule, endpoint subtargets, optional CHM top extension, parent-directory
   source queue, and Loop 31 referee/advisor reports.
@@ -264,9 +266,9 @@
 - Added radical-placement ledger connecting source theory, operator, matrix, branches, pole ratio, scalar functional, and topology constraints.
 - Expanded the Kaluza--Klein interval route with variational boundary data, an interval kernel, a DeVries entry dictionary, an electroweak assignment theorem target, and a KK scalar-branch target.
 - Expanded the \(G_2\) localization route with a local kernel, Higgs-bundle variables, singular support dictionary, anomaly/global checks, and scalar-branch target.
-- Added a three-route comparison section for endpoint, interval, and \(G_2\) kernels with common acceptance criteria.
+- Added a three-route comparison section for endpoint, interval, and \(G_2\) kernels with common derivation criteria.
 - Expanded the negative branch into a scalar-functional, vacuum-ray, and route-specific scalar-map analysis.
-- Expanded the status section with a claim hierarchy, minimum derivation chain, route-selection ledger, and acceptance tests.
+- Expanded the status section with a claim hierarchy, minimum derivation chain, route-selection ledger, and theorem checks.
 
 ## Analytical gaps
 
@@ -605,7 +607,7 @@
   flow trees retained as charge-sector and interaction evidence.
 - Loop 42 editorial queue from the referees: compress Appendix D working
   ledgers, add a \(G_2\) local test with one ADE enhancement and one pairing,
-  lower Appendix E's prominence after the CHM proof spine is stronger, and
+  lower Appendix E's prominence after the CHM working derivation chain is stronger, and
   add a quadratic-action bridge for Coquereaux curvature.
 
 ## Review cycle

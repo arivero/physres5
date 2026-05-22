@@ -313,12 +313,21 @@
   z^{(0)}
   =\frac{gW_T^3-g'B_T}{\sqrt{g^2+g'^2}},
   \]
-  followed by source-product normalization of \(P_{a,J}a_\gamma^{(0)}\) and
+  followed by source-product normalization of \(P_\gamma a_\gamma^{(0)}\) and
   \(P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}\).  The charged Goldstone test now
   carries \(P_W(h_J)=3/4+\Delta_W(u_{\rm EW})\).  The proof-spine language is
   now proposition/proof-obligation language, and Appendix D keeps the
   electroweak-ray remainder in the acceptance criterion.  Active remainders are
   \(\Delta_W\), \(\Delta_Y\), and \(\Delta_{\rm O1/O10}\).
+- Loop 44 adds admissibility and CHM package data to the same bridge.  The
+  neutral traces now require positive projected norms and either a stated
+  product \(P_{a,J}\Pi_{\gamma^\perp}^{(T)}\) or a commutation theorem on
+  \(\mathcal N_T^\partial\).  The CHM route now treats as target data
+  \(u_{\rm CHM}\mapsto(\mathcal N_T^\partial,\langle\cdot,\cdot\rangle_{\rm CHM},
+  P_{h,J},P_{a,J}^{\gamma^\perp},P_\gamma,K_{\gamma,J}^{\rm ref},
+  \Lambda_{\rm CHM},\mathcal R_{\rm pole})\) and names
+  \(\Delta_W^{\rm CHM},\Delta_Y^{\rm CHM}\).  The first derivation target
+  remains \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\).
 
 ## Resume state after context renewal
 

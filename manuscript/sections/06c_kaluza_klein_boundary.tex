@@ -243,27 +243,49 @@ interval model.
 
 The current-channel entry can be isolated after the physical boundary kernel
 has been converted to the dimensionless DeVries normalization.  Let
-\(\mathcal N_T^\partial\) be the neutral transverse boundary-trace space
-spanned by \(W^3_T\) and \(B_T\), with CHM product
-\(\langle\cdot,\cdot\rangle_{\rm CHM}\).  The projection data are
+\(\mathcal N_T^\partial=\operatorname{span}\{W^3_T,B_T\}\) carry the CHM
+product \(\langle\cdot,\cdot\rangle_{\rm CHM}\).  The CHM-normalized projector
+package is
 \begin{equation}
-  P_{a,J}^{\gamma^\perp}:\mathcal N_T^\partial\to\gamma^\perp,
-  \qquad
-  P_\gamma:\mathcal N_T^\partial\to{\rm span}\{a_\gamma\},
-  \qquad
-  \langle a_J,a_\gamma\rangle_{\rm CHM}=0,
-  \label{eq:chm-neutral-trace-space}
+  u_{\rm CHM}\mapsto
+  \left(
+  \mathcal N_T^\partial,\langle\cdot,\cdot\rangle_{\rm CHM},
+  P_{h,J},P_{a,J}^{\gamma^\perp},P_\gamma,
+  K_{\gamma,J}^{\rm ref},\Lambda_{\rm CHM},\mathcal R_{\rm pole}
+  \right).
+  \label{eq:chm-normalized-projector-package}
 \end{equation}
-where \(a_J=P_{a,J}^{\gamma^\perp}A_\mu^{T,\partial}\) and
-\(a_\gamma=P_\gamma A_\mu^{T,\partial}\) have unit CHM norm.  The transverse
-kernel is
+It uses the neutral trace definitions of
+Eqs.~\eqref{eq:tree-neutral-trace-directions}--\eqref{eq:neutral-trace-nonzero-norms}
+with the source product specialized to \(\langle\cdot,\cdot\rangle_{\rm CHM}\):
+\begin{equation}
+  a_\gamma=
+  \frac{P_\gamma a_\gamma^{(0)}}
+  {\sqrt{\langle P_\gamma a_\gamma^{(0)},
+  P_\gamma a_\gamma^{(0)}\rangle_{\rm CHM}}},
+  \qquad
+  a_J^{\gamma^\perp}
+  =
+  \frac{P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}}
+  {\sqrt{\langle P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)},
+  P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}\rangle_{\rm CHM}}},
+  \label{eq:chm-source-normalized-neutral-traces}
+\end{equation}
+where the denominators are positive and
+\[
+  \langle a_J^{\gamma^\perp},a_\gamma\rangle_{\rm CHM}=0.
+\]
+The source theory must state the ordered product
+\(P_{a,J}\Pi_{\gamma^\perp}^{(T)}\) or prove that the two projectors commute on
+\(\mathcal N_T^\partial\).  In the current-entry formulas below \(a_J\)
+abbreviates \(a_J^{\gamma^\perp}\).  The transverse kernel is
 \[
   K_{T,J}=K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}.
 \]
 A photon-reference subtraction fixes the zero by
 \begin{equation}
   P_\gamma^\dagger
-  \left(K_{T,J}(0)-K^{\rm ref}_{T,J}\right)
+  \left(K_{T,J}(0)-K_{\gamma,J}^{\rm ref}\right)
   P_\gamma
   =
   0.
@@ -283,16 +305,16 @@ With endpoint-normal signs and dimensionful brane terms fixed, define
   \frac{1}{\Lambda_{\rm CHM}^2}
   \left\langle a_J,
   \left(
-  K^{\rm DtN}_{T,J}(\lambda)
-  +K^{\rm brane}_{T,J}(\lambda)
-  -K^{\rm ref}_{T,J}(\lambda)
+	  K^{\rm DtN}_{T,J}(\lambda)
+	  +K^{\rm brane}_{T,J}(\lambda)
+  -K_{\gamma,J}^{\rm ref}(\lambda)
   \right)a_J
   \right\rangle_{\rm CHM},
   \qquad
   \lambda=\Lambda_{\rm CHM}^2\widehat\lambda,
   \label{eq:chm-current-kernel}
 \end{equation}
-where \(K^{\rm ref}_{T,J}\) fixes the reference zero of the current kernel,
+where \(K_{\gamma,J}^{\rm ref}\) fixes the reference zero of the current kernel,
 through the unbroken photon channel or a stated boundary subtraction.  The
 constant entry in this normalization is equivalently
 \begin{equation}
@@ -325,7 +347,7 @@ boundary conditions, specifically the groups recorded in
 Eqs.~(2.11)--(2.23), (2.30)--(2.44), and (3.32)--(3.43) of
 Ref.~\cite{CsakiHubiszMeade2005}.  Promotion of
 Eq.~\eqref{eq:chm-current-entry-normalized} requires the source definitions of
-\(P_{a,J}^{\gamma^\perp}\), \(P_\gamma\), \(K^{\rm ref}_{T,J}\),
+\(P_{a,J}^{\gamma^\perp}\), \(P_\gamma\), \(K_{\gamma,J}^{\rm ref}\),
 \(\Lambda_{\rm CHM}\), endpoint signs, the CHM product, and the pole map in a
 single convention.
 
@@ -335,13 +357,15 @@ boundary variation, modified scalar product, vector Robin equations, scalar
 DeVries reduction supplies additional theorem data:
 \[
   P_{h,J},\quad P_{a,J}^{\gamma^\perp},\quad P_\gamma,\quad
-  K^{\rm ref}_{T,J},\quad \Lambda_{\rm CHM},\quad
+  K_{\gamma,J}^{\rm ref},\quad \Lambda_{\rm CHM},\quad
   \mathcal R_{\rm pole}.
 \]
-Closure of the interval route requires these data to yield, in one convention,
+Closure of the interval route requires derivations of the target conditions
 \[
   \widehat\Sigma_{aa,2}^{\rm CHM}=2,\qquad
   \widehat{\mathcal I}_{h,3/4}^{\rm CHM}=\frac34,\qquad
+  \Delta_Y^{\rm CHM}=0,\qquad
+  \Delta_W^{\rm CHM}=0,\qquad
   \Delta_{\rm O1/O10}\ \hbox{derived}.
 \]
 
@@ -352,9 +376,14 @@ charged order-parameter sample in the same source space:
   P_{h,J}(\pi_i,A_5,\delta v_i,\delta R,\alpha_H),
   \label{eq:chm-h-sample}\\
   a_J^{\gamma^\perp}&=
-  P_{a,J}^{\gamma^\perp}A_\mu^{T,\partial},
+  \frac{P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}}
+  {\sqrt{\langle P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)},
+  P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}\rangle_{\rm CHM}}},
   \qquad
-  a_\gamma=P_\gamma A_\mu^{T,\partial}.
+  a_\gamma=
+  \frac{P_\gamma a_\gamma^{(0)}}
+  {\sqrt{\langle P_\gamma a_\gamma^{(0)},
+  P_\gamma a_\gamma^{(0)}\rangle_{\rm CHM}}}.
   \label{eq:chm-a-gamma-samples}
 \end{align}
 Here \(\pi_i\) denotes boundary Goldstone data, \(A_5\) the fifth component of
@@ -367,7 +396,8 @@ coordinate when the route uses one.  The ordered invariant target is
   \widehat\Sigma_{aa,J_{\rm adj}}^{\rm CHM}=J_{\rm adj}=2,
   \label{eq:chm-ordered-invariant-target}
 \end{equation}
-with one \(\Lambda_{\rm CHM}\), one product, and one pole map.
+as target equations using one \(\Lambda_{\rm CHM}\), one product, and one pole
+map.
 
 \begin{center}
 \scriptsize
@@ -385,7 +415,7 @@ Datum & Projector & \(J\) & Hilbert factor & Boundary datum & Normalization & Po
 \normalsize
 
 The data still to be derived are \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\),
-\(P_W\), \(P_Z\), \(K^{\rm ref}_{T,J}\), the source scale
+\(P_W\), \(P_Z\), \(K_{\gamma,J}^{\rm ref}\), the source scale
 \(\Lambda_{\rm CHM}\), endpoint-normal conventions, the photon projection, the
 ordered W/Z boundary map, and the map
 \(\widehat\lambda\mapsto m_n^2/\Lambda_{\rm CHM}^2\mapsto\Pi_T^{(4)}(s)\).

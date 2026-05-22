@@ -85,6 +85,33 @@ axiom loop30_photon_reference_required :
 axiom loop30_photon_reference_subtraction_data_required :
   ∃ P : PhotonReferenceSubtraction, photonReferenceSubtractionReady P
 
+structure Loop44CHMAdmissibleCurrentEntry where
+  neutralTrace : BoundaryTrace
+  chmProduct : CHMProduct
+  photonReferenceKernel : Kernel
+  sourceScale : SourceScale
+  currentProjection : Projection
+  photonProjection : Projection
+  positivePhotonNorm : Prop
+  positiveGammaPerpNorm : Prop
+  projectionOrderFixed : Prop
+  deltaWCHM : Prop
+  deltaYCHM : Prop
+  sigmaAA2Target : Prop
+
+def loop44CHMAdmissibleCurrentEntryReady
+  (C : Loop44CHMAdmissibleCurrentEntry) : Prop :=
+  C.positivePhotonNorm ∧
+  C.positiveGammaPerpNorm ∧
+  C.projectionOrderFixed ∧
+  C.deltaWCHM ∧
+  C.deltaYCHM ∧
+  C.sigmaAA2Target
+
+axiom loop44_chm_admissible_current_entry_required :
+  ∃ C : Loop44CHMAdmissibleCurrentEntry,
+    loop44CHMAdmissibleCurrentEntryReady C
+
 structure FactorizationFirstSpine where
   hodgeOffDiagonal : Prop
   chmCurrentDiagonal : Prop

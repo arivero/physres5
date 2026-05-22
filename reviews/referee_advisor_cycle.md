@@ -84,6 +84,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 41 | 5 | 5 | 5 | 5 | 5 | Tightened exact-looking pole statements with remainders, added the holonomy-superconnection scalar Hessian target, focused O4 on \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), and recorded a random Lean/source recall pass. |
 | 42 | 4 | 4 | 4 | 3 | 5 | Recalibrated current-review scores for open derivations; added the Ward-projected neutral-current target, active proof spine, score-table correction, and random Lean/source recall record. |
 | 43 | 4 | 4 | 4 | 4 | 5 | Added source-normalized photon and \(Z\) trace definitions, charged Goldstone projector remainder, proof-obligation wording, Appendix D remainder cleanup, and random Lean/source recall record. |
+| 44 | 4 | 4 | 4 | 4 | 5 | Added CHM projector-package admissibility, positive projected-norm conditions, \(\Delta_W^{\rm CHM}\) and \(\Delta_Y^{\rm CHM}\), route test ordering, and random Lean/source recall record. |
 
 ## Scoring rubric
 

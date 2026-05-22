@@ -200,8 +200,8 @@ z^{(0)}
 \]
 \[
 a_\gamma=
-\frac{P_{a,J}a_\gamma^{(0)}}
-{\sqrt{\langle P_{a,J}a_\gamma^{(0)},P_{a,J}a_\gamma^{(0)}
+\frac{P_\gamma a_\gamma^{(0)}}
+{\sqrt{\langle P_\gamma a_\gamma^{(0)},P_\gamma a_\gamma^{(0)}
 \rangle_{u_{\rm EW}}}},
 \qquad
 a_J^{\gamma^\perp}
@@ -219,6 +219,33 @@ P_W(h_J)=\frac34+\Delta_W(u_{\rm EW}),\qquad
 The active analytical task is the joint derivation of \(\Delta_W\),
 \(\Delta_Y\), and \(\Delta_{\rm O1}\) from the same source product, photon
 reference, CHM current entry, and pole map.
+
+**Loop 44 CHM projector-package refinement.** The O1/O4 bridge now records
+the admissibility data for the Ward-projected traces:
+\[
+\langle\widetilde a_\gamma,\widetilde a_\gamma\rangle_{u_{\rm EW}}>0,\qquad
+\langle\widetilde a_J^{\gamma^\perp},
+\widetilde a_J^{\gamma^\perp}\rangle_{u_{\rm EW}}>0,
+\]
+plus either an ordered product \(P_{a,J}\Pi_{\gamma^\perp}^{(T)}\) or a
+commutation theorem on \(\mathcal N_T^\partial\).  The CHM version packages
+\[
+u_{\rm CHM}\mapsto
+\left(
+\mathcal N_T^\partial,\langle\cdot,\cdot\rangle_{\rm CHM},
+P_{h,J},P_{a,J}^{\gamma^\perp},P_\gamma,
+K_{\gamma,J}^{\rm ref},\Lambda_{\rm CHM},\mathcal R_{\rm pole}
+\right),
+\]
+and the target conditions are
+\[
+\widehat\Sigma_{aa,2}^{\rm CHM}=2,\qquad
+\widehat{\mathcal I}_{h,3/4}^{\rm CHM}=\frac34,\qquad
+\Delta_Y^{\rm CHM}=\Delta_W^{\rm CHM}=0,
+\]
+to be derived together with \(\Delta_{\rm O1/O10}\) in the pole scheme.  O1 remains open
+because these projector, norm, source-scale, and pole-map conditions still
+await derivation from the interval action.
 
 ## O2b. Current electroweak input audit
 

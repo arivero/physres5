@@ -558,6 +558,17 @@
   The proof target is a joint derivation of \(\Delta_W\), \(\Delta_Y\),
   \(P_\gamma\), \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), and
   \(\Delta_{\rm O1/O10}\) from one CHM/superconnection source package.
+- Loop 44 O1/O4 next step: derive the CHM-normalized projector package
+  \[
+  u_{\rm CHM}\mapsto
+  (\mathcal N_T^\partial,\langle\cdot,\cdot\rangle_{\rm CHM},
+  P_{h,J},P_{a,J}^{\gamma^\perp},P_\gamma,
+  K_{\gamma,J}^{\rm ref},\Lambda_{\rm CHM},\mathcal R_{\rm pole})
+  \]
+  from the interval action, including positive projected norms, projection
+  order, photon-reference subtraction, shared source scale, and
+  \(\Delta_W^{\rm CHM},\Delta_Y^{\rm CHM}\).  The first matrix-entry target
+  remains \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\).
 - Loop 42 editorial queue from the referees: compress Appendix D working
   ledgers, add a \(G_2\) local test with one ADE enhancement and one pairing,
   lower Appendix E's prominence after the CHM proof spine is stronger, and
@@ -569,8 +580,8 @@
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
 - Each substantial loop must also call a lightweight editor subagent below GPT-5.5 to flag banned contrast formulas, journalistic language, adjectival positioning, and prose outside Physical Review D style.
 - Each substantial loop must also inspect one random bibliography or source-inventory entry and one random local note or Lean-style note, then record any equation, test, fragment gap, or issue-ledger consequence.
-- Current score table includes Loop 43 with source-product normalized trace
-  definitions and recalibrated current-review scores.
+- Current score table includes Loop 44 with CHM-normalized projector-package
+  admissibility and current-review scores.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

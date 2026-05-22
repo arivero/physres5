@@ -180,6 +180,38 @@ axiom loop43_source_product_trace_obligation :
   ∃ T : Loop43SourceProductNormalizedTraces,
     loop43SourceProductNormalizedTracesReady T
 
+structure Loop44CHMProjectorPackage where
+  neutralTraceSpace : NeutralTraceSpace
+  chmProduct : InnerProduct
+  photonReferenceKernel : BoundaryKernel
+  sourceScale : SourceScale
+  chargedProjector : ChargedSample
+  neutralProjector : NeutralSample
+  photonProjector : PhotonProjector
+  poleMap : PoleMap
+  positivePhotonNorm : Prop
+  positiveGammaPerpNorm : Prop
+  projectionOrderStated : Prop
+  projectorCommutationTheorem : Prop
+  deltaWCHMDerived : Prop
+  deltaYCHMDerived : Prop
+  currentEntryDerived : Prop
+  sameSourceScale : Prop
+
+def loop44CHMProjectorPackageReady
+  (P : Loop44CHMProjectorPackage) : Prop :=
+  P.positivePhotonNorm ∧
+  P.positiveGammaPerpNorm ∧
+  (P.projectionOrderStated ∨ P.projectorCommutationTheorem) ∧
+  P.deltaWCHMDerived ∧
+  P.deltaYCHMDerived ∧
+  P.currentEntryDerived ∧
+  P.sameSourceScale
+
+axiom loop44_chm_projector_package_obligation :
+  ∃ P : Loop44CHMProjectorPackage,
+    loop44CHMProjectorPackageReady P
+
 /- CHM ledger target:
    h_J = P_h,J(pi_i, A_5, delta v_i, delta R, alpha_H)
    a_J^{gamma_perp} = P_a,J^{gamma_perp} A_mu^{T,boundary}

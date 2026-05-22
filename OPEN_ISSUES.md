@@ -1128,9 +1128,9 @@ two-channel basis.  This gives O4 a named theorem target: a de Rham supercharge,
 a finite projection, and a supersymmetry-breaking diagonal.
 
 **Electroweak-SUSY home (for O1/O3).**
-- Fayet (1403.5951): the Higgs as the spin-0 SUSY partner of the \(Z\); a
-  supersymmetry relating the neutral gauge boson and the order parameter, i.e.
-  the positive (\(Z\)) and negative (Higgs/order-parameter) branches.
+- Fayet (1403.5951): electroweak supersymmetry vocabulary in which spin-zero
+  BEH fields appear in massive gauge multiplets with \(W\) and \(Z\) bosons;
+  the DeVries branch assignment remains an O3/O20 theorem datum.
 - the \(su(2/1)\) electroweak superconnection (Ne'eman; Fairlie; Coquereaux et
   al.): electroweak gauge fields as the even part, the Higgs as the odd part of a
   superconnection.
@@ -1178,6 +1178,18 @@ in the same reduced basis that carries \(P_W\), \(P_Z\), the hatted CHM current
 entry, and the negative-branch scalar functional.  The projection, breaking
 operator \(B_J=\operatorname{diag}(0,-J)\), and compatibility with O1 and O3
 remain open theorem data.
+
+**Loop 38 source-equation refinement.** Rendered Witten pages 665--666 now give
+the equation-level support for the Hodge side: \(Q_1=d+d^*\),
+\(Q_2=i(d-d^*)\), \(H=dd^*+d^*d\), the deformed \(d_t=e^{-ht}de^{ht}\), and the
+Hamiltonian \(H_t\) with gradient and Hessian terms.  The accepted source
+claim is the de Rham/SUSY-QM template for a normalized square-root pair.  O20
+also requires an explicit source operator for the one-channel entry
+\(B_J=\operatorname{diag}(0,-J)\) in the same finite basis.  Candidate
+mechanisms are a boundary/self-adjoint-extension term or a superconnection
+curvature term, with a common inner product, fixed sign convention, absence of
+extra light modes, \(J=\lambda_J=s(s+1)\), and compatibility with O1/O3 and the
+pole-mass chain.
 
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

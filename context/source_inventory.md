@@ -148,6 +148,12 @@ PRD phase.
 ## Standard Model global form and line operators
 
 - `06_Tong_Gauge_Theory_notes.pdf` — gauge dynamics, monopoles, line operators, Standard Model gauge group global form, anomalies, dualities.
+  - Loop 38 random recall read pages 171--180.  The fragment records Abelian
+    anomaly constraints \(\sum_a Q_a^3=0\) and \(\sum_a Q_a=0\), the
+    non-Abelian anomaly factor \(d^{abc}(R)=\operatorname{tr}T^a\{T^b,T^c\}\),
+    and the vanishing of \(d^{abc}\) for real or pseudoreal representations.
+    Any O1/O20 superconnection or branch route with added gauge-Higgs or
+    fermionic channels inherits this anomaly-ledger obligation.
 - `29_Tong_Line_Operators_Standard_Model_1705.01853.pdf` — ambiguity in Standard Model gauge group global form and line operators.
 - `30_Hsin_Detecting_SM_Gauge_Group_2411.18160.pdf` — proposed detection of Standard Model gauge-group global form through generalized fractional quantum Hall-type transport.
 
@@ -200,6 +206,15 @@ are in `context/source_fragments/4[7-9]_*/` and
 `context/source_fragments/50_*`.
 
 - `47_Witten_Supersymmetry_Morse_Theory_JDG17_1982.pdf` — de Rham supersymmetric quantum mechanics on forms, \(d+d^*\), Hodge Laplacian, Witten deformation, and Morse localization.  The PDF is scanned; the markdown fragment contains metadata only, so equation checks use rendered PDF pages as agent-read transcription.  Loop 37 random recall read rendered pages 1--2: the source defines a \(\mathbb Z_2\) Hilbert-space grading, supercharges commuting with \(H\), the algebra \(Q_i^2=H\), \(\{Q_i,Q_j\}=0\), and the one-space, one-time-dimensional form \(Q_1^2=H+P\), \(Q_2^2=H-P\), giving \(H\) as a sum of supercharge squares.
+  - Loop 38 rendered-page audit read pages 665--666.  Page 665 states
+    \(Q_1=d+d^*\), \(Q_2=i(d-d^*)\), \(H=dd^*+d^*d\), the supersymmetry
+    relations \(Q_1^2=Q_2^2=H\), \(Q_1Q_2+Q_2Q_1=0\), and the deformation
+    \(d_t=e^{-ht}de^{ht}\) with \(H_t=d_td_t^*+d_t^*d_t\).  Page 666 expands
+    \(H_t\) as the Hodge Laplacian plus \(t^2(dh)^2\) and a Hessian term
+    multiplying a fermion creation-annihilation commutator.  This supports the
+    Hodge square-root template and provides an analogy for sourced diagonal
+    terms; the DeVries \(B_J=\operatorname{diag}(0,-J)\) term remains a
+    separate O20 theorem datum.
 - `48_Fayet_SUSY_SM_Higgs_Z_partner_1403.5951.pdf` — supersymmetric gauge/BEH source where spin-zero BEH fields appear in massive gauge multiplets with \(W\) and \(Z\) bosons; source for the electroweak partner-language caution in O20.
 - `49_Gates_Rana_Spinning_Particles_Large_N_SUSY_hep-th-9504025.pdf` — worldline \(N\)-extended supersymmetry and spinning-particle actions; source for spin/worldline vocabulary if the second-supercharge route is developed.
 - `50_Coquereaux_Algebraic_Superconnections_SU2_1_Electroweak_1992.pdf` — \(SU(2|1)\) algebraic superconnection formalism for electroweak symmetry breaking and Higgs fields as part of a generalized connection.
@@ -207,3 +222,6 @@ are in `context/source_fragments/4[7-9]_*/` and
     gauge-Higgs source complex.  The ordered W/Z quotient still requires
     projectors \(P_W,P_Z,P_\gamma\), a common normalization, and a pole
     remainder from the selected source route.
+  - Loop 38 next audit: inspect the generalized-connection matrix and
+    curvature terms for a possible source of \(P_{\rm sc}\), \(B_J\), and the
+    ordered electroweak samples in one finite basis.

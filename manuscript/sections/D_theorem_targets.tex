@@ -1200,7 +1200,17 @@ to Morse data \cite{WittenMorse1982}.  The reduced basis is required to obey
   D_J^\dagger e^1_J=\sqrt J\,e^0_J,
   \label{eq:target-susyqm-square-root}
 \end{equation}
-so that the projected de Rham operator is
+with acceptance conditions
+\begin{equation}
+  D_J^\dagger D_Je^0_J=J e^0_J,\qquad
+  D_JD_J^\dagger e^1_J=J e^1_J,\qquad
+  J=\lambda_J=s(s+1),
+  \label{eq:target-susyqm-acceptance}
+\end{equation}
+in a normalized basis with a fixed sign convention and absence of extra light
+channels.  The same finite basis must support the electroweak samples and the
+negative-branch scalar functional.  Under these conditions, the projected de
+Rham operator is
 \begin{equation}
   Q_{{\rm dR},J}
   =
@@ -1212,14 +1222,17 @@ so that the projected de Rham operator is
 \end{equation}
 The source-equation audit target is Witten's deformed complex,
 \begin{equation}
-  d_t=e^{-th}de^{th},\qquad
+  d_t=e^{-ht}de^{ht},\qquad
   d_t+d_t^\dagger,\qquad
   H_t=(d_t+d_t^\dagger)^2,
   \label{eq:target-witten-source-audit}
 \end{equation}
 with the rendered-paper equation context recorded as an agent-read
-transcription because the local PDF is scanned.  This audit is a prerequisite
-for elevating the Hodge route beyond a theorem target.
+transcription because the local PDF is scanned.  Rendered page 665 supplies
+\(Q_1=d+d^*\), \(Q_2=i(d-d^*)\), \(H=dd^*+d^*d\), \(d_t\), and \(H_t\).
+Rendered page 666 supplies the expanded \(H_t\) with gradient and Hessian terms.
+This audit is a prerequisite for elevating the Hodge route beyond a theorem
+target.
 The source theory must also contain a breaking or boundary operator \(B_J\)
 acting on the same projected basis.
 
@@ -1267,6 +1280,10 @@ F_{\rm even}^{\gamma^\perp} & \xrightarrow{\ P_Z\ } & J_{\rm adj}=2 .
 \end{array}
 \label{eq:target-susyqm-superconnection-square}
 \end{equation}
+Equation~\eqref{eq:target-susyqm-superconnection-square} is a compatibility
+target.  The cited sources supply grading and generalized-connection
+vocabulary; the ordered projectors, branch map, and pole quotient remain
+theorem data.
 The pole comparison then has the form
 \begin{equation}
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
@@ -1275,6 +1292,8 @@ The pole comparison then has the form
   +\Delta_{\rm sc}.
   \label{eq:target-susyqm-superconnection-pole}
 \end{equation}
+The definition of \(\Delta_{\rm sc}\) begins with a translation of all source
+entries to the complex-pole mass scheme.
 The interval version tests the same assignment against a CHM
 Dirichlet-to-Neumann and brane-boundary kernel:
 \begin{equation}
@@ -1304,6 +1323,12 @@ The reduced target is
   \end{pmatrix}.
   \label{eq:target-superconnection-chm-kernel}
 \end{equation}
+The finite-extension version of Target X is a self-adjoint-extension problem:
+derive \(P_{\rm sc}\), \(B_J=\operatorname{diag}(0,-J)\), and the ordered
+electroweak samples from one interval, brane, \(G_2\), or abstract SQM source
+operator.  Witten's deformation supplies an analogy for source-controlled
+diagonal terms through its Hessian contribution to \(H_t\); the DeVries entry
+\(-J\) still requires its own source-theory derivation.
 The route succeeds when \(P_W\), \(P_Z\), the inner product, \(B_J\), and
 \(\Delta_{\rm sc}\) all come from one gauge-Higgs superconnection reduction.
 For the interval implementation, Target~\ref{app:target-boundary-determinant}
@@ -1316,13 +1341,14 @@ kernel supplies the candidate \(\Sigma_{aa,J}=J\) entry after the source scale
 The square-root entry has a concrete mathematical source: on normalized
 Laplacian eigenspaces, a differential maps a zero-form channel to an exact
 one-form channel with norm controlled by the eigenvalue.  Witten's Morse-theory
-paper supplies the de Rham/Hodge and Witten-deformation template
-\cite{WittenMorse1982}.  Fayet supplies an electroweak supersymmetry source in
-which spin-zero BEH fields sit in massive gauge multiplets with \(W\) and \(Z\)
-bosons \cite{Fayet2014}.  Gates--Rana supply a worldline supersymmetry source
-for spinning-particle systems \cite{GatesRana1995}.  Coquereaux supplies an
-\(SU(2|1)\) superconnection source in which Higgs fields enter a generalized
-connection for electroweak symmetry breaking \cite{Coquereaux1992Superconnections}.
+paper supplies the de Rham/Hodge and Witten-deformation template, including
+the rendered-page formulas quoted above \cite{WittenMorse1982}.  Fayet supplies
+electroweak supersymmetry vocabulary in which spin-zero BEH fields sit in
+massive gauge multiplets with \(W\) and \(Z\) bosons \cite{Fayet2014}.
+Gates--Rana supply a worldline supersymmetry source for spinning-particle
+systems \cite{GatesRana1995}.  Coquereaux supplies an \(SU(2|1)\)
+superconnection source in which Higgs fields enter a generalized connection for
+electroweak symmetry breaking \cite{Coquereaux1992Superconnections}.
 These sources give addresses for the factorization, spin, and electroweak
 grading.  The DeVries breaking operator, finite projection, and pole-chain
 matching remain theorem obligations.

@@ -14,6 +14,7 @@ constant PoleScheme : Type
 constant InnerProduct : Type
 constant MatchingRemainder : Type
 constant BoundaryKernelCompatibility : Type
+constant AnomalyLedger : Type
 
 constant Phi_odd : OddHiggs
 constant F_even_gamma_perp : EvenCurrent
@@ -35,6 +36,8 @@ structure SuperconnectionReduction where
   trace_space_separated : Prop
   wigner_eckart_route_excluded : Prop
   so32_flavour_requires_explicit_coupling : Prop
+  anomaly_ledger : AnomalyLedger
+  anomaly_ledger_consistent : Prop
   chm_boundary_kernel_compatibility : BoundaryKernelCompatibility
   negative_branch_scalar_map_required : Prop
   matching_remainder_derived : Prop
@@ -46,6 +49,7 @@ def O1SuperconnectionTarget (S : SuperconnectionReduction) : Prop :=
   S.trace_space_separated ∧
   S.wigner_eckart_route_excluded ∧
   S.so32_flavour_requires_explicit_coupling ∧
+  S.anomaly_ledger_consistent ∧
   S.negative_branch_scalar_map_required ∧
   S.matching_remainder_derived
 
@@ -73,6 +77,7 @@ Acceptance test:
 8. match the superconnection data to a CHM boundary kernel;
 9. derive or compute Delta_sc in the pole scheme;
 10. connect the negative eigenvector to a gauge-invariant scalar functional.
+11. attach an anomaly ledger for added gauge-Higgs or fermionic channels.
 -/
 
 end DeVries.SuperconnectionAssignment

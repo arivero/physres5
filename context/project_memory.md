@@ -229,6 +229,12 @@
   interval boundary data, six-dimensional string sources for the colourless
   \(D=6\) arena, and local \(G_2\) references for singular-source tests.
   Reports are in `reviews/normalization_loop37_*.md`.
+- Loop 38 tightens O20/Target X.  Rendered Witten pages 665--666 now supply the
+  source-equation audit for \(d+d^*\), \(d_t\), \(H_t\), and the Hessian term.
+  The Hodge/SUSY-QM square-root entry is source-backed as a theorem template;
+  \(B_J=\operatorname{diag}(0,-J)\), the common finite basis, the ordered
+  electroweak samples, and the pole-chain map remain open.  Coquereaux's
+  generalized-connection matrix and curvature terms are the next O20 audit.
 
 ## Resume state after context renewal
 

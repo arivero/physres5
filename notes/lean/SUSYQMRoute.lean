@@ -16,6 +16,12 @@ constant casimir : J -> Real
 constant sqrtCasimir : J -> Real
 constant scalarMul : {j : J} -> Real -> Form1 j -> Form1 j
 constant scalarMul0 : {j : J} -> Real -> Form0 j -> Form0 j
+constant Route : Type
+constant InnerProduct : J -> Type
+constant Projection : J -> Type
+constant SuperconnectionCurvature : J -> Type
+constant BoundaryTerm : J -> Type
+constant PoleSchemeRemainder : J -> Type
 
 structure NormalizedPair (j : J) where
   e0 : Form0 j
@@ -23,6 +29,9 @@ structure NormalizedPair (j : J) where
   d_e0 : D e0 = scalarMul (sqrtCasimir j) e1
   dadj_e1 : Dadj e1 = scalarMul0 (sqrtCasimir j) e0
   square_norm : (sqrtCasimir j) * (sqrtCasimir j) = casimir j
+  ddagger_d_e0 : String
+  d_ddagger_e1 : String
+  eigenvalue_label : String
 
 structure BreakingOperator (j : J) where
   B00 : Real := 0
@@ -31,15 +40,38 @@ structure BreakingOperator (j : J) where
   B11 : Real
   target_diag : B11 = - casimir j
   source : String
+  source_term : BoundaryTerm j ⊕ SuperconnectionCurvature j
 
 structure TargetX (j : J) where
   pair : NormalizedPair j
   breaking : BreakingOperator j
+  route : Route
+  inner_product : InnerProduct j
+  projection : Projection j
   source_of_J : String
   finite_projection : String
+  absence_of_extra_light_channels : String
+  sign_convention : String
   electroweak_map : String
   scalar_branch_map : String
+  pole_remainder : PoleSchemeRemainder j
   pole_chain : String
+
+structure WittenRenderedAudit where
+  scanned_pdf : String
+  page_665 : String
+  page_666 : String
+  de_rham_supercharge : String
+  deformation : String
+  hessian_diagonal_analogy : String
+
+structure OneChannelBreakingCandidate (j : J) where
+  projected_basis : NormalizedPair j
+  source_operator : BoundaryTerm j ⊕ SuperconnectionCurvature j
+  same_basis_as_O1 : String
+  same_basis_as_O3 : String
+  same_basis_as_pole_chain : String
+  target_entry : "B11 = -J" = "B11 = -J"
 
 axiom deRham_block :
   forall {j : J}, NormalizedPair j ->
@@ -56,6 +88,8 @@ axiom targetX_obligation :
 4. identify the ordered electroweak samples P_W and P_Z in the same basis;
 5. map the negative eigenvector to a gauge-invariant scalar functional;
 6. run the pole-scheme chain before using the result as an electroweak claim.
+7. audit Coquereaux matrix and curvature entries for a common superconnection
+   source of P_sc, B_J, P_W, and P_Z.
 -/
 
 end DeVries.SUSYQMRoute

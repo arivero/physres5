@@ -421,6 +421,12 @@
   rendered-page checks because text extraction is empty; Fayet, Gates--Rana,
   and Coquereaux now have local fragments; Ne'eman, Fairlie, and Thierry-Mieg
   remain useful primary \(su(2|1)\) upgrades.
+- Loop 38 O20 next step: Witten rendered pages 665--666 now support the
+  Hodge/SUSY-QM source template for \(d+d^*\), \(d_t\), \(H_t\), and the
+  Hessian term.  The next concrete source audit is Coquereaux's generalized
+  connection and curvature matrix, searching for a common finite basis that
+  supplies \(P_{\rm sc}\), \(B_J=\operatorname{diag}(0,-J)\), \(P_W\), \(P_Z\),
+  the negative-branch scalar map, and the pole remainder.
 - Loop 32 O3 next step: test the interval gauge-Higgs/Hosotani scalar package
   by deriving, or rejecting, a common source datum
   \[

@@ -153,6 +153,9 @@ structure EffectiveDimensionInterpolation where
   deff9to10to11 : Prop
   fullGaugeKK765 : Prop
   colourSpectatorKK321 : Prop
+  activeElectroweakChannel321 : Prop
+  geometricU1Endpoint : Prop
+  electromagneticEmbeddingRequired : Prop
   vectorScalarLaplacianBlockRequired : Prop
   chiralityAndSingularityAccountRequired : Prop
 
@@ -162,6 +165,9 @@ def interpolationObligation (I : EffectiveDimensionInterpolation) : Prop :=
   I.deff9to10to11 ∧
   I.fullGaugeKK765 ∧
   I.colourSpectatorKK321 ∧
+  I.activeElectroweakChannel321 ∧
+  I.geometricU1Endpoint ∧
+  I.electromagneticEmbeddingRequired ∧
   I.vectorScalarLaplacianBlockRequired ∧
   I.chiralityAndSingularityAccountRequired
 
@@ -180,12 +186,18 @@ structure NegativeBranchProgram where
   role : NegativeBranchRole
   gaugeInvariantMapRequired : Prop
   topScaleAccountRequired : Prop
+  commonSourceVariableRequired : Prop
+  topYukawaMapRequired : Prop
+  topSelfEnergyMapRequired : Prop
   numericalProximityDeferred : Prop
   calculationPhaseRequired : Prop
 
 def negativeBranchPrTalksObligation (N : NegativeBranchProgram) : Prop :=
   N.gaugeInvariantMapRequired ∧
   N.topScaleAccountRequired ∧
+  N.commonSourceVariableRequired ∧
+  N.topYukawaMapRequired ∧
+  N.topSelfEnergyMapRequired ∧
   N.numericalProximityDeferred ∧
   N.calculationPhaseRequired
 

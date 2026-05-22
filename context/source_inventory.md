@@ -42,6 +42,7 @@ PRD phase.
 - `03_Ginsparg_Applied_Conformal_Field_Theory_hep-th-9108028.pdf` — CFT machinery, Virasoro algebra, affine algebras, cosets, modular invariance.
 - `04_Polchinski_What_is_String_Theory_hep-th-9411028.pdf` — CFT, string basics, vacua and dualities, organizing principles.
 - `09_Csaki_Hubisz_Meade_EWSB_from_Extra_Dimensions_hep-ph-0510275.pdf` — gauge theories on intervals, boundary conditions, Higgsless electroweak breaking, fermions in extra dimensions, precision observables.
+  - Loop 18 use: pages 11--20 support boundary scalar vevs modifying vector boundary conditions, Dirichlet limits, and possible scalar remnants from \(A_5\) and boundary Goldstone data.
 - `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` — six-dimensional string-string duality source; type IIA on K3 and heterotic on \(T^4\).
 - `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` — six-dimensional string-string duality and charged solitonic strings.
 - `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` — heterotic small instantons and nonperturbative six-dimensional string dynamics.
@@ -58,6 +59,7 @@ PRD phase.
 - `24_Acharya_Witten_Chiral_Fermions_G2_hep-th-0109152.pdf` — chiral fermions from G2 singularities and GUT representations.
 - `25_Witten_Anomaly_Cancellation_G2_hep-th-0108165.pdf` — anomaly cancellation on G2 manifolds, singularities, gauge fields, chiral fermions.
 - `31_Braun_Cizel_Hubner_SchaferNameki_Higgs_Bundles_G2_1812.06072.pdf` — G2 Higgs bundles, local gauge sector, matter localization, chirality transitions.
+  - Loop 18 use: pages 61--70 give a local \(G_2\) Higgs-bundle template for top-Yukawa data through flow-tree and charge-distribution constructions.
 
 ## Standard Model global form and line operators
 
@@ -81,3 +83,4 @@ PRD phase.
 - `32_PDG2025_Physical_Constants.pdf` — physical constants. Use for constants only; W/Z pole-mass updates require a dedicated electroweak source audit.
 - `35_CDFII_W_boson_mass_Science_2022.pdf` — CDF-II W-boson mass measurement. Use only for the descriptive statement that this value is displaced from the DeVries seed comparison; a full electroweak average requires a separate source audit.
 - `witten1981.pdf` — Witten, search for realistic Kaluza-Klein theory; historical and conceptual source on KK unification and fermion quantum numbers.
+  - Loop 18 use: pages 1--10 support the seven-extra-dimensional \(SU(3)\times SU(2)\times U(1)\) endpoint and the one-, two-, and four-dimensional minimum symmetry addresses for \(U(1)\), \(SU(2)\), and \(SU(3)\); pages 11--17 support the fermion quantum-number obstruction and the status of Higgs/low-energy breaking as separate model-building data.

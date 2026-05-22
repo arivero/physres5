@@ -462,7 +462,9 @@ identify the two through a map
 \end{equation}
 or through a joint source variable
 \begin{equation}
-  u\longmapsto\big(t_{\rm dim}(u),t_{\rm EW}(u)\big).
+  u\longmapsto
+  \big(t_{\rm dim}(u),t_{\rm EW}(u),
+  \mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
   \label{eq:target-dimensional-joint-source}
 \end{equation}
 The full-gauge endpoint source trail is
@@ -476,7 +478,7 @@ electroweak embedding identifies the surviving \(U(1)\) with
 \(U(1)_{\rm em}\):
 \begin{equation}
   (D,n_{\rm KK})=(9,5):
-  SU(3)\times U(1)_{\rm em}.
+  SU(3)\times U(1)_{\rm geom}.
   \label{eq:target-full-dimensional-endpoints}
 \end{equation}
 The colourless electroweak dictionary is
@@ -494,7 +496,8 @@ At the middle point \(t_{\rm dim}=t_\star\), assume a light subspace
   \label{eq:target-dimensional-light-space}
 \end{equation}
 with \(h_J\) an order-parameter channel and \(a_J\) an adjoint/current
-channel.
+channel.  A top-sensitive completion also supplies a Yukawa or boundary datum
+\(\mathcal Y_{\rm top}(u_\star)\) attached to the same source variable.
 
 \paragraph*{Conclusion.}
 The middle-dimensional sector defines a source operator
@@ -520,6 +523,20 @@ colourless middle line is \((D,n_{\rm KK}^{\rm ew})=(6,2)\).  The
 reconstruction target also supplies the pole-matching chain in
 Eq.~\eqref{eq:target-pole-matching-chain}.
 
+A top-sector corollary of the same construction supplies
+\begin{equation}
+  \mathcal Y_{\rm top}(u_\star)\to y_t(u_\star),
+  \qquad
+  m_t=\frac{y_t(u_\star)v(u_\star)}{\sqrt2},
+  \qquad
+  \Pi^{(t)}_{VV}(s;u_\star),
+  \label{eq:target-top-corollary}
+\end{equation}
+with the top representation, anomaly/global-form checks, and pole-scheme
+matching stated in the same field basis.  If this map is absent, the
+manuscript records the top as a Standard Model source fact and leaves top
+selection outside the DeVries derivation.
+
 \paragraph*{Current evidence.}
 Witten's Kaluza--Klein analysis supplies the source trail for the
 seven-extra-dimensional \(SU(3)\times SU(2)\times U(1)\) endpoint and the
@@ -527,6 +544,10 @@ associated fermion quantum-number obstruction \cite{WittenKK1981}.  The same
 paper contains a five-sphere \(SU(3)\times U(1)\) symmetry address.  The
 six-dimensional string sources support a landscape of six-dimensional string
 settings and dualities \cite{Strominger1995,Sen1995,WittenSmallInstantons1995,KumarTaylor2009}.
+Boundary scalar vevs on intervals modify vector boundary conditions and can
+leave scalar remnants, giving a concrete template for an active-channel
+middle line \cite{CsakiHubiszMeade2005}.  Local \(G_2\) Higgs-bundle models
+give a separate template for top-Yukawa source data \cite{BraunEtAl2019}.
 Appendix~\ref{app:dimensional-interpolation} converts these facts into a
 source-status table and a middle-line reconstruction target.
 

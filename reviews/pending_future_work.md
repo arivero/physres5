@@ -2,15 +2,23 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 72 REVTeX PRD preprint pages after the Loop 16 compile.
+- Current compiled draft: 75 REVTeX PRD preprint pages after the Loop 18 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push one route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
-- Reconstruct the canonical full-gauge Higgs/electroweak interpolation: total \(D=11/10/9\), corresponding to internal KK \(7/6/5\), with \(SU(3)\times SU(2)\times U(1)\) in the massless-Higgs limit and \(SU(3)\times U(1)_{\rm em}\) in the infinitely broken limit.
-- Add the colourless electroweak \(D=7/6/5\) version, corresponding to internal KK \(3/2/1\), using six-dimensional superstring sources as the middle-dimension anchor.
-- Develop the top-quark subquestion: whether the interpolation or negative branch explains why the top quark is tied to the electroweak order-parameter scale.
+- Continue developing the canonical full-gauge Higgs/electroweak interpolation:
+  total \(D=11/10/9\), corresponding to internal KK \(7/6/5\), with
+  \(SU(3)\times SU(2)\times U(1)\) at the unbroken electroweak endpoint and a
+  five-extra-dimensional \(SU(3)\times U(1)\) geometric address at the formal
+  heavy-\(W/Z\) endpoint.
+- Continue developing the colourless electroweak \(D=7/6/5\) version,
+  corresponding to internal KK \(3/2/1\), using six-dimensional superstring
+  sources as the middle-dimension anchor.
+- Develop the top-quark subquestion as a source-map target
+  \(\mathcal Y_{\rm top}(u_\star)\to y_t,m_t,\Pi^{(t)}_{VV}\) tied to the same
+  source variable as the scalar branch.
 - Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
 - Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../weak`, `../phys3`, `../signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
 - Continue normalizing main-body sections by replacing project-management language with assumption, construction, consequence, and theorem-target statements.
@@ -26,9 +34,15 @@
   projection, anomaly, hypercharge, global-form, and electroweak-coupling
   checks.
 - Use Loop 16's alpha endpoint target as a downstream corollary only after the
-  scalar branch theorem, \(D=9\) \(U(1)_{\rm em}\) endpoint theorem, charge
-  normalization, and matching pair \((Q_\alpha,\Delta_{\alpha,{\rm match}})\)
-  are derived.
+  scalar branch theorem, \(D=9\) geometric \(U(1)\) endpoint theorem,
+  electromagnetic embedding theorem, charge normalization, and matching pair
+  \((Q_\alpha,\Delta_{\alpha,{\rm match}})\) are derived.
+- Use Loop 17's Regge-intercept target as a conditional route ledger: sector
+  labels, oscillator levels, physical spin, projection survival, and collider
+  interpretation remain separate source data.
+- Use Loop 18's active-channel interpolation as the current O10 form:
+  \(D=4+n_c+n_{\rm ew}\), \(n_c=4\), \(n_{\rm ew}:3\to2\to1\), with a
+  geometric \(D=9\) \(U(1)\) endpoint and a top-sector source-map target.
 
 ## Completed in latest pass
 
@@ -55,6 +69,14 @@
   endpoint coupling, Appendix E's branch-to-coupling diagram, a
   negative-branch cross-reference, parent/prTalks alpha-route source notes, and
   `notes/lean/AlphaEndpoint.lean`.
+- Added Loop 17 normalization: Appendix D Target VIII for Regge-intercept
+  survival, dual-model route text, KK Schur route text, parent/prTalks source
+  notes, and `notes/lean/ReggeHigherBranch.lean`.
+- Added Loop 18 normalization: factorized active-channel diagram in Appendix E,
+  geometric \(D=9\) \(U(1)\) endpoint status, joint source datum
+  \(u\mapsto(t_{\rm dim},t_{\rm EW},\mathcal F_{\rm sc},\mathcal Y_{\rm top})\),
+  top-sector theorem target, parent-root inventory refresh, and Loop 18 review
+  reports.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.

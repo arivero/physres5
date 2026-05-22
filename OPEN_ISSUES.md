@@ -397,7 +397,7 @@ are compared.
 
 **Local source trail.** The closest local ChatGPT/source note is `/home/codexssh/phys3/sources/unbroken_susy.md`, Section V, lines 69--71. It records the claim that D=11 lacks the required electroweak chirality and that electroweak \(SU(2)\times U(1)\) interpolates, under a W-mass deformation, between descriptions labeled d=9 and D=11. Witten's KK fragments give the primary source trail: `context/source_fragments/witten1981/pages_001-010.md` states the seven-extra-dimensional minimum for \(SU(3)\times SU(2)\times U(1)\), and `context/source_fragments/witten1981/pages_011-017.md` states the associated fermion quantum-number obstruction. The same Witten fragment contains the \(SU(3)\times U(1)\) symmetry address around the five-dimensional sphere construction.
 
-**Current working idea.** Treat this as a source-audit and reconstruction task. The massless-Higgs or unbroken-electroweak limit carries the full \(SU(3)\times SU(2)\times U(1)\) symmetry and belongs to Witten's seven-extra-dimensional KK setting, hence total \(D=11\). The formal infinite-Higgs or infinitely broken limit leaves \(SU(3)\times U(1)_{\rm em}\) and belongs to a five-extra-dimensional KK setting, hence total \(D=9\). The working DeVries construction should be tested as an internal six-dimensional interpolation between those endpoints, hence total \(D=10\). In this form the model may avoid Witten's seven-dimensional fermion obstruction because its physical interior point carries six extra dimensions and the Witten obstruction applies to the seven-extra-dimensional unbroken compactification.
+**Current working idea.** Treat this as a source-audit and reconstruction task. The unbroken electroweak endpoint \(v=0\) carries the full \(SU(3)\times SU(2)\times U(1)\) symmetry and belongs to Witten's seven-extra-dimensional KK setting, hence total \(D=11\). The formal heavy-\(W/Z\) decoupling endpoint leaves a five-extra-dimensional \(SU(3)\times U(1)\) geometric address, hence total \(D=9\). The \(U(1)_{\rm em}\) identification requires an embedding theorem, generator normalization, and charge lattice. The working DeVries construction should be tested as an internal six-dimensional interpolation between those endpoints, hence total \(D=10\). Promotion beyond conjecture requires a six-dimensional chirality, anomaly, and light-spectrum account, together with an explicit relation to Witten's seven-dimensional fermion obstruction.
 
 **Colourless electroweak count.** If colour is treated as an external spectator sector, the corresponding count is
 \[
@@ -413,8 +413,8 @@ This gives the total-dimensional chain \(D=7\to D=6\to D=5\). The middle \(D=6\)
 
 **Required reconstruction.**
 
-1. Define the seven-extra-dimensional endpoint: field content, \(SU(3)\times SU(2)\times U(1)\) symmetry, Witten fermion obstruction, and massless-Higgs or unbroken-electroweak limit.
-2. Define the five-extra-dimensional endpoint: \(SU(3)\times U(1)_{\rm em}\), compact-space candidate, fermion statement, and infinite-Higgs or infinitely broken limit.
+1. Define the seven-extra-dimensional endpoint: field content, \(SU(3)\times SU(2)\times U(1)\) symmetry, Witten fermion obstruction, and unbroken electroweak endpoint.
+2. Define the five-extra-dimensional endpoint: \(SU(3)\times U(1)\) geometric address, compact-space candidate, fermion statement, formal heavy-\(W/Z\) decoupling endpoint, and electromagnetic embedding theorem.
 3. Define the six-extra-dimensional interior model: gauge group, scalar/order-parameter variable, compactification data, and relation to Witten's seven-dimensional fermion obstruction.
 4. State the interpolation parameter in the gauge-Higgs Lagrangian, boundary condition, or compactification data.
 5. Relate the interpolation to the current DeVries branch language, especially the role of \(x_-(J)\) as a possible scalar/order-parameter datum.
@@ -428,7 +428,7 @@ n_{\rm KK}=7:\ SU(3)\times SU(2)\times U(1),
 \qquad
 n_{\rm KK}=6:\ \hbox{DeVries interpolation sector},
 \qquad
-n_{\rm KK}=5:\ SU(3)\times U(1)_{\rm em},
+n_{\rm KK}=5:\ SU(3)\times U(1)_{\rm geom},
 \]
 plus the colourless electroweak dictionary
 \[
@@ -493,6 +493,28 @@ or a joint source variable \(u\mapsto(t_{\rm dim}(u),t_{\rm EW}(u))\).  A
 dimensional family may still be useful when it derives a compactification
 sector or a kernel, but control of the electroweak ray and pole ratio requires
 this additional map.
+
+**Loop 18 active-channel refinement.** Appendix E now rewrites the dimensional
+claim as a factorized active-channel target
+\[
+D=4+n_c+n_{\rm ew},\qquad n_c=4,\qquad n_{\rm ew}:3\to2\to1.
+\]
+The source datum is strengthened to
+\[
+u\mapsto
+\big(t_{\rm dim}(u),t_{\rm EW}(u),
+\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
+\]
+Thus the same source variable must control the compact or boundary channel,
+the electroweak ray, the negative-branch scalar functional, and any top-sector
+Yukawa or boundary datum.  Witten's \(SU(3)\times U(1)\) five-sphere address is
+kept geometric until the electromagnetic embedding theorem supplies
+normalization and charge data.  The top entry is recorded as a theorem target:
+\[
+\mathcal Y_{\rm top}(u_\star)\to y_t,\qquad
+m_t=y_t v/\sqrt2,\qquad
+\Pi^{(t)}_{VV}(s;u_\star).
+\]
 
 ## O11. Adjacent `prTalks` source-note validation
 

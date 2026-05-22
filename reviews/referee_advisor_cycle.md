@@ -53,6 +53,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 15 | 5 | 5 | 5 | 5 | 5 | Demoted Casimir framing to input status, added audit-derived admissibility filters, recorded Wigner--Eckart as a failed tested subroute, and tightened SO(32) flavor/string boundary obligations. |
 | 16 | 5 | 5 | 5 | 5 | 5 | Normalized O17 into an electromagnetic endpoint theorem target, added scalar/vector and \(U(1)_{\rm em}\) matching obligations, and recorded parent/prTalks source provenance for the alpha route. |
 | 17 | 5 | 5 | 5 | 5 | 5 | Normalized O18 into a Regge-intercept survival target, separated sector and oscillator labels, and moved higher-slot phenomenology into a source-audited assignment ledger. |
+| 18 | 5 | 5 | 5 | 5 | 5 | Normalized O10 as a factorized active-channel interpolation, demoted the \(D=9\) endpoint to a geometric \(U(1)\) until the electromagnetic embedding theorem, and added a top-sector source-map target. |
 
 ## Scoring rubric
 
@@ -90,3 +91,9 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
   distinct enough for a string/KK referee?
 - Which primary experimental and phenomenology sources are required before a
   low-mass diphoton or charge-\(4/3\) reading can enter manuscript prose?
+- Does the factorized active-channel diagram make the \(D=11/10/9\) and
+  colourless \(D=7/6/5\) stories read as one theorem target?
+- What source or calculation can decide whether the \(D=9\) geometric
+  \(U(1)\) has Standard Model electromagnetic normalization?
+- Can the interval route produce a common source variable
+  \(u\mapsto(t_{\rm dim},t_{\rm EW},\mathcal F_{\rm sc},\mathcal Y_{\rm top})\)?

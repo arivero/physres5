@@ -127,6 +127,13 @@ dimension parameterization,
 The manuscript should treat this as a reconstruction target.  A primary-source
 version must define the compact geometry, its gauge symmetry, the chiral
 fermion account, and the vector-scalar Laplacian that produces \(D_T\).
+Loop 18 rewrites the same content as a factorized active-channel target:
+\[
+  D=4+n_c+n_{\rm ew},\qquad n_c=4,\qquad n_{\rm ew}:3\to2\to1.
+\]
+The endpoint \(n_{\rm ew}=1\) remains a geometric \(U(1)\) address until a
+source theorem supplies electromagnetic embedding, generator normalization, and
+charge lattice.
 
 ### Electromagnetic endpoint coupling
 
@@ -188,6 +195,14 @@ phase the valid content is the obligation:
 through a gauge-invariant scalar functional, Yukawa-sector functional, or
 boundary/compactification datum.  Numerical proximity claims stay outside the
 conceptual manuscript pass.
+Loop 18 sharpens the top side into a source-map target:
+\[
+  u\mapsto
+  \big(t_{\rm dim}(u),t_{\rm EW}(u),
+  \mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big),
+  \qquad
+  \mathcal Y_{\rm top}(u_\star)\to y_t,m_t,\Pi^{(t)}_{VV}.
+\]
 
 ## Source-upgrade queue
 

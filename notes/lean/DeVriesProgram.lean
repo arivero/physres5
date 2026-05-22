@@ -292,9 +292,9 @@ def negativeBranchScalarTarget (S : SourceTheory) : TheoremTarget :=
    Local source trail: /home/codexssh/phys3/sources/unbroken_susy.md,
    Section V, lines 69--71, plus Witten 1981 fragments. The full-gauge target is
    total D=11/10/9 with internal KK=7/6/5:
-     nKK=7: SU(3) x SU(2) x U(1), massless-Higgs/unbroken endpoint;
+     nKK=7: SU(3) x SU(2) x U(1), unbroken electroweak endpoint;
      nKK=6: DeVries interior sector;
-     nKK=5: SU(3) x U(1)_em, infinitely broken endpoint.
+     nKK=5: SU(3) x U(1)_geom, formal heavy-W/Z decoupling endpoint.
    The colourless electroweak target is total D=7/6/5 with internal KK=3/2/1.
    This remains source-audit pending before manuscript use. -/
 inductive DimensionalEndpoint where
@@ -302,10 +302,18 @@ inductive DimensionalEndpoint where
   | kk6
   | kk7
 
+structure JointDimensionalSource where
+  sourceParameter : Type
+  dimensionalCoordinate : Prop
+  electroweakRayCoordinate : Prop
+  scalarBranchFunctional : Prop
+  topSectorYukawaDatum : Prop
+  electromagneticEmbeddingDatum : Prop
+
 structure HiggsInterpolationProblem where
-  masslessHiggsEndpoint : DimensionalEndpoint
+  unbrokenElectroweakEndpoint : DimensionalEndpoint
   devriesInterior : DimensionalEndpoint
-  infiniteBreakingEndpoint : DimensionalEndpoint
+  heavyVectorDecouplingEndpoint : DimensionalEndpoint
   controlParameter : Type
   colourInclusiveCount : Prop
   electroweakOnlyCount : Prop
@@ -319,6 +327,11 @@ structure HiggsInterpolationProblem where
   electroweakRayParameterDistinct : Prop
   dimensionalParameterDistinct : Prop
   dimensionalToElectroweakMap : Prop
+  jointSource : JointDimensionalSource
+  geometricU1Endpoint : Prop
+  electromagneticEmbeddingTheorem : Prop
+  topYukawaMap : Prop
+  topSelfEnergyAccount : Prop
 
 def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
   P.colourInclusiveCount ∧
@@ -332,7 +345,15 @@ def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
   P.topQuarkScaleAccount ∧
   P.electroweakRayParameterDistinct ∧
   P.dimensionalParameterDistinct ∧
-  P.dimensionalToElectroweakMap
+  P.dimensionalToElectroweakMap ∧
+  P.jointSource.dimensionalCoordinate ∧
+  P.jointSource.electroweakRayCoordinate ∧
+  P.jointSource.scalarBranchFunctional ∧
+  P.jointSource.topSectorYukawaDatum ∧
+  P.geometricU1Endpoint ∧
+  P.electromagneticEmbeddingTheorem ∧
+  P.topYukawaMap ∧
+  P.topSelfEnergyAccount
 
 /- Obligation:
    Define the KK7 and KK5 endpoints, identify the six-dimensional interior
@@ -343,7 +364,10 @@ def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
    explained by the same interpolation. Round 2 adds the Schur-complement
    account and the pole-matching account as required fields. Loop 13 separates
    the electroweak ray parameter from the dimensional parameter until a source
-   map relates them. -/
+   map relates them. Loop 18 replaces the endpoint U(1)_em label by a
+   geometric U(1) endpoint until an embedding theorem supplies charge
+   normalization, and requires one source variable carrying dimensional,
+   electroweak, scalar-branch, and top-Yukawa data. -/
 axiom higgs_KK7_KK6_KK5_interpolation_requires_source_audit :
   ∃ P : HiggsInterpolationProblem, higgsSectorInterpolatesKK7KK6KK5 P
 

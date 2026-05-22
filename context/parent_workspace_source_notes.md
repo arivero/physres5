@@ -49,6 +49,19 @@ downloaded papers before they enter manuscript prose as cited physics.
 | `../recap/` | excluded for current manuscript claims | Mostly Koide and fermion mass material.  Use only after a future flavor-specific source audit. |
 | `../orbits/` | excluded for current manuscript claims | Navigation/orbit notes read as outside the current electroweak string/KK manuscript. |
 
+## Loop 18 parent-root inventory refresh
+
+The command-level parent read refreshed the broad `..` map while excluding
+credential, cache, editor, package, and generated-runtime directories from
+manuscript use.  The relevant physics clusters remain `../prTalks`,
+`../phys3`, `../phys4`, `../physres6`, `../hans/signed_dbdevries`,
+`../signed-dv-custodial-project`, `../weak`, `../dualsm`, and `../recap`.
+For the current O10 pass, the active imports are the dimensional-interpolation
+provenance in `../phys3`, the already indexed `../prTalks` effective-dimension
+and top/negative-branch notes, and the sibling `../physres6` alpha and
+higher-slot provenance.  The remaining parent folders are triage queues until
+a focused issue opens them.
+
 ## Promoted obligations
 
 ### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit

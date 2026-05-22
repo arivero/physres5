@@ -93,6 +93,20 @@ axiom targetX_obligation :
   forall {j : J}, TargetX j ->
     "Q_red,j = Q_dR,j + diag(0,-J)" = "Q_red,j = Q_dR,j + diag(0,-J)"
 
+structure O20ClosureStatus where
+  targetXRecorded : Prop
+  hodgeSquareRootTemplateRecorded : Prop
+  breakingOperatorRequirementRecorded : Prop
+  superconnectionArenaRecorded : Prop
+  residualDerivationsRoutedToTargetX : Prop
+
+def o20ClosedAsHodgeLedger (C : O20ClosureStatus) : Prop :=
+  C.targetXRecorded ∧
+  C.hodgeSquareRootTemplateRecorded ∧
+  C.breakingOperatorRequirementRecorded ∧
+  C.superconnectionArenaRecorded ∧
+  C.residualDerivationsRoutedToTargetX
+
 /- Open obligations:
 1. derive the spectrum label J from a compact, interval, or local G2 operator;
 2. show the normalized 0/1-form pair survives the finite projection;

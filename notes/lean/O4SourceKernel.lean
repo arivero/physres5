@@ -256,4 +256,20 @@ def loop42ActiveProofSpineReady (S : Loop42ActiveProofSpine) : Prop :=
 axiom loop42_active_proof_spine_obligation :
   ∃ S : Loop42ActiveProofSpine, loop42ActiveProofSpineReady S
 
+structure O4ClosureStatus where
+  targetIIIEntryLedgerRecorded : Prop
+  chmCurrentEntryProtocolRecorded : Prop
+  g2CurrentAndFlowTargetsRecorded : Prop
+  endpointArenaRecorded : Prop
+  scIntPackageRecorded : Prop
+  residualDerivationsRoutedToTargets : Prop
+
+def o4ClosedAsSourceKernelLedger (C : O4ClosureStatus) : Prop :=
+  C.targetIIIEntryLedgerRecorded ∧
+  C.chmCurrentEntryProtocolRecorded ∧
+  C.g2CurrentAndFlowTargetsRecorded ∧
+  C.endpointArenaRecorded ∧
+  C.scIntPackageRecorded ∧
+  C.residualDerivationsRoutedToTargets
+
 end DeVries.O4SourceKernel

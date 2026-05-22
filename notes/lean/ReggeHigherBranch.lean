@@ -134,4 +134,18 @@ def o18ClosedAsBookkeeping (C : O18ClosureStatus) : Prop :=
   C.colliderLedgerQuarantined ∧
   C.residualDerivationsRoutedToOpenTargets
 
+structure O19ClosureStatus where
+  targetIXScalingTableRecorded : Prop
+  axisMapRequirementRecorded : Prop
+  dualityRequirementsRecorded : Prop
+  diagnosticLabelsQuarantined : Prop
+  residualDerivationsRoutedToTargetIX : Prop
+
+def o19ClosedAsBranchScalingLedger (C : O19ClosureStatus) : Prop :=
+  C.targetIXScalingTableRecorded ∧
+  C.axisMapRequirementRecorded ∧
+  C.dualityRequirementsRecorded ∧
+  C.diagnosticLabelsQuarantined ∧
+  C.residualDerivationsRoutedToTargetIX
+
 end DeVries.ReggeHigherBranch

@@ -241,6 +241,20 @@ def poleSelfEnergyMatchingTheorem (M : PoleSelfEnergyMatching) : Prop :=
 axiom pole_self_energy_matching_required :
   ∃ M : PoleSelfEnergyMatching, poleSelfEnergyMatchingTheorem M
 
+structure O8ClosureStatus where
+  poleObservableRecorded : Prop
+  schemeSeparationRecorded : Prop
+  selfEnergyMatchingChainRecorded : Prop
+  highScaleBoundaryClassified : Prop
+  remainderRoutedToTargetI : Prop
+
+def o8ClosedAsPolePlacementLedger (C : O8ClosureStatus) : Prop :=
+  C.poleObservableRecorded ∧
+  C.schemeSeparationRecorded ∧
+  C.selfEnergyMatchingChainRecorded ∧
+  C.highScaleBoundaryClassified ∧
+  C.remainderRoutedToTargetI
+
 /- Loop 12 Target 0:
    One theorem should carry the source description to pole data in a single
    field basis.  The endpoint, interval, and G2 routes are accepted only after

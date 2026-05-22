@@ -104,6 +104,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 49 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O17 as a present nonprediction claim, stated that \(\alpha\) remains a Standard Model input, preserved Target VII as a future corollary ledger, and recorded the source basis for the closure audit. |
 | 50 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O10 as a dimensional-interpolation architecture issue, moved the source-status dictionary to the closed ledger, added Target VI residual routing, and preserved source derivations under narrower theorem targets. |
 | 51 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O18 as a Regge higher-slot bookkeeping issue, moved the \(j=3/2\) slot to the closed ledger, added the Target VIII assignment filter, and preserved residual derivations under O1/O4/O8/O19/Target VIII. |
+| 52 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O4/O19/O20 as coordinated source-route ledgers, then closed O8 as the highest extant open O-number, leaving O1/O2b/O3 as the remaining open issues. |
 
 ## Scoring rubric
 

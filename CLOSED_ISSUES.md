@@ -88,9 +88,10 @@ M_\gamma^2(t)=0.
 Appendix~D Target~IIa records the same ray as an admissibility theorem and
 lists the failure modes for source routes.
 
-**Residual target.** O1, O4, O8, and Appendix~D Target~VI still have to derive
-a source route whose ordered assignment, kernel, scale placement, and
-dimensional variables commute with this ray.
+**Residual target.** O1, Appendix~D Target~0, Appendix~D Target~I,
+Appendix~D Target~III, and Appendix~D Target~VI still have to derive a source
+route whose ordered assignment, kernel, scale placement, and dimensional
+variables commute with this ray.
 
 ## O6. Flavor Boundary
 
@@ -182,10 +183,11 @@ mirrors these data as a maintained theorem target.
 
 **Residual target.** O10 is closed as a manuscript-architecture and
 source-status issue.  The source derivations remain open in the narrower
-targets: O1 for ordered W/Z sampling, O3 for the negative branch, O4 for the
-source kernel, O8 for pole placement, O17/Target~VII for electromagnetic
-endpoint normalization, O20/Target~X for the Hodge or superconnection origin,
-and Appendix~D Target~VI for the dimensional source package.
+targets: O1 for ordered W/Z sampling, O3 for the negative branch,
+Target~0 and Target~III for the source kernel, Target~I for pole placement,
+O17/Target~VII for electromagnetic endpoint normalization, Target~X for the
+Hodge or superconnection origin, and Appendix~D Target~VI for the dimensional
+source package.
 
 ## O11. Adjacent `prTalks` Source-Note Validation
 
@@ -200,8 +202,8 @@ negative-branch, and top-sector obligations in Lean-style notes.
 
 **Residual target.** Manuscript uses of prTalks-derived material require
 primary local literature or an explicit project-source label.  The active
-physics obligations remain in O1, O19, O20, Appendix~D Target~VI, and
-Appendix~D Target~VIII.
+physics obligations remain in O1, O3, Appendix~D Target~VI,
+Appendix~D Target~VIII, Appendix~D Target~IX, and Appendix~D Target~X.
 
 ## O12. Parent-Workspace Source-Note Validation
 
@@ -217,8 +219,9 @@ custodial, string/Regge, SO(32), and dimensional-interpolation guardrails.
 
 **Residual target.** Parent-derived manuscript claims require primary-source
 support or explicit project-source status.  The residual physics obligations
-remain in O1, O3, O4, O19, O20, Appendix~D Target~VI, and Appendix~D
-Target~VIII.
+remain in O1, O3, Appendix~D Target~0, Appendix~D Target~III,
+Appendix~D Target~VI, Appendix~D Target~VIII, Appendix~D Target~IX, and
+Appendix~D Target~X.
 
 ## O16. SO(32) Flavor/String Completion Boundary
 
@@ -297,7 +300,138 @@ theory.
 
 **Residual target.** O18 is closed as a manuscript-architecture and
 bookkeeping issue.  The derivations remain active in narrower targets: O1 for
-the ordered low-sector W/Z sampling, O4 for the source kernel and common slope,
-O8 for pole placement and matching, O19 for the brane-scaling and
-boundary-duality test, and Appendix~D Target~VIII for the \(j=3/2\) particle
-assignment and future upgrades of the Regge source package.
+the ordered low-sector W/Z sampling, Target~0 and Target~III for the source
+kernel and common slope, Target~I for pole placement and matching, Target~IX
+for the brane-scaling and boundary-duality test, and Appendix~D Target~VIII
+for the \(j=3/2\) particle assignment and future upgrades of the Regge source
+package.
+
+## O4. Dynamical derivation from string/brane/Regge data
+
+**Closed in Loop 52.**
+
+**Closure evidence.** Section~VI.G and Appendix~D Target~III now give a
+maintained source-kernel ledger for every active route.  The common target is
+\[
+K_{J,r}(\lambda)=
+\begin{pmatrix}
+\lambda+\Sigma_{hh,J}^{r} & \Sigma_{ha,J}^{r}\\
+\Sigma_{ah,J}^{r} & \lambda+\Sigma_{aa,J}^{r}
+\end{pmatrix},
+\qquad
+\Sigma_{hh,J}^{r}=0,\quad
+\Sigma_{aa,J}^{r}=J,\quad
+\Sigma_{ha,J}^{r}\Sigma_{ah,J}^{r}=J,
+\]
+with \(r\) an endpoint, interval, \(G_2\), Regge, or Hodge/SUSY-QM route.  The
+ledger records the CHM hatted current-entry protocol, the \(G_2\) ADE-pairing
+and flow-overlap tests, the endpoint/Chan--Paton matrix arena, and the shared
+boundary-superconnection interval package
+\[
+\widehat K_J^{\rm sc/int}
+=
+\Lambda_J^{-2}P_{\rm sc}^\dagger
+\big[
+K_T^{\rm DtN}+K_T^{\rm brane}
++\langle\mathcal F_{\rm sc},\mathcal F_{\rm sc}\rangle_{\rm sc}
+-K_\gamma^{\rm ref}
+\big]P_{\rm sc}.
+\]
+
+**Residual target.** O4 is closed as a route-architecture and theorem-target
+ledger.  The physical derivation remains distributed across O1 for ordered W/Z
+sampling, O3 for the scalar partner, Target~0 and Target~III for source-kernel
+entry derivations, Target~I for pole matching, Target~VI for the dimensional
+source package, Target~X for the Hodge/superconnection reduced basis, and
+global-form completion checks.
+
+## O8. Pole placement versus high-scale placement
+
+**Closed in Loop 52.**
+
+**Closure evidence.** Section~III and Appendix~D Target~I define the pole
+observable and the route-matching chain.  The comparison uses
+\[
+\sPole=1-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2},
+\]
+with common line-shape inputs translated into the same complex-pole convention
+before the ratio is formed.  Target~I states the source-to-pole chain
+\[
+\mathcal S
+\longrightarrow
+K_J^{\rm bare}(\lambda)
+\longrightarrow
+\Gamma_{\rm eff}[H,W,B]
+\longrightarrow
+\Delta^{-1}_{V,T}(s)\big|_{s=s_{W,Z}},
+\]
+and the matched quotient
+\[
+\sPole
+=
+1-\frac{x_+(J_H)}{x_+(J_{\rm adj})}
++\Delta_{\rm match}.
+\]
+High-scale, compactification-scale, running, and effective-angle readings are
+therefore separate boundary-data problems with their own running, threshold,
+and scheme maps.
+
+**Residual target.** O8 is closed as a scheme and scale-placement ledger.  A
+later source route still has to compute \(\Delta_{\rm match}\) in Target~I,
+derive the ordered samples in O1, and supply current W/Z input auditing in O2b.
+
+## O19. Brane-scaling identity of the two branches
+
+**Closed in Loop 52.**
+
+**Closure evidence.** Section~VI.B and Appendix~D Target~IX now state the
+branch-scaling admissibility test in terms of the shared Regge/D-brane package
+\(\mathfrak R_j\) and the axis map
+\[
+\chi_{\rm spin}:\ j\mapsto s_{\rm br}(j),
+\qquad
+J_{\rm br}=s_{\rm br}(s_{\rm br}+1).
+\]
+With a source-supplied mass reading, the algebraic diagnostic is
+\[
+x_+(J_{\rm br})=1+O(s_{\rm br}^{-2}),\qquad
+|x_-(J_{\rm br})|=s_{\rm br}(s_{\rm br}+1)+O(1).
+\]
+The D0 and space-filling labels are recorded as admissibility diagnostics.
+A literal T-duality reading still requires a compact coordinate, a
+Neumann--Dirichlet boundary-condition map, charge matching, tension matching,
+and a negative-branch mass or scalar-functional reading.
+
+**Residual target.** O19 is closed as a branch-scaling and brane-duality
+bookkeeping issue.  Future physical use remains inside Target~IX, tied to
+Target~VIII for \(\mathfrak R_j\), O3 for the negative-branch reading, and
+global-form or boundary-condition data for a concrete completion.
+
+## O20. The operator as a broken N=2 supersymmetric quantum mechanics
+
+**Closed in Loop 52.**
+
+**Closure evidence.** Appendix~D Target~X and Section~VI.G now state the
+Hodge/SUSY-QM theorem target.  The de Rham/Hodge template supplies the
+square-root entry
+\[
+D_Je^0_J=\sqrt J\,e^1_J,\qquad
+D_J^\dagger e^1_J=\sqrt J\,e^0_J,
+\]
+and the projected operator target is
+\[
+Q_{{\rm red},J}
+=
+Q_{{\rm dR},J}+B_J,\qquad
+B_J=
+\begin{pmatrix}0&0\\0&-J\end{pmatrix}.
+\]
+Witten supplies the de Rham/SUSY-QM and Witten-deformation source equations;
+Coquereaux supplies the finite electroweak superconnection arena; CHM supplies
+the interval boundary kernels and photon-zero bookkeeping used by the shared
+sc/int package.
+
+**Residual target.** O20 is closed as a Hodge/superconnection route ledger.
+Target~X remains the maintained acceptance target for the finite projection,
+the source of \(J\), the breaking operator \(B_J\), extra-channel decoupling,
+ordered electroweak samples, scalar partner, and pole-map compatibility.

@@ -127,6 +127,25 @@ and pole-remainder test.  O1 stays open because \(P_W\), \(P_Z\), \(P_\gamma\),
 \(\Lambda_J\), \(\widehat K_J\), and \(\Delta_{\rm O1/O10}\) still require a
 source derivation.
 
+**Loop 39 Coquereaux audit.** The local Coquereaux source records a finite
+electroweak superconnection arena: odd matrices \(\Omega_\pm,\Omega'_\pm\),
+even generators \(I_3,Y,Q\), a generalized connection with gauge one-forms and
+scalar zero-forms, and curvature
+\(\mathcal F_{\rm Coq}=d\mathcal A_{\rm Coq}+
+\mathcal A_{\rm Coq}\odot\mathcal A_{\rm Coq}\).  Rendered pages 70--76 record
+the \(U(1)\times U(1)\) connection, the graded product and curvature, the
+source-internal \(Z/P\) rotation, the \(SU(2|1)\) lepton and quark matrices,
+and the extended-family \(3/8\) weak-angle value.  O1 can use this as finite
+gauge-Higgs algebra.  The scalar-product freedoms set a normalization
+obligation.  The O1 closure package requires
+\[
+\mathcal A_{\rm Coq}\mapsto
+\left(P_{\rm sc},\langle\cdot,\cdot\rangle_{\rm sc},
+P_W,P_Z,P_\gamma,\Delta_{\rm O1}\right)
+\]
+with \(P_W(h_J)=3/4\), \(P_Z(a_J^{\gamma^\perp})=2\), photon subtraction, and
+complex-pole matching derived in one source ledger.
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
@@ -158,7 +177,7 @@ mass dimension, and pole-vs-potential status, connecting \(x_-(J_\star)\) to
 \(\mu_H^2\), \(\lambda v^2\), \(v\), a Higgs pole observable, a Wilson-line
 curvature, a boundary modulus, or a compactification eigenvalue.
 
-**Latest refinement.** Sec. V now treats the negative branch as a scalar-functional theorem target:
+**Loop 39 scalar-functional target.** Sec. V treats the negative branch as a scalar-functional theorem target:
 \[
 \mathcal F_{\rm sc}
 =
@@ -1190,6 +1209,24 @@ mechanisms are a boundary/self-adjoint-extension term or a superconnection
 curvature term, with a common inner product, fixed sign convention, absence of
 extra light modes, \(J=\lambda_J=s(s+1)\), and compatibility with O1/O3 and the
 pole-mass chain.
+
+**Loop 39 Coquereaux projection refinement.** The candidate superconnection
+route is the graded-curvature projection
+\[
+P_{\rm sc}^\dagger
+\langle\mathcal F_{\rm Coq},\mathcal F_{\rm Coq}\rangle_{\rm sc}
+P_{\rm sc}
+=
+\begin{pmatrix}
+\lambda&-\sqrt J\\
+-\sqrt J&\lambda+J
+\end{pmatrix}
++\Delta_{\rm sc}^{\rm op}(\lambda).
+\]
+Coquereaux supplies the \(\mathbb Z_2\)-graded finite matrix arena and the
+electroweak odd/even vocabulary.  The projection \(P_{\rm sc}\), the common
+inner product, \(J=s(s+1)\), \(B_J\), extra-channel decoupling, the
+negative-branch scalar map, and complex-pole matching remain O20 theorem data.
 
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

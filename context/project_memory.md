@@ -235,6 +235,20 @@
   \(B_J=\operatorname{diag}(0,-J)\), the common finite basis, the ordered
   electroweak samples, and the pole-chain map remain open.  Coquereaux's
   generalized-connection matrix and curvature terms are the next O20 audit.
+- Loop 39 tightens the Coquereaux audit.  Rendered pages 70--76 of the local
+  Coquereaux talk support the finite \(SU(2|1)\) gauge-Higgs arena,
+  \(\Omega\)-matrix odd/even grading, generalized curvature, scalar-product
+  freedoms, source-internal weak-angle values, and the extended-family \(3/8\)
+  value.  The manuscript now states the explicit graded-curvature projection
+  target
+  \(P_{\rm sc}^\dagger\langle\mathcal F_{\rm Coq},\mathcal F_{\rm Coq}\rangle
+  P_{\rm sc}\to\begin{psmallmatrix}\lambda&-\sqrt J\\-\sqrt J&\lambda+J\end{psmallmatrix}\).
+  The detailed IJMP/PLB/Phys. Rep. superconnection sources are acquisition
+  targets.  The extra random note review inspected `DeVriesProgram.lean`, Logan
+  Higgs pages 21--30, Fayet pages 1--10, Salam--Strathdee pages 11--20, and Tong
+  string pages 31--40.  The recorded consequences are scalar-observable
+  scheme control, BEH/Z partner vocabulary, KK \(H\)-representation selection,
+  and constrained transverse string modes.
 
 ## Resume state after context renewal
 
@@ -244,7 +258,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 98 pages after the Loop 37 `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 99 pages after the Loop 39 `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.

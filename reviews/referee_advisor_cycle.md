@@ -79,6 +79,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 36 | 5 | 5 | 5 | 5 | 5 | Tightened O18/O19 into a shared sector-duality package \(\mathfrak R_j\), separating DeVries sector label, oscillator level, physical spin, and putative brane angular momentum, with D0/space-filling labels demoted to admissibility diagnostics. |
 | 37 | 5 | 5 | 5 | 5 | 5 | Removed remaining loop/provenance language from O1/O10 body passages, added the CHM single-source interval theorem diagram, and tied dimensional interpolation to manuscript-facing sources. |
 | 38 | 5 | 5 | 5 | 5 | 5 | Tightened O20 into a source-equation target: rendered Witten pages 665--666 support the Hodge square-root template, while the one-channel \(B_J\), ordered electroweak samples, and pole-chain map remain explicit theorem data. |
+| 39 | 5 | 5 | 5 | 5 | 5 | Tightened the Coquereaux O1/O20 audit into a graded-curvature projection target, recorded source-internal normalization freedoms and the \(3/8\) weak-angle value, and queued detailed superconnection sources for acquisition. |
 
 ## Scoring rubric
 

@@ -427,6 +427,15 @@
   connection and curvature matrix, searching for a common finite basis that
   supplies \(P_{\rm sc}\), \(B_J=\operatorname{diag}(0,-J)\), \(P_W\), \(P_Z\),
   the negative-branch scalar map, and the pole remainder.
+- Loop 39 O1/O20 next step: acquire and fragment the detailed superconnection
+  sources found by web search: Coquereaux--Esposito-Farèse--Scheck,
+  "An \(SU(2|1)\) theory of electroweak interactions described by algebraic
+  superconnections," IJMP A 7 (1992) 6555--6593;
+  Häußling--Papadopoulos--Scheck, Phys. Lett. B 260 (1991)
+  125--130; and Ne'eman--Fairlie--Sternberg, Phys. Rep. 406 (2005) 303--377.
+  The local Coquereaux talk already supports the finite graded-curvature arena;
+  the detailed sources are needed for matrix, curvature, trace-normalization,
+  and renormalization caveats.
 - Loop 32 O3 next step: test the interval gauge-Higgs/Hosotani scalar package
   by deriving, or rejecting, a common source datum
   \[

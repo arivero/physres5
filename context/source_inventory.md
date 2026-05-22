@@ -70,11 +70,22 @@ PRD phase.
 - `08_AlvarezGaume_VazquezMozo_Field_Theory_and_Standard_Model_2306.08097.pdf` — symmetry-oriented Standard Model and electroweak discussion.
 - `18_Dawson_EWSB_and_EFT_TASI_1712.07232.pdf` — electroweak symmetry breaking, Higgs physics, EFT, precision constraints.
 - `19_Logan_Higgs_Physics_TASI_1406.1786.pdf` — detailed Higgs mechanism, W/Z masses, fermion masses, custodial symmetry.
+  - Loop 39 random note review read pages 21--30.  The fragment records
+    off-shell \(h\to W W^*, Z Z^*\) decay treatment, loop-induced
+    \(h\to \gamma\gamma,gg,Z\gamma\) channels, W and top loop roles, and the
+    effective-operator form \(hF_{\mu\nu}F^{\mu\nu}\).  Manuscript consequence:
+    Higgs-sector scalar claims need a specified observable kind and scheme, and
+    top-loop/top-scale remarks require a source-theory statement.
 - `34_Martin_Robertson_SM_MSbar_1907.02500.pdf` — Standard Model parameters in pure MS scheme, VEV conventions, pole/on-shell relations, SMDR code.
 
 ## Strings, CFT, Regge, and branes
 
 - `02_Tong_String_Theory_notes.pdf` — relativistic string, spectrum, Regge trajectories, D-branes, CFT, compactification, T-duality.
+  - Loop 39 random note review read pages 31--40.  The fragment records static
+    gauge, transverse string oscillations, left/right mode expansions, and
+    Virasoro-mode constraints \(L_n=\tilde L_n=0\).  Manuscript consequence:
+    any dual-model route for the radical needs a constrained transverse
+    oscillator or endpoint projection.
   - Loop 36 O18/O19 use: pages 61--70 support the open-string Regge template
     \(M^2=(N-1)/\alpha'\), \(J_{\max}=\alpha'M^2+1\); pages 191--210
     support D-brane endpoint charges, coincident-brane matrix gauge fields,
@@ -148,6 +159,12 @@ PRD phase.
 ## Standard Model global form and line operators
 
 - `06_Tong_Gauge_Theory_notes.pdf` — gauge dynamics, monopoles, line operators, Standard Model gauge group global form, anomalies, dualities.
+  - Loop 39 random recall read pages 71--80.  The fragment records
+    instanton collective coordinates, scale-size integration, running coupling,
+    the one-loop Yang--Mills beta function with \(C({\rm adj})\), and the
+    RG-invariant scale \(\Lambda_{\rm QCD}\).  Manuscript consequence for
+    O1/O20: classical source-internal superconnection normalizations and
+    pole-scheme matching belong to separate ledgers.
   - Loop 38 random recall read pages 171--180.  The fragment records Abelian
     anomaly constraints \(\sum_a Q_a^3=0\) and \(\sum_a Q_a=0\), the
     non-Abelian anomaly factor \(d^{abc}(R)=\operatorname{tr}T^a\{T^b,T^c\}\),
@@ -185,6 +202,11 @@ boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*
 - `42_Biekotter_95GeV_diphoton_excess_2306.03889.pdf` — the \(\sim95.4\) GeV diphoton excess as a collider-ledger source for Target VIII; any particle assignment remains a separate source-theory theorem.
 - `43_Jegerlehner_running_alpha_Adler_0807.4206.pdf` — running fine-structure constant \(\alpha(E)\) via the Adler function and hadronic vacuum polarization; source for the O17 scheme/running audit.
 - `44_Salam_Strathdee_On_Kaluza_Klein_Theory_IC-81-211.pdf` — Kaluza--Klein harmonic expansion on \(G/H\), zero-mode Yang--Mills reduction, and massive tower language. (ICTP preprint IC/81/211, the Annals Phys.\ 141 (1982) 316 paper.)
+  - Loop 39 random note review read pages 11--20.  The fragment records
+    harmonic expansion on \(G/H\), \(H\)-content selection, invariant
+    integration/orthogonality, and the zero-mode Yang--Mills vector reduction.
+    Manuscript consequence: the dimensional-interpolation route needs a stated
+    \(H\)-representation selection and a zero-mode projection map.
   - Loop 35 O17 use: source support for the photon-zero endpoint audit, where a compact generator \(\xi_{\rm em}\), charge lattice, generator normalization, compact metric, and threshold map must produce the four-dimensional electromagnetic kinetic normalization.
 - `45_Hosotani_Dynamical_Mass_Generation_Compact_Extra_Dimensions_PLB126_1983.pdf` — gauge-Higgs/Hosotani mechanism; order parameter from a compact gauge-field component and Wilson-line data.
 - `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.
@@ -216,6 +238,12 @@ are in `context/source_fragments/4[7-9]_*/` and
     terms; the DeVries \(B_J=\operatorname{diag}(0,-J)\) term remains a
     separate O20 theorem datum.
 - `48_Fayet_SUSY_SM_Higgs_Z_partner_1403.5951.pdf` — supersymmetric gauge/BEH source where spin-zero BEH fields appear in massive gauge multiplets with \(W\) and \(Z\) bosons; source for the electroweak partner-language caution in O20.
+  - Loop 39 random note review read pages 1--10.  The fragment records
+    electroweak breaking through spin-zero doublets, massive gauge multiplets,
+    the 125 GeV BEH boson as a possible spin-zero partner of \(Z\) up to
+    supersymmetry-breaking mixing, and compactification-scale comments.
+    Manuscript consequence: Fayet supplies partner vocabulary; the DeVries
+    operator needs its own finite projection and pole-matching theorem.
 - `49_Gates_Rana_Spinning_Particles_Large_N_SUSY_hep-th-9504025.pdf` — worldline \(N\)-extended supersymmetry and spinning-particle actions; source for spin/worldline vocabulary if the second-supercharge route is developed.
 - `50_Coquereaux_Algebraic_Superconnections_SU2_1_Electroweak_1992.pdf` — \(SU(2|1)\) algebraic superconnection formalism for electroweak symmetry breaking and Higgs fields as part of a generalized connection.
   - Loop 33 O1 use: supports generalized-connection grading vocabulary for a
@@ -225,3 +253,23 @@ are in `context/source_fragments/4[7-9]_*/` and
   - Loop 38 next audit: inspect the generalized-connection matrix and
     curvature terms for a possible source of \(P_{\rm sc}\), \(B_J\), and the
     ordered electroweak samples in one finite basis.
+  - Loop 39 rendered-page audit read pages 70--76.  Page 70 gives the
+    generalized connection \(\mathcal A\) with diagonal gauge one-forms and
+    off-diagonal scalar zero-forms.  Page 71 gives the graded product,
+    differential, curvature \(\mathcal F=d\mathcal A+\mathcal A\odot\mathcal A\),
+    and the curvature components.  Page 72 records scalar-product freedoms
+    \(r_0,r_1,r_2\), the symmetry-breaking potential, the massive \(L-R\)
+    gauge direction, and the source-internal \(Z/P\) rotation.  Pages 74--76
+    give the \(SU(2|1)\) lepton and quark \(\Omega\)-matrix representations,
+    branching rules, \(Z/P\) rotation, quark mixing-angle trace formula, and
+    extended-family \(3/8\) weak-angle value.  Manuscript consequence for
+    O1/O20: Coquereaux supplies finite gauge-Higgs algebra; the DeVries
+    projection, \(B_J\), pole quotient, and scalar branch remain theorem data.
+  - Source-upgrade targets for acquisition: Coquereaux--Esposito-Farèse--Scheck,
+    "An \(SU(2|1)\) theory of electroweak interactions described by algebraic
+    superconnections," Int. J. Mod. Phys. A 7 (1992) 6555--6593;
+    Häußling--Papadopoulos--Scheck,
+    "SU(2|1) symmetry, algebraic superconnections and a generalized theory of
+    electroweak interactions," Phys. Lett. B 260 (1991) 125--130; and
+    Ne'eman--Fairlie--Sternberg, "Superconnections for electroweak su(2/1) and
+    extensions, and the mass of the Higgs," Phys. Rep. 406 (2005) 303--377.

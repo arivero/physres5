@@ -15,6 +15,11 @@ constant InnerProduct : Type
 constant MatchingRemainder : Type
 constant BoundaryKernelCompatibility : Type
 constant AnomalyLedger : Type
+constant OmegaOdd : Type
+constant EvenAnticommutators : Type
+constant PhotonProjection : Type
+constant CoquereauxCurvature : Type
+constant CoquereauxNormalization : Type
 
 constant Phi_odd : OddHiggs
 constant F_even_gamma_perp : EvenCurrent
@@ -41,6 +46,17 @@ structure SuperconnectionReduction where
   chm_boundary_kernel_compatibility : BoundaryKernelCompatibility
   negative_branch_scalar_map_required : Prop
   matching_remainder_derived : Prop
+
+structure CoquereauxProjectionTarget where
+  omegaOdd : OmegaOdd
+  evenGenerators : EvenAnticommutators
+  curvature : CoquereauxCurvature
+  normalization : CoquereauxNormalization
+  photonProjection : PhotonProjection
+  odd_higgs_to_JH : Prop
+  even_current_to_Jadj : Prop
+  source_internal_weak_angle : String
+  pole_quotient_matching_required : Prop
 
 def O1SuperconnectionTarget (S : SuperconnectionReduction) : Prop :=
   S.same_complex_supplies_both_maps ∧
@@ -78,6 +94,9 @@ Acceptance test:
 9. derive or compute Delta_sc in the pole scheme;
 10. connect the negative eigenvector to a gauge-invariant scalar functional.
 11. attach an anomaly ledger for added gauge-Higgs or fermionic channels.
+12. audit Coquereaux's Omega matrices, even anticommutators, curvature norm,
+    scalar-product freedoms, and source-internal weak-angle value as
+    prerequisites for promoting the superconnection beyond an assignment arena.
 -/
 
 end DeVries.SuperconnectionAssignment

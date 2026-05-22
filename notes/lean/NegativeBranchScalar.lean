@@ -23,6 +23,7 @@ constant EffectivePotential : Type
 constant ObservableKind : Type
 constant BoundaryDatum : Type
 constant G2Datum : Type
+constant SuperconnectionDatum : Type
 
 structure SameSourceBranchPackage where
   u : SourceCoordinate
@@ -70,8 +71,16 @@ structure RouteIngredientLedger where
   endpointBoundaryScalar : BoundaryDatum
   intervalHolonomyOrRadion : BoundaryDatum
   g2Deformation : G2Datum
+  superconnectionOddScalar : SuperconnectionDatum
   deVriesMapDerived : Prop
   pdfFormulaChecksDone : Prop
+
+structure SuperconnectionScalarCompatibility where
+  oddScalar : SuperconnectionDatum
+  evenCurrentBasisShared : Prop
+  negativeEigenvectorFunctional : ScalarFunctional
+  samePoleMapAsVectorBranch : PoleMap
+  sourceInternalNormalizationSeparated : Prop
 
 def ledgerReadyForManuscriptClaim (L : RouteIngredientLedger) : Prop :=
   L.deVriesMapDerived ∧ L.pdfFormulaChecksDone
@@ -79,5 +88,7 @@ def ledgerReadyForManuscriptClaim (L : RouteIngredientLedger) : Prop :=
 axiom route_ingredients_are_addresses :
   ∃ L : RouteIngredientLedger, True
 
-end DeVries.NegativeBranchScalar
+axiom coq_superconnection_scalar_route_requires_same_source :
+  ∃ S : SuperconnectionScalarCompatibility, True
 
+end DeVries.NegativeBranchScalar

@@ -1284,6 +1284,27 @@ Equation~\eqref{eq:target-susyqm-superconnection-square} is a compatibility
 target.  The cited sources supply grading and generalized-connection
 vocabulary; the ordered projectors, branch map, and pole quotient remain
 theorem data.
+Coquereaux gives the finite-algebra version of this compatibility target.  In
+the local source, odd matrices
+\(\Omega_\pm,\Omega'_\pm\) generate a \(\mathbb Z_2\)-graded associative
+algebra; even anticommutators supply the electroweak generators \(I_3,Y,Q\);
+the generalized connection \(\mathcal A_{\rm Coq}\) contains gauge one-forms
+and scalar zero-forms; and the curvature is
+\(\mathcal F_{\rm Coq}=d\mathcal A_{\rm Coq}+
+\mathcal A_{\rm Coq}\odot\mathcal A_{\rm Coq}\)
+\cite{Coquereaux1992Superconnections}.  The corresponding source-to-target
+audit is
+\begin{equation}
+  \mathcal A_{\rm Coq}
+  \longmapsto
+  \left(
+  P_{\rm sc},\langle\cdot,\cdot\rangle_{\rm sc},
+  P_W,P_Z,P_\gamma,B_J,\Delta_{\rm sc}^{\rm op}
+  \right),
+  \label{eq:target-coq-audit-map}
+\end{equation}
+where \(P_{\rm sc}\), the common inner product, the ordered projectors, the
+operator \(B_J\), and the pole remainder are the DeVries theorem data.
 The pole comparison then has the form
 \begin{equation}
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
@@ -1331,6 +1352,24 @@ diagonal terms through its Hessian contribution to \(H_t\); the DeVries entry
 \(-J\) still requires its own source-theory derivation.
 The route succeeds when \(P_W\), \(P_Z\), the inner product, \(B_J\), and
 \(\Delta_{\rm sc}\) all come from one gauge-Higgs superconnection reduction.
+Equivalently, the Coquereaux graded-curvature projection must produce
+\begin{equation}
+  P_{\rm sc}^\dagger
+  \langle \mathcal F_{\rm Coq},\mathcal F_{\rm Coq}\rangle_{\rm sc}
+  P_{\rm sc}
+  =
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix}
+  +\Delta_{\rm sc}^{\rm op}(\lambda).
+  \label{eq:target-coq-curvature-projection}
+\end{equation}
+The source-internal weak-angle values, including the \(SU(2|1)\) trace
+normalizations and the \(3/8\) value in the extended-family discussion, are part
+of the algebraic normalization ledger.  The pole-spectrum quotient in
+Eq.~\eqref{eq:target-susyqm-superconnection-pole} enters after the projection
+and complex-pole matching steps.
 For the interval implementation, Target~\ref{app:target-boundary-determinant}
 is the diagonal partner of this factorization target: the Hodge/SUSY-QM
 complex supplies the candidate square-root entry, and the hatted CHM current
@@ -1348,7 +1387,9 @@ massive gauge multiplets with \(W\) and \(Z\) bosons \cite{Fayet2014}.
 Gates--Rana supply a worldline supersymmetry source for spinning-particle
 systems \cite{GatesRana1995}.  Coquereaux supplies an \(SU(2|1)\)
 superconnection source in which Higgs fields enter a generalized connection for
-electroweak symmetry breaking \cite{Coquereaux1992Superconnections}.
+electroweak symmetry breaking \cite{Coquereaux1992Superconnections}.  The local
+source pages record scalar-product and gauge-rescaling freedoms; these freedoms
+enter the theorem target as normalization data.
 These sources give addresses for the factorization, spin, and electroweak
 grading.  The DeVries breaking operator, finite projection, and pole-chain
 matching remain theorem obligations.

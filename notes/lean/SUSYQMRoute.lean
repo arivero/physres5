@@ -22,6 +22,8 @@ constant Projection : J -> Type
 constant SuperconnectionCurvature : J -> Type
 constant BoundaryTerm : J -> Type
 constant PoleSchemeRemainder : J -> Type
+constant CoquereauxFiniteAlgebra : J -> Type
+constant OperatorRemainder : J -> Type
 
 structure NormalizedPair (j : J) where
   e0 : Form0 j
@@ -73,6 +75,16 @@ structure OneChannelBreakingCandidate (j : J) where
   same_basis_as_pole_chain : String
   target_entry : "B11 = -J" = "B11 = -J"
 
+structure CoquereauxCurvatureProjection (j : J) where
+  finite_algebra : CoquereauxFiniteAlgebra j
+  projected_basis : NormalizedPair j
+  curvature_source : SuperconnectionCurvature j
+  operator_remainder : OperatorRemainder j
+  target_kernel : String :=
+    "P_sc^dagger <F_Coq,F_Coq> P_sc = [[lambda,-sqrt(J)],[-sqrt(J),lambda+J]] + Delta_op"
+  source_internal_normalization : String
+  pole_matching_obligation : String
+
 axiom deRham_block :
   forall {j : J}, NormalizedPair j ->
     "Q_dR,j = [[0, sqrt(J)], [sqrt(J), 0]]" = "Q_dR,j = [[0, sqrt(J)], [sqrt(J), 0]]"
@@ -90,6 +102,8 @@ axiom targetX_obligation :
 6. run the pole-scheme chain before using the result as an electroweak claim.
 7. audit Coquereaux matrix and curvature entries for a common superconnection
    source of P_sc, B_J, P_W, and P_Z.
+8. keep Coquereaux source-internal weak-angle values in a normalization ledger
+   pending derivation of the pole quotient and operator projection.
 -/
 
 end DeVries.SUSYQMRoute

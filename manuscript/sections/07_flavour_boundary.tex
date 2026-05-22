@@ -1,10 +1,45 @@
 \section{Flavor boundary and representation algebra}
 \label{sec:flavour}
 
-The electroweak mass-ratio problem is separated from the generation problem.  The working boundary condition is that generations are not assumed to arise exactly from compactification topology.  A separate SO(32)-flavor interpretation may organize fermion content and endpoints, and it may or may not be compatible with a compactification geometry.
+The electroweak mass-ratio problem and the flavor problem carry separate obligations in this manuscript.  The working boundary condition is:
+\begin{equation}
+\begin{aligned}
+  &\text{DeVries electroweak determinant}\\
+  &\qquad\text{and generation/flavor organization}\\
+  &\text{are linked only by an explicit model}.
+\end{aligned}
+  \label{eq:flavor-boundary}
+\end{equation}
+This prevents a compactification or endpoint picture from turning a useful flavor pattern into an electroweak derivation by naming alone.
 
-Representation-theoretic unification remains useful because it constrains how Standard Model fermions can sit inside larger groups.  The algebraic GUT literature gives clean embeddings through SU(5), Spin(10), Pati--Salam, and E6 representation theory \cite{BaezHuerta2010,Britto2021}.  These embeddings can guide the flavor and endpoint sector without determining the DeVries W/Z ratio by themselves.
+Representation theory remains essential.  In the Standard Model and in the familiar grand-unification lineage, fermions live in representations of the internal gauge group, while gauge bosons live in the adjoint sector \cite{BaezHuerta2010,Britto2021}.  SU(5), Spin(10), Pati--Salam, and \(E_6\) show how a larger algebra can unify the Standard Model representation data.  This is the correct role of the GUT material in the present paper: it supplies representation discipline and a comparison class for structural weak-angle statements.
 
-A future compactification model must satisfy two independent constraints.  First, it must reproduce the electroweak projective mass datum.  Second, it must accommodate the observed chiral matter and flavor structure.  The project does not identify these two constraints unless an explicit geometry or algebraic mechanism forces the identification.
+The DeVries construction uses a different representation question.  The electroweak determinant asks why one sample is associated with the Higgs/order-parameter doublet invariant and the other with the adjoint/current invariant:
+\begin{equation}
+  J_H=T_H(T_H+1)=3/4,\qquad
+  J_{\rm adj}=T_{\rm adj}(T_{\rm adj}+1)=2.
+  \label{eq:flavor-j-boundary}
+\end{equation}
+Flavor representations can constrain a completion.  The missing step is a derived map from endpoint, compactification, or localized matter data into the two-channel electroweak operator.
 
-\paragraph*{Section status.}  This section is a boundary condition for the broader project.  It prevents overclaiming about topology and generations.
+The SO(32)-flavor idea should therefore be treated as an organizing boundary sector.  In an endpoint language it may label external or internal flavor degrees of freedom, Chan--Paton-like data, or a bookkeeping algebra for fermion multiplicities.  Its required checks are concrete:
+\begin{enumerate}
+\item identify the representation space carrying the SO(32)-flavor labels;
+\item map the Standard Model chiral fermions into that space;
+\item show anomaly cancellation and hypercharge normalization;
+\item state the relation to the global quotient \(\Gamma\subset\mathbb Z_6\);
+\item couple the flavor sector to the electroweak determinant only through a derived operator.
+\end{enumerate}
+
+This keeps the flavor idea useful while protecting the central claim.  The electroweak ratio concerns W/Z pole structure and the Higgs/order-parameter channel.  Generation structure concerns chiral matter, Yukawa textures, and possible endpoint or compactification multiplicities.  A string/Kaluza--Klein completion may eventually bind them together.  The binding has to be an equation or a local geometric construction.
+
+The compactification version has an additional caveat.  Geometry can generate gauge symmetries, chiral localization, and multiple wavefunctions with the same gauge quantum numbers \cite{WittenKK1981,AcharyaWitten2001,BraunEtAl2019}.  That makes topology relevant to flavor.  The manuscript still treats generation counting as a separate task because the DeVries determinant is a two-channel electroweak object.  The decisive test is whether the same local model that yields generations also yields
+\begin{equation}
+  \det(\lambda-\mathcal O_J)=\lambda^2+J\lambda-J
+  \label{eq:flavor-det-test}
+\end{equation}
+with the ordered electroweak samples in Eq.~\eqref{eq:flavor-j-boundary}.
+
+The practical rule for later sections is therefore simple.  Flavor material may enter as a constraint on endpoints, compactification, anomaly cancellation, and global form.  It may motivate a local operator.  The W/Z mass-ratio argument rests on the electroweak determinant and its pole placement.
+
+\paragraph*{Section status.}  This section states a source-supported boundary condition.  The SO(32)-flavor interpretation remains conjectural until a representation map and coupling to \(\mathcal O_J\) are supplied.

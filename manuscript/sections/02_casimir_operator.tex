@@ -28,21 +28,62 @@ They obey
 \end{equation}
 For \(J>0\), the positive branch is positive and the negative branch is negative.
 
-The electroweak number is obtained by sampling the positive branch at the two Casimir values
+Historically, the electroweak number is obtained by sampling the positive branch at the two Casimir values
 \begin{equation}
-  J_{1/2}=\frac34,
+  J_H=\frac34,
   \qquad
-  J_1=2.
+  J_{\rm adj}=2.
+  \label{eq:historical-J-samples}
 \end{equation}
 This gives
 \begin{equation}
   \sdV = 1-\frac{x_+(3/4)}{x_+(2)}.
   \label{eq:sdvdef}
 \end{equation}
-The expression is dimensionless; the overall scale \(\mu\) cancels.  The cancellation is essential for an electroweak interpretation because Eq.~\eqref{eq:sdvdef} can then be compared with a projective W/Z mass ratio.
+The expression is dimensionless; the overall scale \(\mu\) cancels.  The cancellation is essential for an electroweak interpretation because Eq.~\eqref{eq:sdvdef} can then be compared with a projective W/Z mass ratio.  In the electroweak reading developed here, \(J_H=3/4\) is the Higgs/order-parameter doublet invariant and \(J_{\rm adj}=2\) is the adjoint/current invariant.  The ordered use of these two samples in the W/Z quotient remains the central derivation problem.
 
 The relation to the original Rivero operator is obtained by restoring the Poincare Casimir eigenvalues \(C_1=m^2\) and \(C_2=-m^2s(s+1)\).  In the original construction, a mass-squared operator is formed from combinations of Casimir invariants, with a high-spin condition designed to preserve the asymptotic mass behavior relevant for Regge trajectories \cite{Rivero2006}.  Equation~\eqref{eq:QJ} is the reduced dimensionless representative of that branch problem.
 
-A complete derivation should state the minimal assumptions that select Eq.~\eqref{eq:QJ}.  The current minimal list is: dimensionally correct dependence on the Poincare Casimirs, exclusion of inverse Casimirs, a two-branch square-root structure, and preservation of the high-spin asymptotic datum.  A trace condition can be used as an alternative route.  The uniqueness of the construction under these assumptions remains a theorem to be written with explicit hypotheses.
+\subsection{What the algebra fixes}
+
+The operator in Eq.~\eqref{eq:QJ} fixes three algebraic facts.  First, the trace is \(-J\).  Second, the determinant is \(-J\).  Third, the two eigenvalues are tied by the same invariant:
+\begin{equation}
+  \operatorname{tr}\frac{Q(J)}{\mu^2}=-J,\qquad
+  \det\frac{Q(J)}{\mu^2}=-J.
+  \label{eq:trace-det-fixed}
+\end{equation}
+Thus a physical derivation has to explain a simultaneous trace and determinant assignment.  A model that gives only a square-root branch, or only a \(J\)-dependent diagonal term, leaves the DeVries construction incomplete.  The required two-channel matrix has the schematic form
+\begin{equation}
+  \mathcal M_J=
+  \begin{pmatrix}
+  0 & \kappa_J\\
+  \kappa_J & -\tau_J
+  \end{pmatrix},
+  \qquad
+  \kappa_J^2=J,\qquad \tau_J=J.
+  \label{eq:minimal-two-channel}
+\end{equation}
+This is the compact target for the endpoint, Kaluza--Klein, and \(G_2\) sections.
+
+The square-root radical is then the discriminant of this two-channel problem:
+\begin{equation}
+  \Delta_J=J^2+4J.
+  \label{eq:discriminant}
+\end{equation}
+The radical has to attach to a physical object.  The radical-placement section lists the main options.  The current manuscript follows the pole-spectrum placement because the positive and negative branches are interpreted as a single low-energy spectral clue.
+
+\subsection{Minimal assumptions and theorem owed}
+
+A complete derivation should state the minimal assumptions that select Eq.~\eqref{eq:QJ}.  The current minimal list is:
+\begin{enumerate}
+\item dependence on available Poincare or internal invariants;
+\item dimensional consistency after restoring the mass scale \(\mu\);
+\item a two-branch secular structure;
+\item preservation of the high-spin or Regge asymptotic datum in the originating problem;
+\item a trace/determinant condition equivalent to Eq.~\eqref{eq:trace-det-fixed}.
+\end{enumerate}
+These assumptions define a research program; the uniqueness theorem remains open.  The theorem to prove would read: within a stated class of two-channel operators built from the allowed invariants, the high-spin condition and trace/determinant constraints select Eq.~\eqref{eq:QJ} up to similarity transformations and normalization.
+
+This theorem would also clarify the status of the negative branch.  Since \(x_-(J)\) is fixed by the same trace and determinant as \(x_+(J)\), a derivation of Eq.~\eqref{eq:QJ} automatically derives both branches.  The electroweak interpretation can then ask which fields or boundary data realize the two eigenvectors.
 
 \paragraph*{Section status.}  The eigenvalue algebra is derived.  The uniqueness of the operator under the stated constraints is an open analytical subtask.

@@ -8,20 +8,67 @@ The observable used for comparison is the pole-mass ratio
 \end{equation}
 This ratio is distinct from a running \(\MSbar\) weak angle and from effective weak mixing angles extracted from neutral-current asymmetries.  The manuscript therefore treats Eq.~\eqref{eq:spole} as the primary target and later relates other schemes to it.
 
+The following placement convention will be used.  The Rivero--de Vries radical is read as a spectral object attached to the W/Z pole data.  Other readings could attach the same radical to a high-scale boundary value, to a running \(\MSbar\) coupling, or to an internal compactification eigenvalue.  Each reading changes the physical content of the proposal.  The pole reading gives the word ``spectrum'' its literal electroweak meaning.
+
 A vector-boson pole is defined by the complex pole of the propagator,
 \begin{equation}
   s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}.
   \label{eq:complex-pole}
 \end{equation}
-When experimental inputs are quoted in a Breit--Wigner convention, the conversion to pole parameters must be performed before using Eq.~\eqref{eq:spole}.  This is one of the numerical audit tasks of the project.
+Equivalently, \(s_V\) is the zero of the inverse transverse propagator after renormalization,
+\begin{equation}
+  \Delta^{-1}_{T,V}(s_V)=0.
+  \label{eq:pole-condition}
+\end{equation}
+When experimental inputs are quoted in a variable-width Breit--Wigner convention, the conversion to pole parameters must be performed before using Eq.~\eqref{eq:spole}.  Martin and Robertson summarize the common relation for the vector bosons as
+\begin{equation}
+  M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2,
+  \qquad V=W,Z .
+  \label{eq:bw-pole-relation}
+\end{equation}
+This is one of the source-audit tasks of the project \cite{MartinRobertson2025}.
+
+\subsection{Scheme ledger}
+
+The project uses the following ledger before comparing any weak-angle quantity:
+\begin{center}
+\small
+\begin{tabular}{p{0.23\linewidth}p{0.31\linewidth}p{0.34\linewidth}}
+\toprule
+Object & Definition level & Role in this manuscript\\
+\midrule
+\(\sPole\) & complex-pole mass ratio & primary low-energy spectral target\\
+Breit--Wigner masses & experimental line-shape convention & input convention requiring Eq.~\eqref{eq:bw-pole-relation}\\
+\(\hat s^2(Q)_{\MSbar}\) & running coupling ratio in a renormalization scheme & scheme translation and loop-scale comparison\\
+\(\sin^2\theta_{\rm eff}^{\ell}\) & neutral-current effective angle & phenomenological comparison after electroweak corrections\\
+GUT boundary value & high-scale representation datum & comparison class for structural weak-angle values\\
+compactification eigenvalue & internal spectral datum & possible origin for \(\mathcal O_J\) after a dynamical derivation\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The pole reading selects the first row.  The remaining rows are translation targets.  A future source-audited electroweak comparison should begin from the quoted experimental convention, map to complex pole quantities, form Eq.~\eqref{eq:spole}, and then compare with Eq.~\eqref{eq:sdvdef}.
 
 The project seed comparison uses
 \begin{equation}
   M_W=M_Z\sqrt{1-\sdV}.
   \label{eq:MWfromMZ}
 \end{equation}
-For the seed value \(M_Z=91.1880\,\GeV\), this gives \(M_W=80.3748\,\GeV\).  These numbers are placeholders inherited from the working draft and must be audited against the current electroweak source set before final submission.  The calculation script in Appendix~\ref{app:numerics} reproduces the value.
+For the seed value \(M_Z=91.1880\,\GeV\), this gives \(M_W=80.3748\,\GeV\).  These numbers are placeholders inherited from the working draft and must be audited against the current electroweak source set before final submission.  The descriptive comparison places the construction near conventional pole-spectrum averages and away from the CDF-II W-mass value \cite{CDFII2022}.  The comparison has clue status in this draft.  The numerical appendix records the inherited seed arithmetic for provenance.
 
 The Standard Model parameter literature distinguishes several vacuum and renormalization conventions.  In particular, pure \(\MSbar\) treatments may define the Higgs vacuum expectation value as the minimum of the loop-corrected effective potential in Landau gauge, eliminating tadpole diagrams at the cost of gauge-choice dependence in intermediate parameters \cite{MartinRobertson2025}.  Such scheme details are relevant for comparing a mass-ratio statement with Lagrangian parameters, while Eq.~\eqref{eq:spole} remains the pole-spectrum target.
 
-\paragraph*{Section status.}  The observable is defined.  The numerical input table requires a current electroweak source audit before final claims.
+Loop effects are therefore a conceptual discriminator.  Corrections of order \(\alpha/\pi\) are of the same kind of size one expects when moving between pole, effective, and running definitions.  They ask what object the radical belongs to and at what scale it is to be read.  A high-scale reading would make the DeVries value analogous to a GUT boundary datum.  The pole-data reading makes it a low-energy spectral datum and transfers the burden to string/Kaluza--Klein dynamics.
+
+\subsection{Referee-facing claim}
+
+The formal claim of this section is limited:
+\begin{equation}
+  \sdV
+  \quad\text{is compared first with}\quad
+  1-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}.
+  \label{eq:pole-claim-limited}
+\end{equation}
+Every comparison to \(\MSbar\) inputs, effective angles, or line-shape masses requires an explicit map.  Thus a disagreement among schemes diagnoses the placement of \(\sqrt{J^2+4J}\) and the scale at which the radical is read.
+
+\paragraph*{Section status.}  The observable and placement convention are defined.  The numerical input table requires a current electroweak source audit before final claims.

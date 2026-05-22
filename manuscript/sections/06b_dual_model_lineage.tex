@@ -1,0 +1,50 @@
+\section{Dual-model lineage and open-string endpoint data}
+\label{sec:dual-model-lineage}
+
+The DeVries construction enters the manuscript through a spectral regularity.  This is why the older dual-model lineage matters.  The Veneziano amplitude was introduced to capture strong-interaction regularities before its string interpretation became clear; its open-string form later supplied a world-sheet explanation of the pole tower and the associated Regge behavior \cite{TongString}.  The lesson for the present work is methodological and technical.  A compact algebraic regularity in particle data can guide a deeper spectral construction when the amplitude or boundary problem subsequently explains the regularity.
+
+The relevant feature is the coexistence of a low-level spectrum and a high-spin asymptotic rule.  In string amplitudes, pole residues organize the spins carried by the exchanged string states, and the tower structure follows from the quantized oscillators \cite{TongString}.  In the DeVries program, the secular equation is required to do something analogous at a much lower and more constrained level:
+\begin{equation}
+  \text{high-spin/Regge regularity}
+  \quad\leadsto\quad
+  x^2+Jx-J=0
+  \quad\leadsto\quad
+  \{x_+(J),x_-(J)\}.
+  \label{eq:regge-to-secular}
+\end{equation}
+The first arrow is historical motivation until a world-sheet or boundary calculation produces the second expression.  The second arrow is algebraic and already fixed.  The manuscript therefore treats the Rivero/DeVries observation as a clue that selects a target determinant.
+
+Open strings provide a more concrete mechanism than closed-string Regge language alone.  An open-string state carries oscillator data in the interior and boundary data at its endpoints.  D-branes give a geometric home to the endpoints, and coincident branes give nonabelian gauge fields from open-string modes \cite{Polchinski1994,TongString}.  This suggests a precise kind of model for Eq.~\eqref{eq:det-completion}: one channel should be an adjoint or current channel associated with gauge fields, while the other should carry the order-parameter data that samples the doublet invariant.
+
+For the DeVries determinant, the endpoint route can be written as a quadratic action for two boundary-coupled amplitudes,
+\begin{equation}
+  S^{(2)}_J =
+  \begin{pmatrix}\psi_1^\dagger & \psi_2^\dagger\end{pmatrix}
+  \begin{pmatrix}
+    \lambda & -\kappa_J\\
+    -\kappa_J & \lambda+\tau_J
+  \end{pmatrix}
+  \begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix},
+  \label{eq:endpoint-quadratic}
+\end{equation}
+with the DeVries target
+\begin{equation}
+  \kappa_J^2=J,\qquad \tau_J=J.
+  \label{eq:endpoint-target}
+\end{equation}
+Here \(\psi_1,\psi_2\) are placeholders for actual endpoint, brane, or localized modes.  The notation is intentionally sparse.  The physics is carried by the derivation of \(\kappa_J\) and \(\tau_J\).
+
+There are three natural endpoint readings.
+\begin{enumerate}
+\item \emph{Chan--Paton/current reading.}  The endpoint labels carry gauge indices.  The diagonal entry \(\tau_J\) is a trace or current-algebra invariant, and the off-diagonal entry \(\kappa_J\) is a group-theoretic transition matrix element.
+\item \emph{Brane/bulk reading.}  One amplitude is localized on a brane or boundary, while the other propagates in the bulk.  The determinant comes from integrating over the bulk mode and imposing the boundary matching condition.
+\item \emph{Order-parameter reading.}  One channel is an adjoint-current datum and the other is a doublet/order-parameter datum.  This is the route that can explain why the electroweak samples are \(J=2\) and \(J=3/4\).
+\end{enumerate}
+
+Each reading must respect the same electroweak constraint.  The pole ratio compares charged and neutral vector poles, while the \(J=3/4\) datum belongs naturally to the Higgs doublet side.  A successful endpoint construction therefore has to turn an order-parameter doublet invariant into the charged-vector sample in the pole quotient.  This is the ordered-sampling problem in boundary language.
+
+The open-string route also clarifies the negative branch.  The two roots are eigenvalues of one two-channel system.  If the positive branch is associated with the vector pole quotient, the negative branch should correspond to the partner channel in the same boundary problem.  In an endpoint construction this partner may be a scalar boundary modulus, a Higgs-like order parameter, a brane separation mode, or an auxiliary channel eliminated in the low-energy action.  The manuscript uses the negative branch as a demand on the model: the same determinant has to explain both eigenvalues.
+
+This places the string interpretation in a concrete form.  The target is an endpoint or brane calculation whose reduced determinant has the entries in Eq.~\eqref{eq:endpoint-target}, whose low-energy normalization gives the W/Z pole quotient, and whose partner eigenvalue lands in the scalar/order-parameter sector.
+
+\paragraph*{Section status.}  This section is source-supported for the dual-model, open-string, and brane background.  The endpoint determinant is conjectural and states the calculation owed.

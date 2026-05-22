@@ -1,0 +1,205 @@
+\section{Theorem targets for a derivation}
+\label{app:theorem-targets}
+
+This appendix records the analytical obligations in theorem form.  The purpose is operational.  Each target names its hypotheses, conclusion, current evidence, and failure mode.  A complete version of the manuscript should either prove these statements, replace them with stronger statements, or demote the dependent claims.
+
+\subsection{Common format}
+\label{app:theorem-format}
+
+The targets share a common data structure.  Let \(\mathcal S\) be a source theory or effective description.  It may be a four-dimensional electroweak theory, a boundary effective action from an interval compactification, an open-string endpoint sector, or a localized \(G_2\) system.  Let \(\mathcal E_J\) be the two-dimensional light subspace that is meant to carry the order-parameter and current amplitudes.  The desired reduction has the form
+\begin{equation}
+  \mathcal S
+  \longrightarrow
+  \mathcal E_J
+  \longrightarrow
+  \mathcal M_J
+  =
+  \begin{pmatrix}
+  0 & \sqrt J\\
+  \sqrt J & -J
+  \end{pmatrix}
+  \longrightarrow
+  \{x_+(J),x_-(J)\}.
+  \label{eq:appendix-reduction-chain}
+\end{equation}
+The reduction is meaningful after the normalization of \(\mathcal E_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.
+
+For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A plausibility argument may motivate the target, yet the manuscript's final physical claim must track the proven statement.
+
+\subsection{Target I: pole placement}
+\label{app:target-pole-placement}
+
+\paragraph*{Hypotheses.}
+Assume a source theory \(\mathcal S\) gives a two-branch spectral equation with roots \(x_\pm(J)\).  Assume the electroweak comparison is made with transverse gauge-boson complex poles,
+\begin{equation}
+  \det\Delta^{-1}_{V,T}(s_V)=0,
+  \qquad
+  s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}.
+  \label{eq:target-complex-pole}
+\end{equation}
+Assume common experimental mass conventions are converted into the pole convention before forming
+\begin{equation}
+  \sPole=1-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}.
+  \label{eq:target-spole}
+\end{equation}
+
+\paragraph*{Conclusion.}
+The DeVries branch quotient is a pole-spectrum datum:
+\begin{equation}
+  \sPole
+  =
+  1-\frac{x_+(J_H)}{x_+(J_{\rm adj})}
+  \label{eq:target-pole-conclusion}
+\end{equation}
+up to stated radiative, threshold, and scheme translations.  The theorem must also explain why the assigned scale is the low-energy pole spectrum, with high-scale boundary placements handled by a separate derivation.
+
+\paragraph*{Current evidence.}
+The manuscript already separates complex poles, Breit-Wigner/on-shell masses, \(\MSbar\) running angles, effective weak angles, GUT boundary values, and compactification eigenvalues.  Martin--Robertson supply the scheme language used in Sec.~\ref{sec:pole}.  The CDF-II result has descriptive displacement status in the current draft.
+
+\paragraph*{Failure mode.}
+The target fails if the derived clean value lives at a high-scale boundary, a running \(\MSbar\) angle, an effective leptonic angle, or a compactification eigenvalue with a different translation law.  In that case the pole-ratio reading becomes a motivating clue, and the manuscript must relocate the physical statement to the derived scheme.
+
+\subsection{Target II: electroweak assignment}
+\label{app:target-electroweak-assignment}
+
+\paragraph*{Hypotheses.}
+Let \(H\) be the Standard Model Higgs doublet and let \(J_H=3/4\) be its \(SU(2)_L\) quadratic invariant.  Let \(J_{\rm adj}=2\) be the corresponding adjoint invariant for \(SU(2)_L\) currents.  The gauge-Higgs sector contains the usual mass terms
+\begin{equation}
+  M_W^2=\frac{g^2v^2}{4},
+  \qquad
+  M_Z^2=\frac{(g^2+g'^2)v^2}{4},
+  \qquad
+  M_\gamma^2=0,
+  \label{eq:target-ew-masses}
+\end{equation}
+with the custodial structure and \(\rho=1\) tree-level relation discussed in Sec.~\ref{sec:ew-embedding}.
+
+\paragraph*{Conclusion.}
+There exists a natural map from gauge-Higgs data to ordered samples,
+\begin{equation}
+  \mathcal D_{\rm EW}:
+  (H,J^a_\mu,B_\mu)
+  \longmapsto
+  (J_W,J_Z)=(J_H,J_{\rm adj})=(3/4,2),
+  \label{eq:target-ew-map}
+\end{equation}
+such that
+\begin{equation}
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{x_+(J_H)}{x_+(J_{\rm adj})}.
+  \label{eq:target-ew-conclusion}
+\end{equation}
+The derivation must say why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.
+
+\paragraph*{Current evidence.}
+The Higgs doublet and adjoint invariants are fixed representation-theoretic facts.  The electroweak mass matrix, photon null direction, custodial relation, and projective reading of \(g:g'\) are standard low-energy data \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The manuscript has converted the assignment into a theorem target.
+
+\paragraph*{Failure mode.}
+The target fails if the assignment uses observed vector spin or an arbitrary post-selection of \(J\) values.  A successful derivation must arise from the gauge-Higgs variables, a boundary operator coupled to them, or a compactification mechanism whose low-energy reduction yields the ordered pair.
+
+\subsection{Target III: two-channel boundary determinant}
+\label{app:target-boundary-determinant}
+
+\paragraph*{Hypotheses.}
+Let \(h_J\) be an order-parameter amplitude and \(a_J\) an adjoint/current amplitude in a light boundary subspace.  Let their normalized quadratic kernel be
+\begin{equation}
+  K_J(\lambda)=
+  \begin{pmatrix}
+  \lambda+\Sigma_{hh,J} & \Sigma_{ha,J}\\
+  \Sigma_{ah,J} & \lambda+\Sigma_{aa,J}
+  \end{pmatrix}.
+  \label{eq:target-boundary-kernel}
+\end{equation}
+The source may be an interval theory with brane-localized terms, an open-string endpoint sector, or a localized singularity construction.  Boundary mass and kinetic terms can alter eigenvalue conditions in extra-dimensional models \cite{CsakiHubiszMeade2005}.  Open-string endpoints and D-brane gauge sectors supply a separate endpoint language \cite{TongString,Polchinski1994}.
+
+\paragraph*{Conclusion.}
+There is a controlled limit and normalization in which
+\begin{equation}
+  \Sigma_{hh,J}=0,\qquad
+  \Sigma_{aa,J}=J,\qquad
+  \Sigma_{ha,J}\Sigma_{ah,J}=J,
+  \label{eq:target-boundary-self-energies}
+\end{equation}
+so that
+\begin{equation}
+  \det K_J(\lambda)=\lambda^2+J\lambda-J.
+  \label{eq:target-boundary-conclusion}
+\end{equation}
+Equivalently, the physical derivation fixes the two named entries
+\begin{equation}
+  \tau_J=J,\qquad \kappa_J^2=J.
+  \label{eq:target-kappa-tau}
+\end{equation}
+
+\paragraph*{Current evidence.}
+Sec.~\ref{sec:toy-boundary-operator} gives the target action and the required entries.  The literature sources support the existence of boundary-condition and endpoint mechanisms, while the exact DeVries entries remain conjectural.
+
+\paragraph*{Failure mode.}
+The target fails if boundary variation gives a different trace, a different off-diagonal product, or an additional channel that changes the determinant class.  The useful result in that case would be a larger family of secular relations containing the DeVries matrix as a limiting or approximate case.
+
+\subsection{Target IV: negative branch as scalar data}
+\label{app:target-negative-branch}
+
+\paragraph*{Hypotheses.}
+Assume Targets I--III identify a physical two-channel matrix whose eigenvalues are \(x_\pm(J)\).  Let \(u_\pm(J)\) be normalized eigenvectors.  The negative branch is then part of the same diagonalization as the positive branch:
+\begin{equation}
+  \mathcal M_J u_\pm(J)=x_\pm(J)u_\pm(J).
+  \label{eq:target-eigenvectors}
+\end{equation}
+The scalar side of the electroweak theory contains the gauge-invariant radial datum, the Higgs pole, and the parameters of the symmetry-breaking potential \cite{Logan2022,Dawson2018}.
+
+\paragraph*{Conclusion.}
+There exists a gauge-invariant scalar functional \(\mathcal F_{\rm sc}\) such that
+\begin{equation}
+  \mathcal F_{\rm sc}\big(H^\dagger H,\;D_\mu H,\;\text{boundary data}\big)
+  =
+  C\,|x_-(J_\star)|
+  \label{eq:target-scalar-functional}
+\end{equation}
+for a stated \(J_\star\), normalization \(C\), and scheme.  Candidate readings include a Higgs-potential parameter, the radial vacuum scale, a boundary modulus, or a brane-separation mode.
+
+\paragraph*{Current evidence.}
+Sec.~\ref{sec:negative} records the scalar target table and the eigenvector interpretation.  The current draft treats the negative branch as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.
+
+\paragraph*{Failure mode.}
+The target fails if the negative branch has purely auxiliary meaning in the derived source theory.  The positive-branch clue can still motivate the determinant problem, while the scalar claims must then be removed from the physical conclusion.
+
+\subsection{Target V: global-form and localization compatibility}
+\label{app:target-global-form}
+
+\paragraph*{Hypotheses.}
+Assume a string, brane, Kaluza--Klein, or \(G_2\) source derives Targets II--IV.  The low-energy gauge group has global form
+\begin{equation}
+  \GSM=
+  \frac{SU(3)\times SU(2)\times U(1)}{\Gamma},
+  \qquad
+  \Gamma\subseteq \mathbb Z_6.
+  \label{eq:target-global-group}
+\end{equation}
+Line operators and global identifications provide tests of the Standard Model gauge group beyond the Lie algebra \cite{TongLineOperators2017,HsinGomis2024}.  Singular \(G_2\) spaces can localize gauge and chiral matter sectors in M-theory constructions \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.
+
+\paragraph*{Conclusion.}
+The derived operator \(\mathcal M_J\) is compatible with the allowed line operators, representation assignments, anomaly constraints, and localized matter data of the chosen completion.  A successful completion must specify whether flavor labels are endpoint data, compactification data, representation-sector data, or a combination constrained by the source geometry.
+
+\paragraph*{Current evidence.}
+Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the current boundary conditions: the SO(32)-flavor idea is a representation-sector clue, and global-form data are completion constraints.  The manuscript avoids identifying generations with compactification topology until a representation map is derived.
+
+\paragraph*{Failure mode.}
+The target fails if the determinant arises in a gauge or flavor sector incompatible with Standard Model line operators, anomaly conditions, or observed representations.  A failure here would be decisive for a proposed completion even if the local two-channel determinant is mathematically correct.
+
+\subsection{Referee checklist}
+\label{app:referee-checklist}
+
+The theorem targets lead to the following checklist for future revisions:
+\begin{enumerate}
+\item State the source theory \(\mathcal S\) and the light subspace \(\mathcal E_J\).
+\item Specify the normalization that makes \(\Sigma_{hh,J}=0\), \(\Sigma_{aa,J}=J\), and \(\Sigma_{ha,J}\Sigma_{ah,J}=J\).
+\item Derive the ordered assignment \((J_H,J_{\rm adj})=(3/4,2)\) from low-energy gauge-Higgs or boundary data.
+\item Give the pole-scheme translation for every quoted W/Z mass input.
+\item Identify the negative branch as scalar data, auxiliary data, or a derived sector with another physical role.
+\item Check global-form, anomaly, and representation compatibility.
+\end{enumerate}
+This checklist is the manuscript's current definition of a complete derivation.
+
+\paragraph*{Section status.}  This appendix is open-program material.  It states theorem targets and source-backed constraints; the proofs remain future analytical work.

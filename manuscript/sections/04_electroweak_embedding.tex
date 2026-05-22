@@ -1,7 +1,41 @@
 \section{Electroweak embedding as a projective datum}
 \label{sec:ew-embedding}
 
-The gauge-Higgs sector gives the tree-level vector masses
+The gauge-Higgs sector gives the tree-level vector masses from the Higgs kinetic term
+\begin{equation}
+  (D_\mu H)^\dagger(D^\mu H),
+  \qquad
+  D_\mu=\partial_\mu-\frac{i g}{2}\sigma^a W^a_\mu-\frac{i g'}{2}B_\mu ,
+  \qquad
+  H=\frac{1}{\sqrt2}\begin{pmatrix}0\\ v+h\end{pmatrix}.
+  \label{eq:higgs-kinetic}
+\end{equation}
+The charged fields
+\begin{equation}
+  W^\pm_\mu=\frac{1}{\sqrt2}\left(W^1_\mu\mp iW^2_\mu\right)
+  \label{eq:wpm-fields}
+\end{equation}
+receive a mass term \(g^2v^2 W^+_\mu W^{-\mu}/4\).  The neutral fields have mass matrix
+\begin{equation}
+  \frac{v^2}{8}
+  \begin{pmatrix} W^3_\mu & B_\mu \end{pmatrix}
+  \begin{pmatrix}
+    g^2 & -gg'\\
+    -gg' & g'^2
+  \end{pmatrix}
+  \begin{pmatrix} W^{3\mu}\\ B^\mu \end{pmatrix}.
+  \label{eq:neutral-mass-matrix}
+\end{equation}
+It is diagonalized by
+\begin{equation}
+  Z_\mu=\cos\theta_W\,W^3_\mu-\sin\theta_W\,B_\mu,
+  \qquad
+  A_\mu=\sin\theta_W\,W^3_\mu+\cos\theta_W\,B_\mu,
+  \qquad
+  \tan\theta_W=\frac{g'}{g}.
+  \label{eq:weak-rotation}
+\end{equation}
+This gives
 \begin{equation}
   M_W^2=\frac{g^2v^2}{4},
   \qquad
@@ -15,7 +49,24 @@ The ratio is
   1-\frac{M_W^2}{M_Z^2}=\frac{g'^2}{g^2+g'^2}.
   \label{eq:tree-angle}
 \end{equation}
-Thus the vacuum scale \(v\) fixes the radial size of the massive vector pair, while the quotient fixes a projective direction in the two-coupling plane.
+Thus the vacuum scale \(v\) fixes the radial size of the massive vector pair, while the quotient fixes a projective direction in the two-coupling plane \cite{Logan2022,AlvarezGaumeVazquezMozo2023}.
+
+\subsection{Custodial structure and the electroweak ray}
+
+The Standard Model doublet can be packaged as the bidoublet
+\begin{equation}
+  \Phi_H=\begin{pmatrix}
+  H^{0*} & H^+\\
+  -H^{+*} & H^0
+  \end{pmatrix}.
+  \label{eq:higgs-bidoublet}
+\end{equation}
+In the scalar sector this makes the approximate global \(SU(2)_L\times SU(2)_R\) structure visible; the vacuum proportional to the identity preserves the diagonal custodial \(SU(2)\) subgroup \cite{Logan2022}.  Hypercharge gauging and Yukawa splittings break the symmetry, while the tree-level doublet mass matrix preserves the relation
+\begin{equation}
+  \rho=\frac{M_W^2}{M_Z^2\cos^2\theta_W}=1.
+  \label{eq:rho-tree}
+\end{equation}
+This is the electroweak reason the DeVries comparison should be a projective statement about the W/Z pair.  The broken-to-unbroken deformation scales the vector masses with \(v\) while preserving the coupling-space direction.
 
 The DeVries proposal is read in the same projective language:
 \begin{equation}
@@ -38,6 +89,46 @@ The central analytical question is the ordered assignment
   (J_W,J_Z)=\left(\frac34,2\right).
   \label{eq:Jassignment}
 \end{equation}
-The working interpretation is that these entries encode electroweak representation data associated with the symmetry-breaking direction.  The \(J=3/4\) datum is naturally associated with a doublet-like \(T=1/2\) object, while \(J=2\) is naturally associated with an adjoint-like \(T=1\) object.  This statement is a candidate route rather than a completed derivation.  A completed derivation must start from the gauge-Higgs Lagrangian or from a compactification boundary problem and produce Eq.~\eqref{eq:Jassignment} without fitting to the observed masses.
+The electroweak gauge fields are gauge-algebra fields before symmetry breaking: \(W^1,W^2,W^3\) live in the adjoint of \(SU(2)_L\), while \(B\) is the gauge field of the abelian \(U(1)_Y\) factor.  The value \(J=2\) has a direct \(SU(2)_L\) adjoint reading through \(T(T+1)\) with \(T=1\).  The value \(J=3/4\) belongs to the Higgs/order-parameter side, where the symmetry-breaking field is an \(SU(2)_L\) doublet with \(T=1/2\) and \(T(T+1)=3/4\).
 
-\paragraph*{Section status.}  The projective interpretation follows from the electroweak mass matrix.  The representation-theoretic origin of Eq.~\eqref{eq:Jassignment} remains the primary open calculation.
+This yields a candidate route:
+\begin{equation}
+  J_Z=T_{\rm adj}(T_{\rm adj}+1)=2,
+  \qquad
+  J_H=T_H(T_H+1)=\frac34 .
+  \label{eq:adjoint-doublet-casimirs}
+\end{equation}
+The remaining calculation is the ordered sampling rule that turns the pair \((J_H,J_{\rm adj})\) into the W/Z quotient in Eq.~\eqref{eq:projective-identification}.  A completed derivation must start from the gauge-Higgs Lagrangian, a current-algebra construction, or a compactification boundary problem and produce Eq.~\eqref{eq:Jassignment} from the same determinant that supplies the negative branch.
+
+\subsection{The assignment problem as a theorem target}
+
+The theorem target can be stated mechanism-independently.  Let \(\mathcal E\) be the electroweak gauge-Higgs system, including its projective W/Z pole data and scalar order-parameter channel.  A DeVries derivation is a map
+\begin{equation}
+  \mathcal D:\mathcal E\longrightarrow \mathcal M_J
+  =
+  \begin{pmatrix}
+  0 & \sqrt J\\
+  \sqrt J & -J
+  \end{pmatrix}
+  \label{eq:assignment-map}
+\end{equation}
+with the following outputs:
+\begin{align}
+  \mathcal D(\text{order-parameter channel})&\mapsto J_H=3/4,\\
+  \mathcal D(\text{adjoint/current channel})&\mapsto J_{\rm adj}=2,\\
+  \frac{M_W^2}{M_Z^2}&=\frac{x_+(J_H)}{x_+(J_{\rm adj})}.
+  \label{eq:assignment-outputs}
+\end{align}
+The theorem must also account for the negative branch in the same basis.  This prevents the vector ratio from being fitted by one argument and the scalar clue by another.
+
+A natural current to test is the Higgs isospin current
+\begin{equation}
+  \mathcal J^a_\mu
+  =
+  i H^\dagger\frac{\sigma^a}{2}D_\mu H
+  -i(D_\mu H)^\dagger\frac{\sigma^a}{2}H,
+  \label{eq:higgs-isospin-current}
+\end{equation}
+which transforms as an adjoint object while being built from the doublet order parameter.  This current has the right qualitative structure for the ordered pair: doublet data enter the source, adjoint data enter the current.  Turning this observation into Eq.~\eqref{eq:assignment-outputs} is the electroweak calculation owed.
+
+\paragraph*{Section status.}  The projective interpretation follows from the electroweak mass matrix.  The adjoint and doublet Casimirs are identified.  The ordered sampling rule in Eq.~\eqref{eq:Jassignment} remains the primary open calculation.

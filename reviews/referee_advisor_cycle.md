@@ -1,0 +1,63 @@
+# Referee/advisor improvement cycle
+
+This file records the autonomous improvement loop to run after each manuscript pass.
+
+## Cycle protocol
+
+1. **Referee pass.** Read the compiled manuscript as a skeptical PRD referee. Record:
+   - central claim;
+   - strongest source-supported result;
+   - weakest inference;
+   - hidden assumptions;
+   - exact revisions or calculations needed.
+2. **Advisor pass.** Read the referee report as an advisor trying to improve the paper. Record:
+   - one new conceptual route;
+   - one string/Kaluza-Klein mechanism to test;
+   - one source to read;
+   - one equation or diagram the manuscript needs.
+3. **Implementation pass.** Apply revisions that improve derivational clarity, source traceability, or conceptual structure.
+4. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
+5. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
+
+## Cycle 0 status
+
+- Source fragments exist for all local PDFs and CDF-II.
+- The manuscript has been reframed as a PRD conceptual program.
+- The key idea is the combined positive-branch pole-ratio clue and negative-branch Higgs/order-parameter clue.
+- The central missing calculation remains the ordered sampling rule \((J_H,J_{\rm adj})=(3/4,2)\to(M_W,M_Z)\).
+
+## Referee score table
+
+Use scores from 1 to 5. Record the score after each full referee/advisor/implementation loop.
+
+| Loop | Conceptual clarity | Source control | String/KK depth | Electroweak correctness | Open-gap honesty | Referee summary |
+|---:|---:|---:|---:|---:|---:|---|
+| 0 | 2 | 2 | 2 | 3 | 4 | Seed draft reframed; source corpus created; major derivations still open. |
+| 1 | 3 | 3 | 3 | 3 | 4 | Compiled 29-page draft; string/KK, \(G_2\), flavor, global-form, core determinant, and negative branch sections expanded; central derivations remain open. |
+| 2 | 4 | 3 | 4 | 4 | 4 | Compiled 33-page draft; formal pole-scheme ledger, custodial assignment theorem target, and toy endpoint-boundary operator added; central derivations remain explicit open targets. |
+| 3 | 4 | 4 | 4 | 4 | 5 | Compiled 43-page draft; theorem-target appendix and endpoint/brane-Higgsing dictionary added; remaining speculative claims are explicitly attached to derivation targets. |
+| 4 | 4 | 4 | 4 | 4 | 5 | Compiled 44-page draft; radical-placement ledger added to connect source theory, operator, matrix, branches, pole ratio, scalar functional, and topology constraints. |
+| 5 | 4 | 4 | 5 | 4 | 5 | Compiled 46-page draft; KK interval section expanded with variational boundary data, interval kernel, entry dictionary, electroweak assignment theorem, and scalar-branch target. |
+| 6 | 5 | 4 | 5 | 4 | 5 | Compiled 49-page draft after \(G_2\) expansion; singular support, Higgs-bundle variables, local kernel, anomaly/global checks, and scalar-branch map added. |
+| 7 | 5 | 5 | 5 | 5 | 5 | Compiled 62-page draft; route-comparison section, expanded negative-branch scalar-functional analysis, and referee-facing status ledger added. |
+
+## Scoring rubric
+
+- **Conceptual clarity:** the paper states the pole-placement burden and the role of the negative branch.
+- **Source control:** claims point to local fragments or marked source-audit gaps.
+- **String/KK depth:** string theory and Kaluza-Klein mechanisms drive the paper.
+- **Electroweak correctness:** gauge-Higgs statements, pole/running distinctions, and representation claims are correct.
+- **Open-gap honesty:** conjectures, clues, and derivations are labeled with their status.
+
+## Next referee questions
+
+- Does the abstract make the pole-placement burden clear enough?
+- Does the string/Kaluza-Klein section demonstrate command of compactification spectra through mechanisms and equations?
+- Does the negative-branch section make the Higgs/vacuum clue explicit while keeping the derivation status clear?
+- Does the electroweak section correctly place \(J=3/4\) on the Higgs/order-parameter side?
+- Which missing source best supports the historical dual-model/QCD-string framing?
+- Can the next pass turn one matrix entry into an explicit source-theory derivation?
+- Does the pole-scheme section give enough formal definition for PRD review?
+- Does the theorem-target appendix give a referee a complete map of assumptions, consequences, and missing derivations?
+- Does the three-route comparison ledger constrain future string/Kaluza--Klein work tightly enough?
+- Which source-backed historical material should be added next to connect seventies string theory, Regge spectra, endpoint charges, and electroweak structure?

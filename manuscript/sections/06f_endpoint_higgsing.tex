@@ -1,0 +1,147 @@
+\section{Endpoint gauge data and brane Higgsing}
+\label{sec:endpoint-higgsing}
+
+The toy operator in Sec.~\ref{sec:toy-boundary-operator} becomes useful once its entries can be assigned to recognizable string or boundary data.  Open strings and D-branes give one sharp language for this assignment.  The route follows the original string-theory ambition: a particle spectrum is encoded in worldsheet and endpoint data, and spacetime fields arise as low-energy modes of that spectrum.
+
+\subsection{Endpoint labels as a source of matrix structure}
+\label{sec:endpoint-labels}
+
+An open string ending on a stack of \(N\) branes carries endpoint labels.  In modern language these labels are Chan--Paton data.  The corresponding low-energy fields sit in \(N\times N\) matrices; for coincident branes, the massless excitations form a \(U(N)\) gauge field and adjoint scalar fields on the brane worldvolume \cite{TongString}.  Polchinski's review states the same logic in compactification language: current algebras of the compact worldsheet theory give spacetime gauge bosons, and D-brane boundary conditions give open-string gauge fields along the brane \cite{Polchinski1994}.
+
+For the present manuscript the important point is the matrix origin.  Endpoint labels give a natural place for diagonal and off-diagonal channels:
+\begin{equation}
+  |\psi;m,n\rangle,
+  \qquad
+  m,n=1,\ldots,N,
+  \label{eq:endpoint-labeled-state}
+\end{equation}
+with fields
+\begin{equation}
+  A_a=(A_a)^m{}_n,
+  \qquad
+  \Phi^I=(\Phi^I)^m{}_n .
+  \label{eq:endpoint-matrix-fields}
+\end{equation}
+The diagonal entries describe strings whose endpoints lie on the same brane.  The off-diagonal entries describe strings stretched between distinct branes.  At coincidence the off-diagonal vector modes complete the nonabelian gauge multiplet.  This is precisely the type of two-channel bookkeeping needed by Eq.~\eqref{eq:minimal-two-channel}.
+
+The source-backed part of the argument ends here.  The DeVries-specific step is sharper and remains open: the endpoint algebra must produce the two entries
+\begin{equation}
+  \kappa_J^2=J,
+  \qquad
+  \tau_J=J,
+  \label{eq:endpoint-kappa-tau-target}
+\end{equation}
+with \(J=3/4\) and \(J=2\) entering in the ordered electroweak way.  The endpoint labels supply a matrix arena; selecting Eq.~\eqref{eq:endpoint-kappa-tau-target} requires additional dynamics.
+
+\subsection{Worldvolume Yang--Mills and adjoint scalars}
+\label{sec:worldvolume-ym}
+
+The low-energy action for coincident D-branes contains the nonabelian Yang--Mills field strength and adjoint scalars \cite{TongString}.  Schematically,
+\begin{equation}
+  S_{\rm brane}
+  =
+  \int d^{p+1}\xi\,
+  \operatorname{Tr}
+  \left[
+  -\frac{1}{4g_{\rm YM}^2}F_{ab}F^{ab}
+  -\frac12 D_a\Phi^I D^a\Phi^I
+  +\frac14[\Phi^I,\Phi^J]^2
+  +\cdots
+  \right].
+  \label{eq:brane-ym-schematic}
+\end{equation}
+The schematic form is enough for the present program.  Gauge fields and scalars occupy the same matrix algebra.  The covariant derivative
+\begin{equation}
+  D_a\Phi^I=\partial_a\Phi^I+i[A_a,\Phi^I]
+  \label{eq:brane-covariant-derivative}
+\end{equation}
+couples off-diagonal vector modes to scalar expectation values.  When two branes are separated, the off-diagonal gauge fields acquire a mass proportional to the separation; equivalently, the mass is the energy of a string stretched between the branes \cite{TongString}.  The brane construction therefore gives a geometric Higgs mechanism with a scalar modulus and charged vector modes in one matrix system.
+
+This structure is the reason the endpoint route is attractive for the DeVries problem.  The positive branch is meant to describe a vector pole-ratio clue.  The negative branch asks for a scalar or order-parameter partner.  A brane worldvolume action naturally contains both vector and scalar matrix entries.  The current draft asks whether a two-dimensional reduction of such entries can be normalized to
+\begin{equation}
+  \mathcal M_J
+  =
+  \begin{pmatrix}
+  0 & \kappa_J\\
+  \kappa_J & -\tau_J
+  \end{pmatrix},
+  \qquad
+  \kappa_J^2=\tau_J=J.
+  \label{eq:brane-to-devries}
+\end{equation}
+
+\subsection{Endpoint dictionary for the DeVries entries}
+\label{sec:endpoint-dictionary}
+
+The endpoint hypothesis can now be stated as a dictionary.  Let \(h_J\) be the boundary order-parameter amplitude and \(a_J\) the endpoint-current amplitude.  Let \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\) be the two-dimensional light sector.  A candidate derivation must provide three pieces of data:
+\begin{align}
+  \text{zero reference:}\quad & \langle h_J|K_J|h_J\rangle=0,
+  \label{eq:endpoint-zero-reference}\\
+  \text{trace entry:}\quad & \langle a_J|K_J|a_J\rangle=J,
+  \label{eq:endpoint-trace-entry}\\
+  \text{mixing entry:}\quad & \langle h_J|K_J|a_J\rangle
+  \langle a_J|K_J|h_J\rangle=J .
+  \label{eq:endpoint-mixing-entry}
+\end{align}
+Here \(K_J\) is the normalized quadratic kernel obtained after integrating out heavier worldvolume or bulk modes.  Eq.~\eqref{eq:endpoint-trace-entry} should be traced to a current algebra, adjoint Casimir, or boundary kinetic term.  Eq.~\eqref{eq:endpoint-mixing-entry} should be traced to an endpoint overlap, a brane-localized coupling, or a generator normalization.  Eq.~\eqref{eq:endpoint-zero-reference} fixes the baseline for the order-parameter channel.
+
+The representation data suggest the following table:
+\begin{center}
+\begin{tabular}{p{0.25\linewidth}p{0.32\linewidth}p{0.32\linewidth}}
+\toprule
+DeVries entry & Endpoint or brane origin & Derivation owed \\
+\midrule
+\(\tau_J=J\) & adjoint/current trace, boundary kinetic term, or compact current algebra & show the normalized trace is the relevant quadratic invariant \\
+\(\kappa_J^2=J\) & endpoint overlap, stretched-string mixing, or brane/order-parameter coupling & show the off-diagonal product equals the same invariant \\
+\(\Sigma_{hh,J}=0\) & order-parameter reference channel & justify the subtraction by a symmetry, boundary condition, or renormalization convention \\
+\((J_H,J_{\rm adj})=(3/4,2)\) & doublet order parameter and adjoint current & derive the ordered W/Z sampling rule \\
+\bottomrule
+\end{tabular}
+\end{center}
+This dictionary is restrictive.  A completion must determine the entries, the basis, and the normalization from the source theory.
+
+\subsection{Scalar branch from brane separation}
+\label{sec:brane-scalar-branch}
+
+The brane picture also gives a natural language for the negative branch.  In the D-brane Higgs mechanism, scalar expectation values describe brane positions.  Off-diagonal vector fields become massive when the branes separate.  Near coincidence, the off-diagonal modes become light and the full matrix structure controls the local physics \cite{TongString}.  Thus a two-branch matrix can plausibly pair a vector branch with a scalar or separation branch.
+
+For the DeVries construction, this becomes the following target.  There should be a scalar or boundary modulus \(\varphi_J\) and a normalized kernel \(K_J\) such that
+\begin{equation}
+  K_J\big|_{\mathcal H_J}
+  \sim
+  \begin{pmatrix}
+  0 & \sqrt J\\
+  \sqrt J & -J
+  \end{pmatrix},
+  \qquad
+  \varphi_J\ \hbox{is read from}\ u_-(J).
+  \label{eq:brane-negative-branch-target}
+\end{equation}
+Here \(u_-(J)\) is the eigenvector of the negative eigenvalue.  The phrase ``read from'' is an obligation: it must become a gauge-invariant map from the eigenvector data to a scalar quantity such as \(H^\dagger H\), a brane separation, a boundary modulus, or a Higgs-potential parameter.
+
+The scalar branch should also respect the electroweak ray.  If the compact or brane model is meant to reproduce the Standard Model Higgs mechanism, the radial vacuum parameter \(v\) controls the common mass scale while the DeVries quotient controls the projective direction.  A brane-separation interpretation must therefore identify which modulus supplies the radial scale and which normalized matrix supplies the angular data.
+
+\subsection{Why the endpoint route is a hard test}
+\label{sec:endpoint-hard-test}
+
+The endpoint route makes the proposal more constrained.  It asks for an actual reduction:
+\begin{equation}
+  \begin{aligned}
+  \text{endpoint data}
+  &\longrightarrow
+  \text{worldvolume kernel}
+  \longrightarrow
+  \mathcal M_J,\\
+  \mathcal M_J
+  &\longrightarrow
+  \{x_+(J),x_-(J)\}
+  \longrightarrow
+  \text{pole ratio and scalar branch}.
+  \end{aligned}
+  \label{eq:endpoint-hard-test-chain}
+\end{equation}
+Each arrow has a check.  The first arrow is source-supported by Chan--Paton labels, D-brane gauge fields, and adjoint scalars.  The second arrow is the DeVries-specific determinant derivation.  The third arrow is the exact algebra of Sec.~\ref{sec:casimir}.  The last arrow is the pole-placement and negative-branch problem.
+
+This is also where the seventies lineage becomes substantive.  The original dual amplitude began as a spectral object for hadron physics, and open-string amplitudes expose a tower of particle poles \cite{TongString}.  The present manuscript uses that lineage as method: start from a spectral clue, search for the worldsheet or boundary object that produces it, then translate the result into the electroweak pole scheme.  The general string-theory idea that particle data can arise from endpoint and compactification spectra is source-backed; the electroweak translation is speculative.
+
+\paragraph*{Section status.}  The endpoint, brane gauge-field, and brane Higgsing background is source-supported.  The identification of the endpoint kernel with Eq.~\eqref{eq:brane-to-devries} is conjectural and supplies a concrete derivation target.

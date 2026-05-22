@@ -54,4 +54,5 @@ This inventory maps the local PDFs in `references/pdfs/` to manuscript roles. It
 ## Constants and reference data
 
 - `32_PDG2025_Physical_Constants.pdf` — physical constants. Use for constants only; W/Z pole-mass updates require a dedicated electroweak source audit.
+- `35_CDFII_W_boson_mass_Science_2022.pdf` — CDF-II W-boson mass measurement. Use only for the descriptive statement that this value is displaced from the DeVries seed comparison; a full electroweak average requires a separate source audit.
 - `witten1981.pdf` — Witten, search for realistic Kaluza-Klein theory; historical and conceptual source on KK unification and fermion quantum numbers.

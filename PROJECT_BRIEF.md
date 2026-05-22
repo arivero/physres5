@@ -2,7 +2,7 @@
 
 ## Thesis under construction
 
-The DeVries/Rivero observation is organized as a Casimir-quantized secular equation whose positive branch gives a dimensionless ratio numerically equal to the electroweak pole-angle observable. The immediate object is the ratio of pole positions for the W and Z vector bosons. The conceptual problem is to identify the electroweak structure that makes the \(J=3/4\) and \(J=2\) entries the correct samples of the same kinematical operator.
+The DeVries/Rivero observation is organized as a Casimir-quantized secular equation whose positive branch gives a dimensionless ratio numerically close to the electroweak pole-angle observable. The same secular equation has a negative branch that points toward the Higgs/order-parameter scales under the vector-spectrum normalization. The immediate object is the ratio of pole positions for the W and Z vector bosons. The conceptual problem is to identify the electroweak and string/Kaluza-Klein structure that makes the \(J=3/4\) and \(J=2\) entries the correct samples of the same spectral operator.
 
 ## Main equations
 
@@ -34,7 +34,7 @@ The manuscript must keep separate:
 1. The construction fixes an angular/projective electroweak datum. The vacuum expectation value is the radial datum.
 2. The comparison is made at the level of pole masses.
 3. The negative branch may encode the order-parameter/Higgs side of the problem, but this is an open analytical calculation.
-4. The string/brane/Kaluza-Klein/G2 material provides possible dynamics for a kinematical spectrum; it should not be used as ornamental context.
+4. The string/brane/Kaluza-Klein/G2 material provides possible dynamics for a kinematical spectrum and is central to the long PRD target.
 5. Flavor/generation structure is separated from the electroweak mass-angle problem. The working boundary is SO(32)-flavor, not direct generation counting from topology.
 
 ## What a complete manuscript must contain
@@ -46,4 +46,4 @@ The manuscript must keep separate:
 - A limited string/brane/KK/G2 section that derives concrete constraints or tests.
 - A global-form Standard Model appendix that explains line-operator sensitivity and why it is relevant to topological completions.
 - A source-audited bibliography.
-- A red-team section or appendix listing what would falsify the proposal.
+- A red-team section or appendix listing what would reduce, redirect, or strengthen the conceptual program.

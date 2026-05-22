@@ -1,7 +1,9 @@
 \section{Negative branch and the scalar side of the problem}
 \label{sec:negative}
 
-The negative branch in Eq.~\eqref{eq:roots} is fixed by the same secular equation as the positive branch.  It should therefore be retained in the analytical structure even if the W/Z ratio uses only \(x_+\).  The root identities imply
+The negative branch in Eq.~\eqref{eq:roots} is fixed by the same secular equation as the positive branch.  It is therefore part of the clue.  Hans de Vries identified the positive-branch proximity to the mass-shell weak angle.  The same two-root object also contains negative eigenvalues near the scalar/order-parameter scales of electroweak symmetry breaking when the positive branch is normalized by the vector spectrum.  That observation is the main reason the numerics deserve conceptual attention.
+
+The root identities imply
 \begin{equation}
   x_-(J)=-J-x_+(J)=-\frac{J}{x_+(J)}.
   \label{eq:negative-from-positive}
@@ -14,9 +16,136 @@ The Higgs potential can be written as
   \qquad m^2<0
   \label{eq:higgs-potential}
 \end{equation}
-in the broken phase.  The sign of the quadratic term makes the negative branch tempting as an order-parameter datum.  A valid identification must be gauge-invariant and scheme-controlled.  Possible targets include \(m^2\), \(\lambda v^2\), the Higgs pole mass, or an eigenvalue in a compactification problem.
+in the broken phase.  The sign of the quadratic term makes the negative branch tempting as an order-parameter datum.  If the normalization is fixed by \(M_Z^2=\mu^2 x_+(2)\), the two negative magnitudes are
+\begin{equation}
+  M_{-,1} = M_Z\sqrt{\frac{|x_-(2)|}{x_+(2)}},
+  \qquad
+  M_{-,1/2} = M_Z\sqrt{\frac{|x_-(3/4)|}{x_+(2)}} .
+  \label{eq:negative-scales}
+\end{equation}
+The first lies near the electroweak vacuum scale convention \(v/\sqrt2\), and the second lies near the Higgs pole-mass range in the seed arithmetic of the project.  They are unresolved branch-scale identifications.  The secular equation points at the vector pole ratio and at the scalar side of electroweak symmetry breaking at the same time.
 
-The branch values associated with \(J=3/4\) and \(J=2\) generate definite dimensionless numbers.  Multiplying them by a scale fitted to the vector masses gives scales near the electroweak/Higgs range.  This observation is a prompt for analysis.  The manuscript should not promote it to a prediction until a scalar-sector map is derived.
+A valid identification must be gauge-invariant and scheme-controlled.  Possible targets include \(m^2\), \(\lambda v^2\), the Higgs pole mass, or an eigenvalue in a compactification problem.  The branch values associated with \(J=3/4\) and \(J=2\) generate definite dimensionless numbers.  The map from those numbers to scalar observables remains open.
+
+\subsection{Logical role of the negative root}
+\label{sec:negative-logical-role}
+
+The negative root changes the character of the clue.  The positive branch by itself would be a ratio of two selected positive eigenvalues.  The full quadratic gives a paired object: a pole-ratio candidate and a scalar-side candidate arise from one secular equation.  This pairing is the conceptual reason to continue the project.  A dynamical theory that produces Eq.~\eqref{eq:intro-secular} has to say what both branches mean in the same basis.
+
+The two-root structure can be stated as a spectral ledger,
+\begin{equation}
+  \mathcal M_J
+  \longrightarrow
+  \left\{
+  \begin{array}{ll}
+  x_+(J) & \hbox{projective vector datum},\\[2pt]
+  x_-(J) & \hbox{scalar/order-parameter datum}.
+  \end{array}
+  \right.
+  \label{eq:negative-ledger}
+\end{equation}
+The first line is the pole-ratio reading developed in Sec.~\ref{sec:pole}.  The second line is a target for the Higgs, boundary, brane, or compactification sector.  The ledger is meaningful because both entries come from the same diagonalization.  Any proposed derivation that keeps the positive branch acquires the negative-branch obligation automatically.
+
+This obligation also sharpens the electroweak assignment.  The ordered pair \((J_H,J_{\rm adj})=(3/4,2)\) already suggests two electroweak structures: the doublet order parameter and the adjoint current.  The negative branch asks whether the doublet/order-parameter side can be read as a scalar instability, a vacuum scale, or a deformation mode in the same operator that gives the vector pole quotient.  The scalar reading therefore ties together three open calculations: the ordered \(J\)-assignment, the determinant derivation, and the branch-to-Higgs map.
+
+\subsection{Gauge-invariant scalar language}
+\label{sec:gauge-invariant-scalar-language}
+
+The scalar sector has several layers.  The Higgs doublet \(H\) itself is gauge-covariant.  The radial composite
+\begin{equation}
+  \varphi^2 = 2H^\dagger H
+  \label{eq:radial-composite}
+\end{equation}
+is the natural gauge-invariant local order-parameter variable for this manuscript's purpose.  In the broken phase, a gauge choice may represent the vacuum by a real radial expectation value, yet the physical statement should be expressible through invariant quantities, pole positions, or matched parameters.  The negative branch therefore requires a defined scalar functional before it can carry a physical claim.
+
+A useful abstract target is
+\begin{equation}
+  \mathcal F_{\rm sc}
+  =
+  \mathcal F_{\rm sc}
+  \big(
+  H^\dagger H,\,
+  (D_\mu H)^\dagger D^\mu H,\,
+  V(H),\,
+  \hbox{boundary or compactification data}
+  \big),
+  \label{eq:scalar-functional-general}
+\end{equation}
+with a branch assignment
+\begin{equation}
+  \mathcal F_{\rm sc}(J_\star)
+  =
+  C_{\rm sc}\,|x_-(J_\star)|.
+  \label{eq:scalar-functional-branch}
+\end{equation}
+Here \(J_\star\), \(C_{\rm sc}\), and the scheme are part of the theorem.  The expression may describe a pole mass, a curvature of the scalar potential, a vacuum-ray coordinate, a brane separation, or a compactification deformation.  The manuscript should treat all of these as candidate targets until one route derives a specific object.
+
+The scalar pole target is the most restrictive because it demands the same pole discipline as the vector comparison.  The potential target is more sensitive to matching conventions, because \(m^2\), \(\lambda\), and \(v\) depend on the renormalization scheme and on how the effective potential is defined.  The compactification target is broader: \(x_-(J)\) may first appear as an eigenvalue or deformation parameter in a higher-dimensional problem, with the four-dimensional Higgs interpretation emerging after reduction.
+
+\subsection{Vacuum ray and branch pairing}
+\label{sec:vacuum-ray-branch-pairing}
+
+The electroweak ray separates scale from direction.  Along the broken-to-unbroken ray, the radial coordinate scales the vector masses, while the ratio
+\begin{equation}
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{g^2}{g^2+g'^2}
+  \label{eq:negative-vector-projector}
+\end{equation}
+is projective at tree level.  The DeVries quotient addresses this projective datum.  The negative branch is naturally assigned to the scalar side because it shares the same two-channel operator while carrying the opposite eigenvalue.
+
+In a route with fields \(h_J\) and \(a_J\), the branch vectors have the schematic form
+\begin{equation}
+  u_{\pm}(J)=\alpha_\pm(J)h_J+\beta_\pm(J)a_J.
+  \label{eq:negative-branch-mixture}
+\end{equation}
+The scalar-side reading becomes a statement about the \(h_J\) component of \(u_-(J)\).  The vector-side reading becomes a statement about the projective pole ratio extracted from \(u_+(J)\).  A complete derivation should therefore give a branch basis, an inner product, and a normalization.  These data determine whether the negative eigenvector genuinely selects an order-parameter amplitude or whether it belongs to an auxiliary sector of the chosen source theory.
+
+The electroweak ray also supplies a useful consistency check.  Taking the radial vacuum coordinate toward the symmetric point should collapse the vector masses together with the Higgs order parameter.  The DeVries ratio can remain as a projective direction in coupling or spectral space.  A scalar interpretation of \(x_-\) should respect this ray structure by scaling with the radial data or by controlling the deformation that sets the radial scale.
+
+\subsection{Candidate scalar targets}
+
+The Standard Model scalar sector gives several inequivalent objects that can carry a scalar-side interpretation \cite{Logan2022,Dawson2018}.  They have different scheme and gauge properties:
+\begin{center}
+\small
+\begin{tabular}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+Target & Meaning & DeVries requirement\\
+\midrule
+\(m^2\) & quadratic term in the Higgs potential & define the scheme and gauge-invariant extraction\\
+\(\lambda v^2\) & curvature scale of the scalar potential along the radial mode & connect branch value to the electroweak ray\\
+\(M_{h,\rm pole}^2\) & scalar pole position & derive the scalar pole from the same determinant as W/Z\\
+radion/modulus eigenvalue & compactification scalar or boundary deformation & identify the compact operator and its normalization\\
+brane separation mode & endpoint or brane order parameter & show coupling to the adjoint/current channel\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The pole interpretation is the sharpest target.  It asks the same object that governs the vector pole quotient to generate a scalar pole or scalar instability.  The potential interpretation is more flexible, because \(m^2\), \(\lambda\), and \(v\) depend on conventions and matching.  The compactification interpretation is broader still; it may identify the negative branch with a modulus or boundary deformation whose four-dimensional scalar meaning emerges after reduction.
+
+\subsection{Route-specific scalar maps}
+\label{sec:route-specific-scalar-maps}
+
+The endpoint route maps the negative branch to brane scalar data.  In a D-brane system, transverse positions of branes appear as scalar fields on the worldvolume, while strings stretched between branes acquire masses controlled by separation data \cite{TongString,Polchinski1994}.  A DeVries endpoint derivation would identify \(u_-(J)\) with a brane-Higgsing direction, a stretched-string scalar, or a boundary order-parameter field.  The map has to use the same endpoint algebra that supplies the current trace and off-diagonal product.
+
+The interval route maps the negative branch to boundary or modulus data.  A five-dimensional gauge field supplies four-dimensional vector modes and scalar components; the compactification radius, brane terms, and boundary conditions determine the light spectrum \cite{CsakiHubiszMeade2005,WittenKK1981}.  A DeVries interval derivation would identify \(u_-(J)\) with a boundary scalar amplitude, an \(A_5\)-like scalar, a radion-like deformation, or a brane-localized order parameter.  The map has to preserve the same boundary determinant that gives the W/Z branch quotient.
+
+The \(G_2\) route maps the negative branch to singularity deformation data.  Local \(G_2\) constructions place gauge sectors and charged matter at singular loci, and Higgs-bundle descriptions encode matter localization and interaction data through functions on an associative three-cycle \cite{AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  A DeVries \(G_2\) derivation would identify \(u_-(J)\) with a deformation parameter, a localized modulus, a critical value of \(f_Q\), or a charge-density functional.  The same local geometry then has to produce the adjoint/current and order-parameter entries of the kernel.
+
+These maps give the negative branch a practical role in route selection.  A candidate route that produces the positive-branch quotient and leaves the negative eigenvector with a scalar or deformation interpretation becomes stronger.  A route that produces a positive branch while assigning the negative branch to an unrelated auxiliary variable still teaches the manuscript where the physical claim should stop.
+
+\subsection{Eigenvectors and branch meaning}
+
+The two roots also have eigenvectors.  For the matrix in Eq.~\eqref{eq:QJ}, an eigenvector with eigenvalue \(x\) can be represented by
+\begin{equation}
+  v_x \propto
+  \begin{pmatrix}
+  \sqrt J\\
+  x
+  \end{pmatrix}.
+  \label{eq:branch-eigenvector}
+\end{equation}
+Thus the branch assignment is a statement about channel composition.  The positive and negative roots are mixtures of the same two basis amplitudes.  A scalar interpretation of \(x_-\) should therefore identify the basis in which one component is the vector/current side and the other is the order-parameter or boundary side.
 
 A useful criterion is the following.  If the same two-channel determinant produces both the vector pole ratio and the scalar instability, then the determinant should appear in an effective action, boundary condition, or self-energy equation.  The next calculation is to write such a determinant explicitly and identify which field or mode occupies the second channel.
 

@@ -1,7 +1,15 @@
 \section{String, Kaluza--Klein, and \texorpdfstring{$G_2$}{G2} completion problem}
 \label{sec:string-kk-g2}
 
-The secular equation has the form of a low-level branch splitting that preserves a high-spin datum.  This is the reason string and Regge language enter the project.  In string theory, higher-spin excitations organize into Regge trajectories, and the asymptotic slope is controlled by the string tension.  The Rivero construction was motivated in part by preserving such an asymptotic datum while modifying low-spin masses \cite{Rivero2006,TongString}.
+The secular equation has the form of a low-level branch splitting that preserves a high-spin datum.  This is the reason string and Regge language enter the project.  The original Rivero construction imposed a high-spin condition motivated by Regge behavior \cite{Rivero2006}.  A string interpretation must therefore preserve the asymptotic slope while explaining why the low levels split through the two-channel determinant.
+
+The string-theory input is concrete.  Quantized strings generate towers, level matching, endpoint sectors, winding, and compactification charges.  A compact circle already contains the basic Kaluza--Klein mechanism: a higher-dimensional metric reduces to a lower-dimensional metric, a gauge field, and a radius modulus; Fourier modes along the circle acquire masses \(n^2/R^2\) and charges under the gauge field descending from the metric \cite{TongString}.  The string worldsheet adds winding sectors, and winding modes couple to the vector descending from the antisymmetric tensor.  This is the first useful lesson for the DeVries problem: compactification naturally gives more than one integer or representation label, and different sectors can couple to different gauge fields.
+
+Open strings add boundary data.  Neumann and Dirichlet boundary conditions relate left- and right-moving oscillators differently, and D-branes localize open-string states on submanifolds \cite{TongString}.  Coincident branes generate nonabelian gauge fields from open-string excitations.  A DeVries derivation based on endpoints or branes must identify the two channels in Eq.~\eqref{eq:det-completion} with actual boundary degrees of freedom, endpoint charges, or brane/bulk mixing modes.
+
+The older phenomenological string lineage is relevant here.  Regge trajectories in hadron spectra motivate a rotating flux-tube picture, and the open-string Veneziano amplitude was first written to capture strong-interaction features before QCD supplied the gauge-theory description \cite{TongString}.  The DeVries project uses this lineage as a methodological cue: a low-energy spectral regularity can be a real guide to a deeper string or boundary structure, provided the proposed determinant is eventually derived.
+
+Endpoint physics gives the simplest analogy for charged vector states.  In a coincident-brane system, strings stretching between branes carry off-diagonal gauge quantum numbers, and the massless excitations organize into a nonabelian gauge field \cite{TongString}.  The electroweak target is a broken nonabelian gauge sector coupled to a doublet order parameter.  A successful endpoint model must therefore produce both the adjoint-current datum \(J=2\) and the doublet/order-parameter datum \(J=3/4\) inside one boundary or brane determinant.
 
 A Kaluza--Klein or brane derivation would have to produce the determinant
 \begin{equation}
@@ -11,25 +19,30 @@ A Kaluza--Klein or brane derivation would have to produce the determinant
   \end{pmatrix}=0.
   \label{eq:det-completion}
 \end{equation}
-This can arise from a two-channel boundary problem, a mixing of brane-localized and bulk modes, or an effective orbit problem.  The required output is not merely a qualitative similarity; it is the exact \(J\)-dependence in Eq.~\eqref{eq:det-completion}.
+This can arise from a two-channel boundary problem, a mixing of brane-localized and bulk modes, or an effective orbit problem.  The required output is the exact \(J\)-dependence in Eq.~\eqref{eq:det-completion}.
 
-Extra-dimensional electroweak models show that boundary conditions can break gauge symmetry and determine vector spectra.  Higgsless constructions on intervals provide a controlled language for relating boundary data, vector masses, fermion localization, and precision observables \cite{CsakiHubiszMeade2005}.  In the present project, such models serve as templates for deriving a mass-ratio constraint from boundary conditions.
+Extra-dimensional electroweak models show that boundary conditions can break gauge symmetry and determine vector spectra.  Higgsless constructions on intervals provide a controlled language for relating boundary data, vector masses, fermion localization, and precision observables \cite{CsakiHubiszMeade2005}.  The interval viewpoint is valuable because boundary conditions can be obtained as limits of boundary dynamics.  For the present project, this gives a precise target: derive the \(J=3/4,2\) samples as boundary data associated with the Higgs doublet/order-parameter channel and the adjoint/current channel.
 
-M-theory on \(G_2\)-holonomy manifolds supplies a separate completion map.  Smooth compact \(G_2\) compactifications give four-dimensional minimal supersymmetry but do not by themselves yield realistic charged chiral matter in the large smooth limit.  Singularities are required for nonabelian gauge sectors and chiral fermions \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004}.  Local Higgs-bundle descriptions over associative three-cycles give a modern way to organize gauge sectors, localized matter, and singular transitions \cite{BraunEtAl2019}.
+Witten's search for realistic Kaluza--Klein theory gives the historical benchmark.  Extra dimensions can generate gauge groups from geometry, including \(SU(3)\times SU(2)\times U(1)\), while the realistic fermion quantum numbers impose severe constraints \cite{WittenKK1981}.  The DeVries program inherits this lesson.  A compactification mechanism must solve the electroweak spectral problem and remain compatible with chiral matter.
 
-The completion problem can therefore be stated as a table of mechanisms.
+M-theory on \(G_2\)-holonomy manifolds supplies a separate completion map.  Smooth compact \(G_2\) compactifications give four-dimensional minimal supersymmetry in the large smooth limit.  Realistic charged chiral matter requires singularities supporting nonabelian gauge sectors and chiral fermions \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004}.  Local Higgs-bundle descriptions over associative three-cycles give a modern way to organize gauge sectors, localized matter, and singular transitions \cite{BraunEtAl2019}.
+
+The completion problem can therefore be stated as a list of mechanisms and obligations.
 \begin{center}
-\begin{tabular}{lll}
+\small
+\begin{tabular}{p{0.22\linewidth}p{0.31\linewidth}p{0.36\linewidth}}
 \toprule
 Mechanism & What it can supply & Required DeVries test\\
 \midrule
-Regge/string tower & high-spin asymptotics & preserve slope while producing Eq.~\eqref{eq:det-completion}\\
-Interval/brane BC & vector mass spectra & derive \(J=3/4,2\) samples from boundary data\\
-KK compactification & mode eigenvalues & produce two-channel branch determinant\\
+Regge/string tower & high-spin asymptotics & preserve slope and produce Eq.~\eqref{eq:det-completion}\\
+Circle KK reduction & gauge fields and charged KK modes & identify the charge/Casimir source of \(J\)\\
+Winding sector & second compactification charge & test a winding-like interpretation of the second branch\\
+Interval/brane BC & vector spectra and boundary dynamics & derive \(J=3/4,2\) samples from boundary data\\
+Endpoint/open-string sector & localized gauge states & identify the two channels as endpoint or brane/bulk modes\\
 Singular \(G_2\) & gauge/chiral sectors & localize the electroweak operator geometrically\\
 Higgs bundle & matter/mass localization & identify the two branches as spectral-cover data\\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\paragraph*{Section status.}  This section states completion mechanisms and tests.  No dynamical derivation is claimed here.
+\paragraph*{Section status.}  This section states completion mechanisms and tests.  A dynamical derivation requires a concrete boundary, compactification, or endpoint model producing Eq.~\eqref{eq:det-completion}.

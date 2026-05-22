@@ -8,8 +8,8 @@ Preferred pattern:
 2. State assumptions.
 3. Derive consequences.
 4. Label the status: derived, source-supported, conjectural, or open.
-5. State a falsifiable test.
+5. State a conceptual test, analytical obligation, or source-audit requirement.
 
 Avoid filler numerics. Use numbers when they test an equation, define a target, or bound an uncertainty.
 
-Use negative statements only to prevent concrete mathematical or physical errors.
+Use affirmative statements. Correct mathematical or physical errors directly.

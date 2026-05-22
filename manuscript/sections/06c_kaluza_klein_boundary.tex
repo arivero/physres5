@@ -1,0 +1,215 @@
+\section{Kaluza--Klein spectra, boundary conditions, and secular determinants}
+\label{sec:kk-boundary}
+
+Kaluza--Klein theory supplies the second concrete language for the DeVries program.  The original idea unifies gauge fields with geometry by expanding a higher-dimensional theory around a compact ground state.  In Witten's account, symmetries of the compact space appear as gauge symmetries in the lower-dimensional theory, and the physical spectrum is obtained from small oscillations around the compactification background \cite{WittenKK1981}.  The same account also records the hard model-building burden: obtaining the Standard Model gauge group, fermion quantum numbers, and scalar sector is a serious representation problem, even when the gauge group itself can be engineered.
+
+The DeVries problem asks for a narrower and sharper object inside this tradition: a compact or interval derivation of the two-channel determinant
+\begin{equation}
+  \det
+  \begin{pmatrix}
+    \lambda & -\sqrt J\\
+    -\sqrt J & \lambda+J
+  \end{pmatrix}
+  =
+  \lambda^2+J\lambda-J.
+  \label{eq:boundary-devries-target}
+\end{equation}
+This determinant is the entire target of the KK route.
+
+\subsection{Circle compactification and two charge channels}
+\label{sec:kk-circle-channels}
+
+String compactification on a circle gives a clean source-backed example of a two-channel spectral structure.  Ordinary Kaluza--Klein momentum is quantized along the circle.  Closed strings add winding around the same circle.  Polchinski's circle example shows that the Kaluza--Klein vector couples to compact momentum, while the vector descending from the antisymmetric tensor couples to winding \cite{Polchinski1994}.  At the self-dual radius the spectrum has enhanced current algebra, and changing the radius is described by an operator built from the same currents.
+
+This gives the manuscript a useful analogy:
+\begin{equation}
+  \left(
+  \begin{array}{c}
+  \hbox{momentum-like channel}\\
+  \hbox{winding-like or boundary channel}
+  \end{array}
+  \right)
+  \quad\leadsto\quad
+  \{x_+(J),x_-(J)\}.
+  \label{eq:momentum-winding-channel}
+\end{equation}
+The analogy becomes a derivation after the two channels are reduced to Eq.~\eqref{eq:boundary-devries-target}.  The self-dual-radius example also explains why a scalar modulus belongs in the discussion.  The compact radius is a scalar field in the lower-dimensional theory, and gauge enhancement can occur at special values of that scalar.  This is the compactification version of the manuscript's positive/negative branch problem: a vector spectral statement and a scalar modulus can arise from the same compact sector.
+
+\subsection{Interval variational data}
+\label{sec:interval-variational-data}
+
+Extra-dimensional field theory on an interval gives a more direct determinant language.  Csaki--Hubisz--Meade derive boundary conditions from the variational principle for fields on an interval and show how boundary mass terms and boundary kinetic terms modify those conditions \cite{CsakiHubiszMeade2005}.  A scalar example has the schematic action
+\begin{equation}
+  S_{\rm int}
+  =
+  \int d^4x\int_0^Ldy\,
+  \frac12\Big[
+  \partial_M\Phi\,\partial^M\Phi
+  -V(\Phi)
+  \Big]
+  +S_0[\Phi]+S_L[\Phi],
+  \label{eq:interval-action}
+\end{equation}
+with boundary functionals \(S_0\) and \(S_L\).  The boundary variation supplies equations at \(y=0\) and \(y=L\).  Boundary mass terms give Robin-type conditions.  Boundary kinetic terms can make the boundary equation depend on the four-dimensional eigenvalue.  This is exactly the structural feature needed by a secular determinant.
+
+For a mode \(\Phi(x,y)=\phi_\lambda(x)f_\lambda(y)\), the interval problem has the abstract form
+\begin{align}
+  \mathcal L_J f_\lambda(y)&=\lambda f_\lambda(y),
+  \qquad 0<y<L,
+  \label{eq:interval-bulk-eigenproblem}\\
+  \mathcal B_{0,J}(\lambda)f_\lambda(0)&=0,
+  \qquad
+  \mathcal B_{L,J}(\lambda)f_\lambda(L)=0.
+  \label{eq:interval-boundary-eigenproblem}
+\end{align}
+The DeVries route asks for a two-dimensional light sector \(\mathcal H_J\) extracted from this problem.  A convenient basis is
+\begin{equation}
+  \mathcal H_J=\operatorname{span}\{h_J,a_J\},
+  \label{eq:interval-light-sector}
+\end{equation}
+where \(h_J\) is a boundary order-parameter amplitude and \(a_J\) is an adjoint/current amplitude.  The interval derivation then reduces the bulk-plus-boundary problem to an effective kernel
+\begin{equation}
+  K_J^{\rm int}(\lambda)=
+  \begin{pmatrix}
+    \lambda+\Sigma_{hh,J}^{\rm int}(\lambda)
+    &
+    \Sigma_{ha,J}^{\rm int}(\lambda)
+    \\
+    \Sigma_{ah,J}^{\rm int}(\lambda)
+    &
+    \lambda+\Sigma_{aa,J}^{\rm int}(\lambda)
+  \end{pmatrix}.
+  \label{eq:interval-effective-kernel}
+\end{equation}
+The DeVries target is the boundary limit
+\begin{equation}
+  \Sigma_{hh,J}^{\rm int}=0,\qquad
+  \Sigma_{aa,J}^{\rm int}=J,\qquad
+  \Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J.
+  \label{eq:interval-self-energy-target}
+\end{equation}
+This is the interval version of the endpoint target in Sec.~\ref{sec:endpoint-higgsing}.
+
+\subsection{Dictionary for the interval entries}
+\label{sec:interval-entry-dictionary}
+
+The interval construction separates the entries of Eq.~\eqref{eq:boundary-devries-target} into physically addressable data:
+\begin{center}
+\begin{tabular}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+Entry & Interval origin & Derivation target \\
+\midrule
+\(\Sigma_{hh,J}^{\rm int}=0\) & order-parameter reference boundary & fix the subtraction by a symmetry, a brane condition, or a normalization convention \\
+\(\Sigma_{aa,J}^{\rm int}=J\) & boundary inertia, adjoint current trace, or brane kinetic term & identify the quadratic invariant that appears in the boundary equation \\
+\(\Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J\) & overlap between boundary and bulk profiles, brane-localized mixing, or endpoint-current coupling & derive the invariant from a normalized overlap or generator product \\
+\((J_H,J_{\rm adj})=(3/4,2)\) & Higgs/order-parameter channel and adjoint/current channel & derive the ordered electroweak sampling rule from the coupled interval problem \\
+\bottomrule
+\end{tabular}
+\end{center}
+The table is intentionally strict.  A boundary mass term by itself can produce many secular equations.  The DeVries claim requires the trace and determinant data in Eq.~\eqref{eq:interval-self-energy-target} and the electroweak ordering of \(J\)-samples.
+
+The possible origins of \(J\) are correspondingly limited:
+\begin{equation}
+  J
+  \in
+  \left\{
+  C_2(R_{\rm int}),
+  C_2(R_{\rm bdry}),
+  h_{\rm CFT},
+  q_{\rm KK}^2,
+  \langle f_{\rm bdry},f_{\rm bulk}\rangle^2
+  \right\}.
+  \label{eq:J-origin-list}
+\end{equation}
+Here \(C_2\) denotes a quadratic invariant, \(h_{\rm CFT}\) a conformal weight or current-algebra datum, \(q_{\rm KK}\) a compact charge, and the overlap term a normalized boundary/bulk integral.  The final paper should name one of these entries and derive the equality to \(J\).
+
+\subsection{Gauge fields, boundary breaking, and the electroweak ray}
+\label{sec:kk-gauge-ray}
+
+Gauge fields on an interval carry a stronger constraint than scalar toy models.  Boundary conditions that break gauge symmetry have to arise from the action and preserve the consistency of the lower-dimensional gauge theory.  Csaki--Hubisz--Meade use this language for electroweak symmetry breaking by boundary conditions and for Higgsless models \cite{CsakiHubiszMeade2005}.  Their framework is relevant here because it gives a controlled setting in which massive vector modes, a photon zero mode, custodial structure, and brane-localized terms can be discussed in one spectral problem.
+
+The DeVries construction requires the boundary model to preserve the electroweak ray.  The low-energy gauge-Higgs mass matrix has the form
+\begin{equation}
+  \mathcal M_{\rm EW}^2(v)
+  =
+  v^2\,\mathcal P(g,g'),
+  \label{eq:ew-ray-boundary}
+\end{equation}
+where \(v\) is radial and \(\mathcal P(g,g')\) is projective.  The DeVries ratio can act on \(\mathcal P(g,g')\), or on a boundary operator whose pole condition reduces to that same projective datum.  Thus the interval model should yield a coupled charged/neutral construction:
+\begin{equation}
+  \left[
+  \begin{array}{c}
+  SU(2)_L\hbox{ charged sector}\\
+  SU(2)_L\times U(1)_Y\hbox{ neutral sector}\\
+  \hbox{photon zero mode}
+  \end{array}
+  \right]
+  \quad\longrightarrow\quad
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{x_+(J_H)}{x_+(J_{\rm adj})}.
+  \label{eq:interval-ew-target}
+\end{equation}
+This requirement places the W and Z readings inside one gauge-Higgs or boundary system.  The photon must remain the unbroken mode, and the massive neutral pole must carry the adjoint/current sample.
+
+The interval version of the ordered assignment theorem is:
+\begin{equation}
+\begin{gathered}
+  \text{bulk gauge fields}
+  +\text{boundary terms}
+  +\text{order-parameter channel}
+  \\
+  \Longrightarrow
+  K_J^{\rm int}(\lambda)
+  \Longrightarrow
+  (J_W,J_Z)=(3/4,2).
+\end{gathered}
+\label{eq:interval-assignment-theorem}
+\end{equation}
+This theorem is parallel to the endpoint theorem in Sec.~\ref{sec:endpoint-higgsing}.  The two routes can eventually compete: endpoint labels emphasize matrix algebra, while interval boundary conditions emphasize variational origin and pole equations.
+
+\subsection{Scalar partner from interval data}
+\label{sec:kk-scalar-partner}
+
+The negative branch also has a KK address.  Witten's review notes that compactification naturally produces scalar degrees of freedom, including radius moduli and possible charged scalar modes tied to symmetry breaking questions \cite{WittenKK1981}.  Polchinski's circle compactification likewise identifies the compact radius with a lower-dimensional scalar and shows that changing the radius is tied to current algebra at enhanced-symmetry points \cite{Polchinski1994}.  In interval language, scalar data can appear as boundary values, Wilson-line-like data, brane-localized order parameters, or moduli of the compact geometry.
+
+The scalar-branch target is therefore
+\begin{equation}
+  u_-(J)\in\mathcal H_J
+  \quad\longmapsto\quad
+  \mathcal F_{\rm KK}
+  \in
+  \left\{
+  R(x),\,
+  H^\dagger H,\,
+  A_5,\,
+  \hbox{brane scalar},\,
+  \hbox{localized modulus}
+  \right\}.
+  \label{eq:kk-negative-branch-map}
+\end{equation}
+Here \(u_-(J)\) is the negative-branch eigenvector of the two-channel kernel.  A final derivation should identify \(\mathcal F_{\rm KK}\), state its gauge transformation properties, and explain its scheme relation to the low-energy Higgs/order-parameter variables.
+
+\subsection{Hard test for the KK route}
+\label{sec:kk-hard-test}
+
+The KK route becomes a hard test once it is expressed as the following chain:
+\begin{equation}
+\begin{aligned}
+  \text{compact or interval source}
+  &\longrightarrow
+  \text{boundary variational problem}
+  \longrightarrow
+  K_J^{\rm int}(\lambda),
+  \\
+  K_J^{\rm int}(\lambda)
+  &\longrightarrow
+  \lambda^2+J\lambda-J
+  \longrightarrow
+  \{\sPole,\mathcal F_{\rm KK}\}.
+\end{aligned}
+\label{eq:kk-hard-test}
+\end{equation}
+The first arrow is source-backed by the KK and interval literature.  The second arrow is the DeVries determinant derivation.  The last arrow is the pole-placement and scalar-branch assignment.  This chain gives the manuscript a concrete way to compare compactification, endpoint, and \(G_2\) routes.
+
+\paragraph*{Section status.}  The KK circle, interval, and boundary-condition background is source-supported.  The reductions in Eqs.~\eqref{eq:interval-self-energy-target}, \eqref{eq:interval-assignment-theorem}, and \eqref{eq:kk-negative-branch-map} are theorem targets.

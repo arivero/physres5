@@ -1,0 +1,184 @@
+\section{\texorpdfstring{$G_2$}{G2} localization and local spectral operators}
+\label{sec:g2-localization}
+
+The \(G_2\) route supplies a third concrete language for the DeVries program.  Its role in this manuscript is local.  It gives a framework in which gauge fields, charged matter, order-parameter data, and deformation modes can live at singular loci of a compactification.  M-theory on \(G_2\)-holonomy spaces is a natural route to four-dimensional \(\mathcal N=1\) structure; singularities provide the gauge and matter sectors needed for particle physics \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004}.  The DeVries question is whether a localized \(G_2\) operator can reduce to the same two-channel determinant used in the pole-ratio clue.
+
+\subsection{Singular support for gauge and matter sectors}
+\label{sec:g2-singular-support}
+
+The source-backed starting point is the localization of degrees of freedom.  Witten explains that \(G_2\) compactifications with singularities can support abelian or nonabelian gauge groups with chiral fermions, with anomaly inflow from the bulk supplying a consistency condition \cite{WittenG2Anomaly2001}.  Acharya and Witten describe examples where singular loci carry nonabelian gauge groups and conical or intersection points support chiral multiplets \cite{AcharyaWitten2001}.  Acharya and Gukov review the broader picture: singular \(G_2\) spaces are the essential setting for nonabelian gauge groups, chiral fermions, and strongly coupled gauge dynamics in M-theory compactifications \cite{AcharyaGukov2004}.
+
+The DeVries problem asks for a local sector with three named pieces:
+\begin{equation}
+  \left(
+  \begin{array}{c}
+  \hbox{singular gauge locus}\\
+  \hbox{localized charged matter or order parameter}\\
+  \hbox{deformation mode of the singularity}
+  \end{array}
+  \right)
+  \quad\leadsto\quad
+  \mathcal M_J.
+  \label{eq:g2-local-pieces}
+\end{equation}
+The singular gauge locus is the natural address for adjoint/current data.  The localized charged matter or order-parameter mode is the natural address for the doublet side.  The deformation mode is the natural address for the scalar branch.
+
+This local focus also controls the topology issue.  A compact \(G_2\) model imposes global constraints, including anomaly, representation, and line-operator data.  The determinant can be tested locally first.  A global compactification can then be asked to support the same local operator and the Standard Model global form.
+
+\subsection{Higgs-bundle variables on an associative three-cycle}
+\label{sec:g2-higgs-bundle-variables}
+
+Modern local \(G_2\) gauge sectors can be organized by a Higgs-bundle-like system on an associative three-cycle \(M_3\).  Braun, Cizel, Hubner, and Schafer-Nameki describe a gauge field together with a one-form Higgs field on \(M_3\), with matter localized at critical loci and interactions controlled by gradient-flow data \cite{BraunEtAl2019}.  In the abelianized local description, the Higgs field can be written schematically as
+\begin{equation}
+  \Phi=\sum_{i=1}^n t_i\,df_i,
+  \qquad
+  \rho=\sum_{i=1}^n t_i\,\rho_i,
+  \qquad
+  \Delta f_i=\rho_i,
+  \label{eq:g2-higgs-bundle-data}
+\end{equation}
+where \(t_i\) are Cartan generators and the \(\rho_i\) encode charge distributions.  For a representation with charge vector \(Q=(q_1,\ldots,q_n)\), the effective Morse function is
+\begin{equation}
+  f_Q=\sum_{i=1}^n q_i f_i,
+  \qquad
+  \rho_Q=\sum_{i=1}^n q_i\rho_i.
+  \label{eq:g2-effective-morse}
+\end{equation}
+Matter in the representation \(R_Q\) localizes at points where
+\begin{equation}
+  df_Q(p)=0.
+  \label{eq:g2-localization-condition}
+\end{equation}
+Flow lines between such critical points can generate mass terms, and trivalent flow trees can generate Yukawa couplings when the representation charges sum to zero \cite{BraunEtAl2019}.  This is a strong local dictionary: gauge data, matter localization, mass terms, and interactions are all functions of the same geometric input.
+
+For the DeVries program, the Higgs-bundle variables give a possible address for the local operator:
+\begin{equation}
+  \mathcal O_J^{G_2}
+  =
+  \mathcal O_J\big(W,\Phi,\rho_Q,f_Q\big),
+  \label{eq:g2-operator-address}
+\end{equation}
+where \(W\) is the gauge field on \(M_3\).  The precise form of \(\mathcal O_J^{G_2}\) is open.  The useful point is that \(W\), \(\Phi\), and \(f_Q\) already separate adjoint gauge data, scalar deformation data, and localized representation data.
+
+\subsection{Local two-channel kernel}
+\label{sec:g2-two-channel-kernel}
+
+Let \(a_J\) be an adjoint/current fluctuation supported along the singular gauge locus, and let \(h_J\) be a localized order-parameter fluctuation at a critical point of \(f_Q\).  Let
+\begin{equation}
+  \mathcal H_J^{G_2}=\operatorname{span}\{h_J,a_J\}.
+  \label{eq:g2-light-sector}
+\end{equation}
+After integrating out heavier localized and bulk modes, the local inverse propagator or spectral kernel has the same abstract form as the endpoint and interval kernels:
+\begin{equation}
+  K_J^{G_2}(\lambda)=
+  \begin{pmatrix}
+  \lambda+\Sigma_{hh,J}^{G_2}(\lambda)
+  &
+  \Sigma_{ha,J}^{G_2}(\lambda)
+  \\
+  \Sigma_{ah,J}^{G_2}(\lambda)
+  &
+  \lambda+\Sigma_{aa,J}^{G_2}(\lambda)
+  \end{pmatrix}.
+  \label{eq:g2-local-kernel}
+\end{equation}
+The DeVries target is
+\begin{equation}
+  \Sigma_{hh,J}^{G_2}=0,\qquad
+  \Sigma_{aa,J}^{G_2}=J,\qquad
+  \Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J.
+  \label{eq:g2-self-energy-target}
+\end{equation}
+This target is a local statement.  It can be tested near one singular locus or one conical point before a compact global model is specified.
+
+\subsection{Dictionary for the \texorpdfstring{$G_2$}{G2} entries}
+\label{sec:g2-entry-dictionary}
+
+The local \(G_2\) dictionary is:
+\begin{center}
+\begin{tabular}{p{0.23\linewidth}p{0.35\linewidth}p{0.32\linewidth}}
+\toprule
+DeVries entry & \(G_2\) origin & Derivation target \\
+\midrule
+\(\Sigma_{aa,J}^{G_2}=J\) & ADE singular gauge sector, current algebra, or adjoint fluctuation along \(M_3\) & show that the normalized local trace is the relevant quadratic invariant \\
+\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\) & localized matter overlap, flow-line coupling, bifundamental vev, or singularity-deformation mixing & derive the off-diagonal product from the local wavefunctions or flow data \\
+\(\Sigma_{hh,J}^{G_2}=0\) & reference order-parameter channel at a critical point of \(f_Q\) & justify the zero entry through local normalization or symmetry of the critical-point problem \\
+\((J_H,J_{\rm adj})=(3/4,2)\) & localized doublet/order-parameter data and adjoint/current data & derive the ordered electroweak assignment inside the same local singularity model \\
+\bottomrule
+\end{tabular}
+\end{center}
+This table turns \(G_2\) geometry into a determinant problem.  It also prevents the geometry from becoming a decorative completion.  Each geometric object must provide one entry of \(K_J^{G_2}\), one assignment rule, or one consistency check.
+
+\subsection{Higgsing as singular deformation}
+\label{sec:g2-higgsing-deformation}
+
+Acharya and Witten give a pattern directly relevant to this manuscript: in examples where singular loci meet, gauge groups live on the singular components, chiral multiplets can be supported at the meeting point, and Higgsing corresponds to a geometric deformation or smoothing of the singularity \cite{AcharyaWitten2001}.  In their brane-related examples, a vev for a bifundamental field can break a product gauge symmetry to a diagonal subgroup, while the local singular geometry changes accordingly.
+
+For DeVries, this suggests the deformation chain
+\begin{equation}
+  \begin{aligned}
+  \text{intersecting singular loci}
+  &\longrightarrow
+  \text{localized chiral/order-parameter mode}
+  \\
+  &\longrightarrow
+  \text{deformed singularity}
+  \longrightarrow
+  K_J^{G_2}(\lambda).
+  \end{aligned}
+  \label{eq:g2-higgsing-chain}
+\end{equation}
+The scalar branch would then be read from the deformation direction.  If \(u_-(J)\) is the negative-branch eigenvector in \(\mathcal H_J^{G_2}\), the target scalar map is
+\begin{equation}
+  \begin{aligned}
+  u_-(J)&\longmapsto \mathcal F_{G_2},
+  \\
+  \mathcal F_{G_2}
+  &\in
+  \left\{
+  \begin{array}{l}
+  \hbox{deformation parameter},\ f_Q(p),\ \rho_Q,\\
+  \hbox{bifundamental vev},\ \hbox{localized modulus}
+  \end{array}
+  \right\}.
+  \end{aligned}
+  \label{eq:g2-negative-branch-map}
+\end{equation}
+The map must also respect the electroweak ray.  The deformation parameter can supply the scalar side, while the pole-ratio branch supplies the projective vector side.
+
+\subsection{Anomaly and global checks}
+\label{sec:g2-anomaly-global}
+
+The \(G_2\) route has strong consistency tests.  Witten's anomaly-inflow discussion links local singularity data to four-dimensional chiral matter and anomaly cancellation \cite{WittenG2Anomaly2001}.  Therefore a local DeVries operator has to pass the following checks:
+\begin{enumerate}
+\item the singular gauge locus supports the required adjoint sector;
+\item localized charged matter has the desired representation content;
+\item anomaly inflow or its local analogue is compatible with the charged fields;
+\item the global gauge-group form of Sec.~\ref{sec:global-form} is compatible with the local representations;
+\item flavor labels remain separate from compactification topology until a representation map is derived.
+\end{enumerate}
+These checks can reject a candidate completion even when the two-channel determinant is obtained locally.
+
+\subsection{Hard test for the \texorpdfstring{$G_2$}{G2} route}
+\label{sec:g2-hard-test}
+
+The \(G_2\) route becomes a hard test in the same form as the endpoint and interval routes:
+\begin{equation}
+\begin{aligned}
+  \text{singular }G_2\text{ neighborhood}
+  &\longrightarrow
+  (W,\Phi,\rho_Q,f_Q)
+  \longrightarrow
+  K_J^{G_2}(\lambda),
+  \\
+  K_J^{G_2}(\lambda)
+  &\longrightarrow
+  \lambda^2+J\lambda-J
+  \longrightarrow
+  \{\sPole,\mathcal F_{G_2},\mathcal C_{\rm top}\}.
+\end{aligned}
+\label{eq:g2-hard-test}
+\end{equation}
+The first arrow is source-backed by singular \(G_2\) compactification and Higgs-bundle literature.  The second arrow is the DeVries determinant derivation.  The final arrow is the pole-placement, scalar-branch, and global-form assignment.  A future proof can start locally, then extend to compact global data after the determinant appears.
+
+\paragraph*{Section status.}  The \(G_2\) localization, anomaly, Higgsing, and Higgs-bundle background is source-supported.  The reductions in Eqs.~\eqref{eq:g2-self-energy-target}, \eqref{eq:g2-negative-branch-map}, and \eqref{eq:g2-hard-test} are theorem targets.

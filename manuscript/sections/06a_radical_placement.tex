@@ -1,0 +1,139 @@
+\section{Radical placement and scale attachment}
+\label{sec:radical-placement}
+
+The secular equation contains the radical
+\begin{equation}
+  \Delta_J^{1/2}=\sqrt{J^2+4J}.
+  \label{eq:radical-object}
+\end{equation}
+The manuscript treats \(\Delta_J^{1/2}\) as the central object whose physical address must be identified.  The algebra alone specifies a two-branch spectrum.  Physics begins when the radical is assigned to a pole condition, a boundary determinant, a compactification eigenvalue, a worldsheet constraint, or a running matching condition.
+
+\subsection{Placement options}
+
+The possible placements are distinct research programs.
+\begin{center}
+\small
+\begin{tabular}{p{0.20\linewidth}p{0.28\linewidth}p{0.42\linewidth}}
+\toprule
+Placement & Physical meaning & Derivation owed\\
+\midrule
+Pole spectrum & \(\Delta_J^{1/2}\) enters a propagator or self-energy pole condition & derive the W/Z pole ratio and scalar partner branch from one spectral equation\\
+GUT boundary & \(\Delta_J^{1/2}\) fixes a high-scale weak-angle datum & embed the \(J\)-samples in a unification representation and run to the pole scale\\
+Running parameter & \(\Delta_J^{1/2}\) constrains a scheme-dependent coupling or vacuum parameter & specify the scheme, scale, matching map, and threshold corrections\\
+KK eigenvalue & \(\Delta_J^{1/2}\) comes from a compact internal wave operator & identify the internal operator, mode labels, degeneracies, and boundary conditions\\
+Open-string endpoint & \(\Delta_J^{1/2}\) comes from endpoint or Chan--Paton data & derive the two-channel matrix from endpoint charges and brane/bulk mixing\\
+Worldsheet constraint & \(\Delta_J^{1/2}\) comes from level matching, conformal weights, or a modular sector & identify the CFT labels and show how they reduce to the electroweak determinant\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The pole-spectrum placement is the current working reading.  It gives the numerical clue its electroweak content because W and Z are observed as poles.  It also gives the negative branch a task: the same determinant should know about the scalar/order-parameter side.  This reading demands the most direct dynamical calculation, since it asks string/Kaluza--Klein structure to survive down to a low-energy pole observable.
+
+The GUT-boundary placement gives a familiar comparison class.  In SU(5) and Spin(10) settings, representation theory can give a clean weak-angle value at the high scale, with running and thresholds supplying the low-energy relation \cite{Britto2021}.  A DeVries high-scale reading would join that lineage.  The current manuscript pursues the pole reading because the negative branch and pole-ratio clue appear together in the same low-energy normalization.
+
+\subsection{Scale attachment}
+
+Let \(\mathcal O_J\) denote the physical operator whose two-channel reduction gives
+\begin{equation}
+  \det(\lambda-\mathcal O_J)=\lambda^2+J\lambda-J.
+  \label{eq:operator-placement}
+\end{equation}
+The scale question is then a question about where \(\mathcal O_J\) lives:
+\begin{equation}
+  \mathcal O_J
+  \in
+  \left\{
+  \mathcal O_{\rm pole},
+  \mathcal O_{\rm GUT},
+  \mathcal O_{\rm KK},
+  \mathcal O_{\rm brane},
+  \mathcal O_{\rm CFT}
+  \right\}.
+  \label{eq:operator-addresses}
+\end{equation}
+Each address has a different interpretation of the same algebra.  A pole operator must be built from four-dimensional gauge-Higgs correlators.  A GUT operator must be built from representation traces and matching.  A KK operator must be a compact internal differential operator or boundary value problem.  A brane operator must couple localized and bulk modes.  A worldsheet operator must arise from conformal weights, current algebra, or level matching.
+
+This list is useful because it prevents the radical from floating between schemes.  The manuscript can change placement; each placement changes the required derivation.
+
+\subsection{Placement ledger}
+\label{sec:placement-ledger}
+
+The placement question can be recorded as a ledger.  A source theory \(\mathcal S\) supplies an operator, the operator supplies a two-channel kernel, the kernel supplies branches, and the branches acquire physical meaning after a scheme and an assignment rule have been fixed:
+\begin{equation}
+\begin{aligned}
+\mathcal S
+&\longrightarrow
+\mathcal O_J
+\longrightarrow
+\mathcal M_J
+\longrightarrow
+\{x_+(J),x_-(J)\},
+\\
+\{x_+(J),x_-(J)\}
+&\longrightarrow
+\left\{
+\sPole,\,
+\mathcal F_{\rm sc},\,
+\mathcal C_{\rm top}
+\right\}.
+\end{aligned}
+\label{eq:placement-ledger}
+\end{equation}
+Here \(\mathcal F_{\rm sc}\) denotes the scalar/order-parameter functional sought in Sec.~\ref{sec:negative}, and \(\mathcal C_{\rm top}\) denotes the global-form and representation constraints discussed in Secs.~\ref{sec:flavour} and \ref{sec:global-form}.  The ledger separates four tasks:
+\begin{align}
+  \text{operator origin:}\quad&
+  \mathcal S\mapsto \mathcal O_J,
+  \label{eq:ledger-origin}\\
+  \text{two-channel reduction:}\quad&
+  \mathcal O_J\mapsto
+  \begin{pmatrix}0&\sqrt J\\ \sqrt J&-J\end{pmatrix},
+  \label{eq:ledger-reduction}\\
+  \text{branch reading:}\quad&
+  \mathcal M_J\mapsto \{x_+(J),x_-(J)\},
+  \label{eq:ledger-branch}\\
+  \text{physical assignment:}\quad&
+  \{x_\pm\}\mapsto
+  \left(\sPole,\mathcal F_{\rm sc},\mathcal C_{\rm top}\right).
+  \label{eq:ledger-assignment}
+\end{align}
+
+Each arrow has different source support.  Complex-pole and scheme language belongs to the last arrow \cite{MartinRobertson2025}.  Higgs doublet, adjoint current, custodial structure, and the electroweak ray belong to the assignment arrow \cite{Logan2022,Dawson2018}.  Endpoint labels, D-brane gauge fields, and interval boundary conditions belong to the first two arrows \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.  The current manuscript has exact control of Eq.~\eqref{eq:ledger-branch}; the other arrows are open derivation targets.
+
+This ledger also organizes the negative branch.  If a candidate source theory derives \(\mathcal M_J\), then \(x_-(J)\) is carried by the same light-sector basis as \(x_+(J)\).  The scalar question becomes a question about the eigenvector map,
+\begin{equation}
+  u_-(J)\in\mathcal H_J
+  \quad\longmapsto\quad
+  \mathcal F_{\rm sc},
+  \label{eq:negative-eigenvector-ledger}
+\end{equation}
+where \(\mathcal H_J\) is the two-dimensional light sector.  A Higgs interpretation requires \(\mathcal F_{\rm sc}\) to be gauge invariant.  A brane interpretation requires \(\mathcal F_{\rm sc}\) to be a modulus, separation, or localized boundary datum.  A compactification interpretation requires \(\mathcal F_{\rm sc}\) to be a normalized internal eigenmode or deformation parameter.
+
+The ledger gives a compact criterion for progress.  A new idea improves the paper when it fills one of the arrows in Eq.~\eqref{eq:placement-ledger}; it distracts from the paper when it adds labels outside the ledger.
+
+\subsection{Original research route}
+
+The route developed here is:
+\begin{equation}
+\begin{aligned}
+  \text{Regge/high-spin datum}
+  &\longrightarrow
+  \text{two-channel secular determinant}
+  \\
+  &\longrightarrow
+  \text{electroweak pole ratio and scalar partner branch}.
+\end{aligned}
+  \label{eq:research-route}
+\end{equation}
+The first arrow belongs to the string/dual-model tradition: spectra organize into towers with controlled asymptotics.  The second arrow is the DeVries algebra.  The third arrow is the open electroweak calculation.
+
+A concrete model should therefore supply four ingredients:
+\begin{enumerate}
+\item an internal label whose quadratic invariant is \(J\);
+\item a two-channel system whose off-diagonal mixing is fixed by \(\sqrt J\);
+\item a diagonal trace term giving the \(-J\) entry;
+\item a physical normalization that places the positive branch on the vector pole ratio and the negative branch on the scalar/order-parameter side.
+\end{enumerate}
+
+The fourth ingredient is the new conceptual burden.  It turns the algebraic clue into a physical program and fixes the relation between the pole reading and high-scale weak-angle boundary data.
+
+\paragraph*{Section status.}  This section states the radical-placement problem and the original research route.  The physical operator \(\mathcal O_J\) remains open.

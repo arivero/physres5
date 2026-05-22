@@ -1,10 +1,10 @@
-# Completion criteria for the 50-page manuscript
+# Completion criteria for the long PRD manuscript
 
 A complete manuscript satisfies these checks.
 
 ## Structural checks
 
-- 35–50 manuscript pages in REVTeX preprint format.
+- At least 60 manuscript pages in REVTeX PRD preprint format for the long target.
 - Abstract states the observable, the construction, and the open dynamical question.
 - Introduction distinguishes derivation, coincidence, conjecture, and program.
 - Main text contains no hidden dependence on unpublished conversation context.
@@ -17,7 +17,7 @@ A complete manuscript satisfies these checks.
 - Pole-mass scheme is stated with conversion formulas.
 - W/Z assignment is either derived or isolated as the central conjecture.
 - Negative branch is analyzed without overclaiming.
-- The string/brane/KK/G2 section contains concrete mechanisms or constraints.
+- The string/brane/KK/G2 sections show strong command of string theory and Kaluza-Klein mechanisms, including compactification spectra, boundary data, endpoint sectors, and the role of singularities.
 - Flavor/generation claims respect the SO(32)-flavor caveat.
 
 ## Validation checks

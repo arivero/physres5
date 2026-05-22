@@ -2,7 +2,9 @@
 
 ## Working mode
 
-Work as a research assistant for a speculative high-energy-physics manuscript. Preserve precision. State assumptions, equations, consequences, and tests. Do not inflate conjectures into derivations. The goal is a coherent manuscript, up to 50 pages, whose open calculations are explicit enough that a referee can see what follows and what remains.
+Work as a research assistant for a speculative high-energy-physics manuscript. Preserve precision. State assumptions, equations, consequences, and tests. Keep conjectures labeled as conjectures. The goal is a coherent Physical Review D manuscript, at least 60 pages in the long target version, whose open calculations are explicit enough that a referee can see what follows and what remains.
+
+Active phase: conceptual manuscript development. Prioritize source reading, section architecture, physical interpretation, explicit assumptions, open analytical obligations, referee/advisor critique cycles, and Lean-style notes. Verification for this phase is LaTeX compilation with `make manuscript`. Leave numerical scripts, numerical sanity checks, and `make numbers` for a user-approved calculation phase.
 
 ## Core construction
 
@@ -46,7 +48,11 @@ Interpret this first as a pole-spectrum statement. Treat running weak mixing ang
 
 ## Style
 
-Use affirmative exposition. Prefer equations, explicit assumptions, derived consequences, and falsifiable tests. Avoid filler numerics. Avoid decorative prose. Avoid habitual contrast formulas such as “this is X, not Y” unless the negative statement prevents a concrete error.
+Use affirmative exposition. Prefer equations, explicit assumptions, derived consequences, and falsifiable tests. Avoid filler numerics. Avoid decorative prose.
+Do not use rhetorical contrast formulas. Avoid phrases such as “not X, but Y,” “not merely X,” “rather than,” and close variants. Correct technical errors directly. Avoid adjectival positioning where an equation, assumption, consequence, or test can do the work.
+Use Lean-style notes in `notes/lean/` when useful to trigger expert review. These notes are not compiled; they record obligations, assumptions, and open derivations.
+
+Progress discipline: avoid fake work. Each work block should leave manuscript text, source inventory, conceptual notes, review records, or explicit open issues in a better state.
 
 ## Repository commands
 

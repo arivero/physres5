@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 78 REVTeX PRD preprint pages after the Loop 20 compile.
+- Current compiled draft: 80 REVTeX PRD preprint pages after the Loop 21 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -48,6 +48,11 @@
   x_+(J_H)/x_+(J_{\rm adj})+\Delta^{(r)}_{\rm match}\).  The interval route
   is the current source-controlled test through CHM boundary data and the
   eaten-Goldstone boundary-kernel synthesis.
+- Use Loop 21's interval source square as the next source-theory proof target:
+  \((v_0,v_L,R_0,\theta_H)\to(K_T^{\partial I},K_{A_5\pi}^{\partial I})
+  \to K_J^{\rm eaten}(\lambda)\to\Pi_T^{(4)}(s;J)\), with gauge-fixing,
+  scalar/eaten-mode separation, photon-zero-mode preservation, and at least one
+  derived entry such as \(\Sigma_{aa,J}=J\).
 
 ## Completed in latest pass
 
@@ -91,6 +96,11 @@
   D's CHM Dirichlet-to-Neumann route-test marker, the eaten-Goldstone
   boundary-kernel theorem target, updated Lean notes, and Loop 20 review
   reports.
+- Added Loop 21 normalization: source-pack index repair, softened inventory
+  claims, manual bibliography additions, targeted citations for
+  Salam--Strathdee, Haba--Oda, Bucci, Hosotani, Jegerlehner,
+  Breitenlohner--Freedman, and Biekotter, plus the interval source square in
+  Appendix D and Lean notes.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.

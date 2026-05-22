@@ -231,13 +231,19 @@ axiom chm_dtn_interval_route_required :
 structure EatenGoldstoneBoundaryKernel where
   chmSourceData : CHMIntervalSourceData
   commonBoundaryHiggsDatum : Type
+  boundaryHiggsValues : Type
+  radionOrIntervalSizeDatum : Type
+  hosotaniWilsonLinePhase : Type
   transverseVectorKernel : Type
   scalarGoldstoneKernel : Type
   lightProjection : Type
   chmInnerProduct : Type
+  gaugeFixingParameterTreatment : Type
+  physicalScalarEatenModeSeparation : Type
   photonZeroModeAccount : Type
   orderedWZBoundaryMap : Type
   vectorPoleMap : Type
+  lambdaToMassAndSelfEnergyMap : Type
   negativeBranchFunctional : Type
 
 def eatenKernelHitsDeVriesTarget
@@ -264,6 +270,39 @@ axiom chm_eaten_goldstone_boundary_kernel_required :
     eatenKernelSharesBoundaryHiggsingDatum E ∧
     eatenKernelHitsDeVriesTarget E ∧
     eatenKernelMatchesPoleScheme E
+
+/- Loop 21 interval source square:
+     (v0, vL, R0, thetaH)
+       -> (K_T^{partial I}, K_{A5 pi}^{partial I})
+       -> P_J^dagger (.) P_J
+       -> K_J^eaten(lambda)
+       -> Pi_T^{(4)}(s;J).
+   Source anchors:
+     CHM for interval boundary equations and photon zero mode;
+     Haba-Oda for Dirichlet Higgs / radion stabilizer variables;
+     Bucci et al. for radion effective potential with electroweak breaking;
+     Hosotani for compact gauge-field / Wilson-line scalar data;
+     Salam-Strathdee for harmonic expansion and massive KK towers.
+   Expert trigger:
+     derive at least Sigma_AA,J = J from the boundary operator and product.
+-/
+structure Loop21IntervalSourceSquare where
+  sourceVariables : Type
+  transverseBoundaryKernel : Type
+  scalarBoundaryKernel : Type
+  projectionToOrderCurrentBasis : Type
+  gaugeFixingLedger : Type
+  photonZeroModePreservation : Type
+  lambdaToPoleSelfEnergy : Type
+  firstEntryDerivation : Type
+
+def loop21SquareDerivesSigmaAA
+    (L : Loop21IntervalSourceSquare) : Prop :=
+  True
+
+axiom loop21_interval_square_first_entry_required :
+  ∃ L : Loop21IntervalSourceSquare,
+    loop21SquareDerivesSigmaAA L
 
 /- Dimensional interpolation route:
    Treat the D=10 full-gauge interior, or the colourless D=6 interior, as a

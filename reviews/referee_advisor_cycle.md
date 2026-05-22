@@ -56,6 +56,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 18 | 5 | 5 | 5 | 5 | 5 | Normalized O10 as a factorized active-channel interpolation, demoted the \(D=9\) endpoint to a geometric \(U(1)\) until the electromagnetic embedding theorem, and added a top-sector source-map target. |
 | 19 | 5 | 5 | 5 | 5 | 5 | Sharpened the interval route with CHM source boundary data, a Dirichlet-to-Neumann kernel target, electroweak boundary proof obligations, and parent-root triage refresh. |
 | 20 | 5 | 5 | 5 | 5 | 5 | Added route-matching remainders, split interval source data from open normalization, marked the CHM Dirichlet-to-Neumann subtarget as the source-controlled route test, and recorded the eaten-Goldstone boundary-kernel synthesis. |
+| 21 | 5 | 5 | 5 | 5 | 5 | Integrated the interval source pack, repaired source indexing, added gauge-fixing and source-to-pole obligations for the eaten-Goldstone square, and placed running-alpha and diphoton material into theorem ledgers. |
 
 ## Scoring rubric
 

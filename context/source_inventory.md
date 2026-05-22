@@ -90,3 +90,16 @@ PRD phase.
 - `35_CDFII_W_boson_mass_Science_2022.pdf` — CDF-II W-boson mass measurement. Use only for the descriptive statement that this value is displaced from the DeVries seed comparison; a full electroweak average requires a separate source audit.
 - `witten1981.pdf` — Witten, search for realistic Kaluza-Klein theory; historical and conceptual source on KK unification and fermion quantum numbers.
   - Loop 18 use: pages 1--10 support the seven-extra-dimensional \(SU(3)\times SU(2)\times U(1)\) endpoint and the one-, two-, and four-dimensional minimum symmetry addresses for \(U(1)\), \(SU(2)\), and \(SU(3)\); pages 11--17 support the fermion quantum-number obstruction and the status of Higgs/low-energy breaking as separate model-building data.
+
+## Electroweak-couplings route (alpha, radion, gauge-Higgs) -- added 2026-05-22 from physres6
+
+These support the alpha/O17 and Regge/O18 route, plus the scalar-branch
+boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*/`.
+
+- `40_Bucci_EWSB_radion_stabilization_UED_hep-ph-0403012.pdf` — model-specific link between electroweak breaking and radion effective potential in universal extra dimensions; source for scalar-modulus address candidates in O3/O10.
+- `41_HabaOda_Dirichlet_Higgs_radion_stabilizer_1102.1970.pdf` — nonzero Dirichlet boundary conditions for a bulk scalar, Goldberger--Wise stabilization, and an \(SU(2)_R\) triplet Higgs as a stabilizer; source for interval boundary scalar variables.
+- `42_Biekotter_95GeV_diphoton_excess_2306.03889.pdf` — the \(\sim95.4\) GeV diphoton excess as a collider-ledger source for Target VIII; any particle assignment remains a separate source-theory theorem.
+- `43_Jegerlehner_running_alpha_Adler_0807.4206.pdf` — running fine-structure constant \(\alpha(E)\) via the Adler function and hadronic vacuum polarization; source for the O17 scheme/running audit.
+- `44_Salam_Strathdee_On_Kaluza_Klein_Theory_IC-81-211.pdf` — Kaluza--Klein harmonic expansion on \(G/H\), zero-mode Yang--Mills reduction, and massive tower language. (ICTP preprint IC/81/211, the Annals Phys.\ 141 (1982) 316 paper.)
+- `45_Hosotani_Dynamical_Mass_Generation_Compact_Extra_Dimensions_PLB126_1983.pdf` — gauge-Higgs/Hosotani mechanism; order parameter from a compact gauge-field component and Wilson-line data.
+- `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.

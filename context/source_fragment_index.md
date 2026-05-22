@@ -40,5 +40,12 @@ Fragments use 10-page ranges where possible and preserve PDF page numbers.
 | `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` | 23 | source | extracted |
 | `39_Kumar_Taylor_String_Universality_Six_Dimensions_0906.0987.pdf` | 28 | source | extracted |
 | `witten1981.pdf` | 17 | kaluza-klein, fermion-quantum-numbers, historical | extracted |
+| `40_Bucci_EWSB_radion_stabilization_UED_hep-ph-0403012.pdf` | 20 | radion, moduli-stabilization, extra-dimensions, electroweak | extracted |
+| `41_HabaOda_Dirichlet_Higgs_radion_stabilizer_1102.1970.pdf` | 36 | radion, higgs-stabilizer, warped | extracted |
+| `42_Biekotter_95GeV_diphoton_excess_2306.03889.pdf` | 15 | diphoton-excess, 95gev, collider | extracted |
+| `43_Jegerlehner_running_alpha_Adler_0807.4206.pdf` | 7 | running-alpha, vacuum-polarization, fine-structure | extracted |
+| `44_Salam_Strathdee_On_Kaluza_Klein_Theory_IC-81-211.pdf` | 32 | kaluza-klein, salam-strathdee, historical | extracted |
+| `45_Hosotani_Dynamical_Mass_Generation_Compact_Extra_Dimensions_PLB126_1983.pdf` | 5 | gauge-higgs-unification, hosotani, extra-dimensions | extracted |
+| `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` | 33 | breitenlohner-freedman, ads-stability, supergravity | extracted |
 
 Extraction status records successful text extraction only. Exact claims still require page-level reading before citation.

@@ -49,7 +49,7 @@ Interpret this first as a pole-spectrum statement. Treat running weak mixing ang
 ## Style
 
 Use affirmative exposition. Prefer equations, explicit assumptions, derived consequences, and falsifiable tests. Avoid filler numerics. Avoid decorative prose.
-Do not use rhetorical contrast formulas. Avoid phrases such as “not X, but Y,” “not merely X,” “rather than,” and close variants. Correct technical errors directly. Avoid adjectival positioning where an equation, assumption, consequence, or test can do the work.
+Do not use rhetorical contrast formulas. Avoid phrases such as “not X, but Y,” “X, not Y,” “not merely X,” “rather than,” and close variants — the canonical example is the Bond formula “shaken, not stirred.” This pattern is heavy in pretraining (it saturates referee reports and review prose), so it recurs across models and must be suppressed per sentence. Correct technical errors directly. Avoid adjectival positioning where an equation, assumption, consequence, or test can do the work.
 Use Lean-style notes in `notes/lean/` when useful to trigger expert review. These notes are not compiled; they record obligations, assumptions, and open derivations.
 
 Progress discipline: avoid fake work. Each work block should leave manuscript text, source inventory, conceptual notes, review records, or explicit open issues in a better state.
@@ -79,3 +79,4 @@ make clean         # remove generated LaTeX artifacts
 ## Done definition
 
 A task is done when the edited files compile or pass tests, the relevant section contains no hidden uncited factual claims, and `OPEN_ISSUES.md` has been updated with any remaining analytical gap.
+REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

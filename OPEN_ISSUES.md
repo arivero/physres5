@@ -107,6 +107,13 @@ main text are source addresses.  They acquire physical status after a
 gauge-invariant scalar functional, normalization, and electroweak scheme are
 derived.
 
+**Loop 21 source-pack refinement.** Bucci and Haba--Oda support scalar-modulus,
+radion, Dirichlet-Higgs, and boundary-Higgs address candidates for O3/O10.
+Hosotani supports a compact gauge-field or Wilson-line scalar candidate.
+Breitenlohner--Freedman supply an AdS boundary-condition caveat for negative
+mass-squared scalar modes; the DeVries negative branch still requires a
+route-specific scalar functional and normalization theorem.
+
 ## O4. Dynamical derivation from string/brane/Regge data
 
 **Question.** Why should a string/brane/KK system generate exactly this two-branch secular equation?
@@ -194,6 +201,28 @@ K_J^{\rm eaten}(\lambda)
 The open data are the projection \(P_J\), the CHM product, the \(J\)
 normalization, the photon zero mode, the ordered W/Z boundary map, and the
 matching of \(K_J^{\rm eaten}\) to the pole scheme.
+
+**Loop 21 interval source-pack refinement.** The active CHM route now uses the
+boundary trace variables
+\[
+h_J\sim P_J(\pi_i,A_5,\delta v,\delta R,\theta_H),
+\qquad
+a_J\sim P_J(A_\mu^{\rm bdry}),
+\]
+with \(v_i\) boundary Higgs data, \(R\) an interval/radion datum, and
+\(\theta_H\) a Hosotani/Wilson-line phase.  The source-controlled square is
+\[
+(v_0,v_L,R_0,\theta_H)
+\to
+\left(K_T^{\partial I},K_{A_5\pi}^{\partial I}\right)
+\to K_J^{\rm eaten}(\lambda)
+\to \Pi^{(4)}_{T,V}(s;J).
+\]
+The next proof step is derivation of at least one entry, preferably
+\(\Sigma_{aa,J}=J\), from the boundary operator and inner product, with
+gauge-fixing parameter treatment, physical-scalar/eaten-mode separation,
+photon zero-mode preservation, and \(\lambda\mapsto m_n^2\mapsto\Pi_T(s)\)
+supplied.
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
@@ -372,6 +401,11 @@ now has the form
 The source-to-EFT-to-pole theorem must derive
 \(\Delta^{(r)}_{\rm match}=0\) in the selected pole scheme or compute a
 controlled remainder with fixed sign, scale, and field-basis dependence.
+
+**Loop 21 source-audit refinement.** Every exact pole statement in the interval,
+endpoint, \(G_2\), alpha, or Regge route must use the same remainder form before
+it appears as a physical claim.  The CHM interval square is the current active
+test case for fixing the field basis and matching map.
 
 ## O5. Electroweak ray and forbidden deformations
 
@@ -793,6 +827,12 @@ g_{\rm sec}^2=
 The next source task is a primary audit of running electromagnetic coupling
 definitions and compactification gauge-coupling normalization.
 
+**Loop 21 source-audit refinement.** Jegerlehner supplies the running
+\(\alpha(E)\) and Adler-function source for the O17 scheme audit.  Any
+intermediate-scale comparison must specify effective, \(\MSbar\), on-shell, or
+Euclidean conventions, plus hadronic vacuum-polarization and threshold
+prescriptions.
+
 ## O18. The \(s=3/2\) positive state and a Regge completion
 
 **Provenance.** Human operator note (2026-05-22).  Awareness note: keep this on
@@ -848,5 +888,42 @@ The main correction is notation: \(j\) labels the DeVries sector,
 from the source theory.  The first higher positive slot is a projection and
 assignment problem until a source route derives the kernel, common slope,
 projection rule, and gauge quantum numbers.
+
+**Loop 21 source-audit refinement.** Biekotter--Heinemeyer--Weiglein supply a
+neutral \(95.4\) GeV diphoton phenomenology ledger source for Target VIII.
+The DeVries branch identity, projection survival, gauge representation, and
+production/decay ledger remain source-theory obligations.
+
+## O19. Brane-scaling identity of the two branches
+
+**Provenance.** Human operator note (2026-05-22), from a `../physres6`
+cross-check that caught and corrected a prior misreading.
+
+**Question.** Which brane scaling does each DeVries branch follow as mass versus
+spin, and does the identification survive a worldvolume/Regge derivation?
+
+**Finding (verify independently).** Measured against the spin \(s\) (with
+\(J=s(s+1)\) the Casimir label), via the rotating-brane law
+\(M\sim s^{p/(p+1)}\):
+- positive branch: \(M_+\to\mu\) bounded \(\Rightarrow p=0\) point / D0-brane;
+- negative branch: \(M_-\propto s\) (since \(|x_-|\to J=s(s+1)\), so
+  \(M_-^2\propto s(s+1)\)) \(\Rightarrow p\to\infty\) space-filling brane.
+A fundamental string (\(M\sim s^{1/2}\)) is excluded: \(M_-/\sqrt s\) grows.
+
+**The trap.** Reading \(M_-^2\propto J\) against the Casimir \(J\) wrongly
+suggests a string (\(M\sim\sqrt J\)); an intermediate "D0/D1" reading made this
+error and is withdrawn. Use the spin \(s\) as the Regge axis.
+
+**Duality.** The branch inversion \(x\to-J/x\) (\(M^2\to-\mu^4J/M^2\)) exchanges
+the point (D0, all-Dirichlet) and the space-filling brane (all-Neumann): a
+full-T-duality pair.
+
+**Success criterion.** Derive the point/space-filling correspondence from a
+worldvolume or Regge mechanism; reconcile the space-filling growth of the sector
+label with the conventional linear Regge tower (which comes from the separate
+oscillator \(n\) in \(M_{n,j,\pm}^2=\mu^2x_{j,\pm}+n/\alpha'\)); and state
+whether the inversion is literally full T-duality. Cross-check:
+`../physres6/calculations/branch_duality.md`.
+
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

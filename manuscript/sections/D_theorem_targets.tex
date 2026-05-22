@@ -26,7 +26,7 @@ The targets share a common data structure.  Let \(\mathcal S\) be a source theor
   \{x_+(J),x_-(J)\}.
   \label{eq:appendix-reduction-chain}
 \end{equation}
-The reduction is meaningful after the normalization of \(\mathcal H_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.
+The reduction is meaningful after the normalization of \(\mathcal H_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005,SalamStrathdee1982}.
 
 For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A plausibility argument may motivate the target, yet the manuscript's final physical claim must track the proven statement.
 
@@ -360,11 +360,12 @@ normalized quadratic kernel be
   \end{pmatrix}.
   \label{eq:target-boundary-kernel}
 \end{equation}
-The source may be an interval theory with brane-localized terms, an open-string endpoint sector, or a localized singularity construction.  Boundary mass and kinetic terms can alter eigenvalue conditions in extra-dimensional models \cite{CsakiHubiszMeade2005}.  Open-string endpoints and D-brane gauge sectors supply a separate endpoint language \cite{TongString,Polchinski1994}.
+The source may be an interval theory with brane-localized terms, an open-string endpoint sector, or a localized singularity construction.  Boundary mass and kinetic terms can alter eigenvalue conditions in extra-dimensional models \cite{CsakiHubiszMeade2005}.  Dirichlet-Higgs, radion, and compact gauge-field sources supply scalar variables for the interval route \cite{Bucci2004,HabaOda2011,Hosotani1983}.  Open-string endpoints and D-brane gauge sectors supply a separate endpoint language \cite{TongString,Polchinski1994}.
 
 For the interval route, the admissible source data include CHM boundary
 kinetic terms, the modified scalar product, boundary scalar vevs, vector Robin
-conditions, and \(A_5/\pi_i\) scalar boundary equations.  A sharpened interval
+conditions, \(A_5/\pi_i\) scalar boundary equations, radion variables,
+Dirichlet-Higgs boundary profiles, and Wilson-line phases.  A sharpened interval
 subtarget is
 \begin{equation}
   K^{\rm int}_J(\lambda)
@@ -413,8 +414,11 @@ Equivalently, the physical derivation fixes the two named entries
 Sec.~\ref{sec:toy-boundary-operator} gives the target action and the required
 entries.  CHM support eigenvalue-dependent boundary conditions, modified inner
 products, vector boundary data from scalar vevs, and scalar boundary remnants
-as interval ingredients.  Endpoint and D-brane sources support the separate
-endpoint arena.  The exact DeVries entries remain conjectural.
+as interval ingredients.  Salam--Strathdee support the harmonic-expansion and
+massive-tower language, Haba--Oda and Bucci support boundary scalar/radion
+variables, and Hosotani supports compact gauge-field scalar data.  Endpoint
+and D-brane sources support the separate endpoint arena.  The exact DeVries
+entries remain conjectural.
 The advisor route sharpens the interval target to an eaten-Goldstone boundary
 kernel:
 \begin{equation}
@@ -430,6 +434,30 @@ kernel:
 Here \(h_J\) is tested as the boundary Higgs/Goldstone variable and \(a_J\)
 as the transverse adjoint-current boundary value.  The same boundary Higgsing
 datum would then source the vector kernel and the scalar partner functional.
+Loop 21 turns this into a source-to-pole square with explicit boundary
+variables:
+\begin{equation}
+\begin{array}{ccc}
+(v_0,v_L,R_0,\theta_H) &
+\longrightarrow &
+\left(K_T^{\partial I},K_{A_5\pi}^{\partial I}\right)
+\\
+\downarrow && \downarrow\,P_J^\dagger(\cdot)P_J
+\\
+(t_{\rm EW},\mathcal F_{\rm sc}) &
+\longrightarrow &
+K_J^{\rm eaten}(\lambda)
+\longrightarrow
+\Pi^{(4)}_{T,V}(s;J).
+\end{array}
+\label{eq:target-loop21-interval-square}
+\end{equation}
+Here \(v_0\) and \(v_L\) denote boundary Higgs data, \(R_0\) denotes a radion or
+interval-size datum, and \(\theta_H\) denotes a Hosotani/Wilson-line phase.
+The theorem must supply the gauge-fixing parameter treatment, the
+physical-scalar/eaten-mode separation, photon zero-mode preservation,
+\(\lambda\mapsto m_n^2\mapsto\Pi_T(s)\), and the first entry-level derivation,
+preferably \(\Sigma_{aa,J}=J\) from the boundary operator and inner product.
 
 \paragraph*{Failure mode.}
 The target fails if boundary variation gives a different trace, a different off-diagonal product, or an additional channel that changes the determinant class.  The result in that case would be a larger family of secular relations containing the DeVries matrix as a limiting or approximate case.
@@ -456,7 +484,7 @@ There exists a gauge-invariant scalar functional \(\mathcal F_{\rm sc}\) such th
 for a stated \(J_\star\), normalization \(C\), and scheme.  Candidate readings include a Higgs-potential parameter, the radial vacuum scale, a boundary modulus, or a brane-separation mode.
 
 \paragraph*{Current evidence.}
-Sec.~\ref{sec:negative} records the scalar target table and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.
+Sec.~\ref{sec:negative} records the scalar target table and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
 
 \paragraph*{Failure mode.}
 The target fails if the negative branch has purely auxiliary meaning in the derived source theory.  The positive-branch clue can still motivate the determinant problem, while the scalar claims must then be removed from the physical conclusion.
@@ -660,7 +688,9 @@ status until derived from the source route.
 The Standard Model identities \(M_W^2=g^2v^2/4\) and
 \(e=g\sin\theta_W\) supply the low-energy algebraic bridge
 \cite{Logan2022,Dawson2018}.  Martin--Robertson give the scheme language for
-running electroweak parameters \cite{MartinRobertson2025}.  The PDG constants
+running electroweak parameters \cite{MartinRobertson2025}.  Jegerlehner
+supplies a dedicated running-\(\alpha\) source through the Adler function and
+hadronic vacuum polarization \cite{Jegerlehner2008}.  The PDG constants
 table is kept in the source inventory for constants; the manuscript still
 needs a dedicated source audit before selecting an intermediate hadronic
 matching point \cite{PDGPhysicalConstants2025}.  Witten's Kaluza--Klein
@@ -748,7 +778,10 @@ is projected out, assigned to a neutral resonance, assigned to a charged or
 coloured sector, or retained only as an algebraic branch datum.
 Eq.~\eqref{eq:target-regge-three-halves} supplies the branch value; the
 assignment requires the source-theory quantum numbers and a source-audited
-collider ledger.
+collider ledger.  Biekotter--Heinemeyer--Weiglein provide one phenomenology
+source for a neutral \(95.4\) GeV diphoton ledger \cite{Biekotter2023}; the
+branch identity, gauge representation, and survival rule remain source-theory
+targets.
 
 \paragraph*{Failure mode.}
 If the source theory fails to separate \(j\) from \(N_{\rm osc}\), to derive a

@@ -59,6 +59,13 @@ TOPIC_TAGS = {
     "32_": ("constants", "pdg"),
     "34_": ("msbar", "standard-model-parameters", "scheme"),
     "35_": ("cdf-ii", "w-boson-mass", "electroweak-input"),
+    "40_": ("radion", "moduli-stabilization", "extra-dimensions", "electroweak"),
+    "41_": ("radion", "higgs-stabilizer", "warped"),
+    "42_": ("diphoton-excess", "95gev", "collider"),
+    "43_": ("running-alpha", "vacuum-polarization", "fine-structure"),
+    "44_": ("kaluza-klein", "salam-strathdee", "historical"),
+    "45_": ("gauge-higgs-unification", "hosotani", "extra-dimensions"),
+    "46_": ("breitenlohner-freedman", "ads-stability", "supergravity"),
     "witten1981": ("kaluza-klein", "fermion-quantum-numbers", "historical"),
 }
 

@@ -4,8 +4,8 @@
 
 This appendix records the analytical obligations in theorem form.  Each target
 names its hypotheses, conclusion, current evidence, and failure mode.  A
-complete version of the manuscript proves these statements, replaces them with
-stronger statements, or demotes the dependent claims.
+physical derivation proves one of the targets below, replaces it with a
+stronger statement, or demotes the associated claim.
 
 \subsection{Common format}
 \label{app:theorem-format}
@@ -89,8 +89,8 @@ Thus one theorem supplies the source reduction, the reduced inner product, the
 DeVries entries, the ordered W/Z sampling maps, and the pole-placement chain.
 
 \paragraph*{Current evidence.}
-The endpoint, interval, and \(G_2\) sections supply source-backed addresses for
-the three route types.  The interval route has the most explicit boundary
+The endpoint, interval, and \(G_2\) sections supply candidate arenas for the
+three route types.  The interval route has the most explicit boundary
 operator language, while the \(G_2\) route supplies localization language for
 gauge and matter data.  The unified theorem is the common acceptance test
 shared by the routes.
@@ -101,6 +101,46 @@ route-dependent inner product, a different trace or mixing product, an
 unordered electroweak sampling map, or a high-scale quantity whose matching to
 complex poles changes the determinant.  Such an outcome classifies the source
 as a neighboring spectral construction.
+
+\subsection{Target 0a: admissibility filters for route reductions}
+\label{app:target-admissibility-filters}
+
+\paragraph*{Hypotheses.}
+Assume a proposed source route supplies a reduced two-channel matrix, a parent
+representation route for the ordered \(J\)-assignment, or an SO(32)-flavor
+boundary sector.  Let \(Q(J)\), \(K_{\rm seed}^{(1)}\), and
+\(K_-^{\sigma_3}\) denote distinct reduced matrices until a common source
+operator, projection, field basis, and normalization identify their vector
+spaces.
+
+\paragraph*{Conclusion.}
+The route must pass three filters before it can support the DeVries pole-ratio
+claim:
+\begin{enumerate}
+\item any trace, determinant, or coefficient transfer among \(Q(J)\),
+  \(K_{\rm seed}^{(1)}\), and \(K_-^{\sigma_3}\) is derived from a common
+  source operator;
+\item any Wigner--Eckart or Clebsch derivation specifies the parent
+  representation, operator tensor type, projection, and normalization;
+\item any SO(32)-flavor sector states its extra-state projection, anomaly and
+  hypercharge checks, global-form compatibility, and electroweak-kernel
+  coupling.
+\end{enumerate}
+
+\paragraph*{Current evidence.}
+The trace-space separation follows from the fact that the matrices above act
+on different reduced variables in the present draft.  The natural
+Wigner--Eckart trials have been tested at the level needed for route triage:
+the doublet-parent route is removed by the selection rule, and the triplet
+axial route gives a parent-Casimir datum different from the DeVries target.
+The SO(32) sector supplies representation bookkeeping and a possible string
+boundary arena.
+
+\paragraph*{Failure mode.}
+The target fails for a route if a coefficient is imported across trace spaces,
+if the ordered \(J\)-assignment depends on a parent representation already
+excluded by the selection rule or parent-Casimir datum, or if flavor
+bookkeeping is used before the completion checks are supplied.
 
 \subsection{Target I: pole placement}
 \label{app:target-pole-placement}
@@ -147,9 +187,14 @@ The theorem target is a pole-spectrum identification:
   \sPole
   =
   1-\frac{x_+(J_H)}{x_+(J_{\rm adj})}
+  +\Delta_{\rm match}
   \label{eq:target-pole-conclusion}
 \end{equation}
-up to stated radiative, threshold, and scheme translations.  The theorem must also explain why the assigned scale is the low-energy pole spectrum, with high-scale boundary placements handled by a separate derivation.
+with a stated matching remainder.  The theorem either derives
+\(\Delta_{\rm match}=0\) in the pole scheme or computes the controlled
+radiative, threshold, and scheme contribution.  The theorem must also explain
+why the assigned scale is the low-energy pole spectrum, with high-scale
+boundary placements handled by a separate derivation.
 For any compactification, endpoint, interval, or local \(G_2\) source, the
 scale-placement statement has the matching form
 \begin{equation}
@@ -389,6 +434,16 @@ The derived operator \(\mathcal M_J\) is compatible with the allowed line operat
 
 \paragraph*{Current evidence.}
 Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the current boundary conditions: the SO(32)-flavor idea is a representation-sector clue, and global-form data are completion constraints.  The manuscript avoids identifying generations with compactification topology until a representation map is derived.
+The representation audit includes the proposed boundary data
+\begin{equation}
+  16=(5,3)+(1,1),
+  \qquad
+  \wedge^2(5,3)=(15,\bar 3)+(\overline{10},6),
+  \label{eq:target-so32-flavour-audit}
+\end{equation}
+which require an orientifold or endpoint construction, extra-state projection
+or decoupling, anomaly and hypercharge checks, global-form checks, and a
+derived coupling to the electroweak \(K_J\).
 
 \paragraph*{Failure mode.}
 The target fails if the determinant arises in a gauge or flavor sector incompatible with Standard Model line operators, anomaly conditions, or observed representations.  A failure here would be decisive for a proposed completion even if the local two-channel determinant is mathematically correct.
@@ -410,13 +465,13 @@ or through a joint source variable
   u\longmapsto\big(t_{\rm dim}(u),t_{\rm EW}(u)\big).
   \label{eq:target-dimensional-joint-source}
 \end{equation}
-The source-backed full-gauge endpoint is
+The full-gauge endpoint source trail is
 \begin{equation}
   (D,n_{\rm KK})=(11,7):
   SU(3)\times SU(2)\times U(1).
   \label{eq:target-full-dimensional-source-endpoint}
 \end{equation}
-The five-extra-dimensional endpoint is a reconstruction target until its
+The five-extra-dimensional endpoint remains a reconstruction target until its
 electroweak embedding identifies the surviving \(U(1)\) with
 \(U(1)_{\rm em}\):
 \begin{equation}
@@ -461,8 +516,9 @@ yields the ordered electroweak samples
   \label{eq:target-dimensional-assignment}
 \end{equation}
 The full-gauge middle line is then \((D,n_{\rm KK})=(10,6)\).  The
-colourless middle line is \((D,n_{\rm KK}^{\rm ew})=(6,2)\).  The theorem
-also supplies the pole-matching chain in Eq.~\eqref{eq:target-pole-matching-chain}.
+colourless middle line is \((D,n_{\rm KK}^{\rm ew})=(6,2)\).  The
+reconstruction target also supplies the pole-matching chain in
+Eq.~\eqref{eq:target-pole-matching-chain}.
 
 \paragraph*{Current evidence.}
 Witten's Kaluza--Klein analysis supplies the source trail for the

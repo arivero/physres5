@@ -49,6 +49,8 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 11 | 5 | 5 | 5 | 5 | 5 | Normalized abstract, introduction, route comparison, and conclusion around assumptions and theorem targets; added electroweak mass-map and matching refinements. |
 | 12 | 5 | 5 | 5 | 5 | 5 | Added unified source-to-pole Target 0, tightened route basis/projection obligations, clarified dimensional endpoint status, and indexed the broader parent workspace inventory. |
 | 13 | 5 | 5 | 5 | 5 | 5 | Added electroweak ray admissibility as a theorem target, separated dimensional and electroweak interpolation parameters, and sharpened the \(G_2\) inner-product obligation. |
+| 14 | 5 | 5 | 5 | 5 | 5 | Added targeted parent-workspace audit notes for Wrong Turn provenance, trace-space separation, Wigner--Eckart failure modes, SO(32) flavor/string boundary obligations, and top-sector cautions. |
+| 15 | 5 | 5 | 5 | 5 | 5 | Demoted Casimir framing to input status, added audit-derived admissibility filters, recorded Wigner--Eckart as a failed tested subroute, and tightened SO(32) flavor/string boundary obligations. |
 
 ## Scoring rubric
 
@@ -77,3 +79,4 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Which parent-workspace cluster should receive a targeted audit after the broad `..` inventory: `../prTalks`, `../hans/signed_dbdevries`, `../weak`, or `../phys4/notes`?
 - Does the rank-and-ray theorem make the allowed electroweak deformation precise enough for source-route testing?
 - Can one interval or \(G_2\) source route derive the map from a dimensional or geometric parameter to the electroweak radial ray?
+- Do the audit-derived filters now make coefficient transfer, failed parent routes, and SO(32) completion obligations referee-checkable?

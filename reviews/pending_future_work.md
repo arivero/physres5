@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 66 REVTeX PRD preprint pages.
+- Current compiled draft: 70 REVTeX PRD preprint pages after the Loop 15 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push one route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -19,6 +19,12 @@
   interval, brane, KK, or \(G_2\) source route must preserve one radial
   electroweak parameter, the photon null direction, and the fixed projective
   W/Z direction after matching.
+- Use Loop 15's admissibility filters before adding new route claims:
+  coefficient transfer requires a common source operator and normalization;
+  Wigner--Eckart/Clebsch routes require a new parent representation or
+  operator after the tested failures; SO(32) flavor/string claims require
+  projection, anomaly, hypercharge, global-form, and electroweak-coupling
+  checks.
 
 ## Completed in latest pass
 
@@ -38,12 +44,15 @@
 - Added Loop 14 parent targeted audit: Wrong Turn provenance, trace-space
   separation, Wigner--Eckart failed-route status, SO(32) flavor/string
   boundary obligations, and top-boundary cautions.
+- Added Loop 15 normalization: secular mass-ratio title framing, trace-space
+  admissibility filters, Wigner--Eckart failed-route filters, SO(32) branching
+  obligations, and pole-matching remainder \(\Delta_{\rm match}\).
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
 - Added \(G_2\) localization section.
 - Expanded flavor boundary and global-form sections.
-- Expanded core Casimir-secular section with trace/determinant target.
+- Expanded core secular-operator section with trace/determinant target.
 - Expanded negative-branch section with scalar target table and eigenvector reading.
 - Updated Lean-style obligation notes for endpoint, KK, \(G_2\), flavor, and global form.
 - Expanded the pole-observable section into a formal scheme ledger.

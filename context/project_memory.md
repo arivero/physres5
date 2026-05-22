@@ -41,6 +41,18 @@
   x_+(J_H)/x_+(J_{\rm adj})+\Delta_{\rm sc}.
   \]
   The required proof uses one gauge-Higgs complex, one inner product, photon-zero and electroweak-ray preservation, a derived pole remainder, and a scalar map for the negative branch.  The parent source-note imports are provenance and guardrails; the manuscript source address is the local Coquereaux fragment set plus Target X.
+- Loop 25 closes O13--O15 into `CLOSED_ISSUES.md`.  Casimir framing,
+  trace-space separation, and Wigner--Eckart failed-route status now function as
+  closed guardrails.  O16 remains open with an explicit project-source label for
+  the SO(32) branching data.  The manuscript now uses a neutral-sector
+  determinant pole condition, a CHM current-entry target
+  \(\Sigma_{aa,J}=J\), and a Target X superconnection/CHM compatibility square.
+- Loop 25 parent-directory sidecar reads confirm that `../prTalks` is already a
+  source-object queue for electroweak ray, KK-dimensional, Regge, and
+  negative-branch ideas; `../weak` and `../phys4` provide superconnection,
+  Wigner--Eckart obstruction, Higgs-interpolation, and brane/KK source queues.
+  Treat these as source-note provenance until primary literature or explicit
+  project-source status supports manuscript use.
 
 ## Resume state after context renewal
 

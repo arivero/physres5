@@ -18,6 +18,13 @@ records, and adjacent-project memory.  They are valid for guardrails, theorem
 targets, and source-upgrade queues.  Journal-facing claims still require
 primary local literature or an explicit project-source label.
 
+Loop 25 records the current broad parent-directory read in
+`context/parent_directory_loop25_read.md` and
+`notes/lean/ParentDirectoryLoop25.lean`.  Active source queues are `../prTalks`
+for electroweak-ray, dimensional-interpolation, Regge, and negative-branch
+provenance; `../weak` and `../phys4` for superconnection, Wigner--Eckart
+obstruction, Higgs-interpolation, brane, and KK source upgrades.
+
 `../physres6/` is a sibling short-note workspace for the alpha route.  Its
 valid use here is O17 provenance and symbolic theorem-target structure.  Its
 numerical checks and compact PRL framing remain outside the current conceptual

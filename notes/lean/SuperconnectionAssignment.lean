@@ -13,6 +13,7 @@ constant EvenCurrent : Type
 constant PoleScheme : Type
 constant InnerProduct : Type
 constant MatchingRemainder : Type
+constant BoundaryKernelCompatibility : Type
 
 constant Phi_odd : OddHiggs
 constant F_even_gamma_perp : EvenCurrent
@@ -31,6 +32,10 @@ structure SuperconnectionReduction where
   same_complex_supplies_both_maps : Prop
   photon_null_direction_preserved : Prop
   ew_ray_preserved : Prop
+  trace_space_separated : Prop
+  wigner_eckart_route_excluded : Prop
+  so32_flavour_requires_explicit_coupling : Prop
+  chm_boundary_kernel_compatibility : BoundaryKernelCompatibility
   negative_branch_scalar_map_required : Prop
   matching_remainder_derived : Prop
 
@@ -38,6 +43,9 @@ def O1SuperconnectionTarget (S : SuperconnectionReduction) : Prop :=
   S.same_complex_supplies_both_maps ∧
   S.photon_null_direction_preserved ∧
   S.ew_ray_preserved ∧
+  S.trace_space_separated ∧
+  S.wigner_eckart_route_excluded ∧
+  S.so32_flavour_requires_explicit_coupling ∧
   S.negative_branch_scalar_map_required ∧
   S.matching_remainder_derived
 
@@ -58,8 +66,13 @@ Acceptance test:
 2. define the inner product on odd Higgs and even transverse-current data;
 3. derive P_W and P_Z from that complex;
 4. preserve the electroweak ray and photon zero mode;
-5. derive or compute Delta_sc in the pole scheme;
-6. connect the negative eigenvector to a gauge-invariant scalar functional.
+5. keep odd-Higgs, even-current, and interval-boundary trace spaces separated
+   until a common source operator defines the comparison;
+6. record the Wigner--Eckart route as excluded for the tested parents;
+7. require an explicit SO(32)-flavour coupling to the electroweak kernel;
+8. match the superconnection data to a CHM boundary kernel;
+9. derive or compute Delta_sc in the pole scheme;
+10. connect the negative eigenvector to a gauge-invariant scalar functional.
 -/
 
 end DeVries.SuperconnectionAssignment

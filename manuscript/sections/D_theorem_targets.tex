@@ -506,7 +506,7 @@ The derived operator \(\mathcal M_J\) is compatible with the allowed line operat
 
 \paragraph*{Current evidence.}
 Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the current boundary conditions: the SO(32)-flavor idea is a representation-sector clue, and global-form data are completion constraints.  The manuscript avoids identifying generations with compactification topology until a representation map is derived.
-The representation audit includes the proposed boundary data
+The representation audit, currently project-source bookkeeping, records the proposed boundary data
 \begin{equation}
   16=(5,3)+(1,1),
   \qquad
@@ -933,6 +933,35 @@ The pole comparison then has the form
   \frac{x_+(J_H)}{x_+(J_{\rm adj})}
   +\Delta_{\rm sc}.
   \label{eq:target-susyqm-superconnection-pole}
+\end{equation}
+The interval version tests the same assignment against a CHM
+Dirichlet-to-Neumann and brane-boundary kernel:
+\begin{equation}
+\begin{array}{ccc}
+(\Phi_{\rm odd},F_{\rm even}^{\gamma^\perp})
+&\xrightarrow{\ \mathcal A_{\rm sc}\ }&
+\mathcal H_J=\operatorname{span}\{h_J,a_J\}
+\\
+\downarrow && \downarrow P_J
+\\
+(v_0,v_L,R,\theta_H)
+&\xrightarrow{\ K^{\rm DtN}_{J}+K^{\rm brane}_{J}\ }&
+K^{\rm sc/int}_J(\lambda)
+\end{array}
+\label{eq:target-superconnection-chm-square}
+\end{equation}
+The reduced target is
+\begin{equation}
+  K^{\rm sc/int}_J(\lambda)
+  =
+  P_J^\dagger
+  \left(K^{\rm DtN}_{J}(\lambda)+K^{\rm brane}_{J}\right)P_J
+  \longrightarrow
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix}.
+  \label{eq:target-superconnection-chm-kernel}
 \end{equation}
 The route succeeds when \(P_W\), \(P_Z\), the inner product, \(B_J\), and
 \(\Delta_{\rm sc}\) all come from one gauge-Higgs superconnection reduction.

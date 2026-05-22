@@ -118,6 +118,20 @@ D=11/D=9 interpolation provenance.  The root also contains arXiv cache papers,
 older physics workspaces, TeX support files, runtime caches, editor state, and
 generated logs.  Runtime and cache material supplies no manuscript claims.
 
+## Loop 25 parent-directory sidecar read
+
+Loop 25 added two read-only sidecar reads.  The `../prTalks` pass confirmed the
+already indexed PDF queue: electroweak-vacuum concerns, the two-branch block,
+the long prompt log with KK \(7/6/5\) and \(3/2/1\) interpolation, the orbit
+quadratic, Regge alternatives, and string-connection prompts.  The adjacent
+physics-folder pass identified `../weak` as the strongest electroweak scaffold
+and obstruction queue, `../phys4/notes` as the superconnection and brane/KK
+source queue, `../phys3` as dimensional and SO(32) provenance, and
+`../phys6gpd` as conjectural \(G_2\)/octonion context.  The promoted result is
+`context/parent_directory_loop25_read.md` plus
+`notes/lean/ParentDirectoryLoop25.lean`; manuscript use still follows the
+primary-source or project-source-label rule.
+
 The parent read reinforces the current O1/O20 direction.  The useful
 superconnection upgrade comes from the local Coquereaux fragments already
 indexed in this repository; parent material supplies provenance and failure

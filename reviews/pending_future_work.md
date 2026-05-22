@@ -76,6 +76,14 @@
   define one gauge-Higgs complex, one inner product, photon-zero preservation,
   electroweak-ray preservation, a derived pole remainder, and a scalar map for
   the negative branch.
+- Use Loop 25's closure ledger to keep O13--O15 out of `OPEN_ISSUES.md`.
+  O16 stays active until the SO(32) branching data receive primary-source
+  support or a derived endpoint/orientifold embedding coupled to the electroweak
+  kernel.
+- Use the Loop 25 parent-directory sidecar reads as source queues:
+  `../prTalks` for electroweak-ray, KK-dimensional, Regge, and negative-branch
+  provenance; `../weak` and `../phys4` for superconnection and
+  Wigner--Eckart obstruction upgrades.
 
 ## Completed in latest pass
 
@@ -137,6 +145,11 @@
   route-matching remainders in the electroweak theorem target, CHM as the
   active source-controlled interval test case, parent-root inventory refresh,
   concept-matrix update, and `notes/lean/SuperconnectionAssignment.lean`.
+- Added Loop 25 normalization: closed O13--O15 into `CLOSED_ISSUES.md`,
+  retitled the manuscript around the secular pole-spectrum construction, added
+  O16 project-source status, sharpened the neutral-pole condition, added the
+  CHM current-entry target, extended Target X with a superconnection/CHM square,
+  and recorded Loop 25 parent-directory sidecar reads.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -225,10 +238,12 @@
   \]
   with one radial parameter, persistent photon null direction, and simultaneous
   W/Z mass collapse.
-- Separate the three trace ledgers \(Q(J)\), \(K_{\rm seed}^{(1)}\), and
-  \(K_-^{\sigma_3}\) in the theorem-target appendix or route comparison.
-- Represent the tested Wigner--Eckart/Clebsch route as a negative subroute
-  unless a different parent representation, operator, or projection is supplied.
+- Derive the common source operator, field basis, inner product, and
+  normalization that bind the trace ledgers \(Q(J)\), \(K_{\rm seed}^{(1)}\),
+  \(K_-^{\sigma_3}\), superconnection odd/even spaces, and interval boundary
+  products.
+- Revive a Wigner--Eckart/Clebsch route only through a new parent
+  representation, operator, projection, and normalization.
 - Turn the SO(32) flavor/string target into a sourced theorem statement with
   explicit extra-state projection, orientifold/tadpole, and electroweak-operator
   coupling obligations.

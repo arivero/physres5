@@ -84,6 +84,12 @@
   `../prTalks` for electroweak-ray, KK-dimensional, Regge, and negative-branch
   provenance; `../weak` and `../phys4` for superconnection and
   Wigner--Eckart obstruction upgrades.
+- Use Loop 26's dimensional-interpolation taxonomy: Witten's \(D=11\) endpoint
+  is source-backed, the \(D=9\) \(U(1)_{\rm geom}\) endpoint is an embedding
+  target, the \(D=10\) and colourless \(D=6\) middle lines are reconstruction
+  labels, and scalar/top readings require the same source variable
+  \(u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,K_J,\mathcal F_{\rm sc},
+  \mathcal Y_{\rm top})\).
 
 ## Completed in latest pass
 
@@ -150,6 +156,10 @@
   O16 project-source status, sharpened the neutral-pole condition, added the
   CHM current-entry target, extended Target X with a superconnection/CHM square,
   and recorded Loop 25 parent-directory sidecar reads.
+- Added Loop 26 normalization: claim-status taxonomy in Appendix E,
+  single-source interpolation diagram, O17 dependency chain, CHM top-sector
+  localization/boundary-mixing pressure, \(G_2\) compact-embedding acceptance
+  criterion, and `notes/lean/DimensionalInterpolation.lean`.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -176,9 +186,17 @@
 - Derive the determinant \(x^2+Jx-J=0\) from one concrete string/KK/boundary model.
 - Identify whether \(x_-(2)\) maps to \(v/\sqrt2\), a tachyonic Higgs mass parameter, a modulus/radion scale, or a compactification eigenvalue.
 - Determine whether \(x_-(3/4)\) has a Higgs-pole interpretation, a boundary-mode interpretation, or a compactification-mode interpretation.
-- Define the full-gauge internal \(7/6/5\) sectors and the colourless internal \(3/2/1\) sectors in the Higgs interpolation idea, then decide whether the interpolation parameter belongs to the electroweak vacuum ray, a compactification modulus, or a boundary Higgsing parameter.
-- Source-audit the six-dimensional superstring anchor and decide whether the colourless \(3/2/1\) count belongs in the main text or in an appendix.
-- Attach the top-sector observation to a precise object: top Yukawa, Higgs effective potential, vacuum stability, endpoint flavor data, or a branch scalar functional.
+- Derive the source family behind the full-gauge internal \(7/6/5\) sectors and
+  the colourless internal \(3/2/1\) sectors:
+  \[
+  u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,K_J,\mathcal F_{\rm sc},
+  \mathcal Y_{\rm top}).
+  \]
+- Upgrade the six-dimensional superstring anchor from arena status to a source
+  model with \(\mathcal B,\mathcal H_J,K_J,\mathcal R_{\rm pole}\).
+- Attach the top-sector observation to a precise source object: top Yukawa,
+  Higgs effective potential, vacuum stability, endpoint flavor data, CHM
+  localization/boundary mixing, or a branch scalar functional.
 - Prove or refute uniqueness of Eq. \(\eqref{eq:QJ}\) from trace/determinant plus high-spin assumptions.
 - Derive or reject the `prTalks` Regge intercept construction \(M_{n,j,\pm}^2=\mu^2x_{j,\pm}+n/\alpha'\) from a worldsheet, BRST, boundary, Chan-Paton, or current-algebra mechanism.
 - Derive or reject the effective-dimension \(D_{\rm eff}\) interpolation from a KK vector-scalar Laplacian with the DeVries two-channel block.

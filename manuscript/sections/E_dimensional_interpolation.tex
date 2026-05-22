@@ -6,6 +6,16 @@ This appendix records a dimensional version of the Higgs-sector problem.  It is
 a theorem target, added here because it gives a compact way to organize the
 Kaluza--Klein, string, Higgs, and top-quark questions.
 
+The claim status has four levels.  Witten's seven-extra-dimensional
+\(SU(3)\times SU(2)\times U(1)\) endpoint is source-backed.  The
+five-extra-dimensional \(SU(3)\times U(1)_{\rm geom}\) endpoint is a geometric
+endpoint target whose electromagnetic embedding remains to be derived.  The
+\(D=10\) and colourless \(D=6\) middle lines are reconstruction labels for a
+source sector that must supply \(\mathcal B\), \(\mathcal H_J\), \(K_J\), and
+\(\mathcal R_{\rm pole}\).  The scalar branch and top-sector readings are
+conjectural source maps until the same variable controls the gauge-Higgs ray,
+the reduced kernel, and the relevant Yukawa or boundary datum.
+
 \subsection{Full-gauge count}
 \label{app:full-gauge-count}
 
@@ -35,6 +45,10 @@ SU(3)\times U(1)_{\rm geom}
 \end{array}
 \label{eq:full-gauge-dimensional-chain}
 \end{equation}
+The arrows in Eq.~\eqref{eq:full-gauge-dimensional-chain} are bookkeeping
+arrows.  A physical interpolation requires a single compactification, boundary,
+or singular source family that supplies the deformation parameter and the
+four-dimensional matching map.
 The source status of the three lines is uneven, and the distinction is part of
 the claim.  The source-backed data and reconstruction targets are:
 \begin{center}
@@ -47,7 +61,7 @@ Line & Source-backed content & DeVries obligation\\
 KK endpoint and its fermion quantum-number obstruction & define the
 unbroken endpoint and its Higgs/order-parameter channel relation to the
 electroweak ray\\
-\(D=10,\ n_{\rm KK}=6\) & reconstruction target & identify the
+\(D=10,\ n_{\rm KK}=6\) & source theory open; Schur-complement reconstruction label & identify the
 six-dimensional internal object, its light two-channel sector, and its kernel\\
 \(D=9,\ n_{\rm KK}=5\) & Witten's five-sphere discussion contains an
 \(SU(3)\times U(1)\) symmetry address & derive the electroweak embedding,
@@ -126,9 +140,10 @@ duality setting \cite{Strominger1995,Sen1995}; heterotic small instantons give
 nonperturbative six-dimensional dynamics \cite{WittenSmallInstantons1995}; and
 six-dimensional anomaly and string-universality constraints provide a modern
 consistency framework \cite{KumarTaylor2009}.  These sources support the
-existence and rigidity of six-dimensional string settings.  The colourless
-\(D=6\) line is a Schur-complement reconstruction label until a source theory
-derives the DeVries kernel, ordered \(J\)-assignment, and pole placement.
+existence and rigidity of six-dimensional string settings.  They provide a
+constrained string-vacuum arena.  The colourless \(D=6\) line remains a
+Schur-complement reconstruction label whose DeVries use requires the data in
+Eq.~\eqref{eq:middle-dimensional-data}.
 
 \subsection{Interpolation parameter}
 \label{app:interpolation-parameter}
@@ -158,12 +173,15 @@ or the corresponding colourless electroweak endpoints.  The
 DeVries point needs a joint source datum
 \begin{equation}
   u\longmapsto
-  \big(t_{\rm dim}(u),\,t_{\rm EW}(u),\,
-  \mathcal F_{\rm sc}(u;J),\,\mathcal Y_{\rm top}(u)\big),
+  \big(t_{\rm dim}(u),\,t_{\rm EW}(u),\,v(u),\,m_h^2(u),\,
+  K_J(u,\lambda),\,\mathcal F_{\rm sc}(u;J),\,\mathcal Y_{\rm top}(u)\big),
   \label{eq:joint-source-datum}
 \end{equation}
-where \(\mathcal F_{\rm sc}\) is the scalar or negative-branch functional and
-\(\mathcal Y_{\rm top}\) is a possible top-sector datum.  The middle-dimensional
+where \(v(u)\) follows the allowed electroweak ray, \(m_h^2(u)\) records scalar
+stiffness along the same family, \(\mathcal F_{\rm sc}\) is the scalar or
+negative-branch functional, and \(\mathcal Y_{\rm top}\) is a possible
+top-sector datum.  Target~\ref{app:target-susyqm-origin} gives an optional
+Hodge/superconnection route for the source of \(K_J\).  The middle-dimensional
 data required at a DeVries point are
 \begin{equation}
   \mathfrak I_J(t_{\rm dim,\star})
@@ -218,6 +236,22 @@ Thus the dimensional interpolation can contribute to the paper only through a
 kernel derivation, a map from dimensional data to the electroweak ray, an
 ordered assignment theorem, and a pole-matching theorem.
 
+The same obligation can be drawn as a single-source interpolation diagram:
+\begin{equation}
+\begin{array}{ccccc}
+u=0 && u=u_\star && u\to\infty\\
+v=0 && K_J(u_\star)\big|_{\mathcal H_J}=Q(J)
+&& U(1)_{\rm em}\ {\rm endpoint}\\
+m_h^2(u)\ {\rm specified} &&
+x_+(J)\to{\rm pole\ ratio},\quad x_-(J)\to\mathcal F_{\rm sc}
+&& W/Z\ {\rm decoupled}\\
+&& \mathcal Y_{\rm top}(u_\star)\to y_t &&
+\end{array}
+\label{eq:single-source-interpolation-diagram}
+\end{equation}
+The first column is field-theory ray data, the middle column is the DeVries
+kernel target, and the last column is the endpoint embedding target.
+
 \subsection{Electromagnetic endpoint normalization}
 \label{app:electromagnetic-endpoint-normalization}
 
@@ -241,6 +275,21 @@ metric data when the metric dynamics is known \cite{WittenKK1981}.  The
 DeVries endpoint problem asks for the same source variable to supply the
 \(U(1)_{\rm em}\) endpoint, the scalar branch normalization, and the matching
 scale \(Q_\alpha\) in Eq.~\eqref{eq:target-alpha-matching}.
+
+The dependency chain is
+\begin{equation}
+  {\rm O17}
+  \Longleftarrow
+  {\rm O1}\ +\ {\rm O3}\ +\ {\rm O10}\ +\mathcal R_{\rm pole/running}.
+  \label{eq:o17-dependency-chain}
+\end{equation}
+The assignments \(v=\sqrt2\,M_-(2)\), \(J_v=2\), \(C_v=2\), and \(C_W=1\)
+are separate subtargets.  Their use in an electromagnetic coupling statement
+requires a derived scalar normalization, charged-vector normalization,
+generator normalization, charge lattice, matching scale, and threshold map.
+When the \(U(1)_{\rm geom}\) endpoint lacks the Standard Model electromagnetic
+charge lattice, O10 remains a geometric endpoint target and O17 has only a
+geometric endpoint conclusion.
 
 The branch-to-coupling obligations can be recorded as
 \begin{equation}
@@ -288,6 +337,11 @@ corrections with strong top-mass sensitivity, and in vacuum-stability analyses
 Local \(G_2\) Higgs-bundle constructions also provide a source-theory template:
 flow-tree data can engineer a top Yukawa coupling in an \(SU(5)\)-type local
 model \cite{BraunEtAl2019}.
+In the interval route, CHM supplies a separate top-sector lesson: a heavy top
+pushes the third-generation localization and boundary mixing, while the
+observed bottom coupling to the \(Z\) restricts the same data
+\cite{CsakiHubiszMeade2005}.  A DeVries claim requires a map from that
+localization or boundary datum to \(\mathcal Y_{\rm top}(u)\).
 
 The DeVries question is sharper: does the six-dimensional interior sector
 select the top quark as the fermion attached most directly to the order
@@ -322,4 +376,5 @@ Here \(\Pi^{(t)}_{VV}\) denotes the top-loop contribution to electroweak vector
 self-energies in the matched four-dimensional theory.  This is an open target.
 The present manuscript records the source-backed Standard Model fact, the local
 \(G_2\) template for Yukawa data, and the required form of a DeVries
-top-sector explanation.
+top-sector explanation.  A DeVries derivation of \(y_t\), \(m_t\), and
+top-loop self-energy data remains open.

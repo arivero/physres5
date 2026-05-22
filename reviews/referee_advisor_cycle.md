@@ -61,6 +61,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 23 | 5 | 5 | 5 | 5 | 5 | Promoted O20 into Target X, added local SUSY-QM/electroweak-superconnection sources, recorded the Hodge factorization route, and kept the breaking operator and projection as explicit obligations. |
 | 24 | 5 | 5 | 5 | 5 | 5 | Refined O1 through the electroweak-superconnection assignment test, added scheme-safe pole remainders, refreshed the parent workspace inventory, and made CHM/Target X the active source-controlled route test. |
 | 25 | 5 | 5 | 5 | 5 | 5 | Closed O13--O15 as normalization guardrails, added O16 project-source status, sharpened CHM/superconnection filters, and refreshed the parent-directory source inventory. |
+| 26 | 5 | 5 | 5 | 5 | 5 | Added claim-status taxonomy for dimensional interpolation, expanded the single-source \(u\) datum with \(v,m_h^2,K_J,\mathcal Y_{\rm top}\), and sharpened O17, CHM/top, and \(G_2\) endpoint obligations. |
 
 ## Scoring rubric
 

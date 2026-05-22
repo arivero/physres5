@@ -53,6 +53,16 @@
   Wigner--Eckart obstruction, Higgs-interpolation, and brane/KK source queues.
   Treat these as source-note provenance until primary literature or explicit
   project-source status supports manuscript use.
+- Loop 26 refines dimensional interpolation.  Appendix E now has an explicit
+  claim-status taxonomy; the source variable is
+  \[
+  u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,K_J,\mathcal F_{\rm sc},
+  \mathcal Y_{\rm top}).
+  \]
+  O17 is downstream of O1, O3, O10, and pole/running matching.  The CHM source
+  adds third-generation localization and boundary-mixing pressure as the
+  top-sector source fact; a DeVries map to \(\mathcal Y_{\rm top}(u)\) remains
+  open.  `notes/lean/DimensionalInterpolation.lean` records the obligations.
 
 ## Resume state after context renewal
 

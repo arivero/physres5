@@ -619,6 +619,22 @@ m_t=y_t v/\sqrt2,\qquad
 \Pi^{(t)}_{VV}(s;u_\star).
 \]
 
+**Loop 26 single-source refinement.** Appendix E now records the claim-status
+taxonomy: Witten's seven-extra-dimensional endpoint is source-backed, the
+\(D=9\) \(U(1)_{\rm geom}\) endpoint is an electromagnetic embedding target,
+the \(D=10\) and colourless \(D=6\) middle lines are reconstruction labels, and
+the scalar/top readings are conjectural source maps.  The joint source datum is
+expanded to
+\[
+u\mapsto
+\big(t_{\rm dim}(u),t_{\rm EW}(u),v(u),m_h^2(u),K_J(u,\lambda),
+\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
+\]
+O17 is recorded as downstream of O1, O3, O10, and pole/running matching.  CHM
+adds a top-sector source fact: heavy top mass and \(Zb\bar b\) constraints put
+pressure on third-generation localization and boundary mixing; a DeVries claim
+requires a map from that datum to \(\mathcal Y_{\rm top}(u)\).
+
 ## O11. Adjacent `prTalks` source-note validation
 
 **Question.** Which user-provided `../prTalks` PDFs contain conceptual material that should survive into the manuscript program, and which claims require primary-source upgrades?

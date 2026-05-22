@@ -463,11 +463,25 @@
   \(\mathfrak E_\alpha=(\xi_{\rm em},\Gamma_Q,N_{\rm gen},g_D,g_5,
   \mathcal T_\alpha,Q_\alpha)\), with charge lattice, generator normalization,
   threshold prescription, and matching convention stated.
+- Loop 36 O18/O19 next step: source-audit the sector-duality package
+  \[
+  \mathfrak R_j=
+  (K_j,\alpha',P_{\rm surv},\mathcal B_{\rm ND},
+  \mathcal Q,\mathcal T,\chi_{\rm spin}).
+  \]
+  The needed primary upgrade is a rotating-\(p\)-brane scaling source for
+  \(M\sim s_{\rm br}^{p/(p+1)}\).  The manuscript also needs a boundary
+  derivation of \(\mathcal B_{\rm ND}\), charge and tension matching, a
+  projection/BRST/GSO survival rule, and a negative-branch mass or
+  scalar-functional reading.  Keep \(j=3/2\) as an assignment ledger entry
+  pending gauge representation, production, decay, width, and collider-source
+  data.
 
 ## Review cycle
 
 - Run the referee/advisor cycle in `reviews/referee_advisor_cycle.md` after each substantial rewrite.
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
+- Each substantial loop must also call a lightweight editor subagent below GPT-5.5 to flag banned contrast formulas, journalistic language, adjectival positioning, and prose outside Physical Review D style.
 - Current score table includes Loop 19 for the compiled long draft.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.

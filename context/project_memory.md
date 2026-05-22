@@ -24,7 +24,7 @@
 - Keep Lean-style notes in `notes/lean/` for obligations, theorem targets, and expert-trigger prompts. These notes are working memory kept outside Lean compilation.
 - Maintain referee/advisor review loops, including the score table, so conceptual quality and open gaps are visible across iterations.
 - For every substantial loop, call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation; record their reports in `reviews/`.
-- After each completed referee/advisor/implementation loop, compile, run prose scans, and commit the loop checkpoint.
+- After each completed referee/advisor/implementation loop, run a lightweight editor subagent below GPT-5.5 for banned contrast formulas, journalistic language, adjectival positioning, and Physical Review D prose drift. Record the report in `reviews/`, resolve alerts, compile, run prose scans, and commit the loop checkpoint.
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
 - Treat `pdftotext` as an access aid. Keep PDFs as source objects for plots, images, radicals, and equation layout. For mathematical content, inspect the rendered PDF and label agent-read transcriptions.
 - Adjacent `../prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
@@ -198,6 +198,20 @@
   Salam--Strathdee and Witten supply the Kaluza--Klein gauge-kinetic source
   trail; Jegerlehner and Martin--Robertson supply the running/scheme trail.
   Reports are in `reviews/normalization_loop35_*.md`.
+
+- Loop 36 tightened O18/O19 into a shared sector-duality target:
+  \[
+  \mathfrak R_j=
+  (K_j,\alpha',P_{\rm surv},\mathcal B_{\rm ND},
+  \mathcal Q,\mathcal T,\chi_{\rm spin}).
+  \]
+  The manuscript now separates the DeVries sector label \(j\), oscillator
+  level \(N_{\rm osc}\), physical Regge spin, and putative rotating-brane
+  angular momentum \(s_{\rm br}\).  The \(j=3/2\) slot stays an assignment
+  ledger entry.  The D0/space-filling branch-scaling labels are admissibility
+  diagnostics pending a primary rotating-\(p\)-brane exponent source,
+  negative-branch reading, and a Neumann--Dirichlet boundary map.  Reports are
+  in `reviews/normalization_loop36_*.md`.
 
 ## Resume state after context renewal
 

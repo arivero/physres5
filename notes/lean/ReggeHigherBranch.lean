@@ -18,6 +18,31 @@ structure ReggeInterceptTower where
   projectionRuleDerived : Prop
   negativeBranchStatusRule : Prop
 
+structure SectorDualityPackage where
+  K_j : Type
+  alphaPrime : Type
+  survivalProjection : Type
+  neumannDirichletMap : Type
+  chargeLedger : Type
+  tensionLedger : Type
+  spinAxisMap : Type
+  kernelDerived : Prop
+  commonSlopeDerived : Prop
+  survivalRuleDerived : Prop
+  boundaryConditionMapDerived : Prop
+  chargesMatched : Prop
+  tensionsMatched : Prop
+  spinAxisMapDerived : Prop
+
+def sectorDualityPackageReady (S : SectorDualityPackage) : Prop :=
+  S.kernelDerived ∧
+  S.commonSlopeDerived ∧
+  S.survivalRuleDerived ∧
+  S.boundaryConditionMapDerived ∧
+  S.chargesMatched ∧
+  S.tensionsMatched ∧
+  S.spinAxisMapDerived
+
 def reggeTowerAcceptable (T : ReggeInterceptTower) : Prop :=
   T.commonSlope ∧
   T.devriesKernelDerived ∧
@@ -58,6 +83,8 @@ def j_three_halves_assignment_obligations : Prop :=
 
 structure BranchScalingTarget where
   sectorSpinVariable : Type
+  putativeBraneAngularMomentum : Type
+  sectorToBraneSpinMap : Type
   branchAsymptoticsDerived : Prop
   rotatingBraneLawSourced : Prop
   sectorLabelIsReggeAxis : Prop
@@ -67,6 +94,7 @@ structure BranchScalingTarget where
   chargesAndTensionsMatched : Prop
   oscillatorTowerSeparated : Prop
   worldvolumeReductionDerived : Prop
+  sectorDualityPackageDerived : Prop
 
 def branchScalingReady (B : BranchScalingTarget) : Prop :=
   B.branchAsymptoticsDerived ∧
@@ -77,11 +105,17 @@ def branchScalingReady (B : BranchScalingTarget) : Prop :=
   B.boundaryConditionsMapped ∧
   B.chargesAndTensionsMatched ∧
   B.oscillatorTowerSeparated ∧
-  B.worldvolumeReductionDerived
+  B.worldvolumeReductionDerived ∧
+  B.sectorDualityPackageDerived
 
 constant targetIX_branch_scaling : BranchScalingTarget
 
 def targetIX_obligations : Prop :=
   branchScalingReady targetIX_branch_scaling
+
+constant targetVIII_IX_sector_package : SectorDualityPackage
+
+def targetVIII_IX_shared_obligations : Prop :=
+  sectorDualityPackageReady targetVIII_IX_sector_package
 
 end DeVries.ReggeHigherBranch

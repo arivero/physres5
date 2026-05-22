@@ -1034,7 +1034,36 @@ level, and the physical trajectory spin is supplied by the source theory.  The
 local string source supports the common-slope template
 \(M^2=(N-1)/\alpha'\) with \(J_{\max}=\alpha'M^2+1\)
 \cite{TongString}; the DeVries contribution can therefore enter as an intercept
-only after the source theory derives \(K_j\).
+through a source-derived \(K_j\).
+
+Targets VIII and IX use one open-string/D-brane source package,
+\begin{equation}
+  \mathfrak R_j
+  =
+  \big(
+  K_j,\alpha',P_{\rm surv},\mathcal B_{\rm ND},
+  \mathcal Q,\mathcal T,\chi_{\rm spin}
+  \big),
+  \label{eq:target-sector-duality-package}
+\end{equation}
+where \(P_{\rm surv}\) is the projection or BRST/GSO survival rule,
+\(\mathcal B_{\rm ND}\) is the boundary-condition map, \(\mathcal Q\) records
+charges, \(\mathcal T\) records tensions, and \(\chi_{\rm spin}\) is the
+possible map from the DeVries sector label to a putative rotating-brane angular
+momentum.  The common pass/fail diagram is
+\begin{equation}
+  \mathcal S_{\rm open/D}
+  \longrightarrow
+  \mathfrak R_j
+  \longrightarrow
+  M^2_{N_{\rm osc},j,\sigma}
+  \longrightarrow
+  \begin{cases}
+  j=\tfrac32\ \text{assignment ledger},\\
+  x_+x_-=-j(j+1)\ \text{branch-duality test}.
+  \end{cases}
+  \label{eq:target-sector-duality-diagram}
+\end{equation}
 
 \paragraph*{Hypotheses.}
 \begin{enumerate}
@@ -1050,8 +1079,8 @@ only after the source theory derives \(K_j\).
   survive, and supplies the stability or BRST/GSO rule for negative-branch
   data.
 \item Gauge representation, chirality, anomaly cancellation, production
-  channel, decay channel, width, and collider limits are supplied before any
-  higher slot receives a particle assignment.
+  channel, decay channel, width, and collider limits are supplied as part of
+  any particle assignment.
 \end{enumerate}
 
 \paragraph*{First higher slot.}
@@ -1065,7 +1094,7 @@ asks the source theory to decide whether the positive intercept
   \label{eq:target-regge-three-halves}
 \end{equation}
 is projected out, assigned to a neutral resonance, assigned to a charged or
-coloured sector, or retained only as an algebraic branch datum.
+coloured sector, or retained as an algebraic branch datum.
 Eq.~\eqref{eq:target-regge-three-halves} supplies the branch value; the
 assignment requires the source-theory quantum numbers and a source-audited
 collider ledger.  Biekotter--Heinemeyer--Weiglein provide one phenomenology
@@ -1074,21 +1103,29 @@ branch identity, gauge representation, and survival rule remain source-theory
 targets.
 
 \paragraph*{Failure mode.}
-If the source theory fails to separate \(j\) from \(N_{\rm osc}\), to derive a
-common slope, to produce the DeVries kernel, or to give the higher sector
-quantum numbers, then higher positive roots remain algebraic slots in the
-secular construction.  They are then excluded from the phenomenology list until
-the missing assignment theorem and collider ledger are supplied.
+The target fails from any missing entry in
+\(\mathfrak R_j\), from a route-dependent slope, or from absent higher-sector
+quantum numbers.  The higher positive roots then remain algebraic slots in the
+secular construction, and phenomenology uses a source-audited assignment
+ledger.
 
 \subsection{Target IX: branch scaling and brane-duality admissibility}
 \label{app:target-branch-scaling}
 
 \paragraph*{Hypotheses.}
-Assume Target~\ref{app:target-regge-intercept-survival} has supplied a source
-kernel \(K_j(\lambda)\) and a sector label that may also be tested against a
-spin variable \(s\) through \(J=s(s+1)\).  Assume a mass reading
-\(M_\sigma^2=\mu^2x_\sigma(J)\) or a scalar-functional version with the same
-large-\(J\) magnitude data.  The branch exchange is the algebraic involution
+Assume Target~\ref{app:target-regge-intercept-survival} has supplied the source
+package \(\mathfrak R_j\).  The brane-scaling test adds an axis map
+\[
+  \chi_{\rm spin}:\ j\longmapsto s_{\rm br}(j),
+  \qquad
+  J_{\rm br}=s_{\rm br}(s_{\rm br}+1),
+\]
+where \(s_{\rm br}\) is a putative rotating-brane angular momentum.  Identifying
+\(s_{\rm br}\) with the DeVries sector label is an additional source
+hypothesis.  Assume a mass reading
+\(M_\sigma^2=\mu^2x_\sigma(J_{\rm br})\) or a scalar-functional version with
+the same large-\(J_{\rm br}\) magnitude data.  The branch exchange is the
+algebraic involution
 \begin{equation}
   x\longmapsto -\frac{J}{x},
   \qquad
@@ -1099,23 +1136,25 @@ large-\(J\) magnitude data.  The branch exchange is the algebraic involution
 \paragraph*{Conclusion.}
 The source theory must account for the large-label behavior
 \begin{equation}
-  x_+(s(s+1))=1+O(s^{-2}),
+  x_+(J_{\rm br})=1+O(s_{\rm br}^{-2}),
   \qquad
-  |x_-(s(s+1))|=s(s+1)+O(1),
+  |x_-(J_{\rm br})|=s_{\rm br}(s_{\rm br}+1)+O(1),
   \label{eq:target-branch-asymptotics}
 \end{equation}
 and hence for the mass-scaling diagnostic
 \begin{equation}
 \begin{array}{c|c|c|c}
-\text{branch} & \text{mass behavior} & \text{brane-scaling test} & \text{candidate label}\\
+\text{branch} & \text{mass behavior} & \text{brane-scaling test} & \text{diagnostic label}\\
 \hline
-+ & M_+(s)\to\mu & M\sim s^{0} & p=0\ \text{point/D0}\\
-- & |M_-(s)|\sim\mu s & M\sim s^{1} & p\to\infty\ \text{space filling}
++ & M_+(s_{\rm br})\to\mu & M\sim s_{\rm br}^{0} & p=0\ \text{point/D0}\\
+- & |M_-(s_{\rm br})|\sim\mu s_{\rm br} & M\sim s_{\rm br}^{1} & p\to\infty\ \text{space filling}
 \end{array}
 \label{eq:target-branch-scaling-table}
 \end{equation}
 whenever a rotating \(p\)-brane scaling law \(M\sim s^{p/(p+1)}\) is part of
-the source route.  A literal T-duality reading requires a compact coordinate,
+the source route.  The D0 and space-filling labels are admissibility
+diagnostics pending a primary source for the rotating-brane exponent and a
+boundary-condition map.  A literal T-duality reading requires a compact coordinate,
 boundary conditions, charges, tensions, and a map that exchanges the branch
 sectors through the Neumann--Dirichlet transformation.  Tong's string notes
 support the D0, space-filling, and T-duality boundary-condition vocabulary
@@ -1128,17 +1167,17 @@ involution in Eq.~\eqref{eq:target-branch-involution} follows from the secular
 quadratic.  The separation of the sector label from the ordinary oscillator
 level is already enforced by Target~\ref{app:target-regge-intercept-survival}.
 The endpoint and brane sections supply a matrix arena with D-brane gauge fields,
-adjoint scalars, and boundary conditions.  A worldvolume derivation still has to
-identify the branch sectors, the mass reading for \(x_-\), the projection rule,
-and the duality map.
+adjoint scalars, and boundary conditions.  A worldvolume derivation supplies
+the branch sectors, the mass reading for \(x_-\), the projection rule, and the
+duality map.
 
 \paragraph*{Failure mode.}
-The target fails if the source theory treats \(j\) solely as an intercept label,
-assigns the negative root to auxiliary data outside brane-scaling content, or
-implements the branch exchange through an algebraic field redefinition outside
-boundary-condition duality.  In that case Target VIII can still preserve
-ordinary Regge behavior through \(N_{\rm osc}/\alpha'\), while Target IX becomes
-a rejected brane-duality interpretation.
+The target fails from a source package lacking \(\chi_{\rm spin}\), from a
+negative root assigned to auxiliary data outside brane-scaling content, or from
+a branch exchange implemented outside boundary-condition duality.  The retained
+result is then Target VIII's ordinary Regge behavior through
+\(N_{\rm osc}/\alpha'\), with Target IX recorded as a rejected brane-duality
+interpretation.
 
 \subsection{Target X: Hodge/SUSY-QM origin of the DeVries block}
 \label{app:target-susyqm-origin}

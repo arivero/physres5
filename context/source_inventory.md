@@ -75,6 +75,12 @@ PRD phase.
 ## Strings, CFT, Regge, and branes
 
 - `02_Tong_String_Theory_notes.pdf` — relativistic string, spectrum, Regge trajectories, D-branes, CFT, compactification, T-duality.
+  - Loop 36 O18/O19 use: pages 61--70 support the open-string Regge template
+    \(M^2=(N-1)/\alpha'\), \(J_{\max}=\alpha'M^2+1\); pages 191--210
+    support D-brane endpoint charges, coincident-brane matrix gauge fields,
+    adjoint scalars, and stretched-string W-boson masses; pages 211--218
+    support Neumann--Dirichlet exchange under T-duality.  The rotating
+    \(p\)-brane exponent remains a primary-source gap.
 - `03_Ginsparg_Applied_Conformal_Field_Theory_hep-th-9108028.pdf` — CFT machinery, Virasoro algebra, affine algebras, cosets, modular invariance.
 - `04_Polchinski_What_is_String_Theory_hep-th-9411028.pdf` — CFT, string basics, vacua and dualities, organizing principles.
 - `09_Csaki_Hubisz_Meade_EWSB_from_Extra_Dimensions_hep-ph-0510275.pdf` — gauge theories on intervals, boundary conditions, Higgsless electroweak breaking, fermions in extra dimensions, precision observables.

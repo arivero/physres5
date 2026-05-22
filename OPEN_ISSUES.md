@@ -996,6 +996,21 @@ neutral \(95.4\) GeV diphoton phenomenology ledger source for Target VIII.
 The DeVries branch identity, projection survival, gauge representation, and
 production/decay ledger remain source-theory obligations.
 
+**Loop 36 sector-duality refinement.** O18 and O19 now share a source package
+\[
+\mathfrak R_j=
+\big(K_j,\alpha',P_{\rm surv},\mathcal B_{\rm ND},
+\mathcal Q,\mathcal T,\chi_{\rm spin}\big),
+\]
+where \(P_{\rm surv}\) is the projection or BRST/GSO survival rule,
+\(\mathcal B_{\rm ND}\) is the Neumann--Dirichlet boundary-condition map,
+\(\mathcal Q\) records charges, \(\mathcal T\) records tensions, and
+\(\chi_{\rm spin}\) maps a DeVries sector label to a putative rotating-brane
+angular momentum.  The \(j=3/2\) slot remains an assignment ledger entry
+pending \(\mathfrak R_{3/2}\), gauge quantum numbers, production, decay, width,
+and collider-source data.  Biekotter--Heinemeyer--Weiglein remain a collider
+ledger source, with branch identity supplied by the source theory.
+
 ## O19. Brane-scaling identity of the two branches
 
 **Provenance.** Human operator note (2026-05-22), from a `../physres6`
@@ -1004,21 +1019,28 @@ cross-check that caught and corrected a prior misreading.
 **Question.** Which brane scaling does each DeVries branch follow as mass versus
 spin, and does the identification survive a worldvolume/Regge derivation?
 
-**Finding (verify independently).** Measured against the spin \(s\) (with
-\(J=s(s+1)\) the Casimir label), via the rotating-brane law
-\(M\sim s^{p/(p+1)}\):
-- positive branch: \(M_+\to\mu\) bounded \(\Rightarrow p=0\) point / D0-brane;
-- negative branch: \(M_-\propto s\) (since \(|x_-|\to J=s(s+1)\), so
-  \(M_-^2\propto s(s+1)\)) \(\Rightarrow p\to\infty\) space-filling brane.
-A fundamental string (\(M\sim s^{1/2}\)) is excluded: \(M_-/\sqrt s\) grows.
+**Finding (verify independently).** Measured against a putative rotating-brane
+angular momentum \(s_{\rm br}\), with
+\(J_{\rm br}=s_{\rm br}(s_{\rm br}+1)\), the branch asymptotics give the
+diagnostic
+\[
+M_+(s_{\rm br})\to\mu,\qquad
+|M_-(s_{\rm br})|\sim \mu s_{\rm br}.
+\]
+If a source route supplies the rotating-brane law
+\(M\sim s_{\rm br}^{p/(p+1)}\), the diagnostic labels are \(p=0\) for the
+bounded positive branch and \(p\to\infty\) for the linearly growing negative
+branch.  The primary source for this exponent remains open.
 
-**The trap.** Reading \(M_-^2\propto J\) against the Casimir \(J\) wrongly
-suggests a string (\(M\sim\sqrt J\)); an intermediate "D0/D1" reading made this
-error and is withdrawn. Use the spin \(s\) as the Regge axis.
+**Axis caveat.** The DeVries label \(j\), the oscillator level \(N_{\rm osc}\),
+physical Regge spin, and \(s_{\rm br}\) are separate labels.  The map
+\(\chi_{\rm spin}:j\mapsto s_{\rm br}\) is required for a physical
+brane-scaling diagnostic.
 
-**Duality.** The branch inversion \(x\to-J/x\) (\(M^2\to-\mu^4J/M^2\)) exchanges
-the point (D0, all-Dirichlet) and the space-filling brane (all-Neumann): a
-full-T-duality pair.
+**Duality.** The branch inversion \(x\to-J/x\) (\(M^2\to-\mu^4J/M^2\)) is an
+algebraic pairing.  A T-duality interpretation requires a compact coordinate,
+Neumann--Dirichlet boundary-condition exchange, charge matching, tension
+matching, and a negative-branch mass or scalar-functional reading.
 
 **Success criterion.** Derive the point/space-filling correspondence from a
 worldvolume or Regge mechanism; reconcile the space-filling growth of the sector
@@ -1037,6 +1059,18 @@ mass reading.  Tong's D-brane/T-duality vocabulary supplies source addresses
 for D0, space-filling, and Neumann--Dirichlet exchange.  The open data are the
 rotating-brane exponent source, the branch survival rule, the negative-branch
 mass or scalar-functional reading, and the boundary-condition duality map.
+
+**Loop 36 sector-duality refinement.** Target IX now depends on the same
+\(\mathfrak R_j\) source package as O18 plus the axis map
+\[
+\chi_{\rm spin}:\ j\mapsto s_{\rm br}(j),
+\qquad
+J_{\rm br}=s_{\rm br}(s_{\rm br}+1).
+\]
+The D0 and space-filling labels are admissibility diagnostics pending a primary
+rotating-\(p\)-brane scaling source and a boundary-condition duality map.  O19
+fails as a brane-duality target if \(\chi_{\rm spin}\), the negative-branch
+reading, or the Neumann--Dirichlet lift of \(x\mapsto-J/x\) is absent.
 
 ## O20. The operator as a broken N=2 supersymmetric quantum mechanics
 

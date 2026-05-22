@@ -55,6 +55,10 @@ Use Lean-style notes in `notes/lean/` when useful to trigger expert review. Thes
 Progress discipline: avoid fake work. Each work block should leave manuscript text, source inventory, conceptual notes, review records, or explicit open issues in a better state.
 After each completed referee/advisor/implementation loop, compile the manuscript,
 run the relevant prose scans, and commit the loop as a checkpoint.
+Each substantial loop also uses a lightweight editor subagent, configured below
+GPT-5.5, to flag banned contrast formulas, journalistic language, adjectival
+positioning, and prose outside Physical Review D style. Store the editor report
+in `reviews/`, resolve alerts, then run the prose scans.
 
 ## Repository commands
 

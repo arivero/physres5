@@ -17,10 +17,14 @@ This file records the autonomous improvement loop to run after each manuscript p
    - one source to read;
    - one equation or diagram the manuscript needs.
 4. **Implementation pass.** Apply revisions that improve derivational clarity, source traceability, or conceptual structure.
-5. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
-6. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
+5. **Editor pass.** Call a lightweight editor subagent, configured below GPT-5.5, to flag banned contrast patterns, journalistic language, hype, adjectival positioning, and deviations from Physical Review D prose. Store the report in `reviews/`, resolve alerts, and run the prose scans.
+6. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
+7. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
 
 The three subagent calls are mandatory for every substantial loop: two referee subagents and one advisor subagent, all configured to GPT-5.5. Store their reports in `reviews/` before implementation.
+The editor pass is mandatory for every substantial loop. Use a faster model tier
+than GPT-5.5 so the editor functions as a style sentinel with a separate scope
+from the conceptual referees.
 
 ## Cycle 0 status
 
@@ -71,6 +75,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 33 | 5 | 5 | 5 | 5 | 5 | Tightened O1 into a same-source ordered-sampling package with \(P_W\), \(P_Z\), \(P_\gamma\), shared \(\Lambda_J\), CHM \(h_J/W/Z/\gamma\) ledger, Coquereaux grading vocabulary, and parent-directory source queue. |
 | 34 | 5 | 5 | 5 | 5 | 5 | Tightened O4 into an entry-by-entry source-kernel ledger: CHM current entry first, Hodge/SUSY-QM square-root entry second, \(G_2\) local audit third, endpoint/Chan--Paton matrix arena, and parent-directory source queue. |
 | 35 | 5 | 5 | 5 | 5 | 5 | Tightened O17 into a photon-zero endpoint theorem target with scalar/vector normalization, compact \(U(1)_{\rm em}\) kinetic normalization, split \(\theta/\alpha\) matching remainders, Salam--Strathdee/Witten source trail, and Jegerlehner/Martin--Robertson scheme trail. |
+| 36 | 5 | 5 | 5 | 5 | 5 | Tightened O18/O19 into a shared sector-duality package \(\mathfrak R_j\), separating DeVries sector label, oscillator level, physical spin, and putative brane angular momentum, with D0/space-filling labels demoted to admissibility diagnostics. |
 
 ## Scoring rubric
 

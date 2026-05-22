@@ -889,6 +889,8 @@ different source-theory reduction.
 
 \subsection{Target VII: electromagnetic endpoint coupling}
 \label{app:target-alpha-endpoint}
+% status: open theorem target; all electromagnetic-coupling statements are
+% conditional on the source outputs listed below.
 
 \paragraph*{Hypotheses.}
 Assume Targets~\ref{app:target-unified-source-to-pole},
@@ -914,9 +916,39 @@ normalization
 where \(C_v\), \(C_W\), \(J_v\), the inner product, and the matching scheme are
 outputs of the source theorem.
 
+\paragraph*{Route outputs.}
+Target VII has three route-level output packages.  A complete endpoint route
+supplies the compact generator and charge lattice.  A complete interval route
+supplies the photon projection and common source scale.  A complete local
+\(G_2\) route supplies the same data through the singular-locus gauge
+generator and four-dimensional kinetic normalization:
+\begin{table}[h]
+\caption{Route outputs required by Target VII.}
+\begin{ruledtabular}
+\begin{tabular}{p{0.18\linewidth}p{0.39\linewidth}p{0.31\linewidth}}
+Route & Required source outputs & Acceptance datum\\
+\hline
+Endpoint/KK &
+\(\xi_{\rm em}\), charge lattice, generator normalization,
+\(g_D\), compact metric, threshold map &
+\(e_{\rm geom}\), \(Q_\alpha\),
+\(\Delta_{\rm th}\) in one scheme\\
+Interval/CHM &
+\(P_\gamma\), \(P_W\), \(P_Z\), \(\Lambda_{\rm CHM}\),
+\(\mathcal F_{\rm sc}\), photon-reference subtraction &
+\(\widehat\Sigma_{aa,J}\), scalar normalization,
+and pole/running map\\
+Local \(G_2\) &
+singular-locus \(U(1)\) generator, harmonic representative,
+charge lattice, local kinetic pairing &
+same \(U(1)_{\rm em}\) normalization and matching pair\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
 \paragraph*{Conclusion.}
-The endpoint theorem defines a construction coupling only after the scalar and
-vector normalizations are fixed:
+The endpoint theorem defines a construction coupling from fixed scalar and
+vector normalizations:
 \begin{equation}
   g_{\rm sec}^2
   =
@@ -924,14 +956,19 @@ vector normalizations are fixed:
        {C_v |x_-(J_v)|}.
   \label{eq:target-alpha-gsec}
 \end{equation}
-The electromagnetic comparison is then a scheme statement
-\begin{equation}
+The electromagnetic comparison has two matching layers:
+\begin{align}
+  \sin^2\theta_{\mathcal S}(Q_\alpha)
+  &=
+  \sdV+\Delta_\theta(Q_\alpha),
+  \label{eq:target-alpha-theta-matching}\\
   \alpha_{\mathcal S}(Q_\alpha)
-  =
-  \frac{g_{\rm sec}^2\,\sdV}{4\pi}
-  +\Delta_{\alpha,{\rm match}}(Q_\alpha),
+  &=
+  \frac{g_{\rm sec}^2\,
+  \sin^2\theta_{\mathcal S}(Q_\alpha)}{4\pi}
+  +\Delta_{\rm th}(Q_\alpha),
   \label{eq:target-alpha-matching}
-\end{equation}
+\end{align}
 where the theorem must identify the observable, the scale \(Q_\alpha\), the
 threshold prescription, and the running convention.  The special reading
 \(J_v=J_{\rm adj}=2\), \(C_v=2\), and \(C_W=1\) is a subtarget of
@@ -954,14 +991,13 @@ the compact metric once the dynamics of that metric is known
 \cite{WittenKK1981}.
 
 \paragraph*{Failure mode.}
-The target fails when the scalar theorem leaves
-Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization} unproved, when the
-\(D=9\) endpoint leaves the \(U(1)_{\rm em}\) charge normalization
-unspecified, or when the matching scale \(Q_\alpha\) and
-\(\Delta_{\alpha,{\rm match}}\) require external measured input as an
-independent parameter.  In that case the electromagnetic coupling remains a
-standard low-energy input, and the DeVries construction retains only the
-pole-ratio clue.
+The target fails from any missing element in
+Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization}, from a \(D=9\)
+endpoint with unspecified \(U(1)_{\rm em}\) charge normalization, or from a
+matching pair \((Q_\alpha,\Delta_{\rm th})\) supplied as external measured
+input.  That outcome leaves the electromagnetic coupling as a Standard Model
+input and preserves the pole-ratio clue as the construction's electroweak
+content.
 
 \subsection{Target VIII: Regge-intercept survival and higher branch slots}
 \label{app:target-regge-intercept-survival}
@@ -1299,7 +1335,9 @@ conditional corollary
   \alpha_{\mathcal S}(Q_\alpha),
   \label{eq:appendix-alpha-corollary}
 \end{equation}
-with the matching remainder of Eq.~\eqref{eq:target-alpha-matching}.
+with the weak-angle and threshold remainders of
+Eqs.~\eqref{eq:target-alpha-theta-matching} and
+\eqref{eq:target-alpha-matching}.
 If Target~\ref{app:target-regge-intercept-survival} is added, the source theory
 must also supply the intercept corollary
 \begin{equation}

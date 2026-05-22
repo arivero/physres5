@@ -70,6 +70,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 32 | 5 | 5 | 5 | 5 | 5 | Tightened O3 into a same-source scalar-functional target with \(J_\star\), \(C_{\rm sc}\), scheme/scale, holonomy-curvature route, auxiliary-branch failure outcome, and parent-directory source queue. |
 | 33 | 5 | 5 | 5 | 5 | 5 | Tightened O1 into a same-source ordered-sampling package with \(P_W\), \(P_Z\), \(P_\gamma\), shared \(\Lambda_J\), CHM \(h_J/W/Z/\gamma\) ledger, Coquereaux grading vocabulary, and parent-directory source queue. |
 | 34 | 5 | 5 | 5 | 5 | 5 | Tightened O4 into an entry-by-entry source-kernel ledger: CHM current entry first, Hodge/SUSY-QM square-root entry second, \(G_2\) local audit third, endpoint/Chan--Paton matrix arena, and parent-directory source queue. |
+| 35 | 5 | 5 | 5 | 5 | 5 | Tightened O17 into a photon-zero endpoint theorem target with scalar/vector normalization, compact \(U(1)_{\rm em}\) kinetic normalization, split \(\theta/\alpha\) matching remainders, Salam--Strathdee/Witten source trail, and Jegerlehner/Martin--Robertson scheme trail. |
 
 ## Scoring rubric
 

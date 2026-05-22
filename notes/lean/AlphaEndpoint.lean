@@ -44,6 +44,25 @@ structure ElectromagneticEndpoint where
   chargeNormalizationFixed : Prop
   endpointIdentifiedAsU1em : Prop
 
+structure PhotonZeroPackage where
+  sourceDatum : Type
+  PW : Type
+  PZ : Type
+  Pgamma : Type
+  LambdaJ : Type
+  scalarFunctional : Type
+  xiEM : Type
+  photonNullProjection : Prop
+  orderedSamplingDerived : Prop
+  scalarNormalizationDerived : Prop
+  compactGeneratorDerived : Prop
+
+def photonZeroPackageReady (P : PhotonZeroPackage) : Prop :=
+  P.photonNullProjection ∧
+  P.orderedSamplingDerived ∧
+  P.scalarNormalizationDerived ∧
+  P.compactGeneratorDerived
+
 def electromagneticEndpointReady (E : ElectromagneticEndpoint) : Prop :=
   E.kineticTermDerived ∧
   E.generatorNormalizationFixed ∧
@@ -59,16 +78,20 @@ structure AlphaMatching where
   Qalpha : Type
   thresholdPrescription : Type
   deltaAlphaMatch : Type
+  deltaTheta : Type
+  deltaThreshold : Type
   runningConventionSpecified : Prop
   hadronicVacuumPolarizationControlled : Prop
   thresholdDataSourceAudited : Prop
   poleWeakAngleMatchedToCouplingAngle : Prop
+  thetaMatchingControlled : Prop
 
 def alphaMatchingReady (M : AlphaMatching) : Prop :=
   M.runningConventionSpecified ∧
   M.hadronicVacuumPolarizationControlled ∧
   M.thresholdDataSourceAudited ∧
-  M.poleWeakAngleMatchedToCouplingAngle
+  M.poleWeakAngleMatchedToCouplingAngle ∧
+  M.thetaMatchingControlled
 
 axiom alpha_endpoint_requires_matching_data :
   ∃ M : AlphaMatching, alphaMatchingReady M
@@ -77,6 +100,7 @@ structure AlphaEndpointTheorem where
   branchData : SecularBranchData
   normalization : ScalarVectorNormalization
   endpoint : ElectromagneticEndpoint
+  photonZero : PhotonZeroPackage
   matching : AlphaMatching
   sourceKernelDerived : Prop
   orderedAssignmentDerived : Prop
@@ -89,10 +113,31 @@ def alphaEndpointTheoremReady (T : AlphaEndpointTheorem) : Prop :=
   T.negativeBranchScalarMapDerived ∧
   T.dimensionalEndpointDerived ∧
   scalarVectorNormalizationReady T.normalization ∧
+  photonZeroPackageReady T.photonZero ∧
   electromagneticEndpointReady T.endpoint ∧
   alphaMatchingReady T.matching
 
 axiom O17_has_conditional_theorem_status :
   ∃ T : AlphaEndpointTheorem, alphaEndpointTheoremReady T
+
+structure AlphaEndpointSourcePackage where
+  xiEM : Type
+  chargeLattice : Type
+  generatorNormalization : Type
+  higherDimensionalCoupling : Type
+  compactMetric : Type
+  thresholdPrescription : Type
+  Qalpha : Type
+  kkGaugeKineticAudit : Prop
+  runningAlphaAudit : Prop
+
+def alphaEndpointSourcePackageReady
+    (S : AlphaEndpointSourcePackage) : Prop :=
+  S.kkGaugeKineticAudit ∧ S.runningAlphaAudit
+
+axiom Loop35_requires_photon_zero_and_source_package :
+  ∃ P : PhotonZeroPackage,
+  ∃ S : AlphaEndpointSourcePackage,
+    photonZeroPackageReady P ∧ alphaEndpointSourcePackageReady S
 
 end DeVries.AlphaEndpoint

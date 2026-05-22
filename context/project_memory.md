@@ -181,6 +181,24 @@
   direct `..` read is recorded in `context/parent_directory_loop34_read.md`;
   reports are in `reviews/normalization_loop34_*.md`.
 
+- Loop 35 tightened O17 into a photon-zero endpoint theorem target.  The
+  manuscript now asks for one source datum
+  \[
+  u\mapsto
+  (P_W,P_Z,P_\gamma,\Lambda_J,\mathcal F_{\rm sc},\xi_{\rm em})
+  \]
+  producing
+  \[
+  (\sin^2\theta_{\mathcal S}(Q_\alpha),g_{\rm sec}^2,e_{\rm geom}^2)
+  \to
+  \alpha_{\mathcal S}(Q_\alpha)+\Delta_{\rm th}(Q_\alpha).
+  \]
+  Target VII now splits the task into scalar/vector normalization, compact
+  \(U(1)_{\rm em}\) kinetic normalization, and running/matching convention.
+  Salam--Strathdee and Witten supply the Kaluza--Klein gauge-kinetic source
+  trail; Jegerlehner and Martin--Robertson supply the running/scheme trail.
+  Reports are in `reviews/normalization_loop35_*.md`.
+
 ## Resume state after context renewal
 
 - Renewal checklist: read the repository-root `AGENTS.md`, then this memory file, then `OPEN_ISSUES.md`, `context/source_inventory.md`, `context/concept_claims_matrix.md`, and `reviews/referee_advisor_cycle.md` before making manuscript claims.

@@ -293,6 +293,8 @@ kernel target, and the last column is the endpoint embedding target.
 
 \subsection{Electromagnetic endpoint normalization}
 \label{app:electromagnetic-endpoint-normalization}
+% status: open theorem target; this subsection records source data required for
+% an electromagnetic endpoint normalization.
 
 The \(D=9\) endpoint also carries a coupling-normalization target.  The
 endpoint theorem has three named subtargets:
@@ -324,12 +326,47 @@ DeVries endpoint problem asks for the same source variable to supply the
 \(U(1)_{\rm em}\) endpoint, the scalar branch normalization, and the matching
 scale \(Q_\alpha\) in Eq.~\eqref{eq:target-alpha-matching}.
 
+The pass/fail data for Eq.~\eqref{eq:em-endpoint-kinetic-normalization} are
+\[
+\mathfrak E_\alpha(u)
+=
+\big(
+\xi_{\rm em}(u),\Gamma_Q(u),N_{\rm gen}(u),g_D(u),
+g_5(u),\mathcal T_\alpha(u),Q_\alpha(u)
+\big),
+\]
+where \(\Gamma_Q\) is the charge lattice, \(N_{\rm gen}\) is the generator
+normalization, and \(\mathcal T_\alpha\) is the threshold prescription.  A
+successful endpoint theorem maps \(\mathfrak E_\alpha(u)\) to
+\[
+\big(e_{\rm geom}^2,\sin^2\theta_{\mathcal S}(Q_\alpha),
+\Delta_{\rm th}(Q_\alpha)\big)
+\]
+in the same scheme used for the vector-pole comparison and the scalar
+normalization.
+
 The dependency chain is
 \begin{equation}
   {\rm O17}
   \Longleftarrow
   {\rm O1}\ +\ {\rm O3}\ +\ {\rm O10}\ +\mathcal R_{\rm pole/running}.
   \label{eq:o17-dependency-chain}
+\end{equation}
+Equivalently, the photon-zero endpoint route has to complete the diagram
+\begin{equation}
+\begin{array}{ccccc}
+u
+&\longrightarrow&
+\big(P_W,P_Z,P_\gamma,\Lambda_J,\mathcal F_{\rm sc},\xi_{\rm em}\big)
+&\longrightarrow&
+\big(\sdV,g_{\rm sec}^2,e_{\rm geom}^2\big)
+\\[3pt]
+&&&&\downarrow
+\\[3pt]
+&&&&
+\alpha_{\mathcal S}(Q_\alpha)+\Delta_{\rm th}(Q_\alpha).
+\end{array}
+\label{eq:o17-photon-zero-diagram}
 \end{equation}
 The assignments \(v=\sqrt2\,M_-(2)\), \(J_v=2\), \(C_v=2\), and \(C_W=1\)
 are separate subtargets.  Their use in an electromagnetic coupling statement

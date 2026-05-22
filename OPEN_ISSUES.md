@@ -899,6 +899,41 @@ intermediate-scale comparison must specify effective, \(\MSbar\), on-shell, or
 Euclidean conventions, plus hadronic vacuum-polarization and threshold
 prescriptions.
 
+**Loop 35 photon-zero normalization refinement.** O17 is now a three-part
+endpoint theorem target.  The same source datum \(u\) must supply the photon
+null projection, the scalar vacuum normalization, and the electromagnetic
+kinetic normalization:
+\[
+u\to
+\big(P_W,P_Z,P_\gamma,\Lambda_J,\mathcal F_{\rm sc},\xi_{\rm em}\big)
+\to
+\big(\sin^2\theta_{\mathcal S}(Q_\alpha),g_{\rm sec}^2,e_{\rm geom}^2\big).
+\]
+The matching split is
+\[
+\sin^2\theta_{\mathcal S}(Q_\alpha)
+=
+\sin^2\theta_{dV}+\Delta_\theta(Q_\alpha),
+\qquad
+\alpha_{\mathcal S}(Q_\alpha)
+=
+\frac{g_{\rm sec}^2\sin^2\theta_{\mathcal S}(Q_\alpha)}{4\pi}
++\Delta_{\rm th}(Q_\alpha).
+\]
+The endpoint package is
+\[
+\mathfrak E_\alpha(u)
+=
+\big(\xi_{\rm em},\Gamma_Q,N_{\rm gen},g_D,g_5,
+\mathcal T_\alpha,Q_\alpha\big),
+\]
+where \(\Gamma_Q\) is the charge lattice, \(N_{\rm gen}\) is the generator
+normalization, and \(\mathcal T_\alpha\) is the threshold prescription.  The
+active source task is a Salam--Strathdee/Witten Kaluza--Klein gauge-kinetic
+audit joined to Jegerlehner/Martin--Robertson scheme control.  O17 remains
+downstream of O1 ordered sampling, O3 scalar normalization, O8 pole/running
+placement, and O10 endpoint embedding.
+
 ## O18. The \(s=3/2\) positive state and a Regge completion
 
 **Provenance.** Human operator note (2026-05-22).  Awareness note: keep this on

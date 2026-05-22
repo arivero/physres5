@@ -449,6 +449,20 @@
   \(G_2\) local kernel, endpoint worldvolume kernel, O1 ordered sampling, O3
   scalar package, O8 pole remainder, and O10 source variable as linked
   obligations.
+- Loop 35 O17 next step: perform the source audit for the photon-zero endpoint
+  package
+  \[
+  u\mapsto
+  (P_W,P_Z,P_\gamma,\Lambda_J,\mathcal F_{\rm sc},\xi_{\rm em})
+  \to
+  (\sin^2\theta_{\mathcal S},g_{\rm sec}^2,e_{\rm geom}^2).
+  \]
+  The concrete source task is to read Salam--Strathdee and Witten for the
+  compact gauge-kinetic normalization, then join that result to
+  Martin--Robertson/Jegerlehner scheme control.  The required output is
+  \(\mathfrak E_\alpha=(\xi_{\rm em},\Gamma_Q,N_{\rm gen},g_D,g_5,
+  \mathcal T_\alpha,Q_\alpha)\), with charge lattice, generator normalization,
+  threshold prescription, and matching convention stated.
 
 ## Review cycle
 

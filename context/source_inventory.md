@@ -103,3 +103,14 @@ boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*
 - `44_Salam_Strathdee_On_Kaluza_Klein_Theory_IC-81-211.pdf` — Kaluza--Klein harmonic expansion on \(G/H\), zero-mode Yang--Mills reduction, and massive tower language. (ICTP preprint IC/81/211, the Annals Phys.\ 141 (1982) 316 paper.)
 - `45_Hosotani_Dynamical_Mass_Generation_Compact_Extra_Dimensions_PLB126_1983.pdf` — gauge-Higgs/Hosotani mechanism; order parameter from a compact gauge-field component and Wilson-line data.
 - `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.
+
+## Supersymmetric quantum mechanics and electroweak superconnections -- added 2026-05-22 for O20
+
+These support the Hodge/SUSY-QM theorem target in Appendix D Target X.  Fragments
+are in `context/source_fragments/4[7-9]_*/` and
+`context/source_fragments/50_*`.
+
+- `47_Witten_Supersymmetry_Morse_Theory_JDG17_1982.pdf` — de Rham supersymmetric quantum mechanics on forms, \(d+d^*\), Hodge Laplacian, Witten deformation, and Morse localization.  The PDF is scanned; the markdown fragment contains metadata only, so equation checks use rendered PDF pages as agent-read transcription.
+- `48_Fayet_SUSY_SM_Higgs_Z_partner_1403.5951.pdf` — supersymmetric gauge/BEH source where spin-zero BEH fields appear in massive gauge multiplets with \(W\) and \(Z\) bosons; source for the electroweak partner-language caution in O20.
+- `49_Gates_Rana_Spinning_Particles_Large_N_SUSY_hep-th-9504025.pdf` — worldline \(N\)-extended supersymmetry and spinning-particle actions; source for spin/worldline vocabulary if the second-supercharge route is developed.
+- `50_Coquereaux_Algebraic_Superconnections_SU2_1_Electroweak_1992.pdf` — \(SU(2|1)\) algebraic superconnection formalism for electroweak symmetry breaking and Higgs fields as part of a generalized connection.

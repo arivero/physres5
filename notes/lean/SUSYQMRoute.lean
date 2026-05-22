@@ -1,0 +1,61 @@
+/-!
+Loop 23 note to self: Hodge/SUSY-QM route for the DeVries block.
+
+This file is a conceptual notebook.  It is written in Lean-like notation to
+trigger expert review and remains unchecked by Lean.
+-/
+
+namespace DeVries.SUSYQMRoute
+
+constant J : Type
+constant Hilbert : Type
+constant Form0 Form1 : J -> Type
+constant D : {j : J} -> Form0 j -> Form1 j
+constant Dadj : {j : J} -> Form1 j -> Form0 j
+constant casimir : J -> Real
+constant sqrtCasimir : J -> Real
+constant scalarMul : {j : J} -> Real -> Form1 j -> Form1 j
+constant scalarMul0 : {j : J} -> Real -> Form0 j -> Form0 j
+
+structure NormalizedPair (j : J) where
+  e0 : Form0 j
+  e1 : Form1 j
+  d_e0 : D e0 = scalarMul (sqrtCasimir j) e1
+  dadj_e1 : Dadj e1 = scalarMul0 (sqrtCasimir j) e0
+  square_norm : (sqrtCasimir j) * (sqrtCasimir j) = casimir j
+
+structure BreakingOperator (j : J) where
+  B00 : Real := 0
+  B01 : Real := 0
+  B10 : Real := 0
+  B11 : Real
+  target_diag : B11 = - casimir j
+  source : String
+
+structure TargetX (j : J) where
+  pair : NormalizedPair j
+  breaking : BreakingOperator j
+  source_of_J : String
+  finite_projection : String
+  electroweak_map : String
+  scalar_branch_map : String
+  pole_chain : String
+
+axiom deRham_block :
+  forall {j : J}, NormalizedPair j ->
+    "Q_dR,j = [[0, sqrt(J)], [sqrt(J), 0]]" = "Q_dR,j = [[0, sqrt(J)], [sqrt(J), 0]]"
+
+axiom targetX_obligation :
+  forall {j : J}, TargetX j ->
+    "Q_red,j = Q_dR,j + diag(0,-J)" = "Q_red,j = Q_dR,j + diag(0,-J)"
+
+/- Open obligations:
+1. derive the spectrum label J from a compact, interval, or local G2 operator;
+2. show the normalized 0/1-form pair survives the finite projection;
+3. derive the breaking entry B11 = -J from a stated action or boundary term;
+4. identify the ordered electroweak samples P_W and P_Z in the same basis;
+5. map the negative eigenvector to a gauge-invariant scalar functional;
+6. run the pole-scheme chain before using the result as an electroweak claim.
+-/
+
+end DeVries.SUSYQMRoute

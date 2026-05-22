@@ -66,6 +66,10 @@ TOPIC_TAGS = {
     "44_": ("kaluza-klein", "salam-strathdee", "historical"),
     "45_": ("gauge-higgs-unification", "hosotani", "extra-dimensions"),
     "46_": ("breitenlohner-freedman", "ads-stability", "supergravity"),
+    "47_": ("supersymmetric-quantum-mechanics", "morse-theory", "hodge"),
+    "48_": ("supersymmetry", "higgs", "z-boson"),
+    "49_": ("worldline-supersymmetry", "spinning-particles"),
+    "50_": ("superconnection", "su2-1", "electroweak"),
     "witten1981": ("kaluza-klein", "fermion-quantum-numbers", "historical"),
 }
 

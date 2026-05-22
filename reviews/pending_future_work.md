@@ -62,6 +62,12 @@
   must supply a sourced de Rham/Hodge supercharge, the \(-J\)
   supersymmetry-breaking term, the \(su(2/1)\) electroweak connection, and the
   compatibility map to O1 and O3.
+- Use Loop 23's Target X as the Hodge/SUSY-QM guardrail:
+  \(D_Je^0_J=\sqrt J e^1_J\), \(D_J^\dagger e^1_J=\sqrt J e^0_J\), and
+  \(Q_{{\rm red},J}=Q_{{\rm dR},J}+B_J\) with
+  \(B_J=\operatorname{diag}(0,-J)\).  The source route must still derive the
+  \(J\) spectrum, finite projection, breaking term, electroweak superconnection
+  map, and pole/scalar compatibility chain.
 
 ## Completed in latest pass
 
@@ -114,9 +120,10 @@
   brane-duality admissibility, Sec. VI.B and VI.F bridge prose, concept-matrix
   row, Lean obligations, parent-root refresh, and Appendix D acceptance
   conditions.
-- Recorded the concurrent O20 issue in the pending-work and concept ledgers:
-  broken \(N=2\) supersymmetric quantum mechanics is now a source-audit and
-  theorem-target queue.
+- Added Loop 23 normalization: Appendix D Target X for the Hodge/SUSY-QM route,
+  local source fragments/PDFs for Witten, Fayet, Gates--Rana, and Coquereaux,
+  interval and \(G_2\) subroute text, concept-matrix updates, and Lean
+  obligations.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -253,6 +260,9 @@
   with a sourced supersymmetry-breaking diagonal, a field-basis map, an
   electroweak \(su(2/1)\) connection if used, and compatibility with the
   ordered assignment and scalar branch.
+- Push Target X toward a source-theory proof by deriving one concrete
+  square-root entry from a normalized differential on a compact or interval
+  sector, then testing whether the same action supplies \(B_J\).
 
 ## Source work
 
@@ -284,9 +294,10 @@
   primary rotating \(p\)-brane scaling sources, D-brane T-duality sources with
   Neumann--Dirichlet exchange, and worldvolume treatments of brane dimension,
   charge, and tension under duality.
-- Source-audit O20 before manuscript use: Witten's Morse-theory paper,
-  Fayet's \(Z\)-Higgs supersymmetry paper, Gates--Rana worldline supersymmetry,
-  and primary \(su(2/1)\) electroweak-superconnection sources.
+- Continue the O20 source audit: Witten's Morse-theory PDF needs direct
+  rendered-page checks because text extraction is empty; Fayet, Gates--Rana,
+  and Coquereaux now have local fragments; Ne'eman, Fairlie, and Thierry-Mieg
+  remain useful primary \(su(2|1)\) upgrades.
 
 ## Review cycle
 

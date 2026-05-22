@@ -941,18 +941,22 @@ mass or scalar-functional reading, and the boundary-condition duality map.
 **Provenance.** Human operator note (2026-05-22), from `../physres6`. Refines O4
 (dynamical origin); touches O1 and O3.
 
-**Statement.** The off-diagonal \(\sqrt J\) of \(Q(J)\) is the supercharge of an
-\(N=2\) supersymmetric quantum mechanics: with the exterior derivative \(d\) and
-its adjoint \(\delta\) as supercharges, \(\{d,\delta\}=\Delta\) (the Hodge
-Laplacian) pairs the scalar (0-form) and vector (1-form) modes degenerately at
-eigenvalue \(J\) (Witten, \emph{Supersymmetry and Morse Theory}, 1982). The
-diagonal \(-J\) breaks this supersymmetry; the two branches are the split
-would-be superpartners. So \(Q(J)\) is a broken \(N=2\) SUSY QM --- the operator
-content of the original ``susy-like degeneration'' (Rivero 2006). This gives O4 a
-named origin: the de Rham supercharge plus a supersymmetry-breaking diagonal.
+**Statement.** O20 tests whether the off-diagonal \(\sqrt J\) of \(Q(J)\) can be
+derived from a de Rham/Hodge supersymmetric quantum-mechanics reduction.  With
+the exterior derivative \(d\) and its adjoint \(\delta\), Witten's Morse-theory
+construction gives supercharges whose Hamiltonian is the Hodge Laplacian and
+whose Witten deformation couples the complex to Morse data.  The DeVries target
+asks for normalized \(0/1\)-form channels
+\[
+D_Je^0_J=\sqrt J\,e^1_J,\qquad
+D_J^\dagger e^1_J=\sqrt J\,e^0_J,
+\]
+plus a sourced breaking operator \(B_J=\operatorname{diag}(0,-J)\) in the same
+two-channel basis.  This gives O4 a named theorem target: a de Rham supercharge,
+a finite projection, and a supersymmetry-breaking diagonal.
 
 **Electroweak-SUSY home (for O1/O3).**
-- Fayet (1403.5951): the Higgs as the spin-0 SUSY partner of the \(Z\) --- a
+- Fayet (1403.5951): the Higgs as the spin-0 SUSY partner of the \(Z\); a
   supersymmetry relating the neutral gauge boson and the order parameter, i.e.
   the positive (\(Z\)) and negative (Higgs/order-parameter) branches.
 - the \(su(2/1)\) electroweak superconnection (Ne'eman; Fairlie; Coquereaux et
@@ -961,16 +965,35 @@ named origin: the de Rham supercharge plus a supersymmetry-breaking diagonal.
 - spin from worldline SUSY (Gates--Rana, hep-th/9504025): one supercharge is the
   spin/Dirac structure.
 
-**Working conjecture.** A broken \(N=2\) in the IR with one supercharge the
-spin/Hodge grading (\(d/\delta\)) and the other the electroweak \(su(2/1)\)
-superconnection; the two branches are the broken supermultiplet.  This is a
-conjectural synthesis built from published pieces.
+**Working conjecture.** A broken \(N=2\) reduction in the IR with one supercharge
+from the spin/Hodge grading \((d/\delta)\) and another electroweak grading from
+the \(su(2/1)\) superconnection.  The two branches would be read as the split
+eigenchannels of this finite reduction.  This is a conjectural synthesis built
+from published pieces.
 
 **Success criterion.** Derive the \(-J\) breaking from a specified
 supersymmetry-breaking term, identify the second supercharge with the \(su(2/1)\)
 odd generators, and reconcile with O1 (the \((3/4,2)\) assignment) and O3
 (negative branch = order parameter). Cross-check: `../physres6` (broken \(N=2\)
 SUSY QM in the Letter).
+
+**Loop 23 theorem-target refinement.** Appendix D now records Target X:
+Hodge/SUSY-QM origin of the DeVries block.  The source-audited local corpus now
+contains Witten's scanned Morse-theory paper, Fayet's gauge/BEH supersymmetry
+paper, Gates--Rana on worldline supersymmetry, and Coquereaux's \(SU(2|1)\)
+electroweak superconnection talk.  The accepted use is the off-diagonal
+factorization target
+\[
+Q_{{\rm dR},J}=
+\begin{pmatrix}0&\sqrt J\\ \sqrt J&0\end{pmatrix},
+\qquad
+Q_{{\rm red},J}=Q_{{\rm dR},J}+B_J,
+\qquad
+B_J=\begin{pmatrix}0&0\\0&-J\end{pmatrix}.
+\]
+The open data are the source of \(J\), the projection to two channels, the
+breaking operator, the electroweak \(su(2/1)\) map, and the pole/scalar
+compatibility chain.
 
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

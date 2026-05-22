@@ -419,8 +419,7 @@ massive-tower language, Haba--Oda and Bucci support boundary scalar/radion
 variables, and Hosotani supports compact gauge-field scalar data.  Endpoint
 and D-brane sources support the separate endpoint arena.  The exact DeVries
 entries remain conjectural.
-The advisor route sharpens the interval target to an eaten-Goldstone boundary
-kernel:
+A sharper interval target is an eaten-Goldstone boundary kernel:
 \begin{equation}
   S_{5D}[A_M,\Phi_i]
   \xrightarrow{\delta S,\mathcal G_\xi}
@@ -434,8 +433,7 @@ kernel:
 Here \(h_J\) is tested as the boundary Higgs/Goldstone variable and \(a_J\)
 as the transverse adjoint-current boundary value.  The same boundary Higgsing
 datum would then source the vector kernel and the scalar partner functional.
-Loop 21 turns this into a source-to-pole square with explicit boundary
-variables:
+The corresponding source-to-pole square has explicit boundary variables:
 \begin{equation}
 \begin{array}{ccc}
 (v_0,v_L,R_0,\theta_H) &
@@ -850,6 +848,96 @@ boundary-condition duality.  In that case Target VIII can still preserve
 ordinary Regge behavior through \(N_{\rm osc}/\alpha'\), while Target IX becomes
 a rejected brane-duality interpretation.
 
+\subsection{Target X: Hodge/SUSY-QM origin of the DeVries block}
+\label{app:target-susyqm-origin}
+
+\paragraph*{Hypotheses.}
+Assume the source theory contains a \(\mathbb Z_2\)-graded Hilbert space
+\begin{equation}
+  \mathcal H_J^{\rm SQM}=E^0_J\oplus E^1_J
+  =
+  \operatorname{span}\{e^0_J,e^1_J\},
+  \label{eq:target-susyqm-hilbert-space}
+\end{equation}
+with a differential \(D_J:E^0_J\to E^1_J\), adjoint \(D_J^\dagger\), and a
+chosen inner product.  The de Rham/Hodge model of supersymmetric quantum
+mechanics supplies the source template: \(d+d^\dagger\) is a supercharge, the
+Hamiltonian is the Hodge Laplacian, and a Witten deformation couples the complex
+to Morse data \cite{WittenMorse1982}.  The reduced basis is required to obey
+\begin{equation}
+  D_Je^0_J=\sqrt J\,e^1_J,\qquad
+  D_J^\dagger e^1_J=\sqrt J\,e^0_J,
+  \label{eq:target-susyqm-square-root}
+\end{equation}
+so that the projected de Rham operator is
+\begin{equation}
+  Q_{{\rm dR},J}
+  =
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&0
+  \end{pmatrix}.
+  \label{eq:target-susyqm-dr-block}
+\end{equation}
+The source theory must also contain a breaking or boundary operator \(B_J\)
+acting on the same projected basis.
+
+\paragraph*{Conclusion.}
+The Hodge/SUSY-QM route succeeds if the projected operator has the form
+\begin{equation}
+  Q_{{\rm red},J}
+  =
+  Q_{{\rm dR},J}+B_J,\qquad
+  B_J
+  =
+  \begin{pmatrix}
+  0&0\\
+  0&-J
+  \end{pmatrix},
+  \label{eq:target-susyqm-red-block}
+\end{equation}
+in the same field basis used by the ordered electroweak map and the
+negative-branch scalar functional.  Equivalently,
+\begin{equation}
+\begin{array}{ccccc}
+(\Omega^0_J,\Omega^1_J,D_J,D_J^\dagger)
+&\longrightarrow&
+\mathcal H_J^{\rm SQM}
+&\longrightarrow&
+Q_{{\rm red},J}
+\\
+&& \downarrow && \downarrow
+\\
+&& (P_W,P_Z,u_-) && \{x_+(J),x_-(J)\}.
+\end{array}
+\label{eq:target-susyqm-diagram}
+\end{equation}
+The side data \(P_W\), \(P_Z\), and \(u_-\) denote, respectively, the charged
+pole sample, the neutral pole sample, and the scalar/order-parameter branch map.
+
+\paragraph*{Current evidence.}
+The square-root entry has a concrete mathematical source: on normalized
+Laplacian eigenspaces, a differential maps a zero-form channel to an exact
+one-form channel with norm controlled by the eigenvalue.  Witten's Morse-theory
+paper supplies the de Rham/Hodge and Witten-deformation template
+\cite{WittenMorse1982}.  Fayet supplies an electroweak supersymmetry source in
+which spin-zero BEH fields sit in massive gauge multiplets with \(W\) and \(Z\)
+bosons \cite{Fayet2014}.  Gates--Rana supply a worldline supersymmetry source
+for spinning-particle systems \cite{GatesRana1995}.  Coquereaux supplies an
+\(SU(2|1)\) superconnection source in which Higgs fields enter a generalized
+connection for electroweak symmetry breaking \cite{Coquereaux1992Superconnections}.
+These sources give addresses for the factorization, spin, and electroweak
+grading.  The DeVries breaking operator, finite projection, and pole-chain
+matching remain theorem obligations.
+
+\paragraph*{Failure mode.}
+The target fails if the projected differential yields a different normalization,
+if \(B_J\) gives a different diagonal entry, if additional light channels alter
+the determinant class, or if the electroweak projection conflicts with
+Targets~\ref{app:target-electroweak-assignment} and
+\ref{app:target-negative-branch}.  The surviving result would then be a Hodge
+factorization analogy for the off-diagonal entry.
+
 \subsection{Claim hierarchy and acceptance criteria}
 \label{app:claim-hierarchy}
 
@@ -861,9 +949,9 @@ The theorem targets separate four kinds of statements:
 Level & Manuscript content & Required evidence\\
 \midrule
 Derived & algebra of \(Q(J)\), roots, branch identities, trace and determinant form & equation-level derivation in Sec.~\ref{sec:casimir}\\
-Source-supported & electroweak mass matrix, pole/running scheme distinctions, endpoint/brane, KK, and \(G_2\) background & cited local source fragments and references\\
-Conjectural & pole placement of the DeVries quotient, negative-branch scalar reading, route-specific kernel entries & theorem target with assumptions and failure mode\\
-Open & ordered \(J\)-assignment, electroweak-ray admissibility, full determinant derivation, scalar functional, global-form compatibility of a compact completion & proof from a stated action, boundary condition, endpoint algebra, or localized operator\\
+Source-supported & electroweak mass matrix, pole/running scheme distinctions, endpoint/brane, KK, \(G_2\), and Hodge/SUSY-QM background & cited local source fragments and references\\
+Conjectural & pole placement of the DeVries quotient, negative-branch scalar reading, route-specific kernel entries, broken Hodge/SUSY-QM reduction & theorem target with assumptions and failure mode\\
+Open & ordered \(J\)-assignment, electroweak-ray admissibility, full determinant derivation, scalar functional, global-form compatibility of a compact completion, sourced \(B_J\) breaking term & proof from a stated action, boundary condition, endpoint algebra, localized operator, or reduced supersymmetric quantum mechanics\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -902,7 +990,7 @@ must also supply the intercept corollary
   \label{eq:appendix-regge-corollary}
 \end{equation}
 The source theory \(\mathcal S\) may be a boundary effective action, an
-endpoint sector, or a localized \(G_2\) system.  The light subspace
+endpoint sector, a localized \(G_2\) system, or a Hodge/SUSY-QM reduction.  The light subspace
 \(\mathcal H_J\) must contain an order-parameter channel and an adjoint/current
 channel.  The kernel \(K_J(\lambda)\) must reduce to the DeVries determinant in
 a stated normalization.  The ordered pair \((J_H,J_{\rm adj})=(3/4,2)\) must
@@ -952,6 +1040,10 @@ spin, then derive the projection rule for the \(j=3/2\) positive intercept.
 \item If the branch-scaling interpretation is used, derive
 Eq.~\eqref{eq:target-branch-scaling-table}, the negative-branch mass reading,
 and the boundary-condition duality map from the source theory.
+\item If the Hodge/SUSY-QM route is used, derive
+Eq.~\eqref{eq:target-susyqm-red-block} from normalized \(0/1\)-form channels,
+the source of \(J\), the finite projection, the breaking operator \(B_J\), and
+the same pole/scalar maps used in the electroweak acceptance criterion.
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
 These conditions define a complete derivation for the present manuscript.

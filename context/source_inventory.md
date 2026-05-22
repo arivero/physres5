@@ -37,6 +37,14 @@ Loop 30 records the current direct parent-directory read in
 `context/source_fragments/parent_prtalks/`.  The PDFs remain the source
 objects; the extracted markdown supports recall and targeted source promotion.
 
+Loop 31 records a continuation parent-directory read in
+`context/parent_directory_loop31_read.md` and
+`notes/lean/ParentDirectoryLoop31.lean`.  Its valid use is an O10 source
+queue: the parent notes suggest a top-as-boundary or top-as-localization
+datum, while the manuscript-facing source burden remains Witten 1981, CHM,
+six-dimensional string sources, local \(G_2\) sources, and any future primary
+Hanany--Witten/M-theory/D6 source upgrade.
+
 `../physres6/` is a sibling short-note workspace for the alpha route.  Its
 valid use here is O17 provenance and symbolic theorem-target structure.  Its
 numerical checks and compact PRL framing remain outside the current conceptual

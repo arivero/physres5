@@ -11,10 +11,15 @@ The claim status has four levels.  Witten's seven-extra-dimensional
 five-extra-dimensional \(SU(3)\times U(1)_{\rm geom}\) endpoint is a geometric
 endpoint target whose electromagnetic embedding remains to be derived.  The
 \(D=10\) and colourless \(D=6\) middle lines are reconstruction labels for a
-source sector that must supply \(\mathcal B\), \(\mathcal H_J\), \(K_J\), and
+source sector that must supply \(\mathcal B\), \(\mathcal H_J\),
+\(\langle\cdot,\cdot\rangle_u\), \(P_J(u)\), \(\Lambda_J(u)\),
+\(\widehat K_J\), a decoupling rule for extra channels, and
 \(\mathcal R_{\rm pole}\).  The scalar branch and top-sector readings are
 conjectural source maps until the same variable controls the gauge-Higgs ray,
-the reduced kernel, and the relevant Yukawa or boundary datum.
+the reduced kernel, and the relevant Yukawa or boundary datum.  The adjacent
+\texttt{../prTalks} and parent-workspace material supplies project provenance
+and recall prompts.  Manuscript-facing source claims in this appendix rest on
+Witten, CHM, the six-dimensional string sources, and local \(G_2\) references.
 
 \subsection{Full-gauge count}
 \label{app:full-gauge-count}
@@ -41,14 +46,17 @@ D=10,\quad n_{\rm KK}=6
 D=9,\quad n_{\rm KK}=5
 &:&
 SU(3)\times U(1)_{\rm geom}
-\quad\hbox{formal heavy-W/Z decoupling endpoint}.
+\quad\hbox{geometric endpoint target}.
 \end{array}
 \label{eq:full-gauge-dimensional-chain}
 \end{equation}
 The arrows in Eq.~\eqref{eq:full-gauge-dimensional-chain} are bookkeeping
 arrows.  A physical interpolation requires a single compactification, boundary,
 or singular source family that supplies the deformation parameter and the
-four-dimensional matching map.
+four-dimensional matching map.  The heavy-\(W/Z\) endpoint is a geometric or
+effective endpoint target outside the electroweak radial ray unless a source
+theorem derives its compatibility with fixed \(g:g'\) and the photon null
+direction.
 The source status of the three lines is uneven, and the distinction is part of
 the claim.  The source-backed data and reconstruction targets are:
 \begin{center}
@@ -128,7 +136,7 @@ D=6,\quad n_{\rm KK}^{\rm ew}=2
 \\[3pt]
 D=5,\quad n_{\rm KK}^{\rm ew}=1
 &:&
-U(1)_{\rm em}.
+U(1)_{\rm geom}\to U(1)_{\rm em}\quad\hbox{after embedding theorem}.
 \end{array}
 \label{eq:colourless-dimensional-chain}
 \end{equation}
@@ -170,39 +178,69 @@ dimensional family has source operators
 \end{equation}
 or the corresponding colourless electroweak endpoints.  The
 \(U(1)_{\rm em}\) identification is an electroweak embedding obligation.  A
-DeVries point needs a joint source datum
+DeVries point needs a joint source datum.  Until a route supplies it, \(u\) is
+a formal joint source coordinate.  Candidate realizations include a compact
+modulus, an interval/boundary parameter, a brane datum, or a singularity
+deformation.  The required package is
 \begin{equation}
-  u\longmapsto
-  \big(t_{\rm dim}(u),\,t_{\rm EW}(u),\,v(u),\,m_h^2(u),\,
-  K_J(u,\lambda),\,\mathcal F_{\rm sc}(u;J),\,\mathcal Y_{\rm top}(u)\big),
+  \begin{aligned}
+  u\longmapsto\big(&
+  t_{\rm dim}(u),\,t_{\rm EW}(u),\,v(u),\,m_h^2(u),\,
+  \Lambda_J(u),\,\langle\cdot,\cdot\rangle_u,\\
+  &P_J(u),\,\widehat K_J(u,\widehat\lambda),\,
+  \mathcal D_J^{\rm extra}(u),\,\mathcal F_{\rm sc}(u;J),\\
+  &\mathcal Y_{\rm top}(u),\,\mathcal R_{\rm pole}(u)\big),
+  \end{aligned}
   \label{eq:joint-source-datum}
 \end{equation}
 where \(v(u)\) follows the allowed electroweak ray, \(m_h^2(u)\) records scalar
 stiffness along the same family, \(\mathcal F_{\rm sc}\) is the scalar or
-negative-branch functional, and \(\mathcal Y_{\rm top}\) is a possible
-top-sector datum.  Target~\ref{app:target-susyqm-origin} gives an optional
+negative-branch functional, \(\widehat\lambda=\lambda/\Lambda_J(u)^2\),
+\(\mathcal D_J^{\rm extra}\) records decoupling or block reduction of all
+additional modes, and \(\mathcal Y_{\rm top}\) is a possible top-sector
+datum.  Target~\ref{app:target-susyqm-origin} gives an optional
 Hodge/superconnection route for the source of \(K_J\).  The middle-dimensional
 data required at a DeVries point are
 \begin{equation}
-  \mathfrak I_J(t_{\rm dim,\star})
+  \mathfrak I_J(u_\star)
   =
   \big(
-  \mathcal B(t_{\rm dim,\star}),\,
-  \mathcal H_J(t_{\rm dim,\star}),\,
-  K_J(t_{\rm dim,\star},\lambda),\,
-  \mathcal R_{\rm pole}
+  \mathcal B(u_\star),\,
+  \mathcal H_J(u_\star),\,
+  \langle\cdot,\cdot\rangle_{u_\star},\,
+  P_J(u_\star),\,
+  \Lambda_J(u_\star),\,
+  \widehat K_J(u_\star,\widehat\lambda),\,
+  \mathcal D_J^{\rm extra}(u_\star),\,
+  \mathcal R_{\rm pole}(u_\star)
   \big),
   \label{eq:middle-dimensional-data}
 \end{equation}
-where \(\mathcal B(t_{\rm dim,\star})\) is the compact, boundary, or singular object,
-\(\mathcal H_J(t_{\rm dim,\star})=\operatorname{span}\{h_J,a_J\}\) is the light
-order-parameter/current subspace, \(K_J\) is the reduced kernel, and
-\(\mathcal R_{\rm pole}\) is the matching rule to the transverse pole
+where \(\mathcal B(u_\star)\) is the compact, boundary, or singular object,
+\(\mathcal H_J(u_\star)=\operatorname{span}\{h_J,a_J\}\) is the light
+order-parameter/current subspace, \(P_J\) is the projection into that subspace,
+\(\Lambda_J\) is the common source scale, \(\widehat K_J\) is the dimensionless
+reduced kernel, and \(\mathcal R_{\rm pole}\) is the matching rule to the transverse pole
 propagator.  At the DeVries point the light two-channel reduction must take the
 form
 \begin{equation}
-  \mathcal O_J(t_{\rm dim,\star})\big|_{\mathcal H_J}
+  \Lambda_J(u_\star)^{-2}
+  P_J(u_\star)^\dagger
+  \mathcal O_J(u_\star,\lambda)
+  P_J(u_\star)
   \longrightarrow
+  \widehat K_J(u_\star,\widehat\lambda)
+  =
+  \begin{pmatrix}
+  \widehat\lambda&-\sqrt J\\
+  -\sqrt J&\widehat\lambda+J
+  \end{pmatrix},
+  \label{eq:dimensional-devries-passfail}
+\end{equation}
+with \(\mathcal D_J^{\rm extra}\) eliminating or block-diagonalizing all
+additional light channels.  Setting \(\widehat\lambda=0\) gives the source
+operator target
+\begin{equation}
   \begin{pmatrix}
   0&\sqrt J\\
   \sqrt J&-J
@@ -220,9 +258,10 @@ The compatibility diagram is
 \\
 (D,n_{\rm KK})=(10,6)\ {\rm or}\ (6,2)
 &:\quad
-\mathcal O_J(t_{\rm dim,\star})\big|_{\mathcal H_J}\to K_J(\lambda),
+\mathcal O_J(u_\star)\big|_{\mathcal H_J}\to
+\widehat K_J(u_\star,\widehat\lambda),
 \\
-K_J(\lambda)
+\widehat K_J(u_\star,\widehat\lambda)
 &\longrightarrow
 (J_W,J_Z)=(J_H,J_{\rm adj}),
 \\
@@ -240,11 +279,11 @@ The same obligation can be drawn as a single-source interpolation diagram:
 \begin{equation}
 \begin{array}{ccccc}
 u=0 && u=u_\star && u\to\infty\\
-v=0 && K_J(u_\star)\big|_{\mathcal H_J}=Q(J)
-&& U(1)_{\rm em}\ {\rm endpoint}\\
+v=0 && \widehat K_J(u_\star,\widehat\lambda)\ {\rm gives}\ Q(J)
+&& U(1)_{\rm geom}\ {\rm endpoint}\\
 m_h^2(u)\ {\rm specified} &&
 x_+(J)\to{\rm pole\ ratio},\quad x_-(J)\to\mathcal F_{\rm sc}
-&& W/Z\ {\rm decoupled}\\
+&& {\rm embedding\ theorem}\\
 && \mathcal Y_{\rm top}(u_\star)\to y_t &&
 \end{array}
 \label{eq:single-source-interpolation-diagram}
@@ -255,9 +294,18 @@ kernel target, and the last column is the endpoint embedding target.
 \subsection{Electromagnetic endpoint normalization}
 \label{app:electromagnetic-endpoint-normalization}
 
-The \(D=9\) endpoint also carries a coupling-normalization target.  Once the
-surviving geometric factor has been identified as \(U(1)_{\rm em}\), the
-compact source must determine the four-dimensional kinetic term
+The \(D=9\) endpoint also carries a coupling-normalization target.  The
+endpoint theorem has three named subtargets:
+\begin{enumerate}
+\item identify the compact isometry or gauge generator
+  \(\xi_{\rm em}(y;t_{\rm dim})\);
+\item derive the Standard Model electromagnetic charge lattice and generator
+  normalization;
+\item match the reduced four-dimensional kinetic term in the pole/running
+  convention used by Target~\ref{app:target-alpha-endpoint}.
+\end{enumerate}
+Once the surviving geometric factor has been identified as \(U(1)_{\rm em}\),
+the compact source must determine the four-dimensional kinetic term
 \begin{equation}
   \frac{1}{e_{\rm geom}^2}
   \sim
@@ -343,19 +391,44 @@ observed bottom coupling to the \(Z\) restricts the same data
 \cite{CsakiHubiszMeade2005}.  A DeVries claim requires a map from that
 localization or boundary datum to \(\mathcal Y_{\rm top}(u)\).
 
-The DeVries question is sharper: does the six-dimensional interior sector
+The DeVries question is sharper: can the six-dimensional interior sector
 select the top quark as the fermion attached most directly to the order
-parameter?  A positive answer would require a source-theory map
+parameter?  The source-theory target is
 \begin{equation}
-  \mathcal F_{\rm top}:
-  \mathcal H_J
+  \mathcal Y_{\rm top}(u_\star)
   \longrightarrow
-  y_t,\quad m_t,\quad
-  \hbox{or a top-sector boundary datum},
+  \big(y_t(u_\star),\,m_t(u_\star),\,\Pi^{(t)}_{VV}(s;u_\star)\big),
   \label{eq:top-sector-map}
 \end{equation}
-compatible with the same determinant that gives the W/Z pole-ratio clue.  A
-more detailed source target is
+with the top representation, localization or boundary data, anomaly and
+global-form checks, and pole-scheme matching stated in the same basis as
+\(\widehat K_J\).  The CHM interval route gives an active test package:
+\begin{equation}
+\begin{array}{ccc}
+u_{\rm int}=(R,v_i,Z_i,\theta_H,c_{Q_3},c_{t_R},M_{\rm mix},\ldots)
+&\longrightarrow&
+\left(K_T^{\partial I},K_{A_5\pi}^{\partial I},
+\mathcal Y_{\rm top}\right)
+\\[3pt]
+\downarrow && \downarrow
+\\[3pt]
+(t_{\rm dim},t_{\rm EW},v)
+&\longrightarrow&
+\Lambda_J(u_{\rm int})^{-2}
+P_J^\dagger
+\left(K^{\rm DtN}_J+K^{\rm brane}_J-K^{\rm ref}_J\right)P_J
+\\[3pt]
+&& \downarrow
+\\[3pt]
+&&
+\begin{pmatrix}
+\widehat\lambda&-\sqrt J\\
+-\sqrt J&\widehat\lambda+J
+\end{pmatrix}.
+\end{array}
+\label{eq:chm-o10-top-source-test}
+\end{equation}
+The companion compatibility target is
 \begin{equation}
 \begin{array}{ccc}
 x_-(J) &\longrightarrow& \mathcal F_{\rm sc}(u;J)

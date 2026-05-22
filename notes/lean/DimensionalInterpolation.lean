@@ -17,6 +17,17 @@ constant ScalarFunctional : Type
 constant TopDatum : Type
 constant PoleMatchingRule : Type
 constant ChargeLattice : Type
+constant SourceScale : Type
+constant InnerProduct : Type
+constant Projection : Type
+constant ExtraChannelRule : Type
+constant NormalizedSpectralVariable : Type
+constant SourceObject : Type
+constant EndpointGenerator : Type
+constant KineticNormalization : Type
+constant IntervalDatum : Type
+constant BoundaryKernel : Type
+constant BoundaryScalarKernel : Type
 
 structure ClaimStatus where
   witten_seven_extra_endpoint_source_backed : Prop
@@ -41,7 +52,12 @@ structure SingleSourceInterpolation where
   t_EW : ElectroweakRay
   v : ElectroweakRay
   mh2 : ScalarStiffness
+  LambdaJ : SourceScale
+  innerProduct : InnerProduct
+  projection : Projection
   KJ : ReducedKernel
+  lambdaHat : NormalizedSpectralVariable
+  extraChannelRule : ExtraChannelRule
   Fsc : ScalarFunctional
   Ytop : TopDatum
   same_source_variable : Prop
@@ -56,6 +72,40 @@ def singleSourceReady (I : SingleSourceInterpolation) : Prop :=
 
 axiom single_source_interpolation_target :
   ∃ I : SingleSourceInterpolation, singleSourceReady I
+
+structure MiddleLinePassFail where
+  u : SourceFamily
+  B : SourceObject
+  HJ_two_channel : Prop
+  innerProduct : InnerProduct
+  projection : Projection
+  sourceScale : SourceScale
+  normalizedKernel : ReducedKernel
+  lambdaHat : NormalizedSpectralVariable
+  extraChannelRule : ExtraChannelRule
+  givesDeVriesBlock : Prop
+  orderedElectroweakAssignment : Prop
+  poleMatching : PoleMatchingRule
+
+def middleLineReady (M : MiddleLinePassFail) : Prop :=
+  M.HJ_two_channel ∧
+  M.givesDeVriesBlock ∧
+  M.orderedElectroweakAssignment
+
+axiom middle_line_pass_fail_target :
+  ∃ M : MiddleLinePassFail, middleLineReady M
+
+structure ElectromagneticEndpointSubtargets where
+  compact_generator : EndpointGenerator
+  sm_charge_lattice : ChargeLattice
+  four_dimensional_kinetic_normalization : KineticNormalization
+  embedding_theorem_supplied : Prop
+
+def electromagneticEndpointReady (E : ElectromagneticEndpointSubtargets) : Prop :=
+  E.embedding_theorem_supplied
+
+axiom endpoint_subtargets_required :
+  ∃ E : ElectromagneticEndpointSubtargets, electromagneticEndpointReady E
 
 structure ElectromagneticEndpointTarget where
   geom_u1_endpoint : Prop
@@ -87,6 +137,33 @@ def chmTopTargetReady (T : ChmTopPressure) : Prop :=
 
 axiom chm_top_pressure_is_source_fact_target :
   ∃ T : ChmTopPressure, chmTopTargetReady T
+
+structure IntervalTopCompatibility where
+  uInt : IntervalDatum
+  vectorBoundaryKernel : BoundaryKernel
+  scalarBoundaryKernel : BoundaryScalarKernel
+  topDatum : TopDatum
+  sameSourceVariable : Prop
+  sameInnerProduct : Prop
+  sameProjection : Prop
+  sameSourceScale : Prop
+  photonReferenceSubtraction : Prop
+  givesCurrentEntry : Prop
+  givesOffDiagonalProduct : Prop
+  ytopInSamePoleScheme : Prop
+
+def intervalTopCompatibilityReady (I : IntervalTopCompatibility) : Prop :=
+  I.sameSourceVariable ∧
+  I.sameInnerProduct ∧
+  I.sameProjection ∧
+  I.sameSourceScale ∧
+  I.photonReferenceSubtraction ∧
+  I.givesCurrentEntry ∧
+  I.givesOffDiagonalProduct ∧
+  I.ytopInSamePoleScheme
+
+axiom chm_interval_o10_top_test :
+  ∃ I : IntervalTopCompatibility, intervalTopCompatibilityReady I
 
 structure G2DimensionalEmbedding where
   local_operator : ReducedKernel

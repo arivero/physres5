@@ -598,11 +598,20 @@ identify the two through a map
 \end{equation}
 or through a joint source variable
 \begin{equation}
-  u\longmapsto
-  \big(t_{\rm dim}(u),t_{\rm EW}(u),v(u),m_h^2(u),
-  K_J(u,\lambda),\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
+  \begin{aligned}
+  u\longmapsto\big(&
+  t_{\rm dim}(u),t_{\rm EW}(u),v(u),m_h^2(u),
+  \Lambda_J(u),\langle\cdot,\cdot\rangle_u,\\
+  &P_J(u),\widehat K_J(u,\widehat\lambda),
+  \mathcal D_J^{\rm extra}(u),\mathcal F_{\rm sc}(u;J),
+  \mathcal Y_{\rm top}(u),\mathcal R_{\rm pole}(u)\big),
+  \end{aligned}
   \label{eq:target-dimensional-joint-source}
 \end{equation}
+with \(\widehat\lambda=\lambda/\Lambda_J(u)^2\).  The symbol \(u\) denotes a
+joint source coordinate until a route identifies it as a compact modulus,
+boundary parameter, brane datum, singularity deformation, or mixed source
+coordinate.
 The full-gauge endpoint source trail is
 \begin{equation}
   (D,n_{\rm KK})=(11,7):
@@ -619,37 +628,63 @@ electroweak embedding identifies the surviving \(U(1)\) with
 \end{equation}
 The colourless electroweak dictionary is
 \begin{equation}
-  (D,n_{\rm KK}^{\rm ew})=(7,3):
-  SU(2)\times U(1),
-  \qquad
-  (D,n_{\rm KK}^{\rm ew})=(5,1):
-  U(1)_{\rm em}.
+  \begin{aligned}
+  (D,n_{\rm KK}^{\rm ew})=(7,3)&:
+  SU(2)\times U(1),\\
+  (D,n_{\rm KK}^{\rm ew})=(5,1)&:
+  U(1)_{\rm geom}\to U(1)_{\rm em}
+  \quad{\rm after\ embedding\ theorem}.
+  \end{aligned}
   \label{eq:target-colourless-dimensional-endpoints}
 \end{equation}
-At the middle point \(t_{\rm dim}=t_\star\), assume a light subspace
+The \(D=9\) and colourless \(D=5\) endpoint obligations split into a compact
+isometry or gauge generator, a Standard Model electromagnetic charge lattice,
+and a four-dimensional kinetic normalization.  At the middle point
+\(u=u_\star\), assume a light subspace
 \begin{equation}
-  \mathcal H_J(t_\star)=\operatorname{span}\{h_J,a_J\}
+  \mathcal H_J(u_\star)=\operatorname{span}\{h_J,a_J\}
   \label{eq:target-dimensional-light-space}
 \end{equation}
 with \(h_J\) an order-parameter channel and \(a_J\) an adjoint/current
-channel.  A top-sensitive completion also supplies a Yukawa or boundary datum
-\(\mathcal Y_{\rm top}(u_\star)\) attached to the same source variable.
+channel, together with \(\langle\cdot,\cdot\rangle_{u_\star}\), \(P_J(u_\star)\),
+\(\Lambda_J(u_\star)\), and a decoupling or block-reduction rule
+\(\mathcal D_J^{\rm extra}(u_\star)\).  A top-sensitive extension also
+supplies a Yukawa or boundary datum \(\mathcal Y_{\rm top}(u_\star)\) attached
+to the same source variable.
 
 \paragraph*{Conclusion.}
-The middle-dimensional sector defines a source operator
+The middle-dimensional sector passes the O10 test when the normalized
+projection gives the DeVries block,
 \begin{equation}
-  \mathcal O_J(t_\star)\big|_{\mathcal H_J}
+  \Lambda_J(u_\star)^{-2}P_J(u_\star)^\dagger
+  \mathcal O_J(u_\star,\lambda)P_J(u_\star)
   \longrightarrow
-  K_J(t_\star,\lambda)
+  \widehat K_J(u_\star,\widehat\lambda)
   =
   \begin{pmatrix}
-  \lambda&-\sqrt J\\
-  -\sqrt J&\lambda+J
+  \widehat\lambda&-\sqrt J\\
+  -\sqrt J&\widehat\lambda+J
   \end{pmatrix},
   \label{eq:target-dimensional-kernel}
 \end{equation}
-and, through Target~\ref{app:target-electroweak-assignment}, the same sector
-yields the ordered electroweak samples
+with all additional light channels eliminated or block-diagonalized by
+\(\mathcal D_J^{\rm extra}\).  This equation is the pass/fail target for the
+\((D,n_{\rm KK})=(10,6)\) and colourless \((D,n_{\rm KK}^{\rm ew})=(6,2)\)
+middle lines:
+\begin{equation}
+(\mathcal B(u),\langle\cdot,\cdot\rangle_u,P_J(u),\Lambda_J(u),
+\mathcal D_J^{\rm extra}(u))
+\mapsto
+\widehat K_J(u,\widehat\lambda)
+\stackrel{u=u_\star}{=}
+\begin{pmatrix}
+\widehat\lambda&-\sqrt J\\
+-\sqrt J&\widehat\lambda+J
+\end{pmatrix}.
+\label{eq:target-dimensional-passfail}
+\end{equation}
+Through Target~\ref{app:target-electroweak-assignment}, the same sector yields
+the ordered electroweak samples
 \begin{equation}
   (J_W,J_Z)=(J_H,J_{\rm adj})=\left(\frac34,2\right).
   \label{eq:target-dimensional-assignment}
@@ -659,19 +694,19 @@ colourless middle line is \((D,n_{\rm KK}^{\rm ew})=(6,2)\).  The
 reconstruction target also supplies the pole-matching chain in
 Eq.~\eqref{eq:target-pole-matching-chain}.
 
-A top-sector corollary of the same construction supplies
+An optional top-sector extension of the same construction supplies
 \begin{equation}
-  \mathcal Y_{\rm top}(u_\star)\to y_t(u_\star),
-  \qquad
-  m_t=\frac{y_t(u_\star)v(u_\star)}{\sqrt2},
-  \qquad
-  \Pi^{(t)}_{VV}(s;u_\star),
+  \mathcal Y_{\rm top}(u_\star)\to
+  \left(y_t(u_\star),\,
+  m_t=\frac{y_t(u_\star)v(u_\star)}{\sqrt2},\,
+  \Pi^{(t)}_{VV}(s;u_\star)\right),
   \label{eq:target-top-corollary}
 \end{equation}
-with the top representation, anomaly/global-form checks, and pole-scheme
-matching stated in the same field basis.  If this map is absent, the
-manuscript records the top as a Standard Model source fact and leaves top
-selection outside the DeVries derivation.
+with the top representation, localization or boundary data,
+anomaly/global-form checks, and pole-scheme matching stated in the same field
+basis.  The top extension passes when \(\mathcal Y_{\rm top}\) is derived
+from the same \(u_\star\), \(\langle\cdot,\cdot\rangle_{u_\star}\), projection,
+and pole map as Eq.~\eqref{eq:target-dimensional-kernel}.
 
 \paragraph*{Current evidence.}
 Witten's Kaluza--Klein analysis supplies the source trail for the
@@ -684,7 +719,35 @@ Boundary scalar vevs on intervals modify vector boundary conditions and can
 leave scalar remnants, giving a concrete template for an active-channel
 middle line \cite{CsakiHubiszMeade2005}.  The same interval source records the
 third-generation localization and boundary-mixing pressure associated with a
-heavy top and \(Zb\bar b\) constraints.  Local \(G_2\) Higgs-bundle models give
+heavy top and \(Zb\bar b\) constraints.  This gives a CHM interval source test,
+\begin{equation}
+\begin{array}{ccc}
+u_{\rm int}=(R,v_i,Z_i,\theta_H,c_{Q_3},c_{t_R},M_{\rm mix},\ldots)
+&\longrightarrow&
+\left(K_T^{\partial I},K_{A_5\pi}^{\partial I},\mathcal Y_{\rm top}\right)
+\\[3pt]
+\downarrow && \downarrow
+\\[3pt]
+(t_{\rm dim},t_{\rm EW},v)
+&\longrightarrow&
+\Lambda_J(u_{\rm int})^{-2}P_J^\dagger
+\left(K_J^{\rm DtN}+K_J^{\rm brane}-K_J^{\rm ref}\right)P_J
+\\[3pt]
+&& \downarrow
+\\[3pt]
+&&
+\begin{pmatrix}
+\widehat\lambda&-\sqrt J\\
+-\sqrt J&\widehat\lambda+J
+\end{pmatrix}
+\\[3pt]
+&&
+\mathcal Y_{\rm top}(u_\star)\to
+\left(y_t,m_t,\Pi^{(t)}_{VV}\right).
+\end{array}
+\label{eq:target-chm-o10-top-test}
+\end{equation}
+Local \(G_2\) Higgs-bundle models give
 a separate template for top-Yukawa source data \cite{BraunEtAl2019}.
 Henkel--Lauret's Hodge-Laplacian calculation on homogeneous three-spheres gives
 an explicit one-form spectral matrix with representation mixing and
@@ -693,14 +756,14 @@ supports a sharpened middle-line test:
 \begin{equation}
   \Delta^{(1)}_{S^3_{\rm Berger}(\rho)}
   \longrightarrow
-  K^{\rm geom}_J(\rho,\lambda)
+  \widehat K^{\rm geom}_J(\rho,\widehat\lambda)
   \longrightarrow
   P_J^\dagger
   \left(K^{\rm geom}_J+K^{\rm CHM}_J\right)P_J
   \longrightarrow
   \begin{pmatrix}
-  \lambda&-\sqrt J\\
-  -\sqrt J&\lambda+J
+  \widehat\lambda&-\sqrt J\\
+  -\sqrt J&\widehat\lambda+J
   \end{pmatrix}.
   \label{eq:target-berger-chm-square}
 \end{equation}
@@ -720,12 +783,14 @@ Appendix~\ref{app:dimensional-interpolation} converts these facts into a
 source-status table and a middle-line reconstruction target.
 
 \paragraph*{Failure mode.}
-The target fails if the middle-dimensional sector produces extra light
-channels, a kernel beyond the DeVries determinant class, a high-scale datum
-with a different matching law, a dimensional family with no map to the
-electroweak ray, or an ordered assignment other than
-\((J_H,J_{\rm adj})=(3/4,2)\).  Such an outcome would classify the dimensional
-idea as an organizing analogy for a different source-theory reduction.
+The target fails if the middle-dimensional sector produces unresolved extra
+light channels, a kernel beyond the DeVries determinant class, a high-scale
+datum with a different matching law, a dimensional family lacking a map to the
+electroweak ray, an ordered assignment other than
+\((J_H,J_{\rm adj})=(3/4,2)\), chirality or anomaly/global-form conflict,
+missing electromagnetic embedding, or route-dependent normalization.  Such an
+outcome classifies the dimensional idea as an organizing analogy for a
+different source-theory reduction.
 
 \subsection{Target VII: electromagnetic endpoint coupling}
 \label{app:target-alpha-endpoint}

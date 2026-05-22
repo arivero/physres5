@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 89 REVTeX PRD preprint pages after the Loop 30 compile.
+- Current compiled draft: 91 REVTeX PRD preprint pages after the Loop 31 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -125,6 +125,19 @@
   `notes/lean/ParentDirectoryLoop30.lean` record the sibling-workspace source
   queues for O1, O3, O4, O8, O10, O17, and O20.  The PDFs and primary local
   literature remain the source objects for manuscript-facing claims.
+- Use Loop 31's O10 pass/fail package in every dimensional-interpolation
+  statement:
+  \[
+  u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
+  \langle\cdot,\cdot\rangle_u,P_J,\widehat K_J,
+  \mathcal D_J^{\rm extra},\mathcal F_{\rm sc},\mathcal Y_{\rm top},
+  \mathcal R_{\rm pole}).
+  \]
+  The CHM interval test is the active top-compatible route:
+  one \(u_{\rm int}=(R,v_i,Z_i,\theta_H,c_{Q_3},c_{t_R},M_{\rm mix},\ldots)\)
+  must supply the vector kernel, scalar/eaten partner, and
+  \(\mathcal Y_{\rm top}\) in one basis.  `context/parent_directory_loop31_read.md`
+  and `notes/lean/ParentDirectoryLoop31.lean` record the parent-source queues.
 
 ## Completed in latest pass
 
@@ -205,6 +218,10 @@
   subtraction, shared \(\Lambda_{\rm CHM}\) current-entry target, parent
   directory source-fragment extraction, and Lean/source ledgers for the new
   source queues.
+- Added Loop 31 normalization: O10 hatted middle-line pass/fail theorem,
+  source package with \(\Lambda_J\), inner product, projection, extra-channel
+  rule, endpoint subtargets, optional CHM top extension, parent-directory
+  source queue, and Loop 31 referee/advisor reports.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.

@@ -670,6 +670,50 @@ This scale datum is part of the same single-source burden as the
 electroweak-ray map, negative-branch scalar functional, and top-sector source
 map.
 
+**Loop 31 single-source pass/fail refinement.** Appendix E and Target VI now
+make the \(D=10/6\) middle line a normalized source package:
+\[
+u\mapsto
+\big(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
+\langle\cdot,\cdot\rangle_u,P_J,\widehat K_J,\mathcal D_J^{\rm extra},
+\mathcal F_{\rm sc},\mathcal Y_{\rm top},\mathcal R_{\rm pole}\big),
+\qquad
+\widehat\lambda=\lambda/\Lambda_J(u)^2 .
+\]
+The pass/fail theorem is
+\[
+(\mathcal B(u),\langle\cdot,\cdot\rangle_u,P_J(u),\Lambda_J(u),
+\mathcal D_J^{\rm extra}(u))
+\mapsto
+\widehat K_J(u,\widehat\lambda)
+\stackrel{u=u_\star}{=}
+\begin{pmatrix}
+\widehat\lambda&-\sqrt J\\
+-\sqrt J&\widehat\lambda+J
+\end{pmatrix}.
+\]
+The \(D=9\) endpoint obligation is split into compact generator, Standard
+Model electromagnetic charge lattice, and four-dimensional kinetic
+normalization.  The colourless \(D=5\) endpoint is \(U(1)_{\rm geom}\) until
+the same embedding theorem supplies \(U(1)_{\rm em}\).  The top-sector
+question is an optional extension:
+\[
+\mathcal Y_{\rm top}(u_\star)\to
+(y_t,m_t,\Pi^{(t)}_{VV}),
+\]
+with representation, localization or boundary data, anomaly/global-form
+checks, and pole-scheme matching in the same reduced basis.  The active CHM
+source test uses
+\[
+u_{\rm int}=(R,v_i,Z_i,\theta_H,c_{Q_3},c_{t_R},M_{\rm mix},\ldots)
+\]
+to ask whether one interval datum supplies
+\((K_T^{\partial I},K_{A_5\pi}^{\partial I},\mathcal Y_{\rm top})\) together
+with the hatted DeVries kernel.  The Loop 31 parent-directory read adds
+top-as-boundary and D6/KK-monopole source queues as project provenance; primary
+Hanany--Witten, M-theory, and D6/KK-monopole sources are required before any
+manuscript-facing claim.
+
 ## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
 
 **Provenance.** Human operator note (2026-05-22).  Treat as a human directive;

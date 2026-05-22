@@ -105,6 +105,22 @@
   open.  The direct `..` read is recorded in
   `context/parent_directory_loop30_read.md`; `../prTalks` extraction aids live
   in `context/source_fragments/parent_prtalks/`.
+- Loop 31 makes O10 a hatted single-source pass/fail target.  The middle line
+  must supply
+  \[
+  u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
+  \langle\cdot,\cdot\rangle_u,P_J,\widehat K_J,
+  \mathcal D_J^{\rm extra},\mathcal F_{\rm sc},\mathcal Y_{\rm top},
+  \mathcal R_{\rm pole}).
+  \]
+  The \(D=9\) and colourless \(D=5\) endpoints now require compact generator,
+  Standard Model charge lattice, and kinetic-normalization subtargets before
+  the \(U(1)_{\rm em}\) reading.  The optional top extension uses a CHM
+  interval datum
+  \(u_{\rm int}=(R,v_i,Z_i,\theta_H,c_{Q_3},c_{t_R},M_{\rm mix},\ldots)\)
+  and requires vector kernel, scalar/eaten partner, and
+  \(\mathcal Y_{\rm top}\) in one basis.  The direct `..` read is recorded in
+  `context/parent_directory_loop31_read.md`.
 
 ## Resume state after context renewal
 
@@ -114,7 +130,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 89 pages after the Loop 30 `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 91 pages after the Loop 31 `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.

@@ -27,6 +27,10 @@ constant SuperconnectionProjector : Type
 constant NeutralTraceSpace : Type
 constant HyperchargeRemainder : Type
 constant GoldstoneVectorMixing : Type
+constant TreePhotonTrace : Type
+constant TreeZTrace : Type
+constant SourceNormalizedTrace : Type
+constant ChargedRemainder : Type
 
 constant J_H : Real
 constant J_adj : Real
@@ -142,6 +146,39 @@ def loop42WardProjectedNeutralReady
 axiom loop42_ward_projected_neutral_obligation :
   ∃ T : Loop42WardProjectedNeutralTarget,
     loop42WardProjectedNeutralReady T
+
+structure Loop43SourceProductNormalizedTraces where
+  neutralTraceSpace : NeutralTraceSpace
+  treePhotonTrace : TreePhotonTrace
+  treeZTrace : TreeZTrace
+  normalizedPhotonTrace : SourceNormalizedTrace
+  normalizedGammaPerpZTrace : SourceNormalizedTrace
+  hyperchargeRemainder : HyperchargeRemainder
+  chargedRemainder : ChargedRemainder
+  goldstoneVectorMixing : GoldstoneVectorMixing
+  photonTraceUsesCouplings_g_gp : Prop
+  zTraceUsesCouplings_g_gp : Prop
+  projectedPhotonTraceNormalized : Prop
+  projectedGammaPerpZTraceNormalized : Prop
+  deltaYDerived : Prop
+  deltaWDerived : Prop
+  sameCHMProduct : Prop
+  samePoleMap : Prop
+
+def loop43SourceProductNormalizedTracesReady
+  (T : Loop43SourceProductNormalizedTraces) : Prop :=
+  T.photonTraceUsesCouplings_g_gp ∧
+  T.zTraceUsesCouplings_g_gp ∧
+  T.projectedPhotonTraceNormalized ∧
+  T.projectedGammaPerpZTraceNormalized ∧
+  T.deltaYDerived ∧
+  T.deltaWDerived ∧
+  T.sameCHMProduct ∧
+  T.samePoleMap
+
+axiom loop43_source_product_trace_obligation :
+  ∃ T : Loop43SourceProductNormalizedTraces,
+    loop43SourceProductNormalizedTracesReady T
 
 /- CHM ledger target:
    h_J = P_h,J(pi_i, A_5, delta v_i, delta R, alpha_H)

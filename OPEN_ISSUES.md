@@ -189,6 +189,37 @@ The charged side is tested by the Goldstone-vector mixing terms
 Closure requires \(\Delta_Y\), \(P_W\), \(P_Z\), \(P_\gamma\), and the pole
 remainder from one gauge-Higgs or interval source package.
 
+**Loop 43 source-product normalization refinement.** O1 now spells out the
+tree-level neutral trace directions and their source normalization:
+\[
+a_\gamma^{(0)}
+=\frac{g'W_T^3+gB_T}{\sqrt{g^2+g'^2}},
+\qquad
+z^{(0)}
+=\frac{gW_T^3-g'B_T}{\sqrt{g^2+g'^2}},
+\]
+\[
+a_\gamma=
+\frac{P_{a,J}a_\gamma^{(0)}}
+{\sqrt{\langle P_{a,J}a_\gamma^{(0)},P_{a,J}a_\gamma^{(0)}
+\rangle_{u_{\rm EW}}}},
+\qquad
+a_J^{\gamma^\perp}
+=
+\frac{P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}}
+{\sqrt{\langle P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)},
+P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}
+\rangle_{u_{\rm EW}}}}.
+\]
+The charged side now has the companion target
+\[
+P_W(h_J)=\frac34+\Delta_W(u_{\rm EW}),\qquad
+\Delta_W(u_{\rm EW})\stackrel{\rm closure}{=}0.
+\]
+The active analytical task is the joint derivation of \(\Delta_W\),
+\(\Delta_Y\), and \(\Delta_{\rm O1}\) from the same source product, photon
+reference, CHM current entry, and pole map.
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?

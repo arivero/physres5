@@ -427,7 +427,7 @@ W/Z boundary map, and the source-to-pole matching chain.
 
 \paragraph*{CHM current-entry convention subtarget.}
 The first entry-level subtarget is the normalized transverse-current
-extraction.  The rendered CHM convention audit fixes the source product,
+extraction.  The CHM equations fix the source product,
 endpoint sign ledger, vector Robin equations, \(A_5/\pi_i\) scalar equations,
 and photon/custodial bookkeeping.  Let \(P_\gamma\) select the photon reference
 trace.  The reference subtraction obeys
@@ -441,7 +441,7 @@ trace.  The reference subtraction obeys
   0.
   \label{eq:target-chm-photon-reference}
 \end{equation}
-The source equations to cite or audit are CHM
+The source equations are CHM
 Eqs.~(2.11)--(2.23), (2.30)--(2.44), and (3.32)--(3.43), covering the boundary
 kinetic condition, modified product, vector Robin data, scalar boundary
 equations, and photon/custodial boundary conditions
@@ -482,9 +482,9 @@ The conclusion sought from this extraction is
   \widehat\Sigma_{aa,J}^{\rm CHM}=J.
   \label{eq:target-chm-current-sigma}
 \end{equation}
-Acceptance requires the rendered-PDF convention audit to fix endpoint signs,
-dimensions, product normalization, photon/reference subtraction, and the
-shared source scale before \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\) is used.
+Acceptance requires endpoint signs, dimensions, product normalization,
+photon/reference subtraction, and the shared source scale as prerequisites for
+using \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\).
 Here \(K^{\rm ref}_{T,J}\), \(P_\gamma\), \(P_{a,J}\),
 \(\Lambda_{\rm CHM}\), the endpoint-normal convention, the wavefunction
 normalization of \(a_J\), and the dimensionless \(J\)-normalization are part of
@@ -1227,19 +1227,18 @@ Rham operator is
   \end{pmatrix}.
   \label{eq:target-susyqm-dr-block}
 \end{equation}
-The source-equation audit target is Witten's deformed complex,
+Witten's deformed complex supplies the source equations
 \begin{equation}
   d_t=e^{-ht}de^{ht},\qquad
   d_t+d_t^\dagger,\qquad
   H_t=(d_t+d_t^\dagger)^2,
   \label{eq:target-witten-source-audit}
 \end{equation}
-with the rendered-paper equation context recorded as an agent-read
-transcription because the local PDF is scanned.  Rendered page 665 supplies
-\(Q_1=d+d^*\), \(Q_2=i(d-d^*)\), \(H=dd^*+d^*d\), \(d_t\), and \(H_t\).
-Rendered page 666 supplies the expanded \(H_t\) with gradient and Hessian terms.
-This audit is a prerequisite for elevating the Hodge route beyond a theorem
-target.
+Witten's paper supplies \(Q_1=d+d^*\), \(Q_2=i(d-d^*)\),
+\(H=dd^*+d^*d\), \(d_t\), and \(H_t\); page 666 expands \(H_t\) with gradient
+and Hessian terms.
+These equations are prerequisites for elevating the Hodge route beyond a
+theorem target.
 The source theory must also contain a breaking or boundary operator \(B_J\)
 acting on the same projected basis.
 
@@ -1582,7 +1581,8 @@ The common acceptance criterion is
   \det K_J(\lambda)&=\lambda^2+J\lambda-J,\\
   M_\gamma^2(t)&=0,\quad
   \frac{M_W^2(t)}{M_Z^2(t)}
-  =\frac{x_+(J_H)}{x_+(J_{\rm adj})},\\
+  =\frac{x_+(J_H)}{x_+(J_{\rm adj})}
+  +\Delta_{\rm O1}^{\rm ray}(t),\\
   (J_W,J_Z)&=(3/4,2),\\
   u_-(J)&\mapsto\mathcal F_{\rm sc},\\
   K_J^{\rm bare}

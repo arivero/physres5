@@ -542,6 +542,22 @@
   the Goldstone-vector mixing terms to the charged insertion \(P_W(h_J)=3/4\),
   the CHM current entry \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), and the
   Hodge/SUSY-QM product \(\Sigma_{ha,J}\Sigma_{ah,J}=J\).
+- Loop 43 O1/O4 next step: derive, or reject, the source-product normalized
+  projection package
+  \[
+  a_\gamma^{(0)}=\frac{g'W_T^3+gB_T}{\sqrt{g^2+g'^2}},
+  \qquad
+  z^{(0)}=\frac{gW_T^3-g'B_T}{\sqrt{g^2+g'^2}},
+  \]
+  together with
+  \[
+  P_Z(a_J^{\gamma^\perp})=2+\Delta_Y(u_{\rm EW}),
+  \qquad
+  P_W(h_J)=\frac34+\Delta_W(u_{\rm EW}).
+  \]
+  The proof target is a joint derivation of \(\Delta_W\), \(\Delta_Y\),
+  \(P_\gamma\), \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), and
+  \(\Delta_{\rm O1/O10}\) from one CHM/superconnection source package.
 - Loop 42 editorial queue from the referees: compress Appendix D working
   ledgers, add a \(G_2\) local test with one ADE enhancement and one pairing,
   lower Appendix E's prominence after the CHM proof spine is stronger, and
@@ -553,7 +569,8 @@
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
 - Each substantial loop must also call a lightweight editor subagent below GPT-5.5 to flag banned contrast formulas, journalistic language, adjectival positioning, and prose outside Physical Review D style.
 - Each substantial loop must also inspect one random bibliography or source-inventory entry and one random local note or Lean-style note, then record any equation, test, fragment gap, or issue-ledger consequence.
-- Current score table includes Loop 42 with recalibrated current-review scores.
+- Current score table includes Loop 43 with source-product normalized trace
+  definitions and recalibrated current-review scores.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

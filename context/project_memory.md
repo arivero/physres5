@@ -305,6 +305,20 @@
   \(\Sigma_{ha,J}\Sigma_{ah,J}=J\), \(P_W,P_Z,P_\gamma\), and
   \(\Delta_{\rm O1/O10}\).  The score table has been recalibrated to the
   current referee vector \(4,4,4,3,5\) while O1/O3/O4/O10/O20 remain open.
+- Loop 43 source-normalizes the neutral traces in O1:
+  \[
+  a_\gamma^{(0)}
+  =\frac{g'W_T^3+gB_T}{\sqrt{g^2+g'^2}},
+  \qquad
+  z^{(0)}
+  =\frac{gW_T^3-g'B_T}{\sqrt{g^2+g'^2}},
+  \]
+  followed by source-product normalization of \(P_{a,J}a_\gamma^{(0)}\) and
+  \(P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}\).  The charged Goldstone test now
+  carries \(P_W(h_J)=3/4+\Delta_W(u_{\rm EW})\).  The proof-spine language is
+  now proposition/proof-obligation language, and Appendix D keeps the
+  electroweak-ray remainder in the acceptance criterion.  Active remainders are
+  \(\Delta_W\), \(\Delta_Y\), and \(\Delta_{\rm O1/O10}\).
 
 ## Resume state after context renewal
 

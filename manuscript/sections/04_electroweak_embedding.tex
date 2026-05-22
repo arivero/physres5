@@ -199,16 +199,44 @@ assignment then has the target form
 The neutral entry requires a hypercharge ledger.  Let
 \(\mathcal N_T^\partial=\operatorname{span}\{W^3_T,B_T\}\) be the transverse
 neutral trace space with the source product
-\(\langle\cdot,\cdot\rangle_{u_{\rm EW}}\), and let \(a_\gamma\) be the unit
-photon trace.  The massive neutral sample is
+\(\langle\cdot,\cdot\rangle_{u_{\rm EW}}\).  The standard neutral directions
+on this trace space are
+\begin{equation}
+  a_\gamma^{(0)}
+  =
+  \frac{g'W^3_T+gB_T}{\sqrt{g^2+g'^2}},
+  \qquad
+  z^{(0)}
+  =
+  \frac{gW^3_T-g'B_T}{\sqrt{g^2+g'^2}} .
+  \label{eq:tree-neutral-trace-directions}
+\end{equation}
+After projection to the current subspace, the photon trace is normalized in
+the source product:
+\begin{equation}
+  \widetilde a_\gamma=P_{a,J}a_\gamma^{(0)},
+  \qquad
+  a_\gamma
+  =
+  \frac{\widetilde a_\gamma}
+  {\sqrt{\langle\widetilde a_\gamma,\widetilde a_\gamma\rangle_{u_{\rm EW}}}} .
+  \label{eq:source-normalized-photon-trace}
+\end{equation}
+The massive neutral sample is
 \begin{equation}
   \Pi_{\gamma^\perp}^{(T)}
   =
   1-|a_\gamma\rangle\langle a_\gamma|_{u_{\rm EW}},
   \qquad
+  \widetilde a_J^{\gamma^\perp}
+  =
+  P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)},
+  \qquad
   a_J^{\gamma^\perp}
   =
-  P_{a,J}\Pi_{\gamma^\perp}^{(T)}(W^3_T,B_T),
+  \frac{\widetilde a_J^{\gamma^\perp}}
+  {\sqrt{\langle\widetilde a_J^{\gamma^\perp},
+  \widetilde a_J^{\gamma^\perp}\rangle_{u_{\rm EW}}}},
   \label{eq:neutral-gamma-perp-projector}
 \end{equation}
 with theorem data
@@ -220,7 +248,8 @@ with theorem data
 \end{equation}
 Here \(\Delta_Y\) collects the hypercharge normalization, \(W^3/B\) mixing
 convention, source product, and photon-reference subtraction.  The theorem
-target is \(\Delta_Y=0\) in the selected convention.
+target is a derived \(\Delta_Y\); the special closure outcome is
+\(\Delta_Y=0\) in the selected convention.
 The corresponding pole package is
 \begin{equation}
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
@@ -271,7 +300,10 @@ A natural current to test is the Higgs isospin current
   -i(D_\mu H)^\dagger\frac{\sigma^a}{2}H,
   \label{eq:higgs-isospin-current}
 \end{equation}
-which transforms as an adjoint object while being built from the doublet order parameter.  The current contains the two data needed for the ordered pair: doublet data enter the source, adjoint data enter the current.  Turning this observation into Eq.~\eqref{eq:assignment-outputs} is the remaining electroweak theorem target.
+which transforms as an adjoint object and is built from the doublet order
+parameter.  This current is a candidate bridge between the doublet source data
+and the adjoint current data.  Turning this bridge into
+Eq.~\eqref{eq:assignment-outputs} is the remaining electroweak theorem target.
 In a general gauge, write
 \[
   H=\begin{pmatrix}G^+\\(v+h+iG^0)/\sqrt2\end{pmatrix}.
@@ -287,6 +319,12 @@ The Higgs kinetic term contains the Goldstone-vector mixing terms
 \end{equation}
 This source-side expansion, reviewed in Ref.~\cite{Logan2022}, is the
 equation-level test for the ordered current insertion: the charged insertion
-samples the doublet Goldstone/order-parameter direction, and the neutral
-insertion samples the photon-orthogonal current direction of
+must satisfy
+\begin{equation}
+  P_W(h_J)=\frac34+\Delta_W(u_{\rm EW}),
+  \qquad
+  \Delta_W(u_{\rm EW})\stackrel{\rm closure}{=}0,
+  \label{eq:charged-goldstone-projector-target}
+\end{equation}
+and the neutral insertion samples the photon-orthogonal current direction of
 Eqs.~\eqref{eq:neutral-gamma-perp-projector}--\eqref{eq:neutral-hypercharge-remainder}.

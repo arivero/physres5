@@ -159,7 +159,7 @@ def negativeBranchHint : Prop :=
 axiom positive_and_negative_branch_same_secular_object :
   negativeBranchHint
 
-/- Open scalar-sector map. -/
+/- Target IV scalar-sector map. -/
 inductive ScalarTarget where
   | tachyonicMassParameter
   | lambdaTimesVEVSquared
@@ -172,6 +172,14 @@ def scalarMapProblem : Prop :=
 
 axiom scalar_map_requires_gauge_invariant_scheme :
   scalarMapProblem
+
+/- O3 closure records the paper stance: x_- is an algebraic partner branch
+   whose Higgs-scale reading is conditional on Target IV. -/
+inductive O3ClosureStatus where
+  | targetIVScalarOrAuxiliaryBranch
+
+def o3ClosedAsTargetIV : O3ClosureStatus :=
+  O3ClosureStatus.targetIVScalarOrAuxiliaryBranch
 
 /- Flavor boundary.
    Generation/flavor structure constrains a completion. It supplies the

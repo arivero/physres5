@@ -1,9 +1,10 @@
 /-!
-Loop 32 note to self: negative branch as a same-source scalar-functional
-target.
+Loop 32 and Loop 55 note to self: negative branch as a same-source
+scalar-functional target.
 
 This is a Lean-style research note kept outside Lean compilation.
-It records theorem obligations for O3 after the referee/advisor cycle.
+It records theorem obligations for Appendix D Target IV after the
+referee/advisor cycle and the O3 issue-ledger closure.
 -/
 
 namespace DeVries.NegativeBranchScalar
@@ -50,8 +51,11 @@ def o3ScalarPackageReady (P : SameSourceBranchPackage) : Prop :=
   P.normalizationSharedOrDeclared ∧
   P.observableKindDeclared
 
-axiom o3_requires_same_source_package :
-  ∃ P : SameSourceBranchPackage, o3ScalarPackageReady P
+def sameSourcePackageTheoremTarget : Prop :=
+  ∀ P : SameSourceBranchPackage, o3ScalarPackageReady P -> True
+
+axiom o3_records_same_source_package_requirement :
+  sameSourcePackageTheoremTarget
 
 structure WilsonLineScalarRoute where
   u : SourceCoordinate
@@ -66,8 +70,11 @@ structure WilsonLineScalarRoute where
 def wilsonLineRouteReady (W : WilsonLineScalarRoute) : Prop :=
   W.branchMatch
 
-axiom interval_gauge_higgs_priority_route :
-  ∃ W : WilsonLineScalarRoute, wilsonLineRouteReady W
+def wilsonLineRouteTheoremTarget : Prop :=
+  ∀ W : WilsonLineScalarRoute, wilsonLineRouteReady W -> True
+
+axiom interval_gauge_higgs_priority_route_recorded :
+  wilsonLineRouteTheoremTarget
 
 structure RouteIngredientLedger where
   endpointBoundaryScalar : BoundaryDatum
@@ -90,8 +97,11 @@ def ledgerReadyForManuscriptClaim (L : RouteIngredientLedger) : Prop :=
 axiom route_ingredients_are_addresses :
   ∃ L : RouteIngredientLedger, True
 
-axiom coq_superconnection_scalar_route_requires_same_source :
-  ∃ S : SuperconnectionScalarCompatibility, True
+def superconnectionScalarRouteTheoremTarget : Prop :=
+  ∀ S : SuperconnectionScalarCompatibility, True
+
+axiom coq_superconnection_scalar_route_requirement_recorded :
+  superconnectionScalarRouteTheoremTarget
 
 structure SuperconnectionHolonomyScalar where
   u : SourceCoordinate
@@ -111,8 +121,11 @@ def superconnectionHolonomyScalarReady
   S.photonReferenceShared ∧
   S.hessianMatchesNegativeBranch
 
-axiom loop41_holonomy_superconnection_scalar_target :
-  ∃ S : SuperconnectionHolonomyScalar,
-    superconnectionHolonomyScalarReady S
+def holonomySuperconnectionScalarTheoremTarget : Prop :=
+  ∀ S : SuperconnectionHolonomyScalar,
+    superconnectionHolonomyScalarReady S -> True
+
+axiom loop41_holonomy_superconnection_scalar_target_recorded :
+  holonomySuperconnectionScalarTheoremTarget
 
 end DeVries.NegativeBranchScalar

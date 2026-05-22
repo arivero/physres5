@@ -71,7 +71,7 @@ PRD phase.
   - Loop 40 random recall read pages 61--70.  The fragment records
     Wigner-Weyl and Nambu-Goldstone symmetry realizations, the vacuum charge
     criterion, the unbroken subalgebra condition, expansion around a vev, and
-    the mass matrix as a Hessian at the vacuum.  Source use: O1/O3
+    the mass matrix as a Hessian at the vacuum.  Source use: O1/Target IV
     source packages must keep the ordered assignment tied to vacuum-charge and
     Hessian/mass-matrix data.
   - Loop 41 recall read pages 71--80.  The fragment records BEH expansion,
@@ -160,7 +160,7 @@ PRD phase.
     The source-equation audit is CHM Eqs.~(2.11)--(2.23),
     (2.30)--(2.44), and (3.32)--(3.43).  The equality
     \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\) remains a theorem target tied to
-    O1/O3/O8/O10/O20.
+    O1/Target IV/O8/O10/O20.
 - `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` — six-dimensional string-string duality source; type IIA on K3 and heterotic on \(T^4\).
 - `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` — six-dimensional string-string duality and charged solitonic strings.
 - `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` — heterotic small instantons and nonperturbative six-dimensional string dynamics.
@@ -288,7 +288,7 @@ PRD phase.
 These support the alpha/O17 and Regge/O18 route, plus the scalar-branch
 boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*/`.
 
-- `40_Bucci_EWSB_radion_stabilization_UED_hep-ph-0403012.pdf` — model-specific link between electroweak breaking and radion effective potential in universal extra dimensions; source for scalar-modulus address candidates in O3/O10.
+- `40_Bucci_EWSB_radion_stabilization_UED_hep-ph-0403012.pdf` — model-specific link between electroweak breaking and radion effective potential in universal extra dimensions; source for scalar-modulus address candidates in Target IV/O10.
 - `41_HabaOda_Dirichlet_Higgs_radion_stabilizer_1102.1970.pdf` — nonzero Dirichlet boundary conditions for a bulk scalar, Goldberger--Wise stabilization, and an \(SU(2)_R\) triplet Higgs as a stabilizer; source for interval boundary scalar variables.
 - `42_Biekotter_95GeV_diphoton_excess_2306.03889.pdf` — the \(\sim95.4\) GeV diphoton excess as a collider-ledger source for Target VIII; any particle assignment remains a separate source-theory theorem.
 - `43_Jegerlehner_running_alpha_Adler_0807.4206.pdf` — running fine-structure constant \(\alpha(E)\) via the Adler function and hadronic vacuum polarization; source for the O17 scheme/running audit.
@@ -303,7 +303,7 @@ boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*
   - Loop 40 extra note review read pages 1--5.  The fragment records compact
     \(S^1\) gauge-Higgs dynamics, twisted boundary conditions, Wilson-line
     phases \(\theta_j\), one-loop effective potential, and gauge periodicity of
-    the holonomy variable.  Source use: O3/O20 scalar-branch work
+    the holonomy variable.  Source use: Target IV/O20 scalar-branch work
     should keep holonomy, effective-potential curvature, and compact gauge
     equivalence in the theorem data.
 - `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.
@@ -323,7 +323,7 @@ support the descriptive W/Z pole-ratio table in Sec. III.
   \(80.3602\pm0.0099\) GeV.  It is recorded as a W-only update until a common
   W/Z convention, width, and covariance prescription are supplied.
 
-## O3 scalar-route recall -- Loop 32
+## Target IV scalar-route recall -- Loop 32
 
 - The interval gauge-Higgs route is the priority source-address for a scalar
   functional.  Hosotani supplies the holonomy variable, CHM supplies interval

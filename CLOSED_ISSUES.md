@@ -29,8 +29,8 @@ and Target~I carries the pole-scheme remainder.
 bookkeeping.  No source derivation is claimed.  A source completion must still
 derive the projection package, the shared normalization, photon subtraction,
 and the pole remainder through \(T1\), Appendix~D Targets~0, I, II, III, VI,
-and X.  O2b supplies the current input audit, and O3 supplies the scalar
-partner map.
+and X.  O2b supplies the current input audit, and Appendix~D Target~IV carries
+the scalar partner map.
 
 ## O13. Casimir Keyword Load Versus Derivational Role
 
@@ -135,6 +135,34 @@ they can replace the descriptive W/Z audit line.
 **Residual target.** O2b is closed as the current descriptive input audit.
 Future precision updates belong to Target~I or a later calculation phase with
 the covariance matrices and averaging prescription supplied.
+
+## O3. Negative branch and Higgs scale
+
+**Closed in Loop 55.**
+
+**Closure basis.** Section~V and Appendix~D Target~IV now state the paper-level
+interpretation of \(x_-(J)\).  The negative root is the algebraic partner of
+the positive-root pole-ratio clue.  The branch magnitudes in
+Eq.~\eqref{eq:negative-scales} are descriptive arithmetic under the temporary
+normalization \(M_Z^2=\mu^2x_+(2)\).  They acquire a Higgs, vacuum-ray,
+Wilson-line, boundary-modulus, brane, or compactification meaning only after a
+same-source scalar package
+\[
+u\mapsto
+\big(
+\mathcal H_J,\langle\cdot,\cdot\rangle_u,P_J,\Lambda_J,
+\mathcal R_{\rm pole},\mathcal F_{\rm sc}
+\big)
+\]
+is derived with a source-fixed \(J_\star\), normalization, scheme, mass
+dimension, and pole-vs-potential status.  The auxiliary or gauge-fixed branch
+outcome is an accepted output of the target.
+
+**Residual target.** O3 is closed as an issue-ledger entry.  Appendix~D
+Target~IV remains the future source-completion test for the scalar or auxiliary
+branch.  The present manuscript makes no Higgs-scale prediction from
+\(x_-(J)\); it records the same-source functional that a later derivation must
+supply.
 
 ## O5. Electroweak Ray and Forbidden Deformations
 
@@ -249,7 +277,7 @@ mirrors these data as a maintained theorem target.
 
 **Residual target.** O10 is closed as a manuscript-architecture and
 source-status issue.  The source derivations remain open in the narrower
-targets: Target~II for ordered W/Z sampling, O3 for the negative branch,
+targets: Target~II for ordered W/Z sampling, Target~IV for the negative branch,
 Target~0 and Target~III for the source kernel, Target~I for pole placement,
 O17/Target~VII for electromagnetic endpoint normalization, Target~X for the
 Hodge or superconnection origin, and Appendix~D Target~VI for the dimensional
@@ -268,7 +296,7 @@ negative-branch, and top-sector obligations in Lean-style notes.
 
 **Residual target.** Manuscript uses of prTalks-derived material require
 primary local literature or an explicit project-source label.  The active
-physics obligations remain in Target~II, O3, Appendix~D Target~VI,
+physics obligations remain in Target~II, Target~IV, Appendix~D Target~VI,
 Appendix~D Target~VIII, Appendix~D Target~IX, and Appendix~D Target~X.
 
 ## O12. Parent-Workspace Source-Note Validation
@@ -285,7 +313,7 @@ custodial, string/Regge, SO(32), and dimensional-interpolation guardrails.
 
 **Residual target.** Parent-derived manuscript claims require primary-source
 support or explicit project-source status.  The residual physics obligations
-remain in Target~II, O3, Appendix~D Target~0, Appendix~D Target~III,
+remain in Target~II, Target~IV, Appendix~D Target~0, Appendix~D Target~III,
 Appendix~D Target~VI, Appendix~D Target~VIII, Appendix~D Target~IX, and
 Appendix~D Target~X.
 
@@ -406,7 +434,7 @@ K_T^{\rm DtN}+K_T^{\rm brane}
 
 **Residual target.** O4 is closed as a route-architecture and theorem-target
 ledger.  The physical derivation remains distributed across Target~II for
-ordered W/Z sampling, O3 for the scalar partner, Target~0 and Target~III for source-kernel
+ordered W/Z sampling, Target~IV for the scalar partner, Target~0 and Target~III for source-kernel
 entry derivations, Target~I for pole matching, Target~VI for the dimensional
 source package, Target~X for the Hodge/superconnection reduced basis, and
 global-form completion checks.
@@ -471,7 +499,7 @@ and a negative-branch mass or scalar-functional reading.
 
 **Residual target.** O19 is closed as a branch-scaling and brane-duality
 bookkeeping issue.  Future physical use remains inside Target~IX, tied to
-Target~VIII for \(\mathfrak R_j\), O3 for the negative-branch reading, and
+Target~VIII for \(\mathfrak R_j\), Target~IV for the negative-branch reading, and
 global-form or boundary-condition data for a concrete completion.
 
 ## O20. The operator as a broken N=2 supersymmetric quantum mechanics

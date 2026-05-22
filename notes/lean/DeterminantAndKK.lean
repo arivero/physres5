@@ -224,6 +224,47 @@ axiom chm_dtn_interval_route_required :
     dtnRouteGivesElectroweakBoundarySystem D ∧
     dtnRouteMatchesPoleScheme D
 
+/- Loop 20 eaten-Goldstone boundary-kernel target:
+   The same CHM boundary Higgsing datum should feed the transverse vector
+   boundary kernel and the A5 / boundary-Goldstone scalar equations before
+   projection to H_J=span{h_J,a_J}. -/
+structure EatenGoldstoneBoundaryKernel where
+  chmSourceData : CHMIntervalSourceData
+  commonBoundaryHiggsDatum : Type
+  transverseVectorKernel : Type
+  scalarGoldstoneKernel : Type
+  lightProjection : Type
+  chmInnerProduct : Type
+  photonZeroModeAccount : Type
+  orderedWZBoundaryMap : Type
+  vectorPoleMap : Type
+  negativeBranchFunctional : Type
+
+def eatenKernelHitsDeVriesTarget
+    (E : EatenGoldstoneBoundaryKernel) : Prop :=
+  True
+
+def eatenKernelSharesBoundaryHiggsingDatum
+    (E : EatenGoldstoneBoundaryKernel) : Prop :=
+  True
+
+def eatenKernelMatchesPoleScheme
+    (E : EatenGoldstoneBoundaryKernel) : Prop :=
+  True
+
+/- Obligation 10b:
+   Source S_5D[A_M,Phi_i], gauge fixing G_xi, boundary variation, and CHM
+   product should give
+     (K_T^{partial I}[A_mu], K_{A5 pi}^{partial I})
+       -> P_J^dagger (.) P_J -> K_J^eaten(lambda)
+   with the DeVries entries, ordered W/Z boundary map, photon zero mode, and
+   scalar partner functional. -/
+axiom chm_eaten_goldstone_boundary_kernel_required :
+  ∃ E : EatenGoldstoneBoundaryKernel,
+    eatenKernelSharesBoundaryHiggsingDatum E ∧
+    eatenKernelHitsDeVriesTarget E ∧
+    eatenKernelMatchesPoleScheme E
+
 /- Dimensional interpolation route:
    Treat the D=10 full-gauge interior, or the colourless D=6 interior, as a
    light two-channel boundary sector obtained by a Schur complement. -/

@@ -176,6 +176,25 @@ The unresolved step is the source-backed choice of \(K^{\rm DtN}_J\),
 \(K^{\rm brane}_J\), \(P_J\), the CHM inner product, and the decoupling or
 block form of extra interval modes.
 
+**Eaten-Goldstone boundary-kernel refinement.** Loop 20 asks whether the CHM
+gauge-fixed interval system can put the vector pole clue and scalar partner in
+one boundary kernel:
+\[
+S_{5D}[A_M,\Phi_i]
+\xrightarrow{\delta S,\mathcal G_\xi}
+\left(K_T^{\partial I}[A_\mu],K_{A_5\pi}^{\partial I}\right)
+\xrightarrow{P_J^\dagger(\cdot)P_J}
+K_J^{\rm eaten}(\lambda)
+\longrightarrow
+\begin{pmatrix}
+\lambda&-\sqrt J\\
+-\sqrt J&\lambda+J
+\end{pmatrix}.
+\]
+The open data are the projection \(P_J\), the CHM product, the \(J\)
+normalization, the photon zero mode, the ordered W/Z boundary map, and the
+matching of \(K_J^{\rm eaten}\) to the pole scheme.
+
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
 sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact
@@ -341,6 +360,18 @@ field redefinition, or renormalization prescription changes the determinant,
 the manuscript must state the changed object and its matching law.  The
 \(G_2\) route keeps the compactification-to-EFT-to-complex-pole theorem as a
 named unresolved obligation.
+
+**Loop 20 route-remainder refinement.** A route-specific exact pole statement
+now has the form
+\[
+\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+=
+\frac{x_+(J_H)}{x_+(J_{\rm adj})}
++\Delta^{(r)}_{\rm match}.
+\]
+The source-to-EFT-to-pole theorem must derive
+\(\Delta^{(r)}_{\rm match}=0\) in the selected pole scheme or compute a
+controlled remainder with fixed sign, scale, and field-basis dependence.
 
 ## O5. Electroweak ray and forbidden deformations
 
@@ -793,7 +824,7 @@ exclusions.
 M^2_{N_{\rm osc},j,\pm}
 =
 \mu^2 x_\pm\!\big(j(j+1)\big)
-\frac {N_{\rm osc}}{\alpha'}
++\frac {N_{\rm osc}}{\alpha'}
 +\Delta^{\rm Regge}_{N_{\rm osc},j,\pm},
 \]
 with \(j\) a DeVries-sector label and \(N_{\rm osc}\) the oscillator or tower
@@ -817,3 +848,5 @@ The main correction is notation: \(j\) labels the DeVries sector,
 from the source theory.  The first higher positive slot is a projection and
 assignment problem until a source route derives the kernel, common slope,
 projection rule, and gauge quantum numbers.
+============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
+============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

@@ -219,18 +219,24 @@ def polePlacementTarget (S : SourceTheory) : TheoremTarget :=
 /- O8 round 3:
    source kernel -> four-dimensional transverse self-energy -> complex pole. -/
 structure PoleSelfEnergyMatching where
+  routeLabel : Type
   sourceReduction : Prop
   fourDimensionalEffectiveAction : Prop
   transverseSelfEnergyMap : Prop
   complexPoleCondition : Prop
   sameSchemeAndFieldBasis : Prop
+  routeMatchingRemainder : Type
+  remainderZeroOrComputed : Prop
+  highScaleBoundaryDatumClassified : Prop
 
 def poleSelfEnergyMatchingTheorem (M : PoleSelfEnergyMatching) : Prop :=
   M.sourceReduction ∧
   M.fourDimensionalEffectiveAction ∧
   M.transverseSelfEnergyMap ∧
   M.complexPoleCondition ∧
-  M.sameSchemeAndFieldBasis
+  M.sameSchemeAndFieldBasis ∧
+  M.remainderZeroOrComputed ∧
+  M.highScaleBoundaryDatumClassified
 
 axiom pole_self_energy_matching_required :
   ∃ M : PoleSelfEnergyMatching, poleSelfEnergyMatchingTheorem M

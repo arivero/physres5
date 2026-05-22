@@ -52,7 +52,7 @@ Equation~\eqref{eq:route-common-target} is stronger than a qualitative mechanism
   \label{eq:route-common-det}
 \end{equation}
 
-The reduction has three candidate arenas.  The endpoint arena is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval arena is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) arena is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources justify the arenas.  They leave Eq.~\eqref{eq:route-common-target} as the shared derivation target.
+The reduction has three candidate arenas.  The endpoint arena is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval arena is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) arena is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources support the listed ingredients.  Selection of the two-channel subspace, inner product, normalization, and entries in Eq.~\eqref{eq:route-common-target} remains the derivation target.
 
 The interval arena supplies source-derived boundary data.  CHM give
 eigenvalue-dependent scalar boundary conditions, the corresponding modified
@@ -80,6 +80,8 @@ Thus the source-backed statement is
   \quad\hbox{is open}.
   \label{eq:route-chm-open-target}
 \end{equation}
+Equation~\eqref{eq:route-chm-source-data} supplies boundary ingredients; the
+projection to \(\mathcal H_J\) and the \(J\)-normalization are theorem data.
 
 The common reduction is filtered by three admissibility tests.  First, trace
 and coefficient statements stay inside the matrix where they are derived until
@@ -139,9 +141,9 @@ The following table records the three entries in a common dictionary.
 \toprule
 Kernel entry & Endpoint/D-brane route & Interval KK route & \(G_2\) route\\
 \midrule
-\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & boundary kinetic product, vector Robin datum, or bulk gauge boundary value & ADE gauge fluctuation or adjoint invariant\\
-\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & scalar-vector mixing or order-parameter/bulk-profile overlap & localized matter or deformation coupling\\
-\(\Sigma_{hh}=0\) & order-parameter reference channel & normalized boundary scalar term & critical-point normalization\\
+\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & CHM boundary kinetic product or vector Robin datum; open \(J\)-normalization & singular gauge locus, Higgs-bundle one-form, or adjoint local operator with compactification-scale matching\\
+\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & boundary scalar vev, \(A_5/\pi_i\) equation, and modified product; open product normalization & localized matter, flow data, or deformation coupling with projection data\\
+\(\Sigma_{hh}=0\) & order-parameter reference channel & boundary scalar reference term; open subtraction rule & critical-point normalization with local-to-pole matching\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -149,7 +151,7 @@ Kernel entry & Endpoint/D-brane route & Interval KK route & \(G_2\) route\\
 \subsection{Electroweak assignment as a route-independent target}
 \label{sec:route-ew-assignment}
 
-The same electroweak assignment target applies to every route.  The low-energy field-theory data contain an \(SU(2)_L\) Higgs doublet and adjoint gauge currents.  Their natural quadratic invariants give
+The same electroweak assignment target applies to every route.  The low-energy field-theory data contain an \(SU(2)_L\) Higgs doublet and adjoint gauge currents.  Their available quadratic invariants give
 \begin{equation}
   J_H=\frac34,\qquad J_{\rm adj}=2.
   \label{eq:route-j-invariants}
@@ -163,6 +165,8 @@ The target map is
   \label{eq:route-assignment-map}
 \end{equation}
 This map is a theorem target because the observed W and Z vector bosons are both gauge-sector particles after symmetry breaking.  The route must explain why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  The required derivation must produce the ordered pair from the gauge-Higgs coupling structure, from endpoint boundary labels attached to the Higgsing field, from interval boundary data that distinguish charged and neutral sectors, or from a localized singularity model where doublet and adjoint data meet.
+The Standard Model mass matrix supplies the projective ratio and the
+representation data; the ordered sampling maps remain additional theorem data.
 
 If the ordered assignment and pole-placement theorem hold, the pole-ratio reading has the common form
 \begin{equation}
@@ -178,6 +182,19 @@ that naturally yields the same quotient at a compactification scale or
 unification scale would locate the algebra in a source theory.  The
 low-energy pole statement would then require the matching theorem as an
 additional result.
+With an explicit route label, the pole-ratio target is
+\begin{equation}
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+  =
+  \frac{x_+(J_H)}{x_+(J_{\rm adj})}
+  +\Delta^{(r)}_{\rm match}.
+  \label{eq:route-matching-remainder}
+\end{equation}
+The exact pole reading requires \(\Delta^{(r)}_{\rm match}=0\) in the chosen
+pole scheme, or a computed remainder whose size and sign are fixed by the
+source-to-EFT-to-pole chain.  A compactification-scale or unification-scale
+derivation makes the quotient a boundary datum; the pole claim then requires
+the matching chain.
 
 \subsection{Branch interpretation and scalar data}
 \label{sec:route-branch-interpretation}
@@ -227,7 +244,7 @@ The common matching theorem has the form
   \big|_{s=s_{W,Z}} .
   \label{eq:route-pole-matching-chain}
 \end{equation}
-This chain is the open O8 theorem.  The first arrow is the route reduction.  The second arrow matches the source
+This chain is the pole-placement theorem target.  The first arrow is the route reduction.  The second arrow matches the source
 kernel into a four-dimensional gauge-Higgs effective action.  The third arrow
 places the result in the dressed transverse pole convention of Sec.~\ref{sec:pole}.
 Endpoint, interval, and \(G_2\) routes differ in the first arrow; they share
@@ -256,7 +273,7 @@ The first arrow is local geometry.  The second arrow is four-dimensional matchin
 A derivation in any route must satisfy the common kernel target, the ordered
 electroweak assignment, the pole-matching chain, the scalar-branch map, and
 the global compatibility checks.  Appendix~\ref{app:derivation-checklist}
-collects the full checklist.  Extra light channels, a different trace, a
+states the complete derivation criterion.  Extra light channels, a different trace, a
 different mixing product, a high-scale placement, or an incompatible global
 form would classify the DeVries relation inside a larger family of spectral
 constructions.

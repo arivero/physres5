@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 77 REVTeX PRD preprint pages after the Loop 19 compile.
+- Current compiled draft: 78 REVTeX PRD preprint pages after the Loop 20 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -43,6 +43,11 @@
 - Use Loop 18's active-channel interpolation as the current O10 form:
   \(D=4+n_c+n_{\rm ew}\), \(n_c=4\), \(n_{\rm ew}:3\to2\to1\), with a
   geometric \(D=9\) \(U(1)\) endpoint and a top-sector source-map target.
+- Use Loop 20's route-remainder form for every exact pole claim:
+  \(M_{W,\rm pole}^2/M_{Z,\rm pole}^2=
+  x_+(J_H)/x_+(J_{\rm adj})+\Delta^{(r)}_{\rm match}\).  The interval route
+  is the current source-controlled test through CHM boundary data and the
+  eaten-Goldstone boundary-kernel synthesis.
 
 ## Completed in latest pass
 
@@ -81,6 +86,11 @@
   data in the KK section, Dirichlet-to-Neumann interval theorem target,
   explicit electroweak boundary proof chain, updated source notes, parent-root
   inventory refresh, and Loop 19 review reports.
+- Added Loop 20 normalization: route-dependent pole matching remainders,
+  interval source-backed objects split from open \(J\)-normalization, Appendix
+  D's CHM Dirichlet-to-Neumann route-test marker, the eaten-Goldstone
+  boundary-kernel theorem target, updated Lean notes, and Loop 20 review
+  reports.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -134,6 +144,18 @@
   \]
   with the CHM inner product, photon zero mode, custodial data, and pole
   matching supplied.
+- For the Loop 20 eaten-Goldstone route, derive or reject
+  \[
+  S_{5D}[A_M,\Phi_i]\to
+  \left(K_T^{\partial I}[A_\mu],K_{A_5\pi}^{\partial I}\right)
+  \to K_J^{\rm eaten}(\lambda)
+  \]
+  with a common boundary Higgsing datum, a defined projection \(P_J\), the CHM
+  product, the ordered W/Z boundary map, the photon zero mode, and the scalar
+  partner functional.
+- For each route, derive or compute
+  \(\Delta^{(r)}_{\rm match}\) in the pole-ratio equation, including the field
+  basis, matching scale, threshold terms, and sign.
 - Derive the electroweak mass-map theorem from the Higgs kinetic term through
   pole matching:
   \[

@@ -74,6 +74,23 @@ For the current interval pass, the parent scan adds only triage confirmation:
 source-note provenance, and CHM remains the primary local source for the
 interval boundary theorem target.
 
+## Loop 20 parent-root inventory refresh
+
+The latest `..` read covered first- and second-level directories plus local
+Markdown, TeX, Lean, BibTeX, text, and PDF files while keeping cache,
+credential, editor, package, binary, and generated-runtime directories outside
+manuscript use.  The scan confirmed the same active physics clusters:
+`../prTalks`, `../physres6`, `../phys3`, `../phys4`, `../weak`,
+`../signed-dv-custodial-project`, `../physres1`, `../dualsm`, and `../recap`.
+Additional visible queues include `../balance`, `../cantor`, `../sakurai`,
+`../pdghist`, `../phys6gpd`, `../nokoide`, `../academia`, and root-level
+standalone TeX files.  For the current Loop 20 interval task, these queues add
+no promoted claim.  The manuscript import remains the route-test discipline:
+source-note projects may contribute theorem targets, failure modes, and
+primary-source upgrade queues; CHM remains the active source for boundary
+kinetic, vector Robin, scalar \(A_5/\pi_i\), photon-zero-mode, and custodial
+interval data.
+
 ## Promoted obligations
 
 ### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit

@@ -55,6 +55,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 17 | 5 | 5 | 5 | 5 | 5 | Normalized O18 into a Regge-intercept survival target, separated sector and oscillator labels, and moved higher-slot phenomenology into a source-audited assignment ledger. |
 | 18 | 5 | 5 | 5 | 5 | 5 | Normalized O10 as a factorized active-channel interpolation, demoted the \(D=9\) endpoint to a geometric \(U(1)\) until the electromagnetic embedding theorem, and added a top-sector source-map target. |
 | 19 | 5 | 5 | 5 | 5 | 5 | Sharpened the interval route with CHM source boundary data, a Dirichlet-to-Neumann kernel target, electroweak boundary proof obligations, and parent-root triage refresh. |
+| 20 | 5 | 5 | 5 | 5 | 5 | Added route-matching remainders, split interval source data from open normalization, marked the CHM Dirichlet-to-Neumann subtarget as the source-controlled route test, and recorded the eaten-Goldstone boundary-kernel synthesis. |
 
 ## Scoring rubric
 

@@ -39,6 +39,8 @@ structure ParentRootInventory where
   unrelatedRuntimeStateExcluded : Prop
   privateOrSecurityFilesExcluded : Prop
   primarySourceUpgradeRequired : Prop
+  loop20VisibleQueuesCatalogued : Prop
+  chmRemainsActiveIntervalSource : Prop
 
 def parentRootInventoryReady (I : ParentRootInventory) : Prop :=
   I.prTalksIndexed ∧
@@ -48,7 +50,9 @@ def parentRootInventoryReady (I : ParentRootInventory) : Prop :=
   I.phys4RequiresTargetedAudit ∧
   I.unrelatedRuntimeStateExcluded ∧
   I.privateOrSecurityFilesExcluded ∧
-  I.primarySourceUpgradeRequired
+  I.primarySourceUpgradeRequired ∧
+  I.loop20VisibleQueuesCatalogued ∧
+  I.chmRemainsActiveIntervalSource
 
 axiom parent_root_inventory_requires_triage :
   ∃ I : ParentRootInventory, parentRootInventoryReady I

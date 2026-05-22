@@ -34,6 +34,17 @@ target mass-map equation is
 \frac{x_+(C_2(\mathbf 2))}{x_+(C_2(\mathrm{adj}))}.
 \]
 
+**Loop 12 theorem-target refinement.** Appendix D Target 0 and Target II now
+place the ordered assignment inside a unified source-to-pole theorem.  The
+assignment is accepted only after the same reduced field basis supplies the
+source kernel, the maps
+\[
+P_W:\ h_J\mapsto C_2(\mathbf 2),\qquad
+P_Z:\ a_J\mapsto C_2(\mathrm{adj}),
+\]
+and the transverse-pole matching chain.  Interval, endpoint, and \(G_2\)
+versions are variants of this same sampling theorem.
+
 ## O2a. Pole convention formula
 
 **Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?
@@ -232,6 +243,18 @@ reduced two-channel light space.  Extra channels, nonorthogonal projections,
 or route-dependent normalizations must be handled before the entries can be
 identified across routes.
 
+**Loop 12 theorem-target refinement.** Appendix D Target 0 promotes the common
+route requirement to a source-to-pole matching theorem:
+\[
+\mathcal S_r\to\mathcal H_{J,r}\to K^{\rm eff}_{J,r}(\lambda)
+\to \Pi^{(4)}_{T,V}(s;J,r)\to
+\Delta^{-1}_{V,T}(s_V;J,r)=0.
+\]
+The Schur-complement version must specify \(K^{\rm bdry}_{J,r}\), \(L_{J,r}\),
+\(V_{J,r}\), \(\langle\cdot,\cdot\rangle_r\), \(P_{J,r}\), and the
+decoupling or block-diagonal treatment of additional light channels.  A
+route comparison is meaningful only inside that one basis and normalization.
+
 ## O8. Pole placement versus high-scale placement
 
 **Question.** Why does the clean DeVries value attach to the low-energy pole spectrum, and how are GUT-scale or compactification-scale boundary readings separated?
@@ -292,6 +315,14 @@ tension: local singularity data naturally live at a compactification scale, so
 the pole reading requires a compactification-to-EFT-to-complex-pole matching
 theorem.
 
+**Loop 12 theorem-target refinement.** Target 0 joins O1, O4, and O8.  A
+successful route must carry the determinant through the reduced kernel and
+then into the transverse self-energy in the pole scheme.  If a projection,
+field redefinition, or renormalization prescription changes the determinant,
+the manuscript must state the changed object and its matching law.  The
+\(G_2\) route keeps the compactification-to-EFT-to-complex-pole theorem as a
+named unresolved obligation.
+
 ## O5. Electroweak ray and forbidden deformations
 
 **Question.** How does the construction encode the full broken-to-unbroken electroweak ray while avoiding independent unphysical limits?
@@ -332,6 +363,12 @@ until a compactification map and global-form check are supplied.
 **Success criterion.** A referee can locate the exact missing proof for each speculative step and see which manuscript claim depends on it.
 
 **Status refinement.** Sec. IX now presents the conclusion and analytical status, while Appendix D holds the claim hierarchy, minimum derivation chain, and derivation checklist. The remaining burden is derivational.
+
+**Loop 12 refinement.** Appendix D now begins with Target 0, the unified
+source-to-pole matching theorem.  The theorem-target ledger therefore has a
+lead object that packages the source reduction, reduced basis, DeVries kernel,
+ordered W/Z sampling maps, and pole matching before the route-specific targets
+are compared.
 
 ## O10. Higgs interpolation \(D=11\to D=10\to D=9\) and colourless \(D=7\to D=6\to D=5\)
 
@@ -410,6 +447,15 @@ sources remain the controlling primary-source trail.  Parent projection notes
 also require explicit boundary, orientifold, orbifold, or singular data when a
 branch projection is invoked; Wilson-line data alone leave the projection
 unresolved.
+
+**Loop 12 theorem-target refinement.** Appendix D now states the source-backed
+full-gauge endpoint as \((D,n_{\rm KK})=(11,7)\) with
+\(SU(3)\times SU(2)\times U(1)\).  The \((9,5)\) endpoint is a reconstruction
+target until the surviving \(U(1)\) is derived as \(U(1)_{\rm em}\).  The
+\((10,6)\) and colourless \((6,2)\) middle lines are Schur-complement labels:
+they name the required reduced source sector, light subspace, kernel, ordered
+assignment, and pole-matching rule.  The endpoint dictionary depends on the
+same electroweak assignment theorem recorded in O1.
 
 ## O11. Adjacent `prTalks` source-note validation
 

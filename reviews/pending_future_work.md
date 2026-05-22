@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 62 REVTeX PRD preprint pages.
+- Current compiled draft: 66 REVTeX PRD preprint pages.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push one route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -14,6 +14,7 @@
 - Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
 - Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../weak`, `../phys3`, `../signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
 - Continue normalizing main-body sections by replacing project-management language with assumption, construction, consequence, and theorem-target statements.
+- Use the Loop 12 parent-root inventory as a triage map.  Targeted future audits should choose a single cluster, read it deeply, and promote only source trails, theorem targets, or failure-mode tests.
 
 ## Completed in latest pass
 
@@ -25,6 +26,8 @@
 - Added the Round 3 pole-convention refinement, O8 self-energy matching target, and adjacent `prTalks` source-note/Lean index.
 - Added the parent-workspace source-note/Lean index, the custodial single-generator obstruction, and the single-source normalization audit for future route derivations.
 - Added Loop 11 normalization: compact abstract, A1--A3/T1--T3 hierarchy in the introduction and conclusion, streamlined VI.G, and an electroweak mass-map theorem target.
+- Added Loop 12 Target 0: a unified source-to-pole matching theorem that packages the reduced basis, projection/decoupling rule, Schur complement, DeVries kernel, ordered W/Z sampling maps, and transverse-pole matching.
+- Added a broader `..` parent inventory to the parent-workspace source notes and Lean guardrails.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -72,6 +75,12 @@
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
   =
   \frac{x_+(C_2(\mathbf 2))}{x_+(C_2(\mathrm{adj}))}.
+  \]
+- Derive Target 0 for at least one source route:
+  \[
+  \mathcal S_r\to\mathcal H_{J,r}\to K^{\rm eff}_{J,r}(\lambda)
+  \to \Pi^{(4)}_{T,V}(s;J,r)\to
+  \Delta^{-1}_{V,T}(s_V;J,r)=0.
   \]
 
 ## Source work

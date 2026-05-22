@@ -209,6 +209,41 @@ def poleSelfEnergyMatchingTheorem (M : PoleSelfEnergyMatching) : Prop :=
 axiom pole_self_energy_matching_required :
   ∃ M : PoleSelfEnergyMatching, poleSelfEnergyMatchingTheorem M
 
+/- Loop 12 Target 0:
+   One theorem should carry the source description to pole data in a single
+   field basis.  The endpoint, interval, and G2 routes are accepted only after
+   they supply the reduced subspace, inner product, projection/decoupling rule,
+   DeVries kernel, ordered electroweak sampling maps, and pole-matching arrow. -/
+inductive SourceRoute where
+  | endpoint
+  | interval
+  | G2
+
+structure UnifiedSourceToPoleMatching where
+  route : SourceRoute
+  sourceTheory : Type
+  lightSubspace : Type
+  innerProduct : Type
+  projectionMap : Type
+  extraChannelsDecoupled : Prop
+  schurComplementReduction : Prop
+  devriesKernelInReducedBasis : Prop
+  orderedElectroweakSampling : Prop
+  poleSelfEnergyMatching : Prop
+  sameNormalizationAndScheme : Prop
+
+def unifiedSourceToPoleMatchingTheorem
+    (U : UnifiedSourceToPoleMatching) : Prop :=
+  U.extraChannelsDecoupled ∧
+  U.schurComplementReduction ∧
+  U.devriesKernelInReducedBasis ∧
+  U.orderedElectroweakSampling ∧
+  U.poleSelfEnergyMatching ∧
+  U.sameNormalizationAndScheme
+
+axiom unified_source_to_pole_matching_required :
+  ∃ U : UnifiedSourceToPoleMatching, unifiedSourceToPoleMatchingTheorem U
+
 def electroweakAssignmentTarget (S : SourceTheory) : TheoremTarget :=
   { hypotheses := True
     conclusion := JAssignmentProblem

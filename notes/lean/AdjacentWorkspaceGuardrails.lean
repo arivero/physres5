@@ -26,6 +26,33 @@ def parentSourceNoteProtocol (P : ParentSourceNote) : Prop :=
 axiom parent_workspace_protocol_required :
   ∀ P : ParentSourceNote, parentSourceNoteProtocol P
 
+/- Broad `..` inventory pass from Loop 12.
+   The parent workspace contains many projects and runtime directories.
+   Only source-note provenance, theorem targets, and critique guardrails enter
+   this manuscript. -/
+structure ParentRootInventory where
+  prTalksIndexed : Prop
+  hansSignedDeVriesIndexed : Prop
+  weakCritiqueIndexed : Prop
+  phys3DimensionalProvenanceIndexed : Prop
+  phys4RequiresTargetedAudit : Prop
+  unrelatedRuntimeStateExcluded : Prop
+  privateOrSecurityFilesExcluded : Prop
+  primarySourceUpgradeRequired : Prop
+
+def parentRootInventoryReady (I : ParentRootInventory) : Prop :=
+  I.prTalksIndexed ∧
+  I.hansSignedDeVriesIndexed ∧
+  I.weakCritiqueIndexed ∧
+  I.phys3DimensionalProvenanceIndexed ∧
+  I.phys4RequiresTargetedAudit ∧
+  I.unrelatedRuntimeStateExcluded ∧
+  I.privateOrSecurityFilesExcluded ∧
+  I.primarySourceUpgradeRequired
+
+axiom parent_root_inventory_requires_triage :
+  ∃ I : ParentRootInventory, parentRootInventoryReady I
+
 /- Gauge-Higgs assignment guardrail from ../weak/criticism.md. -/
 structure GaugeHiggsMassMap where
   sourceOperator : Type

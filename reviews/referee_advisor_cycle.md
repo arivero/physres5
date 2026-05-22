@@ -47,6 +47,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 9 | 5 | 5 | 5 | 5 | 5 | Compiled 66-page draft; exact pole parameterization, Breit--Wigner mass/width convention chain, O8 self-energy matching theorem, and adjacent `prTalks` source-note/Lean index added. |
 | 10 | 5 | 5 | 5 | 5 | 5 | Parent-workspace pass added source-note guardrails, one-source normalization audit, custodial single-generator obstruction, and O12 validation issue; manuscript derivations remain explicit open targets. |
 | 11 | 5 | 5 | 5 | 5 | 5 | Normalized abstract, introduction, route comparison, and conclusion around assumptions and theorem targets; added electroweak mass-map and matching refinements. |
+| 12 | 5 | 5 | 5 | 5 | 5 | Added unified source-to-pole Target 0, tightened route basis/projection obligations, clarified dimensional endpoint status, and indexed the broader parent workspace inventory. |
 
 ## Scoring rubric
 
@@ -71,3 +72,5 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the O10 dimensional Schur-complement target give a concrete enough bridge among dimensional interpolation, the ordered \(J\)-assignment, the DeVries kernel, and pole placement?
 - Does the parent-workspace normalization audit give strong enough failure-mode tests for the next endpoint, interval, brane, KK, Regge, or \(G_2\) derivation attempt?
 - Does the A1--A3/T1--T3 hierarchy make the main text read as paper-level exposition while preserving all open obligations?
+- Does Target 0 give a complete acceptance test from source theory to reduced kernel, ordered W/Z sampling, and complex-pole matching?
+- Which parent-workspace cluster should receive a targeted audit after the broad `..` inventory: `../prTalks`, `../hans/signed_dbdevries`, `../weak`, or `../phys4/notes`?

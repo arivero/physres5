@@ -38,7 +38,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 62 pages after `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 66 pages after `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.
@@ -50,6 +50,20 @@
 - New O11 source-note validation issue: preserve `../prTalks` PDFs as source objects, use extracted text only as an access aid, and promote only structural obligations or primary-source-backed claims.
 - New O12 parent-workspace validation issue: preserve adjacent text notes as source-note provenance, promote their critique content into O1/O3/O4/O6/O8/O10 obligations, and replace adjacent-project claims with primary sources before manuscript citation.
 - Loop 11 normalized the abstract, introduction, VI.G route comparison, and conclusion around the A1--A3/T1--T3 hierarchy.  The active central theorem target is now also recorded as an electroweak mass-map theorem from the Higgs kinetic term and W/Z mass matrix to the ordered DeVries quotient after pole matching.
+- Loop 12 adds Appendix D Target 0: a unified source-to-pole matching theorem
+  \[
+  \mathcal S_r\to\mathcal H_{J,r}\to K^{\rm eff}_{J,r}(\lambda)
+  \to \Pi^{(4)}_{T,V}(s;J,r)\to
+  \Delta^{-1}_{V,T}(s_V;J,r)=0.
+  \]
+  The route comparison now requires one reduced field basis, inner product,
+  projection/decoupling rule, ordered W/Z sampling map, and pole-matching
+  scheme before endpoint, interval, and \(G_2\) routes can be compared.
+- Loop 12 also broadens the `..` parent inventory.  Relevant clusters are
+  `../prTalks`, `../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`,
+  `../physres1`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.
+  Runtime state, caches, security reviews, and unrelated generated outputs are
+  excluded from manuscript claims.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

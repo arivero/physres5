@@ -2,16 +2,19 @@
 \label{app:theorem-targets}
 % Status: open. Collects theorem targets, source-backed constraints, and proof obligations.
 
-This appendix records the analytical obligations in theorem form.  The purpose is operational.  Each target names its hypotheses, conclusion, current evidence, and failure mode.  A complete version of the manuscript should either prove these statements, replace them with stronger statements, or demote the dependent claims.
+This appendix records the analytical obligations in theorem form.  Each target
+names its hypotheses, conclusion, current evidence, and failure mode.  A
+complete version of the manuscript proves these statements, replaces them with
+stronger statements, or demotes the dependent claims.
 
 \subsection{Common format}
 \label{app:theorem-format}
 
-The targets share a common data structure.  Let \(\mathcal S\) be a source theory or effective description.  It may be a four-dimensional electroweak theory, a boundary effective action from an interval compactification, an open-string endpoint sector, or a localized \(G_2\) system.  Let \(\mathcal E_J\) be the two-dimensional light subspace that is meant to carry the order-parameter and current amplitudes.  The desired reduction has the form
+The targets share a common data structure.  Let \(\mathcal S\) be a source theory or effective description.  It may be a four-dimensional electroweak theory, a boundary effective action from an interval compactification, an open-string endpoint sector, or a localized \(G_2\) system.  Let \(\mathcal H_J\) be the two-dimensional light subspace that is meant to carry the order-parameter and current amplitudes.  The desired reduction has the form
 \begin{equation}
   \mathcal S
   \longrightarrow
-  \mathcal E_J
+  \mathcal H_J
   \longrightarrow
   \mathcal M_J
   =
@@ -23,9 +26,81 @@ The targets share a common data structure.  Let \(\mathcal S\) be a source theor
   \{x_+(J),x_-(J)\}.
   \label{eq:appendix-reduction-chain}
 \end{equation}
-The reduction is meaningful after the normalization of \(\mathcal E_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.
+The reduction is meaningful after the normalization of \(\mathcal H_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.
 
 For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A plausibility argument may motivate the target, yet the manuscript's final physical claim must track the proven statement.
+
+\subsection{Target 0: unified source-to-pole matching}
+\label{app:target-unified-source-to-pole}
+
+\paragraph*{Hypotheses.}
+Let \(r\in\{\mathrm{end},\mathrm{int},G_2\}\) label an endpoint,
+interval, or localized-singularity source description \(\mathcal S_r\).  The
+source theory supplies a two-dimensional light subspace
+\begin{equation}
+  \mathcal H_{J,r}=\operatorname{span}\{h_{J,r},a_{J,r}\},
+  \qquad
+  \langle\cdot,\cdot\rangle_r,
+  \qquad
+  P_{J,r},
+  \label{eq:target0-light-space}
+\end{equation}
+where the inner product and projection map \(P_{J,r}\) define the reduced
+field basis.  Extra light channels are absent, integrated out, or
+block-diagonalized by the same projection.  The route reduction has Schur form
+\begin{equation}
+  K^{\rm eff}_{J,r}(\lambda)
+  =
+  K^{\rm bdry}_{J,r}(\lambda)
+  -
+  V_{J,r}^{\dagger}(\lambda-L_{J,r})^{-1}V_{J,r}.
+  \label{eq:target0-schur}
+\end{equation}
+
+\paragraph*{Conclusion.}
+In the reduced basis of Eq.~\eqref{eq:target0-light-space},
+\begin{equation}
+  K^{\rm eff}_{J,r}(\lambda)
+  =
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix}.
+  \label{eq:target0-devries-kernel}
+\end{equation}
+The same field basis carries the electroweak sampling maps
+\begin{equation}
+  P_W:\ h_{J,r}\mapsto C_2(\mathbf 2)=\frac34,
+  \qquad
+  P_Z:\ a_{J,r}\mapsto C_2(\mathrm{adj})=2,
+  \label{eq:target0-ew-projectors}
+\end{equation}
+and the source kernel contributes to the four-dimensional transverse
+self-energy in the pole scheme,
+\begin{equation}
+  K^{\rm eff}_{J,r}(\lambda)
+  \longrightarrow
+  \Pi^{(4)}_{T,V}(s;J,r)
+  \longrightarrow
+  \Delta^{-1}_{V,T}(s_V;J,r)=0.
+  \label{eq:target0-pole-chain}
+\end{equation}
+Thus one theorem supplies the source reduction, the reduced inner product, the
+DeVries entries, the ordered W/Z sampling maps, and the pole-placement chain.
+
+\paragraph*{Current evidence.}
+The endpoint, interval, and \(G_2\) sections supply source-backed addresses for
+the three route types.  The interval route has the most explicit boundary
+operator language, while the \(G_2\) route supplies localization language for
+gauge and matter data.  The unified theorem is the common acceptance test
+shared by the routes.
+
+\paragraph*{Failure mode.}
+The target fails if the source theory yields extra coupled light channels, a
+route-dependent inner product, a different trace or mixing product, an
+unordered electroweak sampling map, or a high-scale quantity whose matching to
+complex poles changes the determinant.  Such an outcome classifies the source
+as a neighboring spectral construction.
 
 \subsection{Target I: pole placement}
 \label{app:target-pole-placement}
@@ -67,7 +142,7 @@ Assume common experimental mass conventions are converted into the pole conventi
 \end{equation}
 
 \paragraph*{Conclusion.}
-The DeVries branch quotient is a pole-spectrum datum:
+The theorem target is a pole-spectrum identification:
 \begin{equation}
   \sPole
   =
@@ -90,7 +165,8 @@ scale-placement statement has the matching form
 \end{equation}
 The first arrow is the source reduction.  The second arrow is four-dimensional
 effective matching.  The third arrow is the dressed transverse pole condition.
-The pole reading requires all three arrows in one scheme.
+The pole reading requires all three arrows in one scheme.  Target~0 packages
+this requirement with the reduced field basis and electroweak sampling maps.
 Equivalently, the source kernel must produce the relevant pole self-energy
 term,
 \begin{equation}
@@ -126,7 +202,7 @@ Let \(H\) be the Standard Model Higgs doublet and let \(J_H=3/4\) be its \(SU(2)
 with the custodial structure and \(\rho=1\) tree-level relation discussed in Sec.~\ref{sec:ew-embedding}.
 
 \paragraph*{Conclusion.}
-There exists a natural map from gauge-Higgs data to ordered samples,
+The required theorem is the existence of a map from gauge-Higgs data to ordered samples,
 \begin{equation}
   \mathcal D_{\rm EW}:
   (H,J^a_\mu,B_\mu)
@@ -141,7 +217,7 @@ such that
   \frac{x_+(J_H)}{x_+(J_{\rm adj})}.
   \label{eq:target-ew-conclusion}
 \end{equation}
-The derivation must say why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.
+The derivation must say why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  The allowed mathematical channels for the charged sample are: a Higgs-representation contribution inside the gauge-Higgs mass map, a scalar contribution to the W transverse self-energy, or a source/boundary label coupled to the Higgsing field.  Assigning \(C_2(\mathbf 2)\) to the Higgs field and \(C_2(\mathrm{adj})\) to the gauge field leaves the pole-ratio comparison descriptive until the ordered W/Z sampling rule is derived.
 
 \paragraph*{Current evidence.}
 The Higgs doublet and adjoint invariants are fixed representation-theoretic facts.  The electroweak mass matrix, photon null direction, custodial relation, and projective reading of \(g:g'\) are standard low-energy data \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The manuscript has converted the assignment into a theorem target.
@@ -153,7 +229,14 @@ The target fails if the assignment uses observed vector spin or an arbitrary pos
 \label{app:target-boundary-determinant}
 
 \paragraph*{Hypotheses.}
-Let \(h_J\) be an order-parameter amplitude and \(a_J\) an adjoint/current amplitude in a light boundary subspace.  Let their normalized quadratic kernel be
+Let \(h_J\) be an order-parameter amplitude and \(a_J\) an adjoint/current amplitude in a light boundary subspace
+\[
+  \mathcal H_J=\operatorname{span}\{h_J,a_J\}
+\]
+with a stated inner product, projection map from the source Hilbert space, and
+normalization rule.  Extra channels are integrated out or block-diagonalized
+before the two-by-two kernel is compared with the DeVries target.  Let the
+normalized quadratic kernel be
 \begin{equation}
   K_J(\lambda)=
   \begin{pmatrix}
@@ -165,7 +248,8 @@ Let \(h_J\) be an order-parameter amplitude and \(a_J\) an adjoint/current ampli
 The source may be an interval theory with brane-localized terms, an open-string endpoint sector, or a localized singularity construction.  Boundary mass and kinetic terms can alter eigenvalue conditions in extra-dimensional models \cite{CsakiHubiszMeade2005}.  Open-string endpoints and D-brane gauge sectors supply a separate endpoint language \cite{TongString,Polchinski1994}.
 
 \paragraph*{Conclusion.}
-There is a controlled limit and normalization in which
+There is a controlled field basis, inner product, projection, and
+normalization in which
 \begin{equation}
   \Sigma_{hh,J}=0,\qquad
   \Sigma_{aa,J}=J,\qquad
@@ -245,11 +329,16 @@ The target fails if the determinant arises in a gauge or flavor sector incompati
 \paragraph*{Hypotheses.}
 Assume the electroweak order parameter supplies an interpolation parameter
 \(t\), represented in a source theory by compact, boundary, brane, or singular
-data.  The full-gauge endpoint dictionary is
+data.  The source-backed full-gauge endpoint is
 \begin{equation}
   (D,n_{\rm KK})=(11,7):
-  SU(3)\times SU(2)\times U(1),
-  \qquad
+  SU(3)\times SU(2)\times U(1).
+  \label{eq:target-full-dimensional-source-endpoint}
+\end{equation}
+The five-extra-dimensional endpoint is a reconstruction target until its
+electroweak embedding identifies the surviving \(U(1)\) with
+\(U(1)_{\rm em}\):
+\begin{equation}
   (D,n_{\rm KK})=(9,5):
   SU(3)\times U(1)_{\rm em}.
   \label{eq:target-full-dimensional-endpoints}
@@ -284,7 +373,8 @@ The middle-dimensional sector defines a source operator
   \end{pmatrix},
   \label{eq:target-dimensional-kernel}
 \end{equation}
-and the same sector yields the ordered electroweak samples
+and, through Target~\ref{app:target-electroweak-assignment}, the same sector
+yields the ordered electroweak samples
 \begin{equation}
   (J_W,J_Z)=(J_H,J_{\rm adj})=\left(\frac34,2\right).
   \label{eq:target-dimensional-assignment}
@@ -352,11 +442,14 @@ scalar functional.
 
 The common acceptance criterion is
 \begin{equation}
-  \det K_J(\lambda)=\lambda^2+J\lambda-J,
-  \qquad
-  (J_W,J_Z)=(3/4,2),
-  \qquad
-  u_-(J)\mapsto\mathcal F_{\rm sc}.
+  \begin{aligned}
+  \det K_J(\lambda)&=\lambda^2+J\lambda-J,\\
+  (J_W,J_Z)&=(3/4,2),\\
+  u_-(J)&\mapsto\mathcal F_{\rm sc},\\
+  K_J^{\rm bare}
+  &\to\Pi^{(4)}_{T,V}(s;J)
+  \to\Delta^{-1}_{V,T}(s_V;J)=0 .
+  \end{aligned}
   \label{eq:appendix-acceptance-criterion}
 \end{equation}
 Partial results still sharpen the construction when they prove one arrow in
@@ -370,7 +463,7 @@ Each result changes the status of a corresponding theorem target.
 
 The theorem targets lead to the following checklist for future revisions:
 \begin{enumerate}
-\item State the source theory \(\mathcal S\) and the light subspace \(\mathcal E_J\).
+\item State the source theory \(\mathcal S\) and the light subspace \(\mathcal H_J\).
 \item Specify the normalization that makes \(\Sigma_{hh,J}=0\), \(\Sigma_{aa,J}=J\), and \(\Sigma_{ha,J}\Sigma_{ah,J}=J\).
 \item Derive the ordered assignment \((J_H,J_{\rm adj})=(3/4,2)\) from low-energy gauge-Higgs or boundary data.
 \item Give the pole-scheme translation for every quoted W/Z mass input.

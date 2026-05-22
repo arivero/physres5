@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 70 REVTeX PRD preprint pages after the Loop 15 compile.
+- Current compiled draft: 72 REVTeX PRD preprint pages after the Loop 16 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push one route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -25,6 +25,10 @@
   operator after the tested failures; SO(32) flavor/string claims require
   projection, anomaly, hypercharge, global-form, and electroweak-coupling
   checks.
+- Use Loop 16's alpha endpoint target as a downstream corollary only after the
+  scalar branch theorem, \(D=9\) \(U(1)_{\rm em}\) endpoint theorem, charge
+  normalization, and matching pair \((Q_\alpha,\Delta_{\alpha,{\rm match}})\)
+  are derived.
 
 ## Completed in latest pass
 
@@ -47,6 +51,10 @@
 - Added Loop 15 normalization: secular mass-ratio title framing, trace-space
   admissibility filters, Wigner--Eckart failed-route filters, SO(32) branching
   obligations, and pole-matching remainder \(\Delta_{\rm match}\).
+- Added Loop 16 normalization: Appendix D Target VII for the electromagnetic
+  endpoint coupling, Appendix E's branch-to-coupling diagram, a
+  negative-branch cross-reference, parent/prTalks alpha-route source notes, and
+  `notes/lean/AlphaEndpoint.lean`.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -116,6 +124,17 @@
 - Turn the SO(32) flavor/string target into a sourced theorem statement with
   explicit extra-state projection, orientifold/tadpole, and electroweak-operator
   coupling obligations.
+- Derive or reject the electromagnetic endpoint theorem:
+  \[
+  g_{\rm sec}^2=
+  \frac{4C_Wx_+(J_H)}{C_v|x_-(J_v)|},
+  \qquad
+  \alpha_{\mathcal S}(Q_\alpha)=
+  \frac{g_{\rm sec}^2\sdV}{4\pi}
+  +\Delta_{\alpha,{\rm match}}(Q_\alpha),
+  \]
+  with \(J_v\), \(C_v\), \(C_W\), \(U(1)_{\rm em}\) generator normalization,
+  charge lattice, threshold prescription, and observable specified.
 
 ## Source work
 
@@ -134,6 +153,11 @@
   SO(32) sources for flavor claims, Hanany--Witten/M5/D6-as-KK sources for
   brane claims, and kinetic-mixing or paired-D-term literature for
   negative-sector templates.
+- Source-audit running electromagnetic coupling definitions before using the
+  O17 scale-placement clue in manuscript prose: on-shell \(\alpha(0)\),
+  \(\MSbar\) \(\hat\alpha(\mu)\), effective \(\alpha(q^2)\), hadronic vacuum
+  polarization, threshold matching, and compactification gauge-coupling
+  normalization.
 
 ## Review cycle
 

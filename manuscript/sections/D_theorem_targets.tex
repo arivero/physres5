@@ -538,6 +538,80 @@ electroweak ray, or an ordered assignment other than
 \((J_H,J_{\rm adj})=(3/4,2)\).  Such an outcome would classify the dimensional
 idea as an organizing analogy for a different source-theory reduction.
 
+\subsection{Target VII: electromagnetic endpoint coupling}
+\label{app:target-alpha-endpoint}
+
+\paragraph*{Hypotheses.}
+Assume Targets~\ref{app:target-unified-source-to-pole},
+\ref{app:target-electroweak-assignment}, \ref{app:target-pole-placement},
+\ref{app:target-negative-branch}, and
+\ref{app:target-dimensional-interpolation} have supplied a common source
+route.  The same route must identify the \(D=9\) endpoint factor with
+\(U(1)_{\rm em}\), fix its generator normalization, and give a gauge kinetic
+term
+\begin{equation}
+  -\frac{1}{4e_{\rm geom}^2}
+  \int d^4x\,F_{\mu\nu}F^{\mu\nu}
+  \label{eq:target-alpha-geometric-kinetic-term}
+\end{equation}
+after reduction.  Assume also that the scalar branch has a vacuum-ray
+normalization
+\begin{equation}
+  v^2=C_v\,\mu^2 |x_-(J_v)|,
+  \qquad
+  M_W^2=C_W\,\mu^2 x_+(J_H),
+  \label{eq:target-alpha-vacuum-vector-normalization}
+\end{equation}
+where \(C_v\), \(C_W\), \(J_v\), the inner product, and the matching scheme are
+outputs of the source theorem.
+
+\paragraph*{Conclusion.}
+The endpoint theorem defines a construction coupling only after the scalar and
+vector normalizations are fixed:
+\begin{equation}
+  g_{\rm sec}^2
+  =
+  \frac{4C_W x_+(J_H)}
+       {C_v |x_-(J_v)|}.
+  \label{eq:target-alpha-gsec}
+\end{equation}
+The electromagnetic comparison is then a scheme statement
+\begin{equation}
+  \alpha_{\mathcal S}(Q_\alpha)
+  =
+  \frac{g_{\rm sec}^2\,\sdV}{4\pi}
+  +\Delta_{\alpha,{\rm match}}(Q_\alpha),
+  \label{eq:target-alpha-matching}
+\end{equation}
+where the theorem must identify the observable, the scale \(Q_\alpha\), the
+threshold prescription, and the running convention.  The special reading
+\(J_v=J_{\rm adj}=2\), \(C_v=2\), and \(C_W=1\) is a subtarget of
+Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization}; it has conjectural
+status until derived from the source route.
+
+\paragraph*{Current evidence.}
+The Standard Model identities \(M_W^2=g^2v^2/4\) and
+\(e=g\sin\theta_W\) supply the low-energy algebraic bridge
+\cite{Logan2022,Dawson2018}.  Martin--Robertson give the scheme language for
+running electroweak parameters \cite{MartinRobertson2025}.  The PDG constants
+table is kept in the source inventory for constants; the manuscript still
+needs a dedicated source audit before selecting an intermediate hadronic
+matching point \cite{PDGPhysicalConstants2025}.  Witten's Kaluza--Klein
+discussion supports the qualitative mechanism:
+gauge fields arise from compact geometry and their couplings are controlled by
+the compact metric once the dynamics of that metric is known
+\cite{WittenKK1981}.
+
+\paragraph*{Failure mode.}
+The target fails when the scalar theorem leaves
+Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization} unproved, when the
+\(D=9\) endpoint leaves the \(U(1)_{\rm em}\) charge normalization
+unspecified, or when the matching scale \(Q_\alpha\) and
+\(\Delta_{\alpha,{\rm match}}\) require external measured input as an
+independent parameter.  In that case the electromagnetic coupling remains a
+standard low-energy input, and the DeVries construction retains only the
+pole-ratio clue.
+
 \subsection{Claim hierarchy and acceptance criteria}
 \label{app:claim-hierarchy}
 
@@ -569,6 +643,15 @@ A minimal derivation has the chain
   (\sPole,\mathcal F_{\rm sc}).
   \label{eq:appendix-minimum-viable-derivation}
 \end{equation}
+If Target~\ref{app:target-alpha-endpoint} is added, the derivation has a
+conditional corollary
+\begin{equation}
+  (\sPole,\mathcal F_{\rm sc},U(1)_{\rm em})
+  \longrightarrow
+  \alpha_{\mathcal S}(Q_\alpha),
+  \label{eq:appendix-alpha-corollary}
+\end{equation}
+with the matching remainder of Eq.~\eqref{eq:target-alpha-matching}.
 The source theory \(\mathcal S\) may be a boundary effective action, an
 endpoint sector, or a localized \(G_2\) system.  The light subspace
 \(\mathcal H_J\) must contain an order-parameter channel and an adjoint/current
@@ -611,6 +694,9 @@ The theorem targets lead to the following checklist for future revisions:
 \item Prove ray admissibility: one radial electroweak parameter, persistent photon null direction, and simultaneous W/Z mass collapse.
 \item Give the pole-scheme translation for every quoted W/Z mass input.
 \item Identify the negative branch as scalar data, auxiliary data, or a derived sector with another physical role.
+\item If the electromagnetic endpoint is used, derive the \(U(1)_{\rm em}\)
+gauge kinetic normalization, the scalar/vector normalization constants, and
+the matching pair \((Q_\alpha,\Delta_{\alpha,{\rm match}})\).
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
 This checklist is the manuscript's current definition of a complete derivation.

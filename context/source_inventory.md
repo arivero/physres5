@@ -18,6 +18,11 @@ records, and adjacent-project memory.  They are valid for guardrails, theorem
 targets, and source-upgrade queues.  Journal-facing claims still require
 primary local literature or an explicit project-source label.
 
+`../physres6/` is a sibling short-note workspace for the alpha route.  Its
+valid use here is O17 provenance and symbolic theorem-target structure.  Its
+numerical checks and compact PRL framing remain outside the current conceptual
+PRD phase.
+
 ## Core DeVries/Rivero source
 
 - `01_Rivero_deVries_Casimir_mass_operator_hep-ph-0606171.pdf` — original project note. Contains the Casimir invariant construction, the quadratic mass-operator equation, the spin-1/2 and spin-1 positive eigenvalue comparison, and the numerical comparison to the mass-shell weak angle.

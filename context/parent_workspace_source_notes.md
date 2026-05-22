@@ -24,6 +24,7 @@ downloaded papers before they enter manuscript prose as cited physics.
 |---|---|---|
 | `..` root inventory | broad workspace map | The parent directory contains tool/runtime state, project variants, conversation histories, earlier physics workspaces, source experiments, and TeX support files.  Relevant manuscript clusters are `../prTalks`, `../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`, `../physres1`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.  Caches, editor state, security reviews, package trees, generated logs, and private runtime configuration are excluded from manuscript claims. |
 | `../prTalks/` | project PDF source notes | Seven adjacent PDFs preserve the user-provided conceptual thread: electroweak-vacuum concerns, string/orbit connections, Regge scaling, scaling of \(m\) with \(J\), and execution prompts.  The indexed content lives in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`; the PDFs remain source objects. |
+| `../physres6/` | sibling short-note workspace | Contains a compact electroweak-couplings note, inherited source inventory, and calculation notes for the alpha route.  Valid imports are O17 provenance, the exact symbolic dependency on the \(v=\sqrt2 M_-(2)\) assignment, and the source-upgrade warning for \(\alpha(Q)\).  Its numerical checks and short-paper framing stay outside the current conceptual PRD phase. |
 | `../hans/signed_dbdevries/` | earlier DeVries workspace | Contains a draft, mechanism notes, literature notes, stress tests, and reports for signed-root DeVries variants.  Valid imports are mechanism obligations, critique patterns, source trails, and failure modes.  Numerical checks and fit tables remain outside the current conceptual phase. |
 | `../weak/criticism.md` | critique provenance | Direct scalar-seed identifications with \(M_W\), \(M_Z\), \(m_h\), or the Higgs order parameter require a gauge-Higgs mass matrix, pole self-energy map, scalar potential, or gauge-invariant scalar functional.  Precision and prediction language require scheme control and independent inputs. |
 | `../weak/PHASE_1.md` | normalization audit | The generalized block \(m_0^2\begin{pmatrix}0&a\sqrt{C_2}\\a\sqrt{C_2}&-bC_2\end{pmatrix}\) records the key normalization issue: \(a\) can be absorbed into the scale convention, while \(b\) remains an independent Wilson coefficient until a source operator fixes it. |
@@ -190,6 +191,27 @@ for the DeVries block.  The required result has the form
 Regge \(C_F/C_A\), Chan-Paton traces, and hypercharge embeddings are candidate
 inputs.  The manuscript must still derive the coefficient, branch status, and
 pole placement.
+
+### Alpha endpoint from sibling and parent notes
+
+The Loop 16 parent read found a concentrated alpha route in
+`../physres6/calculations/alpha_derivation_attempt.md` and in
+`../prTalks/DeVries String - Prompt Execution Request.pdf`.  The valid import is
+symbolic:
+\[
+  v^2=C_v\mu^2|x_-(J_v)|,\qquad
+  M_W^2=C_W\mu^2x_+(J_H),\qquad
+  \alpha_{\mathcal S}(Q_\alpha)
+  =
+  \frac{4C_Wx_+(J_H)}{C_v|x_-(J_v)|}
+  \frac{\sdV}{4\pi}
+  +\Delta_{\alpha,{\rm match}}.
+\]
+The source route must derive \(J_v\), \(C_v\), \(C_W\), the \(U(1)_{\rm em}\)
+generator normalization, \(Q_\alpha\), and \(\Delta_{\alpha,{\rm match}}\).
+The sibling note's numerical comparisons are calculation-phase material and
+require a primary source audit for the running electromagnetic coupling before
+manuscript promotion.
 
 ### SO(32) and flavor boundary
 

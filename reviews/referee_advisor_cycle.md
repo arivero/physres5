@@ -51,6 +51,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 13 | 5 | 5 | 5 | 5 | 5 | Added electroweak ray admissibility as a theorem target, separated dimensional and electroweak interpolation parameters, and sharpened the \(G_2\) inner-product obligation. |
 | 14 | 5 | 5 | 5 | 5 | 5 | Added targeted parent-workspace audit notes for Wrong Turn provenance, trace-space separation, Wigner--Eckart failure modes, SO(32) flavor/string boundary obligations, and top-sector cautions. |
 | 15 | 5 | 5 | 5 | 5 | 5 | Demoted Casimir framing to input status, added audit-derived admissibility filters, recorded Wigner--Eckart as a failed tested subroute, and tightened SO(32) flavor/string boundary obligations. |
+| 16 | 5 | 5 | 5 | 5 | 5 | Normalized O17 into an electromagnetic endpoint theorem target, added scalar/vector and \(U(1)_{\rm em}\) matching obligations, and recorded parent/prTalks source provenance for the alpha route. |
 
 ## Scoring rubric
 
@@ -80,3 +81,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the rank-and-ray theorem make the allowed electroweak deformation precise enough for source-route testing?
 - Can one interval or \(G_2\) source route derive the map from a dimensional or geometric parameter to the electroweak radial ray?
 - Do the audit-derived filters now make coefficient transfer, failed parent routes, and SO(32) completion obligations referee-checkable?
+- Does Target VII state enough scheme, threshold, and compactification data for
+  a referee to see exactly what the alpha endpoint route must prove?
+- Which primary source best controls running \(\alpha(Q)\) near the proposed
+  matching region, including hadronic vacuum polarization conventions?

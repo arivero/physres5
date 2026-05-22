@@ -537,7 +537,7 @@ carry either primary-source support or an explicit project-source label.
 ## O13. Casimir keyword load versus derivational role
 
 **Provenance.** Human operator note (2026-05-22), added out of band while the
-loop runs.  Treat as a directive, not auto-generated content.
+loop runs.  Treat as a human directive; agent provenance begins in loop records.
 
 **Question.** Does the manuscript over-weight the keyword "Casimir" in its
 framing relative to the work that the Casimir structure actually does?
@@ -638,3 +638,121 @@ from the flavor boundary to the electroweak DeVries operator.
 **Success criterion.** Flavor prose states the SO(32) role as boundary
 bookkeeping and completion arena, with generation topology, extra-state
 projection, and ordered W/Z assignment recorded as open derivations.
+
+## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
+
+**Provenance.** Human operator note (2026-05-22).  Treat as a human directive;
+agent provenance begins in the loop reports.
+
+**Question.** Does the construction predict the electromagnetic coupling
+\(\alpha\), and at what scale does the clean value live?
+
+**Structure (conditional target).** The positive branch fixes the weak angle as a
+pure construction number,
+\[
+\sin^2\theta_{dV}=1-\frac{x_+(3/4)}{x_+(2)}=0.2231\ldots
+\]
+Conjecture: the \(J=2\) negative branch fixes the radial vacuum normalization.
+With the identification
+\[
+v=\sqrt2\,M_-(J{=}2),
+\qquad
+M_-(J)=\mu\sqrt{|x_-(J)|},
+\qquad
+M_W=\mu\sqrt{x_+(3/4)},
+\]
+both \(M_W\) and \(v\) scale with \(\mu\), so the \(SU(2)\) coupling is
+\(\mu\)-independent and \(\alpha\) is a pure number:
+\[
+g^2=\frac{4M_W^2}{v^2}=\frac{2\,x_+(3/4)}{|x_-(2)|},
+\qquad
+\alpha_\star=\frac{g^2\sin^2\theta_{dV}}{4\pi}.
+\]
+The numerical clue that motivated O17 belongs to a later source-audited
+calculation phase.  The current manuscript may use only the symbolic
+dependency on the scalar theorem.
+
+**Scale placement.** The proposed scale placement is an open matching target.
+It must specify which electromagnetic coupling is meant: on-shell
+\(\alpha(0)\), \(\MSbar\) \(\hat\alpha(\mu)\), an effective
+\(\alpha(q^2)\), a Euclidean hadronic-vacuum-polarization coupling, or a
+threshold-matched low-energy EFT coupling.  The theorem must identify the
+scale \(Q_\alpha\), the threshold prescription, and the matching remainder
+\(\Delta_{\alpha,{\rm match}}\).
+
+**Geometric reading.** In the O10 picture, the negative branch may control a
+vacuum or compactification datum that sets the size or normalization of the
+\(D=9\) \(U(1)\) endpoint.  A source derivation must show that the compact
+\(U(1)_{\rm em}\) gauge kinetic normalization and charge normalization are
+fixed by the same source datum.
+
+**Open derivations.**
+1. Derive the identification \(v=\sqrt2\,M_-(J{=}2)\): why the \(J=2\) negative
+   branch equals \(v/\sqrt2\), the top-Yukawa scale \(m_t=y_t v/\sqrt2\) with
+   \(y_t\simeq1\).  This is the negative-branch analog of the O1 ordered
+   assignment.
+2. Derive the \(\sim1\) GeV scale placement of the clean \(\alpha\).
+3. Connect, if possible, to the geometric size of the \(D=9\) \(U(1)\).
+
+**Honest status.** O17 is a conditional theorem target downstream of O1, O3,
+O8, and O10.  The scalar assignment \(v=\sqrt2\,M_-(2)\), the common
+normalization \(\mu\), the \(U(1)_{\rm em}\) endpoint, and the matching
+scale all require derivations.
+
+**Failure mode.** If the scalar theorem leaves \(v=\sqrt2\,M_-(2)\) unproved,
+the source route lacks a construction value for \(g\).
+If the compact endpoint lacks a fixed \(U(1)_{\rm em}\) charge normalization
+or matching scale, \(\alpha\) remains a standard low-energy input.  Records:
+O1 (assignment), O3 (negative branch/vacuum scale), O8 (scale placement),
+O10 (\(D=9\) \(U(1)\) endpoint), Appendix D Targets VI--VII.
+
+**Loop 16 normalization.** The manuscript now records this issue as Appendix D
+Target VII and Appendix E's electromagnetic endpoint-normalization bridge.  The
+minimal symbolic target is
+\[
+g_{\rm sec}^2=
+\frac{4C_Wx_+(J_H)}{C_v|x_-(J_v)|},
+\qquad
+\alpha_{\mathcal S}(Q_\alpha)=
+\frac{g_{\rm sec}^2\sin^2\theta_{dV}}{4\pi}
++\Delta_{\alpha,{\rm match}}(Q_\alpha).
+\]
+The next source task is a primary audit of running electromagnetic coupling
+definitions and compactification gauge-coupling normalization.
+
+## O18. The \(s=3/2\) positive state and a Regge completion
+
+**Provenance.** Human operator note (2026-05-22).  Awareness note: keep this on
+the books.  Regge is the priority mechanism.
+
+**Awareness.** The exact positive branch predicts, parameter-free (\(\mu\) fixed
+by \(M_Z\), \(\mu=106.578\) GeV), a state in every slot beyond \(W\) and \(Z\):
+\[
+M_+(s)=\mu\sqrt{x_+\!\big(s(s+1)\big)},\qquad
+M_+(\tfrac32)=\mu\sqrt{x_+(15/4)}=96.54\ \mathrm{GeV}.
+\]
+This sits near the reported \(\sim95.4\) GeV diphoton excess (CMS \(\sim2.9\sigma\),
+ATLAS \(\sim1.7\sigma\); Biekotter--Heinemeyer--Weiglein).  It is a forward,
+parameter-free target from the same construction that gives \(\sin^2\theta\).
+
+**Identity is open.**  \(W\) and \(Z\) exhaust the \(SU(2)\times U(1)\) vector
+slots, so the identity of the \(s=3/2\) state belongs to the
+branch-to-particle assignment problem (O1).  Operator hypothesis to test: the
+\(s=3/2\) positive state is a chiral fermion of exotic charge \(4/3\)
+(sBootstrap diquark, \(2/3+2/3\)), with the secular label \(s\) read as a
+representation index distinct from physical spin.
+
+**Regge framing (priority).**  Promote each \((j,\pm)\) root to a Regge intercept,
+\[
+M^2_{n,j,\pm}=\mu^2 x_{j,\pm}+\frac n{\alpha'},\qquad J=n+j,
+\]
+so each sector is a straight, common-slope trajectory with the DeVries values at
+\(n=0\).  This is the leading candidate dynamical origin (ties to O4) and the
+natural home for higher slots such as \(s=3/2\).
+
+**Falsifiability / caution.**  A light (\(\sim96\) GeV) charged or coloured
+chiral state faces strong collider limits; the note must state colour
+assignment, production, and survival.  The \(96.54\) GeV number is firm
+(parameter-free positive branch); the charge-\(4/3\) identity is conjecture; the
+Regge completion is the priority mechanism.  Records: O1 (assignment), O4
+(dynamical origin), O11 (Regge/prTalks).  Companion lean note: `../physres6`.

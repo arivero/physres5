@@ -128,6 +128,34 @@ The manuscript should treat this as a reconstruction target.  A primary-source
 version must define the compact geometry, its gauge symmetry, the chiral
 fermion account, and the vector-scalar Laplacian that produces \(D_T\).
 
+### Electromagnetic endpoint coupling
+
+`DeVries String - Prompt Execution Request.pdf` adds a coupling target to the
+\(D=9\) endpoint.  The source-theory version is a compact or boundary
+normalization problem:
+\[
+  \frac{1}{g_{\rm em}^2}
+  \sim
+  \frac{1}{g_D^2}
+  \int_{\mathcal B_5(t_{\rm dim})}
+  d^5y\,\sqrt{g_5}\,
+  |\xi_{\rm em}(y;t_{\rm dim})|^2 .
+\]
+The DeVries branch version is conditional on the scalar theorem:
+\[
+  v^2=C_v\mu^2|x_-(J_v)|,\qquad
+  M_W^2=C_W\mu^2x_+(J_H),
+\]
+so that a construction coupling would be
+\[
+  g_{\rm sec}^2=
+  \frac{4C_Wx_+(J_H)}{C_v|x_-(J_v)|}.
+\]
+The manuscript should use this as O17 theorem-target material.  The source
+route must derive the \(U(1)_{\rm em}\) charge normalization, the compact
+wavefunction normalization, the scalar/vector constants, and the matching pair
+\((Q_\alpha,\Delta_{\alpha,{\rm match}})\).
+
 ### Top and negative branch
 
 The adjacent notes repeatedly connect the negative \(T=1\) branch with the

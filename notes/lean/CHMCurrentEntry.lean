@@ -154,6 +154,50 @@ axiom loop45_chm_admissibility_lemma_required :
   ∃ C : Loop45CHMAdmissibilityLemma,
     loop45CHMAdmissibilityLemmaReady C
 
+structure Loop46CHMProofRejectionProtocol where
+  sourceEquationAudit : Prop
+  neutralTraceSpaceDefined : Prop
+  chmGaugeProductDefined : Prop
+  photonProjectionDefined : Prop
+  gammaPerpProjectionDefined : Prop
+  photonReferenceKernelDefined : Prop
+  sharedLambdaCHMDefined : Prop
+  currentSlopePositive : Prop
+  canonicalSigmaAA2EqualsTwo : Prop
+  rejectsDifferentConstantEntry : Prop
+  rejectsNonPositiveSlope : Prop
+  rejectsNonPositiveProjectedNorm : Prop
+  rejectsPhotonOverlap : Prop
+
+def loop46CHMProofRejectionProtocolReady
+  (C : Loop46CHMProofRejectionProtocol) : Prop :=
+  C.sourceEquationAudit ∧
+  C.neutralTraceSpaceDefined ∧
+  C.chmGaugeProductDefined ∧
+  C.photonProjectionDefined ∧
+  C.gammaPerpProjectionDefined ∧
+  C.photonReferenceKernelDefined ∧
+  C.sharedLambdaCHMDefined ∧
+  C.currentSlopePositive ∧
+  C.canonicalSigmaAA2EqualsTwo ∧
+  C.rejectsDifferentConstantEntry ∧
+  C.rejectsNonPositiveSlope ∧
+  C.rejectsNonPositiveProjectedNorm ∧
+  C.rejectsPhotonOverlap
+
+/- Obligation 1e, updated in Loop 46:
+   Turn the CHM current-entry target into an acceptance/rejection protocol:
+     {P_gamma, P_a,2^gamma_perp, K_ref_gamma,2, Lambda_CHM,
+      Z_cur,2, <.,.>_CHM}
+       -> Sigmahat_AA,2^CHM,can.
+   Acceptance is Sigmahat_AA,2^CHM,can = 2 with positive projected norms,
+   photon orthogonality, and Z_cur,2 > 0.  Rejection cases are a different
+   constant entry, nonpositive current slope, nonpositive projected norm, or
+   photon overlap. -/
+axiom loop46_chm_proof_rejection_protocol_required :
+  ∃ C : Loop46CHMProofRejectionProtocol,
+    loop46CHMProofRejectionProtocolReady C
+
 structure FactorizationFirstSpine where
   hodgeOffDiagonal : Prop
   chmCurrentDiagonal : Prop

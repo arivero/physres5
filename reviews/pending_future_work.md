@@ -2,16 +2,21 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 105 REVTeX PRD preprint pages after the Loop 44
+- Current compiled draft: 105 REVTeX PRD preprint pages after the Loop 45
   compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
-- Loop 45 focus: use the shared CHM admissibility lemma to derive or reject the
-  canonical neutral-current target
+- Loop 46 focus: turn the shared CHM admissibility lemma into a
+  source-equation acceptance/rejection protocol for the canonical
+  neutral-current target
   \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\).  The required source data are
   \(P_\gamma\), \(P_{a,J}^{\gamma^\perp}\), \(K_{\gamma,J}^{\rm ref}\),
   \(\Lambda_{\rm CHM}\), \(Z_J^{\rm cur}\), endpoint signs, projector order or
   commutation, photon-reference subtraction, and the pole map.
+- Next route-balancing pass: add the \(G_2\) local ADE-pairing target with an
+  \(A_1\subset A_2\) enhancement, singular-support pairing, current-entry
+  target, flow-overlap target, compact-completion ledger, anomaly/global-form
+  checks, and pole-map obligation.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.

@@ -262,6 +262,32 @@ The canonical target is
 followed by \(\Delta_W^{\rm CHM}=0\), \(\Delta_Y^{\rm CHM}=0\), the same-basis
 Hodge product, and the pole remainder \(\Delta_{\rm O1/O10}\).
 
+**Loop 46 CHM source-equation protocol refinement.** O1 now requires the
+ordered source-equation extraction
+\[
+\left\{
+P_\gamma,\,
+P_{a,2}^{\gamma^\perp},\,
+K_{\gamma,2}^{\rm ref},\,
+\Lambda_{\rm CHM},\,
+Z_2^{\rm cur},\,
+\langle\cdot,\cdot\rangle_{\rm CHM}
+\right\}
+\longrightarrow
+\widehat\Sigma_{aa,2}^{\rm CHM,can}.
+\]
+Accepted closure requires \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\) with
+positive projected norms, preserved photon orthogonality, and
+\(Z_2^{\rm cur}>0\).  The rejection ledger is
+\[
+\widehat\Sigma_{aa,2}^{\rm CHM,can}\ne2,\qquad
+Z_2^{\rm cur}\le0,\qquad
+\langle a_2^{\gamma^\perp},a_2^{\gamma^\perp}\rangle_{\rm CHM}\le0,\qquad
+\langle a_2^{\gamma^\perp},a_\gamma\rangle_{\rm CHM}\ne0.
+\]
+Those outputs set \(\Delta_Y^{\rm CHM}\), the admissible source scale, or the
+projector normalization for the interval route.
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
@@ -667,6 +693,17 @@ The pass/fail diagonal test is
 The same reduced basis must then carry the Hodge/SUSY-QM off-diagonal product,
 \(\Delta_W^{\rm CHM}\), \(\Delta_Y^{\rm CHM}\), and the pole remainder
 \(\Delta_{\rm O1/O10}\).
+
+**Loop 46 CHM source-equation protocol refinement.** The entry-level test has
+an explicit extraction and rejection sequence.  CHM equations define
+\(\mathcal N_T^\partial\), \(\langle\cdot,\cdot\rangle_{\rm CHM}\),
+\(K^{\rm DtN}_{T,J}\), and \(K^{\rm brane}_{T,J}\).  Photon subtraction fixes
+\((P_\gamma,K_{\gamma,J}^{\rm ref})\).  The canonical current entry is then
+read after \(P_{a,2}^{\gamma^\perp}\), \(\Lambda_{\rm CHM}\), and
+\(Z_2^{\rm cur}\) are fixed.  The accepted case is
+\(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\); the four rejection outputs are the
+noncanonical constant entry, nonpositive current slope, nonpositive projected
+\(Z\)-trace norm, and photon-orthogonality failure.
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary

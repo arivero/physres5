@@ -86,6 +86,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 43 | 4 | 4 | 4 | 4 | 5 | Added source-normalized photon and \(Z\) trace definitions, charged Goldstone projector remainder, proof-obligation wording, Appendix D remainder cleanup, and random Lean/source recall record. |
 | 44 | 4 | 4 | 4 | 4 | 5 | Added CHM projector-package admissibility, positive projected-norm conditions, \(\Delta_W^{\rm CHM}\) and \(\Delta_Y^{\rm CHM}\), route test ordering, and random Lean/source recall record. |
 | 45 | 4.5 | 4.5 | 4 | 4.5 | 5 | Added the shared CHM admissibility lemma, \(Z_J^{\rm cur}\), the canonical current-entry target \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), and aligned Target 0/III/X plus O1/O4 ledgers. |
+| 46 | 4.5 | 4.75 | 4.25 | 4.5 | 5 | Added the CHM source-equation acceptance/rejection protocol for \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), mirrored it in Target III and O1/O4 ledgers, and queued the \(G_2\) ADE-pairing target. |
 
 ## Scoring rubric
 

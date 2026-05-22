@@ -114,37 +114,46 @@ The DeVries target is the boundary limit
 \end{equation}
 This is the interval version of the endpoint target in Sec.~\ref{sec:endpoint-higgsing}.
 
-The CHM source gives concrete boundary data that can feed this target.  In a
-scalar toy problem, a boundary kinetic term produces an eigenvalue-dependent
-condition and a modified product of the schematic form
+The rendered CHM convention audit gives concrete boundary data that can feed
+this target.  In the scalar example, a boundary kinetic term at \(y=0\) has
+the source normalization
 \begin{equation}
-  \partial_y f_\lambda\big|_{y_i}
+  S_{\rm brane,kin}^{(0)}
   =
-  -\frac{\lambda}{M_i}f_\lambda(y_i),
+  \int d^4x\,\frac{1}{2M_0}\,
+  \partial_\mu\phi\,\partial^\mu\phi\big|_{y=0},
   \qquad
+  \partial_y f_n(0)
+  =
+  -\frac{m_n^2}{M_0}f_n(0).
+  \label{eq:chm-boundary-kinetic-source-normalization}
+\end{equation}
+The associated product is
+\begin{equation}
   (f,g)_{\rm CHM}
   =
-  \int_0^L f(y)g(y)\,dy
+  \int_0^{\pi R} f(y)g(y)\,dy
   +
   \sum_i \frac{1}{M_i}f(y_i)g(y_i).
   \label{eq:chm-boundary-kinetic-data}
 \end{equation}
 For gauge fields, boundary scalar vevs give vector boundary data of the
-schematic form
+source form
 \begin{equation}
   \partial_y A_\mu\big|_{y_i}\mp v_i^2A_\mu(y_i)=0,
   \qquad
   \left(\frac{m^2}{\xi_i}-v_i^2\right)\pi_i+v_iA_5\big|_{y_i}=0,
   \label{eq:chm-boundary-vector-scalar-data}
 \end{equation}
-with endpoint-orientation signs fixed by the interval convention.  These
-source facts define an allowable class of boundary kernels.  The scalar
-equation also makes the gauge-fixing burden explicit: the projected DeVries
-kernel must state the treatment of \(\xi_i\), separate physical scalar data
-from eaten Goldstone data, preserve the photon zero mode, and map the interval
-eigenvalue into the four-dimensional transverse pole condition.  The equality
-to Eq.~\eqref{eq:interval-self-energy-target} is the open DeVries entry
-theorem.
+with endpoint-orientation signs fixed by the variational convention.  The
+CHM higgsless/custodial construction also supplies the photon zero-mode and
+custodial boundary bookkeeping used by the later electroweak boundary proof.
+These source facts define the allowed boundary-kernel class.  The equality to
+Eq.~\eqref{eq:interval-self-energy-target} is the open DeVries entry theorem.
+The scalar equation makes the gauge-fixing burden explicit: the projected
+DeVries kernel must state the treatment of \(\xi_i\), separate physical
+scalar data from eaten Goldstone data, preserve the photon zero mode, and map
+the interval eigenvalue into the four-dimensional transverse pole condition.
 
 A Hodge factorization subroute gives a sharper test for the off-diagonal entry.
 Witten's supersymmetric quantum mechanics on forms uses the exterior derivative
@@ -237,17 +246,32 @@ The current-channel entry can be isolated after the physical boundary kernel
 has been converted to the dimensionless DeVries normalization.  Let \(P_{a,J}\)
 select a transverse boundary gauge trace
 \(a_J=P_{a,J}A_\mu^{T,\partial}\), normalized by the CHM product,
-\(\langle a_J,a_J\rangle_{\rm CHM}=1\).  Let \(\Lambda_J\) denote the source
-scale that makes the spectral variable dimensionless:
+\(\langle a_J,a_J\rangle_{\rm CHM}=1\).  Let \(P_\gamma\) select the photon
+reference trace \(a_\gamma\).  The transverse kernel is
+\[
+  K_{T,J}=K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}.
+\]
+A photon-reference subtraction fixes the zero by
 \begin{equation}
-  \widehat\lambda=\frac{\lambda}{\Lambda_J^2}.
+  P_\gamma^\dagger
+  \left(K_{T,J}(0)-K^{\rm ref}_{T,J}\right)
+  P_\gamma
+  =
+  0.
+  \label{eq:chm-photon-reference-subtraction}
+\end{equation}
+Let \(\Lambda_{\rm CHM}\) denote the shared source scale that makes the
+spectral variable dimensionless.  Equivalently, after a \(J\)-sample has been
+chosen, this is the route's \(\Lambda_J\):
+\begin{equation}
+  \widehat\lambda=\frac{\lambda}{\Lambda_{\rm CHM}^2}.
   \label{eq:chm-current-hat-lambda}
 \end{equation}
 With endpoint-normal signs and dimensionful brane terms fixed, define
 \begin{equation}
   \widehat K^{\rm cur}_J(\widehat\lambda)
   =
-  \frac{1}{\Lambda_J^2}
+  \frac{1}{\Lambda_{\rm CHM}^2}
   \left\langle a_J,
   \left(
   K^{\rm DtN}_{T,J}(\lambda)
@@ -256,11 +280,23 @@ With endpoint-normal signs and dimensionful brane terms fixed, define
   \right)a_J
   \right\rangle_{\rm CHM},
   \qquad
-  \lambda=\Lambda_J^2\widehat\lambda,
+  \lambda=\Lambda_{\rm CHM}^2\widehat\lambda,
   \label{eq:chm-current-kernel}
 \end{equation}
 where \(K^{\rm ref}_{T,J}\) fixes the reference zero of the current kernel,
-for example the unbroken photon channel or a stated boundary subtraction.
+through the unbroken photon channel or a stated boundary subtraction.  The
+constant entry in this normalization is equivalently
+\begin{equation}
+  \widehat\Sigma_{aa,J}^{\rm CHM}
+  =
+  \frac{1}{\Lambda_{\rm CHM}^2}
+  \left[
+  \left\langle a_J,K_{T,J}(0)a_J\right\rangle_{\rm CHM}
+  -
+  \left\langle a_\gamma,K_{T,J}(0)a_\gamma\right\rangle_{\rm CHM}
+  \right].
+  \label{eq:chm-current-entry-photon-subtracted}
+\end{equation}
 The source-supported CHM statement is the existence of this transverse
 boundary kernel from the action, gauge fixing, boundary variation, and
 modified product.  The DeVries-specific theorem target is
@@ -274,9 +310,9 @@ modified product.  The DeVries-specific theorem target is
   \label{eq:chm-current-entry-normalized}
 \end{equation}
 The data still to be derived are \(P_{a,J}\), \(K^{\rm ref}_{T,J}\), the
-source scale \(\Lambda_J\), endpoint-normal conventions, the photon projection,
-the ordered W/Z boundary map, and the map
-\(\widehat\lambda\mapsto m_n^2/\Lambda_J^2\mapsto\Pi_T^{(4)}(s)\).
+source scale \(\Lambda_{\rm CHM}\), endpoint-normal conventions, the photon
+projection, the ordered W/Z boundary map, and the map
+\(\widehat\lambda\mapsto m_n^2/\Lambda_{\rm CHM}^2\mapsto\Pi_T^{(4)}(s)\).
 
 \subsection{Dictionary for the interval entries}
 \label{sec:interval-entry-dictionary}
@@ -336,12 +372,13 @@ coupled charged/neutral construction:
   \end{array}
   \right]
   \quad\longrightarrow\quad
-  \frac{M_W^2}{M_Z^2}
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
   =
-  \frac{x_+(J_H)}{x_+(J_{\rm adj})}.
+  \frac{x_+(J_H)}{x_+(J_{\rm adj})}
+  +\Delta^{(\mathrm{int})}_{\rm match}.
   \label{eq:interval-ew-target}
 \end{equation}
-This requirement places the W and Z readings inside one gauge-Higgs or boundary system.  The photon must remain the unbroken mode, and the massive neutral pole must carry the adjoint/current sample.
+This requirement places the W and Z readings inside one gauge-Higgs or boundary system.  The photon must remain the unbroken mode, and the massive neutral pole must carry the adjoint/current sample.  The interval theorem reaches an exact pole statement after the matching remainder \(\Delta^{(\mathrm{int})}_{\rm match}\) has been derived.
 
 The corresponding proof obligation is
 \begin{equation}

@@ -389,11 +389,27 @@ boundary scalar vev terms, vector Robin data, scalar \(A_5/\pi_i\) equations,
 custodial constraints, and photon zero-mode accounting.  The proof obligation
 is the projection to \(\mathcal H_J\), the product normalization, the ordered
 W/Z boundary map, and the source-to-pole matching chain.
+
+\paragraph*{CHM current-entry convention subtarget.}
 The first entry-level subtarget is the normalized transverse-current
-extraction.  Let \(\Lambda_J\) be the source scale that makes the spectral
+extraction.  The rendered CHM convention audit fixes the source product,
+endpoint sign ledger, vector Robin equations, \(A_5/\pi_i\) scalar equations,
+and photon/custodial bookkeeping.  Let \(P_\gamma\) select the photon reference
+trace.  The reference subtraction obeys
+\begin{equation}
+  P_\gamma^\dagger
+  \left(
+  K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}-K^{\rm ref}_{T,J}
+  \right)
+  P_\gamma
+  =
+  0.
+  \label{eq:target-chm-photon-reference}
+\end{equation}
+Let \(\Lambda_{\rm CHM}\) be the shared source scale that makes the spectral
 variable dimensionless,
 \begin{equation}
-  \widehat\lambda=\frac{\lambda}{\Lambda_J^2}.
+  \widehat\lambda=\frac{\lambda}{\Lambda_{\rm CHM}^2}.
   \label{eq:target-chm-hat-lambda}
 \end{equation}
 The current-channel kernel is
@@ -401,7 +417,7 @@ The current-channel kernel is
 \begin{aligned}
   \widehat K^{\rm cur}_J(\widehat\lambda)
   &=
-  \frac{1}{\Lambda_J^2}
+  \frac{1}{\Lambda_{\rm CHM}^2}
   \left\langle a_J,
   \left(
   K^{\rm DtN}_{T,J}(\lambda)
@@ -410,7 +426,7 @@ The current-channel kernel is
   \right)a_J
   \right\rangle_{\rm CHM},
   \\
-  \lambda&=\Lambda_J^2\widehat\lambda,
+  \lambda&=\Lambda_{\rm CHM}^2\widehat\lambda,
   \qquad
   \langle a_J,a_J\rangle_{\rm CHM}=1 .
 \end{aligned}
@@ -426,13 +442,17 @@ The conclusion sought from this extraction is
   \widehat\Sigma_{aa,J}^{\rm CHM}=J.
   \label{eq:target-chm-current-sigma}
 \end{equation}
-Here \(K^{\rm ref}_{T,J}\), \(\Lambda_J\), the endpoint-normal convention, the
-wavefunction normalization of \(a_J\), and the dimensionless
-\(J\)-normalization are part of the theorem data.  The equality to \(J\) is
-meaningful after these data are fixed from the same CHM source action and
-boundary product.  Target~\ref{app:target-susyqm-origin} supplies the
-complementary square-root entry test; this target supplies the hatted current
-diagonal test.
+Acceptance requires the rendered-PDF convention audit to fix endpoint signs,
+dimensions, product normalization, photon/reference subtraction, and the
+shared source scale before \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\) is used.
+Here \(K^{\rm ref}_{T,J}\), \(P_\gamma\), \(P_{a,J}\),
+\(\Lambda_{\rm CHM}\), the endpoint-normal convention, the wavefunction
+normalization of \(a_J\), and the dimensionless \(J\)-normalization are part of
+the theorem data.  If any one of \(K^{\rm ref}_{T,J}\), \(P_\gamma\),
+\(P_{a,J}\), or \(\Lambda_{\rm CHM}\) lacks a source definition, the route
+falls back to an admissible CHM boundary-kernel address with an open DeVries
+entry.  Target~\ref{app:target-susyqm-origin} supplies the complementary
+square-root entry test; this target supplies the hatted current diagonal test.
 
 \paragraph*{Conclusion.}
 There is a controlled field basis, inner product, projection, and

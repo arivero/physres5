@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 88 REVTeX PRD preprint pages after the Loop 28 compile.
+- Current compiled draft: 89 REVTeX PRD preprint pages after the Loop 30 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -109,14 +109,22 @@
   \widehat K^{\rm cur}_J=\Lambda_J^{-2}K^{\rm cur}_J,\qquad
   \widehat\Sigma_{aa,J}^{\rm CHM}=J.
   \]
-  The next source audit must pin \(\Lambda_J\), endpoint-normal signs,
-  dimensions of boundary kinetic terms, scalar-product normalization, photon
-  projection, and the reference subtraction from the rendered CHM PDF.
+  Loop 30's rendered CHM audit pins the boundary kinetic product,
+  endpoint-sign ledger, vector/scalar boundary equations, and
+  photon/custodial bookkeeping.  The next proof must derive \(P_{a,J}\),
+  \(P_\gamma\), \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), ordered W/Z
+  boundary data, and the source-to-pole map.
 - Use Loop 28's proof spine: Hodge/SUSY-QM factorization tests
   \(\Sigma_{ha,J}\Sigma_{ah,J}=J\), the hatted CHM current kernel tests
   \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\), and both tests must share one reduced
   basis, one source scale, and one pole map before O3 or O17 consequences are
   promoted.
+- Use Loop 30's parent-directory read as a refreshed source queue:
+  `context/source_fragments/parent_prtalks/` holds extraction aids for the
+  seven `../prTalks` PDFs; `context/parent_directory_loop30_read.md` and
+  `notes/lean/ParentDirectoryLoop30.lean` record the sibling-workspace source
+  queues for O1, O3, O4, O8, O10, O17, and O20.  The PDFs and primary local
+  literature remain the source objects for manuscript-facing claims.
 
 ## Completed in latest pass
 
@@ -193,6 +201,10 @@
 - Added Loop 29 normalization: closed O2a, O5, O6, O7, O9, O11, O12, and O16
   as structural issues, added the closure packet to `CLOSED_ISSUES.md`,
   normalized Sec. IX's fixed-filter prose, and updated source/review ledgers.
+- Added Loop 30 normalization: rendered CHM convention audit, photon-reference
+  subtraction, shared \(\Lambda_{\rm CHM}\) current-entry target, parent
+  directory source-fragment extraction, and Lean/source ledgers for the new
+  source queues.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.

@@ -65,6 +65,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 27 | 5 | 5 | 5 | 5 | 5 | Normalized the CHM current-entry extraction, recorded the Loop 27 parent-directory read, added the BF-admissible Berger-\(S^3\)/CHM target, and updated Lean/source ledgers. |
 | 28 | 5 | 5 | 5 | 5 | 5 | Added hatted CHM current-entry normalization, recorded the source-scale convention audit, and linked the Hodge/SUSY-QM off-diagonal test to the CHM diagonal-current test as the active proof spine. |
 | 29 | 5 | 5 | 5 | 5 | 5 | Closed O2a, O5, O6, O7, O9, O11, O12, and O16 as structural normalization issues, preserved residual derivational obligations, and normalized Sec. IX fixed-filter prose. |
+| 30 | 5 | 5 | 5 | 5 | 5 | Rendered CHM convention audit, photon-reference subtraction, hatted current-entry theorem target, parent-directory source extraction, and updated O4/source/Lean ledgers. |
 
 ## Scoring rubric
 

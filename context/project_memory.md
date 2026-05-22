@@ -96,6 +96,15 @@
   O8, O10, and O17--O20.  The latest direct `..` read is recorded in
   `context/parent_directory_loop29_read.md`; active parent imports remain
   theorem targets, critique pressure, provenance, and source-upgrade queues.
+- Loop 30 renders the CHM source convention audit for the interval current
+  entry.  CHM source facts now include the boundary kinetic product,
+  endpoint-sign ledger, vector/scalar boundary equations, and photon/custodial
+  bookkeeping.  The active hatted current target uses photon-reference
+  subtraction and a shared \(\Lambda_{\rm CHM}\); \(P_{a,J}\), \(P_\gamma\),
+  \(K^{\rm ref}_{T,J}\), ordered W/Z boundary data, and the pole map remain
+  open.  The direct `..` read is recorded in
+  `context/parent_directory_loop30_read.md`; `../prTalks` extraction aids live
+  in `context/source_fragments/parent_prtalks/`.
 
 ## Resume state after context renewal
 
@@ -105,7 +114,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 88 pages after the Loop 28 `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 89 pages after the Loop 30 `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.

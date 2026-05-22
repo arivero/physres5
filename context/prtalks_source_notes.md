@@ -9,6 +9,10 @@ physics.
 
 - The original PDFs remain the source objects.  Text extraction was used only
   as an access aid.
+- Loop 30 extraction aids are stored in
+  `context/source_fragments/parent_prtalks/`.  They support source recall and
+  targeted audits; the PDFs remain the objects to inspect for formulas,
+  diagrams, plots, and images.
 - `pdftotext` loses visual information in plots, equation layout, radicals,
   and embedded images.  Mathematical formulas below are agent-read
   transcriptions from the PDF view when layout matters.

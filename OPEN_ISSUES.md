@@ -281,6 +281,33 @@ inspect the rendered CHM PDF for endpoint signs, dimensions of boundary
 kinetic terms, scalar-product normalization, and the variables entering
 \(K^{\rm brane}_{T,J}\).
 
+**Loop 30 rendered CHM convention refinement.** The rendered CHM audit turns
+the hatted current entry into a pass/fail source theorem.  Source facts now
+include the boundary kinetic term and \(M_i^{-1}\) endpoint product, the
+eigenvalue-dependent scalar boundary condition, vector Robin data, the
+\(A_5/\pi_i\) scalar boundary equations, and photon/custodial boundary
+bookkeeping.  The next derivation must determine
+\[
+K^{\rm ref}_{T,J},\qquad P_\gamma,\qquad P_{a,J},\qquad
+\Lambda_{\rm CHM}
+\]
+from the same source data before using
+\[
+\widehat\Sigma_{aa,J}^{\rm CHM}
+=
+\Lambda_{\rm CHM}^{-2}
+\left[
+\langle a_J,K_{T,J}(0)a_J\rangle_{\rm CHM}
+-
+\langle a_\gamma,K_{T,J}(0)a_\gamma\rangle_{\rm CHM}
+\right]
+=J .
+\]
+This keeps O4 tied to O1 for the ordered W/Z boundary map, O8 for
+source-to-pole matching, O10 for the single source variable and
+\(\Lambda_J(u)\), and O20 for the common reduced basis with the Hodge
+off-diagonal test.  Issue status remains open.
+
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
 sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact

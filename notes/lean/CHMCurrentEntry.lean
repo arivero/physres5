@@ -32,9 +32,12 @@ structure CurrentExtraction where
   lambdaToPoleMap : PoleMap
   normalizedCurrent : Prop
   hattedSpectralVariable : Prop
+  photonReferenceSubtraction : Prop
 
 def currentExtractionAdmissible (C : CurrentExtraction) : Prop :=
-  C.normalizedCurrent ∧ C.hattedSpectralVariable
+  C.normalizedCurrent ∧
+  C.hattedSpectralVariable ∧
+  C.photonReferenceSubtraction
 
 def currentExtractionGivesSigmaAA (C : CurrentExtraction) : Prop :=
   True
@@ -51,6 +54,36 @@ def currentExtractionGivesSigmaAA (C : CurrentExtraction) : Prop :=
 axiom loop27_chm_current_entry_required :
   ∃ C : CurrentExtraction,
     currentExtractionAdmissible C ∧ currentExtractionGivesSigmaAA C
+
+structure PhotonReferenceSubtraction where
+  photonProjection : Projection
+  referenceKernel : Kernel
+  transverseKernel : Kernel
+  photonZeroFixed : Prop
+  sharedSourceScale : Prop
+
+def photonReferenceSubtractionReady (P : PhotonReferenceSubtraction) : Prop :=
+  P.photonZeroFixed ∧ P.sharedSourceScale
+
+/- Obligation 1c, updated in Loop 30:
+   The current entry must be photon-reference subtracted before it is compared
+   with J:
+     P_gamma^dagger (K_T - K_ref) P_gamma = 0
+   and
+     Sigmahat_AA,J =
+       Lambda_CHM^{-2}[
+         <a_J, K_T(0) a_J>_CHM
+         - <a_gamma, K_T(0) a_gamma>_CHM].
+   The shared scale Lambda_CHM, photon projection P_gamma, current projection
+   P_a,J, and reference kernel K_ref are source data. -/
+axiom loop30_photon_reference_required :
+  ∃ C : CurrentExtraction,
+    C.photonReferenceSubtraction ∧
+    C.normalizedCurrent ∧
+    C.hattedSpectralVariable
+
+axiom loop30_photon_reference_subtraction_data_required :
+  ∃ P : PhotonReferenceSubtraction, photonReferenceSubtractionReady P
 
 structure FactorizationFirstSpine where
   hodgeOffDiagonal : Prop

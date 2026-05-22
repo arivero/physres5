@@ -25,10 +25,17 @@ for electroweak-ray, dimensional-interpolation, Regge, and negative-branch
 provenance; `../weak` and `../phys4` for superconnection, Wigner--Eckart
 obstruction, Higgs-interpolation, brane, and KK source upgrades.
 
-Loop 29 records the latest direct parent-directory read in
+Loop 29 records a direct parent-directory read in
 `context/parent_directory_loop29_read.md`.  It promotes no new manuscript claim;
 it confirms the same project-source queues and keeps parent material in
 guardrail, theorem-target, provenance, and source-upgrade roles.
+
+Loop 30 records the current direct parent-directory read in
+`context/parent_directory_loop30_read.md` and
+`notes/lean/ParentDirectoryLoop30.lean`.  It also materializes the seven
+`../prTalks` PDFs as extraction aids in
+`context/source_fragments/parent_prtalks/`.  The PDFs remain the source
+objects; the extracted markdown supports recall and targeted source promotion.
 
 `../physres6/` is a sibling short-note workspace for the alpha route.  Its
 valid use here is O17 provenance and symbolic theorem-target structure.  Its
@@ -56,17 +63,25 @@ PRD phase.
 - `09_Csaki_Hubisz_Meade_EWSB_from_Extra_Dimensions_hep-ph-0510275.pdf` — gauge theories on intervals, boundary conditions, Higgsless electroweak breaking, fermions in extra dimensions, precision observables.
   - Loop 19 use: pages 1--10 support variational boundary conditions,
     boundary mass terms, boundary kinetic terms, eigenvalue-dependent boundary
-    equations, and the modified scalar product.  Loop 28 source audit:
-    rendered-PDF inspection still has to pin endpoint signs, dimensions, and
-    normalization conventions before the hatted CHM current target is used as
-    an equation-level derivation.
+    equations, and the modified scalar product.  Loop 30 rendered-PDF audit of
+    Eqs.~(2.11)--(2.23) confirms the \(M_i^{-1}\) endpoint product,
+    eigenvalue-dependent brane kinetic boundary condition, and source
+    normalization used by the hatted CHM current target.
   - Loop 18 use: pages 11--20 support boundary scalar vevs modifying vector
     boundary conditions, Dirichlet limits, gauge fixing, vector Robin data, and
-    possible scalar remnants from \(A_5\) and boundary Goldstone data.
+    possible scalar remnants from \(A_5\) and boundary Goldstone data.  Loop
+    30 rendered-PDF audit of Eqs.~(2.30)--(2.44) fixes the endpoint sign ledger
+    for vector and scalar boundary equations in the convention used by Sec.
+    VI.C.
   - Loop 19 use: pages 21--30 support electroweak interval boundary spectra,
     photon zero-mode accounting, custodial boundary assignments, and brane
-    kinetic-term control of heavy modes.  Loop 28 use: these pages are the
-    source anchor for the photon/custodial part of the CHM convention audit.
+    kinetic-term control of heavy modes.  Loop 30 rendered-PDF audit of
+    Eqs.~(3.32)--(3.43) confirms photon and custodial boundary bookkeeping for
+    the CHM convention audit.
+  - Remaining CHM derivation data: determine \(P_{a,J}\), \(P_\gamma\), the
+    reference subtraction \(K^{\rm ref}_{T,J}\), the shared
+    \(\Lambda_{\rm CHM}\), and the source-to-pole map before the equality
+    \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\) is used as a DeVries entry.
 - `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` — six-dimensional string-string duality source; type IIA on K3 and heterotic on \(T^4\).
 - `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` — six-dimensional string-string duality and charged solitonic strings.
 - `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` — heterotic small instantons and nonperturbative six-dimensional string dynamics.

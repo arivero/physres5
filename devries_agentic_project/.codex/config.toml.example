@@ -1,0 +1,15 @@
+# Copy to .codex/config.toml only after you trust this repository.
+# The exact model names exposed by your Codex client may differ by plan and date.
+# Set the newest Codex model in the Codex UI/CLI if available.
+
+# model = "<newest-codex-model-exposed-by-your-client>"
+# model_reasoning_effort = "extra_high"
+# approval_policy = "on-request"
+# sandbox_mode = "workspace-write"
+# project_doc_max_bytes = 131072
+
+[profiles.devries_research]
+# model = "<newest-codex-model-exposed-by-your-client>"
+# model_reasoning_effort = "extra_high"
+# approval_policy = "on-request"
+# sandbox_mode = "workspace-write"

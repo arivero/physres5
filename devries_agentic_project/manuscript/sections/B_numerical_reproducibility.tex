@@ -1,0 +1,10 @@
+\section{Numerical reproducibility}
+\label{app:numerics}
+
+The script `calculations/devries\_spectrum.py' computes the branch roots and the derived mass value from a supplied \(M_Z\).  The central functions are
+\begin{verbatim}
+x_plus(J) = (sqrt(J*J + 4*J) - J)/2
+sin2_devries = 1 - x_plus(3/4)/x_plus(2)
+MW = MZ * sqrt(1 - sin2_devries)
+\end{verbatim}
+The test file `calculations/tests/test\_devries\_spectrum.py' checks the root identities, the numerical value of \(\sdV\), and the seed value obtained from \(M_Z=91.1880\,\mathrm{GeV}\).

@@ -1,0 +1,10 @@
+# Project seed values. Source-audit before final manuscript submission.
+MZ_pole_GeV: 91.1880
+MZ_pole_unc_GeV: 0.0020
+MW_pole_project_seed_GeV: 80.3692
+MW_pole_project_seed_unc_GeV: 0.0133
+sin2_devries: 0.22310132
+MW_from_MZ_and_devries_GeV: 80.3748
+notes:
+  - "Values are project seeds from prior draft context. Update from current electroweak source before final manuscript."
+  - "Use pole masses for the central comparison; keep Breit-Wigner/on-shell and running quantities separate."

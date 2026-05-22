@@ -1,0 +1,48 @@
+\section{Casimir-secular mass operator}
+\label{sec:casimir}
+
+Let \(J=s(s+1)\) be the spin-Casimir eigenvalue.  The normalized two-channel operator used in this manuscript is
+\begin{equation}
+  \frac{Q(J)}{\mu^2}=\begin{pmatrix}
+  0 & \sqrt{J}\\
+  \sqrt{J} & -J
+  \end{pmatrix}.
+  \label{eq:QJ}
+\end{equation}
+Its characteristic equation is
+\begin{equation}
+  \det\left(xI-\frac{Q(J)}{\mu^2}\right)=x^2+Jx-J=0.
+  \label{eq:charpoly}
+\end{equation}
+The two roots are
+\begin{equation}
+  x_\pm(J)=\frac{-J\pm\sqrt{J^2+4J}}{2}.
+  \label{eq:roots}
+\end{equation}
+They obey
+\begin{equation}
+  x_+(J)+x_-(J)=-J,
+  \qquad
+  x_+(J)x_-(J)=-J.
+  \label{eq:root-identities}
+\end{equation}
+For \(J>0\), the positive branch is positive and the negative branch is negative.
+
+The electroweak number is obtained by sampling the positive branch at the two Casimir values
+\begin{equation}
+  J_{1/2}=\frac34,
+  \qquad
+  J_1=2.
+\end{equation}
+This gives
+\begin{equation}
+  \sdV = 1-\frac{x_+(3/4)}{x_+(2)}.
+  \label{eq:sdvdef}
+\end{equation}
+The expression is dimensionless; the overall scale \(\mu\) cancels.  The cancellation is essential for an electroweak interpretation because Eq.~\eqref{eq:sdvdef} can then be compared with a projective W/Z mass ratio.
+
+The relation to the original Rivero operator is obtained by restoring the Poincare Casimir eigenvalues \(C_1=m^2\) and \(C_2=-m^2s(s+1)\).  In the original construction, a mass-squared operator is formed from combinations of Casimir invariants, with a high-spin condition designed to preserve the asymptotic mass behavior relevant for Regge trajectories \cite{Rivero2006}.  Equation~\eqref{eq:QJ} is the reduced dimensionless representative of that branch problem.
+
+A complete derivation should state the minimal assumptions that select Eq.~\eqref{eq:QJ}.  The current minimal list is: dimensionally correct dependence on the Poincare Casimirs, exclusion of inverse Casimirs, a two-branch square-root structure, and preservation of the high-spin asymptotic datum.  A trace condition can be used as an alternative route.  The uniqueness of the construction under these assumptions remains a theorem to be written with explicit hypotheses.
+
+\paragraph*{Section status.}  The eigenvalue algebra is derived.  The uniqueness of the operator under the stated constraints is an open analytical subtask.

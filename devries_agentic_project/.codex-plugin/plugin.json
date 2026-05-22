@@ -1,0 +1,13 @@
+{
+  "name": "devries-string-manuscript",
+  "version": "0.1.0",
+  "description": "Reusable Codex skills for the DeVries String manuscript: analytical derivations, source audit, REVTeX compilation, numerical checks, and referee review.",
+  "skills": [
+    "skills/devries-manuscript-architect",
+    "skills/electroweak-pole-calculator",
+    "skills/analytic-gap-solver",
+    "skills/latex-revtex-builder",
+    "skills/source-auditor",
+    "skills/referee-redteam"
+  ]
+}

@@ -1,0 +1,27 @@
+\section{Pole observable and electroweak scheme separation}
+\label{sec:pole}
+
+The observable used for comparison is the pole-mass ratio
+\begin{equation}
+  \sPole = 1-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}.
+  \label{eq:spole}
+\end{equation}
+This ratio is distinct from a running \(\MSbar\) weak angle and from effective weak mixing angles extracted from neutral-current asymmetries.  The manuscript therefore treats Eq.~\eqref{eq:spole} as the primary target and later relates other schemes to it.
+
+A vector-boson pole is defined by the complex pole of the propagator,
+\begin{equation}
+  s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}.
+  \label{eq:complex-pole}
+\end{equation}
+When experimental inputs are quoted in a Breit--Wigner convention, the conversion to pole parameters must be performed before using Eq.~\eqref{eq:spole}.  This is one of the numerical audit tasks of the project.
+
+The project seed comparison uses
+\begin{equation}
+  M_W=M_Z\sqrt{1-\sdV}.
+  \label{eq:MWfromMZ}
+\end{equation}
+For the seed value \(M_Z=91.1880\,\GeV\), this gives \(M_W=80.3748\,\GeV\).  These numbers are placeholders inherited from the working draft and must be audited against the current electroweak source set before final submission.  The calculation script in Appendix~\ref{app:numerics} reproduces the value.
+
+The Standard Model parameter literature distinguishes several vacuum and renormalization conventions.  In particular, pure \(\MSbar\) treatments may define the Higgs vacuum expectation value as the minimum of the loop-corrected effective potential in Landau gauge, eliminating tadpole diagrams at the cost of gauge-choice dependence in intermediate parameters \cite{MartinRobertson2025}.  Such scheme details are relevant for comparing a mass-ratio statement with Lagrangian parameters, while Eq.~\eqref{eq:spole} remains the pole-spectrum target.
+
+\paragraph*{Section status.}  The observable is defined.  The numerical input table requires a current electroweak source audit before final claims.

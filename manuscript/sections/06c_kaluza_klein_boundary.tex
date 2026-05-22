@@ -367,7 +367,7 @@ with one \(\Lambda_{\rm CHM}\), one product, and one pole map.
 Datum & Projector & \(J\) & Hilbert factor & Boundary datum & Normalization & Pole functional & Status \\
 \midrule
 \(h_J\) & \(P_{h,J}\) & \(3/4\) & order parameter & \(A_5,\pi_i,\delta v_i,\delta R,\alpha_H\) & \(\Lambda_{\rm CHM}\), \(\langle\cdot,\cdot\rangle_{\rm CHM}\) & \(P_W\), \(\mathcal R_{\rm pole}\) & open ordered sample \\
-\(W^\pm\) & \(P_W\) & \(3/4\) & charged pole & charged boundary trace coupled to \(h_J\) & same as \(h_J\) & \(M_{W,\rm pole}\) & open pole map \\
+\(W^\pm\) sample & \(P_W\) & \(3/4\) & charged-sample target & charged boundary trace coupled to \(h_J\) & same as \(h_J\) & \(M_{W,\rm pole}\) after matching & open ordered map \\
 \(Z\) & \(P_Z\) & \(2\) & neutral current & \(a_J^{\gamma^\perp}\) Robin/DtN data & same \(\Lambda_{\rm CHM}\) & \(M_{Z,\rm pole}\) & current entry target \\
 \(\gamma\) & \(P_\gamma\) & \(0\) & null direction & photon zero-mode trace & reference subtraction & zero pole & source-supported null \\
 \bottomrule
@@ -449,6 +449,7 @@ This requirement places the W and Z readings inside one gauge-Higgs or boundary 
 
 The corresponding proof obligation is
 \begin{equation}
+\begin{gathered}
   S_{\rm 5D}+S_{\rm bdry}
   \longrightarrow
   \{
@@ -457,14 +458,19 @@ The corresponding proof obligation is
   \mathcal B_\gamma(\lambda)
   \}
   \longrightarrow
-  M_\gamma=0,\qquad
-  \frac{M_W^2}{M_Z^2}
+  \hbox{pole data},
+  \\
+  M_{\gamma,\rm pole}^2=\Delta_\gamma^{(\mathrm{int})},\qquad
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
   =
-  \frac{x_+(3/4)}{x_+(2)}.
+  \frac{x_+(3/4)}{x_+(2)}
+  +\Delta^{(\mathrm{int})}_{\rm match}.
+\end{gathered}
   \label{eq:interval-ew-boundary-proof}
 \end{equation}
 The proof must include the charged and neutral boundary equations, the photon
-zero mode, custodial conditions, the reduced inner product, and the pole
+zero mode, custodial conditions, the Ward-identity target
+\(\Delta_\gamma^{(\mathrm{int})}=0\), the reduced inner product, and the pole
 matching chain.
 
 The interval version of the ordered assignment theorem is:
@@ -504,6 +510,28 @@ The scalar-branch target is therefore
   \label{eq:kk-negative-branch-map}
 \end{equation}
 Here \(u_-(J)\) is the negative-branch eigenvector of the two-channel kernel.  A derivation identifies \(\mathcal F_{\rm KK}\), states its gauge transformation properties, and explains its scheme relation to the low-energy Higgs/order-parameter variables.
+
+The sc/int extension of this target uses a compact boundary-superconnection
+holonomy,
+\begin{equation}
+  \mathcal W_{\rm sc}
+  =
+  {\rm P}\exp\int_I (A_5+\Phi_{\rm odd})\,dy,
+  \label{eq:kk-superconnection-holonomy}
+\end{equation}
+and tests whether the dimensionless scalar Hessian
+\begin{equation}
+  \widehat{\mathcal F}_{\rm sc}^{\rm Hol/sc}
+  =
+  \Lambda_J^{-2}
+  \left.
+  \frac{\partial^2V_{\rm eff}(\mathcal W_{\rm sc})}
+       {\partial\alpha_{\rm sc}^2}
+  \right|_{\alpha_\star}
+  \label{eq:kk-superconnection-holonomy-hessian}
+\end{equation}
+is the scalar partner of the same projected kernel that gives the hatted
+current entry and the photon subtraction.
 
 \subsection{KK completion criterion}
 \label{sec:kk-completion-criterion}

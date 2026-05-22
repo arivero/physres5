@@ -24,6 +24,8 @@ constant ObservableKind : Type
 constant BoundaryDatum : Type
 constant G2Datum : Type
 constant SuperconnectionDatum : Type
+constant SuperconnectionHolonomy : Type
+constant SuperconnectionAngle : Type
 
 structure SameSourceBranchPackage where
   u : SourceCoordinate
@@ -90,5 +92,27 @@ axiom route_ingredients_are_addresses :
 
 axiom coq_superconnection_scalar_route_requires_same_source :
   ∃ S : SuperconnectionScalarCompatibility, True
+
+structure SuperconnectionHolonomyScalar where
+  u : SourceCoordinate
+  Wsc : SuperconnectionHolonomy
+  A5_and_Phi_odd_live_in_same_source : Prop
+  Veff : EffectivePotential
+  alphaSc : SuperconnectionAngle
+  LambdaJ : SourceScale
+  sameProjectionAsVectorBranch : Projection
+  samePoleMapAsVectorBranch : PoleMap
+  photonReferenceShared : Prop
+  hessianMatchesNegativeBranch : Prop
+
+def superconnectionHolonomyScalarReady
+  (S : SuperconnectionHolonomyScalar) : Prop :=
+  S.A5_and_Phi_odd_live_in_same_source ∧
+  S.photonReferenceShared ∧
+  S.hessianMatchesNegativeBranch
+
+axiom loop41_holonomy_superconnection_scalar_target :
+  ∃ S : SuperconnectionHolonomyScalar,
+    superconnectionHolonomyScalarReady S
 
 end DeVries.NegativeBranchScalar

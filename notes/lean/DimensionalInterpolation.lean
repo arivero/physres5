@@ -31,6 +31,8 @@ constant BoundaryScalarKernel : Type
 constant BoundaryProjector : Type
 constant PhotonSubtraction : Type
 constant PoleRemainder : Type
+constant SourceLedger : Type
+constant CurrentEntryTest : Type
 
 structure ClaimStatus where
   witten_seven_extra_endpoint_source_backed : Prop
@@ -193,6 +195,25 @@ def intervalTopCompatibilityReady (I : IntervalTopCompatibility) : Prop :=
 
 axiom chm_interval_o10_top_test :
   ∃ I : IntervalTopCompatibility, intervalTopCompatibilityReady I
+
+structure Loop41PassFailLedger where
+  sourceLedger : SourceLedger
+  chmCurrentEntry : CurrentEntryTest
+  coquereauxProjectorsAudited : Prop
+  wittenSevenExtraEndpointUsed : Prop
+  sixDimensionalStringAnchorUsed : Prop
+  g2CompactCompletionRequired : Prop
+  chmCurrentEntryEqualsTwoDerived : Prop
+
+def loop41LedgerReady (L : Loop41PassFailLedger) : Prop :=
+  L.coquereauxProjectorsAudited ∧
+  L.wittenSevenExtraEndpointUsed ∧
+  L.sixDimensionalStringAnchorUsed ∧
+  L.g2CompactCompletionRequired ∧
+  L.chmCurrentEntryEqualsTwoDerived
+
+axiom loop41_pass_fail_ledger_obligation :
+  ∃ L : Loop41PassFailLedger, loop41LedgerReady L
 
 structure G2DimensionalEmbedding where
   local_operator : ReducedKernel

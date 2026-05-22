@@ -225,6 +225,31 @@ boundary determinant as the vector pole quotient.  If the negative eigenvector
 projects to auxiliary or gauge-fixed data, O3 resolves as an auxiliary-branch
 outcome and the Higgs-sector claim leaves the conclusion.
 
+**Loop 41 holonomy-superconnection refinement.** The active scalar route joins
+the Hosotani holonomy to the boundary electroweak superconnection package:
+\[
+\mathcal W_{\rm sc}
+=
+{\rm P}\exp\int_I(A_5+\Phi_{\rm odd})\,dy,
+\qquad
+\widehat{\mathcal F}_{\rm sc}^{\rm Hol/sc}
+=
+\Lambda_J^{-2}
+\left.
+\frac{\partial^2V_{\rm eff}(\mathcal W_{\rm sc})}
+{\partial\alpha_{\rm sc}^2}
+\right|_{\alpha_\star}.
+\]
+The O3 closure condition is
+\[
+\widehat{\mathcal F}_{\rm sc}^{\rm Hol/sc}
+=C_{\rm sc}|x_-(J_\star)|+\Delta_{\rm Hol/sc}
+\]
+using the same \(P_{\rm sc}\), \(\Lambda_J\), photon reference, and pole map as
+the sc/int vector kernel.  Closure requires a source derivation of
+\(\Delta_{\rm Hol/sc}\).  This turns the negative branch into a Hessian
+diagnostic for the same source package.
+
 **Parent-workspace refinement.** The signed-root mechanism notes give a useful
 EFT obstruction template:
 \[
@@ -494,6 +519,16 @@ The closure test is the DeVries block plus a derived pole-scheme remainder:
 This package ties O4 to O1 through the ordered projectors, to O3 through the
 scalar functional, to O8 through \(\Delta_J^{\rm sc/int}\), to O10 through
 \(\Lambda_J(u)\), and to O20 through \(P_{\rm sc}\).
+
+**Loop 41 proof-test refinement.** The next O4 pass/fail test is the hatted CHM
+current entry in the sc/int package:
+\[
+\widehat\Sigma_{aa,2}^{\rm CHM}=2 .
+\]
+A derivation has to fix \(P_{a,2}^{\gamma^\perp}\), \(P_\gamma\),
+\(K_\gamma^{\rm ref}\), \(\Lambda_J\), the CHM product, and the map into the
+complex-pole transverse self-energy in one convention.  The scalar extension is
+the holonomy-superconnection Hessian in O3.
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
@@ -924,6 +959,15 @@ This is a concrete O10 closure package.  It still requires an explicit map from
 compact or boundary data to the electroweak ray, plus the endpoint
 electromagnetic embedding for the \(D=9\) or colourless \(D=5\) end.
 
+**Loop 41 source-ledger refinement.** Appendix E now records a pass/fail ledger
+for \(u_{\rm sc/int}\).  CHM supplies the boundary kernels, Coquereaux supplies
+finite \(SU(2|1)\) gauge-Higgs vocabulary, Witten supplies the Hodge/SUSY-QM
+template, Hosotani supplies Wilson-line scalar dynamics, six-dimensional string
+sources supply the colourless middle-dimensional arena, and local \(G_2\)
+sources supply localized matter and deformation tests.  The active O10 proof
+test remains a source derivation of \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\)
+inside the same \(u_{\rm sc/int}\) package.
+
 ## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
 
 **Provenance.** Human operator note (2026-05-22).  Treat as a human directive;
@@ -1300,6 +1344,25 @@ odd/even gauge-Higgs algebra; CHM supplies boundary kernels and photon-zero
 bookkeeping.  O20 closure requires these inputs to give \(B_J\), the
 two-channel projection, extra-channel decoupling, and the pole/scalar branch
 map in one self-adjoint reduced basis.
+
+**Loop 41 holonomy-superconnection refinement.** The candidate source for the
+scalar side of \(B_J\) is the compact holonomy
+\[
+\mathcal W_{\rm sc}={\rm P}\exp\int_I(A_5+\Phi_{\rm odd})\,dy .
+\]
+The O20 test asks whether
+\[
+\Lambda_J^{-2}P_{\rm sc}^\dagger
+\left[
+K_T^{\rm DtN}+K_T^{\rm brane}
++\partial_{\alpha_{\rm sc}}^2V_{\rm eff}(\mathcal W_{\rm sc})
+-K_\gamma^{\rm ref}
+\right]P_{\rm sc}
+\]
+supplies the DeVries block and the negative-branch scalar Hessian in one
+self-adjoint basis.  The detailed IJMP A superconnection source remains an
+acquisition target for scalar products, curvature norms, Higgs potential terms,
+and \(Z/\gamma\) conventions.
 
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

@@ -81,6 +81,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 38 | 5 | 5 | 5 | 5 | 5 | Tightened O20 into a source-equation target: rendered Witten pages 665--666 support the Hodge square-root template, while the one-channel \(B_J\), ordered electroweak samples, and pole-chain map remain explicit theorem data. |
 | 39 | 5 | 5 | 5 | 5 | 5 | Tightened the Coquereaux O1/O20 audit into a graded-curvature projection target, recorded source-internal normalization freedoms and the \(3/8\) weak-angle value, and queued detailed superconnection sources for acquisition. |
 | 40 | 5 | 5 | 5 | 5 | 5 | Normalized the active O1/O4/O10/O20 package as a boundary electroweak superconnection on a CHM interval, with one hatted kernel, photon subtraction, ordered projectors, scalar branch, and pole remainder. |
+| 41 | 5 | 5 | 5 | 5 | 5 | Tightened exact-looking pole statements with remainders, added the holonomy-superconnection scalar Hessian target, focused O4 on \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), and recorded a random Lean/source recall pass. |
 
 ## Scoring rubric
 

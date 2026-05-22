@@ -74,6 +74,11 @@ PRD phase.
     the mass matrix as a Hessian at the vacuum.  Manuscript consequence: O1/O3
     source packages must keep the ordered assignment tied to vacuum-charge and
     Hessian/mass-matrix data.
+  - Loop 41 recall read pages 71--80.  The fragment records BEH expansion,
+    fermion masses from the vacuum expectation value, heavy-fermion coupling
+    to the Higgs sector, and the order-parameter analogy.  Manuscript
+    consequence: top-sector remarks and negative-branch scalar claims require
+    a source map to the same gauge-Higgs package.
 - `18_Dawson_EWSB_and_EFT_TASI_1712.07232.pdf` — electroweak symmetry breaking, Higgs physics, EFT, precision constraints.
 - `19_Logan_Higgs_Physics_TASI_1406.1786.pdf` — detailed Higgs mechanism, W/Z masses, fermion masses, custodial symmetry.
   - Loop 39 random note review read pages 21--30.  The fragment records
@@ -177,9 +182,22 @@ PRD phase.
     Manuscript consequence: the \(G_2\) route can use deformation and localized
     matter language, with pairing, compact completion, charge lattice, anomaly,
     and pole map stated as theorem data.
+  - Loop 41 recall read pages 1--10.  The fragment records that four-dimensional
+    chirality in M-theory on \(G_2\) spaces requires singular geometry and that
+    ADE singularities generate gauge sectors.  Manuscript consequence: the
+    \(G_2\) route must keep singular support, compact completion, and chiral
+    matter data inside the theorem package.
 - `25_Witten_Anomaly_Cancellation_G2_hep-th-0108165.pdf` — anomaly cancellation on G2 manifolds, singularities, gauge fields, chiral fermions.
 - `31_Braun_Cizel_Hubner_SchaferNameki_Higgs_Bundles_G2_1812.06072.pdf` — G2 Higgs bundles, local gauge sector, matter localization, chirality transitions.
   - Loop 18 use: pages 61--70 give a local \(G_2\) Higgs-bundle template for top-Yukawa data through flow-tree and charge-distribution constructions.
+  - Loop 41 recall read pages 51--60 and 71--80.  The fragments record TCS
+    \(G_2\) construction, K3-fibered \(S^3\) base data, ADE root lattices,
+    matter localized on circles in the Kovalev limit, Higgs-bundle
+    Morse--Bott functions, charge configurations, and twisted 7d SYM reduced
+    to 4d \(N=1\) multiplet data.  Manuscript consequence: the \(G_2\) route
+    can supply local gauge and matter variables, while the DeVries pairing,
+    charge lattice, compact embedding, anomaly inflow, and pole matching remain
+    theorem data.
 
 ## Standard Model global form and line operators
 
@@ -314,3 +332,7 @@ are in `context/source_fragments/4[7-9]_*/` and
     Häußling--Papadopoulos--Scheck and the 2005 Physics Reports review.  The
     detailed 1992 IJMP A source remains an acquisition target for the
     scalar-product, curvature, and normalization audit.
+  - Loop 41 web audit: the detailed IJMP A paper remains an acquisition target.
+    The current manuscript may use the local RCP25 source as finite
+    superconnection vocabulary, while scalar-product and curvature
+    normalizations stay in the source-upgrade queue.

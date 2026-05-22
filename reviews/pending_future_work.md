@@ -440,6 +440,29 @@
   obtained, to test whether scalar-product freedoms and curvature terms can fix
   the boundary-superconnection/CHM package
   \(\widehat K_J^{\rm sc/int}\).
+- Loop 41 next source pass: acquire the detailed Coquereaux IJMP A paper or
+  record a library request; use it to audit scalar products, curvature norms,
+  \(Z/\gamma\) projectors, and finite \(SU(2|1)\) normalization.  The local
+  RCP25 source remains vocabulary for the finite superconnection arena.
+- Loop 41 next proof test: derive, or reject, the hatted CHM current entry
+  \[
+  \widehat\Sigma_{aa,2}^{\rm CHM}=2
+  \]
+  from the boundary kinetic product, photon-reference subtraction,
+  \(P_{a,J}^{\gamma^\perp}\), \(\Lambda_{\rm CHM}\), endpoint signs, and the
+  source-to-pole map.
+- Loop 41 scalar test: develop the holonomy-superconnection Hessian
+  \[
+  \mathcal W_{\rm sc}={\rm P}\exp\int_I(A_5+\Phi_{\rm odd})\,dy,\qquad
+  \widehat{\mathcal F}^{\rm Hol/sc}_{\rm sc}
+  =
+  \Lambda_J^{-2}
+  \left.
+  \partial_{\alpha_{\rm sc}}^2V_{\rm eff}(\mathcal W_{\rm sc})
+  \right|_{\alpha_\star}
+  \]
+  as a same-source O3/O20 target with \(P_{\rm sc}\), photon reference,
+  \(\Lambda_J\), and pole map shared with the vector branch.
 - Loop 32 O3 next step: test the interval gauge-Higgs/Hosotani scalar package
   by deriving, or rejecting, a common source datum
   \[

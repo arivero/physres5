@@ -639,6 +639,10 @@ A prioritized interval realization is the Wilson-line curvature target
 \end{equation}
 with the same interval kernel and boundary data that generate the transverse
 vector determinant.
+In the boundary-superconnection realization this is refined to
+Eq.~\eqref{eq:target-superconnection-holonomy-scalar}, where the Wilson-line
+variable is replaced by the compact holonomy of \(A_5+\Phi_{\rm odd}\) and the
+same \(P_{\rm sc}\), \(\Lambda_J\), and photon reference used in Target X.
 
 \paragraph*{Current evidence.}
 Sec.~\ref{sec:negative} records the scalar target table, the same-source package, the holonomy-curvature option, and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
@@ -1422,6 +1426,52 @@ The closure conditions are
   \Delta_J^{\rm sc/int}&\ \hbox{is derived in the pole scheme}.
   \end{aligned}
   \label{eq:target-sc-int-closure}
+\end{equation}
+The scalar extension of the same target introduces a compact
+boundary-superconnection holonomy
+\begin{equation}
+  \mathcal W_{\rm sc}
+  =
+  {\rm P}\exp\int_I(A_5+\Phi_{\rm odd})\,dy ,
+  \label{eq:target-superconnection-holonomy}
+\end{equation}
+and asks whether its effective-potential Hessian supplies the negative-branch
+functional,
+\begin{equation}
+  \widehat{\mathcal F}_{\rm sc}^{\rm Hol/sc}
+  =
+  \Lambda_J^{-2}
+  \left.
+  \frac{\partial^2 V_{\rm eff}(\mathcal W_{\rm sc})}
+       {\partial\alpha_{\rm sc}^2}
+  \right|_{\alpha_\star}
+  =
+  C_{\rm sc}|x_-(J_\star)|
+  +\Delta_{\rm Hol/sc}.
+  \label{eq:target-superconnection-holonomy-scalar}
+\end{equation}
+Closure requires a source derivation of \(\Delta_{\rm Hol/sc}\) in the same
+projected basis, photon reference, source scale, and pole convention as the
+vector branch.  The corresponding acceptance diagram is
+\begin{equation}
+\begin{array}{ccccc}
+u_{\rm sc/Hol}
+&\longrightarrow&
+(\mathcal A_{\rm sc},\mathcal W_{\rm sc},
+K_T^{\rm DtN},K_T^{\rm brane})
+&\longrightarrow&
+(\widehat K_J,P_W,P_Z,P_\gamma)
+\\
+\downarrow &&&& \downarrow
+\\
+(t_{\rm EW},\alpha_{\rm sc})
+&\longrightarrow&
+(x_+(3/4),x_+(2),x_-(J_\star))
+&\longrightarrow&
+(M_W/M_Z,\widehat{\mathcal F}_{\rm sc}^{\rm Hol/sc},
+\Delta_{\rm pole}) .
+\end{array}
+\label{eq:target-superconnection-holonomy-diagram}
 \end{equation}
 The source-internal weak-angle values, including the \(SU(2|1)\) trace
 normalizations and the \(3/8\) value in the extended-family discussion, are part

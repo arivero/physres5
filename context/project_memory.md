@@ -266,6 +266,26 @@
   Hosotani Wilson-line dynamics, and Acharya--Witten \(G_2\) singularity
   deformation; these feed the anomaly ledger, scalar holonomy route, and
   localized-matter caveat.
+- Loop 41 tightens the same package by adding a holonomy-superconnection
+  scalar Hessian target:
+  \[
+  \mathcal W_{\rm sc}={\rm P}\exp\int_I(A_5+\Phi_{\rm odd})\,dy,
+  \qquad
+  \widehat{\mathcal F}^{\rm Hol/sc}_{\rm sc}
+  =
+  \Lambda_J^{-2}
+  \left.
+  \partial_{\alpha_{\rm sc}}^2V_{\rm eff}(\mathcal W_{\rm sc})
+  \right|_{\alpha_\star}.
+  \]
+  O3/O20 now require this Hessian to use the same \(P_{\rm sc}\),
+  \(\Lambda_J\), photon reference, and pole map as the sc/int vector kernel.
+  O4/O10 now name the next proof test as
+  \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\).  The random recall pass reviewed
+  `DeterminantAndKK.lean`, Witten 1981, Bucci radion stabilization, Tong
+  Standard Model, Tong gauge theory, Polchinski S-duality, Baez--Huerta GUT
+  lineage, Tong QFT chiral bilinears, `parent_prtalks`, and Braun \(G_2\)
+  Higgs-bundle fragments.
 
 ## Resume state after context renewal
 

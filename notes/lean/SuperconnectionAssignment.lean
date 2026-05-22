@@ -25,6 +25,8 @@ constant CHMBraneKernel : Type
 constant PhotonReferenceKernel : Type
 constant SourceScale : Type
 constant PoleRemainder : Type
+constant SuperconnectionHolonomy : Type
+constant ScalarHessian : Type
 
 constant Phi_odd : OddHiggs
 constant F_even_gamma_perp : EvenCurrent
@@ -102,6 +104,26 @@ def boundarySuperconnectionIntervalReady
 axiom loop40_boundary_superconnection_interval_obligation :
   ∃ T : BoundarySuperconnectionIntervalTarget,
     boundarySuperconnectionIntervalReady T
+
+structure BoundarySuperconnectionHolonomyTarget where
+  intervalTarget : BoundarySuperconnectionIntervalTarget
+  Wsc : SuperconnectionHolonomy
+  scalarHessian : ScalarHessian
+  sameProjectionScaleAndPhotonReference : Prop
+  vectorKernelGivesOrderedSamples : Prop
+  scalarHessianGivesNegativeBranch : Prop
+  complexPoleRemainderDeclared : Prop
+
+def boundarySuperconnectionHolonomyReady
+  (T : BoundarySuperconnectionHolonomyTarget) : Prop :=
+  T.sameProjectionScaleAndPhotonReference ∧
+  T.vectorKernelGivesOrderedSamples ∧
+  T.scalarHessianGivesNegativeBranch ∧
+  T.complexPoleRemainderDeclared
+
+axiom loop41_boundary_superconnection_holonomy_obligation :
+  ∃ T : BoundarySuperconnectionHolonomyTarget,
+    boundarySuperconnectionHolonomyReady T
 
 /- Diagram to check in manuscript form:
 

@@ -71,7 +71,7 @@ PRD phase.
   - Loop 40 random recall read pages 61--70.  The fragment records
     Wigner-Weyl and Nambu-Goldstone symmetry realizations, the vacuum charge
     criterion, the unbroken subalgebra condition, expansion around a vev, and
-    the mass matrix as a Hessian at the vacuum.  Manuscript consequence: O1/O3
+    the mass matrix as a Hessian at the vacuum.  Source use: O1/O3
     source packages must keep the ordered assignment tied to vacuum-charge and
     Hessian/mass-matrix data.
   - Loop 41 recall read pages 71--80.  The fragment records BEH expansion,
@@ -84,7 +84,7 @@ PRD phase.
   - Loop 39 random note review read pages 21--30.  The fragment records
     off-shell \(h\to W W^*, Z Z^*\) decay treatment, loop-induced
     \(h\to \gamma\gamma,gg,Z\gamma\) channels, W and top loop roles, and the
-    effective-operator form \(hF_{\mu\nu}F^{\mu\nu}\).  Manuscript consequence:
+    effective-operator form \(hF_{\mu\nu}F^{\mu\nu}\).  Source use:
     Higgs-sector scalar claims need a specified observable kind and scheme, and
     top-loop/top-scale remarks require a source-theory statement.
 - `34_Martin_Robertson_SM_MSbar_1907.02500.pdf` — Standard Model parameters in pure MS scheme, VEV conventions, pole/on-shell relations, SMDR code.
@@ -94,7 +94,7 @@ PRD phase.
 - `02_Tong_String_Theory_notes.pdf` — relativistic string, spectrum, Regge trajectories, D-branes, CFT, compactification, T-duality.
   - Loop 39 random note review read pages 31--40.  The fragment records static
     gauge, transverse string oscillations, left/right mode expansions, and
-    Virasoro-mode constraints \(L_n=\tilde L_n=0\).  Manuscript consequence:
+    Virasoro-mode constraints \(L_n=\tilde L_n=0\).  Source use:
     any dual-model route for the radical needs a constrained transverse
     oscillator or endpoint projection.
   - Loop 36 O18/O19 use: pages 61--70 support the open-string Regge template
@@ -107,14 +107,14 @@ PRD phase.
   - Loop 40 random recall read pages 1--10.  The fragment records conformal
     invariance, two-dimensional conformal symmetry, and the use of CFT
     constraints in string solution spaces and internal degrees of freedom.
-    Manuscript consequence: any string promotion of the sc/int package needs a
+    Source use: any string promotion of the sc/int package needs a
     worldsheet operator and internal-CFT constraint ledger.
 - `04_Polchinski_What_is_String_Theory_hep-th-9411028.pdf` — CFT, string basics, vacua and dualities, organizing principles.
-  - Loop 40 random recall read pages 71--80 and 91--100.  The fragments record
+  - Loop 40 random recall read pages 71--80 and 91--100.  The fragments list
     worldsheet moduli and vertex-operator insertions, the \((1,1)\) physical
     vertex condition, BRST ghost insertions, gauged nonlinear redundancy,
     electric/magnetic charge lattices, \(\tau=\theta/(2\pi)+i2\pi/e^2\), and
-    \(SL(2,\mathbb Z)\) charge transformations.  Manuscript consequence: O17
+    \(SL(2,\mathbb Z)\) charge transformations.  Source use: O17
     and the string route need charge-lattice, moduli, and vertex/operator data
     for promotion beyond source-address language.
 - `09_Csaki_Hubisz_Meade_EWSB_from_Extra_Dimensions_hep-ph-0510275.pdf` — gauge theories on intervals, boundary conditions, Higgsless electroweak breaking, fermions in extra dimensions, precision observables.
@@ -170,6 +170,12 @@ PRD phase.
 
 - `10_Duff_Nilsson_Pope_Kaluza_Klein_Supergravity_2502.07710.pdf` — Kaluza-Klein supergravity, squashed S7, holonomy, topology, Higgs, consistent truncations.
 - `11_Acharya_Gukov_MTheory_Singularities_G2_holonomy_hep-th-0409191.pdf` — M-theory on singular G2 manifolds, gauge groups, chiral fermions, confinement, mass gap.
+  - Loop 47 source binding: pages 31--40 and 71--80 record
+    nonabelian gauge groups from ADE singularities, twisted-sector scalars and
+    vectors, W-bosons as wrapped branes in the local singularity language, and
+    ADE breaking to Cartan sectors.  Source use: Target IIIg may use an ADE
+    current-pairing test; compact charge lattice and pole matching stay in the
+    completion ledger.
 - `12_Atiyah_Witten_MTheory_G2_Holonomy_hep-th-0107177.pdf` — M-theory dynamics on G2 conical singularities and topology-changing branches.
 - `13_Becker_Becker_Robbins_MTheory_G2_Manifolds_1507.01619.pdf` — G2 compactifications, corrections, Hodge/Laplace structure, KK towers.
 - `14_Duff_MTheory_G2_First_Twenty_Years_hep-th-0201062.pdf` — historical and conceptual review of G2 holonomy in M-theory.
@@ -179,25 +185,44 @@ PRD phase.
     \(G_2\) singularity deformation, local \(U(1)^2\to U(1)\) breaking from
     the C-field sector, chiral matter at the conical singularity, a special
     Type IIA/D6-brane comparison, and Higgsing to a diagonal gauge group.
-    Manuscript consequence: the \(G_2\) route can use deformation and localized
+    Source use: the \(G_2\) route can use deformation and localized
     matter language, with pairing, compact completion, charge lattice, anomaly,
     and pole map stated as theorem data.
   - Loop 41 recall read pages 1--10.  The fragment records that four-dimensional
     chirality in M-theory on \(G_2\) spaces requires singular geometry and that
-    ADE singularities generate gauge sectors.  Manuscript consequence: the
+    ADE singularities generate gauge sectors.  Source use: the
     \(G_2\) route must keep singular support, compact completion, and chiral
     matter data inside the theorem package.
+  - Loop 47 source binding: pages 21--27 record singular \(\mathbb R^3\) loci,
+    chiral
+    matter at a conical singularity, \(U(1)^2\to U(1)\) breaking, and Higgsing
+    by deformation.  Source use: Target IIIg treats the local ADE current entry
+    as the first test and records Higgsing/deformation data as flow-overlap and
+    compact-completion obligations.
 - `25_Witten_Anomaly_Cancellation_G2_hep-th-0108165.pdf` — anomaly cancellation on G2 manifolds, singularities, gauge fields, chiral fermions.
+  - Loop 47 source binding: pages 1--10 record singular
+    \(G_2\) gauge sectors, abelian and nonabelian gauge groups, chiral fermions,
+    and anomaly inflow through the \(C\wedge G\wedge G\) structure.  Source use:
+    Target IIIg compact completion must carry an anomaly ledger before
+    electroweak charge claims are promoted.
 - `31_Braun_Cizel_Hubner_SchaferNameki_Higgs_Bundles_G2_1812.06072.pdf` — G2 Higgs bundles, local gauge sector, matter localization, chirality transitions.
   - Loop 18 use: pages 61--70 give a local \(G_2\) Higgs-bundle template for top-Yukawa data through flow-tree and charge-distribution constructions.
-  - Loop 41 recall read pages 51--60 and 71--80.  The fragments record TCS
+  - Loop 41 recall read pages 51--60 and 71--80.  The fragments list TCS
     \(G_2\) construction, K3-fibered \(S^3\) base data, ADE root lattices,
     matter localized on circles in the Kovalev limit, Higgs-bundle
     Morse--Bott functions, charge configurations, and twisted 7d SYM reduced
-    to 4d \(N=1\) multiplet data.  Manuscript consequence: the \(G_2\) route
+    to 4d \(N=1\) multiplet data.  Source use: the \(G_2\) route
     can supply local gauge and matter variables, while the DeVries pairing,
     charge lattice, compact embedding, anomaly inflow, and pole matching remain
     theorem data.
+  - Loop 47 source binding: pages 1--20, 31--40, and 61--70 record the local ALE
+    fibration \(\mathbb C^2/\Gamma_{\rm ADE}\to M_3\),
+    ADE singularities along \(M_3\), Higgs-bundle fields
+    \(\Phi=\sum_i t_i df_i\), \(\rho=\sum_i t_i\rho_i\), \(\Delta f_i=\rho_i\),
+    charge functions \(f_Q=\sum_iq_if_i\), localized matter at \(df_Q(p)=0\),
+    flow lines, mass terms, and trivalent flow-tree interactions.  Source use:
+    Target IIIg binds the local source equations to a singular-support pairing
+    and a hatted ADE current-entry target.
 
 ## Standard Model global form and line operators
 
@@ -205,7 +230,7 @@ PRD phase.
   - Loop 40 extra note review read pages 161--170.  The fragment records the
     index theorem, axial charge violation, the topological meaning of
     \(F\wedge F\), instanton contributions, and fermion zero-mode selection.
-    Manuscript consequence: superconnection, \(G_2\), and endpoint routes with
+    Source use: superconnection, \(G_2\), and endpoint routes with
     fermionic channels inherit an anomaly/index ledger.
   - Loop 39 random recall read pages 71--80.  The fragment records
     instanton collective coordinates, scale-size integration, running coupling,
@@ -253,14 +278,14 @@ boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*
   - Loop 39 random note review read pages 11--20.  The fragment records
     harmonic expansion on \(G/H\), \(H\)-content selection, invariant
     integration/orthogonality, and the zero-mode Yang--Mills vector reduction.
-    Manuscript consequence: the dimensional-interpolation route needs a stated
+    Source use: the dimensional-interpolation route needs a stated
     \(H\)-representation selection and a zero-mode projection map.
   - Loop 35 O17 use: source support for the photon-zero endpoint audit, where a compact generator \(\xi_{\rm em}\), charge lattice, generator normalization, compact metric, and threshold map must produce the four-dimensional electromagnetic kinetic normalization.
 - `45_Hosotani_Dynamical_Mass_Generation_Compact_Extra_Dimensions_PLB126_1983.pdf` — gauge-Higgs/Hosotani mechanism; order parameter from a compact gauge-field component and Wilson-line data.
   - Loop 40 extra note review read pages 1--5.  The fragment records compact
     \(S^1\) gauge-Higgs dynamics, twisted boundary conditions, Wilson-line
     phases \(\theta_j\), one-loop effective potential, and gauge periodicity of
-    the holonomy variable.  Manuscript consequence: O3/O20 scalar-branch work
+    the holonomy variable.  Source use: O3/O20 scalar-branch work
     should keep holonomy, effective-potential curvature, and compact gauge
     equivalence in the theorem data.
 - `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.
@@ -296,7 +321,7 @@ are in `context/source_fragments/4[7-9]_*/` and
     electroweak breaking through spin-zero doublets, massive gauge multiplets,
     the 125 GeV BEH boson as a possible spin-zero partner of \(Z\) up to
     supersymmetry-breaking mixing, and compactification-scale comments.
-    Manuscript consequence: Fayet supplies partner vocabulary; the DeVries
+    Source use: Fayet supplies partner vocabulary; the DeVries
     operator needs its own finite projection and pole-matching theorem.
 - `49_Gates_Rana_Spinning_Particles_Large_N_SUSY_hep-th-9504025.pdf` — worldline \(N\)-extended supersymmetry and spinning-particle actions; source for spin/worldline vocabulary if the second-supercharge route is developed.
 - `50_Coquereaux_Algebraic_Superconnections_SU2_1_Electroweak_1992.pdf` — \(SU(2|1)\) algebraic superconnection formalism for electroweak symmetry breaking and Higgs fields as part of a generalized connection.

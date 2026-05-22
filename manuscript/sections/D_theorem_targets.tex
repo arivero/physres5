@@ -569,8 +569,118 @@ normalization of \(a_J\), \(Z_J^{\rm cur}\), and the dimensionless
 for \(K_{\gamma,J}^{\rm ref}\), \(P_\gamma\), \(P_{a,J}\), \(Z_J^{\rm cur}\), or
 \(\Lambda_{\rm CHM}\) leave the route as an admissible CHM boundary-kernel
 address with an open DeVries entry.  Target~\ref{app:target-susyqm-origin}
-supplies the complementary
-square-root entry test; this target supplies the hatted current diagonal test.
+supplies the complementary square-root entry test; this target supplies the
+hatted current diagonal test.
+
+\paragraph*{Local \(G_2\) ADE-pairing subtarget (Target IIIg).}
+\label{app:target-g2-ade-pairing}
+The \(G_2\) route has a local current target parallel to the CHM
+current target.  The source datum is
+\begin{equation}
+  u_{G_2}^{\rm loc}
+  =
+  (M_3,\Gamma_{\rm ADE},W,\Phi,\rho_i,f_i,Q,p,\gamma,
+  A_1\subset A_2,\Lambda_{G_2}),
+  \label{eq:target-g2-local-source-datum}
+\end{equation}
+with Higgs-bundle source equations
+\begin{equation}
+  \Phi=\sum_i t_i df_i,\qquad
+  \rho=\sum_i t_i\rho_i,\qquad
+  \Delta f_i=\rho_i,\qquad
+  f_Q=\sum_i q_i f_i,\qquad
+  df_Q(p)=0.
+  \label{eq:target-g2-source-equations}
+\end{equation}
+The local enhancement test is
+\begin{equation}
+  \operatorname{ad} A_2\!\downarrow_{A_1\times U(1)}
+  =
+  (\operatorname{ad} A_1)_0
+  \oplus{\bf 1}_0
+  \oplus{\bf 2}_{+q}
+  \oplus{\bf 2}_{-q}.
+  \label{eq:target-g2-a1-a2}
+\end{equation}
+The singular-support pairing is
+\begin{equation}
+  \begin{aligned}
+  \langle \eta,\zeta\rangle_{G_2,u}
+  &=
+  \int_{M_3}
+  {\rm Tr}_{\rm ADE}\!\left(\eta\wedge *_{M_3}\zeta\right)
+  +
+  \sum_{p\in Z(df_Q)}
+  \eta(p)^\dagger\,\mathsf G_Q(p)\,\zeta(p),
+  \\
+  Z(df_Q)&=\{p\in M_3\mid df_Q(p)=0\}.
+  \end{aligned}
+  \label{eq:target-g2-singular-pairing}
+\end{equation}
+The hatted current kernel is
+\begin{equation}
+  \begin{aligned}
+  \widehat K_J^{G_2,{\rm cur}}(\widehat\lambda)
+  &=
+  \Lambda_{G_2}^{-2}
+  \left\langle a_J^{G_2},
+  \mathcal K_{\rm cur}^{\rm ADE}(\lambda)a_J^{G_2}
+  \right\rangle_{G_2,u},
+  \\
+  \lambda&=\Lambda_{G_2}^2\widehat\lambda,\qquad
+  \langle a_J^{G_2},a_J^{G_2}\rangle_{G_2,u}=1 .
+  \end{aligned}
+  \label{eq:target-g2-current-kernel}
+\end{equation}
+The canonical form uses
+\begin{equation}
+  Z_J^{G_2}
+  =
+  \partial_{\widehat\lambda}
+  \widehat K_J^{G_2,{\rm cur}}(0)>0,
+  \qquad
+  \widehat K_J^{G_2,{\rm cur,can}}
+  =
+  (Z_J^{G_2})^{-1}\widehat K_J^{G_2,{\rm cur}} .
+  \label{eq:target-g2-current-canonical}
+\end{equation}
+The local current-entry acceptance equation is
+\begin{equation}
+  \widehat K_J^{G_2,{\rm cur,can}}(\widehat\lambda)
+  =
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{G_2,{\rm can}}
+  +O(\widehat\lambda^2),
+  \qquad
+  \widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2.
+  \label{eq:target-g2-current-acceptance}
+\end{equation}
+The rejection outputs are
+\begin{equation}
+  \widehat\Sigma_{aa,2}^{G_2,{\rm can}}\ne2,\qquad
+  Z_2^{G_2}\le0,\qquad
+  \langle P_{a,2}^{G_2}a_2,P_{a,2}^{G_2}a_2\rangle_{G_2,u}\le0,
+  \label{eq:target-g2-current-rejection}
+\end{equation}
+or a surviving extra current channel in the local block.  The same local source
+package then has to support
+\begin{equation}
+  \Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J,\qquad
+  P_W(h_J)=\frac34+\Delta_W^{G_2},\qquad
+  P_Z(a_J^{\gamma^\perp})=2+\Delta_Y^{G_2},
+  \label{eq:target-g2-completion-projectors}
+\end{equation}
+and the pole-chain equation
+\begin{equation}
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+  =
+  \frac{x_+(3/4)}{x_+(2)}
+  +
+  \Delta_{\rm match}^{G_2}.
+  \label{eq:target-g2-pole-completion}
+\end{equation}
+Compact completion supplies the charge lattice, Standard Model global form,
+hypercharge embedding, anomaly inflow ledger, line-operator data, and the
+source-to-pole map.  These data are downstream of the local ADE current test.
 
 \paragraph*{Conclusion.}
 There is a controlled field basis, inner product, projection, and

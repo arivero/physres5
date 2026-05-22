@@ -18,6 +18,11 @@ constant LocalOperator : Type
 constant Pairing : Type
 constant SuperconnectionCurvature : Type
 constant OrderedProjectorPackage : Type
+constant ADERootLattice : Type
+constant SingularSupport : Type
+constant HiggsBundleSource : Type
+constant CompletionLedger : Type
+constant SourceFragmentBindings : Type
 
 structure CHMCurrentEntryData where
   interval : Interval
@@ -80,6 +85,58 @@ def g2LocalKernelTarget (G : G2LocalKernelAudit) : Prop :=
 
 axiom loop34_g2_local_kernel :
   ∃ G : G2LocalKernelAudit, g2LocalKernelTarget G
+
+structure Loop47G2ADEPairingTarget where
+  adeRootLattice : ADERootLattice
+  singularSupport : SingularSupport
+  higgsBundleSource : HiggsBundleSource
+  localOperator : LocalOperator
+  singularSupportPairing : Pairing
+  currentProjection : Projection
+  sourceScale : SourceScale
+  completionLedger : CompletionLedger
+  sourceFragments : SourceFragmentBindings
+  higgsBundleEquations :
+    -- Phi = sum_i t_i df_i, rho = sum_i t_i rho_i, Delta f_i = rho_i.
+    Prop
+  matterLocalization :
+    -- f_Q = sum_i q_i f_i and df_Q(p) = 0.
+    Prop
+  a1SubsetA2Enhancement :
+    -- ad A2 restricted to A1 x U(1) yields ad A1, singlet, and charged doublets.
+    Prop
+  currentSlopePositive :
+    -- Z_J^G2 = d_{hat lambda} K_J^{G2,cur}(0) > 0.
+    Prop
+  projectedNormPositive :
+    Prop
+  currentPairingEqualsJ :
+    -- K_J^{G2,cur,can} = hat lambda + Sigma_aa,J^{G2,can} + ...
+    -- with Sigma_aa,2^{G2,can} = 2.
+    Prop
+  flowOverlapDeferred :
+    Prop
+  ewProjectorsDeferred :
+    Prop
+  poleMapDeferred :
+    Prop
+  anomalyGlobalFormDeferred :
+    Prop
+
+def loop47G2ADEPairingReady (G : Loop47G2ADEPairingTarget) : Prop :=
+  G.higgsBundleEquations ∧
+  G.matterLocalization ∧
+  G.a1SubsetA2Enhancement ∧
+  G.currentSlopePositive ∧
+  G.projectedNormPositive ∧
+  G.currentPairingEqualsJ ∧
+  G.flowOverlapDeferred ∧
+  G.ewProjectorsDeferred ∧
+  G.poleMapDeferred ∧
+  G.anomalyGlobalFormDeferred
+
+axiom loop47_g2_ade_pairing_target_required :
+  ∃ G : Loop47G2ADEPairingTarget, loop47G2ADEPairingReady G
 
 structure EndpointArenaData where
   chanPatonLabels : Prop

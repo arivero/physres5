@@ -2,21 +2,18 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 105 REVTeX PRD preprint pages after the Loop 45
+- Current compiled draft: 108 REVTeX PRD preprint pages after the Loop 47
   compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
-- Loop 46 focus: turn the shared CHM admissibility lemma into a
-  source-equation acceptance/rejection protocol for the canonical
-  neutral-current target
-  \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\).  The required source data are
-  \(P_\gamma\), \(P_{a,J}^{\gamma^\perp}\), \(K_{\gamma,J}^{\rm ref}\),
-  \(\Lambda_{\rm CHM}\), \(Z_J^{\rm cur}\), endpoint signs, projector order or
-  commutation, photon-reference subtraction, and the pole map.
-- Next route-balancing pass: add the \(G_2\) local ADE-pairing target with an
-  \(A_1\subset A_2\) enhancement, singular-support pairing, current-entry
-  target, flow-overlap target, compact-completion ledger, anomaly/global-form
-  checks, and pole-map obligation.
+- Loop 47 focus: add Target IIIg, the \(G_2\) local ADE-pairing target with an
+  \(A_1\subset A_2\) enhancement, singular-support pairing, canonical
+  current-entry target, flow-overlap target, compact-completion ledger,
+  anomaly/global-form checks, and pole-map obligation.
+- Next derivation step: test whether the Target IIIg pairing can support
+  the flow-overlap product
+  \(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\), then relate the result to the
+  same \(P_W,P_Z,P_\gamma\), hypercharge, charge lattice, and pole-map ledger.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
@@ -137,7 +134,7 @@
   `notes/lean/ParentDirectoryLoop30.lean` record the sibling-workspace source
   queues for O1, O3, O4, O8, O10, O17, and O20.  The PDFs and primary local
   literature remain the source objects for manuscript-facing claims.
-- Use Loop 31's O10 pass/fail package in every dimensional-interpolation
+- Use Loop 31's O10 acceptance package in every dimensional-interpolation
   statement:
   \[
   u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
@@ -153,6 +150,10 @@
 
 ## Completed in latest pass
 
+- Added Loop 47 Target IIIg: a local \(G_2\) ADE-pairing current test with
+  singular-support pairing, \(A_1\subset A_2\) enhancement,
+  \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\) acceptance equation, completion
+  ledger, source bindings, Lean obligations, and referee/advisor/recall reports.
 - Ran referee/advisor normalization round 2 and recorded the two referee reports plus advisor report in `reviews/`.
 - Added Appendix D Target VI for dimensional interpolation and a source-status table plus compatibility diagram in Appendix E.
 - Added the interval Schur-complement target as the active O10/O4 bridge.
@@ -230,7 +231,7 @@
   subtraction, shared \(\Lambda_{\rm CHM}\) current-entry target, parent
   directory source-fragment extraction, and Lean/source ledgers for the new
   source queues.
-- Added Loop 31 normalization: O10 hatted middle-line pass/fail theorem,
+- Added Loop 31 normalization: O10 hatted middle-line acceptance theorem,
   source package with \(\Lambda_J\), inner product, projection, extra-channel
   rule, endpoint subtargets, optional CHM top extension, parent-directory
   source queue, and Loop 31 referee/advisor reports.

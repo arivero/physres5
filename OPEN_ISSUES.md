@@ -211,7 +211,7 @@ a_J^{\gamma^\perp}
 P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}
 \rangle_{u_{\rm EW}}}}.
 \]
-The charged side now has the companion target
+The charged side has the companion target
 \[
 P_W(h_J)=\frac34+\Delta_W(u_{\rm EW}),\qquad
 \Delta_W(u_{\rm EW})\stackrel{\rm closure}{=}0.
@@ -424,10 +424,10 @@ Candidate routes are endpoint/Chan--Paton data, interval boundary eigenvalue con
 \]
 The next derivation must identify the physical origin of these entries: endpoint charge normalization, interval boundary variation, localized \(G_2\) data, or a shared operator whose low-energy reduction fixes both.
 
-**Endpoint refinement.** The brane-Higgsing route now has a concrete dictionary:
+**Endpoint refinement.** The brane-Higgsing route has a concrete dictionary:
 Chan--Paton labels supply matrix fields, coincident branes supply adjoint gauge fields and scalars, and separated branes give scalar/vector mixing through stretched strings. The unresolved step is the reduction of this matrix worldvolume data to \(\kappa_J^2=\tau_J=J\) and the ordered pair \((3/4,2)\).
 
-**Interval refinement.** The KK route now has a parallel dictionary:
+**Interval refinement.** The KK route has a parallel dictionary:
 interval variational data supply a boundary kernel \(K_J^{\rm int}(\lambda)\), boundary kinetic and mass terms supply eigenvalue-dependent conditions, and the DeVries target is
 \[
 \Sigma_{hh,J}^{\rm int}=0,\qquad
@@ -514,7 +514,7 @@ photon zero-mode preservation, and \(\lambda\mapsto m_n^2\mapsto\Pi_T(s)\)
 supplied.
 
 **Loop 27 current-entry normalization refinement.** The CHM current-channel
-test now has a normalized extraction:
+test has a normalized extraction:
 \[
 K^{\rm cur}_J(\lambda)
 =
@@ -559,7 +559,7 @@ kinetic terms, scalar-product normalization, and the variables entering
 \(K^{\rm brane}_{T,J}\).
 
 **Loop 30 rendered CHM convention refinement.** The rendered CHM audit turns
-the hatted current entry into a pass/fail source theorem.  Source facts now
+the hatted current entry into an acceptance source theorem.  Source facts now
 include the boundary kinetic term and \(M_i^{-1}\) endpoint product, the
 eigenvalue-dependent scalar boundary condition, vector Robin data, the
 \(A_5/\pi_i\) scalar boundary equations, and photon/custodial boundary
@@ -585,7 +585,7 @@ source-to-pole matching, O10 for the single source variable and
 \(\Lambda_J(u)\), and O20 for the common reduced basis with the Hodge
 off-diagonal test.  Issue status remains open.
 
-**Loop 34 source-kernel theorem refinement.** The first O4 pass/fail theorem is
+**Loop 34 source-kernel theorem refinement.** The first O4 acceptance theorem is
 now the hatted CHM current entry:
 \[
 \mathfrak D_{\rm O4}^{\rm CHM}
@@ -648,7 +648,7 @@ This package ties O4 to O1 through the ordered projectors, to O3 through the
 scalar functional, to O8 through \(\Delta_J^{\rm sc/int}\), to O10 through
 \(\Lambda_J(u)\), and to O20 through \(P_{\rm sc}\).
 
-**Loop 41 proof-test refinement.** The next O4 pass/fail test is the hatted CHM
+**Loop 41 proof-test refinement.** The next O4 acceptance test is the hatted CHM
 current entry in the sc/int package:
 \[
 \widehat\Sigma_{aa,2}^{\rm CHM}=2 .
@@ -686,7 +686,7 @@ slope
 Z_J^{\rm cur}
 =\partial_{\widehat\lambda}\widehat K_J^{\rm cur}(0)>0.
 \]
-The pass/fail diagonal test is
+The diagonal acceptance test is
 \[
 \widehat\Sigma_{aa,2}^{\rm CHM,can}=2.
 \]
@@ -724,7 +724,7 @@ The next proof step is to identify \(K^{\rm bdry}_J\), \(L_J\), \(V_J\), the
 inner product, and the decoupling or block-diagonal treatment of additional
 light channels.
 
-**\(G_2\) refinement.** The local \(G_2\) route now has a parallel kernel:
+**\(G_2\) refinement.** The local \(G_2\) route has a parallel kernel:
 \[
 K_J^{G_2}(\lambda)=
 \begin{pmatrix}
@@ -738,7 +738,42 @@ with target
 \Sigma_{aa,J}^{G_2}=J,\qquad
 \Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J.
 \]
-The unresolved steps are the derivation from singular gauge loci and Higgs-bundle data, the scalar map \(u_-(J)\mapsto\mathcal F_{G_2}\), and anomaly/global-form compatibility.
+Loop 47 adds a local \(G_2\) ADE-pairing test.  The
+source datum is
+\[
+u_{G_2}^{\rm loc}=(M_3,\Gamma_{\rm ADE},W,\Phi,\rho_i,f_i,Q,p,\gamma,
+A_1\subset A_2,\Lambda_{G_2}),
+\]
+with the local enhancement target
+\[
+\operatorname{ad}A_2\!\downarrow_{A_1\times U(1)}
+=
+(\operatorname{ad}A_1)_0\oplus{\bf 1}_0\oplus{\bf 2}_{+q}\oplus{\bf 2}_{-q}.
+\]
+The singular-support pairing is
+\[
+\langle\eta,\zeta\rangle_{G_2,u}
+=
+\int_{M_3}{\rm Tr}_{\rm ADE}(\eta\wedge *_{M_3}\zeta)
++
+\sum_{p\in Z(df_Q)}
+\eta(p)^\dagger\mathsf G_Q(p)\zeta(p).
+\]
+The canonical current-entry test is
+\[
+\widehat K_J^{G_2,{\rm cur,can}}(\widehat\lambda)
+=
+\widehat\lambda+\widehat\Sigma_{aa,J}^{G_2,{\rm can}}
++O(\widehat\lambda^2),
+\qquad
+\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2.
+\]
+The unresolved steps are the local derivation of
+\(\mathcal K_{\rm cur}^{\rm ADE}\), positivity of \(Z_2^{G_2}\), extra-channel
+control, the flow-overlap product
+\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\), the scalar map
+\(u_-(J)\mapsto\mathcal F_{G_2}\), compact charge-lattice completion,
+hypercharge embedding, anomaly/global-form compatibility, and pole matching.
 
 **Route-comparison refinement.** Sec. VI.G now places the endpoint, interval, and \(G_2\) routes into one kernel target:
 \[
@@ -872,7 +907,7 @@ the manuscript must state the changed object and its matching law.  The
 named unresolved obligation.
 
 **Loop 20 route-remainder refinement.** A route-specific exact pole statement
-now has the form
+has the form
 \[
 \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
 =
@@ -1067,7 +1102,7 @@ This scale datum is part of the same single-source burden as the
 electroweak-ray map, negative-branch scalar functional, and top-sector source
 map.
 
-**Loop 31 single-source pass/fail refinement.** Appendix E and Target VI now
+**Loop 31 single-source acceptance refinement.** Appendix E and Target VI now
 make the \(D=10/6\) middle line a normalized source package:
 \[
 u\mapsto
@@ -1077,7 +1112,7 @@ u\mapsto
 \qquad
 \widehat\lambda=\lambda/\Lambda_J(u)^2 .
 \]
-The pass/fail theorem is
+The acceptance theorem is
 \[
 (\mathcal B(u),\langle\cdot,\cdot\rangle_u,P_J(u),\Lambda_J(u),
 \mathcal D_J^{\rm extra}(u))
@@ -1134,7 +1169,7 @@ This is a concrete O10 closure package.  It still requires an explicit map from
 compact or boundary data to the electroweak ray, plus the endpoint
 electromagnetic embedding for the \(D=9\) or colourless \(D=5\) end.
 
-**Loop 41 source-ledger refinement.** Appendix E now records a pass/fail ledger
+**Loop 41 source-ledger refinement.** Appendix E now records an acceptance ledger
 for \(u_{\rm sc/int}\).  CHM supplies the boundary kernels, Coquereaux supplies
 finite \(SU(2|1)\) gauge-Higgs vocabulary, Witten supplies the Hodge/SUSY-QM
 template, Hosotani supplies Wilson-line scalar dynamics, six-dimensional string
@@ -1510,7 +1545,7 @@ electroweak odd/even vocabulary.  The projection \(P_{\rm sc}\), the common
 inner product, \(J=s(s+1)\), \(B_J\), extra-channel decoupling, the
 negative-branch scalar map, and complex-pole matching remain O20 theorem data.
 
-**Loop 40 boundary-superconnection refinement.** Target X now has an interval
+**Loop 40 boundary-superconnection refinement.** Target X has an interval
 implementation:
 \[
 \widehat K^{\rm sc/int}_J

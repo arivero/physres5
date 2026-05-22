@@ -2,7 +2,15 @@
 \label{sec:g2-localization}
 % Status: cited/open. G2 localization background is cited; local-kernel reductions remain theorem targets.
 
-The \(G_2\) route supplies a third concrete language for the DeVries program.  Its role in this manuscript is local.  It gives a framework in which gauge fields, charged matter, order-parameter data, and deformation modes can live at singular loci of a compactification.  M-theory on \(G_2\)-holonomy spaces is a natural route to four-dimensional \(\mathcal N=1\) structure; singularities provide the gauge and matter sectors needed for particle physics \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004}.  The DeVries question is whether a localized \(G_2\) operator can reduce to the same two-channel determinant used in the pole-ratio clue.
+The \(G_2\) route supplies a local language for the DeVries program.  Its role
+in this manuscript is local.  It gives a framework in which gauge fields,
+charged matter, order-parameter data, and deformation modes can live at singular
+loci of a compactification.  M-theory on \(G_2\)-holonomy spaces is a standard
+route to four-dimensional \(\mathcal N=1\) structure; singularities provide the
+gauge and matter sectors needed for particle physics
+\cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004}.  The DeVries
+question is whether a localized \(G_2\) operator can reduce to the same
+two-channel determinant used in the pole-ratio clue.
 
 \subsection{Singular support for gauge and matter sectors}
 \label{sec:g2-singular-support}
@@ -50,7 +58,11 @@ Matter in the representation \(R_Q\) localizes at points where
   df_Q(p)=0.
   \label{eq:g2-localization-condition}
 \end{equation}
-Flow lines between such critical points can generate mass terms, and trivalent flow trees can generate Yukawa couplings when the representation charges sum to zero \cite{BraunEtAl2019}.  This is a strong local dictionary: gauge data, matter localization, mass terms, and interactions are all functions of the same geometric input.
+Flow lines between such critical points can generate mass terms, and trivalent
+flow trees can generate Yukawa couplings when the representation charges sum to
+zero \cite{BraunEtAl2019}.  The resulting local dictionary expresses gauge
+data, matter localization, mass terms, and interactions as functions of the same
+geometric input.
 
 For the DeVries construction, the Higgs-bundle variables give a possible address for the local operator:
 \begin{equation}
@@ -114,15 +126,91 @@ and
   df_Q(p)=0.
   \label{eq:g2-source-equation-audit-two}
 \end{equation}
-The current entry \(\Sigma_{aa,J}^{G_2}=J\) and the flow-overlap product
-\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\) are local entry targets requiring
-the operator \(\mathcal O_J^{G_2}\) and the pairing on
-\(\mathcal H_J^{G_2}\).
-The operator, pairing, and equality to \(J\) are theorem data for the \(G_2\)
-route.
-This target is a local test.  A derived entry near one singular locus or one
-conical point would establish the local kernel datum; compact global completion
-and pole matching remain separate theorem data.
+The current entry \(\Sigma_{aa,J}^{G_2}=J\) is tested by the following local
+ADE-pairing protocol.  Fix a source datum
+\begin{equation}
+  u_{G_2}^{\rm loc}
+  =
+  (M_3,\Gamma_{\rm ADE},W,\Phi,\rho_i,f_i,Q,p,\gamma,
+  A_1\subset A_2,\Lambda_{G_2}),
+  \label{eq:g2-local-source-datum}
+\end{equation}
+where the \(A_1\subset A_2\) enhancement records the local root-pairing test
+\begin{equation}
+  \operatorname{ad} A_2\!\downarrow_{A_1\times U(1)}
+  =
+  (\operatorname{ad} A_1)_0
+  \oplus {\bf 1}_0
+  \oplus {\bf 2}_{+q}
+  \oplus {\bf 2}_{-q}.
+  \label{eq:g2-a1-a2-enhancement-test}
+\end{equation}
+The singular support carries the pairing
+\begin{equation}
+  \begin{aligned}
+  \langle \eta,\zeta\rangle_{G_2,u}
+  &=
+  \int_{M_3}
+  {\rm Tr}_{\rm ADE}\!\left(\eta\wedge *_{M_3}\zeta\right)
+  +
+  \sum_{p\in Z(df_Q)}
+  \eta(p)^\dagger\,\mathsf G_Q(p)\,\zeta(p),
+  \\
+  Z(df_Q)&=\{p\in M_3\mid df_Q(p)=0\}.
+  \end{aligned}
+  \label{eq:g2-singular-support-pairing}
+\end{equation}
+The first term is the current-support pairing on the ADE locus.  The point
+support term is the localized matter metric required by the later flow-overlap
+entry.
+
+The entry-level current test chooses a projected adjoint fluctuation
+\(a_J^{G_2}\) with
+\begin{equation}
+  \langle a_J^{G_2},a_J^{G_2}\rangle_{G_2,u}=1
+  \label{eq:g2-current-unit-norm}
+\end{equation}
+and defines
+\begin{equation}
+  \begin{aligned}
+  \widehat K_J^{G_2,{\rm cur}}(\widehat\lambda)
+  &=
+  \Lambda_{G_2}^{-2}
+  \left\langle a_J^{G_2},
+  \mathcal K_{\rm cur}^{\rm ADE}(\lambda)a_J^{G_2}
+  \right\rangle_{G_2,u},
+  \\
+  \lambda&=\Lambda_{G_2}^2\widehat\lambda .
+  \end{aligned}
+  \label{eq:g2-current-kernel-normalization}
+\end{equation}
+The canonical current kernel is fixed by
+\begin{equation}
+  Z_J^{G_2}
+  =
+  \partial_{\widehat\lambda}
+  \widehat K_J^{G_2,{\rm cur}}(0)>0,
+  \qquad
+  \widehat K_J^{G_2,{\rm cur,can}}
+  =
+  (Z_J^{G_2})^{-1}\widehat K_J^{G_2,{\rm cur}} .
+  \label{eq:g2-current-canonical-factor}
+\end{equation}
+The target is
+\begin{equation}
+  \widehat K_J^{G_2,{\rm cur,can}}(\widehat\lambda)
+  =
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{G_2,{\rm can}}
+  +O(\widehat\lambda^2),
+  \qquad
+  \widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2 .
+  \label{eq:g2-current-entry-target}
+\end{equation}
+This local test precedes the off-diagonal flow-overlap product and the
+electroweak pole map.  Compact global completion, anomaly inflow, the charge
+lattice, hypercharge embedding, and pole matching remain theorem data.
+Appendix~\ref{app:target-g2-ade-pairing} states the same protocol as Target
+IIIg.
 
 \subsection{Dictionary for the \texorpdfstring{$G_2$}{G2} entries}
 \label{sec:g2-entry-dictionary}
@@ -133,20 +221,20 @@ The local \(G_2\) dictionary is:
 \toprule
 DeVries entry & \(G_2\) origin & Derivation target \\
 \midrule
-\(\Sigma_{aa,J}^{G_2}=J\) & ADE singular gauge sector, current algebra, or adjoint fluctuation along \(M_3\) & show that the normalized local trace is the relevant quadratic invariant \\
-\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\) & localized matter overlap, flow-line coupling, bifundamental vev, or singularity-deformation mixing & derive the off-diagonal product from the local wavefunctions or flow data \\
+\(\Sigma_{aa,J}^{G_2}=J\) & ADE singular gauge sector with \(A_1\subset A_2\) enhancement and singular-support pairing & derive the canonical current entry \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\) \\
+\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\) & localized matter at \(df_Q=0\), flow-line coupling, bifundamental vev, or singularity-deformation mixing & derive the flow-overlap product from the point-support metric and local wavefunctions \\
 \(\Sigma_{hh,J}^{G_2}=0\) & reference order-parameter channel at a critical point of \(f_Q\) & justify the zero entry through local normalization or symmetry of the critical-point problem \\
-\((J_H,J_{\rm adj})=(3/4,2)\) & localized doublet/order-parameter data and adjoint/current data & derive the ordered electroweak assignment inside the same local singularity model \\
+\((J_H,J_{\rm adj})=(3/4,2)\) & localized doublet/order-parameter data, adjoint/current data, and photon-orthogonal completion data & derive \(P_W\), \(P_Z\), \(P_\gamma\), hypercharge, charge lattice, and pole map in the same compact model \\
 \bottomrule
 \end{tabular}
 \end{center}
 This table turns \(G_2\) geometry into a determinant problem.  Each geometric
 object must provide one entry of \(K_J^{G_2}\), one assignment rule, or one
-consistency check.  A main-claim \(G_2\) route has to derive at least one of
-\(\Sigma_{aa,J}^{G_2}\), \(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}\), or
-\(\Sigma_{hh,J}^{G_2}\) from Higgs-bundle or localized-singularity data with a
-stated inner product.
-A \(G_2\) route enters the dimensional interpolation only after the local
+consistency check.  A \(G_2\) route that supports the manuscript claim has to
+derive at least one of \(\Sigma_{aa,J}^{G_2}\),
+\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}\), or \(\Sigma_{hh,J}^{G_2}\) from
+Higgs-bundle or localized-singularity data with a stated inner product.
+A \(G_2\) route enters the dimensional interpolation after the local
 operator is embedded into a compact model whose chiral spectrum, anomaly
 inflow, global form, and electroweak charge normalization are stated.
 
@@ -160,24 +248,27 @@ space,
   \langle h_J^{G_2},a_J^{G_2}\rangle_{G_2},
   \label{eq:g2-local-inner-product}
 \end{equation}
-where the pairing is defined by the local wavefunctions, charge density, or
-Higgs-bundle data on the singular support.  A \(G_2\) derivation must specify
-this pairing before the local trace can be identified with
-\(\Sigma_{aa,J}^{G_2}=J\).
-At this stage the \(G_2\) route specifies local operators through
-\(\mathcal H_J^{G_2}\) and its pairing.  A CHM-comparable current entry requires
-four additional data: the pairing, compact completion, charge lattice, and pole
-map.
-
-The first local test is therefore entry-by-entry.  The adjoint-entry
-derivation identifies the gauge-field fluctuation \(W\) along the singular
-gauge locus, with the normalized ADE or adjoint invariant giving
+where the pairing is the singular-support form of
+Eq.~\eqref{eq:g2-singular-support-pairing}.  The current-entry derivation
+identifies the gauge-field fluctuation \(W\) along the singular gauge locus and
+then evaluates
 \begin{equation}
   W\big|_{M_3}
   \quad\leadsto\quad
-  \Sigma_{aa,J}^{G_2}=J .
+  \widehat K_J^{G_2,{\rm cur,can}}
+  \quad\leadsto\quad
+  \widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2 .
   \label{eq:g2-W-current-entry}
 \end{equation}
+The rejection outputs are
+\begin{equation}
+  \widehat\Sigma_{aa,2}^{G_2,{\rm can}}\ne 2,\qquad
+  Z_2^{G_2}\le0,\qquad
+  \langle P_{a,2}^{G_2}a_2,P_{a,2}^{G_2}a_2\rangle_{G_2,u}\le0,
+  \label{eq:g2-current-rejection-outputs}
+\end{equation}
+or an unresolved extra current channel.  These outputs classify the local ADE
+pairing before a compactification or pole claim is made.
 The off-diagonal-product derivation identifies the localized matter and
 Higgs-bundle data,
 \begin{equation}
@@ -239,7 +330,10 @@ The map must also respect the electroweak ray.  The deformation parameter can su
 \subsection{Anomaly and global checks}
 \label{sec:g2-anomaly-global}
 
-The \(G_2\) route has strong consistency tests.  Witten's anomaly-inflow discussion links local singularity data to four-dimensional chiral matter and anomaly cancellation \cite{WittenG2Anomaly2001}.  Therefore a local DeVries operator has to pass the following checks:
+The \(G_2\) route has consistency tests.  Witten's anomaly-inflow discussion
+links local singularity data to four-dimensional chiral matter and anomaly
+cancellation \cite{WittenG2Anomaly2001}.  Therefore a local DeVries operator
+has to pass the following checks:
 \begin{enumerate}
 \item the singular gauge locus supports the required adjoint sector;
 \item localized charged matter has the desired representation content;

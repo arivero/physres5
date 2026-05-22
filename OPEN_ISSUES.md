@@ -575,3 +575,66 @@ Pole Spectrum and Its String/Kaluza--Klein Interpretation."
 Casimir, Sec.~II states the ansatz status and the single Casimir-eigenvalue
 input, the abstract names the weak mixing angle / pole ratio, and the Casimir
 lineage survives as a cited historical clue.
+
+## O14. Trace-space separation
+
+**Provenance.** Targeted parent audit of `../weak` and
+`../hans/signed_dbdevries`.
+
+**Question.** How should the manuscript separate trace arguments that occur in
+different source spaces?
+
+**Current working idea.** Use separate symbols for three matrices:
+\[
+  Q(J),\qquad K_{\rm seed}^{(1)},\qquad K_-^{\sigma_3}.
+\]
+The first is the original DeVries branch matrix.  The second is a rank-one,
+spectator-preserving seed deformation from the `../weak` audit.  The third is
+the signed two-state negative-sector EFT in the signed-root workspace.  A
+coefficient or trace-preserving statement from one space can enter another
+space only after a common source operator, field basis, and normalization rule
+are derived.
+
+**Success criterion.** Appendix D or the route-comparison ledger names the
+three spaces separately and blocks coefficient transfer until a common source
+operator is supplied.
+
+## O15. Wigner--Eckart route status
+
+**Provenance.** Targeted parent audit of `../weak/LAGRANGIAN.md` and
+`../weak/LAGRANGIAN_PC.md`.
+
+**Question.** How should the manuscript represent the tested Wigner--Eckart or
+Clebsch route to the DeVries off-diagonal entry?
+
+**Current working idea.** Treat the checked natural-parent route as a failed
+route result.  In the tested cases, the doublet parent fails by selection rule
+and the triplet axial parent gives the wrong parent-Casimir datum.  A future
+route must specify a different parent representation, operator, or projection.
+
+**Success criterion.** The KK/brane/G2 route ledger records Wigner--Eckart as a
+failed tested subroute and keeps an explicit target for any alternative parent
+representation or projection.
+
+## O16. SO(32) flavor/string completion boundary
+
+**Provenance.** Targeted parent audit of `../phys3`, `../phys4`, and
+`../dualsm`.
+
+**Question.** Which part of the SO(32) material is a flavor theorem target, and
+which part requires string completion data?
+
+**Current working idea.** The group-theory target is
+\[
+  16=(5,3)+(1,1),
+  \qquad
+  \wedge^2(5,3)=(15,\bar 3)+(\overline{10},6).
+\]
+The symmetric \(15\) follows from the \((5,3)\) tensor-product block.  SO(32)
+serves as a Type I/heterotic consistency arena.  The compactification claim
+requires orientifold/tadpole data, projection of extra states, and a coupling
+from the flavor boundary to the electroweak DeVries operator.
+
+**Success criterion.** Flavor prose states the SO(32) role as boundary
+bookkeeping and completion arena, with generation topology, extra-state
+projection, and ordered W/Z assignment recorded as open derivations.

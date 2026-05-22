@@ -35,6 +35,9 @@
 - Added Loop 13 rank-and-ray normalization: Appendix D Target IIa,
   electroweak-ray equations in Sec. IV, separated \(t_{\rm EW}\) and
   \(t_{\rm dim}\) in Appendix E, and a \(G_2\) inner-product target.
+- Added Loop 14 parent targeted audit: Wrong Turn provenance, trace-space
+  separation, Wigner--Eckart failed-route status, SO(32) flavor/string
+  boundary obligations, and top-boundary cautions.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -97,6 +100,13 @@
   \]
   with one radial parameter, persistent photon null direction, and simultaneous
   W/Z mass collapse.
+- Separate the three trace ledgers \(Q(J)\), \(K_{\rm seed}^{(1)}\), and
+  \(K_-^{\sigma_3}\) in the theorem-target appendix or route comparison.
+- Represent the tested Wigner--Eckart/Clebsch route as a negative subroute
+  unless a different parent representation, operator, or projection is supplied.
+- Turn the SO(32) flavor/string target into a sourced theorem statement with
+  explicit extra-state projection, orientifold/tadpole, and electroweak-operator
+  coupling obligations.
 
 ## Source work
 
@@ -110,6 +120,11 @@
 - Keep web-discovered papers local: download PDFs into `references/pdfs/`, update `context/source_inventory.md`, rerun `scripts/fragment_pdfs.py`.
 - Page-check image-bearing adjacent PDFs directly when formulas or plots matter; `pdftotext` output is only an access aid.
 - Replace parent-workspace source-note claims with primary references before manuscript citation.  Priority upgrades: custodial EFT/HEFT for the negative-sector obstruction, Chan-Paton/orientifold sources for SO(32)-flavor boundary claims, Witten 1981 plus six-dimensional string sources for the dimensional-interpolation endpoint dictionary.
+- Upgrade Loop 14 source-note claims before manuscript use: direct Wrong Turn
+  post context if intellectual history enters the paper, Slansky/Rivero/Type I
+  SO(32) sources for flavor claims, Hanany--Witten/M5/D6-as-KK sources for
+  brane claims, and kinetic-mixing or paired-D-term literature for
+  negative-sector templates.
 
 ## Review cycle
 

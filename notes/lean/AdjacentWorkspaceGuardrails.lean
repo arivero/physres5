@@ -193,4 +193,100 @@ def parentDimensionalInterpolationReady
 axiom parent_dimensional_interpolation_requires_primary_control :
   ∃ I : ParentDimensionalInterpolation, parentDimensionalInterpolationReady I
 
+/- Targeted parent audit from Loop 14. -/
+structure PhysicsForumsWrongTurnProvenance where
+  liveThreadAvailable : Prop
+  localCatalogueAvailable : Prop
+  fiveLightFlavorEndpointIdea : Prop
+  topExcludedFlavorProvenance : Prop
+  seibergAndBraneMechanismTrail : Prop
+  directPostOrPrimarySourceRequired : Prop
+
+def physicsForumsProvenanceReady
+    (P : PhysicsForumsWrongTurnProvenance) : Prop :=
+  P.liveThreadAvailable ∧
+  P.localCatalogueAvailable ∧
+  P.fiveLightFlavorEndpointIdea ∧
+  P.topExcludedFlavorProvenance ∧
+  P.seibergAndBraneMechanismTrail ∧
+  P.directPostOrPrimarySourceRequired
+
+axiom wrong_turn_thread_is_provenance_only :
+  ∃ P : PhysicsForumsWrongTurnProvenance, physicsForumsProvenanceReady P
+
+/- Distinct traces found across adjacent workspaces. -/
+structure TraceSpaceSeparation where
+  devriesBranchTrace : Type
+  rankOneSeedTrace : Type
+  negativeSectorSigmaTrace : Type
+  separateNotation : Prop
+  commonSourceOperatorRequired : Prop
+  coefficientTransferExcludedUntilDerived : Prop
+
+def traceSpacesSeparated (T : TraceSpaceSeparation) : Prop :=
+  T.separateNotation ∧
+  T.commonSourceOperatorRequired ∧
+  T.coefficientTransferExcludedUntilDerived
+
+axiom trace_arguments_require_disjoint_ledgers :
+  ∃ T : TraceSpaceSeparation, traceSpacesSeparated T
+
+/- Tested Wigner--Eckart/Clebsch route status. -/
+structure WignerEckartRouteStatus where
+  naturalParentsTested : Prop
+  doubletParentSelectionRuleFailure : Prop
+  tripletAxialWrongCasimirDatum : Prop
+  alternativeParentOrProjectionRequired : Prop
+
+def wignerEckartRouteClosedForTestedParents
+    (W : WignerEckartRouteStatus) : Prop :=
+  W.naturalParentsTested ∧
+  W.doubletParentSelectionRuleFailure ∧
+  W.tripletAxialWrongCasimirDatum ∧
+  W.alternativeParentOrProjectionRequired
+
+axiom wigner_eckart_route_is_negative_for_tested_parents :
+  ∃ W : WignerEckartRouteStatus,
+    wignerEckartRouteClosedForTestedParents W
+
+/- SO(32) flavor-boundary theorem target from parent notes. -/
+structure SO32FlavorTheoremTarget where
+  vectorSixteenDecomposition : Prop
+  exteriorSquareBlock : Prop
+  symmetricFifteenFromTensorBlock : Prop
+  typeIHeteroticBoundaryArena : Prop
+  extraStateProjectionRequired : Prop
+  electroweakOperatorCouplingRequired : Prop
+  orientifoldTadpoleCompletionRequired : Prop
+
+def SO32FlavorTheoremTargetReady (S : SO32FlavorTheoremTarget) : Prop :=
+  S.vectorSixteenDecomposition ∧
+  S.exteriorSquareBlock ∧
+  S.symmetricFifteenFromTensorBlock ∧
+  S.typeIHeteroticBoundaryArena ∧
+  S.extraStateProjectionRequired ∧
+  S.electroweakOperatorCouplingRequired ∧
+  S.orientifoldTadpoleCompletionRequired
+
+axiom SO32_flavor_target_requires_projection_and_coupling :
+  ∃ S : SO32FlavorTheoremTarget, SO32FlavorTheoremTargetReady S
+
+/- Brane and top-sector source-upgrade queue. -/
+structure BraneTopBoundaryDatum where
+  hananyWittenPrimarySource : Prop
+  mTheoryD6KKMonopolePrimarySource : Prop
+  m5CurvePrimarySource : Prop
+  topAsFourthFlavorBoundaryDatum : Prop
+  topNegativeBranchLinkDerived : Prop
+
+def braneTopBoundaryDatumReady (B : BraneTopBoundaryDatum) : Prop :=
+  B.hananyWittenPrimarySource ∧
+  B.mTheoryD6KKMonopolePrimarySource ∧
+  B.m5CurvePrimarySource ∧
+  B.topAsFourthFlavorBoundaryDatum ∧
+  B.topNegativeBranchLinkDerived
+
+axiom top_boundary_datum_requires_separate_branch_map :
+  ∃ B : BraneTopBoundaryDatum, braneTopBoundaryDatumReady B
+
 end DeVries.AdjacentWorkspace

@@ -40,13 +40,83 @@ downloaded papers before they enter manuscript prose as cited physics.
 | `../signed-dv-custodial-project/mechanisms/regge_field_theory.md` | Regge theorem target | \(C_F/C_A=3/8\) has a natural leading-log Reggeization meaning in SU(2), while the manuscript still owes a map from that high-energy \(t\)-channel statement to a vacuum scalar functional or vector pole self-energy. |
 | `../dualsm/assessment/GENERAL-REPORT.md` | workflow discipline | Dense speculative corpora need source-grounded assessment, contradiction checks, adjudication, and scoped claims.  Use this as process memory only. |
 | `../dualsm/sources/` | future source queue | Seiberg duality and dualized-SM sources may help future duality claims.  Current electroweak determinant work can proceed independently. |
-| `../phys4/notes/` | adjacent speculative-corpus index | Contains many Seiberg/SO(32)/CKM/PhysicsForums notes, including a Wrong Turn catalogue.  Use only through targeted source-audit tasks; no manuscript claim is promoted from this directory by the root inventory alone. |
+| `../phys4/notes/` | targeted adjacent-corpus audit | Contains Seiberg/SO(32)/brane/M-theory/PhysicsForums notes, including the Wrong Turn catalogue.  The targeted audit promotes provenance, mechanism-address dictionaries, and theorem targets only; journal-facing claims require primary-source replacement. |
 | `../phys5gpd/`, `../phys6gpd/`, `../balance/`, `../pdghist/`, `../sakurai/`, `../nokoide/`, `../vixra*` | out-of-scope queues | These directories may contain useful future source trails or cautionary datasets.  They are excluded from the present electroweak string/KK derivation loop unless a focused issue opens them. |
 | `../README.md`, `../review.md`, `../plan.txt` | excluded parent notes | The root README is tool usage; the security review concerns host hardening; the plan concerns another paper with calculation-heavy work.  They add no current manuscript claim. |
 | `../recap/` | excluded for current manuscript claims | Mostly Koide and fermion mass material.  Use only after a future flavor-specific source audit. |
 | `../orbits/` | excluded for current manuscript claims | Navigation/orbit notes read as outside the current electroweak string/KK manuscript. |
 
 ## Promoted obligations
+
+### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit
+
+The targeted parent audit adds a second layer to the broad inventory.  The
+valid imports are source-note provenance and route tests.
+
+PhysicsForums/Wrong Turn material records the historical genealogy of the
+project: low-energy string/SUSY interpretation, five light quark endpoints,
+the top as the heavy excluded flavor, Seiberg-duality mechanism searches,
+Masiero--Veneziano rediscovery, brane/SQCD proposals, and SO(32) flavor
+bookkeeping.  The live thread is
+`https://www.physicsforums.com/threads/the-wrong-turn-of-string-theory-our-world-is-susy-at-low-energies.485247/`;
+the local catalogue is `../phys4/notes/135-pf-wrong-turn-catalogue.md`.
+This is provenance.  A manuscript claim needs either direct thread citation
+with post context or the corresponding primary paper.
+
+The `../weak` audit separates representation selection from dynamics.  The
+rule that chooses the two lowest non-trivial \(SU(2)\) representations selects
+\(\mathbf 2,\mathbf 3\), while the physical source rule remains open: the
+singlet discard, the ordering, and the coupling to W/Z pole data still require
+a mass-map theorem.  The Wigner--Eckart/Clebsch route tested in
+`../weak/LAGRANGIAN_PC.md` is a failed route result for the natural parents
+checked there: the doublet parent vanishes by selection rule and the triplet
+axial parent gives the wrong parent-Casimir datum.  Future use of a
+Wigner--Eckart idea requires a different parent representation, operator, or
+projection, with the failure mode stated.
+
+Three trace spaces must remain distinct:
+\[
+  {\rm tr}\,Q(J),\qquad
+  {\rm tr}\,K_{\rm seed}^{(1)},\qquad
+  {\rm tr}\,K_-^{\sigma_3}.
+\]
+The first is the trace of the original DeVries branch matrix.  The second is a
+rank-one, spectator-preserving seed deformation in the `../weak` notes.  The
+third is the signed two-state negative-sector EFT used in the signed-root
+workspace.  Coefficients and trace arguments require separate ledgers across these
+spaces until a common source operator is supplied.
+
+The `../hans/signed_dbdevries` audit supplies existence templates for
+negative-sector operators.  A paired exotic D-term can realize a signed
+two-state operator with a chosen exotic charge; kinetic mixing can engineer an
+effective charge through a continuous mixing parameter.  These are operator
+templates with exotic or continuous matching data.  The Casimir coefficient and
+the DeVries branch assignment still require a derivation.
+
+The `../phys4` brane/M-theory notes supply a mechanism dictionary.  Standard
+lemmas to source before manuscript use include Hanany--Witten brane creation,
+Seiberg duality from brane motion, D6 branes as Kaluza--Klein monopoles in
+M-theory, M5 curves for SQCD, and baryon vertices.  Project-specific
+identifications such as top-as-asymptotic KK-monopole datum, \(84+12\) as an
+SM/M-theory split, and tensor-multiplet reductions remain theorem targets.
+
+The SO(32) parent notes give a cleaner flavor-boundary theorem target:
+\[
+  16=(5,3)+(1,1),\qquad
+  \wedge^2(5,3)=(15,\bar 3)+(\overline{10},6).
+\]
+The symmetric \(15\) follows from the \((5,3)\) tensor-product block.  SO(32)
+enters as a Type I/heterotic boundary and consistency arena.  The ordered
+electroweak assignment, the decoupling/projection of extra states, and any
+orientifold/tadpole projection remain open.
+
+The parent D=11/D=9 interpolation note is provenance for the idea that the
+electroweak sector sits between a seven-extra-dimensional KK setting and a
+five-extra-dimensional endpoint.  The controlling primary sources remain
+Witten 1981 plus the local six-dimensional string sources.  The targeted audit
+found ingredients for seven compact M-theory dimensions, six Type I compact
+dimensions, and five flavor labels; a completed derivation linking those counts
+remains absent from the audited notes.
 
 ### Gauge-Higgs assignment
 

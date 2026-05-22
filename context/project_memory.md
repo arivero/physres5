@@ -73,6 +73,12 @@
   electroweak ray parameter.  Future O10 work needs a source map
   \(\chi:t_{\rm dim}\mapsto t_{\rm EW}\) or a joint source variable before the
   dimensional chain can control the electroweak ray.
+- Loop 14 targeted the parent workspace.  The source-note import now includes
+  Wrong Turn provenance, a Wigner--Eckart failed route result for tested
+  natural parents, a three-trace-space separation rule, SO(32) flavor/string
+  boundary obligations, and a top-as-boundary-datum caution.  These are
+  guardrails and theorem targets until primary sources or derivations promote
+  them.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

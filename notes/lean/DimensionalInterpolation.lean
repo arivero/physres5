@@ -28,6 +28,9 @@ constant KineticNormalization : Type
 constant IntervalDatum : Type
 constant BoundaryKernel : Type
 constant BoundaryScalarKernel : Type
+constant BoundaryProjector : Type
+constant PhotonSubtraction : Type
+constant PoleRemainder : Type
 
 structure ClaimStatus where
   witten_seven_extra_endpoint_source_backed : Prop
@@ -72,6 +75,32 @@ def singleSourceReady (I : SingleSourceInterpolation) : Prop :=
 
 axiom single_source_interpolation_target :
   ∃ I : SingleSourceInterpolation, singleSourceReady I
+
+structure Loop37SourceFacingInterpolation where
+  u : SourceFamily
+  intervalKernel : BoundaryKernel
+  boundaryProjector : BoundaryProjector
+  photonSubtraction : PhotonSubtraction
+  LambdaJ : SourceScale
+  Khat : ReducedKernel
+  tDim : CompactCoordinate
+  tEW : ElectroweakRay
+  poleRemainder : PoleRemainder
+  sourceClaimsArePrimary : Prop
+  kernelDerivationSupplied : Prop
+  dimensionToRayMapSupplied : Prop
+  orderedAssignmentSupplied : Prop
+  poleMatchingSupplied : Prop
+
+def loop37SourceFacingReady (I : Loop37SourceFacingInterpolation) : Prop :=
+  I.sourceClaimsArePrimary ∧
+  I.kernelDerivationSupplied ∧
+  I.dimensionToRayMapSupplied ∧
+  I.orderedAssignmentSupplied ∧
+  I.poleMatchingSupplied
+
+axiom loop37_source_facing_interpolation_obligation :
+  ∃ I : Loop37SourceFacingInterpolation, loop37SourceFacingReady I
 
 structure MiddleLinePassFail where
   u : SourceFamily

@@ -17,6 +17,11 @@ constant ChargedSample : Type
 constant NeutralSample : Type
 constant PhotonSample : Type
 constant Remainder : Type
+constant IntervalSourceDatum : Type
+constant BoundaryKernel : Type
+constant PhotonProjector : Type
+constant NormalizedKernel : Type
+constant CouplingRay : Type
 
 constant J_H : Real
 constant J_adj : Real
@@ -53,6 +58,36 @@ def O1TargetReady (P : O1SourcePackage) : Prop :=
 axiom ordered_sampling_open_obligation :
   ∃ P : O1SourcePackage, O1TargetReady P
 
+structure O1O10BoundaryKernelDiagram where
+  uint : IntervalSourceDatum
+  KT_DtN : BoundaryKernel
+  KT_brane : BoundaryKernel
+  photonProjector : PhotonProjector
+  innerProduct : InnerProduct
+  normalizedKernel : NormalizedKernel
+  couplingRay : CouplingRay
+  chargedProjector : ChargedSample
+  neutralProjector : NeutralSample
+  photonSample : PhotonSample
+  sourceScale : SourceScale
+  poleMap : PoleMap
+  remainder : Remainder
+  oneSourceControlsBoundaryKernel : Prop
+  oneSourceControlsRay : Prop
+  photonSubtractionDefined : Prop
+  sharedNormalization : Prop
+  poleRemainderDerived : Prop
+
+def boundaryKernelDiagramReady (D : O1O10BoundaryKernelDiagram) : Prop :=
+  D.oneSourceControlsBoundaryKernel ∧
+  D.oneSourceControlsRay ∧
+  D.photonSubtractionDefined ∧
+  D.sharedNormalization ∧
+  D.poleRemainderDerived
+
+axiom loop37_o1_o10_boundary_kernel_obligation :
+  ∃ D : O1O10BoundaryKernelDiagram, boundaryKernelDiagramReady D
+
 /- CHM ledger target:
    h_J = P_h,J(pi_i, A_5, delta v_i, delta R, alpha_H)
    a_J^{gamma_perp} = P_a,J^{gamma_perp} A_mu^{T,boundary}
@@ -69,4 +104,3 @@ axiom ordered_sampling_open_obligation :
 -/
 
 end DeVries.O1OrderedSampling
-

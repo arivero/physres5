@@ -222,6 +222,10 @@
   source package with \(\Lambda_J\), inner product, projection, extra-channel
   rule, endpoint subtargets, optional CHM top extension, parent-directory
   source queue, and Loop 31 referee/advisor reports.
+- Added Loop 37 normalization: Sec. IV now states the O1/O10 CHM
+  single-source interval theorem diagram, Appendix E uses manuscript-facing
+  source claims, and remaining loop/provenance phrases in the compiled body
+  were rewritten.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -244,6 +248,16 @@
 
 ## Analytical gaps
 
+- Loop 37 O1/O10 next step: derive or reject the CHM interval theorem diagram
+  \[
+  u_{\rm int}\to(K_T^{\rm DtN}+K_T^{\rm brane},P_\gamma,
+  \langle\cdot,\cdot\rangle)\to\widehat K_J,
+  \qquad
+  (v,g,g')\to(P_W,P_Z,P_\gamma,\Lambda_J).
+  \]
+  The open data are \(P_W\), \(P_Z\), \(P_\gamma\),
+  \(\Lambda_J\), the normalized kernel \(\widehat K_J\), photon subtraction,
+  and the pole remainder \(\Delta_{\rm O1/O10}\).
 - Derive the ordered sampling rule \((J_H,J_{\rm adj})=(3/4,2)\to(M_W,M_Z)\).
 - Derive the determinant \(x^2+Jx-J=0\) from one concrete string/KK/boundary model.
 - Identify whether \(x_-(2)\) maps to \(v/\sqrt2\), a tachyonic Higgs mass parameter, a modulus/radion scale, or a compactification eigenvalue.
@@ -482,7 +496,8 @@
 - Run the referee/advisor cycle in `reviews/referee_advisor_cycle.md` after each substantial rewrite.
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
 - Each substantial loop must also call a lightweight editor subagent below GPT-5.5 to flag banned contrast formulas, journalistic language, adjectival positioning, and prose outside Physical Review D style.
-- Current score table includes Loop 19 for the compiled long draft.
+- Each substantial loop must also inspect one random bibliography or source-inventory entry and one random local note or Lean-style note, then record any equation, test, fragment gap, or issue-ledger consequence.
+- Current score table includes Loop 37 for the compiled long draft.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

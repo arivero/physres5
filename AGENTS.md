@@ -59,6 +59,10 @@ Each substantial loop also uses a lightweight editor subagent, configured below
 GPT-5.5, to flag banned contrast formulas, journalistic language, adjectival
 positioning, and prose outside Physical Review D style. Store the editor report
 in `reviews/`, resolve alerts, then run the prose scans.
+Each substantial loop also includes a small recall pass: choose at least one
+random bibliography or source-inventory entry and one random local note or
+Lean-style note, inspect them, and record any equation, test, source-fragment
+gap, or issue-ledger consequence.
 
 ## Repository commands
 

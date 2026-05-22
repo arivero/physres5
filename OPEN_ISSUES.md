@@ -92,7 +92,7 @@ The CHM interval version must define \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\),
 \(P_W\), \(P_Z\), \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), endpoint signs,
 and the pole map in one ledger.  Coquereaux supplies generalized-connection
 grading vocabulary; CHM supplies the active source-controlled normalization
-arena.  The issue stays open until
+arena.  The issue closes when
 \[
 \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
 =
@@ -100,6 +100,32 @@ arena.  The issue stays open until
 +\Delta_{\rm O1}
 \]
 has a derived \(\Delta_{\rm O1}\) or a stated source remainder.
+
+**Loop 37 boundary-kernel refinement.** The manuscript now states the O1/O10
+interface as a single-source interval theorem diagram.  In the CHM version one
+source datum \(u_{\rm int}\) must supply
+\[
+\left(K_T^{\rm DtN}+K_T^{\rm brane},P_\gamma,
+\langle\cdot,\cdot\rangle_{u_{\rm int}}\right)
+\longrightarrow
+\widehat K_J,
+\qquad
+\left(v,g,g'\right)
+\longrightarrow
+\left(P_W,P_Z,P_\gamma,\Lambda_J\right),
+\]
+with
+\[
+\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+=
+\frac{x_+(3/4)}{x_+(2)}
++\Delta_{\rm O1/O10}(u_{\rm int}).
+\]
+This refinement removes loop/process language from Sec. IV and makes CHM the
+first source arena for the shared projection, photon subtraction, normalization,
+and pole-remainder test.  O1 stays open because \(P_W\), \(P_Z\), \(P_\gamma\),
+\(\Lambda_J\), \(\widehat K_J\), and \(\Delta_{\rm O1/O10}\) still require a
+source derivation.
 
 ## O2b. Current electroweak input audit
 
@@ -811,6 +837,16 @@ with the hatted DeVries kernel.  The Loop 31 parent-directory read adds
 top-as-boundary and D6/KK-monopole source queues as project provenance; primary
 Hanany--Witten, M-theory, and D6/KK-monopole sources are required before any
 manuscript-facing claim.
+
+**Loop 37 paper-normalization refinement.** Appendix E now states the
+dimensional interpolation as a theorem target with manuscript-facing sources:
+Witten for the \(D=11\) endpoint and fermion obstruction, CHM for the interval
+boundary kernel and photon-zero machinery, six-dimensional string sources for
+the colourless \(D=6\) arena, and local \(G_2\) references for singular-source
+tests.  Local project-provenance language has been removed from the compiled
+appendix.  The dimensional interpolation contributes through four required
+objects: a kernel derivation, a map from dimensional data to the electroweak
+ray, an ordered assignment theorem, and a pole-matching theorem.
 
 ## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
 

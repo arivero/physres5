@@ -110,6 +110,14 @@ PRD phase.
     \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), endpoint signs, photon
     subtraction, and the pole map.  The charged/order-parameter row and neutral
     current row must use one product and one source scale.
+  - Loop 37 O1/O10 use: CHM is the first source arena for the interval
+    theorem diagram
+    \(u_{\rm int}\to(K_T^{\rm DtN}+K_T^{\rm brane},P_\gamma,
+    \langle\cdot,\cdot\rangle)\to\widehat K_J\) together with
+    \((v,g,g')\to(P_W,P_Z,P_\gamma,\Lambda_J)\).  The remaining work is the
+    source derivation of the projectors, photon subtraction, shared
+    normalization, two-channel kernel, and pole remainder
+    \(\Delta_{\rm O1/O10}\).
   - Loop 34 O4 use: CHM is the first source-kernel theorem target.  The
     hatted current entry uses the source package
     \((I,g_5,K_T^{\rm DtN},K_T^{\rm brane},
@@ -191,7 +199,7 @@ These support the Hodge/SUSY-QM theorem target in Appendix D Target X.  Fragment
 are in `context/source_fragments/4[7-9]_*/` and
 `context/source_fragments/50_*`.
 
-- `47_Witten_Supersymmetry_Morse_Theory_JDG17_1982.pdf` — de Rham supersymmetric quantum mechanics on forms, \(d+d^*\), Hodge Laplacian, Witten deformation, and Morse localization.  The PDF is scanned; the markdown fragment contains metadata only, so equation checks use rendered PDF pages as agent-read transcription.
+- `47_Witten_Supersymmetry_Morse_Theory_JDG17_1982.pdf` — de Rham supersymmetric quantum mechanics on forms, \(d+d^*\), Hodge Laplacian, Witten deformation, and Morse localization.  The PDF is scanned; the markdown fragment contains metadata only, so equation checks use rendered PDF pages as agent-read transcription.  Loop 37 random recall read rendered pages 1--2: the source defines a \(\mathbb Z_2\) Hilbert-space grading, supercharges commuting with \(H\), the algebra \(Q_i^2=H\), \(\{Q_i,Q_j\}=0\), and the one-space, one-time-dimensional form \(Q_1^2=H+P\), \(Q_2^2=H-P\), giving \(H\) as a sum of supercharge squares.
 - `48_Fayet_SUSY_SM_Higgs_Z_partner_1403.5951.pdf` — supersymmetric gauge/BEH source where spin-zero BEH fields appear in massive gauge multiplets with \(W\) and \(Z\) bosons; source for the electroweak partner-language caution in O20.
 - `49_Gates_Rana_Spinning_Particles_Large_N_SUSY_hep-th-9504025.pdf` — worldline \(N\)-extended supersymmetry and spinning-particle actions; source for spin/worldline vocabulary if the second-supercharge route is developed.
 - `50_Coquereaux_Algebraic_Superconnections_SU2_1_Electroweak_1992.pdf` — \(SU(2|1)\) algebraic superconnection formalism for electroweak symmetry breaking and Higgs fields as part of a generalized connection.

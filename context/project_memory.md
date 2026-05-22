@@ -25,6 +25,9 @@
 - Maintain referee/advisor review loops, including the score table, so conceptual quality and open gaps are visible across iterations.
 - For every substantial loop, call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation; record their reports in `reviews/`.
 - After each completed referee/advisor/implementation loop, run a lightweight editor subagent below GPT-5.5 for banned contrast formulas, journalistic language, adjectival positioning, and Physical Review D prose drift. Record the report in `reviews/`, resolve alerts, compile, run prose scans, and commit the loop checkpoint.
+- Each substantial loop includes random recall: inspect one random bibliography
+  or source-inventory entry and one random local note or Lean-style note, then
+  record any equation, test, fragment gap, or issue-ledger consequence.
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
 - Treat `pdftotext` as an access aid. Keep PDFs as source objects for plots, images, radicals, and equation layout. For mathematical content, inspect the rendered PDF and label agent-read transcriptions.
 - Adjacent `../prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
@@ -213,6 +216,20 @@
   negative-branch reading, and a Neumann--Dirichlet boundary map.  Reports are
   in `reviews/normalization_loop36_*.md`.
 
+- Loop 37 normalized remaining O1/O10 body prose.  Sec. IV now states a CHM
+  single-source interval theorem diagram
+  \[
+  u_{\rm int}\to(K_T^{\rm DtN}+K_T^{\rm brane},P_\gamma,
+  \langle\cdot,\cdot\rangle)\to\widehat K_J,
+  \qquad
+  (v,g,g')\to(P_W,P_Z,P_\gamma,\Lambda_J),
+  \]
+  with pole remainder \(\Delta_{\rm O1/O10}\).  Appendix E uses
+  manuscript-facing source claims: Witten for the \(D=11\) endpoint, CHM for
+  interval boundary data, six-dimensional string sources for the colourless
+  \(D=6\) arena, and local \(G_2\) references for singular-source tests.
+  Reports are in `reviews/normalization_loop37_*.md`.
+
 ## Resume state after context renewal
 
 - Renewal checklist: read the repository-root `AGENTS.md`, then this memory file, then `OPEN_ISSUES.md`, `context/source_inventory.md`, `context/concept_claims_matrix.md`, and `reviews/referee_advisor_cycle.md` before making manuscript claims.
@@ -221,7 +238,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 91 pages after the Loop 31 `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 98 pages after the Loop 37 `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.

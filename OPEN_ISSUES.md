@@ -45,6 +45,25 @@ P_Z:\ a_J\mapsto C_2(\mathrm{adj}),
 and the transverse-pole matching chain.  Interval, endpoint, and \(G_2\)
 versions are variants of this same sampling theorem.
 
+**Loop 24 superconnection refinement.** The active O1 test uses an
+electroweak-superconnection assignment,
+\[
+P_W:\Phi_{\rm odd}\mapsto J_H=\frac34,\qquad
+P_Z:F_{\rm even}^{\gamma^\perp}\mapsto J_{\rm adj}=2,
+\]
+with one gauge-Higgs complex, one inner product, and one pole-matching map.
+The comparison has to take the form
+\[
+\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+=
+\frac{x_+(J_H)}{x_+(J_{\rm adj})}
++\Delta_{\rm sc}.
+\]
+The exact pole statement requires a derived value for \(\Delta_{\rm sc}\).
+The local source address is Coquereaux's \(SU(2|1)\) superconnection fragments
+in `context/source_fragments/50_coquereaux_algebraic_superconnections_su2_1_electroweak_1992/`;
+Appendix D Target X records the theorem version.
+
 ## O2a. Pole convention formula
 
 **Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?

@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 82 REVTeX PRD preprint pages after the Loop 22 compile.
+- Current compiled draft: 84 REVTeX PRD preprint pages after the Loop 24 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -68,6 +68,14 @@
   \(B_J=\operatorname{diag}(0,-J)\).  The source route must still derive the
   \(J\) spectrum, finite projection, breaking term, electroweak superconnection
   map, and pole/scalar compatibility chain.
+- Use Loop 24's superconnection assignment as the active O1 test:
+  \(P_W:\Phi_{\rm odd}\mapsto J_H=3/4\),
+  \(P_Z:F_{\rm even}^{\gamma^\perp}\mapsto J_{\rm adj}=2\), and
+  \(M_{W,\rm pole}^2/M_{Z,\rm pole}^2=
+  x_+(J_H)/x_+(J_{\rm adj})+\Delta_{\rm sc}\).  The source route must still
+  define one gauge-Higgs complex, one inner product, photon-zero preservation,
+  electroweak-ray preservation, a derived pole remainder, and a scalar map for
+  the negative branch.
 
 ## Completed in latest pass
 
@@ -124,6 +132,11 @@
   local source fragments/PDFs for Witten, Fayet, Gates--Rana, and Coquereaux,
   interval and \(G_2\) subroute text, concept-matrix updates, and Lean
   obligations.
+- Added Loop 24 normalization: scheme-safe pole comparison language, O1
+  superconnection assignment in the introduction and Appendix D Target X,
+  route-matching remainders in the electroweak theorem target, CHM as the
+  active source-controlled interval test case, parent-root inventory refresh,
+  concept-matrix update, and `notes/lean/SuperconnectionAssignment.lean`.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.

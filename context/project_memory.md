@@ -31,6 +31,16 @@
 - The parent workspace pass is indexed in `context/parent_workspace_source_notes.md` and `notes/lean/AdjacentWorkspaceGuardrails.lean`. Valid imports are guardrails and theorem targets: scalar-seed assignments need gauge-Higgs or pole-self-energy maps, each source route must produce the DeVries block from one operator and normalization rule, the negative-sector EFT coefficient needs UV matching, and SO(32)-flavor notes stay inside the flavor-boundary ledger until coupled to the electroweak operator.
 - Loop 22 added O19 as Appendix D Target IX: branch scaling and brane-duality admissibility.  The large-\(s\) guardrail is \(x\mapsto -J/x\), \(M_+\to\mu\), and \(|M_-|\sim\mu s\) when \(J=s(s+1)\).  The source route still owes a rotating-brane exponent, branch survival rule, negative-branch mass or scalar reading, and boundary-condition duality map.
 - Loop 23 promotes O20 into Appendix D Target X: Hodge/SUSY-QM origin of the DeVries block.  The working target is \(D_Je^0_J=\sqrt J e^1_J\), \(D_J^\dagger e^1_J=\sqrt J e^0_J\), and \(Q_{{\rm red},J}=Q_{{\rm dR},J}+B_J\) with \(B_J=\operatorname{diag}(0,-J)\).  Local source PDFs now cover Witten Morse theory, Fayet gauge/BEH supersymmetry, Gates--Rana worldline supersymmetry, and Coquereaux \(SU(2|1)\) superconnections.  Keep the route in theorem-target status until the \(J\) spectrum, finite projection, breaking term, and O1/O3 compatibility are derived.
+- Loop 24 refreshes the parent `..` read and records the active superconnection assignment test.  Use
+  \[
+  P_W:\Phi_{\rm odd}\mapsto J_H=\frac34,\qquad
+  P_Z:F_{\rm even}^{\gamma^\perp}\mapsto J_{\rm adj}=2,
+  \qquad
+  M_{W,\rm pole}^2/M_{Z,\rm pole}^2
+  =
+  x_+(J_H)/x_+(J_{\rm adj})+\Delta_{\rm sc}.
+  \]
+  The required proof uses one gauge-Higgs complex, one inner product, photon-zero and electroweak-ray preservation, a derived pole remainder, and a scalar map for the negative branch.  The parent source-note imports are provenance and guardrails; the manuscript source address is the local Coquereaux fragment set plus Target X.
 
 ## Resume state after context renewal
 
@@ -40,7 +50,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 82 pages after the Loop 22 `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 84 pages after the Loop 24 `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.

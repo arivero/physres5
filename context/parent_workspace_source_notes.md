@@ -105,6 +105,36 @@ branch-scaling diagnostic, the need to keep the oscillator Regge tower separate
 from the DeVries sector label, and the source-upgrade queue for rotating
 \(p\)-brane scaling.  The manuscript promotion is Appendix D Target IX.
 
+## Loop 24 parent-root inventory refresh
+
+The latest `..` read covered first- and second-level directories, visible
+Markdown/TeX/BibTeX/Lean/PDF candidates, the `../prTalks` PDF metadata, and
+targeted source-note files in `../hans/signed_dbdevries`, `../dualsm`,
+`../phys3`, and `../phys4`.  Active imports for the present loop are:
+`../prTalks` for electroweak-ray and representation-channel provenance,
+`../hans/signed_dbdevries` for negative-sector mechanism obstructions,
+`../dualsm` for review/adjudication discipline, and `../phys3` for the
+D=11/D=9 interpolation provenance.  The root also contains arXiv cache papers,
+older physics workspaces, TeX support files, runtime caches, editor state, and
+generated logs.  Runtime and cache material supplies no manuscript claims.
+
+The parent read reinforces the current O1/O20 direction.  The useful
+superconnection upgrade comes from the local Coquereaux fragments already
+indexed in this repository; parent material supplies provenance and failure
+mode pressure.  The manuscript-facing task is a single-complex assignment:
+\[
+P_W:\Phi_{\rm odd}\mapsto J_H=\frac34,\qquad
+P_Z:F_{\rm even}^{\gamma^\perp}\mapsto J_{\rm adj}=2,
+\qquad
+\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+=
+\frac{x_+(J_H)}{x_+(J_{\rm adj})}+\Delta_{\rm sc}.
+\]
+The same pass reread `../prTalks` pages where the electroweak ray, same-radius
+orbit quadratic, dimensional interpolation, and Regge-compatible intercept
+targets appear.  These remain project-source provenance until a primary source
+or theorem-target derivation promotes them.
+
 ## Promoted obligations
 
 ### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit

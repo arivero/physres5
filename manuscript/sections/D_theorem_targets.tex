@@ -533,23 +533,81 @@ Assume Targets I--III identify a physical two-channel matrix whose eigenvalues a
   \mathcal M_J u_\pm(J)=x_\pm(J)u_\pm(J).
   \label{eq:target-eigenvectors}
 \end{equation}
-The scalar side of the electroweak theory contains the gauge-invariant radial datum, the Higgs pole, and the parameters of the symmetry-breaking potential \cite{Logan2022,Dawson2018}.
+The scalar side of the electroweak theory contains the gauge-invariant radial datum, the Higgs pole, and the parameters of the symmetry-breaking potential \cite{Logan2022,Dawson2018}.  Candidate source theories also contain boundary scalar variables, \(A_5\) or Wilson-line holonomies, radions, brane-separation data, and \(G_2\) deformation data.
 
 \paragraph*{Conclusion.}
-There exists a gauge-invariant scalar functional \(\mathcal F_{\rm sc}\) such that
+There exists a same-source scalar package
 \begin{equation}
-  \mathcal F_{\rm sc}\big(H^\dagger H,\;D_\mu H,\;\text{boundary data}\big)
-  =
-  C\,|x_-(J_\star)|
+  u\longmapsto
+  \big(
+  \mathcal H_J,\,
+  \langle\cdot,\cdot\rangle_u,\,
+  P_J,\,
+  \Lambda_J,\,
+  \mathcal R_{\rm pole},\,
+  \mathcal F_{\rm sc}
+  \big)
+  \label{eq:target-negative-source-package}
+\end{equation}
+whose first five entries agree with the source package used for the vector pole
+quotient.  The scalar functional is gauge-invariant and has a stated mass
+dimension \(d_{\rm sc}\).  It obeys
+\begin{equation}
+\begin{aligned}
+  \widehat{\mathcal F}_{\rm sc}(u;J_\star)
+  &\equiv
+  \Lambda_J^{-d_{\rm sc}}\,
+  \mathcal F_{\rm sc}\big(
+  H^\dagger H,\,
+  (D_\mu H)^\dagger D^\mu H,\,
+  V_{\rm eff},\ldots;\,
+  s_{\rm ren},u
+  \big)
+  \\
+  &=
+  C_{\rm sc}(s_{\rm ren},u)\,|x_-(J_\star)|.
+\end{aligned}
   \label{eq:target-scalar-functional}
 \end{equation}
-for a stated \(J_\star\), normalization \(C\), and scheme.  Candidate readings include a Higgs-potential parameter, the radial vacuum scale, a boundary modulus, or a brane-separation mode.
+for a stated \(J_\star\), normalization \(C_{\rm sc}\), scheme \(s_{\rm ren}\),
+scale \(\Lambda_J\), observable type, and pole-vs-potential status.  Candidate
+readings include a Higgs-potential parameter, the radial vacuum scale, the
+Higgs pole, a Wilson-line curvature, a boundary modulus, a brane-separation
+mode, or a \(G_2\) deformation eigenvalue.
+
+\paragraph*{Acceptance subconditions.}
+The target requires:
+\begin{enumerate}
+\item the same reduced space \(\mathcal H_J\), inner product, and projection
+      \(P_J\) used in Targets I--III;
+\item a declared scale \(\Lambda_J\) and mass dimension \(d_{\rm sc}\);
+\item a source-fixed \(J_\star\);
+\item a gauge-invariant scalar variable or pole observable;
+\item a scheme and matching prescription for potential parameters;
+\item an auxiliary-branch outcome if \(u_-(J)\) projects outside the physical
+      scalar sector.
+\end{enumerate}
+
+A prioritized interval realization is the Wilson-line curvature target
+\begin{equation}
+  \mathcal F_{\rm sc}^{\rm Hol}
+  =
+  \left.
+  \frac{\partial^2 V_{\rm eff}(\alpha_H;\Lambda,s_{\rm ren})}
+       {\partial\alpha_H^2}
+  \right|_{\alpha_H=\alpha_\star},
+  \qquad
+  \alpha_H\sim g_5\int_I dy\,A_5,
+  \label{eq:target-holonomy-curvature}
+\end{equation}
+with the same interval kernel and boundary data that generate the transverse
+vector determinant.
 
 \paragraph*{Current evidence.}
-Sec.~\ref{sec:negative} records the scalar target table and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
+Sec.~\ref{sec:negative} records the scalar target table, the same-source package, the holonomy-curvature option, and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
 
 \paragraph*{Failure mode.}
-The target fails if the negative branch has purely auxiliary meaning in the derived source theory.  The positive-branch clue can still motivate the determinant problem, while the scalar claims must then be removed from the physical conclusion.
+The target fails if the negative branch has auxiliary meaning in the derived source theory.  The determinant problem may still be motivated by the positive branch; scalar claims then leave the physical conclusion.
 
 \subsection{Target V: global-form and localization compatibility}
 \label{app:target-global-form}

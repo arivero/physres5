@@ -407,6 +407,25 @@
   rendered-page checks because text extraction is empty; Fayet, Gates--Rana,
   and Coquereaux now have local fragments; Ne'eman, Fairlie, and Thierry-Mieg
   remain useful primary \(su(2|1)\) upgrades.
+- Loop 32 O3 next step: test the interval gauge-Higgs/Hosotani scalar package
+  by deriving, or rejecting, a common source datum
+  \[
+  u\mapsto
+  (\mathcal H_J,\langle\cdot,\cdot\rangle_u,P_J,\Lambda_J,
+  \mathcal R_{\rm pole},\mathcal F_{\rm sc}^{\rm Hol})
+  \]
+  with
+  \[
+  \mathcal F_{\rm sc}^{\rm Hol}
+  =
+  \left.
+  \partial_{\alpha_H}^2V_{\rm eff}(\alpha_H;\Lambda,s_{\rm ren})
+  \right|_{\alpha_H=\alpha_\star},
+  \qquad
+  \alpha_H\sim g_5\int_I dy\,A_5 .
+  \]
+  The source must fix \(J_\star\), \(C_{\rm sc}\), scheme/scale, and the
+  scalar/eaten/auxiliary projection.
 
 ## Review cycle
 

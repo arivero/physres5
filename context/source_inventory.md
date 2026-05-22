@@ -144,6 +144,16 @@ boundary-condition question. Fragments are in `context/source_fragments/4[0-6]_*
 - `44_Salam_Strathdee_On_Kaluza_Klein_Theory_IC-81-211.pdf` — Kaluza--Klein harmonic expansion on \(G/H\), zero-mode Yang--Mills reduction, and massive tower language. (ICTP preprint IC/81/211, the Annals Phys.\ 141 (1982) 316 paper.)
 - `45_Hosotani_Dynamical_Mass_Generation_Compact_Extra_Dimensions_PLB126_1983.pdf` — gauge-Higgs/Hosotani mechanism; order parameter from a compact gauge-field component and Wilson-line data.
 - `46_Breitenlohner_Freedman_Stability_Gauged_Extended_Supergravity_AnnPhys144_1982.pdf` — conditional AdS stability of scalar modes with negative mass squared under boundary-condition restrictions; source for scalar-branch caveats.
+  - Loop 32 O3 use: the interval gauge-Higgs route is the priority
+    source-address for a scalar functional.  Hosotani supplies the holonomy
+    variable, CHM supplies interval gauge-fixing and boundary-condition
+    bookkeeping, and Haba-Oda/Bucci supply boundary scalar and radion
+    variables.  The manuscript may state the target
+    \(\partial_{\alpha_H}^2V_{\rm eff}(\alpha_H)\) as a route obligation; a
+    DeVries scalar map requires a common \(\mathcal H_J\), inner product,
+    projection, \(\Lambda_J\), and vector/scalar determinant.
+  - Rendered-PDF formula checks remain required before strengthening endpoint,
+    interval, or \(G_2\) scalar claims beyond theorem-target language.
 
 ## Supersymmetric quantum mechanics and electroweak superconnections -- added 2026-05-22 for O20
 

@@ -85,9 +85,24 @@ meaning.
 
 **Question.** Does \(x_-(J)\) encode the Higgs/order-parameter scale, a tachyonic mass term, or an auxiliary branch?
 
-**Current working idea.** The negative root is the main reason the numerics matter: with the vector-spectrum normalization, the two negative magnitudes point toward the Higgs/order-parameter scales. The scalar-sector map must be gauge-invariant and scheme-controlled.
+**Current working idea.** The negative root is the main conceptual reason the
+numerical clue remains interesting: under the vector-spectrum normalization,
+the two negative magnitudes point toward scalar/order-parameter scales.  The
+scalar-sector map must be gauge-invariant, scheme-controlled, and derived from
+the same source reduction as the positive branch.
 
-**Success criterion.** A gauge-invariant expression connecting \(x_-(J)\) to \(\mu_H^2\), \(\lambda\), \(v\), or a pole observable.
+**Success criterion.** A same-source scalar package
+\[
+u\mapsto
+\big(
+\mathcal H_J,\langle\cdot,\cdot\rangle_u,P_J,\Lambda_J,
+\mathcal R_{\rm pole},\mathcal F_{\rm sc}
+\big)
+\]
+with source-fixed \(J_\star\), normalization \(C_{\rm sc}\), scheme/scale,
+mass dimension, and pole-vs-potential status, connecting \(x_-(J_\star)\) to
+\(\mu_H^2\), \(\lambda v^2\), \(v\), a Higgs pole observable, a Wilson-line
+curvature, a boundary modulus, or a compactification eigenvalue.
 
 **Latest refinement.** Sec. V now treats the negative branch as a scalar-functional theorem target:
 \[
@@ -100,6 +115,23 @@ meaning.
 \mathcal F_{\rm sc}(J_\star)=C_{\rm sc}|x_-(J_\star)|.
 \]
 The route-specific maps are endpoint brane-scalar data, interval boundary/modulus data, and \(G_2\) singularity-deformation data.
+
+**Loop 32 refinement.** The priority route is the interval
+gauge-Higgs/Hosotani target
+\[
+\mathcal F_{\rm sc}^{\rm Hol}
+=
+\left.
+\frac{\partial^2 V_{\rm eff}(\alpha_H;\Lambda,s_{\rm ren})}
+     {\partial\alpha_H^2}
+\right|_{\alpha_H=\alpha_\star},
+\qquad
+\alpha_H\sim g_5\int_I dy\,A_5,
+\]
+derived from the same \(\mathcal H_J\), inner product, projection, scale, and
+boundary determinant as the vector pole quotient.  If the negative eigenvector
+projects to auxiliary or gauge-fixed data, O3 resolves as an auxiliary-branch
+outcome and the Higgs-sector claim leaves the conclusion.
 
 **Parent-workspace refinement.** The signed-root mechanism notes give a useful
 EFT obstruction template:

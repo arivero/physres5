@@ -121,6 +121,24 @@
   and requires vector kernel, scalar/eaten partner, and
   \(\mathcal Y_{\rm top}\) in one basis.  The direct `..` read is recorded in
   `context/parent_directory_loop31_read.md`.
+- Loop 32 makes O3 a same-source scalar-functional pass/fail target.  The
+  negative branch is useful as a scalar clue after a source datum supplies
+  \[
+  u\mapsto
+  (\mathcal H_J,\langle\cdot,\cdot\rangle_u,P_J,\Lambda_J,
+  \mathcal R_{\rm pole},\mathcal F_{\rm sc})
+  \]
+  and a dimensionless match
+  \[
+  \widehat{\mathcal F}_{\rm sc}(u;J_\star)
+  =
+  C_{\rm sc}(s_{\rm ren},u)|x_-(J_\star)|.
+  \]
+  The priority route is interval gauge-Higgs/Hosotani holonomy curvature
+  \(\partial_{\alpha_H}^2V_{\rm eff}\), with CHM boundary bookkeeping and
+  Haba-Oda/Bucci scalar/radion addresses.  The direct `..` read is recorded in
+  `context/parent_directory_loop32_read.md`; reports are in
+  `reviews/normalization_loop32_*.md`.
 
 ## Resume state after context renewal
 

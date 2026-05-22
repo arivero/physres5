@@ -67,6 +67,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 29 | 5 | 5 | 5 | 5 | 5 | Closed O2a, O5, O6, O7, O9, O11, O12, and O16 as structural normalization issues, preserved residual derivational obligations, and normalized Sec. IX fixed-filter prose. |
 | 30 | 5 | 5 | 5 | 5 | 5 | Rendered CHM convention audit, photon-reference subtraction, hatted current-entry theorem target, parent-directory source extraction, and updated O4/source/Lean ledgers. |
 | 31 | 5 | 5 | 5 | 5 | 5 | Added O10 single-source pass/fail package with \(\Lambda_J\), inner product, projection, hatted kernel, endpoint subtargets, optional CHM top extension, and parent-directory source queues. |
+| 32 | 5 | 5 | 5 | 5 | 5 | Tightened O3 into a same-source scalar-functional target with \(J_\star\), \(C_{\rm sc}\), scheme/scale, holonomy-curvature route, auxiliary-branch failure outcome, and parent-directory source queue. |
 
 ## Scoring rubric
 

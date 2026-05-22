@@ -24,6 +24,9 @@ constant NormalizedKernel : Type
 constant CouplingRay : Type
 constant BoundarySuperconnectionDatum : Type
 constant SuperconnectionProjector : Type
+constant NeutralTraceSpace : Type
+constant HyperchargeRemainder : Type
+constant GoldstoneVectorMixing : Type
 
 constant J_H : Real
 constant J_adj : Real
@@ -111,6 +114,34 @@ def scIntO1ClosureReady (S : ScIntO1Closure) : Prop :=
 
 axiom loop40_sc_int_o1_closure :
   ∃ S : ScIntO1Closure, scIntO1ClosureReady S
+
+structure Loop42WardProjectedNeutralTarget where
+  neutralTraceSpace : NeutralTraceSpace
+  photonProjector : PhotonProjector
+  hyperchargeRemainder : HyperchargeRemainder
+  goldstoneVectorMixing : GoldstoneVectorMixing
+  chargedProjector : ChargedSample
+  neutralProjector : NeutralSample
+  photonSample : PhotonSample
+  neutralProductShared : Prop
+  gammaPerpProjectionDefined : Prop
+  hyperchargeRemainderDerived : Prop
+  chargedInsertionFromGoldstoneMixing : Prop
+  sameSourceAsCHMCurrentEntry : Prop
+  samePoleMap : Prop
+
+def loop42WardProjectedNeutralReady
+  (T : Loop42WardProjectedNeutralTarget) : Prop :=
+  T.neutralProductShared ∧
+  T.gammaPerpProjectionDefined ∧
+  T.hyperchargeRemainderDerived ∧
+  T.chargedInsertionFromGoldstoneMixing ∧
+  T.sameSourceAsCHMCurrentEntry ∧
+  T.samePoleMap
+
+axiom loop42_ward_projected_neutral_obligation :
+  ∃ T : Loop42WardProjectedNeutralTarget,
+    loop42WardProjectedNeutralReady T
 
 /- CHM ledger target:
    h_J = P_h,J(pi_i, A_5, delta v_i, delta R, alpha_H)

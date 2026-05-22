@@ -165,6 +165,30 @@ P_\gamma(F_{\rm even}^{\gamma})=0,\qquad
 \Delta_{\rm O1/O10}\ \hbox{in the complex-pole scheme}.
 \]
 
+**Loop 42 Ward-projected neutral-current refinement.** O1 now includes an
+explicit neutral transverse trace space
+\(\mathcal N_T^\partial=\operatorname{span}\{W_T^3,B_T\}\) with a photon
+projector and a hypercharge remainder:
+\[
+\Pi_{\gamma^\perp}^{(T)}
+=1-|a_\gamma\rangle\langle a_\gamma|_{u_{\rm EW}},
+\qquad
+a_J^{\gamma^\perp}
+=P_{a,J}\Pi_{\gamma^\perp}^{(T)}(W_T^3,B_T),
+\]
+\[
+P_Z(a_J^{\gamma^\perp})=2+\Delta_Y(u_{\rm EW}),
+\qquad P_\gamma(a_\gamma)=0.
+\]
+The charged side is tested by the Goldstone-vector mixing terms
+\[
+\mathcal L_{\partial G V}
+=iM_W[(\partial_\mu G^-)W^{+\mu}-(\partial_\mu G^+)W^{-\mu}]
++M_Z(\partial_\mu G^0)Z^\mu.
+\]
+Closure requires \(\Delta_Y\), \(P_W\), \(P_Z\), \(P_\gamma\), and the pole
+remainder from one gauge-Higgs or interval source package.
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
@@ -249,6 +273,11 @@ using the same \(P_{\rm sc}\), \(\Lambda_J\), photon reference, and pole map as
 the sc/int vector kernel.  Closure requires a source derivation of
 \(\Delta_{\rm Hol/sc}\).  This turns the negative branch into a Hessian
 diagnostic for the same source package.
+
+**Loop 42 scalar-provenance refinement.** The negative-branch opening now
+states the branch magnitudes as provisional scalar-side comparison scales.
+The physical target remains the same-source scalar functional
+\(\widehat{\mathcal F}_{\rm sc}\) with a derived normalization and scheme.
 
 **Parent-workspace refinement.** The signed-root mechanism notes give a useful
 EFT obstruction template:
@@ -529,6 +558,23 @@ A derivation has to fix \(P_{a,2}^{\gamma^\perp}\), \(P_\gamma\),
 \(K_\gamma^{\rm ref}\), \(\Lambda_J\), the CHM product, and the map into the
 complex-pole transverse self-energy in one convention.  The scalar extension is
 the holonomy-superconnection Hessian in O3.
+
+**Loop 42 proof-spine refinement.** The route-comparison section now displays
+the active proof spine:
+\[
+\begin{array}{ccc}
+(H,W^a,B;t) & \longrightarrow & (J_H,J_{\rm adj},J_\gamma)\\
+\downarrow && \downarrow\\
+(K_T^{\rm DtN}+K_T^{\rm brane},\mathcal F_{\rm sc})
+& \longrightarrow &
+(\widehat\Sigma_{aa,2}^{\rm CHM},
+\Sigma_{ha,J}\Sigma_{ah,J},
+P_W,P_Z,P_\gamma,\Delta_{\rm O1/O10}).
+\end{array}
+\]
+The three named derivations are the CHM neutral-current entry, the same-basis
+Hodge/SUSY-QM off-diagonal product, and the ordered projector package with a
+pole remainder.
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
@@ -967,6 +1013,12 @@ sources supply the colourless middle-dimensional arena, and local \(G_2\)
 sources supply localized matter and deformation tests.  The active O10 proof
 test remains a source derivation of \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\)
 inside the same \(u_{\rm sc/int}\) package.
+
+**Loop 42 dimensional/proof-spine refinement.** The O10 middle line remains a
+single-source package after the proof spine is made explicit.  The shared
+source variable must supply the neutral projector on \(\mathcal N_T^\partial\),
+the scalar functional, the hatted CHM current entry, the Hodge/SUSY-QM
+off-diagonal product, and the map from dimensional data to the electroweak ray.
 
 ## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
 

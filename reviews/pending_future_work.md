@@ -532,6 +532,20 @@
   scalar-functional reading.  Keep \(j=3/2\) as an assignment ledger entry
   pending gauge representation, production, decay, width, and collider-source
   data.
+- Loop 42 O1/O4 next step: derive, or reject, the neutral photon-orthogonal
+  projection package
+  \[
+  P_Z(a_J^{\gamma^\perp})=2+\Delta_Y(u_{\rm EW}),\qquad
+  P_\gamma(a_\gamma)=0,
+  \]
+  from one transverse \((W_T^3,B_T)\) product.  The same pass should connect
+  the Goldstone-vector mixing terms to the charged insertion \(P_W(h_J)=3/4\),
+  the CHM current entry \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), and the
+  Hodge/SUSY-QM product \(\Sigma_{ha,J}\Sigma_{ah,J}=J\).
+- Loop 42 editorial queue from the referees: compress Appendix D working
+  ledgers, add a \(G_2\) local test with one ADE enhancement and one pairing,
+  lower Appendix E's prominence after the CHM proof spine is stronger, and
+  add a quadratic-action bridge for Coquereaux curvature.
 
 ## Review cycle
 
@@ -539,7 +553,7 @@
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
 - Each substantial loop must also call a lightweight editor subagent below GPT-5.5 to flag banned contrast formulas, journalistic language, adjectival positioning, and prose outside Physical Review D style.
 - Each substantial loop must also inspect one random bibliography or source-inventory entry and one random local note or Lean-style note, then record any equation, test, fragment gap, or issue-ledger consequence.
-- Current score table includes Loop 37 for the compiled long draft.
+- Current score table includes Loop 42 with recalibrated current-review scores.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

@@ -243,11 +243,21 @@ projection, inner product, and decoupling rule must be supplied by one
 interval model.
 
 The current-channel entry can be isolated after the physical boundary kernel
-has been converted to the dimensionless DeVries normalization.  Let \(P_{a,J}\)
-select a transverse boundary gauge trace
-\(a_J=P_{a,J}A_\mu^{T,\partial}\), normalized by the CHM product,
-\(\langle a_J,a_J\rangle_{\rm CHM}=1\).  Let \(P_\gamma\) select the photon
-reference trace \(a_\gamma\).  The transverse kernel is
+has been converted to the dimensionless DeVries normalization.  Let
+\(\mathcal N_T^\partial\) be the neutral transverse boundary-trace space
+spanned by \(W^3_T\) and \(B_T\), with CHM product
+\(\langle\cdot,\cdot\rangle_{\rm CHM}\).  The projection data are
+\begin{equation}
+  P_{a,J}^{\gamma^\perp}:\mathcal N_T^\partial\to\gamma^\perp,
+  \qquad
+  P_\gamma:\mathcal N_T^\partial\to{\rm span}\{a_\gamma\},
+  \qquad
+  \langle a_J,a_\gamma\rangle_{\rm CHM}=0,
+  \label{eq:chm-neutral-trace-space}
+\end{equation}
+where \(a_J=P_{a,J}^{\gamma^\perp}A_\mu^{T,\partial}\) and
+\(a_\gamma=P_\gamma A_\mu^{T,\partial}\) have unit CHM norm.  The transverse
+kernel is
 \[
   K_{T,J}=K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}.
 \]
@@ -299,7 +309,7 @@ constant entry in this normalization is equivalently
 \end{equation}
 The source-supported CHM statement is the existence of this transverse
 boundary kernel from the action, gauge fixing, boundary variation, and
-modified product.  The DeVries-specific theorem target is
+modified product.  The open DeVries-specific theorem target is
 \begin{equation}
   \widehat K^{\rm cur}_J(\widehat\lambda)
   =

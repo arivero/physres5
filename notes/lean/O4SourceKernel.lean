@@ -17,6 +17,7 @@ constant PoleMap : Type
 constant LocalOperator : Type
 constant Pairing : Type
 constant SuperconnectionCurvature : Type
+constant OrderedProjectorPackage : Type
 
 structure CHMCurrentEntryData where
   interval : Interval
@@ -135,5 +136,23 @@ def scIntKernelReady (S : ScIntKernelData) : Prop :=
 
 axiom loop40_sc_int_kernel :
   ∃ S : ScIntKernelData, scIntKernelReady S
+
+structure Loop42ActiveProofSpine where
+  chmNeutralCurrentEntry : CHMCurrentEntryData
+  hodgeSquareRootEntry : HodgeSquareRootData
+  orderedProjectors : OrderedProjectorPackage
+  sharedReducedBasis : Prop
+  sharedSourceScale : Prop
+  photonProjectionInSameProduct : Prop
+  poleRemainderCarried : Prop
+
+def loop42ActiveProofSpineReady (S : Loop42ActiveProofSpine) : Prop :=
+  S.sharedReducedBasis ∧
+  S.sharedSourceScale ∧
+  S.photonProjectionInSameProduct ∧
+  S.poleRemainderCarried
+
+axiom loop42_active_proof_spine_obligation :
+  ∃ S : Loop42ActiveProofSpine, loop42ActiveProofSpineReady S
 
 end DeVries.O4SourceKernel

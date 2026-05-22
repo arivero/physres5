@@ -286,6 +286,25 @@
   Standard Model, Tong gauge theory, Polchinski S-duality, Baez--Huerta GUT
   lineage, Tong QFT chiral bilinears, `parent_prtalks`, and Braun \(G_2\)
   Higgs-bundle fragments.
+- Loop 42 adds a Ward-projected neutral-current refinement.  The active O1
+  package now contains
+  \[
+  \Pi_{\gamma^\perp}^{(T)}
+  =1-|a_\gamma\rangle\langle a_\gamma|_{u_{\rm EW}},
+  \qquad
+  a_J^{\gamma^\perp}
+  =P_{a,J}\Pi_{\gamma^\perp}^{(T)}(W_T^3,B_T),
+  \]
+  \[
+  P_Z(a_J^{\gamma^\perp})=2+\Delta_Y(u_{\rm EW}),
+  \qquad P_\gamma(a_\gamma)=0.
+  \]
+  The charged test uses the standard Goldstone-vector mixing terms from the
+  Higgs kinetic expansion.  Sec. VI.G now displays the proof spine joining
+  \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), the Hodge/SUSY-QM product
+  \(\Sigma_{ha,J}\Sigma_{ah,J}=J\), \(P_W,P_Z,P_\gamma\), and
+  \(\Delta_{\rm O1/O10}\).  The score table has been recalibrated to the
+  current referee vector \(4,4,4,3,5\) while O1/O3/O4/O10/O20 remain open.
 
 ## Resume state after context renewal
 

@@ -196,7 +196,32 @@ assignment then has the target form
   P_\gamma(a_\gamma)=0,
   \label{eq:o1-projector-targets}
 \end{equation}
-and
+The neutral entry requires a hypercharge ledger.  Let
+\(\mathcal N_T^\partial=\operatorname{span}\{W^3_T,B_T\}\) be the transverse
+neutral trace space with the source product
+\(\langle\cdot,\cdot\rangle_{u_{\rm EW}}\), and let \(a_\gamma\) be the unit
+photon trace.  The massive neutral sample is
+\begin{equation}
+  \Pi_{\gamma^\perp}^{(T)}
+  =
+  1-|a_\gamma\rangle\langle a_\gamma|_{u_{\rm EW}},
+  \qquad
+  a_J^{\gamma^\perp}
+  =
+  P_{a,J}\Pi_{\gamma^\perp}^{(T)}(W^3_T,B_T),
+  \label{eq:neutral-gamma-perp-projector}
+\end{equation}
+with theorem data
+\begin{equation}
+  P_Z(a_J^{\gamma^\perp})=2+\Delta_Y(u_{\rm EW}),
+  \qquad
+  P_\gamma(a_\gamma)=0.
+  \label{eq:neutral-hypercharge-remainder}
+\end{equation}
+Here \(\Delta_Y\) collects the hypercharge normalization, \(W^3/B\) mixing
+convention, source product, and photon-reference subtraction.  The theorem
+target is \(\Delta_Y=0\) in the selected convention.
+The corresponding pole package is
 \begin{equation}
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
   =
@@ -247,3 +272,21 @@ A natural current to test is the Higgs isospin current
   \label{eq:higgs-isospin-current}
 \end{equation}
 which transforms as an adjoint object while being built from the doublet order parameter.  The current contains the two data needed for the ordered pair: doublet data enter the source, adjoint data enter the current.  Turning this observation into Eq.~\eqref{eq:assignment-outputs} is the remaining electroweak theorem target.
+In a general gauge, write
+\[
+  H=\begin{pmatrix}G^+\\(v+h+iG^0)/\sqrt2\end{pmatrix}.
+\]
+The Higgs kinetic term contains the Goldstone-vector mixing terms
+\begin{equation}
+  \mathcal L_{\partial G V}
+  =
+  iM_W\big[(\partial_\mu G^-)W^{+\mu}
+  -(\partial_\mu G^+)W^{-\mu}\big]
+  +M_Z(\partial_\mu G^0)Z^\mu .
+  \label{eq:goldstone-vector-mixing}
+\end{equation}
+This source-side expansion, reviewed in Ref.~\cite{Logan2022}, is the
+equation-level test for the ordered current insertion: the charged insertion
+samples the doublet Goldstone/order-parameter direction, and the neutral
+insertion samples the photon-orthogonal current direction of
+Eqs.~\eqref{eq:neutral-gamma-perp-projector}--\eqref{eq:neutral-hypercharge-remainder}.

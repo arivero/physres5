@@ -17,15 +17,27 @@ This file records the autonomous improvement loop to run after each manuscript p
    - one source to read;
    - one equation or diagram the manuscript needs.
 4. **Implementation pass.** Apply revisions that improve derivational clarity, source traceability, or conceptual structure.
-5. **Editor pass.** Call a lightweight editor subagent, configured below GPT-5.5, to flag banned contrast patterns, journalistic language, hype, adjectival positioning, and deviations from Physical Review D prose. Store the report in `reviews/`, resolve alerts, and run the prose scans.
-6. **Random recall pass.** Choose at least one random bibliography or source-inventory entry and one random local note or Lean-style note. Inspect them with the recall skills, then record any equation, test, source-fragment gap, or issue-ledger consequence in `reviews/`, `context/`, or `notes/lean/`.
-7. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
-8. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
+5. **Closure-output gate.** Each loop must leave one of the following concrete
+   outputs:
+   - an issue moved from `OPEN_ISSUES.md` to `CLOSED_ISSUES.md`;
+   - a source route rejected with a stated obstruction and consequence;
+   - a derivation attempt recorded with the failed step and a narrower next
+     target;
+   - a source-backed theorem entry added with its acceptance equation and
+     rejection outputs.
+6. **Editor pass.** Call a lightweight editor subagent, configured below GPT-5.5, to flag banned contrast patterns, journalistic language, hype, adjectival positioning, and deviations from Physical Review D prose. Store the report in `reviews/`, resolve alerts, and run the prose scans.
+7. **Random recall pass.** Choose at least one random bibliography or source-inventory entry and one random local note or Lean-style note. Inspect them with the recall skills, then record any equation, test, source-fragment gap, or issue-ledger consequence in `reviews/`, `context/`, or `notes/lean/`.
+8. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
+9. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
 
 The three subagent calls are mandatory for every substantial loop: two referee subagents and one advisor subagent, all configured to GPT-5.5. Store their reports in `reviews/` before implementation.
 The editor pass is mandatory for every substantial loop. Use a faster model tier
 than GPT-5.5 so the editor functions as a style sentinel with a separate scope
 from the conceptual referees.
+The closure-output gate is mandatory for every substantial loop after Loop 48.
+Target sharpening alone satisfies the gate only when it adds an acceptance
+equation, rejection outputs, and a named next derivation attempt tied to a
+source fragment.
 
 ## Cycle 0 status
 

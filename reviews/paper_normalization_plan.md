@@ -18,7 +18,8 @@ The draft reads partly like a conversation because the manuscript body contains 
 - referee-facing checklists and decision ledgers;
 - phrases such as current draft, next calculation, next pass, route passes, and decision tree;
 - internal score or planning language;
-- tables whose purpose is project management rather than exposition.
+- tables whose purpose is project management and whose content belongs outside
+  exposition.
 
 These elements are useful for the workspace.  They should live in appendices, review notes, Lean notes, or planning files.  The main paper should speak in the voice of a Physical Review D article.
 
@@ -57,6 +58,10 @@ Every substantial rewrite loop must call three subagents before implementation:
 3. **Advisor subagent, GPT-5.5.** Research advisor focused on conceptual synthesis, new mechanisms, and high-risk improvements.
 
 Record their outputs in `reviews/` before editing.  Then implement revisions that improve derivational clarity, source traceability, or paper-like exposition.
+Each loop after Loop 48 must also satisfy a closure-output gate: issue closure,
+route rejection, failed derivation record with a narrower next target, or a
+source-backed theorem entry with acceptance and rejection equations.  Repeated
+target polishing fails the normalization plan.
 
 ## Acceptance Criteria
 

@@ -6,6 +6,10 @@
   compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
+- Apply the post-Loop48 closure-output gate: the next substantial loop must
+  close an issue, reject a route, record a failed derivation step with a
+  narrower next target, or add a source-backed theorem entry with acceptance and
+  rejection equations.
 - Loop 48 focus: add Target IIIh, the \(G_2\) local flow-overlap target with
   localized wavefunctions, point/component metric, oriented flow kernels,
   bilinear maps, shared \(\Lambda_{G_2}\), rejection outputs, and source

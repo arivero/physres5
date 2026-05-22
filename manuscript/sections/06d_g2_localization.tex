@@ -1,6 +1,6 @@
 \section{\texorpdfstring{$G_2$}{G2} localization and local spectral operators}
 \label{sec:g2-localization}
-% Status: cited/open. G2 localization background is cited; local-kernel reductions remain theorem targets.
+% Status: cited/open. G2 localization background is cited; local-kernel reductions remain open source calculations.
 
 The \(G_2\) route supplies a local language for the DeVries program.  Its role
 in this paper is local.  It gives a framework in which gauge fields,
@@ -17,19 +17,9 @@ two-channel determinant used in the pole-ratio clue.
 
 The source-backed starting point is the localization of degrees of freedom.  Witten explains that \(G_2\) compactifications with singularities can support abelian or nonabelian gauge groups with chiral fermions, with anomaly inflow from the bulk supplying a consistency condition \cite{WittenG2Anomaly2001}.  Acharya and Witten describe examples where singular loci carry nonabelian gauge groups and conical or intersection points support chiral multiplets \cite{AcharyaWitten2001}.  Acharya and Gukov review the broader picture: singular \(G_2\) spaces are the essential setting for nonabelian gauge groups, chiral fermions, and strongly coupled gauge dynamics in M-theory compactifications \cite{AcharyaGukov2004}.
 
-The DeVries problem asks for a local sector with three named pieces:
-\begin{equation}
-  \left(
-  \begin{array}{c}
-  \hbox{singular gauge locus}\\
-  \hbox{localized charged matter or order parameter}\\
-  \hbox{deformation mode of the singularity}
-  \end{array}
-  \right)
-  \quad\leadsto\quad
-  \mathcal M_J.
-  \label{eq:g2-local-pieces}
-\end{equation}
+The DeVries problem asks for a local sector whose singular gauge locus,
+localized charged matter or order-parameter mode, and singularity deformation
+mode reduce to \(\mathcal M_J\).
 The singular gauge locus is the natural address for adjoint/current data.  The localized charged matter or order-parameter mode is the natural address for the doublet side.  The deformation mode is the natural address for the scalar branch.
 
 This local focus also controls the topology issue.  A compact \(G_2\) model imposes global constraints, including anomaly, representation, and line-operator data.  The determinant can be tested locally first.  A global compactification can then be asked to support the same local operator and the Standard Model global form.
@@ -146,6 +136,7 @@ where the \(A_1\subset A_2\) enhancement records the local root-pairing test
   \label{eq:g2-a1-a2-enhancement-test}
 \end{equation}
 The singular support carries the pairing
+\begin{widetext}
 \begin{equation}
   \begin{aligned}
   \langle \eta,\zeta\rangle_{G_2,u}
@@ -160,6 +151,7 @@ The singular support carries the pairing
   \end{aligned}
   \label{eq:g2-singular-support-pairing}
 \end{equation}
+\end{widetext}
 The first term is the current-support pairing on the ADE locus.  The point
 support term is the localized matter metric required by the later flow-overlap
 entry.  The metric \(\mathsf G_Q(p)\) is theorem data: it must be positive on
@@ -232,17 +224,18 @@ extension keeps the same flow-line form for point-to-component trajectories and
 gives a zero matrix element for two states localized on the same critical
 circle.  The current source package therefore supplies a narrower test,
 \begin{equation}
+  \begin{gathered}
   M_{\rm MW}^{ab}
   \leadsto
-  (M_{ha}^{\rm MW},M_{ah}^{\rm MW})
-  \quad\hbox{inside}\quad
+  (M_{ha}^{\rm MW},M_{ah}^{\rm MW}),\\
   \mathcal H_J^{G_2}=\operatorname{span}\{h_J^{G_2},a_J^{G_2}\}.
+  \end{gathered}
   \label{eq:g2-mw-to-ha-test}
 \end{equation}
 The source test isolates the failed derivation step: the Braun source data lack an
 identification of the projected ADE current \(a_J^{G_2}\) as a
-Morse--Witten endpoint state in this two-channel block.  Target IIIh therefore
-remains active only after an additional same-basis projection theorem supplies
+Morse--Witten endpoint state in this two-channel block.  The local flow-overlap
+test applies only after an additional same-basis projection calculation supplies
 \(M_{ha}^{\rm MW}\), \(M_{ah}^{\rm MW}\), \(\Lambda_{G_2}\), and the
 orientation convention.
 
@@ -269,17 +262,19 @@ and defines
 Here \(\mathcal K_{\rm cur}^{\rm ADE}\) denotes the projected quadratic
 ADE-current operator induced on the singular gauge locus, including source
 scale, projection, and possible singular-support boundary terms.  Its detailed
-construction from the local \(G_2\) gauge theory is part of the theorem data.
+construction from the local \(G_2\) gauge theory is part of the source data.
 The canonical current kernel is fixed by
 \begin{equation}
+  \begin{gathered}
   Z_J^{G_2}
   =
   \partial_{\widehat\lambda}
   \widehat K_J^{G_2,{\rm cur}}(0)>0,
-  \qquad
+  \\
   \widehat K_J^{G_2,{\rm cur,can}}
   =
   (Z_J^{G_2})^{-1}\widehat K_J^{G_2,{\rm cur}} .
+  \end{gathered}
   \label{eq:g2-current-canonical-factor}
 \end{equation}
 The target is
@@ -302,19 +297,13 @@ IIIg.
 \label{sec:g2-entry-dictionary}
 
 The local \(G_2\) dictionary is:
-\begin{center}
-\begin{tabular}{p{0.23\linewidth}p{0.35\linewidth}p{0.32\linewidth}}
-\toprule
-DeVries entry & \(G_2\) origin & Derivation target \\
-\midrule
-\(\Sigma_{aa,J}^{G_2}=J\) & ADE singular gauge sector with \(A_1\subset A_2\) enhancement and singular-support pairing & derive the canonical current entry \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\) \\
-\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\) & localized matter at \(df_Q=0\), flow-line coupling, bifundamental vev, or singularity-deformation mixing & derive the flow-overlap product from the point-support metric and local wavefunctions \\
-\(\Sigma_{hh,J}^{G_2}=0\) & reference order-parameter channel at a critical point of \(f_Q\) & justify the zero entry through local normalization or symmetry of the critical-point problem \\
-\((J_H,J_{\rm adj})=(3/4,2)\) & localized doublet/order-parameter data, adjoint/current data, and photon-orthogonal completion data & derive \(P_W\), \(P_Z\), \(P_\gamma\), hypercharge, charge lattice, and pole map in the same compact model \\
-\bottomrule
-\end{tabular}
-\end{center}
-This table turns \(G_2\) geometry into a determinant problem.  Each geometric
+\begin{enumerate}
+\item The current entry \(\Sigma_{aa,J}^{G_2}=J\) may come from an ADE singular gauge sector with an \(A_1\subset A_2\) enhancement and a singular-support pairing.  The source calculation must give \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\).
+\item The product \(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\) may come from localized matter at \(df_Q=0\), a flow-line coupling, a bifundamental vev, or singularity-deformation mixing.  The source calculation must give the product from the point-support metric and local wavefunctions.
+\item The reference entry \(\Sigma_{hh,J}^{G_2}=0\) may come from a critical point of \(f_Q\).  The source calculation must justify the zero entry through local normalization or a symmetry of the critical-point problem.
+\item The ordered assignment \((J_H,J_{\rm adj})=(3/4,2)\) requires localized doublet/order-parameter data, adjoint/current data, photon-orthogonal completion data, hypercharge, a charge lattice, and a pole map in the same compact model.
+\end{enumerate}
+This dictionary turns \(G_2\) geometry into a determinant problem.  Each geometric
 object must provide one entry of \(K_J^{G_2}\), one assignment rule, or one
 consistency check.  A \(G_2\) route that supports the pole-ratio claim has to
 derive at least one of \(\Sigma_{aa,J}^{G_2}\),
@@ -372,8 +361,7 @@ bilinear and its same-basis normalization.  The rejection outputs are
   \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}\ne J,
   \qquad
   \mathsf G_Q\le0,\\
-  \hbox{orientation sum lacks a source convention},
-  \qquad
+  \hbox{orientation convention absent},\\
   \hbox{extra coupled light channel}.
   \end{gathered}
   \label{eq:g2-flow-overlap-rejection}
@@ -395,6 +383,7 @@ language has derivational force.
 
 Acharya and Witten give a pattern directly relevant here: in examples where singular loci meet, gauge groups live on the singular components, chiral multiplets can be supported at the meeting point, and Higgsing corresponds to a geometric deformation or smoothing of the singularity \cite{AcharyaWitten2001}.  In their brane-related examples, a vev for a bifundamental field can break a product gauge symmetry to a diagonal subgroup, while the local singular geometry changes accordingly.
 
+\begin{widetext}
 For DeVries, this suggests the deformation chain
 \begin{equation}
   \begin{aligned}
@@ -426,6 +415,7 @@ The scalar branch would then be read from the deformation direction.  If \(u_-(J
   \label{eq:g2-negative-branch-map}
 \end{equation}
 The map must also respect the electroweak ray.  The deformation parameter can supply the scalar side, while the pole-ratio branch supplies the projective vector side.
+\end{widetext}
 
 \subsection{Anomaly and global checks}
 \label{sec:g2-anomaly-global}
@@ -443,10 +433,11 @@ has to pass the following checks:
 \end{enumerate}
 These checks can reject a candidate completion even when the two-channel determinant is obtained locally.
 
-\subsection{\texorpdfstring{$G_2$}{G2} completion criterion}
+\subsection{\texorpdfstring{$G_2$}{G2} route criterion}
 \label{sec:g2-completion-criterion}
 
-The \(G_2\) route has the same completion chain as the endpoint and interval routes:
+The \(G_2\) route has the same reduction chain as the endpoint and interval routes:
+\begin{widetext}
 \begin{equation}
 \begin{aligned}
   \text{singular }G_2\text{ neighborhood}
@@ -463,4 +454,5 @@ The \(G_2\) route has the same completion chain as the endpoint and interval rou
 \end{aligned}
 \label{eq:g2-completion-chain}
 \end{equation}
+\end{widetext}
 The first arrow is source-backed by singular \(G_2\) compactification and Higgs-bundle literature.  The second arrow is the DeVries determinant derivation.  The final arrow is the pole-placement, scalar-branch, and global-form assignment.  The local determinant is the first compatibility condition; compact global data then supply anomaly, representation, and line-operator tests.

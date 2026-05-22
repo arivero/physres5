@@ -33,19 +33,14 @@ A valid identification must be gauge-invariant and scheme-controlled.  Possible 
 
 The negative root changes the character of the clue.  The full quadratic gives a paired object: a pole-ratio candidate and a scalar-side candidate arise from one secular equation.  This pairing supplies the main conceptual reason to retain the negative branch.  A dynamical theory that produces Eq.~\eqref{eq:intro-secular} has to say what both branches mean in the same basis.
 
-The two-root structure can be stated as a spectral chain,
+The two-root structure can be stated as
 \begin{equation}
-  \mathcal M_J
-  \longrightarrow
-  \left\{
-  \begin{array}{ll}
-  x_+(J) & \hbox{projective vector datum},\\[2pt]
-  x_-(J) & \hbox{candidate scalar/order-parameter target}.
-  \end{array}
-  \right.
+  \mathcal M_J\longrightarrow \{x_+(J),x_-(J)\}.
   \label{eq:negative-chain}
 \end{equation}
-The first line is the pole-ratio reading developed in Sec.~\ref{sec:pole}.  The second line is a target for the Higgs, boundary, brane, or compactification sector.  The chain is meaningful because both entries come from the same diagonalization.  Any proposed derivation that keeps the positive branch acquires the negative-branch obligation automatically.
+The positive root is the projective vector datum.  The negative root is a
+candidate scalar/order-parameter datum.  Any proposed derivation that keeps the
+positive branch acquires the negative-branch obligation automatically.
 
 This obligation also sharpens the electroweak assignment.  The ordered pair \((J_H,J_{\rm adj})=(3/4,2)\) already suggests two electroweak structures: the doublet order parameter and the adjoint current.  The negative branch asks whether the doublet/order-parameter side can be read as a scalar instability, a vacuum scale, or a deformation mode in the same operator that gives the vector pole quotient.  The scalar reading therefore ties together three open calculations: the ordered \(J\)-assignment, the determinant derivation, and the branch-to-Higgs map.
 
@@ -99,12 +94,14 @@ with \(\mathcal H_J\) the reduced two-channel space, \(P_J\) the projection,
 \(\Lambda_J\) the source scale, and \(\mathcal R_{\rm pole}\) the pole map used
 for the vector branch.  A dimensionless scalar target then has the form
 \begin{equation}
+  \begin{aligned}
   \widehat{\mathcal F}_{\rm sc}(u;J_\star)
-  =
+  &=
   \Lambda_J^{-d_{\rm sc}}\,
-  \mathcal F_{\rm sc}(J_\star;\Lambda_J,s_{\rm ren},u)
-  =
+  \mathcal F_{\rm sc}(J_\star;\Lambda_J,s_{\rm ren},u)\\
+  &=
   C_{\rm sc}(s_{\rm ren},u)\,|x_-(J_\star)|,
+  \end{aligned}
   \label{eq:negative-hatted-scalar-functional}
 \end{equation}
 where \(d_{\rm sc}\) is the mass dimension of the chosen observable.  The source
@@ -112,35 +109,23 @@ derivation must state whether \(\widehat{\mathcal F}_{\rm sc}\) is a vacuum-ray
 coordinate, a potential curvature, a pole observable, a boundary modulus, or a
 compactification eigenvalue.
 
-The target can be summarized by the commutative source diagram
+The source test is a map
 \begin{equation}
-\begin{array}{ccccc}
-\mathcal L_{\rm src}(u)
-&\longrightarrow&
-(\mathcal H_J,\langle\cdot,\cdot\rangle_u,P_J)
-&\longrightarrow&
-Q(J)
-\\
-&&&&\downarrow
-\\
-&&&&
-\left\{
-\begin{array}{ll}
-x_+(J) & \hbox{vector pole quotient},\\[2pt]
-x_-(J) & \hbox{candidate scalar functional},\\[2pt]
-x_-(J) & \hbox{auxiliary or gauge-fixed branch}.
-\end{array}
-\right.
-\end{array}
-\label{eq:negative-source-diagram}
+  \mathcal L_{\rm src}(u)
+  \longrightarrow
+  (\mathcal H_J,\langle\cdot,\cdot\rangle_u,P_J)
+  \longrightarrow Q(J).
+  \label{eq:negative-source-diagram}
 \end{equation}
-The third line is the explicit failure outcome for a scalar interpretation.
+After diagonalization, \(x_+(J)\) supplies the vector pole quotient, while
+\(x_-(J)\) supplies either a candidate scalar functional or an auxiliary
+branch.
 
 A sharper downstream target appears if the scalar functional is the
 vacuum-ray normalization.  In that case the Standard Model identity
 \(M_W^2=g^2v^2/4\) can turn the pair \(x_+(3/4)\) and \(x_-(2)\) into a
 candidate construction coupling.  Appendix~\ref{app:target-alpha-endpoint}
-records this as an electromagnetic endpoint theorem target: the scalar branch,
+records this as an electromagnetic endpoint condition: the scalar branch,
 the charged-vector normalization, the \(D=9\) \(U(1)_{\rm em}\) kinetic term,
 and the matching pair \((Q_\alpha,\Delta_{\alpha,{\rm match}})\) must be
 derived before \(\alpha\) acquires construction status.
@@ -172,15 +157,15 @@ The electroweak ray also supplies a consistency check.  Taking the radial vacuum
 
 The Standard Model scalar sector gives several inequivalent objects that can carry a scalar-side interpretation \cite{Logan2022,Dawson2018}.  They have different scheme and gauge properties:
 \begin{center}
-\small
+\footnotesize
 \begin{tabular}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
 \toprule
-Target & Meaning & DeVries requirement\\
+Scalar object & Meaning & DeVries requirement\\
 \midrule
 \(m^2(s_{\rm ren},\Lambda)\) & quadratic term in the Higgs potential & define the scheme and invariant extraction\\
 \(\lambda(s_{\rm ren},\Lambda)v^2\) & curvature scale along the radial mode & connect branch value to the electroweak ray\\
 \(M_{h,\rm pole}^2\) & scalar pole position & derive the scalar pole from the same determinant as W/Z\\
-\(\partial_\alpha^2V_{\rm eff}(\alpha)|_{\alpha_\star}\) & Wilson-line or Hosotani curvature & identify the holonomy and source normalization\\
+\(V''_{\rm eff}(\alpha_\star)\) & Wilson-line or Hosotani curvature & identify the holonomy and source normalization\\
 radion/modulus eigenvalue & compactification scalar or boundary deformation & identify the compact operator and its normalization\\
 brane separation mode & endpoint or brane order parameter & show coupling to the adjoint/current channel\\
 \bottomrule
@@ -196,14 +181,15 @@ The endpoint route maps the negative branch to brane scalar data.  In a D-brane 
 
 The interval route maps the negative branch to boundary or modulus data.  A five-dimensional gauge field supplies four-dimensional vector modes and scalar components; the compactification radius, brane terms, and boundary conditions determine the light spectrum \cite{CsakiHubiszMeade2005,WittenKK1981}.  A DeVries interval derivation would identify \(u_-(J)\) with a boundary scalar amplitude, an \(A_5\)-like scalar, a radion-like deformation, or a brane-localized order parameter.  The map has to preserve the same boundary determinant that gives the W/Z branch quotient.  The Hosotani version of this target uses the holonomy variable
 \begin{equation}
-  \alpha_H \sim g_5\int_I dy\,A_5 ,
-  \qquad
+  \begin{gathered}
+  \alpha_H \sim g_5\int_I dy\,A_5,\\
   \mathcal F_{\rm sc}^{\rm Hol}
   =
   \left.
   \frac{\partial^2 V_{\rm eff}(\alpha_H;\Lambda,s_{\rm ren})}
        {\partial\alpha_H^2}
-  \right|_{\alpha_H=\alpha_\star},
+  \right|_{\alpha_H=\alpha_\star}.
+  \end{gathered}
   \label{eq:hosotani-scalar-functional}
 \end{equation}
 and asks whether the same interval kernel that yields the transverse vector pole
@@ -242,4 +228,4 @@ The two roots also have eigenvectors.  For the matrix in Eq.~\eqref{eq:QJ}, an e
 \end{equation}
 Thus the branch assignment is a statement about channel composition.  The positive and negative roots are mixtures of the same two basis amplitudes.  A scalar interpretation of \(x_-\) should therefore identify the basis in which one component is the vector/current side and the other is the order-parameter or boundary side.
 
-A criterion is the following.  If the same two-channel determinant produces both the vector pole ratio and the scalar instability, then the determinant should appear in an effective action, boundary condition, or self-energy equation.  The corresponding theorem target is an explicit determinant with an identified second-channel field or mode.  Breitenlohner--Freedman stability supplies a route caveat for AdS scalar readings: a negative mass-squared can be admissible under specified boundary conditions, while the DeVries sign still requires the source functional in Eq.~\eqref{eq:negative-hatted-scalar-functional} \cite{BreitenlohnerFreedman1982}.
+A criterion is the following.  If the same two-channel determinant produces both the vector pole ratio and the scalar instability, then the determinant should appear in an effective action, boundary condition, or self-energy equation.  The required source object is an explicit determinant with an identified second-channel field or mode.  Breitenlohner--Freedman stability supplies a route caveat for AdS scalar readings: a negative mass-squared can be admissible under specified boundary conditions, while the DeVries sign still requires the source functional in Eq.~\eqref{eq:negative-hatted-scalar-functional} \cite{BreitenlohnerFreedman1982}.

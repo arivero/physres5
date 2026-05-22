@@ -2,7 +2,7 @@
 \label{sec:route-comparison}
 % Status: open. Compares route kernels, assignments, branch maps, scale placement, and compatibility tests.
 
-The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  The section casts the three routes in a common reduction format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A derivation in any route must supply a physical origin for the matrix entries and turn the string, extra-dimensional, or singular-geometric address into a calculation.
+The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  The comparison uses one reduction format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A source calculation in any route must supply a physical origin for the matrix entries and turn the string, extra-dimensional, or singular-geometric address into an operator.
 
 \subsection{Common reduction problem}
 \label{sec:common-reduction-problem}
@@ -40,7 +40,7 @@ Eqs.~\eqref{eq:chm-admissible-positive-norms}--\eqref{eq:chm-current-Z-factor}.
 That package supplies positive projected norms, photon-orthogonal
 normalization, source-ordered or commuting projectors, photon-reference
 subtraction, a shared \(\Lambda_{\rm CHM}\), and the current-slope datum
-\(Z_J^{\rm cur}\).  Its first theorem target is
+\(Z_J^{\rm cur}\).  Its first source condition is
 \begin{equation}
   \widehat\Sigma_{aa,2}^{\rm CHM,can}=2 .
   \label{eq:route-chm-current-entry-first-test}
@@ -55,11 +55,10 @@ The same source package then carries
   \Delta_{\rm O1/O10}.
   \label{eq:route-chm-followup-tests}
 \end{equation}
-The Hodge/SUSY-QM route supplies the companion square-root theorem target.  The
-\(G_2\) route provides Target IIIg, a local ADE-pairing current test whose first
-acceptance equation is
-\(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\), and Target IIIh, a local
-flow-overlap product target for
+The Hodge/SUSY-QM route supplies the companion square-root condition.  The
+\(G_2\) route provides a local ADE-pairing current test whose first acceptance
+equation is \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\), and a local
+flow-overlap product test for
 \(\widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J\).  Its
 electroweak projectors, charge lattice, and pole map remain open obligations.  The
 endpoint/Chan--Paton route
@@ -73,32 +72,20 @@ Equation~\eqref{eq:route-common-target} is stronger than a qualitative mechanism
   \label{eq:route-common-det}
 \end{equation}
 
-The route is fully specified when one source package supplies the reduced
-space, source product, entry kernels, scalar functional, and pole map, and
-derives the route-indexed arrows in
-\begin{equation}
-\begin{array}{ccc}
-(u_r,\mathcal H_{J,r}) &
-\longrightarrow &
-(\langle\cdot,\cdot\rangle_r,\Lambda_r,
-P_{h,J}^r,P_{a,J}^r,K_{\rm cur}^r,K_{\rm mix}^r)\\
-\downarrow && \downarrow\\
-(\mathcal F_{\rm sc}^r,\mathcal R_{\rm pole}^r)
-& \longrightarrow &
-(\widehat\Sigma_{aa,J}^r,
-\widehat\Sigma_{ha,J}^r\widehat\Sigma_{ah,J}^r,
-P_W^r,P_Z^r,P_\gamma^r,\Delta_{\rm match}^{(r)}) .
-\end{array}
-\label{eq:active-proof-spine}
-\end{equation}
-The current proof obligations include the canonical CHM neutral-current entry
+The route is specified by one source package supplying the reduced space,
+source product, entry kernels, scalar functional, pole map, and the projected
+entries \(\widehat\Sigma_{aa,J}^r\),
+\(\widehat\Sigma_{ha,J}^r\widehat\Sigma_{ah,J}^r\),
+\(P_W^r\), \(P_Z^r\), \(P_\gamma^r\), and
+\(\Delta_{\rm match}^{(r)}\).  The current open calculations include the
+canonical CHM neutral-current entry
 \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), the \(G_2\) ADE current entry
 \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\), the same-basis Hodge/SUSY-QM or
 \(G_2\) flow-overlap product
 \(\widehat\Sigma_{ha,J}^r\widehat\Sigma_{ah,J}^r=J\), and the ordered
 projector package \(P_W^r,P_Z^r,P_\gamma^r\) with its pole remainder.
 
-The reduction has three candidate arenas.  The endpoint arena is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval arena is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) arena is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources support the listed ingredients.  Selection of the two-channel subspace, inner product, normalization, and entries in Eq.~\eqref{eq:route-common-target} remains the derivation target.
+The reduction has three candidate arenas.  The endpoint arena is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval arena is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) arena is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources support the listed ingredients.  Selection of the two-channel subspace, inner product, normalization, and entries in Eq.~\eqref{eq:route-common-target} remains open.
 
 The interval arena supplies source-derived boundary data.  The CHM source
 equations fix the boundary kinetic normalization, the corresponding modified
@@ -154,7 +141,7 @@ supplies
 \end{equation}
 The scalar and electromagnetic readings are downstream of the current entry,
 ordered W/Z assignment, source-to-pole calculation, and photon-zero
-normalization.  Target~\ref{app:target-alpha-endpoint} records the O17 endpoint
+normalization.  Appendix~\ref{app:target-alpha-endpoint} records the endpoint
 coupling package after those data are supplied.
 
 The common reduction is filtered by three admissibility tests.  First, trace
@@ -214,7 +201,7 @@ The third entry is the order-parameter reference contribution,
 The candidate source objects are a boundary reference channel, a normalized
 boundary order-parameter self-energy, or a critical-point normalization of a
 localized mode.  Appendix~\ref{app:target-boundary-determinant} records the
-entry-by-entry proof obligations.
+entry-by-entry acceptance conditions.
 
 The following table records the three entries in a common dictionary.
 \begin{center}
@@ -223,8 +210,8 @@ The following table records the three entries in a common dictionary.
 \toprule
 Kernel entry & Endpoint/D-brane route & Interval KK route & \(G_2\) route\\
 \midrule
-\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & CHM boundary current-kernel target with source conventions; \(J\)-normalization open & Target IIIg: \(A_1\subset A_2\) ADE current pairing with \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\)\\
-\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & boundary scalar vev, \(A_5/\pi_i\) equation, and modified product; open product normalization & Target IIIh: localized matter at \(df_Q=0\), oriented flow kernel, bilinear maps, and point-support metric\\
+\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & CHM boundary current-kernel target with source conventions; \(J\)-normalization open & ADE current pairing with \(\widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2\)\\
+\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & boundary scalar vev, \(A_5/\pi_i\) equation, and modified product; open product normalization & localized matter at \(df_Q=0\), oriented flow kernel, bilinear maps, and point-support metric\\
 \(\Sigma_{hh}=0\) & order-parameter reference channel & boundary scalar reference term; open subtraction rule & critical-point normalization with local-to-pole matching\\
 \bottomrule
 \end{tabular}
@@ -246,7 +233,7 @@ The target map is
   (J_W,J_Z)=(J_H,J_{\rm adj}).
   \label{eq:route-assignment-map}
 \end{equation}
-The ordered assignment is a theorem target.  The observed W and Z vector bosons
+The ordered assignment is an open source statement.  The observed W and Z vector bosons
 are gauge-sector particles after symmetry breaking.  The quotient assigns the
 charged comparison to the order-parameter invariant and the neutral comparison
 to the adjoint/current invariant.  The required derivation must produce this
@@ -255,7 +242,7 @@ attached to the Higgsing field, interval boundary data that distinguish charged
 and neutral sectors, or a localized singularity model where doublet and adjoint
 data meet.
 The Standard Model mass matrix supplies the projective ratio and the
-representation data; the ordered sampling maps remain additional theorem data.
+representation data; the ordered sampling maps remain additional source data.
 
 If the ordered assignment and pole-placement theorem hold, the pole-ratio
 reading has one route-labeled form:
@@ -315,9 +302,9 @@ The route comparison separates three scale placements:
 \end{equation}
 The construction attaches the electroweak clue to the pole scale.  The
 attachment gives the clue its direct electroweak content.  The GUT lineage
-supplies the comparison class: a clean weak-angle value can be a high-scale
+supplies the comparison class: an exact weak-angle value can be a high-scale
 structural datum, then acquire low-energy meaning through running and
-thresholds.  In the present construction the clean value is attached to the pole
+thresholds.  In the present construction the algebraic value is attached to the pole
 ratio, so the scale-placement theorem is logically prior to any compactification
 geometry.
 
@@ -368,10 +355,10 @@ The first arrow is local geometry.  The second arrow is four-dimensional matchin
 \subsection{Route outcome}
 \label{sec:route-outcome}
 
-A route succeeds when it supplies the common kernel target, the ordered
+A route succeeds when it supplies the common kernel, the ordered
 electroweak assignment, the pole-matching chain, the scalar-branch map, and
 the global compatibility checks from one stated source theory.  These criteria
-turn endpoint, interval, and \(G_2\) language into comparable derivation
-problems.  Extra light channels, a different trace, a different mixing product,
+turn endpoint, interval, and \(G_2\) language into comparable source
+calculations.  Extra light channels, a different trace, a different mixing product,
 a high-scale placement, or an incompatible global form would classify the
 DeVries relation inside a larger family of spectral constructions.

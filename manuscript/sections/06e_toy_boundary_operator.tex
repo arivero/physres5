@@ -2,7 +2,8 @@
 \label{sec:toy-boundary-operator}
 % Status: conjectural/open. Translates mechanisms into named matrix entries and derivation obligations.
 
-The previous sections list possible mechanisms.  This section turns those mechanisms into a minimal toy operator.  The toy model is a derivation target with named matrix entries.
+The mechanism sections reduce to a common two-channel form.  This section gives
+the minimal endpoint--boundary operator used to name the matrix entries.
 
 Let \(h_J(x)\) denote a boundary-localized order-parameter amplitude and \(a_J(x)\) denote an adjoint/current amplitude.  The quadratic light-sector action is
 \begin{equation}
@@ -40,12 +41,13 @@ The fields \(h_J\) and \(a_J\) are placeholders with fixed jobs.  The \(h_J\) ch
 
 Interval field theory supplies a mechanism for such a matrix.  Boundary mass and kinetic terms modify the variational boundary conditions, and brane-localized kinetic terms can make the boundary condition depend on the four-dimensional eigenvalue \cite{CsakiHubiszMeade2005}.  A schematic bulk-plus-boundary system is
 \begin{equation}
+  \begin{aligned}
   S_{\rm bulk}
   =
-  \int d^4x\int_0^Ldy\,
-  \frac12\Big[(\partial_M A_J)^2+(\partial_M H_J)^2\Big]
-  +
-  S_{\rm bdry}[A_J,H_J] .
+  &\int d^4x\int_0^Ldy\,
+  \frac12\Big[(\partial_M A_J)^2+(\partial_M H_J)^2\Big]\\
+  &+S_{\rm bdry}[A_J,H_J] .
+  \end{aligned}
   \label{eq:bulk-boundary-action}
 \end{equation}
 After solving the bulk equations and restricting to the two light boundary amplitudes, the effective inverse propagator has the form
@@ -80,24 +82,14 @@ The corresponding route is
 \end{array}
 \label{eq:endpoint-route-table}
 \end{equation}
-This table defines the calculation.  It also gives a compact way to compare candidate completions.
+This table names the calculation required of an endpoint or boundary source.
 
 \subsection{Electroweak matching}
 
-The toy operator must match the electroweak projective data.  The desired chain is
-\begin{equation}
-\begin{array}{ccccc}
-\text{boundary data}
-&\longrightarrow&
-\mathcal M_J
-&\longrightarrow&
-\{x_+(J),x_-(J)\}\\
-&&&&\downarrow\\
-&&&&
-\text{W/Z pole ratio and scalar branch}.
-\end{array}
-\label{eq:toy-boundary-chain}
-\end{equation}
+The toy operator must match the electroweak projective data.  Boundary data
+must reduce to \(\mathcal M_J\); diagonalizing \(\mathcal M_J\) then supplies
+\(\{x_+(J),x_-(J)\}\), the W/Z pole-ratio reading, and the partner-branch
+condition.
 The positive branch should yield the pole-scheme target
 \begin{equation}
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}=
@@ -110,4 +102,6 @@ The positive branch should yield the pole-scheme target
 Here \(\Delta_{\rm toy}\) records every step missing from the toy model:
 field normalization, source scale, effective matching, and pole-scheme
 placement.
-The negative branch should identify the scalar or boundary partner in the same basis.  The toy model therefore joins the three open calculations: ordered electroweak sampling, determinant derivation, and scalar-branch interpretation.
+The negative branch should identify the scalar or boundary partner in the same
+basis.  The toy operator therefore links ordered electroweak sampling, the
+determinant calculation, and the scalar-branch interpretation.

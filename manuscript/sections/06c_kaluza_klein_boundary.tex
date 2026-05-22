@@ -1,6 +1,6 @@
 \section{Kaluza--Klein spectra, boundary conditions, and secular determinants}
 \label{sec:kk-boundary}
-% Status: cited/open. KK and interval background are cited; interval reductions remain theorem targets.
+% Status: cited/open. KK and interval background are cited; interval reductions remain open source calculations.
 
 Kaluza--Klein theory supplies the second concrete language for the DeVries program.  The original idea unifies gauge fields with geometry by expanding a higher-dimensional theory around a compact ground state.  In Witten's account, symmetries of the compact space appear as gauge symmetries in the lower-dimensional theory, and the physical spectrum is obtained from small oscillations around the compactification background \cite{WittenKK1981}.  Salam and Strathdee give the complementary harmonic-expansion language on compact homogeneous spaces \(G/H\), where zero modes give gravitational plus Yang--Mills fields and higher modes give massive multiplets \cite{SalamStrathdee1982}.  The same account also states the hard model-building burden: obtaining the Standard Model gauge group, fermion quantum numbers, and scalar sector is a serious representation problem, even when the gauge group itself can be engineered.
 
@@ -15,21 +15,16 @@ The DeVries problem asks for a narrower and sharper object inside this tradition
   \lambda^2+J\lambda-J.
   \label{eq:boundary-devries-target}
 \end{equation}
-This determinant is the entire target of the KK route.
+This determinant is the main kernel test for the KK route.
 
 \subsection{Circle compactification and two charge channels}
 \label{sec:kk-circle-channels}
 
-String compactification on a circle gives a clean source-backed example of a two-channel spectral structure.  Ordinary Kaluza--Klein momentum is quantized along the circle.  Closed strings add winding around the same circle.  Polchinski's circle example shows that the Kaluza--Klein vector couples to compact momentum, while the vector descending from the antisymmetric tensor couples to winding \cite{Polchinski1994}.  At the self-dual radius the spectrum has enhanced current algebra, and changing the radius is described by an operator built from the same currents.
+String compactification on a circle gives a standard source-backed example of a two-channel spectral structure.  Ordinary Kaluza--Klein momentum is quantized along the circle.  Closed strings add winding around the same circle.  Polchinski's circle example shows that the Kaluza--Klein vector couples to compact momentum, while the vector descending from the antisymmetric tensor couples to winding \cite{Polchinski1994}.  At the self-dual radius the spectrum has enhanced current algebra, and changing the radius is described by an operator built from the same currents.
 
 This gives a source-backed analogy:
 \begin{equation}
-  \left(
-  \begin{array}{c}
-  \hbox{momentum-like channel}\\
-  \hbox{winding-like or boundary channel}
-  \end{array}
-  \right)
+  \hbox{momentum/boundary channels}
   \quad\leadsto\quad
   \{x_+(J),x_-(J)\}.
   \label{eq:momentum-winding-channel}
@@ -41,17 +36,19 @@ Let the compact or interval sector contain a momentum/current-like channel and a
 winding, brane-separation, or order-parameter channel.  After the tower is
 integrated out, the reduced boundary kernel should have the form
 \begin{equation}
+  \begin{aligned}
   K^{\rm eff}_{j}(\lambda)
-  =
+  &=
   K^{\rm bdry}_{j}(\lambda)
   -
-  V_j^\dagger(\lambda-L_j)^{-1}V_j
-  \longrightarrow
+  V_j^\dagger(\lambda-L_j)^{-1}V_j\\
+  &\longrightarrow
   \begin{pmatrix}
   \lambda&-\sqrt{A_j}\\
   -\sqrt{A_j}&\lambda+A_j
   \end{pmatrix},
   \qquad A_j=j(j+1).
+  \end{aligned}
   \label{eq:kk-regge-schur-target}
 \end{equation}
 This target is the KK form of the Regge-intercept reading in
@@ -64,14 +61,17 @@ large-spin growth.
 
 Extra-dimensional field theory on an interval gives a more direct determinant language.  Csaki--Hubisz--Meade derive boundary conditions from the variational principle for fields on an interval and show how boundary mass terms and boundary kinetic terms modify those conditions \cite{CsakiHubiszMeade2005}.  Dirichlet-Higgs and radion-stabilization models give adjacent source variables for boundary scalar profiles, radion data, and bulk Higgs stabilizers \cite{Bucci2004,HabaOda2011}.  A scalar example has the schematic action
 \begin{equation}
+  \begin{aligned}
   S_{\rm int}
-  =
+  ={}&
   \int d^4x\int_0^Ldy\,
   \frac12\Big[
   \partial_M\Phi\,\partial^M\Phi
   -V(\Phi)
   \Big]
-  +S_0[\Phi]+S_L[\Phi],
+  \\
+  &+S_0[\Phi]+S_L[\Phi],
+  \end{aligned}
   \label{eq:interval-action}
 \end{equation}
 with boundary functionals \(S_0\) and \(S_L\).  The boundary variation supplies equations at \(y=0\) and \(y=L\).  Boundary mass terms give Robin-type conditions.  Boundary kinetic terms can make the boundary equation depend on the four-dimensional eigenvalue.  This is exactly the structural feature needed by a secular determinant.
@@ -117,14 +117,15 @@ This is the interval version of the endpoint target in Sec.~\ref{sec:endpoint-hi
 CHM boundary data supply the interval version of this target.  In the scalar
 example, a boundary kinetic term at \(y=0\) has the source normalization
 \begin{equation}
+  \begin{gathered}
   S_{\rm brane,kin}^{(0)}
   =
   \int d^4x\,\frac{1}{2M_0}\,
-  \partial_\mu\phi\,\partial^\mu\phi\big|_{y=0},
-  \qquad
+  \partial_\mu\phi\,\partial^\mu\phi\big|_{y=0},\\
   \partial_y f_n(0)
   =
   -\frac{m_n^2}{M_0}f_n(0).
+  \end{gathered}
   \label{eq:chm-boundary-kinetic-source-normalization}
 \end{equation}
 The associated product is
@@ -167,12 +168,12 @@ states \(e^0_J\in\Omega^0\) and \(e^1_J\in\Omega^1\) with
   \label{eq:interval-hodge-factorization}
 \end{equation}
 then the de Rham part of the reduced operator supplies
-\(\Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J\).  In Target X language,
+\(\Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J\).  In the Appendix~D notation,
 Eq.~\eqref{eq:interval-hodge-factorization} supplies \(Q_{{\rm dR},J}\); the
 boundary or breaking datum \(B_J\) must supply the diagonal entry \(-J\).  The
 same interval model must derive the sign convention in the DeVries block and
 the ordered electroweak map.  Appendix~\ref{app:target-susyqm-origin} records
-this as a theorem target.
+this as a source condition.
 
 This gives the interval route an entry order.  The Hodge/SUSY-QM calculation
 tests the square-root product
@@ -187,7 +188,7 @@ from the eigenbasis of the same reduced kernel.
 \label{sec:kk-schur-target}
 
 The dimensional interpolation idea defines a candidate Schur-complement
-calculation within Target III.  Let the middle-dimensional sector be
+calculation for the route kernel.  Let the middle-dimensional sector be
 split into a light boundary subspace \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\)
 and a tower, bulk, or compact sector with operator \(L_J\).  With a boundary
 kernel \(K^{\rm bdry}_J(\lambda)\), coupling map \(V_J\), and specified inner
@@ -223,17 +224,18 @@ mode equation with fixed boundary values gives a map from boundary traces to
 normal derivatives.  Boundary kinetic and scalar terms add local endpoint
 pieces, so a source-level interval target is
 \begin{equation}
+  \begin{aligned}
   K^{\rm int}_J(\lambda)
-  =
+  ={}&
   P_J^\dagger
-  \left(
-  K^{\rm DtN}_J(\lambda)+K^{\rm brane}_J(\lambda)
-  \right)P_J
-  \longrightarrow
+  \big(K^{\rm DtN}_J(\lambda)+K^{\rm brane}_J(\lambda)\big)P_J
+  \\
+  &\longrightarrow
   \begin{pmatrix}
   \lambda&-\sqrt J\\
   -\sqrt J&\lambda+J
   \end{pmatrix},
+  \end{aligned}
   \label{eq:interval-dtn-target}
 \end{equation}
 where \(P_J\) is the projection to
@@ -242,6 +244,7 @@ source-data demand explicit: the Dirichlet-to-Neumann kernel, brane terms,
 projection, inner product, and decoupling rule must be supplied by one
 interval model.
 
+\begin{widetext}
 The current-channel entry can be isolated after the physical boundary kernel
 has been converted to the dimensionless DeVries normalization.  Let
 \(\mathcal N_T^\partial=\operatorname{span}\{W^3_T,B_T\}\) carry the CHM
@@ -367,7 +370,7 @@ The constant entry in the unrescaled normalization is equivalently
 \end{equation}
 The source-supported CHM statement is the existence of this transverse
 boundary kernel from the action, gauge fixing, boundary variation, and
-modified product.  The open DeVries-specific theorem target is
+modified product.  The open DeVries-specific condition is
 \begin{equation}
   \widehat K_{J,{\rm can}}^{\rm cur}(\widehat\lambda)
   =
@@ -412,7 +415,7 @@ These criteria classify the interval construction in the chosen source
 convention.  A rejection outcome leaves a neighboring boundary-kernel model
 with a different \(\Delta_Y^{\rm CHM}\), source scale, or projector
 normalization.
-This is the CHM current-entry theorem target.  The corresponding source
+This is the CHM current-entry condition.  The corresponding source
 equations are the CHM boundary kinetic equations, modified product, vector
 Robin equations, scalar \(A_5/\pi_i\) boundary equations, and photon/custodial
 boundary conditions, specifically the groups recorded in
@@ -441,7 +444,7 @@ The interval route requires derivations of the target conditions
   \Delta_{\rm O1/O10}\ \hbox{derived}.
 \]
 
-For the Target II assignment theorem this current entry has to be paired with a
+For the electroweak assignment this current entry has to be paired with a
 charged order-parameter sample in the same source space:
 \begin{align}
   h_J&=
@@ -491,6 +494,7 @@ The data still to be derived are \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\),
 \(\Lambda_{\rm CHM}\), endpoint-normal conventions, the photon projection, the
 ordered W/Z boundary map, and the map
 \(\widehat\lambda\mapsto m_n^2/\Lambda_{\rm CHM}^2\mapsto\Pi_T^{(4)}(s)\).
+\end{widetext}
 
 \subsection{Dictionary for the interval entries}
 \label{sec:interval-entry-dictionary}
@@ -542,23 +546,21 @@ interval theorem would produce a boundary operator whose pole condition reduces
 to this projective datum.  Thus the interval model is required to yield a
 coupled charged/neutral construction:
 \begin{equation}
-  \left[
-  \begin{array}{c}
-  SU(2)_L\hbox{ charged sector}\\
-  SU(2)_L\times U(1)_Y\hbox{ neutral sector}\\
-  \hbox{photon zero mode}
-  \end{array}
-  \right]
-  \quad\longrightarrow\quad
+  \begin{gathered}
+  \{W^\pm,Z,\gamma\}_{\rm boundary}
+  \longrightarrow
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+  \\
   =
   \frac{x_+(J_H)}{x_+(J_{\rm adj})}
   +\Delta^{(\mathrm{int})}_{\rm match}.
+  \end{gathered}
   \label{eq:interval-ew-target}
 \end{equation}
 This requirement places the W and Z readings inside one gauge-Higgs or boundary system.  The photon must remain the unbroken mode, and the massive neutral pole must carry the adjoint/current sample.  The interval theorem reaches an exact pole statement after the matching remainder \(\Delta^{(\mathrm{int})}_{\rm match}\) has been derived.
 
-The corresponding proof obligation is
+\begin{widetext}
+The corresponding source condition is
 \begin{equation}
 \begin{gathered}
   S_{\rm 5D}+S_{\rm bdry}
@@ -599,12 +601,14 @@ The interval version of the ordered assignment theorem is:
 \label{eq:interval-assignment-theorem}
 \end{equation}
 This theorem is parallel to the endpoint theorem in Sec.~\ref{sec:endpoint-higgsing}.  The two routes can eventually compete: endpoint labels emphasize matrix algebra, while interval boundary conditions emphasize variational origin and pole equations.
+\end{widetext}
 
 \subsection{Scalar partner from interval data}
 \label{sec:kk-scalar-partner}
 
 The negative branch also has a KK address.  Witten's review notes that compactification naturally produces scalar degrees of freedom, including radius moduli and possible charged scalar modes tied to symmetry breaking questions \cite{WittenKK1981}.  Polchinski's circle compactification likewise identifies the compact radius with a lower-dimensional scalar and shows that changing the radius is tied to current algebra at enhanced-symmetry points \cite{Polchinski1994}.  Hosotani's compact gauge-field mechanism adds a Wilson-line scalar route \cite{Hosotani1983}.  In interval language, scalar data can appear as boundary values, Wilson-line-like data, brane-localized order parameters, or moduli of the compact geometry \cite{Bucci2004,HabaOda2011}.
 
+\begin{widetext}
 The scalar-branch target is therefore
 \begin{equation}
   u_-(J)\in\mathcal H_J
@@ -621,6 +625,7 @@ The scalar-branch target is therefore
   \label{eq:kk-negative-branch-map}
 \end{equation}
 Here \(u_-(J)\) is the negative-branch eigenvector of the two-channel kernel.  A derivation identifies \(\mathcal F_{\rm KK}\), states its gauge transformation properties, and explains its scheme relation to the low-energy Higgs/order-parameter variables.
+\end{widetext}
 
 The sc/int extension of this target uses a compact boundary-superconnection
 holonomy,
@@ -644,10 +649,11 @@ and tests whether the dimensionless scalar Hessian
 is the scalar partner of the same projected kernel that gives the hatted
 current entry and the photon subtraction.
 
-\subsection{KK completion criterion}
+\subsection{KK route outcome}
 \label{sec:kk-completion-criterion}
 
-The KK route is fixed by the following completion chain:
+The KK route is fixed by the following reduction chain:
+\begin{widetext}
 \begin{equation}
 \begin{aligned}
   \text{compact or interval source}
@@ -664,4 +670,5 @@ The KK route is fixed by the following completion chain:
 \end{aligned}
 \label{eq:kk-completion-chain}
 \end{equation}
+\end{widetext}
 The first arrow is source-backed by the KK and interval literature.  The second arrow is the DeVries determinant derivation.  The last arrow is the pole-placement and scalar-branch assignment.  This chain gives a concrete way to compare compactification, endpoint, and \(G_2\) routes.

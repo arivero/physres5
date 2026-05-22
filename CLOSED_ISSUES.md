@@ -4,6 +4,34 @@ This ledger preserves issues moved out of `OPEN_ISSUES.md` after referee and
 advisor review.  Closure records cite the manuscript state and residual theorem
 targets that remain active elsewhere.
 
+## O1. Derive the W/Z assignment
+
+**Closed in Loop 53.**
+
+**Closure evidence.** The introduction and Sec.~IV now state the ordered
+assignment
+\[
+(J_W,J_Z)=(J_H,J_{\rm adj})=(3/4,2)
+\]
+as the working assumption \(A3\) for the conditional pole-ratio proposal.
+The safe electroweak reading is explicit: the charged comparison samples the
+Higgs/order-parameter channel through a source projection, while the neutral
+comparison samples the photon-orthogonal adjoint/current channel.  Appendix~D
+Target~II records the corresponding theorem target with
+\[
+P_W(h_J)=3/4,\qquad
+P_Z(a_J^{\gamma^\perp})=2,\qquad
+P_\gamma(a_\gamma)=0,
+\]
+and Target~I carries the pole-scheme remainder.
+
+**Residual target.** O1 is closed as assumption and theorem-target
+bookkeeping.  No source derivation is claimed.  A source completion must still
+derive the projection package, the shared normalization, photon subtraction,
+and the pole remainder through \(T1\), Appendix~D Targets~0, I, II, III, VI,
+and X.  O2b supplies the current input audit, and O3 supplies the scalar
+partner map.
+
 ## O13. Casimir Keyword Load Versus Derivational Role
 
 **Closed in Loop 25.**
@@ -15,7 +43,8 @@ historical quadratic-Casimir input and that \(Q(J)\) is an ansatz awaiting a
 source-theory derivation.
 
 **Residual target.** The ordered assignment
-\((J_W,J_Z)=(3/4,2)\) remains O1 and Appendix~D Target~I material.
+\((J_W,J_Z)=(3/4,2)\) is assumption \(A3\); its source proof remains
+Appendix~D Target~II and Target~I material.
 
 ## O14. Trace-Space Separation
 
@@ -88,10 +117,10 @@ M_\gamma^2(t)=0.
 Appendix~D Target~IIa records the same ray as an admissibility theorem and
 lists the failure modes for source routes.
 
-**Residual target.** O1, Appendix~D Target~0, Appendix~D Target~I,
-Appendix~D Target~III, and Appendix~D Target~VI still have to derive a source
-route whose ordered assignment, kernel, scale placement, and dimensional
-variables commute with this ray.
+**Residual target.** Appendix~D Target~II, Appendix~D Target~0,
+Appendix~D Target~I, Appendix~D Target~III, and Appendix~D Target~VI still
+have to derive a source route whose ordered assignment, kernel, scale
+placement, and dimensional variables commute with this ray.
 
 ## O6. Flavor Boundary
 
@@ -183,7 +212,7 @@ mirrors these data as a maintained theorem target.
 
 **Residual target.** O10 is closed as a manuscript-architecture and
 source-status issue.  The source derivations remain open in the narrower
-targets: O1 for ordered W/Z sampling, O3 for the negative branch,
+targets: Target~II for ordered W/Z sampling, O3 for the negative branch,
 Target~0 and Target~III for the source kernel, Target~I for pole placement,
 O17/Target~VII for electromagnetic endpoint normalization, Target~X for the
 Hodge or superconnection origin, and Appendix~D Target~VI for the dimensional
@@ -202,7 +231,7 @@ negative-branch, and top-sector obligations in Lean-style notes.
 
 **Residual target.** Manuscript uses of prTalks-derived material require
 primary local literature or an explicit project-source label.  The active
-physics obligations remain in O1, O3, Appendix~D Target~VI,
+physics obligations remain in Target~II, O3, Appendix~D Target~VI,
 Appendix~D Target~VIII, Appendix~D Target~IX, and Appendix~D Target~X.
 
 ## O12. Parent-Workspace Source-Note Validation
@@ -219,7 +248,7 @@ custodial, string/Regge, SO(32), and dimensional-interpolation guardrails.
 
 **Residual target.** Parent-derived manuscript claims require primary-source
 support or explicit project-source status.  The residual physics obligations
-remain in O1, O3, Appendix~D Target~0, Appendix~D Target~III,
+remain in Target~II, O3, Appendix~D Target~0, Appendix~D Target~III,
 Appendix~D Target~VI, Appendix~D Target~VIII, Appendix~D Target~IX, and
 Appendix~D Target~X.
 
@@ -299,8 +328,8 @@ projection, production, decay, width, and exclusions supplied by a future source
 theory.
 
 **Residual target.** O18 is closed as a manuscript-architecture and
-bookkeeping issue.  The derivations remain active in narrower targets: O1 for
-the ordered low-sector W/Z sampling, Target~0 and Target~III for the source
+bookkeeping issue.  The derivations remain active in narrower targets:
+Target~II for the ordered low-sector W/Z sampling, Target~0 and Target~III for the source
 kernel and common slope, Target~I for pole placement and matching, Target~IX
 for the brane-scaling and boundary-duality test, and Appendix~D Target~VIII
 for the \(j=3/2\) particle assignment and future upgrades of the Regge source
@@ -339,8 +368,8 @@ K_T^{\rm DtN}+K_T^{\rm brane}
 \]
 
 **Residual target.** O4 is closed as a route-architecture and theorem-target
-ledger.  The physical derivation remains distributed across O1 for ordered W/Z
-sampling, O3 for the scalar partner, Target~0 and Target~III for source-kernel
+ledger.  The physical derivation remains distributed across Target~II for
+ordered W/Z sampling, O3 for the scalar partner, Target~0 and Target~III for source-kernel
 entry derivations, Target~I for pole matching, Target~VI for the dimensional
 source package, Target~X for the Hodge/superconnection reduced basis, and
 global-form completion checks.
@@ -378,7 +407,8 @@ and scheme maps.
 
 **Residual target.** O8 is closed as a scheme and scale-placement ledger.  A
 later source route still has to compute \(\Delta_{\rm match}\) in Target~I,
-derive the ordered samples in O1, and supply current W/Z input auditing in O2b.
+derive the ordered samples in Target~II, and supply current W/Z input auditing
+in O2b.
 
 ## O19. Brane-scaling identity of the two branches
 

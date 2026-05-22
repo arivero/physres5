@@ -1,8 +1,8 @@
 /-!
-Loop 33 note to self: O1 ordered W/Z sampling package.
+O1 ordered W/Z sampling package.
 
-This is a Lean-style research note.  It is kept outside Lean compilation.
-The goal is to trigger expert review of the same-source projection theorem.
+This file records the same-source projection theorem target used by the
+manuscript. It is outside the compiled Lean environment.
 -/
 
 namespace DeVries.O1OrderedSampling
@@ -64,7 +64,7 @@ def O1TargetReady (P : O1SourcePackage) : Prop :=
   P.source_to_pole_remainder_derived ∧
   P.negative_branch_same_source
 
-axiom ordered_sampling_open_obligation :
+axiom ordered_sampling_theorem_target :
   ∃ P : O1SourcePackage, O1TargetReady P
 
 structure O1O10BoundaryKernelDiagram where
@@ -226,5 +226,11 @@ axiom loop44_chm_projector_package_obligation :
      x_+(J_H) / x_+(J_adj) + Delta_O1
    has source-theory content.
 -/
+
+inductive O1ClosureStatus where
+  | assumptionTheoremTarget
+
+def o1ClosedAsAssumptionTheoremTarget : O1ClosureStatus :=
+  O1ClosureStatus.assumptionTheoremTarget
 
 end DeVries.O1OrderedSampling

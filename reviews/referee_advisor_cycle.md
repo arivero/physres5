@@ -105,6 +105,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 50 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O10 as a dimensional-interpolation architecture issue, moved the source-status dictionary to the closed ledger, added Target VI residual routing, and preserved source derivations under narrower theorem targets. |
 | 51 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O18 as a Regge higher-slot bookkeeping issue, moved the \(j=3/2\) slot to the closed ledger, added the Target VIII assignment filter, and preserved residual derivations under O1/O4/O8/O19/Target VIII. |
 | 52 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O4/O19/O20 as coordinated source-route ledgers, then closed O8 as the highest extant open O-number, leaving O1/O2b/O3 as the remaining open issues. |
+| 53 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O1 as assumption \(A3\) plus theorem target \(T1\), removed it from the open ledger, and preserved source-completion work under Appendix D Targets 0/I/II/III/VI/X. |
 
 ## Scoring rubric
 

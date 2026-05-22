@@ -12,6 +12,7 @@
 - Add the colourless electroweak \(D=7/6/5\) version, corresponding to internal KK \(3/2/1\), using six-dimensional superstring sources as the middle-dimension anchor.
 - Develop the top-quark subquestion: whether the interpolation or negative branch explains why the top quark is tied to the electroweak order-parameter scale.
 - Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
+- Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../weak`, `../phys3`, `../signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
 
 ## Completed in latest pass
 
@@ -21,6 +22,7 @@
 - Added concrete \(G_2\) entry targets for the adjoint entry, off-diagonal product, and order-parameter reference entry.
 - Added the pole-matching chain from source kernel to four-dimensional effective action to dressed transverse pole.
 - Added the Round 3 pole-convention refinement, O8 self-energy matching target, and adjacent `prTalks` source-note/Lean index.
+- Added the parent-workspace source-note/Lean index, the custodial single-generator obstruction, and the single-source normalization audit for future route derivations.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -53,6 +55,13 @@
 - Prove or refute uniqueness of Eq. \(\eqref{eq:QJ}\) from trace/determinant plus high-spin assumptions.
 - Derive or reject the `prTalks` Regge intercept construction \(M_{n,j,\pm}^2=\mu^2x_{j,\pm}+n/\alpha'\) from a worldsheet, BRST, boundary, Chan-Paton, or current-algebra mechanism.
 - Derive or reject the effective-dimension \(D_{\rm eff}\) interpolation from a KK vector-scalar Laplacian with the DeVries two-channel block.
+- Derive or reject the custodial single-generator route to \(C_F/C_A=3/8\): identify a UV threshold, exotic charge lattice, or custodial-generator sum that turns the hypercharge \(T_R^3\) spurion into the full Casimir ratio.
+- Derive the DeVries block entries from one source operator and one normalization rule in any endpoint, interval, brane, KK, or \(G_2\) route:
+  \[
+  \Sigma_{hh,J}=0,\qquad
+  \Sigma_{aa,J}=J,\qquad
+  \Sigma_{ha,J}\Sigma_{ah,J}=J .
+  \]
 
 ## Source work
 
@@ -65,6 +74,7 @@
 - Add a local source note for custodial symmetry and scalar-sector scheme dependence from Logan/Dawson.
 - Keep web-discovered papers local: download PDFs into `references/pdfs/`, update `context/source_inventory.md`, rerun `scripts/fragment_pdfs.py`.
 - Page-check image-bearing adjacent PDFs directly when formulas or plots matter; `pdftotext` output is only an access aid.
+- Replace parent-workspace source-note claims with primary references before manuscript citation.  Priority upgrades: custodial EFT/HEFT for the negative-sector obstruction, Chan-Paton/orientifold sources for SO(32)-flavor boundary claims, Witten 1981 plus six-dimensional string sources for the dimensional-interpolation endpoint dictionary.
 
 ## Review cycle
 

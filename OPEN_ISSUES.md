@@ -8,6 +8,14 @@
 
 **Success criterion.** A derivation from the gauge-Higgs sector that yields the ordered pair \((J_W,J_Z)=(3/4,2)\) directly and rules out post-selection.
 
+**Parent-workspace refinement.** The `../weak` critique turns this into a
+mass-map theorem.  The assignment must pass through a gauge-Higgs mass matrix,
+pole self-energy map, or equivalent source-theory reduction.  SO(32) flavor
+bookkeeping supplies the ordered pair only after an electroweak-operator
+coupling: the adjacent audit places triplet data in adjoint branches and
+weak-doublet data in spinor branches, so the flavor ledger needs a coupling to
+the electroweak operator.
+
 ## O2a. Pole convention formula
 
 **Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?
@@ -51,6 +59,19 @@ The remaining convention task is to state the exact relation to the quoted varia
 \mathcal F_{\rm sc}(J_\star)=C_{\rm sc}|x_-(J_\star)|.
 \]
 The route-specific maps are endpoint brane-scalar data, interval boundary/modulus data, and \(G_2\) singularity-deformation data.
+
+**Parent-workspace refinement.** The signed-root mechanism notes give a useful
+EFT obstruction template:
+\[
+V_{\rm eff}\supset
+\frac12\Psi_-^T
+\left[m_-^2{\bf 1}+c_Yg'^2(H^\dagger H)\sigma_3\right]\Psi_-,
+\qquad
+\Delta M_-^2=\frac{c_Yg'^2v^2}{2}\sigma_3 .
+\]
+This supplies a gauge-invariant form for a two-state negative sector.  The
+physical identity of \(\Psi_-\), the coefficient \(c_Y\), and the map to
+\(x_-(J)\) remain UV matching data.
 
 ## O4. Dynamical derivation from string/brane/Regge data
 
@@ -169,6 +190,19 @@ x_+(J)x_-(J)=-J,
 \]
 Both remain obligations until a worldsheet, boundary, Kaluza--Klein, or \(G_2\) operator derives the DeVries block and identifies the branch status.
 
+**Parent-workspace normalization audit.** Adjacent `../weak` mechanism notes
+show that \(\sqrt{C_2}\), \(C_2\), and the common normalization require one
+source-theory explanation.  Any endpoint, interval, brane, KK, Regge, or
+\(G_2\) route must derive
+\[
+\Sigma_{hh,J}=0,\qquad
+\Sigma_{aa,J}=J,\qquad
+\Sigma_{ha,J}\Sigma_{ah,J}=J
+\]
+from one operator, field basis, and inner product.  Hosotani/Wilson-line
+weight-squared spectra, single-generator Wigner--Eckart elements, and free
+Wilson coefficients are failure modes to test explicitly.
+
 ## O8. Pole placement versus high-scale placement
 
 **Question.** Why does the clean DeVries value attach to the low-energy pole spectrum, and how are GUT-scale or compactification-scale boundary readings separated?
@@ -209,6 +243,18 @@ K_{J,r}^{\rm bare}(\lambda)
 \]
 If the clean quotient is derived at compactification or unification scale, the manuscript relocates the physical claim to that scheme and treats the pole comparison as descriptive motivation.
 
+**Parent-workspace refinement.** The signed-root custodial no-go suggests a
+concrete obstruction to test whenever \(3/8=C_F/C_A\) enters a negative-sector
+or custodial explanation.  Usual electroweak breaking supplies
+\[
+M_Z^2-M_W^2=\frac{g'^2v^2}{4}
+\]
+through the hypercharge spurion \(T_R^3\).  A full SU(2) Casimir ratio requires
+an additional UV threshold, charge lattice, or custodial-generator sum.  The
+same standard applies to string and Regge variants: Chan--Paton traces,
+hypercharge embeddings, and Regge \(C_F/C_A\) factors must be matched to the
+four-dimensional pole condition.
+
 ## O5. Electroweak ray and forbidden deformations
 
 **Question.** How does the construction encode the full broken-to-unbroken electroweak ray while avoiding independent unphysical limits?
@@ -224,6 +270,13 @@ If the clean quotient is derived at compactification or unification scale, the m
 **Current working idea.** State SO(32)-flavor as a separate organizing clue compatible or incompatible with compactification topology.
 
 **Success criterion.** A section that gives the boundary condition and prevents overclaiming.
+
+**Parent-workspace refinement.** Adjacent SO(32) notes are useful as flavor
+boundary provenance.  The current safe use is representation bookkeeping:
+adjoint branches can supply triplet-like data, spinor branches can supply
+doublet-like data, and orientifold/orbifold projection data are needed for
+branch selection.  Generation-topology claims stay inside the existing caveat
+until a compactification map and global-form check are supplied.
 
 ## O7. Global form of the Standard Model gauge group
 
@@ -313,6 +366,14 @@ reconstruction targets: they must provide a compact, boundary, or singular
 object \(\mathcal B\), the two-channel light subspace, the DeVries kernel, and
 the pole-matching rule.
 
+**Parent-workspace refinement.** The parent `../phys3` files add provenance
+for the D=11 chirality-obstruction language, the D=9/D=11 interpolation note,
+and SO(32)/Chan--Paton counting.  Witten 1981 and the six-dimensional string
+sources remain the controlling primary-source trail.  Parent projection notes
+also require explicit boundary, orientifold, orbifold, or singular data when a
+branch projection is invoked; Wilson-line data alone leave the projection
+unresolved.
+
 ## O11. Adjacent `prTalks` source-note validation
 
 **Question.** Which user-provided `../prTalks` PDFs contain conceptual material that should survive into the manuscript program, and which claims require primary-source upgrades?
@@ -320,3 +381,35 @@ the pole-matching rule.
 **Current working idea.** Treat the PDFs as project source notes. Keep the PDFs themselves as source objects, because text extraction misses plots, equation layout, radicals, and embedded images. Valid content includes the electroweak ray/projective-angle reading, the orbit quadratic, Reggeization alternatives, the minimal \(D_T\) two-channel block, the effective-dimension interpolation, and the negative-branch/top-sector obligation.
 
 **Success criterion.** `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean` record the valid content, the PDF-reading caveat, the agent-read mathematical transcriptions, and the primary-source upgrade queue. Any promotion into manuscript prose must point back either to primary local literature or to an explicitly labeled project-source note.
+
+## O12. Parent-workspace source-note validation
+
+**Question.** Which adjacent parent-workspace text notes can sharpen the
+manuscript while keeping adjacent-project overclaims out of journal-facing
+prose?
+
+**Current working idea.** Use `../weak` as a normalization and failure-mode
+audit, `../phys3` as dimensional-interpolation and SO(32)/Chan--Paton
+provenance, `../signed-dv-custodial-project` as negative-branch and string-UV
+obstruction memory, and `../dualsm` as review-process discipline.  `../recap`
+and `../orbits` remain outside current manuscript claims unless a later
+source-specific task makes them relevant.
+
+**Promoted obligations.**
+
+1. Scalar-seed assignments to W/Z observables require a gauge-Higgs mass
+   matrix, pole self-energy map, or equivalent source-theory reduction.
+2. Negative-branch Higgs/top readings require a scalar potential,
+   gauge-invariant scalar functional, or UV-matched two-state EFT.
+3. Endpoint, interval, brane, KK, Regge, and \(G_2\) routes must produce the
+   DeVries block from one operator and one normalization rule.
+4. Custodial \(3/8=C_F/C_A\) explanations must supply an extra threshold,
+   charge lattice, or generator-sum mechanism beyond the hypercharge
+   \(T_R^3\) spurion.
+5. SO(32)-flavor and Chan--Paton counts remain flavor-boundary provenance until
+   a coupling to the electroweak operator is derived.
+
+**Success criterion.** `context/parent_workspace_source_notes.md` and
+`notes/lean/AdjacentWorkspaceGuardrails.lean` record the audited content and
+the theorem targets.  Parent-derived claims promoted to manuscript prose must
+carry either primary-source support or an explicit project-source label.

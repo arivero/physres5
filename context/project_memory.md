@@ -28,6 +28,7 @@
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
 - Treat `pdftotext` as an access aid. Keep PDFs as source objects for plots, images, radicals, and equation layout. For mathematical content, inspect the rendered PDF and label agent-read transcriptions.
 - Adjacent `../prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
+- The parent workspace pass is indexed in `context/parent_workspace_source_notes.md` and `notes/lean/AdjacentWorkspaceGuardrails.lean`. Valid imports are guardrails and theorem targets: scalar-seed assignments need gauge-Higgs or pole-self-energy maps, each source route must produce the DeVries block from one operator and normalization rule, the negative-sector EFT coefficient needs UV matching, and SO(32)-flavor notes stay inside the flavor-boundary ledger until coupled to the electroweak operator.
 
 ## Resume state after context renewal
 
@@ -47,6 +48,7 @@
 - Round 2 converted O10 into a dimensional Schur-complement target: the \(D=10/6\) middle line must provide \(\mathcal B(t_\star)\), \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), \(K_J(t_\star,\lambda)\), and the pole-matching rule.
 - New O10 subquestion: explain why the top quark sits at the electroweak scale. Source-backed SM facts are top Yukawa dominance, nondecoupling, and top sensitivity in Higgs/vacuum-stability physics; any DeVries explanation remains open.
 - New O11 source-note validation issue: preserve `../prTalks` PDFs as source objects, use extracted text only as an access aid, and promote only structural obligations or primary-source-backed claims.
+- New O12 parent-workspace validation issue: preserve adjacent text notes as source-note provenance, promote their critique content into O1/O3/O4/O6/O8/O10 obligations, and replace adjacent-project claims with primary sources before manuscript citation.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

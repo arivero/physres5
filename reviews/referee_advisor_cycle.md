@@ -45,6 +45,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 7 | 5 | 5 | 5 | 5 | 5 | Compiled 62-page draft; route-comparison section, expanded negative-branch scalar-functional analysis, and referee-facing status ledger added. |
 | 8 | 5 | 5 | 5 | 5 | 5 | Added O10 dimensional-interpolation theorem target, source-status table, Schur-complement bridge, \(G_2\) entry targets, and pole-matching chain; determinant and assignment derivations remain open. |
 | 9 | 5 | 5 | 5 | 5 | 5 | Compiled 66-page draft; exact pole parameterization, Breit--Wigner mass/width convention chain, O8 self-energy matching theorem, and adjacent `prTalks` source-note/Lean index added. |
+| 10 | 5 | 5 | 5 | 5 | 5 | Parent-workspace pass added source-note guardrails, one-source normalization audit, custodial single-generator obstruction, and O12 validation issue; manuscript derivations remain explicit open targets. |
 
 ## Scoring rubric
 
@@ -67,3 +68,4 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the three-route comparison ledger constrain future string/Kaluza--Klein work tightly enough?
 - Which source-backed historical material should be added next to connect seventies string theory, Regge spectra, endpoint charges, and electroweak structure?
 - Does the O10 dimensional Schur-complement target give a concrete enough bridge among dimensional interpolation, the ordered \(J\)-assignment, the DeVries kernel, and pole placement?
+- Does the parent-workspace normalization audit give strong enough failure-mode tests for the next endpoint, interval, brane, KK, Regge, or \(G_2\) derivation attempt?

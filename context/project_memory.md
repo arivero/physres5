@@ -249,6 +249,23 @@
   string pages 31--40.  The recorded consequences are scalar-observable
   scheme control, BEH/Z partner vocabulary, KK \(H\)-representation selection,
   and constrained transverse string modes.
+- Loop 40 normalizes the active open-issue package as a boundary electroweak
+  superconnection on a CHM interval:
+  \[
+  \widehat K_J^{\rm sc/int}
+  =
+  \Lambda_J^{-2}P_{\rm sc}^\dagger
+  [K_T^{\rm DtN}+K_T^{\rm brane}
+  +\langle\mathcal F_{\rm sc},\mathcal F_{\rm sc}\rangle_{\rm sc}
+  -K_\gamma^{\rm ref}]P_{\rm sc}.
+  \]
+  This actively works O1, O4, O10, and O20, with O3/O8 linked through the
+  scalar functional and pole remainder.  The detailed IJMP A superconnection
+  source remains an acquisition target.  The extra Loop 40 note review
+  rechecked Loop 15 trace-transfer witnesses, Tong anomaly/index pages,
+  Hosotani Wilson-line dynamics, and Acharya--Witten \(G_2\) singularity
+  deformation; these feed the anomaly ledger, scalar holonomy route, and
+  localized-matter caveat.
 
 ## Resume state after context renewal
 

@@ -146,6 +146,25 @@ P_W,P_Z,P_\gamma,\Delta_{\rm O1}\right)
 with \(P_W(h_J)=3/4\), \(P_Z(a_J^{\gamma^\perp})=2\), photon subtraction, and
 complex-pole matching derived in one source ledger.
 
+**Loop 40 sc/int closure package.** O1 is tied to the boundary
+electroweak-superconnection interval package
+\[
+\mathfrak D_{\rm sc/int}
+=
+\left(
+K_T^{\rm DtN},K_T^{\rm brane},\mathcal F_{\rm sc},
+P_{\rm sc},P_W,P_Z,P_\gamma,K_\gamma^{\rm ref},
+\Lambda_J,\langle\cdot,\cdot\rangle_{\rm CHM},\mathcal R_{\rm pole}
+\right).
+\]
+The closure condition is a same-package derivation of
+\[
+P_W(\Phi_{\rm odd})=\frac34,\qquad
+P_Z(F_{\rm even}^{\gamma^\perp})=2,\qquad
+P_\gamma(F_{\rm even}^{\gamma})=0,\qquad
+\Delta_{\rm O1/O10}\ \hbox{in the complex-pole scheme}.
+\]
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
@@ -450,6 +469,31 @@ O4 remains tied to O1 through \(P_W,P_Z,P_\gamma\), to O3 through the
 same-source scalar package for \(u_-(J)\), to O8 through
 \(\Delta_{\rm match}^{(r)}\), to O10 through \(u\) and \(\Lambda_J(u)\), and
 to O20 through the common reduced basis.
+
+**Loop 40 sc/int kernel refinement.** The active O4 package is
+\[
+\widehat K^{\rm sc/int}_J(\widehat\lambda)
+=
+\Lambda_J^{-2}P_{\rm sc}^\dagger
+\Big[
+K_T^{\rm DtN}+K_T^{\rm brane}
++\langle\mathcal F_{\rm sc},\mathcal F_{\rm sc}\rangle_{\rm sc}
+-K_\gamma^{\rm ref}
+\Big]P_{\rm sc}.
+\]
+The closure test is the DeVries block plus a derived pole-scheme remainder:
+\[
+\widehat K^{\rm sc/int}_J(\widehat\lambda)
+=
+\begin{pmatrix}
+\widehat\lambda&-\sqrt J\\
+-\sqrt J&\widehat\lambda+J
+\end{pmatrix}
++\Delta_J^{\rm sc/int}(\widehat\lambda).
+\]
+This package ties O4 to O1 through the ordered projectors, to O3 through the
+scalar functional, to O8 through \(\Delta_J^{\rm sc/int}\), to O10 through
+\(\Lambda_J(u)\), and to O20 through \(P_{\rm sc}\).
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
@@ -867,6 +911,19 @@ appendix.  The dimensional interpolation contributes through four required
 objects: a kernel derivation, a map from dimensional data to the electroweak
 ray, an ordered assignment theorem, and a pole-matching theorem.
 
+**Loop 40 sc/int dimensional refinement.** The middle-dimensional source datum
+may be taken as \(u_{\rm sc/int}\) when the interval and superconnection data
+are joined:
+\[
+u_{\rm sc/int}\mapsto
+\left(t_{\rm dim},t_{\rm EW},\Lambda_J,
+P_{\rm sc},P_W,P_Z,P_\gamma,\widehat K_J,
+\mathcal F_{\rm sc},\mathcal R_{\rm pole}\right).
+\]
+This is a concrete O10 closure package.  It still requires an explicit map from
+compact or boundary data to the electroweak ray, plus the endpoint
+electromagnetic embedding for the \(D=9\) or colourless \(D=5\) end.
+
 ## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
 
 **Provenance.** Human operator note (2026-05-22).  Treat as a human directive;
@@ -1227,6 +1284,22 @@ Coquereaux supplies the \(\mathbb Z_2\)-graded finite matrix arena and the
 electroweak odd/even vocabulary.  The projection \(P_{\rm sc}\), the common
 inner product, \(J=s(s+1)\), \(B_J\), extra-channel decoupling, the
 negative-branch scalar map, and complex-pole matching remain O20 theorem data.
+
+**Loop 40 boundary-superconnection refinement.** Target X now has an interval
+implementation:
+\[
+\widehat K^{\rm sc/int}_J
+=
+\Lambda_J^{-2}P_{\rm sc}^\dagger
+\left(K_T^{\rm DtN}+K_T^{\rm brane}
++\langle\mathcal F_{\rm sc},\mathcal F_{\rm sc}\rangle_{\rm sc}
+-K_\gamma^{\rm ref}\right)P_{\rm sc}.
+\]
+Witten supplies the Hodge square-root template; Coquereaux supplies the finite
+odd/even gauge-Higgs algebra; CHM supplies boundary kernels and photon-zero
+bookkeeping.  O20 closure requires these inputs to give \(B_J\), the
+two-channel projection, extra-channel decoupling, and the pole/scalar branch
+map in one self-adjoint reduced basis.
 
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

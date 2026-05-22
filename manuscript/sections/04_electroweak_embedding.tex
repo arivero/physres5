@@ -69,17 +69,23 @@ In the scalar sector this makes the approximate global \(SU(2)_L\times SU(2)_R\)
 \end{equation}
 This is the electroweak reason the DeVries comparison is read as a projective statement about the W/Z pair.  The broken-to-unbroken deformation scales the vector masses with \(v\) while preserving the coupling-space direction.
 
-The DeVries proposal is read in the same projective language:
+The DeVries proposal is read in the same projective language.  In a source
+route the pole statement has the form
 \begin{equation}
-  \frac{M_W^2}{M_Z^2}\quad \longleftrightarrow\quad \frac{x_+(3/4)}{x_+(2)}.
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+  =
+  \frac{x_+(3/4)}{x_+(2)}
+  +\Delta_{\rm O1}.
   \label{eq:projective-identification}
 \end{equation}
-At this stage Eq.~\eqref{eq:projective-identification} is a tree-level
-projective analogy.  Sec.~\ref{sec:pole} and
-Appendix~\ref{app:target-pole-placement} state the additional pole-matching
-obligation.  The common scale is then supplied by the electroweak vacuum or, in
-a deeper model, by the compactification or brane scale that generates the
-effective gauge-Higgs sector.
+Here \(\Delta_{\rm O1}\) collects field normalization, threshold, source-scale,
+and complex-pole matching data.  The tree-level analogy is recovered by
+replacing the pole masses with Eq.~\eqref{eq:tree-masses} and setting the
+matching remainder to its tree-level value.  Sec.~\ref{sec:pole} and
+Appendix~\ref{app:target-pole-placement} state the pole-matching obligation.
+The common scale is then supplied by the electroweak vacuum or, in a deeper
+model, by the compactification or brane scale that generates the effective
+gauge-Higgs sector.
 
 The unbroken limit is the ray
 \begin{equation}
@@ -215,36 +221,13 @@ language for \(h_J\) and \(a_J\).  The ordered quotient in
 Eq.~\eqref{eq:o1-pole-package} requires the projectors, normalization, and
 pole remainder above.
 
-The interval realization gives a concrete test of the same package.  With
-\(u_{\rm int}\) denoting the interval source datum, the CHM boundary machinery
-must fit into the theorem diagram
-\begin{equation}
-\begin{aligned}
-u_{\rm int}
-&\longmapsto
-\left(K_T^{\rm DtN}+K_T^{\rm brane},P_\gamma,
-\langle\cdot,\cdot\rangle_{u_{\rm int}}\right)
-\longmapsto
-\widehat K_J,
-\\
-u_{\rm int}
-&\longmapsto
-\left(v,g,g',P_W,P_Z,P_\gamma,\Lambda_J\right)
-\longmapsto
-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
-=
-\frac{x_+(3/4)}{x_+(2)}
-+\Delta_{\rm O1/O10}(u_{\rm int}) .
-\end{aligned}
-\label{eq:o1-o10-source-kernel-diagram}
-\end{equation}
-Here \(K_T^{\rm DtN}\) is the transverse Dirichlet-to-Neumann kernel,
-\(K_T^{\rm brane}\) denotes boundary mass and kinetic contributions, and
-\(\widehat K_J\) is the normalized two-channel kernel after photon subtraction
-and projection.  This diagram is a theorem target: CHM supplies the boundary
-operators and photon-zero bookkeeping, while the equality above requires the
-projection, normalization, and pole remainder to be derived from the same
-source datum.
+Appendix~\ref{app:target-susyqm-origin} records the
+interval-superconnection realization of this package.  In that realization the
+CHM transverse Dirichlet-to-Neumann kernel, Coquereaux-type finite gauge-Higgs
+connection, photon subtraction, and source scale enter one reduced kernel
+\(\widehat K_J\).  Its closure condition is the simultaneous derivation of
+\(P_W(h_J)=3/4\), \(P_Z(a_J^{\gamma^\perp})=2\), \(P_\gamma(a_\gamma)=0\), and
+\(\Delta_{\rm O1/O10}\) in the complex-pole scheme.
 
 A natural current to test is the Higgs isospin current
 \begin{equation}

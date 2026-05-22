@@ -436,6 +436,10 @@
   The local Coquereaux talk already supports the finite graded-curvature arena;
   the detailed sources are needed for matrix, curvature, trace-normalization,
   and renormalization caveats.
+- Loop 40 next source pass: use the detailed IJMP A superconnection source, if
+  obtained, to test whether scalar-product freedoms and curvature terms can fix
+  the boundary-superconnection/CHM package
+  \(\widehat K_J^{\rm sc/int}\).
 - Loop 32 O3 next step: test the interval gauge-Higgs/Hosotani scalar package
   by deriving, or rejecting, a common source datum
   \[

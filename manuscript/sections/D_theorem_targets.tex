@@ -1365,6 +1365,64 @@ Equivalently, the Coquereaux graded-curvature projection must produce
   +\Delta_{\rm sc}^{\rm op}(\lambda).
   \label{eq:target-coq-curvature-projection}
 \end{equation}
+The active test can be packaged as a boundary electroweak superconnection on a
+CHM interval.  Let \(u_{\rm sc/int}\) denote the source datum containing the
+finite superconnection boundary data and the interval bulk data.  The theorem
+target is
+\begin{equation}
+\begin{aligned}
+  \widehat K^{\rm sc/int}_J(\widehat\lambda)
+  &=
+  \Lambda_J^{-2}
+  P_{\rm sc}^\dagger
+  \Big[
+  K_T^{\rm DtN}(\lambda)+K_T^{\rm brane}(\lambda)
+  +\langle\mathcal F_{\rm sc},\mathcal F_{\rm sc}\rangle_{\rm sc}
+  -K_\gamma^{\rm ref}(\lambda)
+  \Big]
+  P_{\rm sc}
+  \\
+  &=
+  \begin{pmatrix}
+  \widehat\lambda&-\sqrt J\\
+  -\sqrt J&\widehat\lambda+J
+  \end{pmatrix}
+  +\Delta_J^{\rm sc/int}(\widehat\lambda),
+  \qquad
+  \lambda=\Lambda_J^2\widehat\lambda .
+\end{aligned}
+\label{eq:target-sc-int-kernel}
+\end{equation}
+The associated diagram is
+\begin{equation}
+\begin{array}{ccccc}
+u_{\rm sc/int}
+&\longrightarrow&
+(\mathcal A_{\rm sc},\mathcal F_{\rm sc},K^{\rm DtN},
+\langle\cdot,\cdot\rangle)
+&\xrightarrow{\ P_{\rm sc},P_\gamma,\Lambda_J\ }&
+\widehat K_J(\widehat\lambda)
+\\
+\downarrow &&&& \downarrow
+\\
+(t_{\rm EW},\mathcal F_{\rm scalar})
+&\longrightarrow&
+(x_+(3/4),x_+(2),x_-(J_\star))
+&\longrightarrow&
+(M_W/M_Z,\mathcal F_{\rm sc},\Delta_{\rm pole}) .
+\end{array}
+\label{eq:target-sc-int-diagram}
+\end{equation}
+The closure conditions are
+\begin{equation}
+  \begin{aligned}
+  P_W(\Phi_{\rm odd})&=\frac34,&
+  P_Z(F_{\rm even}^{\gamma^\perp})&=2,\\
+  P_\gamma(F_{\rm even}^{\gamma})&=0,&
+  \Delta_J^{\rm sc/int}&\ \hbox{is derived in the pole scheme}.
+  \end{aligned}
+  \label{eq:target-sc-int-closure}
+\end{equation}
 The source-internal weak-angle values, including the \(SU(2|1)\) trace
 normalizations and the \(3/8\) value in the extended-family discussion, are part
 of the algebraic normalization ledger.  The pole-spectrum quotient in

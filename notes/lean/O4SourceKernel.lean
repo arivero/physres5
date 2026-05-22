@@ -16,6 +16,7 @@ constant SourceScale : Type
 constant PoleMap : Type
 constant LocalOperator : Type
 constant Pairing : Type
+constant SuperconnectionCurvature : Type
 
 structure CHMCurrentEntryData where
   interval : Interval
@@ -114,5 +115,25 @@ def crossIssueLinksReady (C : CrossIssueLinks) : Prop :=
 
 axiom loop34_o4_cross_issue_links :
   ∃ C : CrossIssueLinks, crossIssueLinksReady C
+
+structure ScIntKernelData where
+  dtnKernel : Kernel
+  braneKernel : Kernel
+  superconnectionCurvature : SuperconnectionCurvature
+  photonReferenceKernel : Kernel
+  projector : Projection
+  sourceScale : SourceScale
+  poleMap : PoleMap
+  hattedKernelEqualsDeVriesBlock : Prop
+  remainderDerived : Prop
+  extraChannelsDecouple : Prop
+
+def scIntKernelReady (S : ScIntKernelData) : Prop :=
+  S.hattedKernelEqualsDeVriesBlock ∧
+  S.remainderDerived ∧
+  S.extraChannelsDecouple
+
+axiom loop40_sc_int_kernel :
+  ∃ S : ScIntKernelData, scIntKernelReady S
 
 end DeVries.O4SourceKernel

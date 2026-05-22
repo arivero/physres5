@@ -20,6 +20,11 @@ constant EvenAnticommutators : Type
 constant PhotonProjection : Type
 constant CoquereauxCurvature : Type
 constant CoquereauxNormalization : Type
+constant CHMDtNKernel : Type
+constant CHMBraneKernel : Type
+constant PhotonReferenceKernel : Type
+constant SourceScale : Type
+constant PoleRemainder : Type
 
 constant Phi_odd : OddHiggs
 constant F_even_gamma_perp : EvenCurrent
@@ -71,6 +76,32 @@ def O1SuperconnectionTarget (S : SuperconnectionReduction) : Prop :=
 
 axiom superconnection_assignment_obligation :
   ∃ S : SuperconnectionReduction, O1SuperconnectionTarget S
+
+structure BoundarySuperconnectionIntervalTarget where
+  complex : GaugeHiggsComplex
+  curvature : CoquereauxCurvature
+  dtnKernel : CHMDtNKernel
+  braneKernel : CHMBraneKernel
+  photonReference : PhotonReferenceKernel
+  sourceScale : SourceScale
+  poleRemainder : PoleRemainder
+  oddHiggsToThreeFourths : Prop
+  evenCurrentToTwo : Prop
+  photonToZero : Prop
+  scalarBranchSameSource : Prop
+  hattedKernelEqualsTargetBlock : Prop
+
+def boundarySuperconnectionIntervalReady
+  (T : BoundarySuperconnectionIntervalTarget) : Prop :=
+  T.oddHiggsToThreeFourths ∧
+  T.evenCurrentToTwo ∧
+  T.photonToZero ∧
+  T.scalarBranchSameSource ∧
+  T.hattedKernelEqualsTargetBlock
+
+axiom loop40_boundary_superconnection_interval_obligation :
+  ∃ T : BoundarySuperconnectionIntervalTarget,
+    boundarySuperconnectionIntervalReady T
 
 /- Diagram to check in manuscript form:
 

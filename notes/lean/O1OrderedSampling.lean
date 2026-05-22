@@ -22,6 +22,8 @@ constant BoundaryKernel : Type
 constant PhotonProjector : Type
 constant NormalizedKernel : Type
 constant CouplingRay : Type
+constant BoundarySuperconnectionDatum : Type
+constant SuperconnectionProjector : Type
 
 constant J_H : Real
 constant J_adj : Real
@@ -87,6 +89,28 @@ def boundaryKernelDiagramReady (D : O1O10BoundaryKernelDiagram) : Prop :=
 
 axiom loop37_o1_o10_boundary_kernel_obligation :
   ∃ D : O1O10BoundaryKernelDiagram, boundaryKernelDiagramReady D
+
+structure ScIntO1Closure where
+  uintsc : BoundarySuperconnectionDatum
+  Psc : SuperconnectionProjector
+  photonProjector : PhotonProjector
+  sourceScale : SourceScale
+  poleMap : PoleMap
+  chargedProjector : ChargedSample
+  neutralProjector : NeutralSample
+  scalarFunctional : ScalarFunctional
+  oddHiggsAssigned : J_H = (3 / 4 : Real)
+  evenCurrentAssigned : J_adj = (2 : Real)
+  photonNullAssigned : J_gamma = (0 : Real)
+  oneSourceInnerProduct : Prop
+  oneSourceScale : Prop
+  complexPoleRemainderDerived : Prop
+
+def scIntO1ClosureReady (S : ScIntO1Closure) : Prop :=
+  S.oneSourceInnerProduct ∧ S.oneSourceScale ∧ S.complexPoleRemainderDerived
+
+axiom loop40_sc_int_o1_closure :
+  ∃ S : ScIntO1Closure, scIntO1ClosureReady S
 
 /- CHM ledger target:
    h_J = P_h,J(pi_i, A_5, delta v_i, delta R, alpha_H)

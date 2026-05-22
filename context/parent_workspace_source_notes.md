@@ -62,6 +62,18 @@ and top/negative-branch notes, and the sibling `../physres6` alpha and
 higher-slot provenance.  The remaining parent folders are triage queues until
 a focused issue opens them.
 
+## Loop 19 parent-root inventory refresh
+
+The broad `..` scan was repeated while excluding credential-adjacent,
+cache/editor, package, binary, and generated-runtime material from manuscript
+use.  The same relevant clusters remain active: `../prTalks`,
+`../physres6`, `../phys3`, `../phys4`, `../weak`,
+`../signed-dv-custodial-project`, `../physres1`, `../dualsm`, and `../recap`.
+For the current interval pass, the parent scan adds only triage confirmation:
+`../prTalks` and `../physres6` are already indexed as
+source-note provenance, and CHM remains the primary local source for the
+interval boundary theorem target.
+
 ## Promoted obligations
 
 ### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit

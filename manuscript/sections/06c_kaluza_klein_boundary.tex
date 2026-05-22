@@ -114,6 +114,33 @@ The DeVries target is the boundary limit
 \end{equation}
 This is the interval version of the endpoint target in Sec.~\ref{sec:endpoint-higgsing}.
 
+The CHM source gives concrete boundary data that can feed this target.  In a
+scalar toy problem, a boundary kinetic term produces an eigenvalue-dependent
+condition and a modified product of the schematic form
+\begin{equation}
+  \partial_y f_\lambda\big|_{y_i}
+  =
+  -\frac{\lambda}{M_i}f_\lambda(y_i),
+  \qquad
+  (f,g)_{\rm CHM}
+  =
+  \int_0^L f(y)g(y)\,dy
+  +
+  \sum_i \frac{1}{M_i}f(y_i)g(y_i).
+  \label{eq:chm-boundary-kinetic-data}
+\end{equation}
+For gauge fields, boundary scalar vevs give vector boundary data of the
+schematic form
+\begin{equation}
+  \partial_y A_\mu\big|_{y_i}\mp v_i^2A_\mu(y_i)=0,
+  \qquad
+  \left(\frac{m^2}{\xi_i}-v_i^2\right)\pi_i+v_iA_5\big|_{y_i}=0,
+  \label{eq:chm-boundary-vector-scalar-data}
+\end{equation}
+with endpoint-orientation signs fixed by the interval convention.  These
+source facts define an allowable class of boundary kernels.  The equality to
+Eq.~\eqref{eq:interval-self-energy-target} is the open DeVries entry theorem.
+
 \subsection{Dimensional Schur-complement target}
 \label{sec:kk-schur-target}
 
@@ -149,6 +176,30 @@ order-parameter/current mixing.  A successful interval derivation must specify
 these three objects, the inner product, and the normalization yielding
 Eq.~\eqref{eq:interval-self-energy-target}.
 
+The same target can be stated in Dirichlet-to-Neumann form.  Solving the bulk
+mode equation with fixed boundary values gives a map from boundary traces to
+normal derivatives.  Boundary kinetic and scalar terms add local endpoint
+pieces, so a source-level interval target is
+\begin{equation}
+  K^{\rm int}_J(\lambda)
+  =
+  P_J^\dagger
+  \left(
+  K^{\rm DtN}_J(\lambda)+K^{\rm brane}_J(\lambda)
+  \right)P_J
+  \longrightarrow
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix},
+  \label{eq:interval-dtn-target}
+\end{equation}
+where \(P_J\) is the projection to
+\(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\).  This form makes the
+source-data demand explicit: the Dirichlet-to-Neumann kernel, brane terms,
+projection, inner product, and decoupling rule must be supplied by one
+interval model.
+
 \subsection{Dictionary for the interval entries}
 \label{sec:interval-entry-dictionary}
 
@@ -156,11 +207,11 @@ The interval construction separates the entries of Eq.~\eqref{eq:boundary-devrie
 \begin{center}
 \begin{tabular}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
 \toprule
-Entry & Interval origin & Derivation target \\
+Entry & Candidate source datum & DeVries-specific obligation \\
 \midrule
-\(\Sigma_{hh,J}^{\rm int}=0\) & order-parameter reference boundary & fix the subtraction by a symmetry, a brane condition, or a normalization convention \\
-\(\Sigma_{aa,J}^{\rm int}=J\) & boundary inertia, adjoint current trace, or brane kinetic term & identify the quadratic invariant that appears in the boundary equation \\
-\(\Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J\) & overlap between boundary and bulk profiles, brane-localized mixing, or endpoint-current coupling & derive the invariant from a normalized overlap or generator product \\
+\(\Sigma_{hh,J}^{\rm int}=0\) & boundary scalar reference or subtraction datum & fix the reference by a symmetry, a brane condition, or a normalization convention \\
+\(\Sigma_{aa,J}^{\rm int}=J\) & boundary kinetic product, vector Robin term, or adjoint-current boundary datum & identify the quadratic invariant that appears in the boundary equation \\
+\(\Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J\) & scalar-vector mixing, endpoint/bulk overlap, or brane-localized coupling & derive the invariant from a normalized overlap or generator product \\
 \((J_H,J_{\rm adj})=(3/4,2)\) & Higgs/order-parameter channel and adjoint/current channel & derive the ordered electroweak sampling rule from the coupled interval problem \\
 \bottomrule
 \end{tabular}
@@ -194,7 +245,10 @@ The DeVries construction requires the boundary model to preserve the electroweak
   v^2\,\mathcal P(g,g'),
   \label{eq:ew-ray-boundary}
 \end{equation}
-where \(v\) is radial and \(\mathcal P(g,g')\) is projective.  The DeVries ratio can act on \(\mathcal P(g,g')\), or on a boundary operator whose pole condition reduces to that same projective datum.  Thus the interval model is required to yield a coupled charged/neutral construction:
+where \(v\) is radial and \(\mathcal P(g,g')\) is projective.  A completed
+interval theorem would produce a boundary operator whose pole condition reduces
+to this projective datum.  Thus the interval model is required to yield a
+coupled charged/neutral construction:
 \begin{equation}
   \left[
   \begin{array}{c}
@@ -210,6 +264,26 @@ where \(v\) is radial and \(\mathcal P(g,g')\) is projective.  The DeVries ratio
   \label{eq:interval-ew-target}
 \end{equation}
 This requirement places the W and Z readings inside one gauge-Higgs or boundary system.  The photon must remain the unbroken mode, and the massive neutral pole must carry the adjoint/current sample.
+
+The corresponding proof obligation is
+\begin{equation}
+  S_{\rm 5D}+S_{\rm bdry}
+  \longrightarrow
+  \{
+  \mathcal B_W(\lambda),
+  \mathcal B_Z(\lambda),
+  \mathcal B_\gamma(\lambda)
+  \}
+  \longrightarrow
+  M_\gamma=0,\qquad
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{x_+(3/4)}{x_+(2)}.
+  \label{eq:interval-ew-boundary-proof}
+\end{equation}
+The proof must include the charged and neutral boundary equations, the photon
+zero mode, custodial conditions, the reduced inner product, and the pole
+matching chain.
 
 The interval version of the ordered assignment theorem is:
 \begin{equation}

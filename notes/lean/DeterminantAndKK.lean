@@ -175,6 +175,55 @@ axiom schur_complement_derivation_required :
   ∃ S : SchurComplementRoute,
     schurComplementHitsDeVriesTarget S ∧ schurComplementHasIntervalSource S
 
+/- CHM interval source data:
+   Boundary kinetic terms alter the boundary equation and the inner product.
+   Boundary scalar vevs alter vector boundary equations and introduce
+   A5 / boundary-Goldstone scalar equations. -/
+structure CHMIntervalSourceData where
+  scalarBoundaryKineticEquation : Type
+  modifiedScalarProduct : Type
+  vectorRobinFromBoundaryScalar : Type
+  scalarBoundaryEquation : Type
+  photonZeroModeAccount : Type
+  custodialBoundaryAccount : Type
+
+def chmSourceDataFeedsBoundaryKernel (C : CHMIntervalSourceData) : Prop :=
+  True
+
+/- Dirichlet-to-Neumann interval route:
+   K_int_J(lambda) = P_J^dagger (K_DtN_J(lambda) + K_brane_J(lambda)) P_J.
+   The open expert target is the equality to the DeVries two-channel kernel. -/
+structure DirichletToNeumannIntervalRoute where
+  chmSourceData : CHMIntervalSourceData
+  bulkModeEquation : Type
+  boundaryTraceMap : Type
+  dtnKernel : Type
+  braneKernel : Type
+  lightProjection : Type
+  chmInnerProduct : Type
+  extraModeDecoupling : Type
+
+def dtnRouteHitsDeVriesKernel (D : DirichletToNeumannIntervalRoute) : Prop :=
+  True
+
+def dtnRouteGivesElectroweakBoundarySystem
+    (D : DirichletToNeumannIntervalRoute) : Prop :=
+  True
+
+def dtnRouteMatchesPoleScheme (D : DirichletToNeumannIntervalRoute) : Prop :=
+  True
+
+/- Obligation 10a:
+   Build the interval boundary theorem from CHM source data, including the
+   modified product, vector/scalar boundary equations, photon zero mode,
+   custodial data, projection to span{h_J,a_J}, and pole matching. -/
+axiom chm_dtn_interval_route_required :
+  ∃ D : DirichletToNeumannIntervalRoute,
+    chmSourceDataFeedsBoundaryKernel D.chmSourceData ∧
+    dtnRouteHitsDeVriesKernel D ∧
+    dtnRouteGivesElectroweakBoundarySystem D ∧
+    dtnRouteMatchesPoleScheme D
+
 /- Dimensional interpolation route:
    Treat the D=10 full-gauge interior, or the colourless D=6 interior, as a
    light two-channel boundary sector obtained by a Schur complement. -/

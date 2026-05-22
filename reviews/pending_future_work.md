@@ -2,9 +2,9 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 75 REVTeX PRD preprint pages after the Loop 18 compile.
+- Current compiled draft: 77 REVTeX PRD preprint pages after the Loop 19 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
-- Push one route-comparison entry toward a derivation from source data.
+- Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
@@ -77,6 +77,10 @@
   \(u\mapsto(t_{\rm dim},t_{\rm EW},\mathcal F_{\rm sc},\mathcal Y_{\rm top})\),
   top-sector theorem target, parent-root inventory refresh, and Loop 18 review
   reports.
+- Added Loop 19 normalization: CHM boundary kinetic and vector/scalar source
+  data in the KK section, Dirichlet-to-Neumann interval theorem target,
+  explicit electroweak boundary proof chain, updated source notes, parent-root
+  inventory refresh, and Loop 19 review reports.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -116,6 +120,20 @@
   \Sigma_{aa,J}=J,\qquad
   \Sigma_{ha,J}\Sigma_{ah,J}=J .
   \]
+- For the interval route, derive or reject the CHM Dirichlet-to-Neumann target
+  \[
+  K^{\rm int}_J(\lambda)
+  =
+  P_J^\dagger
+  \left(K^{\rm DtN}_J(\lambda)+K^{\rm brane}_J(\lambda)\right)P_J
+  \longrightarrow
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix},
+  \]
+  with the CHM inner product, photon zero mode, custodial data, and pole
+  matching supplied.
 - Derive the electroweak mass-map theorem from the Higgs kinetic term through
   pole matching:
   \[
@@ -198,7 +216,7 @@
 
 - Run the referee/advisor cycle in `reviews/referee_advisor_cycle.md` after each substantial rewrite.
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
-- Current score table includes Loop 17 for the compiled long draft.
+- Current score table includes Loop 19 for the compiled long draft.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

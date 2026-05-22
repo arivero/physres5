@@ -54,6 +54,33 @@ Equation~\eqref{eq:route-common-target} is stronger than a qualitative mechanism
 
 The reduction has three candidate arenas.  The endpoint arena is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval arena is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) arena is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources justify the arenas.  They leave Eq.~\eqref{eq:route-common-target} as the shared derivation target.
 
+The interval arena supplies source-derived boundary data.  CHM give
+eigenvalue-dependent scalar boundary conditions, the corresponding modified
+product, vector Robin data from boundary scalar vevs, and scalar \(A_5/\pi_i\)
+boundary equations.  In schematic form,
+\begin{equation}
+  \partial_y f_\lambda=-(\lambda/M_i)f_\lambda,\qquad
+  (f,g)_{\rm CHM}=\int fg+\sum_i M_i^{-1}f(y_i)g(y_i),
+  \qquad
+  \partial_y A_\mu\mp v_i^2A_\mu=0.
+  \label{eq:route-chm-source-data}
+\end{equation}
+Thus the source-backed statement is
+\begin{equation}
+  \hbox{CHM boundary data}
+  \Longrightarrow
+  K_{\rm int}(\lambda)\ \hbox{exists},
+  \qquad
+  K_{\rm int}(\lambda)
+  \Longrightarrow
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix}
+  \quad\hbox{is open}.
+  \label{eq:route-chm-open-target}
+\end{equation}
+
 The common reduction is filtered by three admissibility tests.  First, trace
 and coefficient statements stay inside the matrix where they are derived until
 a common source operator and field normalization identify the trace spaces.
@@ -112,8 +139,8 @@ The following table records the three entries in a common dictionary.
 \toprule
 Kernel entry & Endpoint/D-brane route & Interval KK route & \(G_2\) route\\
 \midrule
-\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & bulk gauge boundary value & ADE gauge fluctuation or adjoint invariant\\
-\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & order-parameter/bulk-profile overlap & localized matter or deformation coupling\\
+\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & boundary kinetic product, vector Robin datum, or bulk gauge boundary value & ADE gauge fluctuation or adjoint invariant\\
+\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & scalar-vector mixing or order-parameter/bulk-profile overlap & localized matter or deformation coupling\\
 \(\Sigma_{hh}=0\) & order-parameter reference channel & normalized boundary scalar term & critical-point normalization\\
 \bottomrule
 \end{tabular}

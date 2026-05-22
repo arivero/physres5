@@ -157,6 +157,25 @@ K^{\rm eff}_J(\lambda)
 \]
 This route should be tested first against interval boundary kinetic terms and brane-localized Higgsing data in the Csaki--Hubisz--Meade fragments.
 
+**Dirichlet-to-Neumann interval refinement.** Loop 19 sharpens the interval
+route into a source-data theorem target.  CHM supplies boundary kinetic data,
+modified scalar products, vector Robin data from boundary scalar vevs, and
+\(A_5/\pi_i\) scalar boundary equations.  The reduced target is
+\[
+K^{\rm int}_J(\lambda)
+=
+P_J^\dagger
+\left(K^{\rm DtN}_J(\lambda)+K^{\rm brane}_J(\lambda)\right)P_J
+\longrightarrow
+\begin{pmatrix}
+\lambda&-\sqrt J\\
+-\sqrt J&\lambda+J
+\end{pmatrix}.
+\]
+The unresolved step is the source-backed choice of \(K^{\rm DtN}_J\),
+\(K^{\rm brane}_J\), \(P_J\), the CHM inner product, and the decoupling or
+block form of extra interval modes.
+
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
 sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact

@@ -140,4 +140,17 @@ axiom Loop35_requires_photon_zero_and_source_package :
   ∃ S : AlphaEndpointSourcePackage,
     photonZeroPackageReady P ∧ alphaEndpointSourcePackageReady S
 
+structure AlphaClosureBoundary where
+  scalarVectorNormalizationMissing : Prop
+  endpointNormalizationMissing : Prop
+  matchingDataMissing : Prop
+
+def alphaRemainsExternalInput (B : AlphaClosureBoundary) : Prop :=
+  B.scalarVectorNormalizationMissing ∧
+  B.endpointNormalizationMissing ∧
+  B.matchingDataMissing
+
+axiom O17_closed_as_present_nonprediction :
+  ∃ B : AlphaClosureBoundary, alphaRemainsExternalInput B
+
 end DeVries.AlphaEndpoint

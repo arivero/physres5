@@ -101,6 +101,8 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 46 | 4.5 | 4.75 | 4.25 | 4.5 | 5 | Added the CHM source-equation acceptance/rejection protocol for \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), mirrored it in Target III and O1/O4 ledgers, and queued the \(G_2\) ADE-pairing target. |
 | 47 | 4.5 | 4.75 | 4.5 | 4.5 | 5 | Added Target IIIg for the local \(G_2\) ADE-pairing current test, singular-support pairing, \(A_1\subset A_2\) enhancement, source bindings, compact-completion conditions, and random recall record. |
 | 48 | 4.75 | 4.75 | 4.75 | 4.5 | 5 | Added Target IIIh for the local \(G_2\) flow-overlap product with localized wavefunctions, source-normalized flow kernels, bilinear maps, orientation ledger, rejection outputs, source bindings, Lean obligations, and random recall record. |
+| 49 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O17 as a present nonprediction claim, stated that \(\alpha\) remains a Standard Model input, preserved Target VII as a future corollary ledger, and recorded the source basis for the closure audit. |
+| 50 | 4.75 | 5 | 4.75 | 5 | 5 | Closed O10 as a dimensional-interpolation architecture issue, moved the source-status dictionary to the closed ledger, added Target VI residual routing, and preserved source derivations under narrower theorem targets. |
 
 ## Scoring rubric
 

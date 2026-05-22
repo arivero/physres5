@@ -26,9 +26,9 @@ The targets share a common data structure.  Let \(\mathcal S\) be a source theor
   \{x_+(J),x_-(J)\}.
   \label{eq:appendix-reduction-chain}
 \end{equation}
-The reduction is meaningful after the normalization of \(\mathcal H_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005,SalamStrathdee1982}.
+The reduction has physical content after the normalization of \(\mathcal H_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005,SalamStrathdee1982}.
 
-For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A plausibility argument may motivate the target, yet the manuscript's final physical claim must track the proven statement.
+For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A heuristic argument may motivate the target, yet the manuscript's final physical claim must track the proven statement.
 
 \subsection{Target 0: unified source-to-pole matching}
 \label{app:target-unified-source-to-pole}
@@ -717,6 +717,42 @@ critical points, orientation signs, possible cancellations among multiple flow
 contributions, and trivalent flow-tree interaction data.  Target IIIh uses the
 quadratic flow-line bilinear as the kernel candidate.  The trivalent data enter
 as interaction evidence and as a constraint on charge-sector compatibility.
+The Loop 49 source test isolates the actual Braun two-point object:
+\begin{equation}
+  M_{\rm MW}^{ab}
+  =
+  \sum_\gamma n_\gamma
+  \exp[-tq(f(p_a)-f(p_b))],
+  \qquad
+  n_\gamma=\pm1 .
+  \label{eq:target-g2-mw-matrix}
+\end{equation}
+The derivation attempt fails at the map
+\begin{equation}
+  M_{\rm MW}^{ab}
+  \leadsto
+  \left(
+  \widehat\Sigma_{ha,J}^{G_2},
+  \widehat\Sigma_{ah,J}^{G_2}
+  \right),
+  \label{eq:target-g2-mw-failed-map}
+\end{equation}
+because the source matrix acts between localized chiral multiplet ground states,
+while Target IIIh requires a closed two-channel
+\((h_J^{G_2},a_J^{G_2})\) block containing a projected ADE current mode.  The
+narrowed acceptance test is
+\begin{equation}
+  \widehat\Sigma_{ha,J}^{G_2}
+  =
+  \Lambda_{G_2}^{-1}M_{ha}^{\rm MW},
+  \qquad
+  \widehat\Sigma_{ah,J}^{G_2}
+  =
+  \Lambda_{G_2}^{-1}M_{ah}^{\rm MW},
+  \label{eq:target-g2-mw-narrowed-test}
+\end{equation}
+after same-basis compatibility with Target IIIg, positive local metric,
+orientation convention, and extra-channel control are supplied.
 Rejection outputs are
 \begin{equation}
   \begin{gathered}
@@ -1011,8 +1047,8 @@ supplies a Yukawa or boundary datum \(\mathcal Y_{\rm top}(u_\star)\) attached
 to the same source variable.
 
 \paragraph*{Conclusion.}
-The middle-dimensional sector passes the O10 test when the normalized
-projection gives the DeVries block,
+The middle-dimensional sector passes the dimensional-interpolation test when
+the normalized projection gives the DeVries block,
 \begin{equation}
   \Lambda_J(u_\star)^{-2}P_J(u_\star)^\dagger
   \mathcal O_J(u_\star,\lambda)P_J(u_\star)
@@ -1041,8 +1077,8 @@ middle lines:
 \end{pmatrix}.
 \label{eq:target-dimensional-passfail}
 \end{equation}
-Through Target~\ref{app:target-electroweak-assignment}, the same sector yields
-the ordered electroweak samples
+After Target~\ref{app:target-electroweak-assignment} is completed, the same
+sector would yield the ordered electroweak samples
 \begin{equation}
   (J_W,J_Z)=(J_H,J_{\rm adj})=\left(\frac34,2\right).
   \label{eq:target-dimensional-assignment}
@@ -1251,7 +1287,10 @@ matching point \cite{PDGPhysicalConstants2025}.  Witten's Kaluza--Klein
 discussion supports the qualitative mechanism:
 gauge fields arise from compact geometry and their couplings are controlled by
 the compact metric once the dynamics of that metric is known
-\cite{WittenKK1981}.
+\cite{WittenKK1981}.  These sources support the theorem target.  They do not
+fix a current manuscript prediction of \(\alpha\), because the scalar
+normalization, electromagnetic generator normalization, charge lattice, and
+matching pair are still external to the derived construction.
 
 \paragraph*{Failure mode.}
 The target fails from any missing element in
@@ -1259,8 +1298,8 @@ Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization}, from a \(D=9\)
 endpoint with unspecified \(U(1)_{\rm em}\) charge normalization, or from a
 matching pair \((Q_\alpha,\Delta_{\rm th})\) supplied as external measured
 input.  That outcome leaves the electromagnetic coupling as a Standard Model
-input and preserves the pole-ratio clue as the construction's electroweak
-content.
+input.  The current manuscript is in that failure class and preserves the
+pole-ratio clue as the construction's electroweak content.
 
 \subsection{Target VIII: Regge-intercept survival and higher branch slots}
 \label{app:target-regge-intercept-survival}

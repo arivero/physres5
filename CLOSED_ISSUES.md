@@ -88,9 +88,9 @@ M_\gamma^2(t)=0.
 Appendix~D Target~IIa records the same ray as an admissibility theorem and
 lists the failure modes for source routes.
 
-**Residual target.** O1, O4, O8, and O10 still have to derive a source route
-whose ordered assignment, kernel, scale placement, and dimensional variables
-commute with this ray.
+**Residual target.** O1, O4, O8, and Appendix~D Target~VI still have to derive
+a source route whose ordered assignment, kernel, scale placement, and
+dimensional variables commute with this ray.
 
 ## O6. Flavor Boundary
 
@@ -147,6 +147,46 @@ prose.
 routes must add or update their theorem targets, and the issue-specific
 derivations remain open under their current O-numbers.
 
+## O10. Higgs interpolation \(D=11\to D=10\to D=9\) and colourless \(D=7\to D=6\to D=5\)
+
+**Closed in Loop 50.**
+
+**Closure evidence.** Appendix~E now gives the source-status dictionary for the
+full-gauge chain
+\[
+n_{\rm KK}=7:\ SU(3)\times SU(2)\times U(1),
+\qquad
+n_{\rm KK}=6:\ \hbox{DeVries interpolation sector},
+\qquad
+n_{\rm KK}=5:\ SU(3)\times U(1)_{\rm geom},
+\]
+and the colour-spectator electroweak chain
+\[
+n_{\rm KK}^{\rm ew}=3:\ SU(2)\times U(1),
+\qquad
+n_{\rm KK}^{\rm ew}=2:\ \hbox{DeVries electroweak interpolation sector},
+\qquad
+n_{\rm KK}^{\rm ew}=1:\ U(1)_{\rm geom}\to U(1)_{\rm em}.
+\]
+It also states the formal joint-source map
+\[
+u\mapsto
+\big(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
+\langle\cdot,\cdot\rangle_u,P_J,\widehat K_J,\mathcal D_J^{\rm extra},
+\mathcal F_{\rm sc},\mathcal Y_{\rm top},\mathcal R_{\rm pole}\big),
+\]
+the middle-line pass/fail kernel, the electroweak-ray compatibility condition,
+the ordered \((J_H,J_{\rm adj})=(3/4,2)\) assignment dependency, the
+negative-branch scalar target, and the top-sector map.  Appendix~D Target~VI
+mirrors these data as a maintained theorem target.
+
+**Residual target.** O10 is closed as a manuscript-architecture and
+source-status issue.  The source derivations remain open in the narrower
+targets: O1 for ordered W/Z sampling, O3 for the negative branch, O4 for the
+source kernel, O8 for pole placement, O17/Target~VII for electromagnetic
+endpoint normalization, O20/Target~X for the Hodge or superconnection origin,
+and Appendix~D Target~VI for the dimensional source package.
+
 ## O11. Adjacent `prTalks` Source-Note Validation
 
 **Closed in Loop 29.**
@@ -160,7 +200,7 @@ negative-branch, and top-sector obligations in Lean-style notes.
 
 **Residual target.** Manuscript uses of prTalks-derived material require
 primary local literature or an explicit project-source label.  The active
-physics obligations remain in O1, O10, O17, O18, O19, and O20.
+physics obligations remain in O1, O18, O19, O20, and Appendix~D Target~VI.
 
 ## O12. Parent-Workspace Source-Note Validation
 
@@ -176,7 +216,7 @@ custodial, string/Regge, SO(32), and dimensional-interpolation guardrails.
 
 **Residual target.** Parent-derived manuscript claims require primary-source
 support or explicit project-source status.  The residual physics obligations
-remain in O1, O3, O4, O10, O17, O18, O19, and O20.
+remain in O1, O3, O4, O18, O19, O20, and Appendix~D Target~VI.
 
 ## O16. SO(32) Flavor/String Completion Boundary
 
@@ -196,3 +236,27 @@ preserves the same data as a global-form and localization compatibility target.
 orientifold or endpoint construction, projection or decoupling of extra states,
 anomaly and hypercharge checks, global-form compatibility, and a coupling from
 the flavor sector to the electroweak DeVries operator.
+
+## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
+
+**Closed in Loop 49.**
+
+**Closure evidence.** Section~IX now states explicitly that the present
+construction does not predict \(\alpha\).  Appendix~D Target~VII and
+Appendix~E record the precise reason: the current manuscript lacks a derived
+scalar normalization for \(x_-(J)\), a source-fixed \(U(1)_{\rm em}\)
+generator and charge lattice, and a scheme-fixed matching pair
+\((Q_\alpha,\Delta_{\rm th})\).  Logan and Dawson support the low-energy bridge
+\(M_W^2=g^2v^2/4\) and \(e=g\sin\theta_W\).  Salam--Strathdee and Witten
+support only the qualitative Kaluza--Klein mechanism that four-dimensional
+gauge couplings depend on compactification data.  Martin--Robertson and
+Jegerlehner show that any comparison to \(\alpha\) requires a declared running
+scheme, thresholds, and hadronic-vacuum-polarization convention.  The current
+state of the manuscript is therefore a rejection of O17 as a present
+prediction claim: \(\alpha\) remains a Standard Model input, and the DeVries
+construction contributes the pole-ratio clue \(\sPole\).
+
+**Residual target.** Target~VII remains in the manuscript as a future
+source-theory corollary.  A later route may still derive scalar/vector
+normalization, electromagnetic generator normalization, charge lattice, and
+the matching pair \((Q_\alpha,\Delta_{\rm th})\) from one source package.

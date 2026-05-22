@@ -231,6 +231,16 @@ PRD phase.
     \(\gamma(f_1,\ldots,f_n)\) for flow trees.  Source use: Target IIIh treats
     the two-point flow-line bilinear as the off-diagonal kernel candidate and
     keeps trivalent data as charge-sector and interaction evidence.
+  - Loop 49 source binding: pages 31--40 record the Morse--Witten mass matrix
+    \(M_{\rm MW}^{ab}=\sum_\gamma n_\gamma
+    e^{-tq(f(p_a)-f(p_b))}\), orientation signs \(n_\gamma=\pm1\),
+    associative three-cycle/M2-instanton interpretation, cancellations among
+    homologous flow contributions, the Morse--Bott extension, the zero
+    same-critical-circle matrix element, and the complex
+    \(C^1=\Omega^0(N_1)\), \(C^2=\Omega^1(N_1)\oplus\Omega^0(N_2)\).
+    Source use: the Braun source supplies a chiral-multiplet Morse--Witten
+    two-point matrix.  Target IIIh requires an additional theorem identifying a
+    closed \((h_J^{G_2},a_J^{G_2})\) block with the projected ADE current mode.
 
 ## Standard Model global form and line operators
 

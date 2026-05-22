@@ -216,6 +216,35 @@ flow-line mass terms, and trivalent flow-tree interaction data.  The theorem
 specifies how the quadratic flow-line bilinear is extracted from those data.
 The DeVries kernel then uses the product in
 Eq.~\eqref{eq:g2-flow-overlap-target}.
+The source-backed two-point object in Braun--Cizel--Hubner--Schafer-Nameki is
+the Morse--Witten mass matrix
+\begin{equation}
+  M_{\rm MW}^{ab}
+  =
+  \sum_\gamma n_\gamma
+  \exp[-tq(f(p_a)-f(p_b))],
+  \qquad
+  n_\gamma=\pm1,
+  \label{eq:g2-braun-morse-witten-matrix}
+\end{equation}
+acting between localized chiral multiplet ground states.  Its Morse--Bott
+extension keeps the same flow-line form for point-to-component trajectories and
+gives a zero matrix element for two states localized on the same critical
+circle.  The current source package therefore supplies a narrower test,
+\begin{equation}
+  M_{\rm MW}^{ab}
+  \leadsto
+  (M_{ha}^{\rm MW},M_{ah}^{\rm MW})
+  \quad\hbox{inside}\quad
+  \mathcal H_J^{G_2}=\operatorname{span}\{h_J^{G_2},a_J^{G_2}\}.
+  \label{eq:g2-mw-to-ha-test}
+\end{equation}
+Loop 49 records the failed derivation step: the Braun source data lack an
+identification of the projected ADE current \(a_J^{G_2}\) as a
+Morse--Witten endpoint state in this two-channel block.  Target IIIh therefore
+remains active only after an additional same-basis projection theorem supplies
+\(M_{ha}^{\rm MW}\), \(M_{ah}^{\rm MW}\), \(\Lambda_{G_2}\), and the
+orientation convention.
 
 The local current test chooses a projected adjoint fluctuation
 \(a_J^{G_2}\) with

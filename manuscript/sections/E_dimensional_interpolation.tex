@@ -1,6 +1,6 @@
 \section{Dimensional interpolation target}
 \label{app:dimensional-interpolation}
-% Status: open. Records the D=11/10/9 and colourless D=7/6/5 interpolation target.
+% Status: closed architecture / open theorem target. Records the D=11/10/9 and colourless D=7/6/5 interpolation target.
 
 This appendix records a dimensional theorem target for the Higgs-sector
 problem.  Its role is to organize the Kaluza--Klein, string, Higgs, and
@@ -139,17 +139,15 @@ U(1)_{\rm geom}\to U(1)_{\rm em}\quad\hbox{after embedding theorem}.
 \end{array}
 \label{eq:colourless-dimensional-chain}
 \end{equation}
-This version gives the six-dimensional middle line a direct string-theory
-source address.  Six-dimensional superstring vacua and dualities are a
-standard part of the source landscape: type IIA compactified on K3 and the
-heterotic string compactified on \(T^4\) provide a six-dimensional string-string
-duality setting \cite{Strominger1995,Sen1995}; heterotic small instantons give
-nonperturbative six-dimensional dynamics \cite{WittenSmallInstantons1995}; and
-six-dimensional anomaly and string-universality constraints provide a modern
-consistency framework \cite{KumarTaylor2009}.  These sources support the
-existence and rigidity of six-dimensional string settings.  They provide a
-constrained string-vacuum arena.  The colourless \(D=6\) line remains a
-Schur-complement reconstruction label whose DeVries use requires the data in
+This version ties the six-dimensional middle line to six-dimensional string
+sources.  Type IIA compactified on K3 and the heterotic string compactified on
+\(T^4\) provide a six-dimensional string-string duality setting
+\cite{Strominger1995,Sen1995}; heterotic small instantons give nonperturbative
+six-dimensional dynamics \cite{WittenSmallInstantons1995}; and
+six-dimensional anomaly and string-universality constraints give consistency
+conditions \cite{KumarTaylor2009}.  These sources support a six-dimensional
+source arena.  The colourless \(D=6\) line remains a Schur-complement
+reconstruction label whose DeVries use requires the data in
 Eq.~\eqref{eq:middle-dimensional-data}.
 
 \subsection{Interpolation parameter}
@@ -246,8 +244,9 @@ operator target
   \end{pmatrix}.
   \label{eq:dimensional-devries-target}
 \end{equation}
-The positive branch is then assigned to the pole-ratio target, and the negative
-branch is assigned to a scalar, boundary, brane, or compactification datum.
+After a successful pass of Eq.~\eqref{eq:dimensional-devries-passfail}, the
+positive branch is assigned to the pole-ratio target, and the negative branch is
+assigned to a scalar, boundary, brane, or compactification datum.
 The current \(u_{\rm sc/int}\) package gives this middle-dimensional test a
 source ledger:
 \begin{center}
@@ -288,13 +287,30 @@ The compatibility diagram is
 \end{equation}
 Thus the dimensional interpolation contributes through a kernel derivation, a
 map from dimensional data to the electroweak ray, an ordered assignment theorem,
-and a pole-matching theorem.
+and a pole-matching theorem.  This completes the dimensional-interpolation
+architecture.  The residual derivations are assigned as
+\begin{equation}
+{\rm Target~VI}
+\equiv
+\{u,\mathcal H_J,P_J,\Lambda_J,\widehat K_J,
+\mathcal D_J^{\rm extra},\mathcal R_{\rm pole}\}
+\longrightarrow
+\left\{
+\begin{array}{ll}
+{\rm Target~I}: & (J_W,J_Z)=(3/4,2),\\
+{\rm Target~III}: & x_-(J)\to\mathcal F_{\rm sc},\\
+{\rm Target~X}: & D_J+D_J^\dagger\to\sqrt J,\\
+{\rm Target~VII}: & U(1)_{\rm geom}\to U(1)_{\rm em}.
+\end{array}
+\right.
+\label{eq:o10-closure-residual-diagram}
+\end{equation}
 
 The same obligation can be drawn as a single-source interpolation diagram:
 \begin{equation}
 \begin{array}{ccccc}
 u=0 && u=u_\star && u\to\infty\\
-v=0 && \widehat K_J(u_\star,\widehat\lambda)\ {\rm gives}\ Q(J)
+v=0 && \widehat K_J(u_\star,\widehat\lambda)\ \hbox{passes Eq.~\eqref{eq:dimensional-devries-passfail}}
 && U(1)_{\rm geom}\ {\rm endpoint}\\
 m_h^2(u)\ {\rm specified} &&
 x_+(J)\to{\rm pole\ ratio},\quad x_-(J)\to\mathcal F_{\rm sc}
@@ -364,7 +380,8 @@ The dependency chain is
 \begin{equation}
   {\rm O17}
   \Longleftarrow
-  {\rm O1}\ +\ {\rm O3}\ +\ {\rm O10}\ +\mathcal R_{\rm pole/running}.
+  {\rm O1}\ +\ {\rm O3}\ +\ {\rm Target~VI}
+  +\mathcal R_{\rm pole/running}.
   \label{eq:o17-dependency-chain}
 \end{equation}
 Equivalently, the photon-zero endpoint route has to complete the diagram
@@ -388,8 +405,9 @@ are separate subtargets.  Their use in an electromagnetic coupling statement
 requires a derived scalar normalization, charged-vector normalization,
 generator normalization, charge lattice, matching scale, and threshold map.
 When the \(U(1)_{\rm geom}\) endpoint lacks the Standard Model electromagnetic
-charge lattice, O10 remains a geometric endpoint target and O17 has only a
-geometric endpoint conclusion.
+charge lattice, Target~VI remains a geometric endpoint target and O17 has only
+a geometric endpoint conclusion.  The current manuscript therefore leaves
+\(\alpha\) as an external low-energy input.
 
 The branch-to-coupling obligations can be recorded as
 \begin{equation}

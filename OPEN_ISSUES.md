@@ -101,8 +101,8 @@ arena.  The issue closes when
 \]
 has a derived \(\Delta_{\rm O1}\) or a stated source remainder.
 
-**Loop 37 boundary-kernel refinement.** The manuscript now states the O1/O10
-interface as a single-source interval theorem diagram.  In the CHM version one
+**Loop 37 boundary-kernel refinement.** The manuscript now states the
+O1/Target~VI interface as a single-source interval theorem diagram.  In the CHM version one
 source datum \(u_{\rm int}\) must supply
 \[
 \left(K_T^{\rm DtN}+K_T^{\rm brane},P_\gamma,
@@ -392,12 +392,12 @@ physical identity of \(\Psi_-\), the coefficient \(c_Y\), and the map to
 \(x_-(J)\) remain UV matching data.
 
 **Loop 11 normalization refinement.** Route-specific scalar candidates in the
-main text are source addresses.  They acquire physical status after a
+main text are source candidates.  They acquire physical status after a
 gauge-invariant scalar functional, normalization, and electroweak scheme are
 derived.
 
 **Loop 21 source-pack refinement.** Bucci and Haba--Oda support scalar-modulus,
-radion, Dirichlet-Higgs, and boundary-Higgs address candidates for O3/O10.
+radion, Dirichlet-Higgs, and boundary-Higgs address candidates for O3/Target~VI.
 Hosotani supports a compact gauge-field or Wilson-line scalar candidate.
 Breitenlohner--Freedman supply an AdS boundary-condition caveat for negative
 mass-squared scalar modes; the DeVries negative branch still requires a
@@ -581,7 +581,7 @@ from the same source data before using
 =J .
 \]
 This keeps O4 tied to O1 for the ordered W/Z boundary map, O8 for
-source-to-pole matching, O10 for the single source variable and
+source-to-pole matching, Target~VI for the single source variable and
 \(\Lambda_J(u)\), and O20 for the common reduced basis with the Hodge
 off-diagonal test.  Issue status remains open.
 
@@ -620,7 +620,7 @@ f_Q=\sum_i q_i f_i,\quad \rho_Q=\sum_i q_i\rho_i,\quad df_Q(p)=0.
 \]
 O4 remains tied to O1 through \(P_W,P_Z,P_\gamma\), to O3 through the
 same-source scalar package for \(u_-(J)\), to O8 through
-\(\Delta_{\rm match}^{(r)}\), to O10 through \(u\) and \(\Lambda_J(u)\), and
+\(\Delta_{\rm match}^{(r)}\), to Target~VI through \(u\) and \(\Lambda_J(u)\), and
 to O20 through the common reduced basis.
 
 **Loop 40 sc/int kernel refinement.** The active O4 package is
@@ -645,7 +645,7 @@ The closure test is the DeVries block plus a derived pole-scheme remainder:
 +\Delta_J^{\rm sc/int}(\widehat\lambda).
 \]
 This package ties O4 to O1 through the ordered projectors, to O3 through the
-scalar functional, to O8 through \(\Delta_J^{\rm sc/int}\), to O10 through
+scalar functional, to O8 through \(\Delta_J^{\rm sc/int}\), to Target~VI through
 \(\Lambda_J(u)\), and to O20 through \(P_{\rm sc}\).
 
 **Loop 41 proof-test refinement.** The next O4 acceptance test is the hatted CHM
@@ -706,7 +706,7 @@ noncanonical constant entry, nonpositive current slope, nonpositive projected
 \(Z\)-trace norm, and photon-orthogonality failure.
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
-O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
+Target~VI/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
 sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact
 operator \(L_J\), a boundary kernel \(K^{\rm bdry}_J(\lambda)\), and a coupling
 map \(V_J\).  The required reduction is
@@ -799,9 +799,41 @@ a_J^{G_2},
 The rejection ledger is: noncanonical product, nonpositive \(\mathsf G_Q\),
 missing orientation convention, extra coupled light channel, or failure of the
 same-basis projection shared with Target IIIg.
+Loop 49 records a failed derivation step for the broad Braun route.  The source
+matrix supported by Braun--Cizel--Hubner--Schafer-Nameki is the Morse--Witten
+two-point matrix
+\[
+M_{\rm MW}^{ab}
+=
+\sum_\gamma n_\gamma e^{-tq(f(p_a)-f(p_b))},
+\qquad
+n_\gamma=\pm1,
+\]
+acting between localized chiral multiplet ground states.  The missing map is
+\[
+M_{\rm MW}^{ab}
+\leadsto
+\left(
+\widehat\Sigma_{ha,J}^{G_2},
+\widehat\Sigma_{ah,J}^{G_2}
+\right)
+\]
+in a closed \((h_J^{G_2},a_J^{G_2})\) block.  The obstruction is the absent
+source identification of the projected ADE current \(a_J^{G_2}\) as a
+Morse--Witten endpoint state.  The narrowed test is
+\[
+\widehat\Sigma_{ha,J}^{G_2}=\Lambda_{G_2}^{-1}M_{ha}^{\rm MW},
+\qquad
+\widehat\Sigma_{ah,J}^{G_2}=\Lambda_{G_2}^{-1}M_{ah}^{\rm MW},
+\]
+after same-basis compatibility with Target IIIg, positivity of \(\mathsf G_Q\),
+orientation convention, and extra-channel control are derived.  A failure of
+that embedding rejects the Braun flow-overlap route for Target IIIh while
+leaving Braun's localization and interaction data available as source support
+for \(G_2\) model building.
 The unresolved steps are the local derivation of
 \(\mathcal K_{\rm cur}^{\rm ADE}\), positivity of \(Z_2^{G_2}\), extra-channel
-control, the hatted flow-overlap product above, the scalar map
+control, the narrowed Morse--Witten embedding test above, the scalar map
 \(u_-(J)\mapsto\mathcal F_{G_2}\), compact charge-lattice completion,
 hypercharge embedding, anomaly/global-form compatibility, and pole matching.
 
@@ -953,389 +985,6 @@ endpoint, \(G_2\), alpha, or Regge route must use the same remainder form before
 it appears as a physical claim.  The CHM interval square is the current active
 test case for fixing the field basis and matching map.
 
-## O10. Higgs interpolation \(D=11\to D=10\to D=9\) and colourless \(D=7\to D=6\to D=5\)
-
-**Question.** Can the Higgs/electroweak sector be reconstructed as an interpolation whose full-gauge version has total dimensions \(D=11,10,9\) and KK internal dimensions \(7,6,5\), while its colourless electroweak version has total dimensions \(D=7,6,5\) and KK internal dimensions \(3,2,1\)?
-
-**Local source trail.** The closest local ChatGPT/source note is `/home/codexssh/phys3/sources/unbroken_susy.md`, Section V, lines 69--71. It records the claim that D=11 lacks the required electroweak chirality and that electroweak \(SU(2)\times U(1)\) interpolates, under a W-mass deformation, between descriptions labeled d=9 and D=11. Witten's KK fragments give the primary source trail: `context/source_fragments/witten1981/pages_001-010.md` states the seven-extra-dimensional minimum for \(SU(3)\times SU(2)\times U(1)\), and `context/source_fragments/witten1981/pages_011-017.md` states the associated fermion quantum-number obstruction. The same Witten fragment contains the \(SU(3)\times U(1)\) symmetry address around the five-dimensional sphere construction.
-
-**Current working idea.** Treat this as a source-audit and reconstruction task. The unbroken electroweak endpoint \(v=0\) carries the full \(SU(3)\times SU(2)\times U(1)\) symmetry and belongs to Witten's seven-extra-dimensional KK setting, hence total \(D=11\). The formal heavy-\(W/Z\) decoupling endpoint leaves a five-extra-dimensional \(SU(3)\times U(1)\) geometric address, hence total \(D=9\). The \(U(1)_{\rm em}\) identification requires an embedding theorem, generator normalization, and charge lattice. The working DeVries construction should be tested as an internal six-dimensional interpolation between those endpoints, hence total \(D=10\). Promotion beyond conjecture requires a six-dimensional chirality, anomaly, and light-spectrum account, together with an explicit relation to Witten's seven-dimensional fermion obstruction.
-
-**Colourless electroweak count.** If colour is treated as an external spectator sector, the corresponding count is
-\[
-n_{\rm KK}^{\rm ew}=3:\ SU(2)\times U(1),
-\qquad
-n_{\rm KK}^{\rm ew}=2:\ \hbox{DeVries electroweak interpolation sector},
-\qquad
-n_{\rm KK}^{\rm ew}=1:\ U(1)_{\rm em}.
-\]
-This gives the total-dimensional chain \(D=7\to D=6\to D=5\). The middle \(D=6\) case has a string-theory source trail through six-dimensional superstring vacua and dualities, including type IIA on K3, heterotic on \(T^4\), and six-dimensional anomaly/string-universality constraints. The colour-inclusive \(D=11\to D=10\to D=9\) chain remains the canonical narrative when the full \(SU(3)\) colour factor is kept inside the KK symmetry count.
-
-**Top-quark subquestion.** The interpolation should also explain why the top quark sits at the electroweak scale. In Standard Model source language, fermion masses arise from Yukawa couplings to the Higgs vev, the top has the largest Higgs coupling, and top loops strongly affect Higgs production and vacuum stability. The DeVries version of the question is whether the six-dimensional interior or the negative-branch scalar datum selects the top as the fermion most directly tied to the electroweak order parameter.
-
-**Required reconstruction.**
-
-1. Define the seven-extra-dimensional endpoint: field content, \(SU(3)\times SU(2)\times U(1)\) symmetry, Witten fermion obstruction, and unbroken electroweak endpoint.
-2. Define the five-extra-dimensional endpoint: \(SU(3)\times U(1)\) geometric address, compact-space candidate, fermion statement, formal heavy-\(W/Z\) decoupling endpoint, and electromagnetic embedding theorem.
-3. Define the six-extra-dimensional interior model: gauge group, scalar/order-parameter variable, compactification data, and relation to Witten's seven-dimensional fermion obstruction.
-4. State the interpolation parameter in the gauge-Higgs Lagrangian, boundary condition, or compactification data.
-5. Relate the interpolation to the current DeVries branch language, especially the role of \(x_-(J)\) as a possible scalar/order-parameter datum.
-6. Give the colourless electroweak \(3/2/1\) count and specify when colour is a spectator sector.
-7. Connect the top Yukawa/electroweak-scale fact to the interpolation, or record that the interpolation has no derived top-sector consequence.
-8. Identify primary sources for each endpoint before any manuscript claim is promoted beyond conjecture.
-
-**Success criterion.** A manuscript subsection or appendix gives a source-backed endpoint dictionary
-\[
-n_{\rm KK}=7:\ SU(3)\times SU(2)\times U(1),
-\qquad
-n_{\rm KK}=6:\ \hbox{DeVries interpolation sector},
-\qquad
-n_{\rm KK}=5:\ SU(3)\times U(1)_{\rm geom},
-\]
-plus the colourless electroweak dictionary
-\[
-n_{\rm KK}^{\rm ew}=3:\ SU(2)\times U(1),
-\qquad
-n_{\rm KK}^{\rm ew}=2:\ \hbox{DeVries electroweak interpolation sector},
-\qquad
-n_{\rm KK}^{\rm ew}=1:\ U(1)_{\rm em}.
-\]
-The same subsection must give a precise interpolation map compatible with the electroweak ray, the ordered \((J_H,J_{\rm adj})=(3/4,2)\) assignment problem, the negative-branch scalar target, and the top-quark electroweak-scale subquestion.
-
-**Round 2 refinement.** Appendix E now states a source-status table and a
-commutative compatibility diagram.  Appendix D now includes Target VI:
-dimensional interpolation.  The middle-dimensional data required at a DeVries
-point are
-\[
-\mathfrak I_J(t_\star)
-=
-\big(
-\mathcal B(t_\star),\,
-\mathcal H_J(t_\star),\,
-K_J(t_\star,\lambda),\,
-\mathcal R_{\rm pole}
-\big),
-\qquad
-\mathcal H_J(t_\star)=\operatorname{span}\{h_J,a_J\}.
-\]
-Thus the \(D=10\) and colourless \(D=6\) middle lines are active
-reconstruction targets: they must provide a compact, boundary, or singular
-object \(\mathcal B\), the two-channel light subspace, the DeVries kernel, and
-the pole-matching rule.
-
-**Parent-workspace refinement.** The parent `../phys3` files add provenance
-for the D=11 chirality-obstruction language, the D=9/D=11 interpolation note,
-and SO(32)/Chan--Paton counting.  Witten 1981 and the six-dimensional string
-sources remain the controlling primary-source trail.  Parent projection notes
-also require explicit boundary, orientifold, orbifold, or singular data when a
-branch projection is invoked; Wilson-line data alone leave the projection
-unresolved.
-
-**Loop 12 theorem-target refinement.** Appendix D now states the source-backed
-full-gauge endpoint as \((D,n_{\rm KK})=(11,7)\) with
-\(SU(3)\times SU(2)\times U(1)\).  The \((9,5)\) endpoint is a reconstruction
-target until the surviving \(U(1)\) is derived as \(U(1)_{\rm em}\).  The
-\((10,6)\) and colourless \((6,2)\) middle lines are Schur-complement labels:
-they name the required reduced source sector, light subspace, kernel, ordered
-assignment, and pole-matching rule.  The endpoint dictionary depends on the
-same electroweak assignment theorem recorded in O1.
-
-**Loop 13 parameter refinement.** The electroweak ray parameter and the
-dimensional interpolation parameter are distinct theorem data:
-\[
-t_{\rm EW}\equiv\hbox{gauge-Higgs radial coordinate},
-\qquad
-t_{\rm dim}\equiv\hbox{compact, boundary, brane, or singular coordinate}.
-\]
-A source theory must derive either a map
-\[
-\chi:\ t_{\rm dim}\mapsto t_{\rm EW}
-\]
-or a joint source variable \(u\mapsto(t_{\rm dim}(u),t_{\rm EW}(u))\).  A
-dimensional family may still be useful when it derives a compactification
-sector or a kernel, but control of the electroweak ray and pole ratio requires
-this additional map.
-
-**Loop 18 active-channel refinement.** Appendix E now rewrites the dimensional
-claim as a factorized active-channel target
-\[
-D=4+n_c+n_{\rm ew},\qquad n_c=4,\qquad n_{\rm ew}:3\to2\to1.
-\]
-The source datum is strengthened to
-\[
-u\mapsto
-\big(t_{\rm dim}(u),t_{\rm EW}(u),
-\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
-\]
-Thus the same source variable must control the compact or boundary channel,
-the electroweak ray, the negative-branch scalar functional, and any top-sector
-Yukawa or boundary datum.  Witten's \(SU(3)\times U(1)\) five-sphere address is
-kept geometric until the electromagnetic embedding theorem supplies
-normalization and charge data.  The top entry is recorded as a theorem target:
-\[
-\mathcal Y_{\rm top}(u_\star)\to y_t,\qquad
-m_t=y_t v/\sqrt2,\qquad
-\Pi^{(t)}_{VV}(s;u_\star).
-\]
-
-**Loop 26 single-source refinement.** Appendix E now records the claim-status
-taxonomy: Witten's seven-extra-dimensional endpoint is source-backed, the
-\(D=9\) \(U(1)_{\rm geom}\) endpoint is an electromagnetic embedding target,
-the \(D=10\) and colourless \(D=6\) middle lines are reconstruction labels, and
-the scalar/top readings are conjectural source maps.  The joint source datum is
-expanded to
-\[
-u\mapsto
-\big(t_{\rm dim}(u),t_{\rm EW}(u),v(u),m_h^2(u),K_J(u,\lambda),
-\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
-\]
-O17 is recorded as downstream of O1, O3, O10, and pole/running matching.  CHM
-adds a top-sector source fact: heavy top mass and \(Zb\bar b\) constraints put
-pressure on third-generation localization and boundary mixing; a DeVries claim
-requires a map from that datum to \(\mathcal Y_{\rm top}(u)\).
-
-**Loop 27 parent/Advisor refinement.** Parent `../physres6` is absorbed as a
-conditional KK-fixing theorem target.  The \(D=10\) and colourless \(D=6\)
-middle lines remain reconstruction labels until one source variable supplies
-\(t_{\rm dim}\), \(t_{\rm EW}\), \(K_J\), \(\mathcal F_{\rm sc}\), and the pole
-map.  The BF-admissible Berger-\(S^3\)/CHM test is now a subtarget:
-\[
-\Delta^{(1)}_{S^3_{\rm Berger}(\rho)}
-\to K_J^{\rm geom}(\rho,\lambda)
-\to P_J^\dagger(K_J^{\rm geom}+K_J^{\rm CHM})P_J
-\to
-\begin{pmatrix}
-\lambda&-\sqrt J\\
--\sqrt J&\lambda+J
-\end{pmatrix}.
-\]
-The scalar admissibility condition is
-\[
--\frac{9}{4L_{\rm AdS}^2}\le \mu^2x_-(J)<0,
-\qquad
-u_-(J)\mapsto\mathcal F_{\rm sc}(u;J).
-\]
-The open data are \(\rho\), \(P_J\), the reduced two-channel subspace, the
-boundary/geometric inner product, extra-channel decoupling, and scalar boundary
-condition.
-
-**Loop 28 normalization refinement.** The middle-dimensional Schur-complement
-data must include the source scale \(\Lambda_J(u)\) and the wavefunction
-normalizations that turn the physical kernel into the dimensionless DeVries
-block:
-\[
-u\mapsto
-\big(t_{\rm dim}(u),t_{\rm EW}(u),\Lambda_J(u),K_J(u,\widehat\lambda),
-\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
-\]
-This scale datum is part of the same single-source burden as the
-electroweak-ray map, negative-branch scalar functional, and top-sector source
-map.
-
-**Loop 31 single-source acceptance refinement.** Appendix E and Target VI now
-make the \(D=10/6\) middle line a normalized source package:
-\[
-u\mapsto
-\big(t_{\rm dim},t_{\rm EW},v,m_h^2,\Lambda_J,
-\langle\cdot,\cdot\rangle_u,P_J,\widehat K_J,\mathcal D_J^{\rm extra},
-\mathcal F_{\rm sc},\mathcal Y_{\rm top},\mathcal R_{\rm pole}\big),
-\qquad
-\widehat\lambda=\lambda/\Lambda_J(u)^2 .
-\]
-The acceptance theorem is
-\[
-(\mathcal B(u),\langle\cdot,\cdot\rangle_u,P_J(u),\Lambda_J(u),
-\mathcal D_J^{\rm extra}(u))
-\mapsto
-\widehat K_J(u,\widehat\lambda)
-\stackrel{u=u_\star}{=}
-\begin{pmatrix}
-\widehat\lambda&-\sqrt J\\
--\sqrt J&\widehat\lambda+J
-\end{pmatrix}.
-\]
-The \(D=9\) endpoint obligation is split into compact generator, Standard
-Model electromagnetic charge lattice, and four-dimensional kinetic
-normalization.  The colourless \(D=5\) endpoint is \(U(1)_{\rm geom}\) until
-the same embedding theorem supplies \(U(1)_{\rm em}\).  The top-sector
-question is an optional extension:
-\[
-\mathcal Y_{\rm top}(u_\star)\to
-(y_t,m_t,\Pi^{(t)}_{VV}),
-\]
-with representation, localization or boundary data, anomaly/global-form
-checks, and pole-scheme matching in the same reduced basis.  The active CHM
-source test uses
-\[
-u_{\rm int}=(R,v_i,Z_i,\theta_H,c_{Q_3},c_{t_R},M_{\rm mix},\ldots)
-\]
-to ask whether one interval datum supplies
-\((K_T^{\partial I},K_{A_5\pi}^{\partial I},\mathcal Y_{\rm top})\) together
-with the hatted DeVries kernel.  The Loop 31 parent-directory read adds
-top-as-boundary and D6/KK-monopole source queues as project provenance; primary
-Hanany--Witten, M-theory, and D6/KK-monopole sources are required before any
-manuscript-facing claim.
-
-**Loop 37 paper-normalization refinement.** Appendix E now states the
-dimensional interpolation as a theorem target with manuscript-facing sources:
-Witten for the \(D=11\) endpoint and fermion obstruction, CHM for the interval
-boundary kernel and photon-zero machinery, six-dimensional string sources for
-the colourless \(D=6\) arena, and local \(G_2\) references for singular-source
-tests.  Local project-provenance language has been removed from the compiled
-appendix.  The dimensional interpolation contributes through four required
-objects: a kernel derivation, a map from dimensional data to the electroweak
-ray, an ordered assignment theorem, and a pole-matching theorem.
-
-**Loop 40 sc/int dimensional refinement.** The middle-dimensional source datum
-may be taken as \(u_{\rm sc/int}\) when the interval and superconnection data
-are joined:
-\[
-u_{\rm sc/int}\mapsto
-\left(t_{\rm dim},t_{\rm EW},\Lambda_J,
-P_{\rm sc},P_W,P_Z,P_\gamma,\widehat K_J,
-\mathcal F_{\rm sc},\mathcal R_{\rm pole}\right).
-\]
-This is a concrete O10 closure package.  It still requires an explicit map from
-compact or boundary data to the electroweak ray, plus the endpoint
-electromagnetic embedding for the \(D=9\) or colourless \(D=5\) end.
-
-**Loop 41 source-ledger refinement.** Appendix E now records an acceptance ledger
-for \(u_{\rm sc/int}\).  CHM supplies the boundary kernels, Coquereaux supplies
-finite \(SU(2|1)\) gauge-Higgs vocabulary, Witten supplies the Hodge/SUSY-QM
-template, Hosotani supplies Wilson-line scalar dynamics, six-dimensional string
-sources supply the colourless middle-dimensional arena, and local \(G_2\)
-sources supply localized matter and deformation tests.  The active O10 proof
-test remains a source derivation of \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\)
-inside the same \(u_{\rm sc/int}\) package.
-
-**Loop 42 dimensional/proof-spine refinement.** The O10 middle line remains a
-single-source package after the proof spine is made explicit.  The shared
-source variable must supply the neutral projector on \(\mathcal N_T^\partial\),
-the scalar functional, the hatted CHM current entry, the Hodge/SUSY-QM
-off-diagonal product, and the map from dimensional data to the electroweak ray.
-
-## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
-
-**Provenance.** Human operator note (2026-05-22).  Treat as a human directive;
-agent provenance begins in the loop reports.
-
-**Question.** Does the construction predict the electromagnetic coupling
-\(\alpha\), and at what scale does the clean value live?
-
-**Structure (conditional target).** The positive branch fixes the weak angle as a
-pure construction number,
-\[
-\sin^2\theta_{dV}=1-\frac{x_+(3/4)}{x_+(2)}=0.2231\ldots
-\]
-Conjecture: the \(J=2\) negative branch fixes the radial vacuum normalization.
-With the identification
-\[
-v=\sqrt2\,M_-(J{=}2),
-\qquad
-M_-(J)=\mu\sqrt{|x_-(J)|},
-\qquad
-M_W=\mu\sqrt{x_+(3/4)},
-\]
-both \(M_W\) and \(v\) scale with \(\mu\), so the \(SU(2)\) coupling is
-\(\mu\)-independent and \(\alpha\) is a pure number:
-\[
-g^2=\frac{4M_W^2}{v^2}=\frac{2\,x_+(3/4)}{|x_-(2)|},
-\qquad
-\alpha_\star=\frac{g^2\sin^2\theta_{dV}}{4\pi}.
-\]
-The numerical clue that motivated O17 belongs to a later source-audited
-calculation phase.  The current manuscript may use only the symbolic
-dependency on the scalar theorem.
-
-**Scale placement.** The proposed scale placement is an open matching target.
-It must specify which electromagnetic coupling is meant: on-shell
-\(\alpha(0)\), \(\MSbar\) \(\hat\alpha(\mu)\), an effective
-\(\alpha(q^2)\), a Euclidean hadronic-vacuum-polarization coupling, or a
-threshold-matched low-energy EFT coupling.  The theorem must identify the
-scale \(Q_\alpha\), the threshold prescription, and the matching remainder
-\(\Delta_{\alpha,{\rm match}}\).
-
-**Geometric reading.** In the O10 picture, the negative branch may control a
-vacuum or compactification datum that sets the size or normalization of the
-\(D=9\) \(U(1)\) endpoint.  A source derivation must show that the compact
-\(U(1)_{\rm em}\) gauge kinetic normalization and charge normalization are
-fixed by the same source datum.
-
-**Open derivations.**
-1. Derive the identification \(v=\sqrt2\,M_-(J{=}2)\): why the \(J=2\) negative
-   branch equals \(v/\sqrt2\), the top-Yukawa scale \(m_t=y_t v/\sqrt2\) with
-   \(y_t\simeq1\).  This is the negative-branch analog of the O1 ordered
-   assignment.
-2. Derive the \(\sim1\) GeV scale placement of the clean \(\alpha\).
-3. Connect, if possible, to the geometric size of the \(D=9\) \(U(1)\).
-
-**Honest status.** O17 is a conditional theorem target downstream of O1, O3,
-O8, and O10.  The scalar assignment \(v=\sqrt2\,M_-(2)\), the common
-normalization \(\mu\), the \(U(1)_{\rm em}\) endpoint, and the matching
-scale all require derivations.
-
-**Failure mode.** If the scalar theorem leaves \(v=\sqrt2\,M_-(2)\) unproved,
-the source route lacks a construction value for \(g\).
-If the compact endpoint lacks a fixed \(U(1)_{\rm em}\) charge normalization
-or matching scale, \(\alpha\) remains a standard low-energy input.  Records:
-O1 (assignment), O3 (negative branch/vacuum scale), O8 (scale placement),
-O10 (\(D=9\) \(U(1)\) endpoint), Appendix D Targets VI--VII.
-
-**Loop 16 normalization.** The manuscript now records this issue as Appendix D
-Target VII and Appendix E's electromagnetic endpoint-normalization bridge.  The
-minimal symbolic target is
-\[
-g_{\rm sec}^2=
-\frac{4C_Wx_+(J_H)}{C_v|x_-(J_v)|},
-\qquad
-\alpha_{\mathcal S}(Q_\alpha)=
-\frac{g_{\rm sec}^2\sin^2\theta_{dV}}{4\pi}
-+\Delta_{\alpha,{\rm match}}(Q_\alpha).
-\]
-The next source task is a primary audit of running electromagnetic coupling
-definitions and compactification gauge-coupling normalization.
-
-**Loop 21 source-audit refinement.** Jegerlehner supplies the running
-\(\alpha(E)\) and Adler-function source for the O17 scheme audit.  Any
-intermediate-scale comparison must specify effective, \(\MSbar\), on-shell, or
-Euclidean conventions, plus hadronic vacuum-polarization and threshold
-prescriptions.
-
-**Loop 35 photon-zero normalization refinement.** O17 is now a three-part
-endpoint theorem target.  The same source datum \(u\) must supply the photon
-null projection, the scalar vacuum normalization, and the electromagnetic
-kinetic normalization:
-\[
-u\to
-\big(P_W,P_Z,P_\gamma,\Lambda_J,\mathcal F_{\rm sc},\xi_{\rm em}\big)
-\to
-\big(\sin^2\theta_{\mathcal S}(Q_\alpha),g_{\rm sec}^2,e_{\rm geom}^2\big).
-\]
-The matching split is
-\[
-\sin^2\theta_{\mathcal S}(Q_\alpha)
-=
-\sin^2\theta_{dV}+\Delta_\theta(Q_\alpha),
-\qquad
-\alpha_{\mathcal S}(Q_\alpha)
-=
-\frac{g_{\rm sec}^2\sin^2\theta_{\mathcal S}(Q_\alpha)}{4\pi}
-+\Delta_{\rm th}(Q_\alpha).
-\]
-The endpoint package is
-\[
-\mathfrak E_\alpha(u)
-=
-\big(\xi_{\rm em},\Gamma_Q,N_{\rm gen},g_D,g_5,
-\mathcal T_\alpha,Q_\alpha\big),
-\]
-where \(\Gamma_Q\) is the charge lattice, \(N_{\rm gen}\) is the generator
-normalization, and \(\mathcal T_\alpha\) is the threshold prescription.  The
-active source task is a Salam--Strathdee/Witten Kaluza--Klein gauge-kinetic
-audit joined to Jegerlehner/Martin--Robertson scheme control.  O17 remains
-downstream of O1 ordered sampling, O3 scalar normalization, O8 pole/running
-placement, and O10 endpoint embedding.
-
 ## O18. The \(s=3/2\) positive state and a Regge completion
 
 **Provenance.** Human operator note (2026-05-22).  Awareness note: keep this on
@@ -1347,8 +996,8 @@ positive branch defines a slot for every sector label:
 M_+(s)=\mu\sqrt{x_+\!\big(s(s+1)\big)},\qquad
 M_+(\tfrac32)=\mu\sqrt{x_+(15/4)}.
 \]
-Adjacent notes compare the corresponding numerical value with a reported
-low-mass diphoton hint.  That comparison belongs to a later source-audited
+Adjacent notes compare the corresponding numerical value with a low-mass
+diphoton phenomenology note.  That comparison belongs to a later source-audited
 phenomenology phase.  The current manuscript use is the symbolic higher-slot
 obligation.
 

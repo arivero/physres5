@@ -233,4 +233,29 @@ def g2DimensionalRouteAdmissible (G : G2DimensionalEmbedding) : Prop :=
 axiom g2_interpolation_requires_compact_embedding :
   ∃ G : G2DimensionalEmbedding, g2DimensionalRouteAdmissible G
 
+/- Loop 50 closure note:
+   O10 is closed at the architecture level.  The dimensional package is now a
+   source-status dictionary plus a pass/fail target.  The dynamical work is
+   routed to the narrower theorem targets below. -/
+
+constant OrderedAssignmentTarget : Type
+constant NegativeBranchTarget : Type
+constant SUSYQMOriginTarget : Type
+constant ElectromagneticEmbeddingTarget : Type
+
+structure Loop50O10ClosureRouting where
+  targetVI_package : MiddleLinePassFail
+  orderedAssignment : OrderedAssignmentTarget
+  negativeBranch : NegativeBranchTarget
+  susyqmOrigin : SUSYQMOriginTarget
+  electromagneticEmbedding : ElectromagneticEmbeddingTarget
+  architectureClosed : Prop
+  residualDerivationsRouted : Prop
+
+def loop50O10ClosureReady (R : Loop50O10ClosureRouting) : Prop :=
+  R.architectureClosed ∧ R.residualDerivationsRouted
+
+axiom loop50_o10_closed_as_architecture :
+  ∃ R : Loop50O10ClosureRouting, loop50O10ClosureReady R
+
 end DeVries.DimensionalInterpolation

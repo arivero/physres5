@@ -571,10 +571,11 @@ while \(Q(J)\) is an ansatz awaiting a source-theory derivation (Target~0, O4).
 A candidate retitle: "A Secular Mass-Ratio Construction for the Electroweak
 Pole Spectrum and Its String/Kaluza--Klein Interpretation."
 
-**Success criterion.** The title and the Sec.~II heading no longer lead with
-Casimir, Sec.~II states the ansatz status and the single Casimir-eigenvalue
-input, the abstract names the weak mixing angle / pole ratio, and the Casimir
-lineage survives as a cited historical clue.
+**Success criterion.** The title and the Sec.~II heading lead with the
+electroweak pole ratio and secular construction.  Sec.~II states the ansatz
+status and the single Casimir-eigenvalue input, the abstract names the weak
+mixing angle / pole ratio, and the Casimir lineage survives as a cited
+historical clue.
 
 ## O14. Trace-space separation
 
@@ -725,34 +726,53 @@ definitions and compactification gauge-coupling normalization.
 **Provenance.** Human operator note (2026-05-22).  Awareness note: keep this on
 the books.  Regge is the priority mechanism.
 
-**Awareness.** The exact positive branch predicts, parameter-free (\(\mu\) fixed
-by \(M_Z\), \(\mu=106.578\) GeV), a state in every slot beyond \(W\) and \(Z\):
+**Awareness.** Once \(\mu\) and the electroweak pole placement are assumed, the
+positive branch defines a slot for every sector label:
 \[
 M_+(s)=\mu\sqrt{x_+\!\big(s(s+1)\big)},\qquad
-M_+(\tfrac32)=\mu\sqrt{x_+(15/4)}=96.54\ \mathrm{GeV}.
+M_+(\tfrac32)=\mu\sqrt{x_+(15/4)}.
 \]
-This sits near the reported \(\sim95.4\) GeV diphoton excess (CMS \(\sim2.9\sigma\),
-ATLAS \(\sim1.7\sigma\); Biekotter--Heinemeyer--Weiglein).  It is a forward,
-parameter-free target from the same construction that gives \(\sin^2\theta\).
+Adjacent notes compare the corresponding numerical value with a reported
+low-mass diphoton hint.  That comparison belongs to a later source-audited
+phenomenology phase.  The current manuscript use is the symbolic higher-slot
+obligation.
 
-**Identity is open.**  \(W\) and \(Z\) exhaust the \(SU(2)\times U(1)\) vector
-slots, so the identity of the \(s=3/2\) state belongs to the
-branch-to-particle assignment problem (O1).  Operator hypothesis to test: the
-\(s=3/2\) positive state is a chiral fermion of exotic charge \(4/3\)
-(sBootstrap diquark, \(2/3+2/3\)), with the secular label \(s\) read as a
-representation index distinct from physical spin.
+**Identity is open.**  The \(SU(2)\times U(1)\) vector spectrum already assigns
+the Standard Model \(W\) and \(Z\) slots.  The identity of the \(s=3/2\) branch
+belongs to the branch-to-particle assignment problem (O1).  Operator hypothesis
+to test: the \(s=3/2\) positive slot may belong to a sector with exotic
+charge-\(4/3\) bookkeeping, with the secular label read as a representation
+index distinct from physical spin.  This hypothesis requires an
+\(SU(3)\times SU(2)\times U(1)\) representation, chirality or vectorlike status,
+anomaly ledger, mass-generation rule, production modes, decay modes, widths, and
+exclusions.
 
 **Regge framing (priority).**  Promote each \((j,\pm)\) root to a Regge intercept,
 \[
-M^2_{n,j,\pm}=\mu^2 x_{j,\pm}+\frac n{\alpha'},\qquad J=n+j,
+M^2_{N_{\rm osc},j,\pm}
+=
+\mu^2 x_\pm\!\big(j(j+1)\big)
+\frac {N_{\rm osc}}{\alpha'}
++\Delta^{\rm Regge}_{N_{\rm osc},j,\pm},
 \]
-so each sector is a straight, common-slope trajectory with the DeVries values at
-\(n=0\).  This is the leading candidate dynamical origin (ties to O4) and the
-natural home for higher slots such as \(s=3/2\).
+with \(j\) a DeVries-sector label and \(N_{\rm osc}\) the oscillator or tower
+level.  The physical trajectory spin has to be supplied by the source theory.
+This is the leading candidate dynamical origin (ties to O4) and the natural home
+for higher slots such as \(s=3/2\).
 
-**Falsifiability / caution.**  A light (\(\sim96\) GeV) charged or coloured
-chiral state faces strong collider limits; the note must state colour
-assignment, production, and survival.  The \(96.54\) GeV number is firm
-(parameter-free positive branch); the charge-\(4/3\) identity is conjecture; the
-Regge completion is the priority mechanism.  Records: O1 (assignment), O4
-(dynamical origin), O11 (Regge/prTalks).  Companion lean note: `../physres6`.
+**Collider-source caution.**  A light charged or coloured chiral state faces a
+separate collider and representation burden.  The manuscript needs a
+compatibility ledger before using a low-mass diphoton, charge-\(4/3\), or
+coloured-state reading: primary CMS/ATLAS sources, the phenomenology paper,
+local/global significance, look-elsewhere status, pair-production bounds,
+single-production assumptions, decay channels, and widths.  Records: O1
+(assignment), O4 (dynamical origin), O11 (Regge/prTalks), Appendix D
+Target VIII.  Companion lean note: `notes/lean/ReggeHigherBranch.lean`.
+
+**Loop 17 normalization.**  The manuscript now records O18 as
+Target VIII, a Regge-intercept survival and higher-branch-slot theorem target.
+The main correction is notation: \(j\) labels the DeVries sector,
+\(N_{\rm osc}\) labels the oscillator or KK tower level, and physical spin comes
+from the source theory.  The first higher positive slot is a projection and
+assignment problem until a source route derives the kernel, common slope,
+projection rule, and gauge quantum numbers.

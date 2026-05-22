@@ -135,6 +135,15 @@
   \]
   with \(J_v\), \(C_v\), \(C_W\), \(U(1)_{\rm em}\) generator normalization,
   charge lattice, threshold prescription, and observable specified.
+- Derive or reject the Regge-intercept higher-branch target:
+  \[
+  M^2_{N_{\rm osc},j,\sigma}
+  =
+  \mu^2x_\sigma(j(j+1))+\frac{N_{\rm osc}}{\alpha'}
+  +\Delta^{\rm Regge}_{N_{\rm osc},j,\sigma},
+  \]
+  with the source kernel, common slope, projection rule, negative-branch status,
+  and \(j=3/2\) assignment ledger supplied.
 
 ## Source work
 
@@ -158,12 +167,16 @@
   \(\MSbar\) \(\hat\alpha(\mu)\), effective \(\alpha(q^2)\), hadronic vacuum
   polarization, threshold matching, and compactification gauge-coupling
   normalization.
+- Source-audit any O18 low-mass diphoton or charge-\(4/3\) reading: primary
+  CMS/ATLAS sources, the Biekotter--Heinemeyer--Weiglein paper, local/global
+  significance and look-elsewhere treatment, representation and anomaly
+  ledger, production and decay channels, widths, and direct-search bounds.
 
 ## Review cycle
 
 - Run the referee/advisor cycle in `reviews/referee_advisor_cycle.md` after each substantial rewrite.
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
-- Current score table includes Loop 13 for the 66-page compiled draft.
+- Current score table includes Loop 17 for the compiled long draft.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

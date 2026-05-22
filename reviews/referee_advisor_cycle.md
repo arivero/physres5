@@ -52,6 +52,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 14 | 5 | 5 | 5 | 5 | 5 | Added targeted parent-workspace audit notes for Wrong Turn provenance, trace-space separation, Wigner--Eckart failure modes, SO(32) flavor/string boundary obligations, and top-sector cautions. |
 | 15 | 5 | 5 | 5 | 5 | 5 | Demoted Casimir framing to input status, added audit-derived admissibility filters, recorded Wigner--Eckart as a failed tested subroute, and tightened SO(32) flavor/string boundary obligations. |
 | 16 | 5 | 5 | 5 | 5 | 5 | Normalized O17 into an electromagnetic endpoint theorem target, added scalar/vector and \(U(1)_{\rm em}\) matching obligations, and recorded parent/prTalks source provenance for the alpha route. |
+| 17 | 5 | 5 | 5 | 5 | 5 | Normalized O18 into a Regge-intercept survival target, separated sector and oscillator labels, and moved higher-slot phenomenology into a source-audited assignment ledger. |
 
 ## Scoring rubric
 
@@ -85,3 +86,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
   a referee to see exactly what the alpha endpoint route must prove?
 - Which primary source best controls running \(\alpha(Q)\) near the proposed
   matching region, including hadronic vacuum polarization conventions?
+- Does Target VIII make the \(j\), \(N_{\rm osc}\), and physical-spin labels
+  distinct enough for a string/KK referee?
+- Which primary experimental and phenomenology sources are required before a
+  low-mass diphoton or charge-\(4/3\) reading can enter manuscript prose?

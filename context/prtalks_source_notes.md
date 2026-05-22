@@ -156,6 +156,23 @@ route must derive the \(U(1)_{\rm em}\) charge normalization, the compact
 wavefunction normalization, the scalar/vector constants, and the matching pair
 \((Q_\alpha,\Delta_{\alpha,{\rm match}})\).
 
+### Higher positive slots
+
+The Regge PDFs also motivate an O18 theorem target.  Use \(A_j=j(j+1)\) for the
+DeVries sector label and keep the Regge oscillator level separate:
+\[
+  M^2_{N_{\rm osc},j,\pm}
+  =
+  \mu^2x_\pm(A_j)+\frac{N_{\rm osc}}{\alpha'}
+  +\Delta^{\rm Regge}_{N_{\rm osc},j,\pm}.
+\]
+The \(j=3/2\) positive intercept is a branch-assignment test, with identity,
+gauge representation, projection survival, production, decay, width, and
+collider compatibility still open.  Adjacent notes that connect this slot to a
+low-mass diphoton hint or to a charge-\(4/3\) sector are project provenance.
+They require local primary sources and a phenomenology ledger before any
+manuscript-facing claim.
+
 ### Top and negative branch
 
 The adjacent notes repeatedly connect the negative \(T=1\) branch with the

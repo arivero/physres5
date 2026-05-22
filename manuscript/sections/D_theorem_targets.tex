@@ -612,6 +612,84 @@ independent parameter.  In that case the electromagnetic coupling remains a
 standard low-energy input, and the DeVries construction retains only the
 pole-ratio clue.
 
+\subsection{Target VIII: Regge-intercept survival and higher branch slots}
+\label{app:target-regge-intercept-survival}
+
+The Rivero/DeVries source note uses high-spin language as motivation for the
+quadratic.  A string or boundary completion has to preserve ordinary Regge
+growth while explaining why the low intercept is governed by the DeVries
+kernel.  Separate the sector label from the trajectory labels by writing
+\begin{equation}
+  A_j=j(j+1),\qquad
+  x_\sigma(A_j)
+  =
+  \frac{-A_j+\sigma\sqrt{A_j^2+4A_j}}{2},
+  \qquad \sigma=\pm .
+  \label{eq:target-regge-sector-root}
+\end{equation}
+The source-theory target is
+\begin{equation}
+  \mathcal S_{\rm Regge/KK}
+  \longrightarrow
+  K_j(\lambda)
+  \longrightarrow
+  \{x_\pm(A_j)\}
+  \longrightarrow
+  M^2_{N_{\rm osc},j,\sigma}
+  =
+  \mu^2 x_\sigma(A_j)
+  +\frac{N_{\rm osc}}{\alpha'}
+  +\Delta^{\rm Regge}_{N_{\rm osc},j,\sigma}.
+  \label{eq:target-regge-chain}
+\end{equation}
+Here \(j\) is a DeVries-sector label, \(N_{\rm osc}\) is the oscillator or tower
+level, and the physical trajectory spin is supplied by the source theory.  The
+local string source supports the common-slope template
+\(M^2=(N-1)/\alpha'\) with \(J_{\max}=\alpha'M^2+1\)
+\cite{TongString}; the DeVries contribution can therefore enter as an intercept
+only after the source theory derives \(K_j\).
+
+\paragraph*{Hypotheses.}
+\begin{enumerate}
+\item A world-sheet, Chan--Paton, interval, compactification, or \(G_2\) source
+  produces a reduced two-channel kernel \(K_j(\lambda)\) with determinant
+  \(\lambda^2+A_j\lambda-A_j\).
+\item The electroweak pole quotient fixes the ordered low sectors
+  \(j=\tfrac12,1\) through Targets~\ref{app:target-pole-placement} and
+  \ref{app:target-electroweak-assignment}.
+\item A common normalization fixes \(\mu\) across the electroweak slots and any
+  higher slot being discussed.
+\item The source projection specifies which positive and negative intercepts
+  survive, and supplies the stability or BRST/GSO rule for negative-branch
+  data.
+\item Gauge representation, chirality, anomaly cancellation, production
+  channel, decay channel, width, and collider limits are supplied before any
+  higher slot receives a particle assignment.
+\end{enumerate}
+
+\paragraph*{First higher slot.}
+The first sector beyond the electroweak pair is \(j=\tfrac32\).  Target VIII
+asks the source theory to decide whether the positive intercept
+\begin{equation}
+  M^2_{0,3/2,+}
+  =
+  \mu^2 x_+(15/4)
+  +\Delta^{\rm Regge}_{0,3/2,+}
+  \label{eq:target-regge-three-halves}
+\end{equation}
+is projected out, assigned to a neutral resonance, assigned to a charged or
+coloured sector, or retained only as an algebraic branch datum.
+Eq.~\eqref{eq:target-regge-three-halves} supplies the branch value; the
+assignment requires the source-theory quantum numbers and a source-audited
+collider ledger.
+
+\paragraph*{Failure mode.}
+If the source theory fails to separate \(j\) from \(N_{\rm osc}\), to derive a
+common slope, to produce the DeVries kernel, or to give the higher sector
+quantum numbers, then higher positive roots remain algebraic slots in the
+secular construction.  They are then excluded from the phenomenology list until
+the missing assignment theorem and collider ledger are supplied.
+
 \subsection{Claim hierarchy and acceptance criteria}
 \label{app:claim-hierarchy}
 
@@ -652,6 +730,17 @@ conditional corollary
   \label{eq:appendix-alpha-corollary}
 \end{equation}
 with the matching remainder of Eq.~\eqref{eq:target-alpha-matching}.
+If Target~\ref{app:target-regge-intercept-survival} is added, the source theory
+must also supply the intercept corollary
+\begin{equation}
+  K_j(\lambda)
+  \longrightarrow
+  M^2_{N_{\rm osc},j,\sigma}
+  =
+  \mu^2x_\sigma(j(j+1))+\frac{N_{\rm osc}}{\alpha'}
+  +\Delta^{\rm Regge}_{N_{\rm osc},j,\sigma}.
+  \label{eq:appendix-regge-corollary}
+\end{equation}
 The source theory \(\mathcal S\) may be a boundary effective action, an
 endpoint sector, or a localized \(G_2\) system.  The light subspace
 \(\mathcal H_J\) must contain an order-parameter channel and an adjoint/current
@@ -697,6 +786,9 @@ The theorem targets lead to the following checklist for future revisions:
 \item If the electromagnetic endpoint is used, derive the \(U(1)_{\rm em}\)
 gauge kinetic normalization, the scalar/vector normalization constants, and
 the matching pair \((Q_\alpha,\Delta_{\alpha,{\rm match}})\).
+\item If the Regge-intercept extension is used, separate the DeVries sector
+label \(j\), the oscillator level \(N_{\rm osc}\), and the physical trajectory
+spin, then derive the projection rule for the \(j=3/2\) positive intercept.
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
 This checklist is the manuscript's current definition of a complete derivation.

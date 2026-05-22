@@ -77,13 +77,15 @@ structure ReggeizationProblem where
   commonSlope : Prop
   worldsheetOriginRequired : Prop
   tachyonBranchRuleRequired : Prop
+  survivesProjection_j_three_halves : Prop
 
 def interceptReggeization (P : ReggeizationProblem) : Prop :=
   P.reading = ReggeReading.interceptTower ∧
   P.positiveRootIntercept ∧
   P.negativeRootInterceptOrPartner ∧
   P.commonSlope ∧
-  P.worldsheetOriginRequired
+  P.worldsheetOriginRequired ∧
+  P.survivesProjection_j_three_halves
 
 def productInvariantReggeization (P : ReggeizationProblem) : Prop :=
   P.reading = ReggeReading.productInvariant ∧

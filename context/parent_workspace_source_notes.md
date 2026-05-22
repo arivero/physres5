@@ -25,7 +25,9 @@ downloaded papers before they enter manuscript prose as cited physics.
 | `..` root inventory | broad workspace map | The parent directory contains tool/runtime state, project variants, conversation histories, earlier physics workspaces, source experiments, and TeX support files.  Relevant manuscript clusters are `../prTalks`, `../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`, `../physres1`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.  Caches, editor state, security reviews, package trees, generated logs, and private runtime configuration are excluded from manuscript claims. |
 | `../prTalks/` | project PDF source notes | Seven adjacent PDFs preserve the user-provided conceptual thread: electroweak-vacuum concerns, string/orbit connections, Regge scaling, scaling of \(m\) with \(J\), and execution prompts.  The indexed content lives in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`; the PDFs remain source objects. |
 | `../physres6/` | sibling short-note workspace | Contains a compact electroweak-couplings note, inherited source inventory, and calculation notes for the alpha route.  Valid imports are O17 provenance, the exact symbolic dependency on the \(v=\sqrt2 M_-(2)\) assignment, and the source-upgrade warning for \(\alpha(Q)\).  Its numerical checks and short-paper framing stay outside the current conceptual PRD phase. |
+| `../physres6/manuscript/` | sibling higher-slot provenance | Records the direct higher-positive-slot and Regge-intercept idea with a literature pointer for a low-mass diphoton discussion.  Valid import for this manuscript is the symbolic O18 obligation and the source-upgrade queue; numerical and phenomenology claims require local primary sources. |
 | `../hans/signed_dbdevries/` | earlier DeVries workspace | Contains a draft, mechanism notes, literature notes, stress tests, and reports for signed-root DeVries variants.  Valid imports are mechanism obligations, critique patterns, source trails, and failure modes.  Numerical checks and fit tables remain outside the current conceptual phase. |
+| `../signed-dv-custodial-project/` | signed-root higher-slot caution | Contains earlier drafts and referee critiques with aggressive higher-slot phenomenology.  Valid import is the cautionary ledger: a higher positive slot needs a source assignment, gauge representation, and collider audit. |
 | `../weak/criticism.md` | critique provenance | Direct scalar-seed identifications with \(M_W\), \(M_Z\), \(m_h\), or the Higgs order parameter require a gauge-Higgs mass matrix, pole self-energy map, scalar potential, or gauge-invariant scalar functional.  Precision and prediction language require scheme control and independent inputs. |
 | `../weak/PHASE_1.md` | normalization audit | The generalized block \(m_0^2\begin{pmatrix}0&a\sqrt{C_2}\\a\sqrt{C_2}&-bC_2\end{pmatrix}\) records the key normalization issue: \(a\) can be absorbed into the scale convention, while \(b\) remains an independent Wilson coefficient until a source operator fixes it. |
 | `../weak/LAGRANGIAN.md` | mechanism audit | Hosotani/Wilson-line spectra provide weight-squared towers.  A DeVries derivation must produce the full \(C_2(R)\) block and the off-diagonal product from one source operator. |
@@ -191,6 +193,25 @@ for the DeVries block.  The required result has the form
 Regge \(C_F/C_A\), Chan-Paton traces, and hypercharge embeddings are candidate
 inputs.  The manuscript must still derive the coefficient, branch status, and
 pole placement.
+
+### O18 higher-slot and Regge-intercept discipline
+
+The Loop 17 parent scan found higher-slot material in `../physres6` and in the
+signed-root workspaces.  The valid import is structural:
+\[
+  A_j=j(j+1),\qquad
+  M^2_{N_{\rm osc},j,\sigma}
+  =
+  \mu^2x_\sigma(A_j)+\frac{N_{\rm osc}}{\alpha'}
+  +\Delta^{\rm Regge}_{N_{\rm osc},j,\sigma}.
+\]
+Here \(j\) is a DeVries-sector label, \(N_{\rm osc}\) is a Regge or tower level,
+and the source theory supplies the physical spin labels.  The first higher
+positive slot \(j=3/2\) is a projection and assignment target.  A charge-\(4/3\)
+or low-mass diphoton reading needs a local source pack: primary experimental
+papers, the phenomenology paper, a representation/anomaly ledger, production
+and decay channels, widths, and collider exclusions.  The adjacent drafts are
+therefore provenance and failure-mode material.
 
 ### Alpha endpoint from sibling and parent notes
 

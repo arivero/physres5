@@ -1,6 +1,6 @@
 # Open analytical issues
 
-No active issue-ledger entries remain.
+No active analytical issue entries remain.
 
 The manuscript still contains conditional source-completion targets in
 Appendix D and the route sections.  The remaining analytical work is organized

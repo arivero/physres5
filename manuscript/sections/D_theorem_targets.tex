@@ -3,7 +3,7 @@
 % Status: open. Collects theorem targets, source-backed constraints, and proof obligations.
 
 This appendix states the analytical obligations in theorem form.  Each target
-names its hypotheses, conclusion, current evidence, and failure mode.  A
+names its hypotheses, conclusion, source basis, and failure mode.  A
 physical derivation proves one of the targets below, replaces it with a
 stronger statement, or demotes the associated claim.
 
@@ -28,7 +28,7 @@ The targets share a common data structure.  Let \(\mathcal S\) be a source theor
 \end{equation}
 The reduction has physical content after the normalization of \(\mathcal H_J\) and the scheme in which the resulting eigenvalues are read have been specified.  The pole-observable section fixes the electroweak comparison as a complex-pole statement, with Breit-Wigner/on-shell and running quantities treated as translated inputs \cite{MartinRobertson2025,CDFII2022}.  The electroweak section fixes the low-energy field-theory data that any assignment theorem must respect \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The string and Kaluza--Klein sections list candidate sources of the two-channel determinant \cite{TongString,Polchinski1994,CsakiHubiszMeade2005,SalamStrathdee1982}.
 
-For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A heuristic argument may motivate the target, yet the manuscript's final physical claim must track the proven statement.
+For each target below, ``proof'' means an explicit derivation from a stated action, boundary condition, operator algebra, or compactification mode equation.  A heuristic argument may motivate the target, yet the paper's final physical claim must track the proven statement.
 
 \subsection{Target 0: unified source-to-pole matching}
 \label{app:target-unified-source-to-pole}
@@ -112,7 +112,7 @@ For the CHM electroweak realization, the sampling maps have the refined form
 with \(\Delta_W^r=\Delta_Y^r=0\) as the zero-remainder outcome in the selected
 source convention.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 The endpoint, interval, and \(G_2\) sections supply candidate arenas for the
 three route types.  The interval route has the most explicit boundary
 operator language, while the \(G_2\) route supplies localization language for
@@ -151,20 +151,20 @@ claim:
   coupling.
 \end{enumerate}
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 The trace-space separation follows from the fact that the matrices above act
-on different reduced variables in the present draft.  The natural
+on different reduced variables in the present construction.  The natural
 Wigner--Eckart trials have been tested at the level needed for route triage:
 the doublet-parent route is removed by the selection rule, and the triplet
 axial route gives a parent-Casimir datum different from the DeVries target.
-The SO(32) sector supplies representation bookkeeping and a possible string
+The SO(32) sector supplies representation data and a possible string
 boundary arena.
 
 \paragraph*{Failure mode.}
 The target fails for a route if a coefficient is imported across trace spaces,
 if the ordered \(J\)-assignment depends on a parent representation already
 excluded by the selection rule or parent-Casimir datum, or if flavor
-bookkeeping is used before the completion checks are supplied.
+data are used before the completion checks are supplied.
 
 \subsection{Target I: pole placement}
 \label{app:target-pole-placement}
@@ -249,11 +249,11 @@ term,
 with the same pole parameterization and field basis used in
 Eq.~\eqref{eq:target-complex-pole}.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 Section~\ref{sec:pole} separates complex poles, Breit--Wigner/on-shell masses, \(\MSbar\) running angles, effective weak angles, GUT boundary values, and compactification eigenvalues.  Martin--Robertson supply the scheme language used there.  The CDF-II input remains outside the pole-ratio theorem until it is converted to the same mass convention and uncertainty treatment.
 
-\paragraph*{Ledger status.}
-Target I closes the scale-placement bookkeeping for the present construction.
+\paragraph*{Implication.}
+Target I fixes the scale-placement classification for the present construction.
 Pole placement is a theorem target with a declared matching remainder
 \(\Delta_{\rm match}\).  High-scale, compactification-scale, running, and
 effective-angle readings are separate boundary-data problems until a source
@@ -280,7 +280,7 @@ with the custodial structure and \(\rho=1\) tree-level relation discussed in Sec
 \paragraph*{Conclusion.}
 Target II states the low-energy electroweak mass-map data and the ordered
 invariants.  Target~\ref{app:target-pole-placement} carries complex-pole
-matching and scheme conversion.  The required \(T1\) theorem is the existence of a
+matching and scheme conversion.  The required Target II theorem is the existence of a
 source package
 \begin{equation}
   \mathcal D_{\rm EW}:
@@ -327,8 +327,8 @@ The acceptance conditions are:
   functional recorded in Target~\ref{app:target-negative-branch}.
 \end{enumerate}
 
-\paragraph*{Evidence.}
-The Higgs doublet and adjoint invariants are fixed representation-theoretic facts.  The electroweak mass matrix, photon null direction, custodial relation, and projective reading of \(g:g'\) are standard low-energy data \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  CHM interval sources supply boundary kinetic terms, vector Robin data, scalar \(A_5/\pi_i\) equations, custodial boundary data, and photon-zero-mode bookkeeping \cite{CsakiHubiszMeade2005}.  Coquereaux supplies the generalized-connection grading vocabulary for a gauge-Higgs source complex \cite{Coquereaux1992Superconnections}.  The source-completion theorem is the ordered assignment from these data.
+\paragraph*{Source basis.}
+The Higgs doublet and adjoint invariants are fixed representation-theoretic facts.  The electroweak mass matrix, photon null direction, custodial relation, and projective reading of \(g:g'\) are standard low-energy data \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  CHM interval sources supply boundary kinetic terms, vector Robin data, scalar \(A_5/\pi_i\) equations, custodial boundary data, and photon-zero-mode accounting \cite{CsakiHubiszMeade2005}.  Coquereaux supplies the generalized-connection grading vocabulary for a gauge-Higgs source complex \cite{Coquereaux1992Superconnections}.  The source-completion theorem is the ordered assignment from these data.
 
 \paragraph*{Failure mode.}
 The target fails if the assignment uses observed vector spin or an arbitrary post-selection of \(J\) values.  A successful derivation must arise from the gauge-Higgs variables, a boundary operator coupled to them, or a compactification mechanism whose low-energy reduction yields the ordered pair.
@@ -393,7 +393,7 @@ source family must fit into the ray-admissibility square
 The same radial coordinate controls the charged and neutral massive vector
 sectors, while the photon remains the null mode.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 Sec.~\ref{sec:ew-embedding} derives the tree-level mass matrix, the photon null
 direction, the projective ratio, and the radial broken-to-unbroken ray from
 standard gauge-Higgs data.  The source routes already require the same
@@ -459,8 +459,8 @@ W/Z boundary map, and the source-to-pole matching chain.
 \paragraph*{CHM current-entry convention subtarget.}
 The first entry-level subtarget is the normalized transverse-current
 extraction.  The CHM equations fix the source product,
-endpoint sign ledger, vector Robin equations, \(A_5/\pi_i\) scalar equations,
-and photon/custodial bookkeeping.  Let \(P_\gamma\) select the photon reference
+endpoint sign convention, vector Robin equations, \(A_5/\pi_i\) scalar equations,
+and photon/custodial accounting.  Let \(P_\gamma\) select the photon reference
 trace.  The reference subtraction obeys
 \begin{equation}
   P_\gamma^\dagger
@@ -723,8 +723,8 @@ construction: localized modes at \(df_Q=0\), flow-line mass terms between
 critical points, orientation signs, possible cancellations among multiple flow
 contributions, and trivalent flow-tree interaction data.  Target IIIh uses the
 quadratic flow-line bilinear as the kernel candidate.  The trivalent data enter
-as interaction evidence and as a constraint on charge-sector compatibility.
-The Loop 49 source test isolates the actual Braun two-point object:
+as interaction terms and as a constraint on charge-sector compatibility.
+The source test isolates the actual Braun two-point object:
 \begin{equation}
   M_{\rm MW}^{ab}
   =
@@ -790,7 +790,7 @@ and the pole-chain equation
   \label{eq:target-g2-pole-completion}
 \end{equation}
 Compact completion supplies the charge lattice, Standard Model global form,
-hypercharge embedding, anomaly inflow ledger, line-operator data, and the
+hypercharge embedding, anomaly inflow constraints, line-operator data, and the
 source-to-pole map.  The local ADE current test precedes these completion data.
 
 \paragraph*{Conclusion.}
@@ -813,7 +813,7 @@ Equivalently, the physical derivation fixes the two named entries
   \label{eq:target-kappa-tau}
 \end{equation}
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 Sec.~\ref{sec:toy-boundary-operator} gives the target action and the required
 entries.  CHM support eigenvalue-dependent boundary conditions, modified inner
 products, vector boundary data from scalar vevs, and scalar boundary remnants
@@ -863,9 +863,9 @@ preferably \(\Sigma_{aa,J}=J\) from the boundary operator and inner product.
 \paragraph*{Failure mode.}
 The target fails if boundary variation gives a different trace, a different off-diagonal product, or an additional channel that changes the determinant class.  The result in that case would be a larger family of secular relations containing the DeVries matrix as a limiting or approximate case.
 
-\paragraph*{Ledger status.}
-Target III closes the source-kernel bookkeeping for the present manuscript.  It
-does this by reducing each route to the same entry tests in
+\paragraph*{Implication.}
+Target III fixes the source-kernel comparison for this paper.  It
+reduces each route to the same entry tests in
 Eq.~\eqref{eq:target-boundary-self-energies}, with named CHM, endpoint,
 \(G_2\), and Hodge/superconnection subtargets.  A physical derivation still has
 to prove the entries from a stated source action, boundary condition, or local
@@ -954,10 +954,10 @@ Eq.~\eqref{eq:target-superconnection-holonomy-scalar}, where the Wilson-line
 variable is replaced by the compact holonomy of \(A_5+\Phi_{\rm odd}\) and the
 same \(P_{\rm sc}\), \(\Lambda_J\), and photon reference used in Target X.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 Sec.~\ref{sec:negative} states the scalar target table, the same-source package, the holonomy-curvature option, and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
 
-\paragraph*{Status for this paper.}
+\paragraph*{Implication.}
 Target IV fixes the interpretation used in the present paper.  The branch is
 retained as a same-source scalar or auxiliary theorem target.  The present
 construction makes no Higgs-scale prediction from \(x_-(J)\) before the
@@ -984,14 +984,14 @@ Line operators and global identifications provide tests of the Standard Model ga
 \paragraph*{Conclusion.}
 The derived operator \(\mathcal M_J\) is compatible with the allowed line operators, representation assignments, anomaly constraints, and localized matter data of the chosen completion.  A successful completion must specify whether flavor labels are endpoint data, compactification data, representation-sector data, or a combination constrained by the source geometry.
 
-\paragraph*{Evidence.}
-Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the current boundary conditions: the SO(32)-flavor idea is a representation-sector clue, and global-form data are completion constraints.  The manuscript avoids identifying generations with compactification topology until a representation map is derived.
-The representation audit, currently project-source bookkeeping, states the proposed boundary data
+\paragraph*{Source basis.}
+Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the boundary conditions: the SO(32)-flavor idea is a representation-sector clue, and global-form data are completion constraints.  This paper avoids identifying generations with compactification topology until a representation map is derived.
+The representation data contain the proposed boundary data
 \begin{equation}
   16=(5,3)+(1,1),
   \qquad
   \wedge^2(5,3)=(15,\bar 3)+(\overline{10},6),
-  \label{eq:target-so32-flavour-audit}
+  \label{eq:target-so32-flavour-branching}
 \end{equation}
 which require an orientifold or endpoint construction, extra-state projection
 or decoupling, anomaly and hypercharge checks, global-form checks, and a
@@ -1099,7 +1099,7 @@ middle lines:
 \end{pmatrix}.
 \label{eq:target-dimensional-passfail}
 \end{equation}
-After Target~\ref{app:target-electroweak-assignment} is completed, the same
+After Target~\ref{app:target-electroweak-assignment} is derived, the same
 sector would yield the ordered electroweak samples
 \begin{equation}
   (J_W,J_Z)=(J_H,J_{\rm adj})=\left(\frac34,2\right).
@@ -1124,7 +1124,7 @@ basis.  The top extension passes when \(\mathcal Y_{\rm top}\) is derived
 from the same \(u_\star\), \(\langle\cdot,\cdot\rangle_{u_\star}\), projection,
 and pole map as Eq.~\eqref{eq:target-dimensional-kernel}.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 Witten's Kaluza--Klein analysis supplies the source trail for the
 seven-extra-dimensional \(SU(3)\times SU(2)\times U(1)\) endpoint and the
 associated fermion quantum-number obstruction \cite{WittenKK1981}.  The same
@@ -1196,7 +1196,7 @@ The scalar side of this test has a BF-admissibility check,
 with \(P_J\), \(\rho\), the inner product, and extra-channel decoupling still
 open.
 Appendix~\ref{app:dimensional-interpolation} converts these facts into a
-source-status table and a middle-line reconstruction target.
+source-support table and a middle-line reconstruction target.
 
 \paragraph*{Failure mode.}
 The target fails if the middle-dimensional sector produces unresolved extra
@@ -1238,9 +1238,9 @@ where \(C_v\), \(C_W\), \(J_v\), the inner product, and the matching scheme are
 outputs of the source theorem.
 
 \paragraph*{Route outputs.}
-Target VII has three route-level output packages.  A complete endpoint route
-supplies the compact generator and charge lattice.  A complete interval route
-supplies the photon projection and common source scale.  A complete local
+Target VII has three route-level output packages.  An endpoint route
+supplies the compact generator and charge lattice.  An interval route
+supplies the photon projection and common source scale.  A local
 \(G_2\) route supplies the same data through the singular-locus gauge
 generator and four-dimensional kinetic normalization:
 \begin{table}[h]
@@ -1293,18 +1293,18 @@ The electromagnetic comparison has two matching layers:
 where the theorem must identify the observable, the scale \(Q_\alpha\), the
 threshold prescription, and the running convention.  The special reading
 \(J_v=J_{\rm adj}=2\), \(C_v=2\), and \(C_W=1\) is a subtarget of
-Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization}; it has conjectural
-status until derived from the source route.
+Eq.~\eqref{eq:target-alpha-vacuum-vector-normalization}; it remains
+conjectural until derived from the source route.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 The Standard Model identities \(M_W^2=g^2v^2/4\) and
 \(e=g\sin\theta_W\) supply the low-energy algebraic bridge
 \cite{Logan2022,Dawson2018}.  Martin--Robertson give the scheme language for
 running electroweak parameters \cite{MartinRobertson2025}.  Jegerlehner
 supplies a dedicated running-\(\alpha\) source through the Adler function and
 hadronic vacuum polarization \cite{Jegerlehner2008}.  The PDG constants
-table is kept in the source inventory for constants; the manuscript still
-needs a dedicated source audit before selecting an intermediate hadronic
+table is kept in the source inventory for constants; this comparison still
+needs a dedicated source check before selecting an intermediate hadronic
 matching point \cite{PDGPhysicalConstants2025}.  Witten's Kaluza--Klein
 discussion supports the qualitative mechanism:
 gauge fields arise from compact geometry and their couplings are controlled by
@@ -1383,7 +1383,7 @@ momentum.  The common acceptance diagram is
   M^2_{N_{\rm osc},j,\sigma}
   \longrightarrow
   \begin{cases}
-  j=\tfrac32\ \text{assignment ledger},\\
+  j=\tfrac32\ \text{assignment datum},\\
   x_+x_-=-j(j+1)\ \text{branch-duality test}.
   \end{cases}
   \label{eq:target-sector-duality-diagram}
@@ -1420,9 +1420,9 @@ asks the source theory to decide whether the positive intercept
 is projected out, assigned to a neutral resonance, assigned to a charged or
 coloured sector, or retained as an algebraic branch datum.
 Eq.~\eqref{eq:target-regge-three-halves} supplies the branch value; the
-assignment requires the source-theory quantum numbers and a source-audited
-collider ledger.  Biekotter--Heinemeyer--Weiglein provide one phenomenology
-source for a neutral \(95.4\) GeV diphoton ledger \cite{Biekotter2023}; the
+assignment requires the source-theory quantum numbers and a source-checked
+collider analysis.  Biekotter--Heinemeyer--Weiglein provide one phenomenology
+source for a neutral \(95.4\) GeV diphoton reference \cite{Biekotter2023}; the
 branch identity, gauge representation, and survival rule remain source-theory
 targets.
 
@@ -1430,16 +1430,15 @@ targets.
 The \(j=\tfrac32\) root is an algebraic Regge-intercept slot with the
 conditional mass formula in Eq.~\eqref{eq:target-regge-three-halves}.  A
 particle interpretation requires \(\mathfrak R_{3/2}\): the source kernel,
-common slope, survival projection, charge ledger, chirality or vectorlike
-status, anomaly ledger, production and decay maps, width estimate, and
-collider-source audit.  The slot supplies a source-completion test.
+common slope, survival projection, charge assignments, chirality or vectorlike
+status, anomaly constraints, production and decay maps, width estimate, and
+collider-source check.  The slot supplies a source-completion test.
 
 \paragraph*{Failure mode.}
 The target fails from any missing entry in
 \(\mathfrak R_j\), from a route-dependent slope, or from absent higher-sector
 quantum numbers.  The higher positive roots then remain algebraic slots in the
-secular construction, and phenomenology uses a source-audited assignment
-ledger.
+secular construction, and phenomenology uses a source-checked assignment.
 
 \subsection{Target IX: branch scaling and brane-duality admissibility}
 \label{app:target-branch-scaling}
@@ -1493,8 +1492,8 @@ support the D0, space-filling, and T-duality boundary-condition vocabulary
 \cite{TongString}; the rotating-brane exponent and the branch map remain
 source-theory obligations.
 
-\paragraph*{Evidence.}
-The evidence at present is algebraic plus source-address data.  The
+\paragraph*{Source basis.}
+The source basis is algebraic plus source-address data.  The
 involution in Eq.~\eqref{eq:target-branch-involution} follows from the secular
 quadratic.  The separation of the sector label from the ordinary oscillator
 level is already enforced by Target~\ref{app:target-regge-intercept-survival}.
@@ -1503,8 +1502,8 @@ adjoint scalars, and boundary conditions.  A worldvolume derivation supplies
 the branch sectors, the mass reading for \(x_-\), the projection rule, and the
 duality map.
 
-\paragraph*{Ledger status.}
-Target IX closes the branch-scaling bookkeeping.  The D0 and space-filling
+\paragraph*{Implication.}
+Target IX fixes the branch-scaling diagnostic.  The D0 and space-filling
 labels are diagnostic outputs of Eq.~\eqref{eq:target-branch-scaling-table}
 when a source route supplies \(\chi_{\rm spin}\), a mass reading, and a
 rotating-brane scaling law.  A physical duality claim requires the
@@ -1565,7 +1564,7 @@ Witten's deformed complex supplies the source equations
   d_t=e^{-ht}de^{ht},\qquad
   d_t+d_t^\dagger,\qquad
   H_t=(d_t+d_t^\dagger)^2,
-  \label{eq:target-witten-source-audit}
+  \label{eq:target-witten-source-equation}
 \end{equation}
 Witten's paper supplies \(Q_1=d+d^*\), \(Q_2=i(d-d^*)\),
 \(H=dd^*+d^*d\), \(d_t\), and \(H_t\); page 666 expands \(H_t\) with gradient
@@ -1632,7 +1631,7 @@ and scalar zero-forms; and the curvature is
 \(\mathcal F_{\rm Coq}=d\mathcal A_{\rm Coq}+
 \mathcal A_{\rm Coq}\odot\mathcal A_{\rm Coq}\)
 \cite{Coquereaux1992Superconnections}.  The corresponding source-to-target
-audit is
+map is
 \begin{equation}
   \mathcal A_{\rm Coq}
   \longmapsto
@@ -1640,7 +1639,7 @@ audit is
   P_{\rm sc},\langle\cdot,\cdot\rangle_{\rm sc},
   P_W,P_Z,P_\gamma,B_J,\Delta_{\rm sc}^{\rm op}
   \right),
-  \label{eq:target-coq-audit-map}
+  \label{eq:target-coq-map}
 \end{equation}
 where \(P_{\rm sc}\), the common inner product, the ordered projectors, the
 operator \(B_J\), and the pole remainder are the DeVries theorem data.
@@ -1752,7 +1751,7 @@ u_{\rm sc/int}
 \end{array}
 \label{eq:target-sc-int-diagram}
 \end{equation}
-The closure conditions are
+The source-completion conditions are
 \begin{equation}
   \begin{aligned}
   P_W(\Phi_{\rm odd})&=\frac34+\Delta_W^{\rm CHM},&
@@ -1787,7 +1786,7 @@ functional,
   +\Delta_{\rm Hol/sc}.
   \label{eq:target-superconnection-holonomy-scalar}
 \end{equation}
-Closure requires a source derivation of \(\Delta_{\rm Hol/sc}\) in the same
+The same construction requires a source derivation of \(\Delta_{\rm Hol/sc}\) in the same
 projected basis, photon reference, source scale, and pole convention as the
 vector branch.  The corresponding acceptance diagram is
 \begin{equation}
@@ -1812,7 +1811,7 @@ K_T^{\rm DtN},K_T^{\rm brane})
 \end{equation}
 The source-internal weak-angle values, including the \(SU(2|1)\) trace
 normalizations and the \(3/8\) value in the extended-family discussion, are part
-of the algebraic normalization ledger.  The pole-spectrum quotient in
+of the algebraic normalization.  The pole-spectrum quotient in
 Eq.~\eqref{eq:target-susyqm-superconnection-pole} enters after the projection
 and complex-pole matching steps.
 For the interval implementation, Target~\ref{app:target-boundary-determinant}
@@ -1825,7 +1824,7 @@ fixed the neutral current trace and canonical diagonal entry; this keeps the
 Hodge product, \(P_W/P_Z/P_\gamma\), and pole remainder in the same reduced
 basis.
 
-\paragraph*{Evidence.}
+\paragraph*{Source basis.}
 The square-root entry has a concrete mathematical source: on normalized
 Laplacian eigenspaces, a differential maps a zero-form channel to an exact
 one-form channel with norm controlled by the eigenvalue.  Witten's Morse-theory
@@ -1843,8 +1842,8 @@ These sources give addresses for the factorization, spin, and electroweak
 grading.  The DeVries breaking operator, finite projection, and pole-chain
 matching remain theorem obligations.
 
-\paragraph*{Ledger status.}
-Target X closes the Hodge/SUSY-QM bookkeeping.  The accepted source use is the
+\paragraph*{Implication.}
+Target X fixes the Hodge/SUSY-QM comparison.  The accepted source use is the
 normalized square-root template in Eq.~\eqref{eq:target-susyqm-square-root},
 the finite superconnection arena, and the boundary-superconnection interval
 package in Eq.~\eqref{eq:target-sc-int-kernel}.  The source derivation still has
@@ -1868,7 +1867,7 @@ The theorem targets separate four kinds of statements:
 \small
 \begin{tabular}{p{0.18\linewidth}p{0.36\linewidth}p{0.34\linewidth}}
 \toprule
-Level & Manuscript content & Required evidence\\
+Level & Paper content & Required basis\\
 \midrule
 Derived & algebra of \(Q(J)\), roots, branch identities, trace and determinant form & equation-level derivation in Sec.~\ref{sec:casimir}\\
 Source-supported & electroweak mass matrix, pole/running scheme distinctions, endpoint/brane, KK, \(G_2\), and Hodge/SUSY-QM background & cited local source fragments and references\\
@@ -1971,4 +1970,4 @@ the source of \(J\), the finite projection, the breaking operator \(B_J\), and
 the same pole/scalar maps used in the electroweak acceptance criterion.
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
-These conditions define the acceptance test for a complete derivation in the present manuscript.
+These conditions define the acceptance test for a source derivation in this paper.

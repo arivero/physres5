@@ -224,6 +224,41 @@ source-data demand explicit: the Dirichlet-to-Neumann kernel, brane terms,
 projection, inner product, and decoupling rule must be supplied by one
 interval model.
 
+The current-channel entry can be isolated as a one-dimensional extraction
+from the same boundary kernel.  Let \(P_{a,J}\) select a transverse boundary
+gauge trace \(a_J=P_{a,J}A_\mu^{T,\partial}\), normalized by the CHM product,
+\(\langle a_J,a_J\rangle_{\rm CHM}=1\).  With endpoint-normal signs and
+dimensionful brane terms fixed, define
+\begin{equation}
+  K^{\rm cur}_J(\lambda)
+  =
+  \left\langle a_J,
+  \left(
+  K^{\rm DtN}_{T,J}(\lambda)
+  +K^{\rm brane}_{T,J}(\lambda)
+  -K^{\rm ref}_{T,J}(\lambda)
+  \right)a_J
+  \right\rangle_{\rm CHM},
+  \label{eq:chm-current-kernel}
+\end{equation}
+where \(K^{\rm ref}_{T,J}\) fixes the reference zero of the current kernel,
+for example the unbroken photon channel or a stated boundary subtraction.
+The source-supported CHM statement is the existence of this transverse
+boundary kernel from the action, gauge fixing, boundary variation, and
+modified product.  The DeVries-specific theorem target is
+\begin{equation}
+  K^{\rm cur}_J(\lambda)
+  =
+  \lambda+\Sigma_{aa,J}^{\rm CHM}
+  +O(\lambda^2/\Lambda_{\rm KK}^2),
+  \qquad
+  \Sigma_{aa,J}^{\rm CHM}=J .
+  \label{eq:chm-current-entry-normalized}
+\end{equation}
+The data still to be derived are \(P_{a,J}\), \(K^{\rm ref}_{T,J}\), the
+dimensionless \(J\)-normalization, the photon projection, and the map
+\(\lambda\mapsto m_n^2\mapsto\Pi_T^{(4)}(s)\).
+
 \subsection{Dictionary for the interval entries}
 \label{sec:interval-entry-dictionary}
 

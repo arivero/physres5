@@ -88,13 +88,46 @@ so one entry of Eq.~\eqref{eq:route-common-target} can be pursued as a
 source-controlled derivation.  The immediate target is the current-channel
 entry
 \begin{equation}
-  P_J^\dagger\left(K^{\rm DtN}_{T,J}(\lambda)+K^{\rm brane}_{T,J}\right)P_J
-  \quad\leadsto\quad
-  \Sigma_{aa,J}=J,
+  K^{\rm cur}_J(\lambda)
+  =
+  \left\langle a_J,
+  \left(
+  K^{\rm DtN}_{T,J}(\lambda)
+  +K^{\rm brane}_{T,J}(\lambda)
+  -K^{\rm ref}_{T,J}(\lambda)
+  \right)a_J
+  \right\rangle_{\rm CHM},
+  \qquad
+  \langle a_J,a_J\rangle_{\rm CHM}=1,
   \label{eq:chm-current-entry-target}
 \end{equation}
-with the projection, scalar product, photon-zero mode, and pole map fixed by
-the same boundary data.
+where \(a_J=P_{a,J}A_\mu^{T,\partial}\) is a transverse boundary-current
+sample.  The entry theorem is
+\begin{equation}
+  K^{\rm cur}_J(\lambda)
+  =
+  \lambda+\Sigma_{aa,J}^{\rm CHM}
+  +O(\lambda^2/\Lambda_{\rm KK}^2),
+  \qquad
+  \Sigma_{aa,J}^{\rm CHM}=J .
+  \label{eq:chm-current-entry-normalization}
+\end{equation}
+The CHM source controls the boundary variation, product, vector Robin data,
+scalar \(A_5/\pi_i\) equations, custodial bookkeeping, and photon-zero
+accounting.  The projection \(P_{a,J}\), reference subtraction, dimensionless
+\(J\)-normalization, ordered W/Z boundary map, and pole map remain theorem
+data.  The parent KK-fixing notes sharpen the same issue into a single-source
+test: the dimensional middle line, negative-branch scalar reading, and
+electromagnetic endpoint can be combined only after one source variable
+supplies
+\begin{equation}
+  u\mapsto
+  \big(t_{\rm dim}(u),t_{\rm EW}(u),
+  K_J(u,\lambda),\mathcal F_{\rm sc}(u;J)\big).
+  \label{eq:route-single-source-chm-test}
+\end{equation}
+Thus the scalar and electromagnetic readings sit downstream of the current
+entry, ordered W/Z assignment, and source-to-pole calculation.
 
 The common reduction is filtered by three admissibility tests.  First, trace
 and coefficient statements stay inside the matrix where they are derived until

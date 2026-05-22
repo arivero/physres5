@@ -63,6 +63,20 @@
   adds third-generation localization and boundary-mixing pressure as the
   top-sector source fact; a DeVries map to \(\mathcal Y_{\rm top}(u)\) remains
   open.  `notes/lean/DimensionalInterpolation.lean` records the obligations.
+- Loop 27 answers the direct parent-directory read by recording
+  `context/parent_directory_loop27_read.md`.  The active import from
+  `../physres6` is conditional KK-fixing architecture, with the middle
+  \(D=10\) and \(D=6\) lines still reconstruction labels.  The manuscript now
+  defines the CHM current-entry extraction
+  \[
+  K^{\rm cur}_J(\lambda)=
+  \langle a_J,(K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}-K^{\rm ref}_{T,J})a_J
+  \rangle_{\rm CHM},
+  \qquad \Sigma_{aa,J}^{\rm CHM}=J,
+  \]
+  and adds a BF-admissible Berger-\(S^3\)/CHM middle-line target using the
+  Henkel--Lauret one-form Hodge-Laplacian fragment.  `notes/lean/CHMCurrentEntry.lean`
+  records the obligations.
 
 ## Resume state after context renewal
 

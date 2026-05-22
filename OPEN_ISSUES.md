@@ -243,6 +243,31 @@ gauge-fixing parameter treatment, physical-scalar/eaten-mode separation,
 photon zero-mode preservation, and \(\lambda\mapsto m_n^2\mapsto\Pi_T(s)\)
 supplied.
 
+**Loop 27 current-entry normalization refinement.** The CHM current-channel
+test now has a normalized extraction:
+\[
+K^{\rm cur}_J(\lambda)
+=
+\left\langle a_J,
+\left(K^{\rm DtN}_{T,J}(\lambda)
++K^{\rm brane}_{T,J}(\lambda)-K^{\rm ref}_{T,J}(\lambda)\right)a_J
+\right\rangle_{\rm CHM},
+\qquad
+\langle a_J,a_J\rangle_{\rm CHM}=1.
+\]
+The first entry target is
+\[
+K^{\rm cur}_J(\lambda)=
+\lambda+\Sigma_{aa,J}^{\rm CHM}
++O(\lambda^2/\Lambda_{\rm KK}^2),
+\qquad
+\Sigma_{aa,J}^{\rm CHM}=J.
+\]
+The open data are the transverse projection \(P_{a,J}\), the reference
+subtraction \(K^{\rm ref}_{T,J}\), endpoint-normal conventions, the
+dimensionless \(J\)-normalization, photon projection, ordered W/Z boundary map,
+and \(\lambda\mapsto m_n^2\mapsto\Pi_T^{(4)}(s)\) matching.
+
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
 sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact
@@ -634,6 +659,31 @@ O17 is recorded as downstream of O1, O3, O10, and pole/running matching.  CHM
 adds a top-sector source fact: heavy top mass and \(Zb\bar b\) constraints put
 pressure on third-generation localization and boundary mixing; a DeVries claim
 requires a map from that datum to \(\mathcal Y_{\rm top}(u)\).
+
+**Loop 27 parent/Advisor refinement.** Parent `../physres6` is absorbed as a
+conditional KK-fixing theorem target.  The \(D=10\) and colourless \(D=6\)
+middle lines remain reconstruction labels until one source variable supplies
+\(t_{\rm dim}\), \(t_{\rm EW}\), \(K_J\), \(\mathcal F_{\rm sc}\), and the pole
+map.  The BF-admissible Berger-\(S^3\)/CHM test is now a subtarget:
+\[
+\Delta^{(1)}_{S^3_{\rm Berger}(\rho)}
+\to K_J^{\rm geom}(\rho,\lambda)
+\to P_J^\dagger(K_J^{\rm geom}+K_J^{\rm CHM})P_J
+\to
+\begin{pmatrix}
+\lambda&-\sqrt J\\
+-\sqrt J&\lambda+J
+\end{pmatrix}.
+\]
+The scalar admissibility condition is
+\[
+-\frac{9}{4L_{\rm AdS}^2}\le \mu^2x_-(J)<0,
+\qquad
+u_-(J)\mapsto\mathcal F_{\rm sc}(u;J).
+\]
+The open data are \(\rho\), \(P_J\), the reduced two-channel subspace, the
+boundary/geometric inner product, extra-channel decoupling, and scalar boundary
+condition.
 
 ## O11. Adjacent `prTalks` source-note validation
 

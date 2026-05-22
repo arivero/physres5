@@ -90,6 +90,19 @@
   labels, and scalar/top readings require the same source variable
   \(u\mapsto(t_{\rm dim},t_{\rm EW},v,m_h^2,K_J,\mathcal F_{\rm sc},
   \mathcal Y_{\rm top})\).
+- Use Loop 27's CHM current-entry extraction as the immediate source-theory
+  target:
+  \(K^{\rm cur}_J=\langle a_J,(K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}
+  -K^{\rm ref}_{T,J})a_J\rangle_{\rm CHM}\), with
+  \(\Sigma_{aa,J}^{\rm CHM}=J\).  The next proof needs \(P_{a,J}\),
+  \(K^{\rm ref}_{T,J}\), endpoint-normal conventions, the \(J\)
+  normalization, photon projection, ordered W/Z boundary map, and
+  \(\lambda\mapsto m_n^2\mapsto\Pi_T^{(4)}(s)\).
+- Use Loop 27's Berger-\(S^3\)/CHM target as the next high-leverage source
+  route: read Henkel--Lauret's Berger-sphere sections, define \(\rho\), project
+  the one-form Hodge-Laplacian plus CHM boundary kernel to
+  \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), and check BF scalar
+  admissibility for the negative branch.
 
 ## Completed in latest pass
 

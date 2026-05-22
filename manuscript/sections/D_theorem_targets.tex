@@ -384,11 +384,39 @@ two-channel projection.  The theorem must derive the projection, the modified
 inner product, the removal or block form of extra modes, and the normalization
 of the three entries below.
 Within this target, Eq.~\eqref{eq:target-interval-dtn} is the current
-source-controlled route test.  CHM supply the boundary kinetic product,
+source-controlled route test.  CHM data supply the boundary kinetic product,
 boundary scalar vev terms, vector Robin data, scalar \(A_5/\pi_i\) equations,
 custodial constraints, and photon zero-mode accounting.  The proof obligation
 is the projection to \(\mathcal H_J\), the product normalization, the ordered
 W/Z boundary map, and the source-to-pole matching chain.
+The first entry-level subtarget is the normalized transverse-current
+extraction
+\begin{equation}
+  K^{\rm cur}_J(\lambda)
+  =
+  \left\langle a_J,
+  \left(
+  K^{\rm DtN}_{T,J}(\lambda)
+  +K^{\rm brane}_{T,J}(\lambda)
+  -K^{\rm ref}_{T,J}(\lambda)
+  \right)a_J
+  \right\rangle_{\rm CHM},
+  \qquad
+  \langle a_J,a_J\rangle_{\rm CHM}=1 .
+  \label{eq:target-chm-current-extraction}
+\end{equation}
+The conclusion sought from this extraction is
+\begin{equation}
+  K^{\rm cur}_J(\lambda)
+  =
+  \lambda+\Sigma_{aa,J}^{\rm CHM}
+  +O(\lambda^2/\Lambda_{\rm KK}^2),
+  \qquad
+  \Sigma_{aa,J}^{\rm CHM}=J.
+  \label{eq:target-chm-current-sigma}
+\end{equation}
+Here \(K^{\rm ref}_{T,J}\), the endpoint-normal convention, and the
+dimensionless \(J\)-normalization are part of the theorem data.
 
 \paragraph*{Conclusion.}
 There is a controlled field basis, inner product, projection, and
@@ -622,6 +650,36 @@ middle line \cite{CsakiHubiszMeade2005}.  The same interval source records the
 third-generation localization and boundary-mixing pressure associated with a
 heavy top and \(Zb\bar b\) constraints.  Local \(G_2\) Higgs-bundle models give
 a separate template for top-Yukawa source data \cite{BraunEtAl2019}.
+Henkel--Lauret's Hodge-Laplacian calculation on homogeneous three-spheres gives
+an explicit one-form spectral matrix with representation mixing and
+curvature-controlled diagonal data \cite{HenkelLauret2026}.  This source
+supports a sharpened middle-line test:
+\begin{equation}
+  \Delta^{(1)}_{S^3_{\rm Berger}(\rho)}
+  \longrightarrow
+  K^{\rm geom}_J(\rho,\lambda)
+  \longrightarrow
+  P_J^\dagger
+  \left(K^{\rm geom}_J+K^{\rm CHM}_J\right)P_J
+  \longrightarrow
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix}.
+  \label{eq:target-berger-chm-square}
+\end{equation}
+The scalar side of this test has a BF-admissibility check,
+\begin{equation}
+  -\frac{9}{4L_{\rm AdS}^2}
+  \le
+  \mu^2x_-(J)
+  <0,
+  \qquad
+  u_-(J)\mapsto\mathcal F_{\rm sc}(u;J),
+  \label{eq:target-berger-bf-check}
+\end{equation}
+with \(P_J\), \(\rho\), the inner product, and extra-channel decoupling still
+open.
 Appendix~\ref{app:dimensional-interpolation} converts these facts into a
 source-status table and a middle-line reconstruction target.
 

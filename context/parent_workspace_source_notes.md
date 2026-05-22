@@ -149,6 +149,34 @@ orbit quadratic, dimensional interpolation, and Regge-compatible intercept
 targets appear.  These remain project-source provenance until a primary source
 or theorem-target derivation promotes them.
 
+## Loop 27 parent-directory read
+
+The latest direct `..` read covered the parent inventory, visible Markdown/TeX
+and PDF candidates, `../prTalks` metadata and first pages, `../physres6`
+manuscript/reviews, `../weak` seed and criticism files, and the
+`../hans/signed_dbdevries` synthesis.  The active import is the conditional
+KK-fixing architecture in `../physres6`: the \(D=11/10/9\) and colourless
+\(D=7/6/5\) chains remain reconstruction labels until one source variable
+supplies \(t_{\rm dim}\), \(t_{\rm EW}\), \(K_J\), \(\mathcal F_{\rm sc}\), and
+the pole map.  The sibling reviews also reinforce label discipline for sector
+Casimir, oscillator/tower labels, and physical spin.
+
+The loop paired that parent read with the local Henkel--Lauret source fragment
+on one-form Hodge-Laplacians for homogeneous three-spheres.  The promoted
+target is a BF-admissible Berger-\(S^3\)/CHM middle-line test and a normalized
+CHM current-entry extraction:
+\[
+K^{\rm cur}_J(\lambda)
+=
+\langle a_J,
+(K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}-K^{\rm ref}_{T,J})a_J
+\rangle_{\rm CHM},
+\qquad
+\Sigma_{aa,J}^{\rm CHM}=J.
+\]
+The projection, reference subtraction, endpoint-normal convention, photon
+projection, ordered W/Z boundary map, and pole map remain theorem data.
+
 ## Promoted obligations
 
 ### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit

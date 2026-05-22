@@ -1,5 +1,6 @@
 \section{Theorem targets for a derivation}
 \label{app:theorem-targets}
+% Status: open. Collects theorem targets, source-backed constraints, and proof obligations.
 
 This appendix records the analytical obligations in theorem form.  The purpose is operational.  Each target names its hypotheses, conclusion, current evidence, and failure mode.  A complete version of the manuscript should either prove these statements, replace them with stronger statements, or demote the dependent claims.
 
@@ -52,9 +53,25 @@ The DeVries branch quotient is a pole-spectrum datum:
   \label{eq:target-pole-conclusion}
 \end{equation}
 up to stated radiative, threshold, and scheme translations.  The theorem must also explain why the assigned scale is the low-energy pole spectrum, with high-scale boundary placements handled by a separate derivation.
+For any compactification, endpoint, interval, or local \(G_2\) source, the
+scale-placement statement has the matching form
+\begin{equation}
+  \mathcal S
+  \longrightarrow
+  K_J^{\rm bare}(\lambda)
+  \longrightarrow
+  \Gamma_{\rm eff}[H,W,B]
+  \longrightarrow
+  \Delta^{-1}_{V,T}(s)
+  \big|_{s=s_{W,Z}} .
+  \label{eq:target-pole-matching-chain}
+\end{equation}
+The first arrow is the source reduction.  The second arrow is four-dimensional
+effective matching.  The third arrow is the dressed transverse pole condition.
+The pole reading requires all three arrows in one scheme.
 
 \paragraph*{Current evidence.}
-The manuscript already separates complex poles, Breit-Wigner/on-shell masses, \(\MSbar\) running angles, effective weak angles, GUT boundary values, and compactification eigenvalues.  Martin--Robertson supply the scheme language used in Sec.~\ref{sec:pole}.  The CDF-II result has descriptive displacement status in the current draft.
+The manuscript already separates complex poles, Breit-Wigner/on-shell masses, \(\MSbar\) running angles, effective weak angles, GUT boundary values, and compactification eigenvalues.  Martin--Robertson supply the scheme language used in Sec.~\ref{sec:pole}.  The CDF-II result has descriptive displacement status here.
 
 \paragraph*{Failure mode.}
 The target fails if the derived clean value lives at a high-scale boundary, a running \(\MSbar\) angle, an effective leptonic angle, or a compactification eigenvalue with a different translation law.  In that case the pole-ratio reading becomes a motivating clue, and the manuscript must relocate the physical statement to the derived scheme.
@@ -136,7 +153,7 @@ Equivalently, the physical derivation fixes the two named entries
 Sec.~\ref{sec:toy-boundary-operator} gives the target action and the required entries.  The literature sources support the existence of boundary-condition and endpoint mechanisms, while the exact DeVries entries remain conjectural.
 
 \paragraph*{Failure mode.}
-The target fails if boundary variation gives a different trace, a different off-diagonal product, or an additional channel that changes the determinant class.  The useful result in that case would be a larger family of secular relations containing the DeVries matrix as a limiting or approximate case.
+The target fails if boundary variation gives a different trace, a different off-diagonal product, or an additional channel that changes the determinant class.  The result in that case would be a larger family of secular relations containing the DeVries matrix as a limiting or approximate case.
 
 \subsection{Target IV: negative branch as scalar data}
 \label{app:target-negative-branch}
@@ -160,7 +177,7 @@ There exists a gauge-invariant scalar functional \(\mathcal F_{\rm sc}\) such th
 for a stated \(J_\star\), normalization \(C\), and scheme.  Candidate readings include a Higgs-potential parameter, the radial vacuum scale, a boundary modulus, or a brane-separation mode.
 
 \paragraph*{Current evidence.}
-Sec.~\ref{sec:negative} records the scalar target table and the eigenvector interpretation.  The current draft treats the negative branch as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.
+Sec.~\ref{sec:negative} records the scalar target table and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.
 
 \paragraph*{Failure mode.}
 The target fails if the negative branch has purely auxiliary meaning in the derived source theory.  The positive-branch clue can still motivate the determinant problem, while the scalar claims must then be removed from the physical conclusion.
@@ -188,8 +205,134 @@ Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the current boundary con
 \paragraph*{Failure mode.}
 The target fails if the determinant arises in a gauge or flavor sector incompatible with Standard Model line operators, anomaly conditions, or observed representations.  A failure here would be decisive for a proposed completion even if the local two-channel determinant is mathematically correct.
 
-\subsection{Referee checklist}
-\label{app:referee-checklist}
+\subsection{Target VI: dimensional interpolation}
+\label{app:target-dimensional-interpolation}
+
+\paragraph*{Hypotheses.}
+Assume the electroweak order parameter supplies an interpolation parameter
+\(t\), represented in a source theory by compact, boundary, brane, or singular
+data.  The full-gauge endpoint dictionary is
+\begin{equation}
+  (D,n_{\rm KK})=(11,7):
+  SU(3)\times SU(2)\times U(1),
+  \qquad
+  (D,n_{\rm KK})=(9,5):
+  SU(3)\times U(1)_{\rm em}.
+  \label{eq:target-full-dimensional-endpoints}
+\end{equation}
+The colourless electroweak dictionary is
+\begin{equation}
+  (D,n_{\rm KK}^{\rm ew})=(7,3):
+  SU(2)\times U(1),
+  \qquad
+  (D,n_{\rm KK}^{\rm ew})=(5,1):
+  U(1)_{\rm em}.
+  \label{eq:target-colourless-dimensional-endpoints}
+\end{equation}
+At the middle point \(t=t_\star\), assume a light subspace
+\begin{equation}
+  \mathcal H_J(t_\star)=\operatorname{span}\{h_J,a_J\}
+  \label{eq:target-dimensional-light-space}
+\end{equation}
+with \(h_J\) an order-parameter channel and \(a_J\) an adjoint/current
+channel.
+
+\paragraph*{Conclusion.}
+The middle-dimensional sector defines a source operator
+\begin{equation}
+  \mathcal O_J(t_\star)\big|_{\mathcal H_J}
+  \longrightarrow
+  K_J(t_\star,\lambda)
+  =
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix},
+  \label{eq:target-dimensional-kernel}
+\end{equation}
+and the same sector yields the ordered electroweak samples
+\begin{equation}
+  (J_W,J_Z)=(J_H,J_{\rm adj})=\left(\frac34,2\right).
+  \label{eq:target-dimensional-assignment}
+\end{equation}
+The full-gauge middle line is then \((D,n_{\rm KK})=(10,6)\).  The
+colourless middle line is \((D,n_{\rm KK}^{\rm ew})=(6,2)\).  The theorem
+also supplies the pole-matching chain in Eq.~\eqref{eq:target-pole-matching-chain}.
+
+\paragraph*{Current evidence.}
+Witten's Kaluza--Klein analysis supplies the source trail for the
+seven-extra-dimensional \(SU(3)\times SU(2)\times U(1)\) endpoint and the
+associated fermion quantum-number obstruction \cite{WittenKK1981}.  The same
+paper contains a five-sphere \(SU(3)\times U(1)\) symmetry address.  The
+six-dimensional string sources support a landscape of six-dimensional string
+settings and dualities \cite{Strominger1995,Sen1995,WittenSmallInstantons1995,KumarTaylor2009}.
+Appendix~\ref{app:dimensional-interpolation} converts these facts into a
+source-status table and a middle-line reconstruction target.
+
+\paragraph*{Failure mode.}
+The target fails if the middle-dimensional sector produces extra light
+channels, a kernel outside the DeVries determinant class, a high-scale datum
+with a different matching law, or an ordered assignment other than
+\((J_H,J_{\rm adj})=(3/4,2)\).  Such an outcome would classify the dimensional
+idea as an organizing analogy for a different source-theory reduction.
+
+\subsection{Claim hierarchy and acceptance criteria}
+\label{app:claim-hierarchy}
+
+The theorem targets separate four kinds of statements:
+\begin{center}
+\small
+\begin{tabular}{p{0.18\linewidth}p{0.36\linewidth}p{0.34\linewidth}}
+\toprule
+Level & Manuscript content & Required evidence\\
+\midrule
+Derived & algebra of \(Q(J)\), roots, branch identities, trace and determinant form & equation-level derivation in Sec.~\ref{sec:casimir}\\
+Source-supported & electroweak mass matrix, pole/running scheme distinctions, endpoint/brane, KK, and \(G_2\) background & cited local source fragments and references\\
+Conjectural & pole placement of the DeVries quotient, negative-branch scalar reading, route-specific kernel entries & theorem target with assumptions and failure mode\\
+Open & ordered \(J\)-assignment, full determinant derivation, scalar functional, global-form compatibility of a compact completion & proof from a stated action, boundary condition, endpoint algebra, or localized operator\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A minimal derivation has the chain
+\begin{equation}
+  \mathcal S
+  \longrightarrow
+  \mathcal H_J
+  \longrightarrow
+  K_J(\lambda)
+  \longrightarrow
+  (J_H,J_{\rm adj})
+  \longrightarrow
+  (\sPole,\mathcal F_{\rm sc}).
+  \label{eq:appendix-minimum-viable-derivation}
+\end{equation}
+The source theory \(\mathcal S\) may be a boundary effective action, an
+endpoint sector, or a localized \(G_2\) system.  The light subspace
+\(\mathcal H_J\) must contain an order-parameter channel and an adjoint/current
+channel.  The kernel \(K_J(\lambda)\) must reduce to the DeVries determinant in
+a stated normalization.  The ordered pair \((J_H,J_{\rm adj})=(3/4,2)\) must
+arise from gauge-Higgs or source-theory data.  The final arrow must attach the
+positive branch to the pole observable and the negative branch to a defined
+scalar functional.
+
+The common acceptance criterion is
+\begin{equation}
+  \det K_J(\lambda)=\lambda^2+J\lambda-J,
+  \qquad
+  (J_W,J_Z)=(3/4,2),
+  \qquad
+  u_-(J)\mapsto\mathcal F_{\rm sc}.
+  \label{eq:appendix-acceptance-criterion}
+\end{equation}
+Partial results still sharpen the construction when they prove one arrow in
+Eq.~\eqref{eq:appendix-minimum-viable-derivation}.  An interval model may
+derive the determinant class, an endpoint model may derive the ordered
+representation pair, and a \(G_2\) model may supply a localization mechanism.
+Each result changes the status of a corresponding theorem target.
+
+\subsection{Derivation checklist}
+\label{app:derivation-checklist}
 
 The theorem targets lead to the following checklist for future revisions:
 \begin{enumerate}
@@ -201,5 +344,3 @@ The theorem targets lead to the following checklist for future revisions:
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
 This checklist is the manuscript's current definition of a complete derivation.
-
-\paragraph*{Section status.}  This appendix is open-program material.  It states theorem targets and source-backed constraints; the proofs remain future analytical work.

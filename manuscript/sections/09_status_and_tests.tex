@@ -1,107 +1,80 @@
-\section{Status of the analytical program and conceptual tests}
+\section{Conclusion and analytical status}
 \label{sec:status-tests}
+% Status: derived/open. Summarizes established results, assumptions, and theorem targets.
 
-The construction yields a precise number from a precise branch quotient.  The electroweak comparison becomes meaningful after choosing the pole-mass observable and stating the placement convention.  The numerical fact has clue status.  The project advances when the following calculations are completed.
-
-\begin{enumerate}
-\item Derive the ordered assignment \((J_W,J_Z)=(3/4,2)\) from the gauge-Higgs sector or from a boundary/compactification problem.
-\item Derive the two-channel determinant Eq.~\eqref{eq:det-completion} from a dynamical model.
-\item Determine whether the negative branch maps to the Higgs instability or to another auxiliary sector.
-\item Update the pole-mass comparison with current source-audited inputs and uncertainty propagation.
-\item Specify the global form of the gauge group in any proposed topological completion.
-\end{enumerate}
-
-The conceptual tests are correspondingly direct.  A source-audited pole-mass ratio far from Eq.~\eqref{eq:sdvdef} would reduce the value of the motivating clue.  A gauge-Higgs or boundary construction that yields Eq.~\eqref{eq:Jassignment} would turn the electroweak assignment into a derivation.  A compactification model that produces Eq.~\eqref{eq:det-completion} and the negative-branch scalar scale would give the string/Kaluza--Klein interpretation physical content.  A dynamical derivation that produces a different ordered pair or a different branch quotient would redirect the project toward a broader class of secular mass relations.
-
-\subsection{Claim hierarchy}
-\label{sec:claim-hierarchy}
-
-The manuscript uses four claim levels.  This hierarchy is part of the physics content because it tells a reader which statements are established and which statements are theorem targets.
-\begin{center}
-\small
-\begin{tabular}{p{0.18\linewidth}p{0.36\linewidth}p{0.34\linewidth}}
-\toprule
-Level & Manuscript content & Required evidence\\
-\midrule
-Derived & algebra of \(Q(J)\), roots, branch identities, trace and determinant form & direct equation-level derivation in Sec.~\ref{sec:casimir} and App.~\ref{app:theorem-targets}\\
-Source-supported & electroweak mass matrix, pole/running scheme distinctions, endpoint/brane, KK, and \(G_2\) background & cited local source fragments and explicit references\\
-Conjectural & pole placement of the DeVries quotient, negative-branch scalar reading, route-specific kernel entries & theorem targets with assumptions and failure outcomes\\
-Open & ordered \(J\)-assignment, full determinant derivation, scalar functional, global-form compatibility of a compact completion & future proof from a stated action, boundary condition, endpoint algebra, or localized operator\\
-\bottomrule
-\end{tabular}
-\end{center}
-
-This hierarchy controls how the result should be read.  The exact result is the existence of a two-root secular object whose positive-branch quotient lies near the pole weak-angle clue and whose negative branch points toward scalar/order-parameter data under the project normalization.  The physical claim begins after a route derives the determinant and the ordered assignment.
-
-\subsection{Minimum viable derivation}
-\label{sec:minimum-viable-derivation}
-
-A minimal derivation has five components:
-\begin{equation}
-  \mathcal S
-  \longrightarrow
-  \mathcal H_J
-  \longrightarrow
-  K_J(\lambda)
-  \longrightarrow
-  (J_H,J_{\rm adj})
-  \longrightarrow
-  (\sPole,\mathcal F_{\rm sc}).
-  \label{eq:minimum-viable-derivation}
-\end{equation}
-The source theory \(\mathcal S\) may be a boundary effective action, an endpoint sector, or a localized \(G_2\) system.  The light subspace \(\mathcal H_J\) must contain an order-parameter channel and an adjoint/current channel.  The kernel \(K_J(\lambda)\) must reduce to the DeVries determinant in a stated normalization.  The ordered pair \((J_H,J_{\rm adj})=(3/4,2)\) must arise from gauge-Higgs or source-theory data.  The final arrow must attach the positive branch to the pole observable and the negative branch to a defined scalar functional.
-
-The derivation therefore has a compact acceptance criterion:
-\begin{equation}
-  \det K_J(\lambda)=\lambda^2+J\lambda-J,
+The construction begins with an exact two-branch algebra.  For
+\[
+  Q(J)=\mu^2
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix},
   \qquad
-  (J_W,J_Z)=(3/4,2),
+  J=s(s+1),
+\]
+the dimensionless eigenvalues obey \(x^2+Jx-J=0\).  The quotient
+\[
+  1-\frac{x_+(3/4)}{x_+(2)}
+\]
+is therefore a rigid output of the construction once the ordered samples
+\((3/4,2)\) have been chosen.  The mathematical statement is derived.  The
+physical statement begins with the additional assignment and placement
+hypotheses.
+
+The electroweak comparison used in this paper is the complex-pole mass ratio
+\[
+  \sPole=1-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}.
+\]
+This choice gives the spectral language a low-energy meaning and separates the
+proposal from \(\MSbar\) running angles, effective weak angles, Breit--Wigner
+line-shape masses, and high-scale GUT boundary values.  The pole placement is
+an assumption awaiting a dynamical pole condition.  Appendix~\ref{app:target-pole-placement}
+states the corresponding theorem target.
+
+The Standard Model gauge-Higgs sector supplies the projective datum
+\[
+  \frac{M_W^2}{M_Z^2}=\frac{g^2}{g^2+g'^2}
+\]
+and the broken-to-unbroken vacuum ray.  It also supplies two representation
+data relevant to the proposed assignment: the Higgs/order-parameter doublet
+with \(J_H=3/4\), and the adjoint/current channel with \(J_{\rm adj}=2\).
+The required calculation is the ordered map
+\[
+  (J_W,J_Z)=(J_H,J_{\rm adj})=(3/4,2)
+\]
+from gauge-Higgs, boundary, endpoint, or compactification data.  This map is a
+central theorem target of the paper.
+
+The negative branch belongs to the same diagonalization as the positive branch.
+Its scalar interpretation remains conditional on a gauge-invariant functional,
+a normalization, and a scheme.  Candidate targets include a Higgs-potential
+parameter, a scalar pole, a boundary modulus, a brane separation mode, or a
+compactification deformation.  This branch is retained because a source theory
+that derives the positive-branch determinant must also account for the partner
+eigenvalue.
+
+The string, endpoint, interval, and \(G_2\) material gives mechanisms for a
+two-channel kernel.  In common notation the required reduction is
+\[
+  K_J(\lambda)=
+  \begin{pmatrix}
+  \lambda+\Sigma_{hh,J} & \Sigma_{ha,J}\\
+  \Sigma_{ah,J} & \lambda+\Sigma_{aa,J}
+  \end{pmatrix},
   \qquad
-  u_-(J)\mapsto\mathcal F_{\rm sc}.
-  \label{eq:acceptance-criterion}
-\end{equation}
-This criterion is deliberately demanding.  A partial result can still improve the manuscript by proving one arrow in Eq.~\eqref{eq:minimum-viable-derivation}.  For example, an interval model may derive the determinant class while leaving the pole placement open; an endpoint model may derive the ordered representation pair while leaving the scalar map open; a \(G_2\) model may supply a strong localization mechanism while leaving four-dimensional pole matching open.
+  \Sigma_{hh,J}=0,\quad
+  \Sigma_{aa,J}=J,\quad
+  \Sigma_{ha,J}\Sigma_{ah,J}=J .
+\]
+Open-string endpoint data, interval boundary conditions, and localized
+\(G_2\) gauge sectors provide source-backed addresses for such a kernel.  The
+exact DeVries entries remain to be derived from one of those source theories.
 
-\subsection{Decision ledger for route selection}
-\label{sec:route-selection-ledger}
-
-The three routes should be compared by the same criteria:
-\begin{center}
-\small
-\begin{tabular}{p{0.18\linewidth}p{0.24\linewidth}p{0.24\linewidth}p{0.24\linewidth}}
-\toprule
-Criterion & Endpoint/D-brane & Interval KK & \(G_2\) localization\\
-\midrule
-Trace source & endpoint current or adjoint brane gauge field & boundary value of a bulk gauge mode & singular gauge locus or ADE invariant\\
-Mixing source & stretched string or brane-Higgsing mode & boundary overlap of scalar and gauge profiles & flow-line, matter wavefunction, or deformation coupling\\
-Scalar branch & brane separation or stretched-string scalar & boundary scalar, \(A_5\)-like mode, radion, or brane order parameter & singularity deformation, critical value, charge density, or localized modulus\\
-Scale challenge & endpoint determinant to four-dimensional pole & boundary spectrum to dressed pole & local compactification data to low-energy pole\\
-Global check & gauge representation and endpoint labels & chiral matter and gauge group from compact space & anomaly inflow, local matter, global form\\
-\bottomrule
-\end{tabular}
-\end{center}
-
-The most useful next calculation is the one that fixes a matrix entry from source data.  The order of attack should favor the entry with the clearest address.  Endpoint physics gives a clear address for the off-diagonal mixing through stretched strings and brane-Higgsing fields.  Interval physics gives a clear address for the kernel through boundary variation.  \(G_2\) localization gives a clear address for representation data and scalar deformation variables.  A research pass that proves any one of these entries should immediately update the theorem-target appendix.
-
-\subsection{Referee-facing tests}
-\label{sec:referee-facing-tests}
-
-The paper can be evaluated by concrete tests:
-\begin{enumerate}
-\item The pole-scheme test: every W/Z comparison must use pole masses or give a conversion to pole quantities.
-\item The assignment test: \(J=3/4\) must come from a doublet/order-parameter datum and \(J=2\) from an adjoint/current datum.
-\item The determinant test: the source theory must produce the trace and determinant data of Eq.~\eqref{eq:det-completion}.
-\item The scalar test: the negative branch must map to a defined scalar, boundary, brane, or deformation functional.
-\item The ray test: the construction must respect the full electroweak broken-to-unbroken ray.
-\item The global test: a compact completion must be compatible with Standard Model representations, line operators, and anomaly constraints.
-\end{enumerate}
-These tests are severe enough to make the speculative proposal useful.  They allow a route to be rejected cleanly.  They also allow a route to generate a broader secular family when the DeVries entries arise as a limit.
-
-\subsection{Current manuscript status}
-\label{sec:current-manuscript-status}
-
-The current draft has converted the original observation into a source-controlled research program.  The algebraic object is explicit.  The pole observable is defined.  The electroweak assignment is stated as a theorem target.  The negative branch has a scalar-functional target.  The string, endpoint, interval, and \(G_2\) routes have been placed into a common kernel language.  Flavor and global-form material have been separated from the determinant derivation and treated as compatibility checks.
-
-The remaining burden is analytical.  The strongest next result would be a derivation of Eq.~\eqref{eq:route-common-target} from one route.  The next strongest result would be a derivation of the ordered electroweak assignment from gauge-Higgs data.  A scalar-branch derivation would also be central because it would explain why Hans de Vries's positive-branch clue was accompanied by a hidden scalar-side clue in the same quadratic.
-
-\paragraph*{Section status.}  This section states the program's current logical dependencies, acceptance criteria, and route-selection tests.
+The paper therefore establishes a precise algebraic clue and a constrained
+research program around it.  A complete derivation requires three linked
+results: the two-channel determinant from a source theory, the ordered
+electroweak assignment, and a controlled scalar interpretation of the negative
+branch.  Additional completion data include the pole-scheme audit, the
+low-energy placement theorem, and compatibility with the global form of the
+Standard Model gauge group.  Appendix~\ref{app:theorem-targets} collects these
+requirements in theorem-target form.

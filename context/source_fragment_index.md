@@ -35,6 +35,10 @@ Fragments use 10-page ranges where possible and preserve PDF page numbers.
 | `32_PDG2025_Physical_Constants.pdf` | 1 | constants, pdg | extracted |
 | `34_Martin_Robertson_SM_MSbar_1907.02500.pdf` | 27 | msbar, standard-model-parameters, scheme | extracted |
 | `35_CDFII_W_boson_mass_Science_2022.pdf` | 9 | cdf-ii, w-boson-mass, electroweak-input | extracted |
+| `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` | 23 | source | extracted |
+| `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` | 17 | source | extracted |
+| `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` | 23 | source | extracted |
+| `39_Kumar_Taylor_String_Universality_Six_Dimensions_0906.0987.pdf` | 28 | source | extracted |
 | `witten1981.pdf` | 17 | kaluza-klein, fermion-quantum-numbers, historical | extracted |
 
 Extraction status records successful text extraction only. Exact claims still require page-level reading before citation.

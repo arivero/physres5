@@ -1,5 +1,6 @@
 \section{Radical placement and scale attachment}
 \label{sec:radical-placement}
+% Status: open. States the radical-placement problem and source-to-operator obligations.
 
 The secular equation contains the radical
 \begin{equation}
@@ -15,7 +16,7 @@ The possible placements are distinct research programs.
 \small
 \begin{tabular}{p{0.20\linewidth}p{0.28\linewidth}p{0.42\linewidth}}
 \toprule
-Placement & Physical meaning & Derivation owed\\
+Placement & Physical meaning & Required derivation\\
 \midrule
 Pole spectrum & \(\Delta_J^{1/2}\) enters a propagator or self-energy pole condition & derive the W/Z pole ratio and scalar partner branch from one spectral equation\\
 GUT boundary & \(\Delta_J^{1/2}\) fixes a high-scale weak-angle datum & embed the \(J\)-samples in a unification representation and run to the pole scale\\
@@ -53,12 +54,12 @@ The scale question is then a question about where \(\mathcal O_J\) lives:
 \end{equation}
 Each address has a different interpretation of the same algebra.  A pole operator must be built from four-dimensional gauge-Higgs correlators.  A GUT operator must be built from representation traces and matching.  A KK operator must be a compact internal differential operator or boundary value problem.  A brane operator must couple localized and bulk modes.  A worldsheet operator must arise from conformal weights, current algebra, or level matching.
 
-This list is useful because it prevents the radical from floating between schemes.  The manuscript can change placement; each placement changes the required derivation.
+This list fixes the scheme dependence of the radical.  A different placement changes the required derivation.
 
-\subsection{Placement ledger}
-\label{sec:placement-ledger}
+\subsection{Placement chain}
+\label{sec:placement-chain}
 
-The placement question can be recorded as a ledger.  A source theory \(\mathcal S\) supplies an operator, the operator supplies a two-channel kernel, the kernel supplies branches, and the branches acquire physical meaning after a scheme and an assignment rule have been fixed:
+The placement question can be recorded as a chain.  A source theory \(\mathcal S\) supplies an operator, the operator supplies a two-channel kernel, the kernel supplies branches, and the branches acquire physical meaning after a scheme and an assignment rule have been fixed:
 \begin{equation}
 \begin{aligned}
 \mathcal S
@@ -77,38 +78,38 @@ The placement question can be recorded as a ledger.  A source theory \(\mathcal 
 \mathcal C_{\rm top}
 \right\}.
 \end{aligned}
-\label{eq:placement-ledger}
+\label{eq:placement-chain}
 \end{equation}
-Here \(\mathcal F_{\rm sc}\) denotes the scalar/order-parameter functional sought in Sec.~\ref{sec:negative}, and \(\mathcal C_{\rm top}\) denotes the global-form and representation constraints discussed in Secs.~\ref{sec:flavour} and \ref{sec:global-form}.  The ledger separates four tasks:
+Here \(\mathcal F_{\rm sc}\) denotes the scalar/order-parameter functional sought in Sec.~\ref{sec:negative}, and \(\mathcal C_{\rm top}\) denotes the global-form and representation constraints discussed in Secs.~\ref{sec:flavour} and \ref{sec:global-form}.  The chain separates four tasks:
 \begin{align}
   \text{operator origin:}\quad&
   \mathcal S\mapsto \mathcal O_J,
-  \label{eq:ledger-origin}\\
+  \label{eq:chain-origin}\\
   \text{two-channel reduction:}\quad&
   \mathcal O_J\mapsto
   \begin{pmatrix}0&\sqrt J\\ \sqrt J&-J\end{pmatrix},
-  \label{eq:ledger-reduction}\\
+  \label{eq:chain-reduction}\\
   \text{branch reading:}\quad&
   \mathcal M_J\mapsto \{x_+(J),x_-(J)\},
-  \label{eq:ledger-branch}\\
+  \label{eq:chain-branch}\\
   \text{physical assignment:}\quad&
   \{x_\pm\}\mapsto
   \left(\sPole,\mathcal F_{\rm sc},\mathcal C_{\rm top}\right).
-  \label{eq:ledger-assignment}
+  \label{eq:chain-assignment}
 \end{align}
 
-Each arrow has different source support.  Complex-pole and scheme language belongs to the last arrow \cite{MartinRobertson2025}.  Higgs doublet, adjoint current, custodial structure, and the electroweak ray belong to the assignment arrow \cite{Logan2022,Dawson2018}.  Endpoint labels, D-brane gauge fields, and interval boundary conditions belong to the first two arrows \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.  The current manuscript has exact control of Eq.~\eqref{eq:ledger-branch}; the other arrows are open derivation targets.
+Each arrow has different source support.  Complex-pole and scheme language belongs to the last arrow \cite{MartinRobertson2025}.  Higgs doublet, adjoint current, custodial structure, and the electroweak ray belong to the assignment arrow \cite{Logan2022,Dawson2018}.  Endpoint labels, D-brane gauge fields, and interval boundary conditions belong to the first two arrows \cite{TongString,Polchinski1994,CsakiHubiszMeade2005}.  Equation~\eqref{eq:chain-branch} is algebraically controlled; the other arrows are open derivation targets.
 
-This ledger also organizes the negative branch.  If a candidate source theory derives \(\mathcal M_J\), then \(x_-(J)\) is carried by the same light-sector basis as \(x_+(J)\).  The scalar question becomes a question about the eigenvector map,
+This chain also organizes the negative branch.  If a candidate source theory derives \(\mathcal M_J\), then \(x_-(J)\) is carried by the same light-sector basis as \(x_+(J)\).  The scalar question becomes a question about the eigenvector map,
 \begin{equation}
   u_-(J)\in\mathcal H_J
   \quad\longmapsto\quad
   \mathcal F_{\rm sc},
-  \label{eq:negative-eigenvector-ledger}
+  \label{eq:negative-eigenvector-chain}
 \end{equation}
 where \(\mathcal H_J\) is the two-dimensional light sector.  A Higgs interpretation requires \(\mathcal F_{\rm sc}\) to be gauge invariant.  A brane interpretation requires \(\mathcal F_{\rm sc}\) to be a modulus, separation, or localized boundary datum.  A compactification interpretation requires \(\mathcal F_{\rm sc}\) to be a normalized internal eigenmode or deformation parameter.
 
-The ledger gives a compact criterion for progress.  A new idea improves the paper when it fills one of the arrows in Eq.~\eqref{eq:placement-ledger}; it distracts from the paper when it adds labels outside the ledger.
+The chain gives a compact criterion for acceptance.  A proposed mechanism should fill one of the arrows in Eq.~\eqref{eq:placement-chain} or state a new arrow with its source theory, scheme, and physical assignment.
 
 \subsection{Original research route}
 
@@ -135,5 +136,3 @@ A concrete model should therefore supply four ingredients:
 \end{enumerate}
 
 The fourth ingredient is the new conceptual burden.  It turns the algebraic clue into a physical program and fixes the relation between the pole reading and high-scale weak-angle boundary data.
-
-\paragraph*{Section status.}  This section states the radical-placement problem and the original research route.  The physical operator \(\mathcal O_J\) remains open.

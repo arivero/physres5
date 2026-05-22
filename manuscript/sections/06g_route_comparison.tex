@@ -1,7 +1,8 @@
 \section{Comparison of the three local routes}
 \label{sec:route-comparison}
+% Status: open. Compares route kernels, assignments, branch maps, scale placement, and compatibility tests.
 
-The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  This section puts them in a common format.  The purpose is to make the next analytical work precise: each route must deliver the same normalized two-channel kernel, the same electroweak assignment, the same branch interpretation, and compatible global data.  The comparison also prevents conceptual drift.  A successful route supplies a physical origin for entries of a matrix; it gives more than an analogy with strings, extra dimensions, or singular geometry.
+The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  This section puts them in a common format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A successful route supplies a physical origin for entries of a matrix and turns the string, extra-dimensional, or singular-geometric address into a derivation.
 
 \subsection{Common reduction problem}
 \label{sec:common-reduction-problem}
@@ -36,7 +37,7 @@ where \(h_{J,r}\) is the order-parameter channel and \(a_{J,r}\) is the adjoint/
   \end{pmatrix}.
   \label{eq:route-common-kernel}
 \end{equation}
-The route passes the first DeVries test when a stated limit and normalization give
+The first DeVries condition is a stated limit and normalization giving
 \begin{equation}
   \Sigma_{hh,J}^{r}=0,\qquad
   \Sigma_{aa,J}^{r}=J,\qquad
@@ -85,7 +86,7 @@ The third comparison concerns the order-parameter reference entry,
 \end{equation}
 The zero entry is a normalization and symmetry statement.  In an endpoint model, it may come from choosing the boundary order-parameter amplitude as the reference channel.  In an interval model, it may come from a boundary condition or brane term that subtracts the local order-parameter self-energy at the pole.  In a \(G_2\) model, it may come from the critical-point normalization of the localized mode.  A derivation must name the symmetry, subtraction, or normalization that gives this reference value.
 
-The following table records the three entries in a format useful for a referee.
+The following table records the three entries in a common dictionary.
 \begin{center}
 \small
 \begin{tabular}{p{0.18\linewidth}p{0.24\linewidth}p{0.24\linewidth}p{0.24\linewidth}}
@@ -115,7 +116,7 @@ The target map is
   (J_W,J_Z)=(J_H,J_{\rm adj}).
   \label{eq:route-assignment-map}
 \end{equation}
-This map is a theorem target because the observed W and Z vector bosons are both gauge-sector particles after symmetry breaking.  The route must explain why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  A useful route therefore produces the ordered pair from the gauge-Higgs coupling structure, from endpoint boundary labels attached to the Higgsing field, from interval boundary data that distinguish charged and neutral sectors, or from a localized singularity model where doublet and adjoint data meet.
+This map is a theorem target because the observed W and Z vector bosons are both gauge-sector particles after symmetry breaking.  The route must explain why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  An accepted route therefore produces the ordered pair from the gauge-Higgs coupling structure, from endpoint boundary labels attached to the Higgsing field, from interval boundary data that distinguish charged and neutral sectors, or from a localized singularity model where doublet and adjoint data meet.
 
 The pole-ratio reading then has the common form
 \begin{equation}
@@ -124,7 +125,7 @@ The pole-ratio reading then has the common form
   \frac{x_+(J_H)}{x_+(J_{\rm adj})}
   \label{eq:route-pole-ratio-target}
 \end{equation}
-after the pole scheme of Sec.~\ref{sec:pole} has been fixed.  This equation states the desired low-energy placement.  A route that naturally yields the same quotient at a compactification scale or unification scale would still be useful, because it would locate the algebra in a source theory.  The pole reading would then require an additional matching theorem.
+after the pole scheme of Sec.~\ref{sec:pole} has been fixed.  This equation states the desired low-energy placement.  A route that naturally yields the same quotient at a compactification scale or unification scale would locate the algebra in a source theory.  The pole reading would then require an additional matching theorem.
 
 \subsection{Branch interpretation and scalar data}
 \label{sec:route-branch-interpretation}
@@ -148,8 +149,8 @@ The functional \(\mathcal F_{{\rm sc},r}\) depends on the route.  In the endpoin
 
 The scalar map has to be tied to the electroweak ray.  The gauge-Higgs system has a radial vacuum scale and a projective vector-mass ratio.  A route that derives the determinant should identify how the positive branch fixes the projective vector datum and how the negative branch enters the radial or scalar sector.  This is the point where the two-root structure becomes physically restrictive.  A determinant used for the pole clue automatically supplies its partner branch, and the route must assign that partner branch a controlled role.
 
-\subsection{Scale-placement ledger}
-\label{sec:route-scale-ledger}
+\subsection{Scale placement}
+\label{sec:route-scale-placement}
 
 The route comparison separates three scale placements:
 \begin{equation}
@@ -160,11 +161,29 @@ The route comparison separates three scale placements:
   \hbox{unification scale}.
   \label{eq:route-scale-placements}
 \end{equation}
-The manuscript presently takes the pole scale as the proposed attachment point for the electroweak clue.  This choice gives the project its strongest phenomenological motivation.  The GUT lineage supplies the comparison class: a clean weak-angle value can be a high-scale structural datum, then acquire low-energy meaning through running and thresholds.  In the present construction the clean value is attached to the pole ratio, so the scale-placement theorem is logically prior to any compactification geometry.
+This paper takes the pole scale as the proposed attachment point for the electroweak clue.  This choice gives the clue its direct electroweak content.  The GUT lineage supplies the comparison class: a clean weak-angle value can be a high-scale structural datum, then acquire low-energy meaning through running and thresholds.  In the present construction the clean value is attached to the pole ratio, so the scale-placement theorem is logically prior to any compactification geometry.
+
+The common matching theorem has the form
+\begin{equation}
+  \mathcal S_r
+  \longrightarrow
+  K_{J,r}^{\rm bare}(\lambda)
+  \longrightarrow
+  \Gamma_{\rm eff}^{(4)}[H,W,B]
+  \longrightarrow
+  \Delta^{-1}_{V,T}(s)
+  \big|_{s=s_{W,Z}} .
+  \label{eq:route-pole-matching-chain}
+\end{equation}
+The first arrow is the route reduction.  The second arrow matches the source
+kernel into a four-dimensional gauge-Higgs effective action.  The third arrow
+places the result in the dressed transverse pole convention of Sec.~\ref{sec:pole}.
+Endpoint, interval, and \(G_2\) routes differ in the first arrow; they share
+the last two arrows when the pole reading is retained.
 
 For endpoint and interval routes, the most direct challenge is the relation between a boundary determinant and a four-dimensional pole.  Boundary conditions usually define a spectrum before loop corrections and before the conversion to pole observables.  The route must explain how the determinant survives matching to the pole definition, or how the pole reading emerges from a dressed boundary self-energy.
 
-For the \(G_2\) route, the challenge is sharper.  A local singularity model naturally lives at a compactification or high scale.  The local kernel can organize representations and couplings, yet a pole-spectrum reading requires a low-energy matching chain.  The useful outcome is therefore a two-stage theorem:
+For the \(G_2\) route, the challenge is sharper.  A local singularity model naturally lives at a compactification or high scale.  The local kernel can organize representations and couplings, yet a pole-spectrum reading requires a low-energy matching chain.  The resulting target is a two-stage theorem:
 \begin{equation}
   \mathcal S_{G_2}
   \longrightarrow
@@ -175,12 +194,12 @@ For the \(G_2\) route, the challenge is sharper.  A local singularity model natu
   s=s_{W,Z}.
   \label{eq:g2-two-stage-pole}
 \end{equation}
-The first arrow is local geometry.  The second arrow is four-dimensional matching.  The current draft states both as open obligations.
+The first arrow is local geometry.  The second arrow is four-dimensional matching.  Both arrows remain open obligations.
 
-\subsection{Referee decision tree}
-\label{sec:route-decision-tree}
+\subsection{Completion conditions}
+\label{sec:route-completion-conditions}
 
-The comparison can be used as a decision tree for the next research pass:
+The comparison yields seven completion conditions:
 \begin{enumerate}
 \item Choose one source theory \(\mathcal S_r\) and one light subspace \(\mathcal H_{J,r}\).
 \item Derive the reduced kernel \(K_{J,r}(\lambda)\) from an action, boundary condition, endpoint algebra, or local \(G_2\) operator.
@@ -190,6 +209,4 @@ The comparison can be used as a decision tree for the next research pass:
 \item Map the negative branch to a scalar, modulus, brane, or deformation functional.
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
-Each step has a defined failure mode.  Extra light channels enlarge the determinant.  A different trace or mixing product gives a different secular relation.  A high-scale placement changes the interpretation of the weak-angle clue.  An incompatible global form rejects a proposed compactification.  These outcomes would still be useful research results because they would classify the DeVries relation inside a larger family of spectral constructions.
-
-\paragraph*{Section status.}  This section is open-program material.  It compares three source-backed local routes and states the common reduction, assignment, branch, scale-placement, and global-compatibility tests.
+Each condition has a defined failure mode.  Extra light channels enlarge the determinant.  A different trace or mixing product gives a different secular relation.  A high-scale placement changes the interpretation of the weak-angle clue.  An incompatible global form rejects a proposed compactification.  These outcomes classify the DeVries relation inside a larger family of spectral constructions.

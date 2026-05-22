@@ -148,6 +148,61 @@ axiom kk_interval_kernel_derivation_required :
 axiom kk_negative_branch_scalar_map_required :
   ∃ K : IntervalKernel, intervalKernelHasScalarMap K
 
+/- Advisor route:
+   Integrate out a heavy tower, bulk sector, or compact operator and obtain the
+   light two-channel boundary kernel as a Schur complement. -/
+structure SchurComplementRoute where
+  lightBoundarySector : Type
+  heavyOperator : Type
+  boundaryKernel : Type
+  couplingMap : Type
+  innerProduct : Type
+
+def schurComplementHitsDeVriesTarget (S : SchurComplementRoute) : Prop :=
+  True
+
+def schurComplementHasIntervalSource (S : SchurComplementRoute) : Prop :=
+  True
+
+/- Obligation 10:
+   Find K_bdry_J(lambda), L_J, and V_J such that
+     K_eff_J(lambda) = K_bdry_J(lambda) - V_J^\dagger (lambda - L_J)^(-1) V_J
+   reduces in the light boundary sector to
+     [[lambda, -sqrt J], [-sqrt J, lambda + J]].
+   Test this against interval boundary kinetic terms and brane-localized
+   Higgsing data before promoting it to manuscript prose. -/
+axiom schur_complement_derivation_required :
+  ∃ S : SchurComplementRoute,
+    schurComplementHitsDeVriesTarget S ∧ schurComplementHasIntervalSource S
+
+/- Dimensional interpolation route:
+   Treat the D=10 full-gauge interior, or the colourless D=6 interior, as a
+   light two-channel boundary sector obtained by a Schur complement. -/
+structure DimensionalSchurTarget where
+  interpolationParameter : Type
+  middleBoundaryObject : Type
+  lightOrderCurrentSector : Type
+  sourceOperator : Type
+  poleMatchingRule : Type
+
+def dimensionalSchurGivesKernel (D : DimensionalSchurTarget) : Prop :=
+  True
+
+def dimensionalSchurGivesOrderedAssignment (D : DimensionalSchurTarget) : Prop :=
+  True
+
+def dimensionalSchurMatchesPoleScheme (D : DimensionalSchurTarget) : Prop :=
+  True
+
+/- Obligation 11:
+   Define t, O_J(t), H_J=span{h_J,a_J}, K_J(t,lambda), and the matching chain
+   to Delta^{-1}_{V,T}(s_W,Z). This is the active O10/O4/O1/O8 bridge. -/
+axiom dimensional_schur_target_required :
+  ∃ D : DimensionalSchurTarget,
+    dimensionalSchurGivesKernel D ∧
+    dimensionalSchurGivesOrderedAssignment D ∧
+    dimensionalSchurMatchesPoleScheme D
+
 /- Expanded G2 local-operator dictionary. -/
 structure G2LocalKernel where
   singularGaugeLocus : Type

@@ -1,5 +1,6 @@
 \section{\texorpdfstring{$G_2$}{G2} localization and local spectral operators}
 \label{sec:g2-localization}
+% Status: cited/open. G2 localization background is cited; local-kernel reductions remain theorem targets.
 
 The \(G_2\) route supplies a third concrete language for the DeVries program.  Its role in this manuscript is local.  It gives a framework in which gauge fields, charged matter, order-parameter data, and deformation modes can live at singular loci of a compactification.  M-theory on \(G_2\)-holonomy spaces is a natural route to four-dimensional \(\mathcal N=1\) structure; singularities provide the gauge and matter sectors needed for particle physics \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004}.  The DeVries question is whether a localized \(G_2\) operator can reduce to the same two-channel determinant used in the pole-ratio clue.
 
@@ -51,14 +52,14 @@ Matter in the representation \(R_Q\) localizes at points where
 \end{equation}
 Flow lines between such critical points can generate mass terms, and trivalent flow trees can generate Yukawa couplings when the representation charges sum to zero \cite{BraunEtAl2019}.  This is a strong local dictionary: gauge data, matter localization, mass terms, and interactions are all functions of the same geometric input.
 
-For the DeVries program, the Higgs-bundle variables give a possible address for the local operator:
+For the DeVries construction, the Higgs-bundle variables give a possible address for the local operator:
 \begin{equation}
   \mathcal O_J^{G_2}
   =
   \mathcal O_J\big(W,\Phi,\rho_Q,f_Q\big),
   \label{eq:g2-operator-address}
 \end{equation}
-where \(W\) is the gauge field on \(M_3\).  The precise form of \(\mathcal O_J^{G_2}\) is open.  The useful point is that \(W\), \(\Phi\), and \(f_Q\) already separate adjoint gauge data, scalar deformation data, and localized representation data.
+where \(W\) is the gauge field on \(M_3\).  The precise form of \(\mathcal O_J^{G_2}\) is open.  The variables \(W\), \(\Phi\), and \(f_Q\) already separate adjoint gauge data, scalar deformation data, and localized representation data.
 
 \subsection{Local two-channel kernel}
 \label{sec:g2-two-channel-kernel}
@@ -108,6 +109,36 @@ DeVries entry & \(G_2\) origin & Derivation target \\
 \end{tabular}
 \end{center}
 This table turns \(G_2\) geometry into a determinant problem.  It also prevents the geometry from becoming a decorative completion.  Each geometric object must provide one entry of \(K_J^{G_2}\), one assignment rule, or one consistency check.
+
+The first local test is therefore entry-by-entry.  The adjoint entry should
+come from the gauge-field fluctuation \(W\) along the singular gauge locus,
+with the normalized ADE or adjoint invariant giving
+\begin{equation}
+  W\big|_{M_3}
+  \quad\leadsto\quad
+  \Sigma_{aa,J}^{G_2}=J .
+  \label{eq:g2-W-current-entry}
+\end{equation}
+The off-diagonal product should come from the localized matter and
+Higgs-bundle data,
+\begin{equation}
+  (\Phi,\rho_Q,f_Q)
+  \quad\leadsto\quad
+  \Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J,
+  \label{eq:g2-higgsbundle-mixing-entry}
+\end{equation}
+through a normalized flow-line overlap, bifundamental vev, or singular
+deformation coupling.  The order-parameter reference should come from the
+critical-point normalization of \(f_Q\),
+\begin{equation}
+  df_Q(p)=0
+  \quad\leadsto\quad
+  \Sigma_{hh,J}^{G_2}=0 .
+  \label{eq:g2-critical-reference-entry}
+\end{equation}
+This is the local \(G_2\) analogue of the interval Schur-complement target:
+the source theory must provide the three named entries before the singularity
+language has derivational force.
 
 \subsection{Higgsing as singular deformation}
 \label{sec:g2-higgsing-deformation}
@@ -159,10 +190,10 @@ The \(G_2\) route has strong consistency tests.  Witten's anomaly-inflow discuss
 \end{enumerate}
 These checks can reject a candidate completion even when the two-channel determinant is obtained locally.
 
-\subsection{Hard test for the \texorpdfstring{$G_2$}{G2} route}
-\label{sec:g2-hard-test}
+\subsection{\texorpdfstring{$G_2$}{G2} completion criterion}
+\label{sec:g2-completion-criterion}
 
-The \(G_2\) route becomes a hard test in the same form as the endpoint and interval routes:
+The \(G_2\) route has the same completion chain as the endpoint and interval routes:
 \begin{equation}
 \begin{aligned}
   \text{singular }G_2\text{ neighborhood}
@@ -177,8 +208,6 @@ The \(G_2\) route becomes a hard test in the same form as the endpoint and inter
   \longrightarrow
   \{\sPole,\mathcal F_{G_2},\mathcal C_{\rm top}\}.
 \end{aligned}
-\label{eq:g2-hard-test}
+\label{eq:g2-completion-chain}
 \end{equation}
 The first arrow is source-backed by singular \(G_2\) compactification and Higgs-bundle literature.  The second arrow is the DeVries determinant derivation.  The final arrow is the pole-placement, scalar-branch, and global-form assignment.  A future proof can start locally, then extend to compact global data after the determinant appears.
-
-\paragraph*{Section status.}  The \(G_2\) localization, anomaly, Higgsing, and Higgs-bundle background is source-supported.  The reductions in Eqs.~\eqref{eq:g2-self-energy-target}, \eqref{eq:g2-negative-branch-map}, and \eqref{eq:g2-hard-test} are theorem targets.

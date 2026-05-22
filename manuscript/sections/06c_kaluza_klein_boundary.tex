@@ -1,5 +1,6 @@
 \section{Kaluza--Klein spectra, boundary conditions, and secular determinants}
 \label{sec:kk-boundary}
+% Status: cited/open. KK and interval background are cited; interval reductions remain theorem targets.
 
 Kaluza--Klein theory supplies the second concrete language for the DeVries program.  The original idea unifies gauge fields with geometry by expanding a higher-dimensional theory around a compact ground state.  In Witten's account, symmetries of the compact space appear as gauge symmetries in the lower-dimensional theory, and the physical spectrum is obtained from small oscillations around the compactification background \cite{WittenKK1981}.  The same account also records the hard model-building burden: obtaining the Standard Model gauge group, fermion quantum numbers, and scalar sector is a serious representation problem, even when the gauge group itself can be engineered.
 
@@ -21,7 +22,7 @@ This determinant is the entire target of the KK route.
 
 String compactification on a circle gives a clean source-backed example of a two-channel spectral structure.  Ordinary Kaluza--Klein momentum is quantized along the circle.  Closed strings add winding around the same circle.  Polchinski's circle example shows that the Kaluza--Klein vector couples to compact momentum, while the vector descending from the antisymmetric tensor couples to winding \cite{Polchinski1994}.  At the self-dual radius the spectrum has enhanced current algebra, and changing the radius is described by an operator built from the same currents.
 
-This gives the manuscript a useful analogy:
+This gives a source-backed analogy:
 \begin{equation}
   \left(
   \begin{array}{c}
@@ -89,6 +90,41 @@ The DeVries target is the boundary limit
   \label{eq:interval-self-energy-target}
 \end{equation}
 This is the interval version of the endpoint target in Sec.~\ref{sec:endpoint-higgsing}.
+
+\subsection{Dimensional Schur-complement target}
+\label{sec:kk-schur-target}
+
+The dimensional interpolation of Appendix~\ref{app:dimensional-interpolation}
+selects a concrete interval calculation.  Let the middle-dimensional sector be
+split into a light boundary subspace \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\)
+and a tower, bulk, or compact sector with operator \(L_J\).  With a boundary
+kernel \(K^{\rm bdry}_J(\lambda)\), coupling map \(V_J\), and specified inner
+product, integrating out the heavy sector gives
+\begin{equation}
+  K^{\rm eff}_J(\lambda)
+  =
+  K^{\rm bdry}_J(\lambda)
+  -
+  V_J^\dagger(\lambda-L_J)^{-1}V_J .
+  \label{eq:interval-schur-complement}
+\end{equation}
+The active calculation target is
+\begin{equation}
+  K^{\rm eff}_J(\lambda)
+  \longrightarrow
+  \begin{pmatrix}
+  \lambda&-\sqrt J\\
+  -\sqrt J&\lambda+J
+  \end{pmatrix}
+  \label{eq:interval-schur-devries-target}
+\end{equation}
+in a limit where additional light channels decouple or acquire a controlled
+block-diagonal form.  This formulation connects the \(D=10/6\) middle line to
+the route kernel: \(K^{\rm bdry}_J\) contains boundary kinetic and mass data,
+\(L_J\) contains the integrated tower, and \(V_J\) contains the
+order-parameter/current mixing.  A successful interval derivation must specify
+these three objects, the inner product, and the normalization yielding
+Eq.~\eqref{eq:interval-self-energy-target}.
 
 \subsection{Dictionary for the interval entries}
 \label{sec:interval-entry-dictionary}
@@ -190,10 +226,10 @@ The scalar-branch target is therefore
 \end{equation}
 Here \(u_-(J)\) is the negative-branch eigenvector of the two-channel kernel.  A final derivation should identify \(\mathcal F_{\rm KK}\), state its gauge transformation properties, and explain its scheme relation to the low-energy Higgs/order-parameter variables.
 
-\subsection{Hard test for the KK route}
-\label{sec:kk-hard-test}
+\subsection{KK completion criterion}
+\label{sec:kk-completion-criterion}
 
-The KK route becomes a hard test once it is expressed as the following chain:
+The KK route is fixed by the following completion chain:
 \begin{equation}
 \begin{aligned}
   \text{compact or interval source}
@@ -208,8 +244,6 @@ The KK route becomes a hard test once it is expressed as the following chain:
   \longrightarrow
   \{\sPole,\mathcal F_{\rm KK}\}.
 \end{aligned}
-\label{eq:kk-hard-test}
+\label{eq:kk-completion-chain}
 \end{equation}
 The first arrow is source-backed by the KK and interval literature.  The second arrow is the DeVries determinant derivation.  The last arrow is the pole-placement and scalar-branch assignment.  This chain gives the manuscript a concrete way to compare compactification, endpoint, and \(G_2\) routes.
-
-\paragraph*{Section status.}  The KK circle, interval, and boundary-condition background is source-supported.  The reductions in Eqs.~\eqref{eq:interval-self-energy-target}, \eqref{eq:interval-assignment-theorem}, and \eqref{eq:kk-negative-branch-map} are theorem targets.

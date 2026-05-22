@@ -1,0 +1,189 @@
+\section{Dimensional interpolation target}
+\label{app:dimensional-interpolation}
+% Status: open. Records the D=11/10/9 and colourless D=7/6/5 interpolation target.
+
+This appendix records a dimensional version of the Higgs-sector problem.  It is
+a theorem target, added here because it gives a compact way to organize the
+Kaluza--Klein, string, Higgs, and top-quark questions.
+
+\subsection{Full-gauge count}
+\label{app:full-gauge-count}
+
+The full-gauge count keeps colour inside the compactification symmetry.  Witten's
+realistic Kaluza--Klein analysis gives the source-backed endpoint: a compact
+space with \(SU(3)\times SU(2)\times U(1)\) symmetry requires seven extra
+dimensions in the class considered there, giving total dimension \(D=11\)
+\cite{WittenKK1981}.  The same source records the associated fermion
+quantum-number obstruction for that seven-dimensional compactification.
+
+The proposed interpolation is
+\begin{equation}
+\begin{array}{ccl}
+D=11,\quad n_{\rm KK}=7
+&:&
+SU(3)\times SU(2)\times U(1)
+\quad\hbox{massless-Higgs or unbroken endpoint},
+\\[3pt]
+D=10,\quad n_{\rm KK}=6
+&:&
+\hbox{DeVries interpolation sector},
+\\[3pt]
+D=9,\quad n_{\rm KK}=5
+&:&
+SU(3)\times U(1)_{\rm em}
+\quad\hbox{infinitely broken endpoint}.
+\end{array}
+\label{eq:full-gauge-dimensional-chain}
+\end{equation}
+The source status of the three lines is uneven, and the distinction is part of
+the claim.  The source-backed data and reconstruction targets are:
+\begin{center}
+\small
+\begin{tabular}{p{0.20\linewidth}p{0.33\linewidth}p{0.35\linewidth}}
+\toprule
+Line & Source-backed content & DeVries obligation\\
+\midrule
+\(D=11,\ n_{\rm KK}=7\) & Witten's \(SU(3)\times SU(2)\times U(1)\)
+KK endpoint and its fermion quantum-number obstruction & define the
+massless-Higgs endpoint and its relation to the electroweak ray\\
+\(D=10,\ n_{\rm KK}=6\) & reconstruction target & identify the
+six-dimensional internal object, its light two-channel sector, and its kernel\\
+\(D=9,\ n_{\rm KK}=5\) & Witten's five-sphere discussion contains an
+\(SU(3)\times U(1)\) symmetry address & derive the infinite-Higgs or
+infinitely broken endpoint with \(U(1)_{\rm em}\) as the surviving
+electroweak factor\\
+\bottomrule
+\end{tabular}
+\end{center}
+The middle line is therefore the active theorem target.  A derivation must
+identify the six-dimensional internal object, its boundary or compact
+operator, and its relation to the two-channel DeVries determinant.
+
+\subsection{Colourless electroweak count}
+\label{app:colourless-count}
+
+There is a reduced count in which colour is treated as a spectator sector.  The
+electroweak part of the endpoint symmetry then changes as
+\begin{equation}
+\begin{array}{ccl}
+D=7,\quad n_{\rm KK}^{\rm ew}=3
+&:&
+SU(2)\times U(1),
+\\[3pt]
+D=6,\quad n_{\rm KK}^{\rm ew}=2
+&:&
+\hbox{DeVries electroweak interpolation sector},
+\\[3pt]
+D=5,\quad n_{\rm KK}^{\rm ew}=1
+&:&
+U(1)_{\rm em}.
+\end{array}
+\label{eq:colourless-dimensional-chain}
+\end{equation}
+This version makes the six-dimensional middle line especially natural as a
+string-theory address.  Six-dimensional superstring vacua and dualities are a
+standard part of the source landscape: type IIA compactified on K3 and the
+heterotic string compactified on \(T^4\) provide a six-dimensional string-string
+duality setting \cite{Strominger1995,Sen1995}; heterotic small instantons give
+nonperturbative six-dimensional dynamics \cite{WittenSmallInstantons1995}; and
+six-dimensional anomaly and string-universality constraints provide a modern
+consistency framework \cite{KumarTaylor2009}.  These sources support the
+existence and rigidity of six-dimensional string settings.  The DeVries kernel,
+ordered \(J\)-assignment, and pole placement remain separate reduction targets.
+
+\subsection{Interpolation parameter}
+\label{app:interpolation-parameter}
+
+The interpolation parameter must be stated in field-theory or geometric terms.
+The electroweak field theory supplies a radial order parameter through the Higgs
+vacuum expectation value.  The compactification descriptions supply radii,
+boundary conditions, brane-localized terms, or singularity deformations.  A
+viable derivation must identify one variable \(t\) and a family of source
+operators
+\begin{equation}
+  \mathcal O_J(t),
+  \qquad
+  t=0:\ SU(3)\times SU(2)\times U(1),
+  \qquad
+  t=\infty:\ SU(3)\times U(1)_{\rm em},
+  \label{eq:dimensional-interpolation-family}
+\end{equation}
+or the corresponding colourless electroweak endpoints.  The middle-dimensional
+data required at a DeVries point are
+\begin{equation}
+  \mathfrak I_J(t_\star)
+  =
+  \big(
+  \mathcal B(t_\star),\,
+  \mathcal H_J(t_\star),\,
+  K_J(t_\star,\lambda),\,
+  \mathcal R_{\rm pole}
+  \big),
+  \label{eq:middle-dimensional-data}
+\end{equation}
+where \(\mathcal B(t_\star)\) is the compact, boundary, or singular object,
+\(\mathcal H_J(t_\star)=\operatorname{span}\{h_J,a_J\}\) is the light
+order-parameter/current subspace, \(K_J\) is the reduced kernel, and
+\(\mathcal R_{\rm pole}\) is the matching rule to the transverse pole
+propagator.  At the DeVries point the light two-channel reduction must take the
+form
+\begin{equation}
+  \mathcal O_J(t_\star)\big|_{\mathcal H_J}
+  \longrightarrow
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix}.
+  \label{eq:dimensional-devries-target}
+\end{equation}
+The positive branch is then assigned to the pole-ratio target, and the negative
+branch is assigned to a scalar, boundary, brane, or compactification datum.
+The compatibility diagram is
+\begin{equation}
+\begin{aligned}
+(D,n_{\rm KK})=(11,7)\ {\rm or}\ (7,3)
+&\xrightarrow{\ t\ }
+(D,n_{\rm KK})=(9,5)\ {\rm or}\ (5,1),
+\\
+(D,n_{\rm KK})=(10,6)\ {\rm or}\ (6,2)
+&:\quad
+\mathcal O_J(t_\star)\big|_{\mathcal H_J}\to K_J(\lambda),
+\\
+K_J(\lambda)
+&\longrightarrow
+(J_W,J_Z)=(J_H,J_{\rm adj}),
+\\
+(J_W,J_Z)
+&\longrightarrow
+\Delta^{-1}_{V,T}(s_{W,Z}) .
+\end{aligned}
+\label{eq:dimensional-compatibility-diagram}
+\end{equation}
+Thus the dimensional interpolation can contribute to the paper only through a
+kernel derivation, an ordered assignment theorem, and a pole-matching theorem.
+
+\subsection{Top-quark scale}
+\label{app:top-quark-scale}
+
+The dimensional interpolation also creates a top-sector question.  In the
+Standard Model, fermion masses are generated by Yukawa couplings to the Higgs
+vacuum expectation value.  The Higgs coupling to a fermion is proportional to
+its mass, so the top quark has the largest direct fermionic coupling to the
+electroweak order parameter.  This fact is visible in Higgs phenomenology and in
+the role of top loops in Higgs production, electroweak corrections, and vacuum
+stability \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.
+
+The DeVries question is sharper: does the six-dimensional interior sector
+select the top quark as the fermion attached most directly to the order
+parameter?  A positive answer would require a source-theory map
+\begin{equation}
+  \mathcal F_{\rm top}:
+  \mathcal H_J
+  \longrightarrow
+  y_t,\quad m_t,\quad
+  \hbox{or a top-sector boundary datum},
+  \label{eq:top-sector-map}
+\end{equation}
+compatible with the same determinant that gives the W/Z pole-ratio clue.  This
+is an open target.  The present manuscript records the source-backed Standard
+Model fact and the required form of a DeVries explanation.

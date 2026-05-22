@@ -53,6 +53,8 @@ Do not use rhetorical contrast formulas. Avoid phrases such as â€œnot X, but Y,â
 Use Lean-style notes in `notes/lean/` when useful to trigger expert review. These notes are not compiled; they record obligations, assumptions, and open derivations.
 
 Progress discipline: avoid fake work. Each work block should leave manuscript text, source inventory, conceptual notes, review records, or explicit open issues in a better state.
+After each completed referee/advisor/implementation loop, compile the manuscript,
+run the relevant prose scans, and commit the loop as a checkpoint.
 
 ## Repository commands
 

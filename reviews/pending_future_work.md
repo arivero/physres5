@@ -8,9 +8,17 @@
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
+- Reconstruct the canonical full-gauge Higgs/electroweak interpolation: total \(D=11/10/9\), corresponding to internal KK \(7/6/5\), with \(SU(3)\times SU(2)\times U(1)\) in the massless-Higgs limit and \(SU(3)\times U(1)_{\rm em}\) in the infinitely broken limit.
+- Add the colourless electroweak \(D=7/6/5\) version, corresponding to internal KK \(3/2/1\), using six-dimensional superstring sources as the middle-dimension anchor.
+- Develop the top-quark subquestion: whether the interpolation or negative branch explains why the top quark is tied to the electroweak order-parameter scale.
 
 ## Completed in latest pass
 
+- Ran referee/advisor normalization round 2 and recorded the two referee reports plus advisor report in `reviews/`.
+- Added Appendix D Target VI for dimensional interpolation and a source-status table plus compatibility diagram in Appendix E.
+- Added the interval Schur-complement target as the active O10/O4 bridge.
+- Added concrete \(G_2\) entry targets for the adjoint entry, off-diagonal product, and order-parameter reference entry.
+- Added the pole-matching chain from source kernel to four-dimensional effective action to dressed transverse pole.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -37,6 +45,9 @@
 - Derive the determinant \(x^2+Jx-J=0\) from one concrete string/KK/boundary model.
 - Identify whether \(x_-(2)\) maps to \(v/\sqrt2\), a tachyonic Higgs mass parameter, a modulus/radion scale, or a compactification eigenvalue.
 - Determine whether \(x_-(3/4)\) has a Higgs-pole interpretation, a boundary-mode interpretation, or a compactification-mode interpretation.
+- Define the full-gauge internal \(7/6/5\) sectors and the colourless internal \(3/2/1\) sectors in the Higgs interpolation idea, then decide whether the interpolation parameter belongs to the electroweak vacuum ray, a compactification modulus, or a boundary Higgsing parameter.
+- Source-audit the six-dimensional superstring anchor and decide whether the colourless \(3/2/1\) count belongs in the main text or in an appendix.
+- Attach the top-sector observation to a precise object: top Yukawa, Higgs effective potential, vacuum stability, endpoint flavor data, or a branch scalar functional.
 - Prove or refute uniqueness of Eq. \(\eqref{eq:QJ}\) from trace/determinant plus high-spin assumptions.
 
 ## Source work

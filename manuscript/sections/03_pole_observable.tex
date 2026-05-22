@@ -1,5 +1,6 @@
 \section{Pole observable and electroweak scheme separation}
 \label{sec:pole}
+% Status: cited/open. Observable and placement convention are defined; numerical inputs require source audit.
 
 The observable used for comparison is the pole-mass ratio
 \begin{equation}
@@ -26,11 +27,11 @@ When experimental inputs are quoted in a variable-width Breit--Wigner convention
   \qquad V=W,Z .
   \label{eq:bw-pole-relation}
 \end{equation}
-This is one of the source-audit tasks of the project \cite{MartinRobertson2025}.
+This formula is part of the source audit for the pole comparison \cite{MartinRobertson2025}.
 
-\subsection{Scheme ledger}
+\subsection{Scheme map}
 
-The project uses the following ledger before comparing any weak-angle quantity:
+The comparison uses the following scheme map before any weak-angle quantity is interpreted:
 \begin{center}
 \small
 \begin{tabular}{p{0.23\linewidth}p{0.31\linewidth}p{0.34\linewidth}}
@@ -49,18 +50,23 @@ compactification eigenvalue & internal spectral datum & possible origin for \(\m
 
 The pole reading selects the first row.  The remaining rows are translation targets.  A future source-audited electroweak comparison should begin from the quoted experimental convention, map to complex pole quantities, form Eq.~\eqref{eq:spole}, and then compare with Eq.~\eqref{eq:sdvdef}.
 
-The project seed comparison uses
+The inherited numerical illustration uses
 \begin{equation}
   M_W=M_Z\sqrt{1-\sdV}.
   \label{eq:MWfromMZ}
 \end{equation}
-For the seed value \(M_Z=91.1880\,\GeV\), this gives \(M_W=80.3748\,\GeV\).  These numbers are placeholders inherited from the working draft and must be audited against the current electroweak source set before final submission.  The descriptive comparison places the construction near conventional pole-spectrum averages and away from the CDF-II W-mass value \cite{CDFII2022}.  The comparison has clue status in this draft.  The numerical appendix records the inherited seed arithmetic for provenance.
+The body of the paper defers a current numerical comparison until the quoted
+mass convention, complex-pole conversion, and uncertainty propagation are
+source-audited together.  Appendix~\ref{app:numerics} records
+the inherited arithmetic for provenance.  The CDF-II measurement is relevant
+only as an example showing that different line-shape inputs can move the
+descriptive pole-ratio comparison \cite{CDFII2022}.
 
 The Standard Model parameter literature distinguishes several vacuum and renormalization conventions.  In particular, pure \(\MSbar\) treatments may define the Higgs vacuum expectation value as the minimum of the loop-corrected effective potential in Landau gauge, eliminating tadpole diagrams at the cost of gauge-choice dependence in intermediate parameters \cite{MartinRobertson2025}.  Such scheme details are relevant for comparing a mass-ratio statement with Lagrangian parameters, while Eq.~\eqref{eq:spole} remains the pole-spectrum target.
 
 Loop effects are therefore a conceptual discriminator.  Corrections of order \(\alpha/\pi\) are of the same kind of size one expects when moving between pole, effective, and running definitions.  They ask what object the radical belongs to and at what scale it is to be read.  A high-scale reading would make the DeVries value analogous to a GUT boundary datum.  The pole-data reading makes it a low-energy spectral datum and transfers the burden to string/Kaluza--Klein dynamics.
 
-\subsection{Referee-facing claim}
+\subsection{Limited claim}
 
 The formal claim of this section is limited:
 \begin{equation}
@@ -70,5 +76,3 @@ The formal claim of this section is limited:
   \label{eq:pole-claim-limited}
 \end{equation}
 Every comparison to \(\MSbar\) inputs, effective angles, or line-shape masses requires an explicit map.  Thus a disagreement among schemes diagnoses the placement of \(\sqrt{J^2+4J}\) and the scale at which the radical is read.
-
-\paragraph*{Section status.}  The observable and placement convention are defined.  The numerical input table requires a current electroweak source audit before final claims.

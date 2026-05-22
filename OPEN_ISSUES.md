@@ -8,13 +8,27 @@
 
 **Success criterion.** A derivation from the gauge-Higgs sector that yields the ordered pair \((J_W,J_Z)=(3/4,2)\) directly and rules out post-selection.
 
-## O2. Pole-mass scheme
+## O2a. Pole convention formula
 
-**Question.** What exact mass convention makes the numerical comparison meaningful?
+**Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?
 
-**Current working idea.** Use complex pole positions for the descriptive low-energy spectral clue. Treat Breit-Wigner/on-shell and running weak angle inputs as scheme transformations. The comparison to CDF-II is descriptive and source-audit pending.
+**Current working idea.** Use complex pole positions for the descriptive low-energy spectral clue. Treat Breit-Wigner/on-shell and running weak angle inputs as scheme transformations. The manuscript currently writes
+\[
+s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole},
+\qquad
+\Delta^{-1}_{T,V}(s_V)=0.
+\]
+The remaining convention task is to state the exact relation to the quoted variable-width Breit--Wigner parameters used for W and Z inputs.
 
-**Success criterion.** A section with formulas for converting conventional quoted masses into pole quantities, including uncertainty propagation and a table of current inputs.
+**Success criterion.** A source-backed formula section states the complex-pole convention, the Breit--Wigner translation, and the conditions under which \(M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2\) is used.
+
+## O2b. Current electroweak input audit
+
+**Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
+
+**Current working idea.** Keep the inherited numerical arithmetic as provenance in the appendix while the body defers a current comparison. The CDF-II comparison remains descriptive until all inputs share a pole convention and propagated uncertainty.
+
+**Success criterion.** A table with source, quoted convention, quoted masses and widths, converted pole masses, uncertainty propagation, and the resulting \(\sin^2\theta_{\rm pole}\). This belongs to a later calculation phase approved by the user.
 
 ## O3. Negative branch and Higgs scale
 
@@ -69,6 +83,42 @@ interval variational data supply a boundary kernel \(K_J^{\rm int}(\lambda)\), b
 \]
 The unresolved steps are the derivation of these three entries, the ordered electroweak assignment, and the scalar map \(u_-(J)\mapsto\mathcal F_{\rm KK}\).
 
+**Schur-complement refinement.** The advisor route adds a concrete reduction target. Let \(L_J\) be a tower, bulk, or heavy-sector operator coupled to a boundary light sector by \(V_J\). The effective boundary kernel is
+\[
+K^{\rm eff}_J(\lambda)
+=K^{\rm bdry}_J(\lambda)
+-V_J^\dagger(\lambda-L_J)^{-1}V_J .
+\]
+The unresolved derivation is a source-backed choice of \(K^{\rm bdry}_J\), \(L_J\), \(V_J\), and inner product such that
+\[
+K^{\rm eff}_J(\lambda)
+\longrightarrow
+\begin{pmatrix}
+\lambda&-\sqrt J\\
+-\sqrt J&\lambda+J
+\end{pmatrix}.
+\]
+This route should be tested first against interval boundary kinetic terms and brane-localized Higgsing data in the Csaki--Hubisz--Meade fragments.
+
+**Dimensional Schur-complement refinement.** Round 2 makes this the active
+O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
+sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact
+operator \(L_J\), a boundary kernel \(K^{\rm bdry}_J(\lambda)\), and a coupling
+map \(V_J\).  The required reduction is
+\[
+K^{\rm eff}_J(\lambda)
+=K^{\rm bdry}_J(\lambda)
+-V_J^\dagger(\lambda-L_J)^{-1}V_J
+\longrightarrow
+\begin{pmatrix}
+\lambda&-\sqrt J\\
+-\sqrt J&\lambda+J
+\end{pmatrix}.
+\]
+The next proof step is to identify \(K^{\rm bdry}_J\), \(L_J\), \(V_J\), the
+inner product, and the decoupling or block-diagonal treatment of additional
+light channels.
+
 **\(G_2\) refinement.** The local \(G_2\) route now has a parallel kernel:
 \[
 K_J^{G_2}(\lambda)=
@@ -111,12 +161,27 @@ plus the ordered electroweak map, pole placement, negative-branch scalar map, an
 
 **Success criterion.** Identify a dynamical object whose eigenvalue or pole condition is naturally evaluated at the W/Z pole spectrum, or else move the construction to a high-scale boundary interpretation.
 
-**Ledger refinement.** Sec. VI.A now splits the problem into four arrows:
+**Chain refinement.** Sec. VI.A now splits the problem into four arrows:
 \[
 \mathcal S\to\mathcal O_J\to\mathcal M_J\to\{x_\pm(J)\}\to
 (\sin^2\theta_{\rm pole},\mathcal F_{\rm sc},\mathcal C_{\rm top}).
 \]
 The exact algebra covers the branch arrow. The source-theory, two-channel reduction, and physical-assignment arrows remain open.
+
+**Matching-theorem refinement.** Round 2 makes the pole-placement theorem a
+three-arrow matching chain:
+\[
+\mathcal S_r
+\longrightarrow
+K_{J,r}^{\rm bare}(\lambda)
+\longrightarrow
+\Gamma_{\rm eff}^{(4)}[H,W,B]
+\longrightarrow
+\Delta^{-1}_{V,T}(s)\big|_{s=s_{W,Z}} .
+\]
+The first arrow is route-specific source reduction.  The second arrow is
+four-dimensional effective matching.  The third arrow is the dressed transverse
+pole condition.  The pole reading requires all three arrows in one scheme.
 
 ## O5. Electroweak ray and forbidden deformations
 
@@ -150,4 +215,74 @@ The exact algebra covers the branch arrow. The source-theory, two-channel reduct
 
 **Success criterion.** A referee can locate the exact missing proof for each speculative step and see which manuscript claim depends on it.
 
-**Status-ledger refinement.** Sec. IX now adds a claim hierarchy, minimum viable derivation chain, route-selection ledger, and referee-facing tests.  The compiled draft reached 62 pages; the remaining burden is derivational rather than architectural.
+**Status refinement.** Sec. IX now presents the conclusion and analytical status, while Appendix D holds the claim hierarchy, minimum derivation chain, and derivation checklist. The remaining burden is derivational.
+
+## O10. Higgs interpolation \(D=11\to D=10\to D=9\) and colourless \(D=7\to D=6\to D=5\)
+
+**Question.** Can the Higgs/electroweak sector be reconstructed as an interpolation whose full-gauge version has total dimensions \(D=11,10,9\) and KK internal dimensions \(7,6,5\), while its colourless electroweak version has total dimensions \(D=7,6,5\) and KK internal dimensions \(3,2,1\)?
+
+**Local source trail.** The closest local ChatGPT/source note is `/home/codexssh/phys3/sources/unbroken_susy.md`, Section V, lines 69--71. It records the claim that D=11 lacks the required electroweak chirality and that electroweak \(SU(2)\times U(1)\) interpolates, under a W-mass deformation, between descriptions labeled d=9 and D=11. Witten's KK fragments give the primary source trail: `context/source_fragments/witten1981/pages_001-010.md` states the seven-extra-dimensional minimum for \(SU(3)\times SU(2)\times U(1)\), and `context/source_fragments/witten1981/pages_011-017.md` states the associated fermion quantum-number obstruction. The same Witten fragment contains the \(SU(3)\times U(1)\) symmetry address around the five-dimensional sphere construction.
+
+**Current working idea.** Treat this as a source-audit and reconstruction task. The massless-Higgs or unbroken-electroweak limit carries the full \(SU(3)\times SU(2)\times U(1)\) symmetry and belongs to Witten's seven-extra-dimensional KK setting, hence total \(D=11\). The formal infinite-Higgs or infinitely broken limit leaves \(SU(3)\times U(1)_{\rm em}\) and belongs to a five-extra-dimensional KK setting, hence total \(D=9\). The working DeVries construction should be tested as an internal six-dimensional interpolation between those endpoints, hence total \(D=10\). In this form the model may avoid Witten's seven-dimensional fermion obstruction because its physical interior point carries six extra dimensions and the Witten obstruction applies to the seven-extra-dimensional unbroken compactification.
+
+**Colourless electroweak count.** If colour is treated as an external spectator sector, the corresponding count is
+\[
+n_{\rm KK}^{\rm ew}=3:\ SU(2)\times U(1),
+\qquad
+n_{\rm KK}^{\rm ew}=2:\ \hbox{DeVries electroweak interpolation sector},
+\qquad
+n_{\rm KK}^{\rm ew}=1:\ U(1)_{\rm em}.
+\]
+This gives the total-dimensional chain \(D=7\to D=6\to D=5\). The middle \(D=6\) case has a string-theory source trail through six-dimensional superstring vacua and dualities, including type IIA on K3, heterotic on \(T^4\), and six-dimensional anomaly/string-universality constraints. The colour-inclusive \(D=11\to D=10\to D=9\) chain remains the canonical narrative when the full \(SU(3)\) colour factor is kept inside the KK symmetry count.
+
+**Top-quark subquestion.** The interpolation should also explain why the top quark sits at the electroweak scale. In Standard Model source language, fermion masses arise from Yukawa couplings to the Higgs vev, the top has the largest Higgs coupling, and top loops strongly affect Higgs production and vacuum stability. The DeVries version of the question is whether the six-dimensional interior or the negative-branch scalar datum selects the top as the fermion most directly tied to the electroweak order parameter.
+
+**Required reconstruction.**
+
+1. Define the seven-extra-dimensional endpoint: field content, \(SU(3)\times SU(2)\times U(1)\) symmetry, Witten fermion obstruction, and massless-Higgs or unbroken-electroweak limit.
+2. Define the five-extra-dimensional endpoint: \(SU(3)\times U(1)_{\rm em}\), compact-space candidate, fermion statement, and infinite-Higgs or infinitely broken limit.
+3. Define the six-extra-dimensional interior model: gauge group, scalar/order-parameter variable, compactification data, and relation to Witten's seven-dimensional fermion obstruction.
+4. State the interpolation parameter in the gauge-Higgs Lagrangian, boundary condition, or compactification data.
+5. Relate the interpolation to the current DeVries branch language, especially the role of \(x_-(J)\) as a possible scalar/order-parameter datum.
+6. Give the colourless electroweak \(3/2/1\) count and specify when colour is a spectator sector.
+7. Connect the top Yukawa/electroweak-scale fact to the interpolation, or record that the interpolation has no derived top-sector consequence.
+8. Identify primary sources for each endpoint before any manuscript claim is promoted beyond conjecture.
+
+**Success criterion.** A manuscript subsection or appendix gives a source-backed endpoint dictionary
+\[
+n_{\rm KK}=7:\ SU(3)\times SU(2)\times U(1),
+\qquad
+n_{\rm KK}=6:\ \hbox{DeVries interpolation sector},
+\qquad
+n_{\rm KK}=5:\ SU(3)\times U(1)_{\rm em},
+\]
+plus the colourless electroweak dictionary
+\[
+n_{\rm KK}^{\rm ew}=3:\ SU(2)\times U(1),
+\qquad
+n_{\rm KK}^{\rm ew}=2:\ \hbox{DeVries electroweak interpolation sector},
+\qquad
+n_{\rm KK}^{\rm ew}=1:\ U(1)_{\rm em}.
+\]
+The same subsection must give a precise interpolation map compatible with the electroweak ray, the ordered \((J_H,J_{\rm adj})=(3/4,2)\) assignment problem, the negative-branch scalar target, and the top-quark electroweak-scale subquestion.
+
+**Round 2 refinement.** Appendix E now states a source-status table and a
+commutative compatibility diagram.  Appendix D now includes Target VI:
+dimensional interpolation.  The middle-dimensional data required at a DeVries
+point are
+\[
+\mathfrak I_J(t_\star)
+=
+\big(
+\mathcal B(t_\star),\,
+\mathcal H_J(t_\star),\,
+K_J(t_\star,\lambda),\,
+\mathcal R_{\rm pole}
+\big),
+\qquad
+\mathcal H_J(t_\star)=\operatorname{span}\{h_J,a_J\}.
+\]
+Thus the \(D=10\) and colourless \(D=6\) middle lines are active
+reconstruction targets: they must provide a compact, boundary, or singular
+object \(\mathcal B\), the two-channel light subspace, the DeVries kernel, and
+the pole-matching rule.

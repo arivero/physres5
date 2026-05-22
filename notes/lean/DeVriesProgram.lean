@@ -1,9 +1,9 @@
 /-!
 Lean-style research notes for the DeVries manuscript.
 
-These files are notes to self. They sit outside any Lean project and remain
-uncompiled. The notation is used to force precise dependencies, hypotheses, and
-open obligations while the manuscript remains prose and LaTeX.
+These files are research memory. They sit outside any Lean project and stay
+outside compilation. The notation records precise dependencies,
+hypotheses, and open obligations while the manuscript remains prose and LaTeX.
 
 Purpose: trigger expert review. Each axiom below marks a place where the paper
 owes either a derivation, a sourced statement, or an explicit conjectural label.
@@ -161,6 +161,57 @@ def negativeBranchScalarTarget (S : SourceTheory) : TheoremTarget :=
     conclusion := scalarMapProblem
     sourceStatus := True
     failureMode := True }
+
+/- Higgs-sector dimensional interpolation note.
+   Local source trail: /home/codexssh/phys3/sources/unbroken_susy.md,
+   Section V, lines 69--71, plus Witten 1981 fragments. The full-gauge target is
+   total D=11/10/9 with internal KK=7/6/5:
+     nKK=7: SU(3) x SU(2) x U(1), massless-Higgs/unbroken endpoint;
+     nKK=6: DeVries interior sector;
+     nKK=5: SU(3) x U(1)_em, infinitely broken endpoint.
+   The colourless electroweak target is total D=7/6/5 with internal KK=3/2/1.
+   This remains source-audit pending before manuscript use. -/
+inductive DimensionalEndpoint where
+  | kk5
+  | kk6
+  | kk7
+
+structure HiggsInterpolationProblem where
+  masslessHiggsEndpoint : DimensionalEndpoint
+  devriesInterior : DimensionalEndpoint
+  infiniteBreakingEndpoint : DimensionalEndpoint
+  controlParameter : Type
+  colourInclusiveCount : Prop
+  electroweakOnlyCount : Prop
+  sixDimensionalStringAnchor : Prop
+  electroweakRay : Prop
+  wittenFermionObstructionAccount : Prop
+  scalarBranchAccount : Prop
+  schurComplementAccount : Prop
+  poleMatchingAccount : Prop
+  topQuarkScaleAccount : Prop
+
+def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
+  P.colourInclusiveCount ∧
+  P.electroweakOnlyCount ∧
+  P.sixDimensionalStringAnchor ∧
+  P.electroweakRay ∧
+  P.wittenFermionObstructionAccount ∧
+  P.scalarBranchAccount ∧
+  P.schurComplementAccount ∧
+  P.poleMatchingAccount ∧
+  P.topQuarkScaleAccount
+
+/- Obligation:
+   Define the KK7 and KK5 endpoints, identify the six-dimensional interior
+   source theory, state its relation to the Witten seven-dimensional fermion
+   obstruction, and relate the interpolation parameter to the negative branch
+   before this enters manuscript prose. Also define the colourless electroweak
+   3/2/1 count and decide whether the top Yukawa/electroweak scale fact is
+   explained by the same interpolation. Round 2 adds the Schur-complement
+   account and the pole-matching account as required fields. -/
+axiom higgs_KK7_KK6_KK5_interpolation_requires_source_audit :
+  ∃ P : HiggsInterpolationProblem, higgsSectorInterpolatesKK7KK6KK5 P
 
 def globalCompatibilityTarget (S : SourceTheory) : TheoremTarget :=
   { hypotheses := True

@@ -43,6 +43,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 5 | 4 | 4 | 5 | 4 | 5 | Compiled 46-page draft; KK interval section expanded with variational boundary data, interval kernel, entry dictionary, electroweak assignment theorem, and scalar-branch target. |
 | 6 | 5 | 4 | 5 | 4 | 5 | Compiled 49-page draft after \(G_2\) expansion; singular support, Higgs-bundle variables, local kernel, anomaly/global checks, and scalar-branch map added. |
 | 7 | 5 | 5 | 5 | 5 | 5 | Compiled 62-page draft; route-comparison section, expanded negative-branch scalar-functional analysis, and referee-facing status ledger added. |
+| 8 | 5 | 5 | 5 | 5 | 5 | Added O10 dimensional-interpolation theorem target, source-status table, Schur-complement bridge, \(G_2\) entry targets, and pole-matching chain; determinant and assignment derivations remain open. |
 
 ## Scoring rubric
 
@@ -64,3 +65,4 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the theorem-target appendix give a referee a complete map of assumptions, consequences, and missing derivations?
 - Does the three-route comparison ledger constrain future string/Kaluza--Klein work tightly enough?
 - Which source-backed historical material should be added next to connect seventies string theory, Regge spectra, endpoint charges, and electroweak structure?
+- Does the O10 dimensional Schur-complement target give a concrete enough bridge among dimensional interpolation, the ordered \(J\)-assignment, the DeVries kernel, and pole placement?

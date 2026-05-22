@@ -7,7 +7,7 @@
 - Compare with the pole observable \(1-M_W^2/M_Z^2\). Treat running weak mixing angles, on-shell conventions, and Breit-Wigner inputs as scheme-dependent material requiring explicit translation.
 - The vacuum scale \(v\) is radial. The DeVries number is treated as angular/projective.
 - The construction must preserve the full electroweak broken-to-unbroken ray. Independent one-boson massless limits sit outside the working construction unless a section analyzes them explicitly.
-- The W/Z assignment remains a central conceptual calculation. A plausible route uses the Higgs doublet and adjoint/current representation data rather than the observed vector spin.
+- The W/Z assignment remains a central conceptual calculation. A plausible route uses the Higgs doublet and adjoint/current representation data; observed vector spin alone is insufficient for the \(J=3/4\) sample.
 - The negative root is analytically important. Its relation to the Higgs/order-parameter scale remains open.
 - Casimir language is a clue and construction. The project focus is electroweak, still related to Kaluza-Klein, strings, branes, and G2 singularities.
 - Generation structure has the working flavor caveat: an SO(32)-flavor interpretation may or may not be compatible with compactification topology.
@@ -21,9 +21,10 @@
 - The conceptual burden is radical placement: identify what object carries \(\sqrt{J^2+4J}\), at which scale, and under which scheme.
 - The string-theory posture should recover the older dual-model and Kaluza-Klein particle-structure ambition while keeping conjectures labeled.
 - Use affirmative exposition. Correct technical errors directly. Avoid rhetorical negative/contrast formulas and adjectival positioning.
-- Keep Lean-style notes in `notes/lean/` for obligations, theorem targets, and expert-trigger prompts. These notes are working memory and are not compiled.
+- Keep Lean-style notes in `notes/lean/` for obligations, theorem targets, and expert-trigger prompts. These notes are working memory kept outside Lean compilation.
 - Maintain referee/advisor review loops, including the score table, so conceptual quality and open gaps are visible across iterations.
 - For every substantial loop, call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation; record their reports in `reviews/`.
+- After each completed referee/advisor/implementation loop, compile, run prose scans, and commit the loop checkpoint.
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
 
 ## Resume state after context renewal
@@ -39,6 +40,10 @@
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and referee-facing status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.
 - Editorial next work: run `reviews/paper_normalization_plan.md` to turn the reference draft from workshop/scaffolding prose into paper prose.
+- Added pending reconstruction issue O10: the canonical full-gauge interpolation is total \(D=11\to D=10\to D=9\), corresponding to internal KK \(7\to6\to5\), from full \(SU(3)\times SU(2)\times U(1)\) through a DeVries six-dimensional interior to \(SU(3)\times U(1)_{\rm em}\). Treat this as source-audit pending; start from `/home/codexssh/phys3/sources/unbroken_susy.md` lines 69--71 and Witten 1981 fragments.
+- Also preserve the colourless electroweak count: total \(D=7\to D=6\to D=5\), corresponding to internal KK \(3\to2\to1\), with six-dimensional superstrings as the middle-dimensional source anchor.
+- Round 2 converted O10 into a dimensional Schur-complement target: the \(D=10/6\) middle line must provide \(\mathcal B(t_\star)\), \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), \(K_J(t_\star,\lambda)\), and the pole-matching rule.
+- New O10 subquestion: explain why the top quark sits at the electroweak scale. Source-backed SM facts are top Yukawa dominance, nondecoupling, and top sensitivity in Higgs/vacuum-stability physics; any DeVries explanation remains open.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

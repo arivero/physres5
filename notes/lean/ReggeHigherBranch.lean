@@ -118,4 +118,20 @@ constant targetVIII_IX_sector_package : SectorDualityPackage
 def targetVIII_IX_shared_obligations : Prop :=
   sectorDualityPackageReady targetVIII_IX_sector_package
 
+structure O18ClosureStatus where
+  targetVIIITowerRecorded : Prop
+  sectorLabelSeparated : Prop
+  firstHigherSlotRecorded : Prop
+  particleAssignmentRoutedThroughSourcePackage : Prop
+  colliderLedgerQuarantined : Prop
+  residualDerivationsRoutedToOpenTargets : Prop
+
+def o18ClosedAsBookkeeping (C : O18ClosureStatus) : Prop :=
+  C.targetVIIITowerRecorded ∧
+  C.sectorLabelSeparated ∧
+  C.firstHigherSlotRecorded ∧
+  C.particleAssignmentRoutedThroughSourcePackage ∧
+  C.colliderLedgerQuarantined ∧
+  C.residualDerivationsRoutedToOpenTargets
+
 end DeVries.ReggeHigherBranch

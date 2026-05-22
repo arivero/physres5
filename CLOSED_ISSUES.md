@@ -200,7 +200,8 @@ negative-branch, and top-sector obligations in Lean-style notes.
 
 **Residual target.** Manuscript uses of prTalks-derived material require
 primary local literature or an explicit project-source label.  The active
-physics obligations remain in O1, O18, O19, O20, and Appendix~D Target~VI.
+physics obligations remain in O1, O19, O20, Appendix~D Target~VI, and
+Appendix~D Target~VIII.
 
 ## O12. Parent-Workspace Source-Note Validation
 
@@ -216,7 +217,8 @@ custodial, string/Regge, SO(32), and dimensional-interpolation guardrails.
 
 **Residual target.** Parent-derived manuscript claims require primary-source
 support or explicit project-source status.  The residual physics obligations
-remain in O1, O3, O4, O18, O19, O20, and Appendix~D Target~VI.
+remain in O1, O3, O4, O19, O20, Appendix~D Target~VI, and Appendix~D
+Target~VIII.
 
 ## O16. SO(32) Flavor/String Completion Boundary
 
@@ -260,3 +262,42 @@ construction contributes the pole-ratio clue \(\sPole\).
 source-theory corollary.  A later route may still derive scalar/vector
 normalization, electromagnetic generator normalization, charge lattice, and
 the matching pair \((Q_\alpha,\Delta_{\rm th})\) from one source package.
+
+## O18. The \(s=3/2\) positive state and a Regge completion
+
+**Closed in Loop 51.**
+
+**Closure evidence.** Section~VI.B and Appendix~D Target~VIII now give the
+Regge-intercept bookkeeping required for the first higher positive branch:
+\[
+M^2_{N_{\rm osc},j,\sigma}
+=
+\mu^2x_\sigma\!\big(j(j+1)\big)
++\frac{N_{\rm osc}}{\alpha'}
++\Delta^{\rm Regge}_{N_{\rm osc},j,\sigma},
+\qquad \sigma=\pm .
+\]
+They separate the DeVries sector label \(j\), the oscillator or tower level
+\(N_{\rm osc}\), and the physical trajectory spin supplied by the source
+theory.  Target~VIII also records the first higher slot,
+\[
+M^2_{0,3/2,+}
+=
+\mu^2x_+(15/4)+\Delta^{\rm Regge}_{0,3/2,+},
+\]
+and routes every particle-level interpretation through the source package
+\[
+\mathfrak R_j=(K_j,\alpha',P_{\rm surv},\mathcal B_{\rm ND},
+\mathcal Q,\mathcal T,\chi_{\rm spin}).
+\]
+The Biekotter--Heinemeyer--Weiglein \(95.4\) GeV diphoton source remains a
+collider-ledger entry, with branch identity, gauge representation, survival
+projection, production, decay, width, and exclusions supplied by a future source
+theory.
+
+**Residual target.** O18 is closed as a manuscript-architecture and
+bookkeeping issue.  The derivations remain active in narrower targets: O1 for
+the ordered low-sector W/Z sampling, O4 for the source kernel and common slope,
+O8 for pole placement and matching, O19 for the brane-scaling and
+boundary-duality test, and Appendix~D Target~VIII for the \(j=3/2\) particle
+assignment and future upgrades of the Regge source package.

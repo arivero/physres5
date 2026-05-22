@@ -985,83 +985,6 @@ endpoint, \(G_2\), alpha, or Regge route must use the same remainder form before
 it appears as a physical claim.  The CHM interval square is the current active
 test case for fixing the field basis and matching map.
 
-## O18. The \(s=3/2\) positive state and a Regge completion
-
-**Provenance.** Human operator note (2026-05-22).  Awareness note: keep this on
-the books.  Regge is the priority mechanism.
-
-**Awareness.** Once \(\mu\) and the electroweak pole placement are assumed, the
-positive branch defines a slot for every sector label:
-\[
-M_+(s)=\mu\sqrt{x_+\!\big(s(s+1)\big)},\qquad
-M_+(\tfrac32)=\mu\sqrt{x_+(15/4)}.
-\]
-Adjacent notes compare the corresponding numerical value with a low-mass
-diphoton phenomenology note.  That comparison belongs to a later source-audited
-phenomenology phase.  The current manuscript use is the symbolic higher-slot
-obligation.
-
-**Identity is open.**  The \(SU(2)\times U(1)\) vector spectrum already assigns
-the Standard Model \(W\) and \(Z\) slots.  The identity of the \(s=3/2\) branch
-belongs to the branch-to-particle assignment problem (O1).  Operator hypothesis
-to test: the \(s=3/2\) positive slot may belong to a sector with exotic
-charge-\(4/3\) bookkeeping, with the secular label read as a representation
-index distinct from physical spin.  This hypothesis requires an
-\(SU(3)\times SU(2)\times U(1)\) representation, chirality or vectorlike status,
-anomaly ledger, mass-generation rule, production modes, decay modes, widths, and
-exclusions.
-
-**Regge framing (priority).**  Promote each \((j,\pm)\) root to a Regge intercept,
-\[
-M^2_{N_{\rm osc},j,\pm}
-=
-\mu^2 x_\pm\!\big(j(j+1)\big)
-+\frac {N_{\rm osc}}{\alpha'}
-+\Delta^{\rm Regge}_{N_{\rm osc},j,\pm},
-\]
-with \(j\) a DeVries-sector label and \(N_{\rm osc}\) the oscillator or tower
-level.  The physical trajectory spin has to be supplied by the source theory.
-This is the leading candidate dynamical origin (ties to O4) and the natural home
-for higher slots such as \(s=3/2\).
-
-**Collider-source caution.**  A light charged or coloured chiral state faces a
-separate collider and representation burden.  The manuscript needs a
-compatibility ledger before using a low-mass diphoton, charge-\(4/3\), or
-coloured-state reading: primary CMS/ATLAS sources, the phenomenology paper,
-local/global significance, look-elsewhere status, pair-production bounds,
-single-production assumptions, decay channels, and widths.  Records: O1
-(assignment), O4 (dynamical origin), the closed prTalks source-note ledger,
-and Appendix D Target VIII.  Companion lean note:
-`notes/lean/ReggeHigherBranch.lean`.
-
-**Loop 17 normalization.**  The manuscript now records O18 as
-Target VIII, a Regge-intercept survival and higher-branch-slot theorem target.
-The main correction is notation: \(j\) labels the DeVries sector,
-\(N_{\rm osc}\) labels the oscillator or KK tower level, and physical spin comes
-from the source theory.  The first higher positive slot is a projection and
-assignment problem until a source route derives the kernel, common slope,
-projection rule, and gauge quantum numbers.
-
-**Loop 21 source-audit refinement.** Biekotter--Heinemeyer--Weiglein supply a
-neutral \(95.4\) GeV diphoton phenomenology ledger source for Target VIII.
-The DeVries branch identity, projection survival, gauge representation, and
-production/decay ledger remain source-theory obligations.
-
-**Loop 36 sector-duality refinement.** O18 and O19 now share a source package
-\[
-\mathfrak R_j=
-\big(K_j,\alpha',P_{\rm surv},\mathcal B_{\rm ND},
-\mathcal Q,\mathcal T,\chi_{\rm spin}\big),
-\]
-where \(P_{\rm surv}\) is the projection or BRST/GSO survival rule,
-\(\mathcal B_{\rm ND}\) is the Neumann--Dirichlet boundary-condition map,
-\(\mathcal Q\) records charges, \(\mathcal T\) records tensions, and
-\(\chi_{\rm spin}\) maps a DeVries sector label to a putative rotating-brane
-angular momentum.  The \(j=3/2\) slot remains an assignment ledger entry
-pending \(\mathfrak R_{3/2}\), gauge quantum numbers, production, decay, width,
-and collider-source data.  Biekotter--Heinemeyer--Weiglein remain a collider
-ledger source, with branch identity supplied by the source theory.
-
 ## O19. Brane-scaling identity of the two branches
 
 **Provenance.** Human operator note (2026-05-22), from a `../physres6`
@@ -1112,7 +1035,7 @@ rotating-brane exponent source, the branch survival rule, the negative-branch
 mass or scalar-functional reading, and the boundary-condition duality map.
 
 **Loop 36 sector-duality refinement.** Target IX now depends on the same
-\(\mathfrak R_j\) source package as O18 plus the axis map
+\(\mathfrak R_j\) source package as Target~VIII plus the axis map
 \[
 \chi_{\rm spin}:\ j\mapsto s_{\rm br}(j),
 \qquad

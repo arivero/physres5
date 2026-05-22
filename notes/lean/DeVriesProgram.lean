@@ -111,6 +111,32 @@ def electroweakMassMapTheorem (M : ElectroweakMassMap) : Prop :=
 axiom electroweak_mass_map_required :
   ∃ M : ElectroweakMassMap, electroweakMassMapTheorem M
 
+/- Loop 13 electroweak ray admissibility.
+   The allowed deformation is one radial gauge-Higgs parameter at fixed
+   projective coupling direction, with a persistent photon null mode and
+   simultaneous W/Z mass collapse. -/
+structure ElectroweakRayAdmissibility where
+  radialParameter : Type
+  fixedCouplingDirection : Prop
+  chargedMassScalesRadially : Prop
+  neutralMassScalesRadially : Prop
+  photonNullDirectionPersists : Prop
+  orderedSamplingCommutesWithRay : Prop
+  poleMatchingPreservesRay : Prop
+  separateCouplingPathsClassified : Prop
+
+def electroweakRayAdmissible (R : ElectroweakRayAdmissibility) : Prop :=
+  R.fixedCouplingDirection ∧
+  R.chargedMassScalesRadially ∧
+  R.neutralMassScalesRadially ∧
+  R.photonNullDirectionPersists ∧
+  R.orderedSamplingCommutesWithRay ∧
+  R.poleMatchingPreservesRay ∧
+  R.separateCouplingPathsClassified
+
+axiom electroweak_ray_admissibility_required :
+  ∃ R : ElectroweakRayAdmissibility, electroweakRayAdmissible R
+
 /- Correct representation posture:
    gauge bosons arise from adjoint gauge fields;
    the J=3/4 datum must enter through the Higgs/order-parameter side or through
@@ -290,6 +316,9 @@ structure HiggsInterpolationProblem where
   schurComplementAccount : Prop
   poleMatchingAccount : Prop
   topQuarkScaleAccount : Prop
+  electroweakRayParameterDistinct : Prop
+  dimensionalParameterDistinct : Prop
+  dimensionalToElectroweakMap : Prop
 
 def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
   P.colourInclusiveCount ∧
@@ -300,7 +329,10 @@ def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
   P.scalarBranchAccount ∧
   P.schurComplementAccount ∧
   P.poleMatchingAccount ∧
-  P.topQuarkScaleAccount
+  P.topQuarkScaleAccount ∧
+  P.electroweakRayParameterDistinct ∧
+  P.dimensionalParameterDistinct ∧
+  P.dimensionalToElectroweakMap
 
 /- Obligation:
    Define the KK7 and KK5 endpoints, identify the six-dimensional interior
@@ -309,7 +341,9 @@ def higgsSectorInterpolatesKK7KK6KK5 (P : HiggsInterpolationProblem) : Prop :=
    before this enters manuscript prose. Also define the colourless electroweak
    3/2/1 count and decide whether the top Yukawa/electroweak scale fact is
    explained by the same interpolation. Round 2 adds the Schur-complement
-   account and the pole-matching account as required fields. -/
+   account and the pole-matching account as required fields. Loop 13 separates
+   the electroweak ray parameter from the dimensional parameter until a source
+   map relates them. -/
 axiom higgs_KK7_KK6_KK5_interpolation_requires_source_audit :
   ∃ P : HiggsInterpolationProblem, higgsSectorInterpolatesKK7KK6KK5 P
 

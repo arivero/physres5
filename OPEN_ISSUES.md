@@ -331,6 +331,27 @@ named unresolved obligation.
 
 **Success criterion.** A precise statement in the gauge-Higgs Lagrangian and the mass matrix.
 
+**Loop 13 rank-and-ray refinement.** Appendix D now states O5 as an
+electroweak ray admissibility theorem.  The tree-level ray is
+\[
+H_t=\frac{1}{\sqrt2}\binom{0}{t v+h},
+\qquad
+g(t)=g,\qquad g'(t)=g',
+\]
+with
+\[
+M_W^2(t)=t^2\frac{g^2v^2}{4},
+\qquad
+M_Z^2(t)=t^2\frac{(g^2+g'^2)v^2}{4},
+\qquad
+M_\gamma^2(t)=0.
+\]
+A source route is ray-admissible when one radial parameter controls the charged
+and neutral massive vector sectors, the photon remains the null mode, and the
+ordered sampling maps commute with the \(t\to0\) limiting projective datum.
+Coupling-space paths such as \(g\to0\), \(g'\to0\), \(g'/g\to0\), and
+custodial-breaking mass shifts are separate deformation problems.
+
 ## O6. Flavor boundary
 
 **Question.** How should the Rivero flavor/endpoint material be represented while keeping generation-topology claims conditional?
@@ -457,6 +478,22 @@ they name the required reduced source sector, light subspace, kernel, ordered
 assignment, and pole-matching rule.  The endpoint dictionary depends on the
 same electroweak assignment theorem recorded in O1.
 
+**Loop 13 parameter refinement.** The electroweak ray parameter and the
+dimensional interpolation parameter are distinct theorem data:
+\[
+t_{\rm EW}\equiv\hbox{gauge-Higgs radial coordinate},
+\qquad
+t_{\rm dim}\equiv\hbox{compact, boundary, brane, or singular coordinate}.
+\]
+A source theory must derive either a map
+\[
+\chi:\ t_{\rm dim}\mapsto t_{\rm EW}
+\]
+or a joint source variable \(u\mapsto(t_{\rm dim}(u),t_{\rm EW}(u))\).  A
+dimensional family may still be useful when it derives a compactification
+sector or a kernel, but control of the electroweak ray and pole ratio requires
+this additional map.
+
 ## O11. Adjacent `prTalks` source-note validation
 
 **Question.** Which user-provided `../prTalks` PDFs contain conceptual material that should survive into the manuscript program, and which claims require primary-source upgrades?
@@ -496,3 +533,45 @@ source-specific task makes them relevant.
 `notes/lean/AdjacentWorkspaceGuardrails.lean` record the audited content and
 the theorem targets.  Parent-derived claims promoted to manuscript prose must
 carry either primary-source support or an explicit project-source label.
+
+## O13. Casimir keyword load versus derivational role
+
+**Provenance.** Human operator note (2026-05-22), added out of band while the
+loop runs.  Treat as a directive, not auto-generated content.
+
+**Question.** Does the manuscript over-weight the keyword "Casimir" in its
+framing relative to the work that the Casimir structure actually does?
+
+**Observation.** The word appears about fifteen times in roughly seventeen
+thousand body words, and it is concentrated in the title and the
+Sec.~II operator name.  The body is carried by `pole` (\(\sim\)238), `g_2`
+(\(\sim\)118), `higgs` (\(\sim\)102), `string` (\(\sim\)99), and `brane`
+(\(\sim\)97), while the physical target, the weak mixing angle, is named about
+eleven times.  The construction derives nothing from a Casimir operator: only
+the input number \(J=s(s+1)\) is a quadratic-Casimir eigenvalue, and the matrix
+\(Q(J)\) is an ansatz fed by that number.  The branch \(s=\tfrac12\to J=\tfrac34\)
+and \(s=1\to J=2\) is the one place the Casimir reading carries weight, and that
+identification is exactly the unproven ordered-assignment target O1.
+
+**Internal corroboration.** The loop-13 Referee~B report lists \(J\) as a
+"Casimir/current datum, overlap product, or compactification charge with one
+normalization," i.e. one of three interchangeable readings of the same number.
+This matches the project stance in `AGENTS.md` and `PROJECT_BRIEF.md`, where
+Casimir language is a construction and historical clue and the physics is to
+come from electroweak, string, brane, Kaluza--Klein, or \(G_2\) mechanisms.
+
+**Risk.** A title led by "Casimir" collides with the Casimir effect, misdirects
+referee and index search away from the electroweak pole-ratio subject, and
+foregrounds a clue over the observable.
+
+**Current working idea.** Demote Casimir to a labeled clue inside Sec.~II,
+foreground the secular/orbit quadratic and the pole-ratio observable, and state
+explicitly in Sec.~II that only \(J=s(s+1)\) enters as a Casimir eigenvalue
+while \(Q(J)\) is an ansatz awaiting a source-theory derivation (Target~0, O4).
+A candidate retitle: "A Secular Mass-Ratio Construction for the Electroweak
+Pole Spectrum and Its String/Kaluza--Klein Interpretation."
+
+**Success criterion.** The title and the Sec.~II heading no longer lead with
+Casimir, Sec.~II states the ansatz status and the single Casimir-eigenvalue
+input, the abstract names the weak mixing angle / pole ratio, and the Casimir
+lineage survives as a cited historical clue.

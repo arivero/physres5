@@ -110,16 +110,31 @@ DeVries entry & \(G_2\) origin & Derivation target \\
 \end{center}
 This table turns \(G_2\) geometry into a determinant problem.  It also prevents the geometry from becoming a decorative completion.  Each geometric object must provide one entry of \(K_J^{G_2}\), one assignment rule, or one consistency check.
 
-The first local test is therefore entry-by-entry.  The adjoint entry should
-come from the gauge-field fluctuation \(W\) along the singular gauge locus,
-with the normalized ADE or adjoint invariant giving
+The normalization target includes the local inner product on the two-channel
+space,
+\begin{equation}
+  \mathcal H_J^{G_2}
+  =
+  \operatorname{span}\{h_J^{G_2},a_J^{G_2}\},
+  \qquad
+  \langle h_J^{G_2},a_J^{G_2}\rangle_{G_2},
+  \label{eq:g2-local-inner-product}
+\end{equation}
+where the pairing is defined by the local wavefunctions, charge density, or
+Higgs-bundle data on the singular support.  A \(G_2\) derivation must specify
+this pairing before the local trace can be identified with
+\(\Sigma_{aa,J}^{G_2}=J\).
+
+The first local test is therefore entry-by-entry.  The adjoint-entry
+derivation identifies the gauge-field fluctuation \(W\) along the singular
+gauge locus, with the normalized ADE or adjoint invariant giving
 \begin{equation}
   W\big|_{M_3}
   \quad\leadsto\quad
   \Sigma_{aa,J}^{G_2}=J .
   \label{eq:g2-W-current-entry}
 \end{equation}
-The off-diagonal product should come from the localized matter and
+The off-diagonal-product derivation identifies the localized matter and
 Higgs-bundle data,
 \begin{equation}
   (\Phi,\rho_Q,f_Q)
@@ -128,7 +143,7 @@ Higgs-bundle data,
   \label{eq:g2-higgsbundle-mixing-entry}
 \end{equation}
 through a normalized flow-line overlap, bifundamental vev, or singular
-deformation coupling.  The order-parameter reference should come from the
+deformation coupling.  The order-parameter reference is derived from the
 critical-point normalization of \(f_Q\),
 \begin{equation}
   df_Q(p)=0

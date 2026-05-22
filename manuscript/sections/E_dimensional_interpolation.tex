@@ -49,9 +49,8 @@ massless-Higgs endpoint and its relation to the electroweak ray\\
 \(D=10,\ n_{\rm KK}=6\) & reconstruction target & identify the
 six-dimensional internal object, its light two-channel sector, and its kernel\\
 \(D=9,\ n_{\rm KK}=5\) & Witten's five-sphere discussion contains an
-\(SU(3)\times U(1)\) symmetry address & derive the infinite-Higgs or
-infinitely broken endpoint with \(U(1)_{\rm em}\) as the surviving
-electroweak factor\\
+\(SU(3)\times U(1)\) symmetry address & derive the electroweak embedding
+that identifies the surviving factor with \(U(1)_{\rm em}\)\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -96,41 +95,48 @@ derives the DeVries kernel, ordered \(J\)-assignment, and pole placement.
 \subsection{Interpolation parameter}
 \label{app:interpolation-parameter}
 
-The interpolation parameter must be stated in field-theory or geometric terms.
-The electroweak field theory supplies a radial order parameter through the Higgs
-vacuum expectation value.  The compactification descriptions supply radii,
-boundary conditions, brane-localized terms, or singularity deformations.  A
-viable derivation must identify one variable \(t\) and a family of source
-operators
+The interpolation parameters must be stated in field-theory and geometric
+terms.  The electroweak field theory supplies a radial order parameter
+\(t_{\rm EW}\) through the Higgs vacuum expectation value.  The
+compactification descriptions supply a separate coordinate \(t_{\rm dim}\)
+through radii, boundary conditions, brane-localized terms, or singularity
+deformations.  A source derivation must supply a map
 \begin{equation}
-  \mathcal O_J(t),
+  \chi:\ t_{\rm dim}\longmapsto t_{\rm EW}
+  \label{eq:dimensional-ray-map}
+\end{equation}
+or a joint source variable \(u\mapsto(t_{\rm dim}(u),t_{\rm EW}(u))\).  The
+dimensional family has source operators
+\begin{equation}
+  \mathcal O_J(t_{\rm dim}),
   \qquad
-  t=0:\ SU(3)\times SU(2)\times U(1),
+  t_{\rm dim}=0:\ SU(3)\times SU(2)\times U(1),
   \qquad
-  t=\infty:\ SU(3)\times U(1)_{\rm em},
+  t_{\rm dim}=\infty:\ SU(3)\times U(1)_{\rm em},
   \label{eq:dimensional-interpolation-family}
 \end{equation}
-or the corresponding colourless electroweak endpoints.  The middle-dimensional
-data required at a DeVries point are
+or the corresponding colourless electroweak endpoints.  The
+\(U(1)_{\rm em}\) identification in the last entry is an electroweak embedding
+obligation.  The middle-dimensional data required at a DeVries point are
 \begin{equation}
-  \mathfrak I_J(t_\star)
+  \mathfrak I_J(t_{\rm dim,\star})
   =
   \big(
-  \mathcal B(t_\star),\,
-  \mathcal H_J(t_\star),\,
-  K_J(t_\star,\lambda),\,
+  \mathcal B(t_{\rm dim,\star}),\,
+  \mathcal H_J(t_{\rm dim,\star}),\,
+  K_J(t_{\rm dim,\star},\lambda),\,
   \mathcal R_{\rm pole}
   \big),
   \label{eq:middle-dimensional-data}
 \end{equation}
-where \(\mathcal B(t_\star)\) is the compact, boundary, or singular object,
-\(\mathcal H_J(t_\star)=\operatorname{span}\{h_J,a_J\}\) is the light
+where \(\mathcal B(t_{\rm dim,\star})\) is the compact, boundary, or singular object,
+\(\mathcal H_J(t_{\rm dim,\star})=\operatorname{span}\{h_J,a_J\}\) is the light
 order-parameter/current subspace, \(K_J\) is the reduced kernel, and
 \(\mathcal R_{\rm pole}\) is the matching rule to the transverse pole
 propagator.  At the DeVries point the light two-channel reduction must take the
 form
 \begin{equation}
-  \mathcal O_J(t_\star)\big|_{\mathcal H_J}
+  \mathcal O_J(t_{\rm dim,\star})\big|_{\mathcal H_J}
   \longrightarrow
   \begin{pmatrix}
   0&\sqrt J\\
@@ -144,12 +150,12 @@ The compatibility diagram is
 \begin{equation}
 \begin{aligned}
 (D,n_{\rm KK})=(11,7)\ {\rm or}\ (7,3)
-&\xrightarrow{\ t\ }
+&\xrightarrow{\ t_{\rm dim}\ }
 (D,n_{\rm KK})=(9,5)\ {\rm or}\ (5,1),
 \\
 (D,n_{\rm KK})=(10,6)\ {\rm or}\ (6,2)
 &:\quad
-\mathcal O_J(t_\star)\big|_{\mathcal H_J}\to K_J(\lambda),
+\mathcal O_J(t_{\rm dim,\star})\big|_{\mathcal H_J}\to K_J(\lambda),
 \\
 K_J(\lambda)
 &\longrightarrow
@@ -162,7 +168,8 @@ K_J(\lambda)
 \label{eq:dimensional-compatibility-diagram}
 \end{equation}
 Thus the dimensional interpolation can contribute to the paper only through a
-kernel derivation, an ordered assignment theorem, and a pole-matching theorem.
+kernel derivation, a map from dimensional data to the electroweak ray, an
+ordered assignment theorem, and a pole-matching theorem.
 
 \subsection{Top-quark scale}
 \label{app:top-quark-scale}

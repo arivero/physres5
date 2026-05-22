@@ -15,6 +15,10 @@
 - Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../weak`, `../phys3`, `../signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
 - Continue normalizing main-body sections by replacing project-management language with assumption, construction, consequence, and theorem-target statements.
 - Use the Loop 12 parent-root inventory as a triage map.  Targeted future audits should choose a single cluster, read it deeply, and promote only source trails, theorem targets, or failure-mode tests.
+- Use Loop 13's rank-and-ray theorem as a route filter: every endpoint,
+  interval, brane, KK, or \(G_2\) source route must preserve one radial
+  electroweak parameter, the photon null direction, and the fixed projective
+  W/Z direction after matching.
 
 ## Completed in latest pass
 
@@ -28,6 +32,9 @@
 - Added Loop 11 normalization: compact abstract, A1--A3/T1--T3 hierarchy in the introduction and conclusion, streamlined VI.G, and an electroweak mass-map theorem target.
 - Added Loop 12 Target 0: a unified source-to-pole matching theorem that packages the reduced basis, projection/decoupling rule, Schur complement, DeVries kernel, ordered W/Z sampling maps, and transverse-pole matching.
 - Added a broader `..` parent inventory to the parent-workspace source notes and Lean guardrails.
+- Added Loop 13 rank-and-ray normalization: Appendix D Target IIa,
+  electroweak-ray equations in Sec. IV, separated \(t_{\rm EW}\) and
+  \(t_{\rm dim}\) in Appendix E, and a \(G_2\) inner-product target.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -82,6 +89,14 @@
   \to \Pi^{(4)}_{T,V}(s;J,r)\to
   \Delta^{-1}_{V,T}(s_V;J,r)=0.
   \]
+- Derive the rank-and-ray admissibility theorem for at least one source route:
+  \[
+  \mathcal S_r(t_{\rm EW})\to
+  K^{\rm eff}_{J,r}(t_{\rm EW},\lambda)\to
+  \Delta^{-1}_{T,V}(s;t_{\rm EW}),
+  \]
+  with one radial parameter, persistent photon null direction, and simultaneous
+  W/Z mass collapse.
 
 ## Source work
 
@@ -100,7 +115,7 @@
 
 - Run the referee/advisor cycle in `reviews/referee_advisor_cycle.md` after each substantial rewrite.
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
-- Current score table includes Loop 7 for the 62-page compiled draft.
+- Current score table includes Loop 13 for the 66-page compiled draft.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

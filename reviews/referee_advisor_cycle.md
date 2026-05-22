@@ -48,6 +48,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 10 | 5 | 5 | 5 | 5 | 5 | Parent-workspace pass added source-note guardrails, one-source normalization audit, custodial single-generator obstruction, and O12 validation issue; manuscript derivations remain explicit open targets. |
 | 11 | 5 | 5 | 5 | 5 | 5 | Normalized abstract, introduction, route comparison, and conclusion around assumptions and theorem targets; added electroweak mass-map and matching refinements. |
 | 12 | 5 | 5 | 5 | 5 | 5 | Added unified source-to-pole Target 0, tightened route basis/projection obligations, clarified dimensional endpoint status, and indexed the broader parent workspace inventory. |
+| 13 | 5 | 5 | 5 | 5 | 5 | Added electroweak ray admissibility as a theorem target, separated dimensional and electroweak interpolation parameters, and sharpened the \(G_2\) inner-product obligation. |
 
 ## Scoring rubric
 
@@ -74,3 +75,5 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the A1--A3/T1--T3 hierarchy make the main text read as paper-level exposition while preserving all open obligations?
 - Does Target 0 give a complete acceptance test from source theory to reduced kernel, ordered W/Z sampling, and complex-pole matching?
 - Which parent-workspace cluster should receive a targeted audit after the broad `..` inventory: `../prTalks`, `../hans/signed_dbdevries`, `../weak`, or `../phys4/notes`?
+- Does the rank-and-ray theorem make the allowed electroweak deformation precise enough for source-route testing?
+- Can one interval or \(G_2\) source route derive the map from a dimensional or geometric parameter to the electroweak radial ray?

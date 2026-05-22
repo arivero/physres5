@@ -64,6 +64,15 @@
   `../physres1`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.
   Runtime state, caches, security reviews, and unrelated generated outputs are
   excluded from manuscript claims.
+- Loop 13 promotes O5 to Appendix D Target IIa: electroweak ray
+  admissibility.  The allowed deformation has one radial gauge-Higgs
+  parameter, fixed \(g:g'\), simultaneous W/Z mass collapse, and persistent
+  photon null direction.  Coupling-space and custodial-breaking paths are
+  separate deformation problems.
+- Loop 13 also separates the dimensional-interpolation parameter from the
+  electroweak ray parameter.  Future O10 work needs a source map
+  \(\chi:t_{\rm dim}\mapsto t_{\rm EW}\) or a joint source variable before the
+  dimensional chain can control the electroweak ray.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

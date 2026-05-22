@@ -223,6 +223,14 @@ PRD phase.
     flow lines, mass terms, and trivalent flow-tree interactions.  Source use:
     Target IIIg binds the local source equations to a singular-support pairing
     and a hatted ADE current-entry target.
+  - Loop 48 source binding: pages 31--40 and 61--70 record gradient-flow
+    equations, flow-line mass terms between critical points, signs
+    \(n_\gamma=\pm1\), possible cancellations among homologous flow
+    contributions, the localization rule \(df_Q(p)=0\), trivalent flow-tree
+    interactions with \(Q_1+Q_2+Q_3=0\), and the glossary convention
+    \(\gamma(f_1,\ldots,f_n)\) for flow trees.  Source use: Target IIIh treats
+    the two-point flow-line bilinear as the off-diagonal kernel candidate and
+    keeps trivalent data as charge-sector and interaction evidence.
 
 ## Standard Model global form and line operators
 

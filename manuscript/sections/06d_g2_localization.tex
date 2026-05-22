@@ -162,9 +162,62 @@ The singular support carries the pairing
 \end{equation}
 The first term is the current-support pairing on the ADE locus.  The point
 support term is the localized matter metric required by the later flow-overlap
-entry.
+entry.  The metric \(\mathsf G_Q(p)\) is theorem data: it must be positive on
+the localized charge sector, gauge covariant, compatible with the charge vector
+\(Q\), and reducible to the wavefunction or Hessian normalization at an isolated
+Morse critical point.  A Morse--Bott critical component replaces the point
+metric by the corresponding component metric and flow-moduli convention.
 
-The entry-level current test chooses a projected adjoint fluctuation
+The local off-diagonal target is a flow-overlap theorem.  Let
+\(\psi_{h,J}^{G_2}\) denote the localized order-parameter wavefunction and let
+\(a_J^{G_2}\) denote the projected ADE current fluctuation.  Their source
+normalizations are
+\begin{equation}
+  \langle\psi_{h,J}^{G_2},\psi_{h,J}^{G_2}\rangle_{G_Q}=1,
+  \qquad
+  \langle a_J^{G_2},a_J^{G_2}\rangle_{G_2,u}=1 .
+  \label{eq:g2-flow-wavefunction-normalization}
+\end{equation}
+For an oriented flow line or flow-tree contribution \(\gamma\), introduce a
+flow kernel \(\mathcal K_{\rm flow}^{G_2}(\gamma)\), orientation sign
+\(\epsilon_\gamma\), and bilinear maps \(B_{ha}^{G_2}\) and \(B_{ah}^{G_2}\).
+The hatted off-diagonal entries are theorem data:
+\begin{equation}
+  \begin{aligned}
+  \widehat\Sigma_{ha,J}^{G_2}
+  &=
+  \Lambda_{G_2}^{-1}
+  \sum_{\gamma}
+  \epsilon_\gamma\,
+  B_{ha}^{G_2}\!\left(
+  \psi_{h,J}^{G_2},
+  \mathcal K_{\rm flow}^{G_2}(\gamma)a_J^{G_2}
+  \right),
+  \\
+  \widehat\Sigma_{ah,J}^{G_2}
+  &=
+  \Lambda_{G_2}^{-1}
+  \sum_{\gamma}
+  \epsilon_\gamma\,
+  B_{ah}^{G_2}\!\left(
+  a_J^{G_2},
+  \mathcal K_{\rm flow}^{G_2}(\gamma)\psi_{h,J}^{G_2}
+  \right).
+  \end{aligned}
+  \label{eq:g2-flow-overlap-definitions}
+\end{equation}
+The flow-overlap target is
+\begin{equation}
+  \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J .
+  \label{eq:g2-flow-overlap-target}
+\end{equation}
+The source datum is the existence of localized modes at \(df_Q=0\), oriented
+flow-line mass terms, and trivalent flow-tree interaction data.  The theorem
+specifies how the quadratic flow-line bilinear is extracted from those data.
+The DeVries kernel then uses the product in
+Eq.~\eqref{eq:g2-flow-overlap-target}.
+
+The local current test chooses a projected adjoint fluctuation
 \(a_J^{G_2}\) with
 \begin{equation}
   \langle a_J^{G_2},a_J^{G_2}\rangle_{G_2,u}=1
@@ -184,6 +237,10 @@ and defines
   \end{aligned}
   \label{eq:g2-current-kernel-normalization}
 \end{equation}
+Here \(\mathcal K_{\rm cur}^{\rm ADE}\) denotes the projected quadratic
+ADE-current operator induced on the singular gauge locus, including source
+scale, projection, and possible singular-support boundary terms.  Its detailed
+construction from the local \(G_2\) gauge theory is part of the theorem data.
 The canonical current kernel is fixed by
 \begin{equation}
   Z_J^{G_2}
@@ -272,13 +329,27 @@ pairing before a compactification or pole claim is made.
 The off-diagonal-product derivation identifies the localized matter and
 Higgs-bundle data,
 \begin{equation}
-  (\Phi,\rho_Q,f_Q)
+  (\Phi,\rho_Q,f_Q,\psi_{h,J}^{G_2},\mathcal K_{\rm flow}^{G_2},\epsilon_\gamma)
   \quad\leadsto\quad
-  \Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J,
+  \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J,
   \label{eq:g2-higgsbundle-mixing-entry}
 \end{equation}
-through a normalized flow-line overlap, bifundamental vev, or singular
-deformation coupling.  The order-parameter reference is derived from the
+through the bilinear definitions of
+Eq.~\eqref{eq:g2-flow-overlap-definitions}.  Trivalent flow trees supply
+interaction evidence; the quadratic kernel requires the two-point flow-line
+bilinear and its same-basis normalization.  The rejection outputs are
+\begin{equation}
+  \begin{gathered}
+  \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}\ne J,
+  \qquad
+  \mathsf G_Q\le0,\\
+  \hbox{orientation sum lacks a source convention},
+  \qquad
+  \hbox{extra coupled light channel}.
+  \end{gathered}
+  \label{eq:g2-flow-overlap-rejection}
+\end{equation}
+The order-parameter reference is derived from the
 critical-point normalization of \(f_Q\),
 \begin{equation}
   df_Q(p)=0

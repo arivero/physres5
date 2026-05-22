@@ -23,6 +23,14 @@ constant SingularSupport : Type
 constant HiggsBundleSource : Type
 constant CompletionLedger : Type
 constant SourceFragmentBindings : Type
+constant LocalizedWavefunction : Type
+constant LocalizedCurrentMode : Type
+constant MorseCriticalData : Type
+constant PointMetric : Type
+constant FlowKernel : Type
+constant BilinearFunctional : Type
+constant OrientationConvention : Type
+constant RejectionLedger : Type
 
 structure CHMCurrentEntryData where
   interval : Interval
@@ -137,6 +145,42 @@ def loop47G2ADEPairingReady (G : Loop47G2ADEPairingTarget) : Prop :=
 
 axiom loop47_g2_ade_pairing_target_required :
   ∃ G : Loop47G2ADEPairingTarget, loop47G2ADEPairingReady G
+
+structure Loop48G2FlowOverlapTarget where
+  localizedOrderParameter : LocalizedWavefunction
+  localizedCurrentMode : LocalizedCurrentMode
+  morseOrMorseBottCriticalData : MorseCriticalData
+  pointMetric : PointMetric
+  flowKernel : FlowKernel
+  bilinearHA : BilinearFunctional
+  bilinearAH : BilinearFunctional
+  orientationConvention : OrientationConvention
+  sameBasisAsTargetIIIg : Prop
+  chargeSectorCompatible : Prop
+  pointMetricPositive : Prop
+  sourceScaleSharedWithTargetIIIg : Prop
+  orientationSumDefined : Prop
+  extraChannelsControlled : Prop
+  productEqualsJ :
+    -- hat Sigma_ha,J^G2 * hat Sigma_ah,J^G2 = J.
+    Prop
+  ewProjectorsDeferred : Prop
+  poleMapDeferred : Prop
+  rejectionLedger : RejectionLedger
+
+def loop48G2FlowOverlapReady (G : Loop48G2FlowOverlapTarget) : Prop :=
+  G.sameBasisAsTargetIIIg ∧
+  G.chargeSectorCompatible ∧
+  G.pointMetricPositive ∧
+  G.sourceScaleSharedWithTargetIIIg ∧
+  G.orientationSumDefined ∧
+  G.extraChannelsControlled ∧
+  G.productEqualsJ ∧
+  G.ewProjectorsDeferred ∧
+  G.poleMapDeferred
+
+axiom loop48_g2_flow_overlap_target_required :
+  ∃ G : Loop48G2FlowOverlapTarget, loop48G2FlowOverlapReady G
 
 structure EndpointArenaData where
   chanPatonLabels : Prop

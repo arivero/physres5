@@ -2,18 +2,23 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 108 REVTeX PRD preprint pages after the Loop 47
+- Current compiled draft: 110 REVTeX PRD preprint pages after the Loop 48
   compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
-- Loop 47 focus: add Target IIIg, the \(G_2\) local ADE-pairing target with an
+- Loop 48 focus: add Target IIIh, the \(G_2\) local flow-overlap target with
+  localized wavefunctions, point/component metric, oriented flow kernels,
+  bilinear maps, shared \(\Lambda_{G_2}\), rejection outputs, and source
+  bindings to Braun--Cizel--Hubner--Schafer-Nameki.
+- Loop 47 retained focus: Target IIIg, the \(G_2\) local ADE-pairing target with an
   \(A_1\subset A_2\) enhancement, singular-support pairing, canonical
   current-entry target, flow-overlap target, compact-completion ledger,
   anomaly/global-form checks, and pole-map obligation.
-- Next derivation step: test whether the Target IIIg pairing can support
-  the flow-overlap product
-  \(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\), then relate the result to the
-  same \(P_W,P_Z,P_\gamma\), hypercharge, charge lattice, and pole-map ledger.
+- Next derivation step: test whether the Target IIIh flow-line data can support
+  the hatted flow-overlap product
+  \(\widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J\), then relate
+  the result to the same \(P_W,P_Z,P_\gamma\), hypercharge, charge lattice, and
+  pole-map ledger.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
@@ -582,6 +587,18 @@
   order, photon-reference subtraction, shared source scale, and
   \(\Delta_W^{\rm CHM},\Delta_Y^{\rm CHM}\).  The first matrix-entry target
   remains \(\widehat\Sigma_{aa,2}^{\rm CHM}=2\).
+- Loop 48 O4 next step: derive, or reject, the local \(G_2\)
+  flow-overlap product
+  \[
+  \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J
+  \]
+  from localized wavefunctions at \(df_Q=0\), a positive point or
+  component metric \(\mathsf G_Q\), oriented flow kernels
+  \(\mathcal K_{\rm flow}^{G_2}(\gamma)\), bilinear maps
+  \(B_{ha}^{G_2},B_{ah}^{G_2}\), and the same \(\Lambda_{G_2}\) and basis
+  used by Target IIIg.  The next derivation step is to determine whether the
+  quadratic flow-line mass matrix supplies the two-point kernel, with trivalent
+  flow trees retained as charge-sector and interaction evidence.
 - Loop 42 editorial queue from the referees: compress Appendix D working
   ledgers, add a \(G_2\) local test with one ADE enhancement and one pairing,
   lower Appendix E's prominence after the CHM proof spine is stronger, and
@@ -593,8 +610,8 @@
 - Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
 - Each substantial loop must also call a lightweight editor subagent below GPT-5.5 to flag banned contrast formulas, journalistic language, adjectival positioning, and prose outside Physical Review D style.
 - Each substantial loop must also inspect one random bibliography or source-inventory entry and one random local note or Lean-style note, then record any equation, test, fragment gap, or issue-ledger consequence.
-- Current score table includes Loop 44 with CHM-normalized projector-package
-  admissibility and current-review scores.
+- The score table records Loop 48 with the local \(G_2\) flow-overlap target
+  and current-review scores.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.
 - Keep Lean-style obligations in `notes/lean/`.

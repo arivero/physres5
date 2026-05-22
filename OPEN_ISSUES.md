@@ -768,14 +768,44 @@ The canonical current-entry test is
 \qquad
 \widehat\Sigma_{aa,2}^{G_2,{\rm can}}=2.
 \]
+Loop 48 adds the downstream flow-overlap target.  With a localized
+order-parameter wavefunction \(\psi_{h,J}^{G_2}\), a projected ADE current
+mode \(a_J^{G_2}\), a point or component metric \(\mathsf G_Q\), oriented
+flow kernels \(\mathcal K_{\rm flow}^{G_2}(\gamma)\), and bilinear maps
+\(B_{ha}^{G_2},B_{ah}^{G_2}\), the theorem target is
+\[
+\begin{aligned}
+\widehat\Sigma_{ha,J}^{G_2}
+&=
+\Lambda_{G_2}^{-1}
+\sum_\gamma\epsilon_\gamma
+B_{ha}^{G_2}\!\left(
+\psi_{h,J}^{G_2},
+\mathcal K_{\rm flow}^{G_2}(\gamma)a_J^{G_2}
+\right),
+\\
+\widehat\Sigma_{ah,J}^{G_2}
+&=
+\Lambda_{G_2}^{-1}
+\sum_\gamma\epsilon_\gamma
+B_{ah}^{G_2}\!\left(
+a_J^{G_2},
+\mathcal K_{\rm flow}^{G_2}(\gamma)\psi_{h,J}^{G_2}
+\right),
+\end{aligned}
+\qquad
+\widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J .
+\]
+The rejection ledger is: noncanonical product, nonpositive \(\mathsf G_Q\),
+missing orientation convention, extra coupled light channel, or failure of the
+same-basis projection shared with Target IIIg.
 The unresolved steps are the local derivation of
 \(\mathcal K_{\rm cur}^{\rm ADE}\), positivity of \(Z_2^{G_2}\), extra-channel
-control, the flow-overlap product
-\(\Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J\), the scalar map
+control, the hatted flow-overlap product above, the scalar map
 \(u_-(J)\mapsto\mathcal F_{G_2}\), compact charge-lattice completion,
 hypercharge embedding, anomaly/global-form compatibility, and pole matching.
 
-**Route-comparison refinement.** Sec. VI.G now places the endpoint, interval, and \(G_2\) routes into one kernel target:
+**Route-comparison refinement.** Sec. VI.G places the endpoint, interval, and \(G_2\) routes into one kernel target:
 \[
 K_{J,r}(\lambda)=
 \begin{pmatrix}

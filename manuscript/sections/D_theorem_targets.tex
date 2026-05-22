@@ -632,6 +632,9 @@ The hatted current kernel is
   \end{aligned}
   \label{eq:target-g2-current-kernel}
 \end{equation}
+Here \(\mathcal K_{\rm cur}^{\rm ADE}\) is a theorem datum: the projected
+quadratic ADE-current operator on the singular gauge locus, including source
+scale, local projection, and any singular-support boundary terms.
 The canonical form uses
 \begin{equation}
   Z_J^{G_2}
@@ -662,11 +665,76 @@ The rejection outputs are
   \label{eq:target-g2-current-rejection}
 \end{equation}
 or a surviving extra current channel in the local block.  The same local source
-package then has to support
+package then carries the flow-overlap target below.
+
+\paragraph*{Local \(G_2\) flow-overlap subtarget (Target IIIh).}
+\label{app:target-g2-flow-overlap}
+Target IIIh asserts the off-diagonal product in the same local source package as
+Target IIIg.  Let the critical support be either an isolated-Morse critical set
+or a Morse--Bott component with a stated component metric and flow-moduli
+orientation.  Let \(\psi_{h,J}^{G_2}\) be the localized order-parameter
+wavefunction and let \(a_J^{G_2}\) be the projected ADE current mode.  Their
+normalization is
 \begin{equation}
-  \Sigma_{ha,J}^{G_2}\Sigma_{ah,J}^{G_2}=J,\qquad
+  \langle\psi_{h,J}^{G_2},\psi_{h,J}^{G_2}\rangle_{G_Q}=1,\qquad
+  \langle a_J^{G_2},a_J^{G_2}\rangle_{G_2,u}=1.
+  \label{eq:target-g2-flow-normalization}
+\end{equation}
+For each oriented flow contribution \(\gamma\), introduce a flow kernel
+\(\mathcal K_{\rm flow}^{G_2}(\gamma)\), an orientation sign
+\(\epsilon_\gamma\), and bilinear maps \(B_{ha}^{G_2}\) and \(B_{ah}^{G_2}\).
+The hatted off-diagonal entries are
+\begin{equation}
+  \begin{aligned}
+  \widehat\Sigma_{ha,J}^{G_2}
+  &=
+  \Lambda_{G_2}^{-1}
+  \sum_\gamma \epsilon_\gamma\,
+  B_{ha}^{G_2}\!\left(
+  \psi_{h,J}^{G_2},
+  \mathcal K_{\rm flow}^{G_2}(\gamma)a_J^{G_2}
+  \right),
+  \\
+  \widehat\Sigma_{ah,J}^{G_2}
+  &=
+  \Lambda_{G_2}^{-1}
+  \sum_\gamma \epsilon_\gamma\,
+  B_{ah}^{G_2}\!\left(
+  a_J^{G_2},
+  \mathcal K_{\rm flow}^{G_2}(\gamma)\psi_{h,J}^{G_2}
+  \right).
+  \end{aligned}
+  \label{eq:target-g2-flow-sigma}
+\end{equation}
+The local acceptance equation is
+\begin{equation}
+  \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}=J.
+  \label{eq:target-g2-flow-acceptance}
+\end{equation}
+The source data are the Braun--Cizel--Hubner--Schafer-Nameki flow
+construction: localized modes at \(df_Q=0\), flow-line mass terms between
+critical points, orientation signs, possible cancellations among multiple flow
+contributions, and trivalent flow-tree interaction data.  Target IIIh uses the
+quadratic flow-line bilinear as the kernel candidate.  The trivalent data enter
+as interaction evidence and as a constraint on charge-sector compatibility.
+Rejection outputs are
+\begin{equation}
+  \begin{gathered}
+  \widehat\Sigma_{ha,J}^{G_2}\widehat\Sigma_{ah,J}^{G_2}\ne J,
+  \qquad
+  \mathsf G_Q\le0,\\
+  \sum_\gamma\epsilon_\gamma(\cdots)\ \hbox{lacks a source convention},
+  \qquad
+  \mathcal H_J^{G_2}\ \hbox{fails closure under the flow kernel}.
+  \end{gathered}
+  \label{eq:target-g2-flow-rejection}
+\end{equation}
+The flow target is then combined with the completion projectors
+\begin{equation}
   P_W(h_J)=\frac34+\Delta_W^{G_2},\qquad
   P_Z(a_J^{\gamma^\perp})=2+\Delta_Y^{G_2},
+  \qquad
+  P_\gamma(a_J)=0,
   \label{eq:target-g2-completion-projectors}
 \end{equation}
 and the pole-chain equation
@@ -680,11 +748,11 @@ and the pole-chain equation
 \end{equation}
 Compact completion supplies the charge lattice, Standard Model global form,
 hypercharge embedding, anomaly inflow ledger, line-operator data, and the
-source-to-pole map.  These data are downstream of the local ADE current test.
+source-to-pole map.  The local ADE current test precedes these completion data.
 
 \paragraph*{Conclusion.}
-There is a controlled field basis, inner product, projection, and
-normalization in which
+A successful source route must exhibit a controlled field basis, inner product,
+projection, and normalization in which
 \begin{equation}
   \Sigma_{hh,J}=0,\qquad
   \Sigma_{aa,J}=J,\qquad

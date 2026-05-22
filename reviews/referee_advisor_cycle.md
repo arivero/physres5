@@ -71,7 +71,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 28 | 5 | 5 | 5 | 5 | 5 | Added hatted CHM current-entry normalization, recorded the source-scale convention audit, and linked the Hodge/SUSY-QM off-diagonal test to the CHM diagonal-current test as the active proof spine. |
 | 29 | 5 | 5 | 5 | 5 | 5 | Closed O2a, O5, O6, O7, O9, O11, O12, and O16 as structural normalization issues, preserved residual derivational obligations, and normalized Sec. IX fixed-filter prose. |
 | 30 | 5 | 5 | 5 | 5 | 5 | Rendered CHM convention audit, photon-reference subtraction, hatted current-entry theorem target, parent-directory source extraction, and updated O4/source/Lean ledgers. |
-| 31 | 5 | 5 | 5 | 5 | 5 | Added O10 single-source pass/fail package with \(\Lambda_J\), inner product, projection, hatted kernel, endpoint subtargets, optional CHM top extension, and parent-directory source queues. |
+| 31 | 5 | 5 | 5 | 5 | 5 | Added O10 single-source accept/reject package with \(\Lambda_J\), inner product, projection, hatted kernel, endpoint subtargets, optional CHM top extension, and parent-directory source queues. |
 | 32 | 5 | 5 | 5 | 5 | 5 | Tightened O3 into a same-source scalar-functional target with \(J_\star\), \(C_{\rm sc}\), scheme/scale, holonomy-curvature route, auxiliary-branch failure outcome, and parent-directory source queue. |
 | 33 | 5 | 5 | 5 | 5 | 5 | Tightened O1 into a same-source ordered-sampling package with \(P_W\), \(P_Z\), \(P_\gamma\), shared \(\Lambda_J\), CHM \(h_J/W/Z/\gamma\) ledger, Coquereaux grading vocabulary, and parent-directory source queue. |
 | 34 | 5 | 5 | 5 | 5 | 5 | Tightened O4 into an entry-by-entry source-kernel ledger: CHM current entry first, Hodge/SUSY-QM square-root entry second, \(G_2\) local audit third, endpoint/Chan--Paton matrix arena, and parent-directory source queue. |
@@ -88,6 +88,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 45 | 4.5 | 4.5 | 4 | 4.5 | 5 | Added the shared CHM admissibility lemma, \(Z_J^{\rm cur}\), the canonical current-entry target \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), and aligned Target 0/III/X plus O1/O4 ledgers. |
 | 46 | 4.5 | 4.75 | 4.25 | 4.5 | 5 | Added the CHM source-equation acceptance/rejection protocol for \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), mirrored it in Target III and O1/O4 ledgers, and queued the \(G_2\) ADE-pairing target. |
 | 47 | 4.5 | 4.75 | 4.5 | 4.5 | 5 | Added Target IIIg for the local \(G_2\) ADE-pairing current test, singular-support pairing, \(A_1\subset A_2\) enhancement, source bindings, completion ledger, and random recall record. |
+| 48 | 4.75 | 4.75 | 4.75 | 4.5 | 5 | Added Target IIIh for the local \(G_2\) flow-overlap product with localized wavefunctions, source-normalized flow kernels, bilinear maps, orientation ledger, rejection outputs, source bindings, Lean obligations, and random recall record. |
 
 ## Scoring rubric
 

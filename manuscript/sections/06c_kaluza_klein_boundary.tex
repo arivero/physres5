@@ -2,7 +2,7 @@
 \label{sec:kk-boundary}
 % Status: cited/open. KK and interval background are cited; interval reductions remain theorem targets.
 
-Kaluza--Klein theory supplies the second concrete language for the DeVries program.  The original idea unifies gauge fields with geometry by expanding a higher-dimensional theory around a compact ground state.  In Witten's account, symmetries of the compact space appear as gauge symmetries in the lower-dimensional theory, and the physical spectrum is obtained from small oscillations around the compactification background \cite{WittenKK1981}.  Salam and Strathdee give the complementary harmonic-expansion language on compact homogeneous spaces \(G/H\), where zero modes give gravitational plus Yang--Mills fields and higher modes give massive multiplets \cite{SalamStrathdee1982}.  The same account also records the hard model-building burden: obtaining the Standard Model gauge group, fermion quantum numbers, and scalar sector is a serious representation problem, even when the gauge group itself can be engineered.
+Kaluza--Klein theory supplies the second concrete language for the DeVries program.  The original idea unifies gauge fields with geometry by expanding a higher-dimensional theory around a compact ground state.  In Witten's account, symmetries of the compact space appear as gauge symmetries in the lower-dimensional theory, and the physical spectrum is obtained from small oscillations around the compactification background \cite{WittenKK1981}.  Salam and Strathdee give the complementary harmonic-expansion language on compact homogeneous spaces \(G/H\), where zero modes give gravitational plus Yang--Mills fields and higher modes give massive multiplets \cite{SalamStrathdee1982}.  The same account also states the hard model-building burden: obtaining the Standard Model gauge group, fermion quantum numbers, and scalar sector is a serious representation problem, even when the gauge group itself can be engineered.
 
 The DeVries problem asks for a narrower and sharper object inside this tradition: a compact or interval derivation of the two-channel determinant
 \begin{equation}
@@ -34,7 +34,7 @@ This gives a source-backed analogy:
   \{x_+(J),x_-(J)\}.
   \label{eq:momentum-winding-channel}
 \end{equation}
-The analogy becomes a derivation after the two channels are reduced to Eq.~\eqref{eq:boundary-devries-target}.  The self-dual-radius example also explains why a scalar modulus belongs in the discussion.  The compact radius is a scalar field in the lower-dimensional theory, and gauge enhancement can occur at special values of that scalar.  This is the compactification version of the manuscript's positive/negative branch problem: a vector spectral statement and a scalar modulus can arise from the same compact sector.
+The analogy becomes a derivation after the two channels are reduced to Eq.~\eqref{eq:boundary-devries-target}.  The self-dual-radius example also explains why a scalar modulus belongs in the discussion.  The compact radius is a scalar field in the lower-dimensional theory, and gauge enhancement can occur at special values of that scalar.  This is the compactification analogue of the positive/negative branch problem: a vector spectral statement and a scalar modulus can arise from the same compact sector.
 
 A sharper test combines this channel picture with a boundary Schur complement.
 Let the compact or interval sector contain a momentum/current-like channel and a
@@ -148,7 +148,8 @@ with endpoint-orientation signs fixed by the variational convention.  The
 CHM higgsless/custodial construction also supplies the photon zero-mode and
 custodial boundary bookkeeping used by the later electroweak boundary proof.
 These source facts define the allowed boundary-kernel class.  The equality to
-Eq.~\eqref{eq:interval-self-energy-target} is the open DeVries entry theorem.
+Eq.~\eqref{eq:interval-self-energy-target} remains the open DeVries entry
+target.
 The scalar equation makes the gauge-fixing burden explicit: the projected
 DeVries kernel must state the treatment of \(\xi_i\), separate physical
 scalar data from eaten Goldstone data, preserve the photon zero mode, and map
@@ -257,47 +258,69 @@ package is
 \end{equation}
 It uses the neutral trace definitions of
 Eqs.~\eqref{eq:tree-neutral-trace-directions}--\eqref{eq:neutral-trace-nonzero-norms}
-with the source product specialized to \(\langle\cdot,\cdot\rangle_{\rm CHM}\):
+with the source product specialized to \(\langle\cdot,\cdot\rangle_{\rm CHM}\).
+Define the unnormalized traces
+\begin{equation}
+  \widetilde a_\gamma=P_\gamma a_\gamma^{(0)},\qquad
+  \widetilde z_J=P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)} .
+  \label{eq:chm-trace-tilde-definitions}
+\end{equation}
+The normalized traces are
 \begin{equation}
   a_\gamma=
-  \frac{P_\gamma a_\gamma^{(0)}}
-  {\sqrt{\langle P_\gamma a_\gamma^{(0)},
-  P_\gamma a_\gamma^{(0)}\rangle_{\rm CHM}}},
+  \frac{\widetilde a_\gamma}
+  {\sqrt{\langle\widetilde a_\gamma,
+  \widetilde a_\gamma\rangle_{\rm CHM}}},
   \qquad
   a_J^{\gamma^\perp}
   =
-  \frac{P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}}
-  {\sqrt{\langle P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)},
-  P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}\rangle_{\rm CHM}}},
+  \frac{\widetilde z_J}
+  {\sqrt{\langle\widetilde z_J,\widetilde z_J\rangle_{\rm CHM}}}.
   \label{eq:chm-source-normalized-neutral-traces}
 \end{equation}
-where the denominators are positive and
-\[
-  \langle a_J^{\gamma^\perp},a_\gamma\rangle_{\rm CHM}=0.
-\]
-The source theory must state the ordered product
-\(P_{a,J}\Pi_{\gamma^\perp}^{(T)}\) or prove that the two projectors commute on
-\(\mathcal N_T^\partial\).  In the current-entry formulas below \(a_J\)
-abbreviates \(a_J^{\gamma^\perp}\).  The transverse kernel is
+The admissible neutral CHM trace package is the following proof checklist.  The
+projected norms are positive,
+\begin{equation}
+  \langle\widetilde a_\gamma,\widetilde a_\gamma\rangle_{\rm CHM}>0,
+  \qquad
+  \langle\widetilde z_J,\widetilde z_J\rangle_{\rm CHM}>0.
+  \label{eq:chm-admissible-positive-norms}
+\end{equation}
+The photon-orthogonal current sample remains orthogonal to the normalized photon
+trace,
+\begin{equation}
+  \left\langle
+  \frac{\widetilde z_J}
+  {\sqrt{\langle\widetilde z_J,\widetilde z_J\rangle_{\rm CHM}}},
+  \frac{\widetilde a_\gamma}
+  {\sqrt{\langle\widetilde a_\gamma,\widetilde a_\gamma\rangle_{\rm CHM}}}
+  \right\rangle_{\rm CHM}
+  =
+  0.
+  \label{eq:chm-admissible-orthogonality}
+\end{equation}
+The source theory supplies the ordered product
+\(P_{a,J}\Pi_{\gamma^\perp}^{(T)}\), or it supplies the commutation theorem
+\begin{equation}
+  [P_{a,J},\Pi_{\gamma^\perp}^{(T)}]\big|_{\mathcal N_T^\partial}=0 .
+  \label{eq:chm-admissible-projector-order}
+\end{equation}
+In the current-entry formulas below \(a_J\) abbreviates
+\(a_J^{\gamma^\perp}\).  The transverse kernel is
 \[
   K_{T,J}=K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}.
 \]
-A photon-reference subtraction fixes the zero by
-\begin{equation}
+Photon-reference subtraction and the source scale are
+\begin{align}
   P_\gamma^\dagger
   \left(K_{T,J}(0)-K_{\gamma,J}^{\rm ref}\right)
   P_\gamma
-  =
-  0.
-  \label{eq:chm-photon-reference-subtraction}
-\end{equation}
-Let \(\Lambda_{\rm CHM}\) denote the shared source scale that makes the
-spectral variable dimensionless.  Equivalently, after a \(J\)-sample has been
-chosen, this is the route's \(\Lambda_J\):
-\begin{equation}
-  \widehat\lambda=\frac{\lambda}{\Lambda_{\rm CHM}^2}.
-  \label{eq:chm-current-hat-lambda}
-\end{equation}
+  &=
+  0,
+  &
+  \widehat\lambda&=\frac{\lambda}{\Lambda_{\rm CHM}^2}.
+  \label{eq:chm-admissible-reference-scale}
+\end{align}
 With endpoint-normal signs and dimensionful brane terms fixed, define
 \begin{equation}
   \widehat K^{\rm cur}_J(\widehat\lambda)
@@ -305,18 +328,32 @@ With endpoint-normal signs and dimensionful brane terms fixed, define
   \frac{1}{\Lambda_{\rm CHM}^2}
   \left\langle a_J,
   \left(
-	  K^{\rm DtN}_{T,J}(\lambda)
-	  +K^{\rm brane}_{T,J}(\lambda)
+  K^{\rm DtN}_{T,J}(\lambda)
+  +K^{\rm brane}_{T,J}(\lambda)
   -K_{\gamma,J}^{\rm ref}(\lambda)
   \right)a_J
   \right\rangle_{\rm CHM},
   \qquad
-  \lambda=\Lambda_{\rm CHM}^2\widehat\lambda,
+  \lambda=\Lambda_{\rm CHM}^2\widehat\lambda .
   \label{eq:chm-current-kernel}
 \end{equation}
-where \(K_{\gamma,J}^{\rm ref}\) fixes the reference zero of the current kernel,
-through the unbroken photon channel or a stated boundary subtraction.  The
-constant entry in this normalization is equivalently
+The current kinetic slope is a theorem datum,
+\begin{equation}
+  Z_J^{\rm cur}
+  =
+  \partial_{\widehat\lambda}\widehat K_J^{\rm cur}(0)>0.
+  \label{eq:chm-current-Z-factor}
+\end{equation}
+The canonically sloped current kernel is
+\begin{equation}
+  \widehat K_{J,{\rm can}}^{\rm cur}
+  =
+  (Z_J^{\rm cur})^{-1}\widehat K_J^{\rm cur},
+  \qquad
+  \partial_{\widehat\lambda}\widehat K_{J,{\rm can}}^{\rm cur}(0)=1 .
+  \label{eq:chm-current-canonical-kernel}
+\end{equation}
+The constant entry in the unrescaled normalization is equivalently
 \begin{equation}
   \widehat\Sigma_{aa,J}^{\rm CHM}
   =
@@ -332,12 +369,12 @@ The source-supported CHM statement is the existence of this transverse
 boundary kernel from the action, gauge fixing, boundary variation, and
 modified product.  The open DeVries-specific theorem target is
 \begin{equation}
-  \widehat K^{\rm cur}_J(\widehat\lambda)
+  \widehat K_{J,{\rm can}}^{\rm cur}(\widehat\lambda)
   =
-  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM,can}
   +O(\widehat\lambda^2),
   \qquad
-  \widehat\Sigma_{aa,J}^{\rm CHM}=J .
+  \widehat\Sigma_{aa,2}^{\rm CHM,can}=2 .
   \label{eq:chm-current-entry-normalized}
 \end{equation}
 This is the CHM current-entry theorem target.  The corresponding source
@@ -348,8 +385,8 @@ Eqs.~(2.11)--(2.23), (2.30)--(2.44), and (3.32)--(3.43) of
 Ref.~\cite{CsakiHubiszMeade2005}.  Promotion of
 Eq.~\eqref{eq:chm-current-entry-normalized} requires the source definitions of
 \(P_{a,J}^{\gamma^\perp}\), \(P_\gamma\), \(K_{\gamma,J}^{\rm ref}\),
-\(\Lambda_{\rm CHM}\), endpoint signs, the CHM product, and the pole map in a
-single convention.
+\(\Lambda_{\rm CHM}\), \(Z_J^{\rm cur}\), endpoint signs, the CHM product, and
+the pole map in a single convention.
 
 The split assigns source data and theorem data separately.  CHM supplies the
 boundary variation, modified scalar product, vector Robin equations, scalar
@@ -362,7 +399,7 @@ DeVries reduction supplies additional theorem data:
 \]
 Closure of the interval route requires derivations of the target conditions
 \[
-  \widehat\Sigma_{aa,2}^{\rm CHM}=2,\qquad
+  \widehat\Sigma_{aa,2}^{\rm CHM,can}=2,\qquad
   \widehat{\mathcal I}_{h,3/4}^{\rm CHM}=\frac34,\qquad
   \Delta_Y^{\rm CHM}=0,\qquad
   \Delta_W^{\rm CHM}=0,\qquad
@@ -393,7 +430,7 @@ coordinate when the route uses one.  The ordered invariant target is
 \begin{equation}
   \widehat{\mathcal I}_{h,J_H}^{\rm CHM}=J_H=\frac34,
   \qquad
-  \widehat\Sigma_{aa,J_{\rm adj}}^{\rm CHM}=J_{\rm adj}=2,
+  \widehat\Sigma_{aa,J_{\rm adj}}^{\rm CHM,can}=J_{\rm adj}=2,
   \label{eq:chm-ordered-invariant-target}
 \end{equation}
 as target equations using one \(\Lambda_{\rm CHM}\), one product, and one pole

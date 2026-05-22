@@ -11,7 +11,7 @@
 **Parent-workspace refinement.** The `../weak` critique turns this into a
 mass-map theorem.  The assignment must pass through a gauge-Higgs mass matrix,
 pole self-energy map, or equivalent source-theory reduction.  SO(32) flavor
-bookkeeping supplies the ordered pair only after an electroweak-operator
+bookkeeping supplies the ordered pair once an electroweak-operator
 coupling: the adjacent audit places triplet data in adjoint branches and
 weak-doublet data in spinor branches, so the flavor ledger needs a coupling to
 the electroweak operator.
@@ -36,7 +36,7 @@ target mass-map equation is
 
 **Loop 12 theorem-target refinement.** Appendix D Target 0 and Target II now
 place the ordered assignment inside a unified source-to-pole theorem.  The
-assignment is accepted only after the same reduced field basis supplies the
+assignment is accepted when the same reduced field basis supplies the
 source kernel, the maps
 \[
 P_W:\ h_J\mapsto C_2(\mathbf 2),\qquad
@@ -246,6 +246,21 @@ and the target conditions are
 to be derived together with \(\Delta_{\rm O1/O10}\) in the pole scheme.  O1 remains open
 because these projector, norm, source-scale, and pole-map conditions still
 await derivation from the interval action.
+
+**Loop 45 CHM admissibility-lemma refinement.** The CHM current package is now
+a shared admissibility lemma.  Closure requires positive projected CHM norms,
+photon-orthogonality preservation, ordered or commuting projectors,
+photon-reference subtraction, one \(\Lambda_{\rm CHM}\), and
+\[
+Z_J^{\rm cur}
+=\partial_{\widehat\lambda}\widehat K_J^{\rm cur}(0)>0.
+\]
+The canonical target is
+\[
+\widehat\Sigma_{aa,2}^{\rm CHM,can}=2,
+\]
+followed by \(\Delta_W^{\rm CHM}=0\), \(\Delta_Y^{\rm CHM}=0\), the same-basis
+Hodge product, and the pole remainder \(\Delta_{\rm O1/O10}\).
 
 ## O2b. Current electroweak input audit
 
@@ -633,6 +648,25 @@ P_W,P_Z,P_\gamma,\Delta_{\rm O1/O10}).
 The three named derivations are the CHM neutral-current entry, the same-basis
 Hodge/SUSY-QM off-diagonal product, and the ordered projector package with a
 pole remainder.
+
+**Loop 45 CHM admissibility-lemma refinement.** O4 now starts its entry-level
+test from a shared CHM lemma.  The source route must supply positive projected
+norms for \(P_\gamma a_\gamma^{(0)}\) and
+\(P_{a,J}\Pi_{\gamma^\perp}^{(T)}z^{(0)}\), preserve photon orthogonality,
+state the projector order or commutation theorem, perform photon-reference
+subtraction, derive the shared \(\Lambda_{\rm CHM}\), and derive the current
+slope
+\[
+Z_J^{\rm cur}
+=\partial_{\widehat\lambda}\widehat K_J^{\rm cur}(0)>0.
+\]
+The pass/fail diagonal test is
+\[
+\widehat\Sigma_{aa,2}^{\rm CHM,can}=2.
+\]
+The same reduced basis must then carry the Hodge/SUSY-QM off-diagonal product,
+\(\Delta_W^{\rm CHM}\), \(\Delta_Y^{\rm CHM}\), and the pole remainder
+\(\Delta_{\rm O1/O10}\).
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary

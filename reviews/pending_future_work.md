@@ -2,9 +2,16 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 91 REVTeX PRD preprint pages after the Loop 31 compile.
+- Current compiled draft: 105 REVTeX PRD preprint pages after the Loop 44
+  compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
+- Loop 45 focus: use the shared CHM admissibility lemma to derive or reject the
+  canonical neutral-current target
+  \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\).  The required source data are
+  \(P_\gamma\), \(P_{a,J}^{\gamma^\perp}\), \(K_{\gamma,J}^{\rm ref}\),
+  \(\Lambda_{\rm CHM}\), \(Z_J^{\rm cur}\), endpoint signs, projector order or
+  commutation, photon-reference subtraction, and the pole map.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
 - Extend appendices with source-audited algebraic obligations and derivation targets for the three local mechanisms as a combined comparison table.
@@ -33,7 +40,7 @@
   operator after the tested failures; SO(32) flavor/string claims require
   projection, anomaly, hypercharge, global-form, and electroweak-coupling
   checks.
-- Use Loop 16's alpha endpoint target as a downstream corollary only after the
+- Use Loop 16's alpha endpoint target as a downstream corollary after the
   scalar branch theorem, \(D=9\) geometric \(U(1)\) endpoint theorem,
   electromagnetic embedding theorem, charge normalization, and matching pair
   \((Q_\alpha,\Delta_{\alpha,{\rm match}})\) are derived.

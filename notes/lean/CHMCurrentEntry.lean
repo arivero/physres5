@@ -1,7 +1,7 @@
 /-!
-Loop 27 note to self: CHM current-entry extraction and Berger-S3 middle-line test.
+Loop 27 note: CHM current-entry extraction and Berger-S3 middle-line test.
 
-These notes are uncompiled. They record theorem obligations introduced after
+These notes are uncompiled. They state theorem obligations introduced after
 the parent-directory read and the Loop 27 referee/advisor pass.
 -/
 
@@ -112,6 +112,48 @@ axiom loop44_chm_admissible_current_entry_required :
   ∃ C : Loop44CHMAdmissibleCurrentEntry,
     loop44CHMAdmissibleCurrentEntryReady C
 
+structure Loop45CHMAdmissibilityLemma where
+  neutralTrace : BoundaryTrace
+  chmProduct : CHMProduct
+  photonProjection : Projection
+  gammaPerpProjection : Projection
+  photonReferenceKernel : Kernel
+  sourceScale : SourceScale
+  currentSlope : Type
+  positivePhotonNorm : Prop
+  positiveGammaPerpNorm : Prop
+  orthogonalityPreserved : Prop
+  projectorOrderOrCommutation : Prop
+  photonReferenceSubtraction : Prop
+  sharedLambdaCHM : Prop
+  kineticSlopePositive : Prop
+  canonicalSigmaAA2 : Prop
+
+def loop45CHMAdmissibilityLemmaReady
+  (C : Loop45CHMAdmissibilityLemma) : Prop :=
+  C.positivePhotonNorm ∧
+  C.positiveGammaPerpNorm ∧
+  C.orthogonalityPreserved ∧
+  C.projectorOrderOrCommutation ∧
+  C.photonReferenceSubtraction ∧
+  C.sharedLambdaCHM ∧
+  C.kineticSlopePositive ∧
+  C.canonicalSigmaAA2
+
+/- Obligation 1d, updated in Loop 45:
+   The CHM current-entry comparison uses the canonical kernel
+     Khat_cur_can,J = (Z_cur,J)^(-1) Khat_cur,J
+   with
+     Z_cur,J = d Khat_cur,J / d lambdahat at lambdahat = 0 > 0.
+   The first pass/fail target is
+     Sigmahat_AA,2^CHM,can = 2.
+   The same admissibility lemma must also carry positive projected norms,
+   photon-orthogonality preservation, source ordered projectors or a
+   commutation theorem, photon reference subtraction, and one Lambda_CHM. -/
+axiom loop45_chm_admissibility_lemma_required :
+  ∃ C : Loop45CHMAdmissibilityLemma,
+    loop45CHMAdmissibilityLemmaReady C
+
 structure FactorizationFirstSpine where
   hodgeOffDiagonal : Prop
   chmCurrentDiagonal : Prop
@@ -147,7 +189,7 @@ def singleSourceKKFixingReady (S : SingleSourceKKFixing) : Prop :=
   S.sameSourceVariable
 
 /- Obligation 2:
-   Parent physres6 material enters as a theorem target after one source
+   Parent physres6 material is a theorem target after one source
    variable supplies t_dim, t_EW, K_J, F_sc, and the pole map. -/
 axiom loop27_parent_kk_fixing_guardrail :
   ∃ S : SingleSourceKKFixing, singleSourceKKFixingReady S

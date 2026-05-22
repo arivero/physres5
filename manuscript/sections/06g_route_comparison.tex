@@ -2,7 +2,7 @@
 \label{sec:route-comparison}
 % Status: open. Compares route kernels, assignments, branch maps, scale placement, and compatibility tests.
 
-The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  This section puts them in a common format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A derivation in any route must supply a physical origin for the matrix entries and turn the string, extra-dimensional, or singular-geometric address into a calculation.
+The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  The section casts the three routes in a common reduction format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A derivation in any route must supply a physical origin for the matrix entries and turn the string, extra-dimensional, or singular-geometric address into a calculation.
 
 \subsection{Common reduction problem}
 \label{sec:common-reduction-problem}
@@ -44,13 +44,29 @@ The DeVries target is the simultaneous limit and normalization
   \Sigma_{ha,J}^{r}\Sigma_{ah,J}^{r}=J.
   \label{eq:route-common-target}
 \end{equation}
-The available source equations fix the candidate entry order.  The
-interval/CHM route supplies the first current-entry theorem target through
-\(\widehat\Sigma_{aa,J}^{\rm CHM}=J\).  The Hodge/SUSY-QM route supplies the
-companion square-root theorem target
-\(\Sigma_{ha,J}\Sigma_{ah,J}=J\).  The \(G_2\) route supplies a local-kernel
-test.  The endpoint/Chan--Paton route supplies a matrix arena whose DeVries
-use requires a worldvolume quadratic kernel, projection, and normalization.
+The available source equations select a candidate entry sequence.  The
+interval/CHM route begins with the admissible neutral trace package of
+Eqs.~\eqref{eq:chm-admissible-positive-norms}--\eqref{eq:chm-current-Z-factor}.
+That package supplies positive projected norms, photon-orthogonal
+normalization, source-ordered or commuting projectors, photon-reference
+subtraction, a shared \(\Lambda_{\rm CHM}\), and the current-slope datum
+\(Z_J^{\rm cur}\).  Its first theorem target is
+\begin{equation}
+  \widehat\Sigma_{aa,2}^{\rm CHM,can}=2 .
+  \label{eq:route-chm-current-entry-first-test}
+\end{equation}
+The same source package then carries
+\begin{equation}
+  \Delta_W^{\rm CHM},\qquad
+  \Delta_Y^{\rm CHM},\qquad
+  \Sigma_{ha,J}\Sigma_{ah,J}=J,\qquad
+  \Delta_{\rm O1/O10}.
+  \label{eq:route-chm-followup-tests}
+\end{equation}
+The Hodge/SUSY-QM route supplies the companion square-root theorem target.  The
+\(G_2\) route supplies a local-kernel test.  The endpoint/Chan--Paton route
+supplies a matrix arena whose DeVries use requires a worldvolume quadratic
+kernel, projection, and normalization.
 Equation~\eqref{eq:route-common-target} is stronger than a qualitative mechanism.  It assigns one geometric, endpoint, or boundary object to each matrix entry.  It also fixes the algebraic route to
 \begin{equation}
   \det K_{J,r}(\lambda)=\lambda^2+J\lambda-J,
@@ -59,28 +75,25 @@ Equation~\eqref{eq:route-common-target} is stronger than a qualitative mechanism
   \label{eq:route-common-det}
 \end{equation}
 
-The route closes when one source package supplies the projected trace space,
-source product, photon reference, scalar functional, and pole map, and derives
-every arrow in
+The route is fully specified when one source package supplies the projected
+trace space, source product, photon reference, scalar functional, and pole map,
+and derives the arrows in
 \begin{equation}
 \begin{array}{ccc}
 (H,W^a,B;\,t) & \longrightarrow & (J_H,J_{\rm adj},J_\gamma)\\
 \downarrow && \downarrow\\
 (K_T^{\rm DtN}+K_T^{\rm brane},\mathcal F_{\rm sc})
 & \longrightarrow &
-(\widehat\Sigma_{aa,2}^{\rm CHM},
+(\widehat\Sigma_{aa,2}^{\rm CHM,can},
 \Sigma_{ha,J}\Sigma_{ah,J},
 P_W,P_Z,P_\gamma,\Delta_{\rm O1/O10}) .
 \end{array}
 \label{eq:active-proof-spine}
 \end{equation}
-The three proof obligations are the CHM neutral-current entry
-\(\widehat\Sigma_{aa,2}^{\rm CHM}=2\), the same-basis Hodge/SUSY-QM
+The three proof obligations are the canonical CHM neutral-current entry
+\(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\), the same-basis Hodge/SUSY-QM
 off-diagonal product \(\Sigma_{ha,J}\Sigma_{ah,J}=J\), and the ordered
 projector package \(P_W,P_Z,P_\gamma\) with its pole remainder.
-The proof order is fixed by the CHM current entry, the
-\(\Delta_W^{\rm CHM}/\Delta_Y^{\rm CHM}\) projector package, the same-basis
-Hodge product, and the pole-scheme match to \(\Delta_{\rm O1/O10}\).
 
 The reduction has three candidate arenas.  The endpoint arena is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval arena is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) arena is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources support the listed ingredients.  Selection of the two-channel subspace, inner product, normalization, and entries in Eq.~\eqref{eq:route-common-target} remains the derivation target.
 
@@ -88,7 +101,7 @@ The interval arena supplies source-derived boundary data.  The CHM source
 equations fix the boundary kinetic normalization, the corresponding modified
 product, vector Robin data from boundary scalar vevs, scalar \(A_5/\pi_i\)
 boundary equations, and photon/custodial bookkeeping.  Sec.~\ref{sec:kk-boundary}
-records the convention ledger.  In compact route notation,
+states the convention data.  In compact route notation,
 \begin{equation}
   \partial_y f_\lambda=-(\lambda/M_i)f_\lambda,\qquad
   (f,g)_{\rm CHM}=\int fg+\sum_i M_i^{-1}f(y_i)g(y_i),
@@ -113,63 +126,21 @@ Thus the source-backed statement is
 \end{equation}
 Equation~\eqref{eq:route-chm-source-data} supplies boundary ingredients; the
 projection to \(\mathcal H_J\) and the \(J\)-normalization are theorem data.
-The interval route is the active test case because the CHM boundary conditions
+The interval route is the current test arena because the CHM boundary conditions
 provide explicit vector and scalar boundary data for an entry-level derivation
 from the source equations.  The entry tests have two linked forms:
 Hodge/SUSY-QM factorization tests
-\(\Sigma_{ha,J}\Sigma_{ah,J}=J\), and the CHM boundary current tests
-\(\Sigma_{aa,J}=J\).  The current-channel subproblem is the entry in
-dimensionless variables.  Let
-\(\widehat\lambda=\lambda/\Lambda_{\rm CHM}^2\).  Let \(P_\gamma\) select the
-photon reference trace, and set
-\[
-  P_\gamma^\dagger
-  \left(K_{T,J}(0)-K^{\rm ref}_{T,J}\right)
-  P_\gamma
-  =
-  0,
-  \qquad
-  K_{T,J}=K^{\rm DtN}_{T,J}+K^{\rm brane}_{T,J}.
-\]
-Define
-\begin{equation}
-\begin{aligned}
-  \widehat K^{\rm cur}_J(\widehat\lambda)
-  &=
-  \frac{1}{\Lambda_{\rm CHM}^2}
-  \left\langle a_J,
-  \left(
-  K^{\rm DtN}_{T,J}(\lambda)
-  +K^{\rm brane}_{T,J}(\lambda)
-  -K^{\rm ref}_{T,J}(\lambda)
-  \right)a_J
-  \right\rangle_{\rm CHM},
-  \\
-  \lambda&=\Lambda_{\rm CHM}^2\widehat\lambda,
-  \qquad
-  \langle a_J,a_J\rangle_{\rm CHM}=1 .
-\end{aligned}
-  \label{eq:chm-current-entry-target}
-\end{equation}
-where \(a_J=P_{a,J}^{\gamma^\perp}A_\mu^{T,\partial}\) is a transverse
-photon-orthogonal boundary-current sample in the neutral CHM product.  The
-entry theorem is
-\begin{equation}
-  \widehat K^{\rm cur}_J(\widehat\lambda)
-  =
-  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
-  +O(\widehat\lambda^2),
-  \qquad
-  \widehat\Sigma_{aa,J}^{\rm CHM}=J .
-  \label{eq:chm-current-entry-normalization}
-\end{equation}
-The CHM equations supply the boundary variation, product, vector Robin data,
-scalar \(A_5/\pi_i\) equations, custodial bookkeeping, and photon-zero
-accounting.  The projection \(P_{a,J}\), reference subtraction, source scale
-\(\Lambda_{\rm CHM}\), endpoint-normal conventions, ordered W/Z boundary map,
-and pole map remain theorem data.  The parent KK-fixing notes sharpen the same issue into a single-source
+\(\Sigma_{ha,J}\Sigma_{ah,J}=J\), and the canonical CHM boundary-current test
+\(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\).  Sec.~\ref{sec:kk-schur-target}
+defines the neutral trace package, photon subtraction, \(Z_J^{\rm cur}\),
+canonical current kernel, and target equation.  The CHM equations supply the
+boundary variation, product, vector Robin data, scalar \(A_5/\pi_i\) equations,
+custodial bookkeeping, and photon-zero accounting.  The projection
+\(P_{a,J}\), reference subtraction, source scale \(\Lambda_{\rm CHM}\),
+endpoint-normal conventions, ordered W/Z boundary map, and pole map remain
+theorem data.  The parent KK-fixing notes sharpen the same issue into a single-source
 test: the dimensional middle line, negative-branch scalar reading, and
-electromagnetic endpoint can be combined only after one source variable
+electromagnetic endpoint can be combined when one source variable
 supplies
 \begin{equation}
   u\mapsto
@@ -197,9 +168,9 @@ is used in the mass-ratio argument.
 For the superconnection/CHM route, these filters have concrete meanings.  The
 odd Higgs trace space, the even transverse-current trace space, and the
 interval boundary scalar product stay separated until one source operator
-defines their common inner product.  The Wigner--Eckart route is a recorded
-failed tested subroute, so the superconnection route must supply its own
-projection.  The SO(32) material remains flavor-boundary bookkeeping until a
+defines their common inner product.  The Wigner--Eckart route is a failed
+subroute, so the superconnection route must supply its own projection.  The
+SO(32) material remains flavor-boundary bookkeeping until a
 derived coupling inserts that representation sector into the electroweak kernel.
 
 \subsection{Entry-by-entry comparison}

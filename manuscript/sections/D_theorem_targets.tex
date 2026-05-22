@@ -2,7 +2,7 @@
 \label{app:theorem-targets}
 % Status: open. Collects theorem targets, source-backed constraints, and proof obligations.
 
-This appendix records the analytical obligations in theorem form.  Each target
+This appendix states the analytical obligations in theorem form.  Each target
 names its hypotheses, conclusion, current evidence, and failure mode.  A
 physical derivation proves one of the targets below, replaces it with a
 stronger statement, or demotes the associated claim.
@@ -55,7 +55,20 @@ block-diagonalized by the same projection.  The route reduction has Schur form
   -
   V_{J,r}^{\dagger}(\lambda-L_{J,r})^{-1}V_{J,r}.
   \label{eq:target0-schur}
+  \end{equation}
+For the interval/CHM realization, Target 0 includes the neutral admissibility
+lemma of Sec.~\ref{sec:kk-schur-target}.  The source route must prove positive
+projected CHM norms, photon-orthogonality preservation, the projector-order or
+commutation condition, photon-reference subtraction, the shared
+\(\Lambda_{\rm CHM}\), and the kinetic-slope condition
+\begin{equation}
+  Z_J^{\rm cur}
+  =
+  \partial_{\widehat\lambda}\widehat K_J^{\rm cur}(0)>0 .
+  \label{eq:target0-chm-current-slope}
 \end{equation}
+The comparison with \(J\) uses the canonical current entry obtained by dividing
+by \(Z_J^{\rm cur}\).
 
 \paragraph*{Conclusion.}
 In the reduced basis of Eq.~\eqref{eq:target0-light-space},
@@ -72,7 +85,9 @@ The same field basis carries the electroweak sampling maps
 \begin{equation}
   P_W:\ h_{J,r}\mapsto C_2(\mathbf 2)=\frac34,
   \qquad
-  P_Z:\ a_{J,r}\mapsto C_2(\mathrm{adj})=2,
+  P_Z:\ a_{J,r}^{\gamma^\perp}\mapsto C_2(\mathrm{adj})=2,
+  \qquad
+  P_\gamma:\ a_{\gamma,r}\mapsto 0,
   \label{eq:target0-ew-projectors}
 \end{equation}
 and the source kernel contributes to the four-dimensional transverse
@@ -87,6 +102,15 @@ self-energy in the pole scheme,
 \end{equation}
 Thus one theorem supplies the source reduction, the reduced inner product, the
 DeVries entries, the ordered W/Z sampling maps, and the pole-placement chain.
+For the CHM electroweak realization, the sampling maps have the refined form
+\begin{equation}
+  P_W(h_{J,r})=\frac34+\Delta_W^r,\qquad
+  P_Z(a_{J,r}^{\gamma^\perp})=2+\Delta_Y^r,\qquad
+  P_\gamma(a_{\gamma,r})=0,
+  \label{eq:target0-ew-projector-remainders}
+\end{equation}
+with \(\Delta_W^r=\Delta_Y^r=0\) as the zero-remainder outcome in the selected
+source convention.
 
 \paragraph*{Current evidence.}
 The endpoint, interval, and \(G_2\) sections supply candidate arenas for the
@@ -247,7 +271,7 @@ Let \(H\) be the Standard Model Higgs doublet and let \(J_H=3/4\) be its \(SU(2)
 with the custodial structure and \(\rho=1\) tree-level relation discussed in Sec.~\ref{sec:ew-embedding}.
 
 \paragraph*{Conclusion.}
-Target II records the low-energy electroweak mass-map data and the ordered
+Target II states the low-energy electroweak mass-map data and the ordered
 invariants.  Target~\ref{app:target-pole-placement} carries complex-pole
 matching and scheme conversion.  The required O1 theorem is the existence of a
 source package
@@ -452,6 +476,16 @@ variable dimensionless,
   \widehat\lambda=\frac{\lambda}{\Lambda_{\rm CHM}^2}.
   \label{eq:target-chm-hat-lambda}
 \end{equation}
+The admissibility lemma requires positive projected norms, preserved
+photon-orthogonality, a source-ordered or commuting projector product, the
+photon-reference subtraction of Eq.~\eqref{eq:target-chm-photon-reference}, and
+the current-slope datum
+\begin{equation}
+  Z_J^{\rm cur}
+  =
+  \partial_{\widehat\lambda}\widehat K_J^{\rm cur}(0)>0 .
+  \label{eq:target-chm-current-Z-factor}
+\end{equation}
 The current-channel kernel is
 \begin{equation}
 \begin{aligned}
@@ -472,26 +506,36 @@ The current-channel kernel is
 \end{aligned}
   \label{eq:target-chm-current-extraction}
 \end{equation}
+The canonical current kernel is
+\begin{equation}
+  \widehat K^{\rm cur,can}_J
+  =
+  (Z_J^{\rm cur})^{-1}\widehat K^{\rm cur}_J,
+  \qquad
+  \partial_{\widehat\lambda}\widehat K^{\rm cur,can}_J(0)=1.
+  \label{eq:target-chm-current-canonical}
+\end{equation}
 The conclusion sought from this extraction is
 \begin{equation}
-  \widehat K^{\rm cur}_J(\widehat\lambda)
+  \widehat K^{\rm cur,can}_J(\widehat\lambda)
   =
-  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM,can}
   +O(\widehat\lambda^2),
   \qquad
-  \widehat\Sigma_{aa,J}^{\rm CHM}=J.
+  \widehat\Sigma_{aa,2}^{\rm CHM,can}=2.
   \label{eq:target-chm-current-sigma}
 \end{equation}
 Acceptance requires endpoint signs, dimensions, product normalization,
-photon/reference subtraction, and the shared source scale as prerequisites for
-using \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\).
+photon/reference subtraction, \(Z_J^{\rm cur}\), and the shared source scale as
+prerequisites for using \(\widehat\Sigma_{aa,2}^{\rm CHM,can}=2\).
 Here \(K_{\gamma,J}^{\rm ref}\), \(P_\gamma\), \(P_{a,J}\),
 \(\Lambda_{\rm CHM}\), the endpoint-normal convention, the wavefunction
-normalization of \(a_J\), and the dimensionless \(J\)-normalization are part of
-the theorem data.  If any one of \(K_{\gamma,J}^{\rm ref}\), \(P_\gamma\),
-\(P_{a,J}\), or \(\Lambda_{\rm CHM}\) lacks a source definition, the route
-falls back to an admissible CHM boundary-kernel address with an open DeVries
-entry.  Target~\ref{app:target-susyqm-origin} supplies the complementary
+normalization of \(a_J\), \(Z_J^{\rm cur}\), and the dimensionless
+\(J\)-normalization are part of the theorem data.  Missing source definitions
+for \(K_{\gamma,J}^{\rm ref}\), \(P_\gamma\), \(P_{a,J}\), \(Z_J^{\rm cur}\), or
+\(\Lambda_{\rm CHM}\) leave the route as an admissible CHM boundary-kernel
+address with an open DeVries entry.  Target~\ref{app:target-susyqm-origin}
+supplies the complementary
 square-root entry test; this target supplies the hatted current diagonal test.
 
 \paragraph*{Conclusion.}
@@ -648,7 +692,7 @@ variable is replaced by the compact holonomy of \(A_5+\Phi_{\rm odd}\) and the
 same \(P_{\rm sc}\), \(\Lambda_J\), and photon reference used in Target X.
 
 \paragraph*{Current evidence.}
-Sec.~\ref{sec:negative} records the scalar target table, the same-source package, the holonomy-curvature option, and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
+Sec.~\ref{sec:negative} states the scalar target table, the same-source package, the holonomy-curvature option, and the eigenvector interpretation.  The negative branch is treated as an analytical partner of the pole clue, with its Higgs/order-parameter meaning open.  Breitenlohner--Freedman supply an AdS stability caveat: scalar mass-squared values below zero can be compatible with positive energy under specified boundary conditions \cite{BreitenlohnerFreedman1982}.  The DeVries sign still requires its own source theorem.
 
 \paragraph*{Failure mode.}
 The target fails if the negative branch has auxiliary meaning in the derived source theory.  The determinant problem may still be motivated by the positive branch; scalar claims then leave the physical conclusion.
@@ -672,7 +716,7 @@ The derived operator \(\mathcal M_J\) is compatible with the allowed line operat
 
 \paragraph*{Current evidence.}
 Secs.~\ref{sec:flavour} and \ref{sec:global-form} state the current boundary conditions: the SO(32)-flavor idea is a representation-sector clue, and global-form data are completion constraints.  The manuscript avoids identifying generations with compactification topology until a representation map is derived.
-The representation audit, currently project-source bookkeeping, records the proposed boundary data
+The representation audit, currently project-source bookkeeping, states the proposed boundary data
 \begin{equation}
   16=(5,3)+(1,1),
   \qquad
@@ -1422,13 +1466,15 @@ u_{\rm sc/int}
 The closure conditions are
 \begin{equation}
   \begin{aligned}
-  P_W(\Phi_{\rm odd})&=\frac34,&
-  P_Z(F_{\rm even}^{\gamma^\perp})&=2,\\
+  P_W(\Phi_{\rm odd})&=\frac34+\Delta_W^{\rm CHM},&
+  P_Z(F_{\rm even}^{\gamma^\perp})&=2+\Delta_Y^{\rm CHM},\\
   P_\gamma(F_{\rm even}^{\gamma})&=0,&
   \Delta_J^{\rm sc/int}&\ \hbox{is derived in the pole scheme}.
   \end{aligned}
   \label{eq:target-sc-int-closure}
 \end{equation}
+The zero-remainder outcome sets
+\(\Delta_W^{\rm CHM}=\Delta_Y^{\rm CHM}=0\) in the selected source convention.
 The scalar extension of the same target introduces a compact
 boundary-superconnection holonomy
 \begin{equation}
@@ -1485,6 +1531,10 @@ is the diagonal partner of this factorization target: the Hodge/SUSY-QM
 complex supplies the candidate square-root entry, and the hatted CHM current
 kernel supplies the candidate \(\Sigma_{aa,J}=J\) entry after the source scale
 \(\Lambda_J\) and reference subtraction are fixed.
+The Target X square-root product is tested after the CHM admissibility lemma has
+fixed the neutral current trace and canonical diagonal entry; this keeps the
+Hodge product, \(P_W/P_Z/P_\gamma\), and pole remainder in the same reduced
+basis.
 
 \paragraph*{Current evidence.}
 The square-root entry has a concrete mathematical source: on normalized

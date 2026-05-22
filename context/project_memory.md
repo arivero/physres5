@@ -23,6 +23,7 @@
 - Use affirmative exposition. Correct technical errors directly. Avoid rhetorical negative/contrast formulas and adjectival positioning.
 - Keep Lean-style notes in `notes/lean/` for obligations, theorem targets, and expert-trigger prompts. These notes are working memory and are not compiled.
 - Maintain referee/advisor review loops, including the score table, so conceptual quality and open gaps are visible across iterations.
+- For every substantial loop, call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation; record their reports in `reviews/`.
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
 
 ## Resume state after context renewal
@@ -37,6 +38,7 @@
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and referee-facing status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.
+- Editorial next work: run `reviews/paper_normalization_plan.md` to turn the reference draft from workshop/scaffolding prose into paper prose.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

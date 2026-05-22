@@ -3,6 +3,7 @@
 ## Immediate manuscript work
 
 - Current compiled draft: 62 REVTeX PRD preprint pages.
+- Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push one route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
 - Extend the radical-placement ledger into a polished figure if the journal version needs a visual summary.
@@ -52,6 +53,7 @@
 ## Review cycle
 
 - Run the referee/advisor cycle in `reviews/referee_advisor_cycle.md` after each substantial rewrite.
+- Each substantial loop must call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation.
 - Current score table includes Loop 7 for the 62-page compiled draft.
 - Use `skills/source-fragment-recall/SKILL.md` for direct corpus recall.
 - Use `skills/surprise-source-recall/SKILL.md` when direct review stops generating new conceptual ideas.

@@ -4,20 +4,23 @@ This file records the autonomous improvement loop to run after each manuscript p
 
 ## Cycle protocol
 
-1. **Referee pass.** Read the compiled manuscript as a skeptical PRD referee. Record:
+1. **Referee A subagent pass.** Call a GPT-5.5 subagent as a skeptical PRD referee focused on correctness, scheme discipline, and overclaiming. Record:
    - central claim;
    - strongest source-supported result;
    - weakest inference;
    - hidden assumptions;
    - exact revisions or calculations needed.
-2. **Advisor pass.** Read the referee report as an advisor trying to improve the paper. Record:
+2. **Referee B subagent pass.** Call a second GPT-5.5 subagent as an independent PRD referee focused on string/Kaluza--Klein/\(G_2\) depth, source control, and manuscript structure. Record the same fields as Referee A.
+3. **Advisor subagent pass.** Call a GPT-5.5 subagent as an advisor trying to improve the paper after reading both referee reports. Record:
    - one new conceptual route;
    - one string/Kaluza-Klein mechanism to test;
    - one source to read;
    - one equation or diagram the manuscript needs.
-3. **Implementation pass.** Apply revisions that improve derivational clarity, source traceability, or conceptual structure.
-4. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
-5. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
+4. **Implementation pass.** Apply revisions that improve derivational clarity, source traceability, or conceptual structure.
+5. **Surprise recall pass.** If the advisor pass is conceptually exhausted, use `skills/surprise-source-recall/SKILL.md` to search adjacent local fragments and, if needed, web sources.
+6. **Notes pass.** Add Lean-style obligations in `notes/lean/` for unresolved derivations.
+
+The three subagent calls are mandatory for every substantial loop: two referee subagents and one advisor subagent, all configured to GPT-5.5. Store their reports in `reviews/` before implementation.
 
 ## Cycle 0 status
 

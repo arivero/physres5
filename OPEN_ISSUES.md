@@ -73,6 +73,34 @@ normalization, and pole map must apply to the odd Higgs/order-parameter channel
 and the even transverse-current channel before their quotient has physical
 meaning.
 
+**Loop 33 ordered-sampling refinement.** The O1 success criterion is now a
+single source package
+\[
+u_{\rm EW}\mapsto
+\big(
+\mathcal H_J,\langle\cdot,\cdot\rangle_{u_{\rm EW}},
+\Lambda_J,P_W,P_Z,P_\gamma,\mathcal R_{\rm pole},\mathcal F_{\rm sc}
+\big)
+\]
+with
+\[
+P_W(h_J)=J_H=\frac34,\qquad
+P_Z(a_J^{\gamma^\perp})=J_{\rm adj}=2,\qquad
+P_\gamma(a_\gamma)=0.
+\]
+The CHM interval version must define \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\),
+\(P_W\), \(P_Z\), \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), endpoint signs,
+and the pole map in one ledger.  Coquereaux supplies generalized-connection
+grading vocabulary; CHM supplies the active source-controlled normalization
+arena.  The issue stays open until
+\[
+\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+=
+\frac{x_+(J_H)}{x_+(J_{\rm adj})}
++\Delta_{\rm O1}
+\]
+has a derived \(\Delta_{\rm O1}\) or a stated source remainder.
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?

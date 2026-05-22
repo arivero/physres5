@@ -387,6 +387,42 @@ representation bookkeeping and source-upgrade work.  They derive the ordered
 W/Z assignment only after a coupling to the DeVries electroweak operator is
 given.
 
+### Loop 33 parent-directory read
+
+The current direct `..` pass refreshed the parent inventory while the O1
+ordered-sampling loop was active.  Relevant clusters remain `../prTalks`,
+`../weak`, `../signed-dv-custodial-project`, `../phys3`, `../phys4`,
+`../physres6`, and `../dualsm`.  Runtime state, credentials, caches, editor
+files, generated logs, and package trees remain outside manuscript claims.
+
+The seven `../prTalks` PDFs were read through the maintained extraction aids in
+`context/source_fragments/parent_prtalks/`; the PDFs remain source objects.
+The valid Loop 33 import is a theorem-target package:
+\[
+u_{\rm EW}\mapsto
+\big(
+\mathcal H_J,\langle\cdot,\cdot\rangle_{u_{\rm EW}},
+\Lambda_J,P_W,P_Z,P_\gamma,\mathcal R_{\rm pole},\mathcal F_{\rm sc}
+\big).
+\]
+The same read reinforces the K6 interface framing
+\[
+K_7:\ SU(3)_c\times SU(2)_L\times U(1)_Y
+\leadsto
+K_5:\ SU(3)_c\times U(1)_Q ,
+\]
+with K6 as the physical interpolation.  The colour-inclusive count is
+KK \(7/6/5\) or \(D=11/10/9\), while the colour-spectator electroweak count is
+KK \(3/2/1\) or \(D=7/6/5\).  These statements remain reconstruction targets:
+source geometry, projectors, normalization, chiral/fermion account, and pole
+map are open.
+
+The `../weak` refresh repeats the mass-map guardrail: direct scalar or
+representation assignments need a gauge-Higgs mass matrix, pole self-energy
+map, scalar functional, or equivalent source reduction.  The CHM interval
+ledger is therefore the current priority for O1, with Coquereaux serving as
+generalized-connection grading vocabulary.
+
 ## Source-upgrade queue
 
 - Source-audit custodial EFT and HEFT/SMEFT treatments before using the

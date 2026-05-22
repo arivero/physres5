@@ -45,6 +45,15 @@ datum, while the manuscript-facing source burden remains Witten 1981, CHM,
 six-dimensional string sources, local \(G_2\) sources, and any future primary
 Hanany--Witten/M-theory/D6 source upgrade.
 
+Loop 33 records a renewed parent-directory and `../prTalks` read in
+`context/parent_directory_loop33_read.md` and
+`notes/lean/ParentDirectoryLoop33.lean`.  The maintained extraction aids for
+the seven `../prTalks` PDFs are in `context/source_fragments/parent_prtalks/`.
+Their valid use is project-source recall for the O1 ordered-sampling package,
+effective \(D=11/10/9\) and KK \(7/6/5\) interpolation, the K6 interface
+language, SO(32)-flavor caveats, and top/negative-branch obligations.  The
+PDFs remain source objects for formula layout and images.
+
 `../physres6/` is a sibling short-note workspace for the alpha route.  Its
 valid use here is O17 provenance and symbolic theorem-target structure.  Its
 numerical checks and compact PRL framing remain outside the current conceptual
@@ -90,6 +99,11 @@ PRD phase.
     reference subtraction \(K^{\rm ref}_{T,J}\), the shared
     \(\Lambda_{\rm CHM}\), and the source-to-pole map before the equality
     \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\) is used as a DeVries entry.
+  - Loop 33 O1 use: CHM is the active source-controlled ledger for
+    \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\), \(P_W\), \(P_Z\), \(P_\gamma\),
+    \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), endpoint signs, photon
+    subtraction, and the pole map.  The charged/order-parameter row and neutral
+    current row must use one product and one source scale.
 - `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` — six-dimensional string-string duality source; type IIA on K3 and heterotic on \(T^4\).
 - `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` — six-dimensional string-string duality and charged solitonic strings.
 - `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` — heterotic small instantons and nonperturbative six-dimensional string dynamics.
@@ -165,3 +179,7 @@ are in `context/source_fragments/4[7-9]_*/` and
 - `48_Fayet_SUSY_SM_Higgs_Z_partner_1403.5951.pdf` — supersymmetric gauge/BEH source where spin-zero BEH fields appear in massive gauge multiplets with \(W\) and \(Z\) bosons; source for the electroweak partner-language caution in O20.
 - `49_Gates_Rana_Spinning_Particles_Large_N_SUSY_hep-th-9504025.pdf` — worldline \(N\)-extended supersymmetry and spinning-particle actions; source for spin/worldline vocabulary if the second-supercharge route is developed.
 - `50_Coquereaux_Algebraic_Superconnections_SU2_1_Electroweak_1992.pdf` — \(SU(2|1)\) algebraic superconnection formalism for electroweak symmetry breaking and Higgs fields as part of a generalized connection.
+  - Loop 33 O1 use: supports generalized-connection grading vocabulary for a
+    gauge-Higgs source complex.  The ordered W/Z quotient still requires
+    projectors \(P_W,P_Z,P_\gamma\), a common normalization, and a pole
+    remainder from the selected source route.

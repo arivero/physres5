@@ -153,6 +153,9 @@ structure EffectiveDimensionInterpolation where
   deff9to10to11 : Prop
   fullGaugeKK765 : Prop
   colourSpectatorKK321 : Prop
+  K7_unbrokenStandardModel : Prop
+  K6_interfacePackage : Prop
+  K5_brokenVisibleEndpoint : Prop
   activeElectroweakChannel321 : Prop
   geometricU1Endpoint : Prop
   electromagneticEmbeddingRequired : Prop
@@ -165,6 +168,9 @@ def interpolationObligation (I : EffectiveDimensionInterpolation) : Prop :=
   I.deff9to10to11 ∧
   I.fullGaugeKK765 ∧
   I.colourSpectatorKK321 ∧
+  I.K7_unbrokenStandardModel ∧
+  I.K6_interfacePackage ∧
+  I.K5_brokenVisibleEndpoint ∧
   I.activeElectroweakChannel321 ∧
   I.geometricU1Endpoint ∧
   I.electromagneticEmbeddingRequired ∧

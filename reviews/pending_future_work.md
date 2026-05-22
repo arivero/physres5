@@ -426,6 +426,17 @@
   \]
   The source must fix \(J_\star\), \(C_{\rm sc}\), scheme/scale, and the
   scalar/eaten/auxiliary projection.
+- Loop 33 O1 next step: derive, or reject, the CHM ordered-sampling package
+  \[
+  u_{\rm EW}\mapsto
+  (\mathcal H_J,\langle\cdot,\cdot\rangle_{u_{\rm EW}},
+  \Lambda_J,P_W,P_Z,P_\gamma,\mathcal R_{\rm pole},\mathcal F_{\rm sc})
+  \]
+  with \(P_W(h_J)=3/4\), \(P_Z(a_J^{\gamma^\perp})=2\), and
+  \(P_\gamma(a_\gamma)=0\).  The next source-theory move is to derive
+  \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\), \(K^{\rm ref}_{T,J}\), endpoint
+  signs, the photon subtraction, and \(\Delta_{\rm O1}\) from one CHM interval
+  action and pole map.
 
 ## Review cycle
 

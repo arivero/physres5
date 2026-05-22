@@ -247,25 +247,57 @@ Let \(H\) be the Standard Model Higgs doublet and let \(J_H=3/4\) be its \(SU(2)
 with the custodial structure and \(\rho=1\) tree-level relation discussed in Sec.~\ref{sec:ew-embedding}.
 
 \paragraph*{Conclusion.}
-The required theorem is the existence of a map from gauge-Higgs data to ordered samples,
+Target II records the low-energy electroweak mass-map data and the ordered
+invariants.  Target~\ref{app:target-pole-placement} carries complex-pole
+matching and scheme conversion.  The required O1 theorem is the existence of a
+source package
 \begin{equation}
   \mathcal D_{\rm EW}:
   (H,J^a_\mu,B_\mu)
   \longmapsto
-  (J_W,J_Z)=(J_H,J_{\rm adj})=(3/4,2),
+  \left(
+  \mathcal H_J,\langle\cdot,\cdot\rangle,\Lambda_J,
+  P_W,P_Z,P_\gamma,\mathcal R_{\rm pole}
+  \right),
   \label{eq:target-ew-map}
 \end{equation}
-such that
+with
 \begin{equation}
-  \frac{M_W^2}{M_Z^2}
+  P_W(h_J)=J_H=\frac34,\qquad
+  P_Z(a_J^{\gamma^\perp})=J_{\rm adj}=2,\qquad
+  P_\gamma(a_\gamma)=0.
+  \label{eq:target-ew-projectors}
+\end{equation}
+The pole-level conclusion is then
+\begin{equation}
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
   =
-  \frac{x_+(J_H)}{x_+(J_{\rm adj})}.
+  \frac{x_+(J_H)}{x_+(J_{\rm adj})}
+  +\Delta_{\rm O1}.
   \label{eq:target-ew-conclusion}
 \end{equation}
-The derivation must say why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  The allowed mathematical channels for the charged sample are: a Higgs-representation contribution inside the gauge-Higgs mass map, a scalar contribution to the W transverse self-energy, or a source/boundary label coupled to the Higgsing field.  Assigning \(C_2(\mathbf 2)\) to the Higgs field and \(C_2(\mathrm{adj})\) to the gauge field leaves the pole-ratio comparison descriptive until the ordered W/Z sampling rule is derived.
+The derivation must say why the charged comparison samples the
+order-parameter invariant and why the neutral comparison samples the
+adjoint/current invariant.  The allowed mathematical channels for the charged
+sample are: a Higgs-representation contribution inside the gauge-Higgs mass
+map, a scalar contribution to the \(W\) transverse self-energy, or a
+source/boundary label coupled to the Higgsing field.
+
+The acceptance conditions are:
+\begin{enumerate}
+\item the same \(\mathcal H_J\), inner product, and \(\Lambda_J\) support
+  \(h_J\) and \(a_J^{\gamma^\perp}\);
+\item \(P_\gamma\) fixes the photon null reference;
+\item the neutral projector \(P_Z\) is defined after the \(\gamma^\perp\)
+  projection in the \(W^3\)--\(B\) sector;
+\item \(\Delta_{\rm O1}\) is derived in the pole scheme or retained as a
+  stated source remainder;
+\item the negative branch uses the same source package through the scalar
+  functional recorded in Target~\ref{app:target-negative-branch}.
+\end{enumerate}
 
 \paragraph*{Current evidence.}
-The Higgs doublet and adjoint invariants are fixed representation-theoretic facts.  The electroweak mass matrix, photon null direction, custodial relation, and projective reading of \(g:g'\) are standard low-energy data \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  The manuscript has converted the assignment into a theorem target.
+The Higgs doublet and adjoint invariants are fixed representation-theoretic facts.  The electroweak mass matrix, photon null direction, custodial relation, and projective reading of \(g:g'\) are standard low-energy data \cite{Logan2022,Dawson2018,AlvarezGaumeVazquezMozo2023}.  CHM interval sources supply boundary kinetic terms, vector Robin data, scalar \(A_5/\pi_i\) equations, custodial boundary data, and photon-zero-mode bookkeeping \cite{CsakiHubiszMeade2005}.  Coquereaux supplies the generalized-connection grading vocabulary for a gauge-Higgs source complex \cite{Coquereaux1992Superconnections}.  The manuscript has converted the assignment into a theorem target.
 
 \paragraph*{Failure mode.}
 The target fails if the assignment uses observed vector spin or an arbitrary post-selection of \(J\) values.  A successful derivation must arise from the gauge-Higgs variables, a boundary operator coupled to them, or a compactification mechanism whose low-energy reduction yields the ordered pair.

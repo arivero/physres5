@@ -24,6 +24,9 @@ physics.
   targets can enter notes.  Numerical coincidences, Run-2 resonance language,
   and model claims stay in open analytical status until a calculation phase and
   source audit are approved.
+- Loop 33 refresh: the direct parent-directory read reused the maintained
+  Loop 30 markdown fragments in `context/source_fragments/parent_prtalks/`.
+  The PDFs remain the maintained source objects.
 
 ## Inventory
 
@@ -138,6 +141,17 @@ Loop 18 rewrites the same content as a factorized active-channel target:
 The endpoint \(n_{\rm ew}=1\) remains a geometric \(U(1)\) address until a
 source theorem supplies electromagnetic embedding, generator normalization, and
 charge lattice.
+Loop 33 rereads the same material as K6-interface provenance:
+\[
+K_7:\ SU(3)_c\times SU(2)_L\times U(1)_Y
+\leadsto
+K_5:\ SU(3)_c\times U(1)_Q .
+\]
+The colour-inclusive count is \(D=11\to10\to9\), equivalently KK
+\(7\to6\to5\).  The colour-spectator electroweak count is \(D=7\to6\to5\),
+equivalently KK \(3\to2\to1\).  The middle line must be treated as a source
+package with explicit projectors, normalization, extra-channel decoupling, and
+pole matching.
 
 ### Electromagnetic endpoint coupling
 

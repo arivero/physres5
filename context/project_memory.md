@@ -139,6 +139,25 @@
   Haba-Oda/Bucci scalar/radion addresses.  The direct `..` read is recorded in
   `context/parent_directory_loop32_read.md`; reports are in
   `reviews/normalization_loop32_*.md`.
+- Loop 33 makes O1 a strict ordered-sampling package.  The electroweak source
+  variable must supply
+  \[
+  u_{\rm EW}\mapsto
+  (\mathcal H_J,\langle\cdot,\cdot\rangle_{u_{\rm EW}},
+  \Lambda_J,P_W,P_Z,P_\gamma,\mathcal R_{\rm pole},\mathcal F_{\rm sc})
+  \]
+  with
+  \[
+  P_W(h_J)=3/4,\qquad
+  P_Z(a_J^{\gamma^\perp})=2,\qquad
+  P_\gamma(a_\gamma)=0.
+  \]
+  The CHM interval ledger now has parallel \(h_J\), \(W^\pm\), \(Z\), and
+  photon rows using one \(\Lambda_{\rm CHM}\), one CHM product, and one pole
+  map.  Coquereaux supplies generalized-connection grading vocabulary; CHM is
+  the active normalization arena.  The direct `..` read is recorded in
+  `context/parent_directory_loop33_read.md`; reports are in
+  `reviews/normalization_loop33_*.md`.
 
 ## Resume state after context renewal
 

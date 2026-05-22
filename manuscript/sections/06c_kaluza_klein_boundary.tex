@@ -309,9 +309,50 @@ modified product.  The DeVries-specific theorem target is
   \widehat\Sigma_{aa,J}^{\rm CHM}=J .
   \label{eq:chm-current-entry-normalized}
 \end{equation}
-The data still to be derived are \(P_{a,J}\), \(K^{\rm ref}_{T,J}\), the
-source scale \(\Lambda_{\rm CHM}\), endpoint-normal conventions, the photon
-projection, the ordered W/Z boundary map, and the map
+
+For the O1 assignment theorem this current ledger has to be paired with a
+charged order-parameter sample in the same source space:
+\begin{align}
+  h_J&=
+  P_{h,J}(\pi_i,A_5,\delta v_i,\delta R,\alpha_H),
+  \label{eq:chm-h-sample}\\
+  a_J^{\gamma^\perp}&=
+  P_{a,J}^{\gamma^\perp}A_\mu^{T,\partial},
+  \qquad
+  a_\gamma=P_\gamma A_\mu^{T,\partial}.
+  \label{eq:chm-a-gamma-samples}
+\end{align}
+Here \(\pi_i\) denotes boundary Goldstone data, \(A_5\) the fifth component of
+the gauge field, \(\delta v_i\) boundary scalar-vev variations, \(\delta R\)
+radion or interval-size variations, and \(\alpha_H\) a Wilson-line/Hosotani
+coordinate when the route uses one.  The ordered invariant target is
+\begin{equation}
+  \widehat{\mathcal I}_{h,J_H}^{\rm CHM}=J_H=\frac34,
+  \qquad
+  \widehat\Sigma_{aa,J_{\rm adj}}^{\rm CHM}=J_{\rm adj}=2,
+  \label{eq:chm-ordered-invariant-target}
+\end{equation}
+with one \(\Lambda_{\rm CHM}\), one product, and one pole map.
+
+\begin{center}
+\scriptsize
+\begin{tabular}{p{0.09\linewidth}p{0.12\linewidth}p{0.055\linewidth}p{0.12\linewidth}p{0.16\linewidth}p{0.13\linewidth}p{0.12\linewidth}p{0.13\linewidth}}
+\toprule
+Datum & Projector & \(J\) & Hilbert factor & Boundary datum & Normalization & Pole functional & Status \\
+\midrule
+\(h_J\) & \(P_{h,J}\) & \(3/4\) & order parameter & \(A_5,\pi_i,\delta v_i,\delta R,\alpha_H\) & \(\Lambda_{\rm CHM}\), \(\langle\cdot,\cdot\rangle_{\rm CHM}\) & \(P_W\), \(\mathcal R_{\rm pole}\) & open ordered sample \\
+\(W^\pm\) & \(P_W\) & \(3/4\) & charged pole & charged boundary trace coupled to \(h_J\) & same as \(h_J\) & \(M_{W,\rm pole}\) & open pole map \\
+\(Z\) & \(P_Z\) & \(2\) & neutral current & \(a_J^{\gamma^\perp}\) Robin/DtN data & same \(\Lambda_{\rm CHM}\) & \(M_{Z,\rm pole}\) & current entry target \\
+\(\gamma\) & \(P_\gamma\) & \(0\) & null direction & photon zero-mode trace & reference subtraction & zero pole & source-supported null \\
+\bottomrule
+\end{tabular}
+\end{center}
+\normalsize
+
+The data still to be derived are \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\),
+\(P_W\), \(P_Z\), \(K^{\rm ref}_{T,J}\), the source scale
+\(\Lambda_{\rm CHM}\), endpoint-normal conventions, the photon projection, the
+ordered W/Z boundary map, and the map
 \(\widehat\lambda\mapsto m_n^2/\Lambda_{\rm CHM}^2\mapsto\Pi_T^{(4)}(s)\).
 
 \subsection{Dictionary for the interval entries}

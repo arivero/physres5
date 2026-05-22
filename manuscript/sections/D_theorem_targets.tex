@@ -790,6 +790,66 @@ quantum numbers, then higher positive roots remain algebraic slots in the
 secular construction.  They are then excluded from the phenomenology list until
 the missing assignment theorem and collider ledger are supplied.
 
+\subsection{Target IX: branch scaling and brane-duality admissibility}
+\label{app:target-branch-scaling}
+
+\paragraph*{Hypotheses.}
+Assume Target~\ref{app:target-regge-intercept-survival} has supplied a source
+kernel \(K_j(\lambda)\) and a sector label that may also be tested against a
+spin variable \(s\) through \(J=s(s+1)\).  Assume a mass reading
+\(M_\sigma^2=\mu^2x_\sigma(J)\) or a scalar-functional version with the same
+large-\(J\) magnitude data.  The branch exchange is the algebraic involution
+\begin{equation}
+  x\longmapsto -\frac{J}{x},
+  \qquad
+  x_+(J)x_-(J)=-J .
+  \label{eq:target-branch-involution}
+\end{equation}
+
+\paragraph*{Conclusion.}
+The source theory must account for the large-label behavior
+\begin{equation}
+  x_+(s(s+1))=1+O(s^{-2}),
+  \qquad
+  |x_-(s(s+1))|=s(s+1)+O(1),
+  \label{eq:target-branch-asymptotics}
+\end{equation}
+and hence for the mass-scaling diagnostic
+\begin{equation}
+\begin{array}{c|c|c|c}
+\text{branch} & \text{mass behavior} & \text{brane-scaling test} & \text{candidate label}\\
+\hline
++ & M_+(s)\to\mu & M\sim s^{0} & p=0\ \text{point/D0}\\
+- & |M_-(s)|\sim\mu s & M\sim s^{1} & p\to\infty\ \text{space filling}
+\end{array}
+\label{eq:target-branch-scaling-table}
+\end{equation}
+whenever a rotating \(p\)-brane scaling law \(M\sim s^{p/(p+1)}\) is part of
+the source route.  A literal T-duality reading requires a compact coordinate,
+boundary conditions, charges, tensions, and a map that exchanges the branch
+sectors through the Neumann--Dirichlet transformation.  Tong's string notes
+support the D0, space-filling, and T-duality boundary-condition vocabulary
+\cite{TongString}; the rotating-brane exponent and the branch map remain
+source-theory obligations.
+
+\paragraph*{Current evidence.}
+The evidence at present is algebraic plus source-address data.  The
+involution in Eq.~\eqref{eq:target-branch-involution} follows from the secular
+quadratic.  The separation of the sector label from the ordinary oscillator
+level is already enforced by Target~\ref{app:target-regge-intercept-survival}.
+The endpoint and brane sections supply a matrix arena with D-brane gauge fields,
+adjoint scalars, and boundary conditions.  A worldvolume derivation still has to
+identify the branch sectors, the mass reading for \(x_-\), the projection rule,
+and the duality map.
+
+\paragraph*{Failure mode.}
+The target fails if the source theory treats \(j\) solely as an intercept label,
+assigns the negative root to auxiliary data outside brane-scaling content, or
+implements the branch exchange through an algebraic field redefinition outside
+boundary-condition duality.  In that case Target VIII can still preserve
+ordinary Regge behavior through \(N_{\rm osc}/\alpha'\), while Target IX becomes
+a rejected brane-duality interpretation.
+
 \subsection{Claim hierarchy and acceptance criteria}
 \label{app:claim-hierarchy}
 
@@ -872,10 +932,10 @@ derive the determinant class, an endpoint model may derive the ordered
 representation pair, and a \(G_2\) model may supply a localization mechanism.
 Each result changes the status of a corresponding theorem target.
 
-\subsection{Derivation checklist}
+\subsection{Acceptance conditions}
 \label{app:derivation-checklist}
 
-The theorem targets lead to the following checklist for future revisions:
+The theorem targets define the following acceptance conditions:
 \begin{enumerate}
 \item State the source theory \(\mathcal S\) and the light subspace \(\mathcal H_J\).
 \item Specify the normalization that makes \(\Sigma_{hh,J}=0\), \(\Sigma_{aa,J}=J\), and \(\Sigma_{ha,J}\Sigma_{ah,J}=J\).
@@ -889,6 +949,9 @@ the matching pair \((Q_\alpha,\Delta_{\alpha,{\rm match}})\).
 \item If the Regge-intercept extension is used, separate the DeVries sector
 label \(j\), the oscillator level \(N_{\rm osc}\), and the physical trajectory
 spin, then derive the projection rule for the \(j=3/2\) positive intercept.
+\item If the branch-scaling interpretation is used, derive
+Eq.~\eqref{eq:target-branch-scaling-table}, the negative-branch mass reading,
+and the boundary-condition duality map from the source theory.
 \item Check global-form, anomaly, and representation compatibility.
 \end{enumerate}
-This checklist is the manuscript's current definition of a complete derivation.
+These conditions define a complete derivation for the present manuscript.

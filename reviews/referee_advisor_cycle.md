@@ -57,6 +57,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 19 | 5 | 5 | 5 | 5 | 5 | Sharpened the interval route with CHM source boundary data, a Dirichlet-to-Neumann kernel target, electroweak boundary proof obligations, and parent-root triage refresh. |
 | 20 | 5 | 5 | 5 | 5 | 5 | Added route-matching remainders, split interval source data from open normalization, marked the CHM Dirichlet-to-Neumann subtarget as the source-controlled route test, and recorded the eaten-Goldstone boundary-kernel synthesis. |
 | 21 | 5 | 5 | 5 | 5 | 5 | Integrated the interval source pack, repaired source indexing, added gauge-fixing and source-to-pole obligations for the eaten-Goldstone square, and placed running-alpha and diphoton material into theorem ledgers. |
+| 22 | 5 | 5 | 5 | 5 | 5 | Added O19 as Target IX, recorded branch-scaling and brane-duality admissibility, updated Lean/source ledgers, and normalized Appendix D acceptance conditions. |
 
 ## Scoring rubric
 

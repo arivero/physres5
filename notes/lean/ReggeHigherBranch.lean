@@ -56,4 +56,32 @@ constant j_three_halves_candidate : HigherPositiveSlot
 def j_three_halves_assignment_obligations : Prop :=
   higherSlotPhenomenologyReady j_three_halves_candidate
 
+structure BranchScalingTarget where
+  sectorSpinVariable : Type
+  branchAsymptoticsDerived : Prop
+  rotatingBraneLawSourced : Prop
+  sectorLabelIsReggeAxis : Prop
+  negativeBranchMassReadingDerived : Prop
+  dualityMapDerived : Prop
+  boundaryConditionsMapped : Prop
+  chargesAndTensionsMatched : Prop
+  oscillatorTowerSeparated : Prop
+  worldvolumeReductionDerived : Prop
+
+def branchScalingReady (B : BranchScalingTarget) : Prop :=
+  B.branchAsymptoticsDerived ∧
+  B.rotatingBraneLawSourced ∧
+  B.sectorLabelIsReggeAxis ∧
+  B.negativeBranchMassReadingDerived ∧
+  B.dualityMapDerived ∧
+  B.boundaryConditionsMapped ∧
+  B.chargesAndTensionsMatched ∧
+  B.oscillatorTowerSeparated ∧
+  B.worldvolumeReductionDerived
+
+constant targetIX_branch_scaling : BranchScalingTarget
+
+def targetIX_obligations : Prop :=
+  branchScalingReady targetIX_branch_scaling
+
 end DeVries.ReggeHigherBranch

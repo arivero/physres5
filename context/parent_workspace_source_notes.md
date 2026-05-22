@@ -91,6 +91,20 @@ primary-source upgrade queues; CHM remains the active source for boundary
 kinetic, vector Robin, scalar \(A_5/\pi_i\), photon-zero-mode, and custodial
 interval data.
 
+## Loop 22 parent-root inventory refresh
+
+The latest parent read again found a broad workspace around this repository:
+`../prTalks`, `../hans`, `../dualsm`, `../weak`, `../phys3`, `../phys4`,
+`../physres6`, `../phys6gpd`, `../signed-dv-custodial-project`, and several
+out-of-scope data or runtime directories.  For the current loop the active
+import is the O19 branch-duality provenance in
+`../physres6/calculations/branch_duality.md`, read together with the already
+indexed `../prTalks` Regge-scaling PDF notes.  The valid content is theorem
+target material: the branch involution \(x\mapsto -J/x\), the large-\(s\)
+branch-scaling diagnostic, the need to keep the oscillator Regge tower separate
+from the DeVries sector label, and the source-upgrade queue for rotating
+\(p\)-brane scaling.  The manuscript promotion is Appendix D Target IX.
+
 ## Promoted obligations
 
 ### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit

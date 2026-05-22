@@ -29,6 +29,8 @@
 - Treat `pdftotext` as an access aid. Keep PDFs as source objects for plots, images, radicals, and equation layout. For mathematical content, inspect the rendered PDF and label agent-read transcriptions.
 - Adjacent `../prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
 - The parent workspace pass is indexed in `context/parent_workspace_source_notes.md` and `notes/lean/AdjacentWorkspaceGuardrails.lean`. Valid imports are guardrails and theorem targets: scalar-seed assignments need gauge-Higgs or pole-self-energy maps, each source route must produce the DeVries block from one operator and normalization rule, the negative-sector EFT coefficient needs UV matching, and SO(32)-flavor notes stay inside the flavor-boundary ledger until coupled to the electroweak operator.
+- Loop 22 added O19 as Appendix D Target IX: branch scaling and brane-duality admissibility.  The large-\(s\) guardrail is \(x\mapsto -J/x\), \(M_+\to\mu\), and \(|M_-|\sim\mu s\) when \(J=s(s+1)\).  The source route still owes a rotating-brane exponent, branch survival rule, negative-branch mass or scalar reading, and boundary-condition duality map.
+- O20 is now recorded as a new dynamical-origin queue: broken \(N=2\) supersymmetric quantum mechanics with a de Rham/Hodge supercharge, a \(-J\) breaking term, and a possible \(su(2/1)\) electroweak connection.  Keep it in source-audit status until the field basis and O1/O3 compatibility are derived.
 
 ## Resume state after context renewal
 
@@ -38,7 +40,7 @@
 - Conceptual work has priority: source reading, manuscript architecture, physical interpretation, theorem targets, referee/advisor critique cycles, and Lean-style notes.
 - Verification in the current phase means `make manuscript`. Calculation commands are reserved for a user-approved calculation phase.
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
-- Current compiled draft: `manuscript/main.pdf`, last known length 66 pages after `make manuscript`.
+- Current compiled draft: `manuscript/main.pdf`, last known length 82 pages after the Loop 22 `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
 - Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.

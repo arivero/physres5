@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 80 REVTeX PRD preprint pages after the Loop 21 compile.
+- Current compiled draft: 82 REVTeX PRD preprint pages after the Loop 22 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -53,6 +53,15 @@
   \to K_J^{\rm eaten}(\lambda)\to\Pi_T^{(4)}(s;J)\), with gauge-fixing,
   scalar/eaten-mode separation, photon-zero-mode preservation, and at least one
   derived entry such as \(\Sigma_{aa,J}=J\).
+- Use Loop 22's Target IX as the branch-scaling guardrail:
+  \(x\mapsto -J/x\), \(M_+\to\mu\), and \(|M_-|\sim\mu s\) when
+  \(J=s(s+1)\).  The source route must still derive the rotating-brane
+  exponent, branch survival rule, negative-branch mass or scalar reading, and
+  boundary-condition duality map.
+- Track O20 as a new dynamical-origin issue: the broken \(N=2\) SUSY-QM route
+  must supply a sourced de Rham/Hodge supercharge, the \(-J\)
+  supersymmetry-breaking term, the \(su(2/1)\) electroweak connection, and the
+  compatibility map to O1 and O3.
 
 ## Completed in latest pass
 
@@ -101,6 +110,13 @@
   Salam--Strathdee, Haba--Oda, Bucci, Hosotani, Jegerlehner,
   Breitenlohner--Freedman, and Biekotter, plus the interval source square in
   Appendix D and Lean notes.
+- Added Loop 22 normalization: Appendix D Target IX for branch scaling and
+  brane-duality admissibility, Sec. VI.B and VI.F bridge prose, concept-matrix
+  row, Lean obligations, parent-root refresh, and Appendix D acceptance
+  conditions.
+- Recorded the concurrent O20 issue in the pending-work and concept ledgers:
+  broken \(N=2\) supersymmetric quantum mechanics is now a source-audit and
+  theorem-target queue.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -216,6 +232,27 @@
   \]
   with the source kernel, common slope, projection rule, negative-branch status,
   and \(j=3/2\) assignment ledger supplied.
+- Derive or reject the branch-scaling and brane-duality target:
+  \[
+  x\mapsto -J/x,\qquad
+  x_+(s(s+1))\to 1,\qquad
+  |x_-(s(s+1))|\sim s(s+1),
+  \]
+  with a sourced rotating-brane exponent, branch projection rule, mass or
+  scalar-functional reading for \(x_-\), boundary-condition duality map,
+  charge/tension data, and oscillator-tower separation.
+- Derive or reject O20:
+  \[
+  \{d,\delta\}=\Delta,\qquad
+  Q(J)\sim
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix},
+  \]
+  with a sourced supersymmetry-breaking diagonal, a field-basis map, an
+  electroweak \(su(2/1)\) connection if used, and compatibility with the
+  ordered assignment and scalar branch.
 
 ## Source work
 
@@ -243,6 +280,13 @@
   CMS/ATLAS sources, the Biekotter--Heinemeyer--Weiglein paper, local/global
   significance and look-elsewhere treatment, representation and anomaly
   ledger, production and decay channels, widths, and direct-search bounds.
+- Source-audit O19 before manuscript use beyond theorem-target language:
+  primary rotating \(p\)-brane scaling sources, D-brane T-duality sources with
+  Neumann--Dirichlet exchange, and worldvolume treatments of brane dimension,
+  charge, and tension under duality.
+- Source-audit O20 before manuscript use: Witten's Morse-theory paper,
+  Fayet's \(Z\)-Higgs supersymmetry paper, Gates--Rana worldline supersymmetry,
+  and primary \(su(2/1)\) electroweak-superconnection sources.
 
 ## Review cycle
 

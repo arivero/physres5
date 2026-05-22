@@ -925,5 +925,52 @@ oscillator \(n\) in \(M_{n,j,\pm}^2=\mu^2x_{j,\pm}+n/\alpha'\)); and state
 whether the inversion is literally full T-duality. Cross-check:
 `../physres6/calculations/branch_duality.md`.
 
+**Loop 22 theorem-target refinement.** Appendix D now records Target IX:
+branch scaling and brane-duality admissibility.  The accepted algebraic input is
+\[
+x_+(s(s+1))=1+O(s^{-2}),\qquad |x_-(s(s+1))|=s(s+1)+O(1),
+\]
+giving the diagnostic \(M_+\to\mu\) and \(|M_-|\sim\mu s\) under the chosen
+mass reading.  Tong's D-brane/T-duality vocabulary supplies source addresses
+for D0, space-filling, and Neumann--Dirichlet exchange.  The open data are the
+rotating-brane exponent source, the branch survival rule, the negative-branch
+mass or scalar-functional reading, and the boundary-condition duality map.
+
+## O20. The operator as a broken N=2 supersymmetric quantum mechanics
+
+**Provenance.** Human operator note (2026-05-22), from `../physres6`. Refines O4
+(dynamical origin); touches O1 and O3.
+
+**Statement.** The off-diagonal \(\sqrt J\) of \(Q(J)\) is the supercharge of an
+\(N=2\) supersymmetric quantum mechanics: with the exterior derivative \(d\) and
+its adjoint \(\delta\) as supercharges, \(\{d,\delta\}=\Delta\) (the Hodge
+Laplacian) pairs the scalar (0-form) and vector (1-form) modes degenerately at
+eigenvalue \(J\) (Witten, \emph{Supersymmetry and Morse Theory}, 1982). The
+diagonal \(-J\) breaks this supersymmetry; the two branches are the split
+would-be superpartners. So \(Q(J)\) is a broken \(N=2\) SUSY QM --- the operator
+content of the original ``susy-like degeneration'' (Rivero 2006). This gives O4 a
+named origin: the de Rham supercharge plus a supersymmetry-breaking diagonal.
+
+**Electroweak-SUSY home (for O1/O3).**
+- Fayet (1403.5951): the Higgs as the spin-0 SUSY partner of the \(Z\) --- a
+  supersymmetry relating the neutral gauge boson and the order parameter, i.e.
+  the positive (\(Z\)) and negative (Higgs/order-parameter) branches.
+- the \(su(2/1)\) electroweak superconnection (Ne'eman; Fairlie; Coquereaux et
+  al.): electroweak gauge fields as the even part, the Higgs as the odd part of a
+  superconnection.
+- spin from worldline SUSY (Gates--Rana, hep-th/9504025): one supercharge is the
+  spin/Dirac structure.
+
+**Working conjecture.** A broken \(N=2\) in the IR with one supercharge the
+spin/Hodge grading (\(d/\delta\)) and the other the electroweak \(su(2/1)\)
+superconnection; the two branches are the broken supermultiplet.  This is a
+conjectural synthesis built from published pieces.
+
+**Success criterion.** Derive the \(-J\) breaking from a specified
+supersymmetry-breaking term, identify the second supercharge with the \(su(2/1)\)
+odd generators, and reconcile with O1 (the \((3/4,2)\) assignment) and O3
+(negative branch = order parameter). Cross-check: `../physres6` (broken \(N=2\)
+SUSY QM in the Letter).
+
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

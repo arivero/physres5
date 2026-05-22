@@ -11,6 +11,7 @@
 - Reconstruct the canonical full-gauge Higgs/electroweak interpolation: total \(D=11/10/9\), corresponding to internal KK \(7/6/5\), with \(SU(3)\times SU(2)\times U(1)\) in the massless-Higgs limit and \(SU(3)\times U(1)_{\rm em}\) in the infinitely broken limit.
 - Add the colourless electroweak \(D=7/6/5\) version, corresponding to internal KK \(3/2/1\), using six-dimensional superstring sources as the middle-dimension anchor.
 - Develop the top-quark subquestion: whether the interpolation or negative branch explains why the top quark is tied to the electroweak order-parameter scale.
+- Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
 
 ## Completed in latest pass
 
@@ -19,6 +20,7 @@
 - Added the interval Schur-complement target as the active O10/O4 bridge.
 - Added concrete \(G_2\) entry targets for the adjoint entry, off-diagonal product, and order-parameter reference entry.
 - Added the pole-matching chain from source kernel to four-dimensional effective action to dressed transverse pole.
+- Added the Round 3 pole-convention refinement, O8 self-energy matching target, and adjacent `prTalks` source-note/Lean index.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -49,6 +51,8 @@
 - Source-audit the six-dimensional superstring anchor and decide whether the colourless \(3/2/1\) count belongs in the main text or in an appendix.
 - Attach the top-sector observation to a precise object: top Yukawa, Higgs effective potential, vacuum stability, endpoint flavor data, or a branch scalar functional.
 - Prove or refute uniqueness of Eq. \(\eqref{eq:QJ}\) from trace/determinant plus high-spin assumptions.
+- Derive or reject the `prTalks` Regge intercept construction \(M_{n,j,\pm}^2=\mu^2x_{j,\pm}+n/\alpha'\) from a worldsheet, BRST, boundary, Chan-Paton, or current-algebra mechanism.
+- Derive or reject the effective-dimension \(D_{\rm eff}\) interpolation from a KK vector-scalar Laplacian with the DeVries two-channel block.
 
 ## Source work
 
@@ -60,6 +64,7 @@
   - Chan-Paton factors if endpoint charges become central.
 - Add a local source note for custodial symmetry and scalar-sector scheme dependence from Logan/Dawson.
 - Keep web-discovered papers local: download PDFs into `references/pdfs/`, update `context/source_inventory.md`, rerun `scripts/fragment_pdfs.py`.
+- Page-check image-bearing adjacent PDFs directly when formulas or plots matter; `pdftotext` output is only an access aid.
 
 ## Review cycle
 

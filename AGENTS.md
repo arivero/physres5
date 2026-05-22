@@ -37,7 +37,7 @@ Interpret this first as a pole-spectrum statement. Treat running weak mixing ang
 
 ## Project constraints
 
-- Focus on electroweak structure; Casimir language is a construction and historical clue, not the final physics by itself.
+- Focus on electroweak structure; Casimir language is a construction and historical clue. The final physics must come from electroweak, string, brane, Kaluza-Klein, or \(G_2\) mechanisms.
 - Treat the DeVries relation as kinematical unless a dynamical derivation is supplied.
 - String, brane, Kaluza-Klein, and G2 material should enter as possible mechanisms for the kinematical spectrum and its branch structure.
 - Do not claim generations arise exactly from compactification topology. The working flavor caveat is: generation structure may be associated with an SO(32)-flavor interpretation and may or may not be compatible with compactification topology.
@@ -71,6 +71,8 @@ make clean         # remove generated LaTeX artifacts
 
 - Use `context/source_inventory.md` before writing literature claims.
 - Use `references/pdfs/` only as primary local source material.
+- Treat `pdftotext` output as an access aid for PDFs. Keep the PDFs as source objects, because diagrams, plots, equation layout, and embedded images can be lost in text extraction.
+- For mathematical content in PDFs, inspect the PDF view directly and transcribe formulas deliberately. Mark such formulas as agent-read transcriptions when they rely on visual reading.
 - Add BibTeX entries to `manuscript/references.bib` before citing new papers.
 - For each manuscript section, add a short “status” comment in the corresponding `.tex` file: derived, cited, conjectural, or open.
 

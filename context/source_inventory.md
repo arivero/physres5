@@ -2,6 +2,16 @@
 
 This inventory maps the local PDFs in `references/pdfs/` to manuscript roles. It is a working guide for Codex source audits.
 
+## Adjacent project source notes
+
+The PDFs in `../prTalks/` are user-provided project notes and prompt
+archives.  They are source objects for idea provenance, while literature
+claims still require primary support from `references/pdfs/` or newly
+downloaded papers.  `context/prtalks_source_notes.md` records the audited
+content and the PDF-reading caveat: text extraction is an access aid, and the
+rendered PDFs remain necessary for plots, images, radicals, and equation
+layout.
+
 ## Core DeVries/Rivero source
 
 - `01_Rivero_deVries_Casimir_mass_operator_hep-ph-0606171.pdf` — original project note. Contains the Casimir invariant construction, the quadratic mass-operator equation, the spin-1/2 and spin-1 positive eigenvalue comparison, and the numerical comparison to the mass-shell weak angle.

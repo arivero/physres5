@@ -26,6 +26,8 @@
 - For every substantial loop, call two GPT-5.5 referee subagents and one GPT-5.5 advisor subagent before implementation; record their reports in `reviews/`.
 - After each completed referee/advisor/implementation loop, compile, run prose scans, and commit the loop checkpoint.
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
+- Treat `pdftotext` as an access aid. Keep PDFs as source objects for plots, images, radicals, and equation layout. For mathematical content, inspect the rendered PDF and label agent-read transcriptions.
+- Adjacent `../prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
 
 ## Resume state after context renewal
 
@@ -44,6 +46,7 @@
 - Also preserve the colourless electroweak count: total \(D=7\to D=6\to D=5\), corresponding to internal KK \(3\to2\to1\), with six-dimensional superstrings as the middle-dimensional source anchor.
 - Round 2 converted O10 into a dimensional Schur-complement target: the \(D=10/6\) middle line must provide \(\mathcal B(t_\star)\), \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), \(K_J(t_\star,\lambda)\), and the pole-matching rule.
 - New O10 subquestion: explain why the top quark sits at the electroweak scale. Source-backed SM facts are top Yukawa dominance, nondecoupling, and top sensitivity in Higgs/vacuum-stability physics; any DeVries explanation remains open.
+- New O11 source-note validation issue: preserve `../prTalks` PDFs as source objects, use extracted text only as an access aid, and promote only structural obligations or primary-source-backed claims.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture

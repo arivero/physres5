@@ -16,18 +16,65 @@ A vector-boson pole is defined by the complex pole of the propagator,
   s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}.
   \label{eq:complex-pole}
 \end{equation}
+Throughout this manuscript, \(M_{V,\rm pole}\) and
+\(\Gamma_{V,\rm pole}\) refer to the parameterization in
+Eq.~\eqref{eq:complex-pole}.  Martin and Robertson also record the
+alternative reporting convention
+\begin{equation}
+  s_{\rm pole}=\left(M-i\Gamma/2\right)^2 .
+  \label{eq:alternate-pole-parameterization}
+\end{equation}
+Any input reported in that convention must be translated to
+Eq.~\eqref{eq:complex-pole} before Eq.~\eqref{eq:spole} is formed
+\cite{MartinRobertson2025}.
 Equivalently, \(s_V\) is the zero of the inverse transverse propagator after renormalization,
 \begin{equation}
   \Delta^{-1}_{T,V}(s_V)=0.
   \label{eq:pole-condition}
 \end{equation}
-When experimental inputs are quoted in a variable-width Breit--Wigner convention, the conversion to pole parameters must be performed before using Eq.~\eqref{eq:spole}.  Martin and Robertson summarize the common relation for the vector bosons as
+When experimental inputs are quoted in a variable-width Breit--Wigner
+line-shape convention, the conversion to pole parameters must be performed
+before using Eq.~\eqref{eq:spole}.  With a common W/Z variable-width
+convention, write
+\begin{equation}
+  \gamma_V=\frac{\Gamma_{V,\rm BW}}{M_{V,\rm BW}} .
+  \label{eq:bw-width-ratio}
+\end{equation}
+The pole parameters in Eq.~\eqref{eq:complex-pole} are then obtained as
+\begin{equation}
+  M_{V,\rm pole}
+  =
+  \frac{M_{V,\rm BW}}{\sqrt{1+\gamma_V^2}},
+  \qquad
+  \Gamma_{V,\rm pole}
+  =
+  \frac{\Gamma_{V,\rm BW}}{\sqrt{1+\gamma_V^2}} .
+  \label{eq:bw-pole-mass-width}
+\end{equation}
+Martin and Robertson summarize the corresponding vector-boson mass relation as
 \begin{equation}
   M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2,
   \qquad V=W,Z .
   \label{eq:bw-pole-relation}
 \end{equation}
-This formula is part of the source audit for the pole comparison \cite{MartinRobertson2025}.
+Equations~\eqref{eq:bw-pole-mass-width}--\eqref{eq:bw-pole-relation}
+apply after the quoted W and Z inputs have been verified to share the same
+variable-width Breit--Wigner convention.  Fixed-width line-shape inputs,
+already-pole inputs, and inputs using Eq.~\eqref{eq:alternate-pole-parameterization}
+require their stated convention map.  This conversion is part of the source
+audit for the pole comparison \cite{MartinRobertson2025}.
+
+The resulting convention chain is
+\begin{equation}
+  (M_{V,\rm BW},\Gamma_{V,\rm BW})
+  \longrightarrow
+  (M_{V,\rm pole},\Gamma_{V,\rm pole})
+  \longrightarrow
+  s_V
+  \longrightarrow
+  \sPole .
+  \label{eq:convention-chain}
+\end{equation}
 
 \subsection{Scheme map}
 

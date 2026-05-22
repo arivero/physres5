@@ -38,6 +38,28 @@ Assume a source theory \(\mathcal S\) gives a two-branch spectral equation with 
   s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}.
   \label{eq:target-complex-pole}
 \end{equation}
+Assume the mass and width symbols are in the pole parameterization of
+Eq.~\eqref{eq:target-complex-pole}.  If an input uses the alternative
+parameterization \(s_{\rm pole}=(M-i\Gamma/2)^2\), first translate it to
+Eq.~\eqref{eq:target-complex-pole}.  If W/Z inputs are quoted in a common
+variable-width Breit--Wigner line-shape convention, convert
+\begin{equation}
+  M_{V,\rm pole}
+  =
+  \frac{M_{V,\rm BW}}{\sqrt{1+\gamma_V^2}},
+  \qquad
+  \Gamma_{V,\rm pole}
+  =
+  \frac{\Gamma_{V,\rm BW}}{\sqrt{1+\gamma_V^2}},
+  \qquad
+  \gamma_V=\frac{\Gamma_{V,\rm BW}}{M_{V,\rm BW}} .
+  \label{eq:target-bw-width-map}
+\end{equation}
+This gives
+\begin{equation}
+  M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2 .
+  \label{eq:target-bw-mass-map}
+\end{equation}
 Assume common experimental mass conventions are converted into the pole convention before forming
 \begin{equation}
   \sPole=1-\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}.
@@ -69,12 +91,24 @@ scale-placement statement has the matching form
 The first arrow is the source reduction.  The second arrow is four-dimensional
 effective matching.  The third arrow is the dressed transverse pole condition.
 The pole reading requires all three arrows in one scheme.
+Equivalently, the source kernel must produce the relevant pole self-energy
+term,
+\begin{equation}
+  K_J^{\rm bare}(\lambda)
+  \longrightarrow
+  \Pi_{T,V}^{(4)}(s;J),
+  \qquad
+  \Delta^{-1}_{V,T}(s_V;J)=0,
+  \label{eq:target-self-energy-chain}
+\end{equation}
+with the same pole parameterization and field basis used in
+Eq.~\eqref{eq:target-complex-pole}.
 
 \paragraph*{Current evidence.}
 The manuscript already separates complex poles, Breit-Wigner/on-shell masses, \(\MSbar\) running angles, effective weak angles, GUT boundary values, and compactification eigenvalues.  Martin--Robertson supply the scheme language used in Sec.~\ref{sec:pole}.  The CDF-II result has descriptive displacement status here.
 
 \paragraph*{Failure mode.}
-The target fails if the derived clean value lives at a high-scale boundary, a running \(\MSbar\) angle, an effective leptonic angle, or a compactification eigenvalue with a different translation law.  In that case the pole-ratio reading becomes a motivating clue, and the manuscript must relocate the physical statement to the derived scheme.
+The target fails if the derived clean value lives at a high-scale boundary, a running \(\MSbar\) angle, an effective leptonic angle, or a compactification eigenvalue with a different translation law.  In that case the pole-ratio reading becomes a motivating clue, and the manuscript relocates the physical statement to the derived scheme and scale.  A compactification-scale or unification-scale derivation would still be valuable; it would convert the DeVries quotient into a boundary datum whose relation to W/Z pole data is a separate running, threshold, and matching problem.
 
 \subsection{Target II: electroweak assignment}
 \label{app:target-electroweak-assignment}

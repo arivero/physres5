@@ -125,7 +125,13 @@ The pole-ratio reading then has the common form
   \frac{x_+(J_H)}{x_+(J_{\rm adj})}
   \label{eq:route-pole-ratio-target}
 \end{equation}
-after the pole scheme of Sec.~\ref{sec:pole} has been fixed.  This equation states the desired low-energy placement.  A route that naturally yields the same quotient at a compactification scale or unification scale would locate the algebra in a source theory.  The pole reading would then require an additional matching theorem.
+after the pole scheme of Sec.~\ref{sec:pole} has been fixed and the
+O8 matching theorem in Sec.~\ref{sec:route-scale-placement} has been
+proved.  This equation states the desired low-energy placement.  A route
+that naturally yields the same quotient at a compactification scale or
+unification scale would locate the algebra in a source theory.  The
+low-energy pole statement would then require the matching theorem as an
+additional result.
 
 \subsection{Branch interpretation and scalar data}
 \label{sec:route-branch-interpretation}
@@ -175,11 +181,24 @@ The common matching theorem has the form
   \big|_{s=s_{W,Z}} .
   \label{eq:route-pole-matching-chain}
 \end{equation}
-The first arrow is the route reduction.  The second arrow matches the source
+This chain is the open O8 theorem.  The first arrow is the route reduction.  The second arrow matches the source
 kernel into a four-dimensional gauge-Higgs effective action.  The third arrow
 places the result in the dressed transverse pole convention of Sec.~\ref{sec:pole}.
 Endpoint, interval, and \(G_2\) routes differ in the first arrow; they share
 the last two arrows when the pole reading is retained.
+Equivalently, the route must turn the bare two-channel kernel into a
+finite-rank contribution to the four-dimensional transverse self-energy,
+\begin{equation}
+  K_{J,r}^{\rm bare}(\lambda)
+  \longrightarrow
+  \Pi_{T,V}^{(4)}(s;J,r),
+  \qquad
+  \Delta^{-1}_{T,V}(s_V;J,r)=0,
+  \label{eq:route-self-energy-target}
+\end{equation}
+with \(s_V\) defined by Eq.~\eqref{eq:complex-pole}.  Equation~\eqref{eq:route-self-energy-target}
+is schematic until the route fixes the effective action, renormalization
+scheme, and field basis.
 
 For endpoint and interval routes, the most direct challenge is the relation between a boundary determinant and a four-dimensional pole.  Boundary conditions usually define a spectrum before loop corrections and before the conversion to pole observables.  The route must explain how the determinant survives matching to the pole definition, or how the pole reading emerges from a dressed boundary self-energy.
 

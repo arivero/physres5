@@ -54,6 +54,26 @@ def chosenTarget : RadicalTarget :=
 axiom pole_target_requires_derivation :
   radicalAttachmentProblem
 
+/- Pole convention obligation from normalization round 3.
+   The manuscript uses s = M^2 - i M Gamma. Breit-Wigner inputs enter only
+   after a convention map to this parameterization. -/
+structure PoleConvention where
+  complexPoleParameterization : Prop
+  breitWignerVariableWidthInput : Prop
+  commonWZLineShapeConvention : Prop
+  massAndWidthConvertedBeforeRatio : Prop
+  alternateParameterizationTranslated : Prop
+
+def poleConventionReady (P : PoleConvention) : Prop :=
+  P.complexPoleParameterization ∧
+  P.breitWignerVariableWidthInput ∧
+  P.commonWZLineShapeConvention ∧
+  P.massAndWidthConvertedBeforeRatio ∧
+  P.alternateParameterizationTranslated
+
+axiom pole_convention_audit_required :
+  ∃ P : PoleConvention, poleConventionReady P
+
 /- GUT contrast as a source-traceable conceptual benchmark. -/
 def gutBenchmark : Prop :=
   True
@@ -143,6 +163,25 @@ def polePlacementTarget (S : SourceTheory) : TheoremTarget :=
     conclusion := True
     sourceStatus := True
     failureMode := True }
+
+/- O8 round 3:
+   source kernel -> four-dimensional transverse self-energy -> complex pole. -/
+structure PoleSelfEnergyMatching where
+  sourceReduction : Prop
+  fourDimensionalEffectiveAction : Prop
+  transverseSelfEnergyMap : Prop
+  complexPoleCondition : Prop
+  sameSchemeAndFieldBasis : Prop
+
+def poleSelfEnergyMatchingTheorem (M : PoleSelfEnergyMatching) : Prop :=
+  M.sourceReduction ∧
+  M.fourDimensionalEffectiveAction ∧
+  M.transverseSelfEnergyMap ∧
+  M.complexPoleCondition ∧
+  M.sameSchemeAndFieldBasis
+
+axiom pole_self_energy_matching_required :
+  ∃ M : PoleSelfEnergyMatching, poleSelfEnergyMatchingTheorem M
 
 def electroweakAssignmentTarget (S : SourceTheory) : TheoremTarget :=
   { hypotheses := True

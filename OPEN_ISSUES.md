@@ -22,6 +22,8 @@ The remaining convention task is to state the exact relation to the quoted varia
 
 **Success criterion.** A source-backed formula section states the complex-pole convention, the Breit--Wigner translation, and the conditions under which \(M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2\) is used.
 
+**Round 3 refinement.** Sec. III now fixes the \(s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}\) parameterization, records the alternative \(s_{\rm pole}=(M-i\Gamma/2)^2\) convention as a translation target, and states the common variable-width Breit--Wigner conversion chain before \(\sPole\) is formed. The remaining work is a current W/Z input audit in O2b.
+
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
@@ -153,6 +155,20 @@ The shared acceptance criterion is
 \]
 plus the ordered electroweak map, pole placement, negative-branch scalar map, and global checks.  The next proof-level pass should derive one of these entries from source data.
 
+**prTalks Regge/source-note refinement.** The adjacent `../prTalks` PDFs add two Regge-compatible theorem targets. The intercept version treats \(j\) as a sector label and adds an oscillator \(n\):
+\[
+M_{n,j,\pm}^2=\mu^2x_{j,\pm}+\frac{n}{\alpha'},
+\qquad
+J=n+j .
+\]
+The product version keeps the exact invariant
+\[
+x_+(J)x_-(J)=-J,
+\qquad
+-M_+^2M_-^2=\mu^4J .
+\]
+Both remain obligations until a worldsheet, boundary, Kaluza--Klein, or \(G_2\) operator derives the DeVries block and identifies the branch status.
+
 ## O8. Pole placement versus high-scale placement
 
 **Question.** Why does the clean DeVries value attach to the low-energy pole spectrum, and how are GUT-scale or compactification-scale boundary readings separated?
@@ -182,6 +198,16 @@ K_{J,r}^{\rm bare}(\lambda)
 The first arrow is route-specific source reduction.  The second arrow is
 four-dimensional effective matching.  The third arrow is the dressed transverse
 pole condition.  The pole reading requires all three arrows in one scheme.
+
+**Round 3 refinement.** Sec. VI.G and Appendix D now state the same burden as a pole self-energy matching theorem:
+\[
+K_{J,r}^{\rm bare}(\lambda)
+\longrightarrow
+\Pi_{T,V}^{(4)}(s;J,r),
+\qquad
+\Delta^{-1}_{T,V}(s_V;J,r)=0 .
+\]
+If the clean quotient is derived at compactification or unification scale, the manuscript relocates the physical claim to that scheme and treats the pole comparison as descriptive motivation.
 
 ## O5. Electroweak ray and forbidden deformations
 
@@ -286,3 +312,11 @@ Thus the \(D=10\) and colourless \(D=6\) middle lines are active
 reconstruction targets: they must provide a compact, boundary, or singular
 object \(\mathcal B\), the two-channel light subspace, the DeVries kernel, and
 the pole-matching rule.
+
+## O11. Adjacent `prTalks` source-note validation
+
+**Question.** Which user-provided `../prTalks` PDFs contain conceptual material that should survive into the manuscript program, and which claims require primary-source upgrades?
+
+**Current working idea.** Treat the PDFs as project source notes. Keep the PDFs themselves as source objects, because text extraction misses plots, equation layout, radicals, and embedded images. Valid content includes the electroweak ray/projective-angle reading, the orbit quadratic, Reggeization alternatives, the minimal \(D_T\) two-channel block, the effective-dimension interpolation, and the negative-branch/top-sector obligation.
+
+**Success criterion.** `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean` record the valid content, the PDF-reading caveat, the agent-read mathematical transcriptions, and the primary-source upgrade queue. Any promotion into manuscript prose must point back either to primary local literature or to an explicitly labeled project-source note.

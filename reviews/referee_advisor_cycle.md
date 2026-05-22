@@ -44,6 +44,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 6 | 5 | 4 | 5 | 4 | 5 | Compiled 49-page draft after \(G_2\) expansion; singular support, Higgs-bundle variables, local kernel, anomaly/global checks, and scalar-branch map added. |
 | 7 | 5 | 5 | 5 | 5 | 5 | Compiled 62-page draft; route-comparison section, expanded negative-branch scalar-functional analysis, and referee-facing status ledger added. |
 | 8 | 5 | 5 | 5 | 5 | 5 | Added O10 dimensional-interpolation theorem target, source-status table, Schur-complement bridge, \(G_2\) entry targets, and pole-matching chain; determinant and assignment derivations remain open. |
+| 9 | 5 | 5 | 5 | 5 | 5 | Compiled 66-page draft; exact pole parameterization, Breit--Wigner mass/width convention chain, O8 self-energy matching theorem, and adjacent `prTalks` source-note/Lean index added. |
 
 ## Scoring rubric
 

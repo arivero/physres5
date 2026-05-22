@@ -13,6 +13,7 @@
 - Develop the top-quark subquestion: whether the interpolation or negative branch explains why the top quark is tied to the electroweak order-parameter scale.
 - Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
 - Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../weak`, `../phys3`, `../signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
+- Continue normalizing main-body sections by replacing project-management language with assumption, construction, consequence, and theorem-target statements.
 
 ## Completed in latest pass
 
@@ -23,6 +24,7 @@
 - Added the pole-matching chain from source kernel to four-dimensional effective action to dressed transverse pole.
 - Added the Round 3 pole-convention refinement, O8 self-energy matching target, and adjacent `prTalks` source-note/Lean index.
 - Added the parent-workspace source-note/Lean index, the custodial single-generator obstruction, and the single-source normalization audit for future route derivations.
+- Added Loop 11 normalization: compact abstract, A1--A3/T1--T3 hierarchy in the introduction and conclusion, streamlined VI.G, and an electroweak mass-map theorem target.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -41,7 +43,7 @@
 - Expanded the \(G_2\) localization route with a local kernel, Higgs-bundle variables, singular support dictionary, anomaly/global checks, and scalar-branch target.
 - Added a three-route comparison section for endpoint, interval, and \(G_2\) kernels with common acceptance criteria.
 - Expanded the negative branch into a scalar-functional, vacuum-ray, and route-specific scalar-map analysis.
-- Expanded the status section with a claim hierarchy, minimum derivation chain, route-selection ledger, and referee-facing tests.
+- Expanded the status section with a claim hierarchy, minimum derivation chain, route-selection ledger, and acceptance tests.
 
 ## Analytical gaps
 
@@ -61,6 +63,15 @@
   \Sigma_{hh,J}=0,\qquad
   \Sigma_{aa,J}=J,\qquad
   \Sigma_{ha,J}\Sigma_{ah,J}=J .
+  \]
+- Derive the electroweak mass-map theorem from the Higgs kinetic term through
+  pole matching:
+  \[
+  (D_\mu H)^\dagger D^\mu H
+  \longrightarrow
+  \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+  =
+  \frac{x_+(C_2(\mathbf 2))}{x_+(C_2(\mathrm{adj}))}.
   \]
 
 ## Source work

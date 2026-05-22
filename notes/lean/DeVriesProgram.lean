@@ -85,6 +85,32 @@ axiom su5_spin10_three_eighths_benchmark :
 def JAssignmentProblem : Prop :=
   True
 
+/- Loop 11 electroweak mass-map theorem target.
+   Start from the SM gauge-Higgs kinetic term, derive the tree-level W/Z mass
+   matrix, then add scheme-controlled pole matching.  The theorem must show how
+   the Higgs doublet invariant enters the charged sample and the adjoint
+   invariant enters the neutral sample. -/
+structure ElectroweakMassMap where
+  gaugeHiggsKineticTerm : Prop
+  treeLevelMassMatrix : Prop
+  photonNullDirection : Prop
+  chargedSampleFromDoubletChannel : Prop
+  neutralSampleFromAdjointChannel : Prop
+  poleSchemeMatching : Prop
+  sourceBoundaryChannelAllowed : Prop
+
+def electroweakMassMapTheorem (M : ElectroweakMassMap) : Prop :=
+  M.gaugeHiggsKineticTerm ∧
+  M.treeLevelMassMatrix ∧
+  M.photonNullDirection ∧
+  M.chargedSampleFromDoubletChannel ∧
+  M.neutralSampleFromAdjointChannel ∧
+  M.poleSchemeMatching ∧
+  M.sourceBoundaryChannelAllowed
+
+axiom electroweak_mass_map_required :
+  ∃ M : ElectroweakMassMap, electroweakMassMapTheorem M
+
 /- Correct representation posture:
    gauge bosons arise from adjoint gauge fields;
    the J=3/4 datum must enter through the Higgs/order-parameter side or through

@@ -19,7 +19,7 @@
 - Real progress means improved manuscript prose, source-backed claims, clearer physical assumptions, Lean-style obligations, referee/advisor records, or updated open issues.
 - Treat the positive-branch observation as Hans's clue. The negative branch is part of the same analytical object and motivates a scalar/order-parameter investigation.
 - The conceptual burden is radical placement: identify what object carries \(\sqrt{J^2+4J}\), at which scale, and under which scheme.
-- The string-theory posture should recover the older dual-model and Kaluza-Klein particle-structure ambition while keeping conjectures labeled.
+- The string-theory framing should recover the older dual-model and Kaluza-Klein particle-structure ambition while keeping conjectures labeled.
 - Use affirmative exposition. Correct technical errors directly. Avoid rhetorical negative/contrast formulas and adjectival positioning.
 - Keep Lean-style notes in `notes/lean/` for obligations, theorem targets, and expert-trigger prompts. These notes are working memory kept outside Lean compilation.
 - Maintain referee/advisor review loops, including the score table, so conceptual quality and open gaps are visible across iterations.
@@ -40,7 +40,7 @@
 - Style rule for renewal: use affirmative exposition; correct technical errors directly; avoid rhetorical contrast formulas and adjectival positioning.
 - Current compiled draft: `manuscript/main.pdf`, last known length 62 pages after `make manuscript`.
 - The 60-page long-version target has been reached in page count. Continue improving derivational force and source audit quality in future passes.
-- Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and referee-facing status ledger.
+- Recently expanded sections: pole-scheme ledger, electroweak assignment theorem target, radical placement ledger, dual-model lineage, expanded Kaluza-Klein interval route, toy boundary operator, endpoint gauge-data and brane-Higgsing dictionary, expanded G2 localization, three-route comparison, expanded negative-branch scalar-functional analysis, theorem-target appendix, flavor boundary, global-form constraints, and status ledger.
 - Pending next work: choose one matrix entry in the route comparison and push it toward a derivation from endpoint, interval, or \(G_2\) source data.
 - Editorial next work: run `reviews/paper_normalization_plan.md` to turn the reference draft from workshop/scaffolding prose into paper prose.
 - Added pending reconstruction issue O10: the canonical full-gauge interpolation is total \(D=11\to D=10\to D=9\), corresponding to internal KK \(7\to6\to5\), from full \(SU(3)\times SU(2)\times U(1)\) through a DeVries six-dimensional interior to \(SU(3)\times U(1)_{\rm em}\). Treat this as source-audit pending; start from `/home/codexssh/phys3/sources/unbroken_susy.md` lines 69--71 and Witten 1981 fragments.
@@ -49,8 +49,9 @@
 - New O10 subquestion: explain why the top quark sits at the electroweak scale. Source-backed SM facts are top Yukawa dominance, nondecoupling, and top sensitivity in Higgs/vacuum-stability physics; any DeVries explanation remains open.
 - New O11 source-note validation issue: preserve `../prTalks` PDFs as source objects, use extracted text only as an access aid, and promote only structural obligations or primary-source-backed claims.
 - New O12 parent-workspace validation issue: preserve adjacent text notes as source-note provenance, promote their critique content into O1/O3/O4/O6/O8/O10 obligations, and replace adjacent-project claims with primary sources before manuscript citation.
+- Loop 11 normalized the abstract, introduction, VI.G route comparison, and conclusion around the A1--A3/T1--T3 hierarchy.  The active central theorem target is now also recorded as an electroweak mass-map theorem from the Higgs kinetic term and W/Z mass matrix to the ordered DeVries quotient after pole matching.
 - Keep calculation scripts closed during the conceptual phase. LaTeX compilation remains the verification command.
 
 ## Manuscript posture
 
-The manuscript should read as a precise research program with one strong motivating observation and a sequence of analytical tests. The authorial voice should keep the speculative status of the dynamical interpretation explicit.
+The manuscript should read as precise physics exposition with one strong motivating observation and a sequence of analytical tests. The authorial voice should keep the speculative status of the dynamical interpretation explicit.

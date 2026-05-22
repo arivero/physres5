@@ -42,10 +42,11 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 4 | 4 | 4 | 4 | 4 | 5 | Compiled 44-page draft; radical-placement ledger added to connect source theory, operator, matrix, branches, pole ratio, scalar functional, and topology constraints. |
 | 5 | 4 | 4 | 5 | 4 | 5 | Compiled 46-page draft; KK interval section expanded with variational boundary data, interval kernel, entry dictionary, electroweak assignment theorem, and scalar-branch target. |
 | 6 | 5 | 4 | 5 | 4 | 5 | Compiled 49-page draft after \(G_2\) expansion; singular support, Higgs-bundle variables, local kernel, anomaly/global checks, and scalar-branch map added. |
-| 7 | 5 | 5 | 5 | 5 | 5 | Compiled 62-page draft; route-comparison section, expanded negative-branch scalar-functional analysis, and referee-facing status ledger added. |
+| 7 | 5 | 5 | 5 | 5 | 5 | Compiled 62-page draft; route-comparison section, expanded negative-branch scalar-functional analysis, and status ledger added. |
 | 8 | 5 | 5 | 5 | 5 | 5 | Added O10 dimensional-interpolation theorem target, source-status table, Schur-complement bridge, \(G_2\) entry targets, and pole-matching chain; determinant and assignment derivations remain open. |
 | 9 | 5 | 5 | 5 | 5 | 5 | Compiled 66-page draft; exact pole parameterization, Breit--Wigner mass/width convention chain, O8 self-energy matching theorem, and adjacent `prTalks` source-note/Lean index added. |
 | 10 | 5 | 5 | 5 | 5 | 5 | Parent-workspace pass added source-note guardrails, one-source normalization audit, custodial single-generator obstruction, and O12 validation issue; manuscript derivations remain explicit open targets. |
+| 11 | 5 | 5 | 5 | 5 | 5 | Normalized abstract, introduction, route comparison, and conclusion around assumptions and theorem targets; added electroweak mass-map and matching refinements. |
 
 ## Scoring rubric
 
@@ -62,10 +63,11 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the negative-branch section make the Higgs/vacuum clue explicit while keeping the derivation status clear?
 - Does the electroweak section correctly place \(J=3/4\) on the Higgs/order-parameter side?
 - Which missing source best supports the historical dual-model/QCD-string framing?
-- Can the next pass turn one matrix entry into an explicit source-theory derivation?
+- Can a future pass turn one matrix entry into an explicit source-theory derivation?
 - Does the pole-scheme section give enough formal definition for PRD review?
 - Does the theorem-target appendix give a referee a complete map of assumptions, consequences, and missing derivations?
 - Does the three-route comparison ledger constrain future string/Kaluza--Klein work tightly enough?
 - Which source-backed historical material should be added next to connect seventies string theory, Regge spectra, endpoint charges, and electroweak structure?
 - Does the O10 dimensional Schur-complement target give a concrete enough bridge among dimensional interpolation, the ordered \(J\)-assignment, the DeVries kernel, and pole placement?
 - Does the parent-workspace normalization audit give strong enough failure-mode tests for the next endpoint, interval, brane, KK, Regge, or \(G_2\) derivation attempt?
+- Does the A1--A3/T1--T3 hierarchy make the main text read as paper-level exposition while preserving all open obligations?

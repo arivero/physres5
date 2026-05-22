@@ -16,6 +16,24 @@ coupling: the adjacent audit places triplet data in adjoint branches and
 weak-doublet data in spinor branches, so the flavor ledger needs a coupling to
 the electroweak operator.
 
+**Loop 11 normalization refinement.** The ordered assignment must specify the
+mathematical channel by which \(J_H=3/4\) enters the charged comparison.  The
+allowed channels are: a Higgs-representation contribution inside the
+gauge-Higgs mass map, a scalar contribution to the W transverse pole
+self-energy, or a source/boundary label coupled to the Higgsing field.  The
+target mass-map equation is
+\[
+(D_\mu H)^\dagger D^\mu H
+\longrightarrow
+\left(M_W^2,M_Z^2\right)
+=
+\left(\frac{g^2v^2}{4},\frac{(g^2+g'^2)v^2}{4}\right)
+\longrightarrow
+\frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
+=
+\frac{x_+(C_2(\mathbf 2))}{x_+(C_2(\mathrm{adj}))}.
+\]
+
 ## O2a. Pole convention formula
 
 **Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?
@@ -72,6 +90,11 @@ V_{\rm eff}\supset
 This supplies a gauge-invariant form for a two-state negative sector.  The
 physical identity of \(\Psi_-\), the coefficient \(c_Y\), and the map to
 \(x_-(J)\) remain UV matching data.
+
+**Loop 11 normalization refinement.** Route-specific scalar candidates in the
+main text are source addresses.  They acquire physical status after a
+gauge-invariant scalar functional, normalization, and electroweak scheme are
+derived.
 
 ## O4. Dynamical derivation from string/brane/Regge data
 
@@ -203,6 +226,12 @@ from one operator, field basis, and inner product.  Hosotani/Wilson-line
 weight-squared spectra, single-generator Wigner--Eckart elements, and free
 Wilson coefficients are failure modes to test explicitly.
 
+**Loop 11 normalization refinement.** Comparing endpoint, interval, and \(G_2\)
+\(\Sigma\)-entries requires one stated field basis and inner product for the
+reduced two-channel light space.  Extra channels, nonorthogonal projections,
+or route-dependent normalizations must be handled before the entries can be
+identified across routes.
+
 ## O8. Pole placement versus high-scale placement
 
 **Question.** Why does the clean DeVries value attach to the low-energy pole spectrum, and how are GUT-scale or compactification-scale boundary readings separated?
@@ -254,6 +283,14 @@ an additional UV threshold, charge lattice, or custodial-generator sum.  The
 same standard applies to string and Regge variants: Chan--Paton traces,
 hypercharge embeddings, and Regge \(C_F/C_A\) factors must be matched to the
 four-dimensional pole condition.
+
+**Loop 11 normalization refinement.** The pole-placement theorem must state
+whether the DeVries determinant is preserved exactly under four-dimensional
+matching or obtained after a projection, field redefinition, or
+renormalization prescription.  The \(G_2\) route carries a specific scale
+tension: local singularity data naturally live at a compactification scale, so
+the pole reading requires a compactification-to-EFT-to-complex-pole matching
+theorem.
 
 ## O5. Electroweak ray and forbidden deformations
 

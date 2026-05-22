@@ -2,7 +2,7 @@
 \label{sec:route-comparison}
 % Status: open. Compares route kernels, assignments, branch maps, scale placement, and compatibility tests.
 
-The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  This section puts them in a common format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A successful route supplies a physical origin for entries of a matrix and turns the string, extra-dimensional, or singular-geometric address into a derivation.
+The endpoint, interval, and \(G_2\) sections introduce three ways to place the DeVries determinant inside a theory with localized gauge and order-parameter data.  This section puts them in a common format.  Each route is tested by the same normalized two-channel kernel, electroweak assignment, branch interpretation, and global compatibility conditions.  A derivation in any route must supply a physical origin for the matrix entries and turn the string, extra-dimensional, or singular-geometric address into a calculation.
 
 \subsection{Common reduction problem}
 \label{sec:common-reduction-problem}
@@ -37,7 +37,7 @@ where \(h_{J,r}\) is the order-parameter channel and \(a_{J,r}\) is the adjoint/
   \end{pmatrix}.
   \label{eq:route-common-kernel}
 \end{equation}
-The first DeVries condition is a stated limit and normalization giving
+The DeVries target is the simultaneous limit and normalization
 \begin{equation}
   \Sigma_{hh,J}^{r}=0,\qquad
   \Sigma_{aa,J}^{r}=J,\qquad
@@ -52,21 +52,23 @@ Equation~\eqref{eq:route-common-target} is stronger than a qualitative mechanism
   \label{eq:route-common-det}
 \end{equation}
 
-The reduction has three addresses.  The endpoint address is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval address is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) address is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources justify the addresses.  They leave Eq.~\eqref{eq:route-common-target} as the shared derivation target.
+The reduction has three addresses.  The endpoint address is supported by the open-string fact that endpoint labels and coincident branes generate matrix-valued gauge fields, with brane positions supplying scalar data \cite{TongString,Polchinski1994}.  The interval address is supported by extra-dimensional models in which boundary conditions and brane-localized terms set vector spectra \cite{CsakiHubiszMeade2005}.  The \(G_2\) address is supported by singular compactifications that localize gauge sectors and chiral matter, together with Higgs-bundle variables organizing local matter and interaction data \cite{WittenG2Anomaly2001,AcharyaWitten2001,AcharyaGukov2004,BraunEtAl2019}.  These sources support the use of the addresses.  They leave Eq.~\eqref{eq:route-common-target} as the shared derivation target.
 
 \subsection{Entry-by-entry comparison}
 \label{sec:entry-comparison}
 
-The first comparison concerns the diagonal current entry.  In the DeVries matrix the current channel carries the trace contribution.  The route-specific question is therefore:
+The first entry is the diagonal current contribution,
 \begin{equation}
   a_{J,r}
   \quad\leadsto\quad
   \Sigma_{aa,J}^{r}=J.
   \label{eq:route-current-question}
 \end{equation}
-For endpoints, \(a_{J,\rm end}\) should be a Chan--Paton or brane gauge amplitude.  The current trace would then come from a normalized endpoint algebra or an adjoint current on a coincident-brane stack.  For intervals, \(a_{J,\rm int}\) should be the boundary value of a bulk gauge mode or a current coupled to it; the trace contribution would come from the boundary kinetic or mass term after solving the bulk equation.  For \(G_2\), \(a_{J,G_2}\) should be a fluctuation along a singular gauge locus, with \(J\) arising from an ADE or adjoint invariant in the local gauge sector.
+The candidate source objects are a Chan--Paton or brane gauge amplitude, a
+boundary value of a bulk gauge mode, or a fluctuation along a singular gauge
+locus.
 
-The second comparison concerns the off-diagonal product.  The determinant requires a product of transition amplitudes,
+The second entry is the off-diagonal product,
 \begin{equation}
   h_{J,r}
   \leftrightarrow
@@ -75,16 +77,21 @@ The second comparison concerns the off-diagonal product.  The determinant requir
   \Sigma_{ha,J}^{r}\Sigma_{ah,J}^{r}=J.
   \label{eq:route-mixing-question}
 \end{equation}
-For endpoints, this product should arise from an open string stretched between sectors, a brane-Higgsing field, or an endpoint overlap.  For intervals, it should arise from boundary matching between a localized order parameter and a bulk gauge profile.  For \(G_2\), it should arise from a localized matter wavefunction, flow-line overlap, bifundamental vev, or deformation coupling at a singular point.  The route earns physical content when the product is computed from normalized wavefunctions, endpoint algebra, or local geometry.
+The candidate source objects are a stretched open string or endpoint overlap,
+a boundary overlap between an order parameter and a bulk gauge profile, or a
+localized matter/deformation coupling.
 
-The third comparison concerns the order-parameter reference entry,
+The third entry is the order-parameter reference contribution,
 \begin{equation}
   h_{J,r}
   \quad\leadsto\quad
   \Sigma_{hh,J}^{r}=0.
   \label{eq:route-h-reference}
 \end{equation}
-The zero entry is a normalization and symmetry statement.  In an endpoint model, it may come from choosing the boundary order-parameter amplitude as the reference channel.  In an interval model, it may come from a boundary condition or brane term that subtracts the local order-parameter self-energy at the pole.  In a \(G_2\) model, it may come from the critical-point normalization of the localized mode.  A derivation must name the symmetry, subtraction, or normalization that gives this reference value.
+The candidate source objects are a boundary reference channel, a normalized
+boundary order-parameter self-energy, or a critical-point normalization of a
+localized mode.  Appendix~\ref{app:target-boundary-determinant} records the
+entry-by-entry proof obligations.
 
 The following table records the three entries in a common dictionary.
 \begin{center}
@@ -93,9 +100,9 @@ The following table records the three entries in a common dictionary.
 \toprule
 Kernel entry & Endpoint/D-brane route & Interval KK route & \(G_2\) route\\
 \midrule
-\(\Sigma_{aa}=J\) & adjoint Chan--Paton current or coincident-brane gauge amplitude & boundary value of a bulk gauge mode with brane kinetic or mass data & ADE singular gauge fluctuation or local adjoint invariant\\
-\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string, endpoint overlap, or brane-Higgsing field & localized order-parameter coupling to a bulk profile & matter wavefunction overlap, flow line, bifundamental vev, or singular deformation\\
-\(\Sigma_{hh}=0\) & boundary reference channel for the order parameter & normalized boundary order-parameter self-energy & critical-point normalization for localized matter\\
+\(\Sigma_{aa}=J\) & Chan--Paton current or brane gauge amplitude & bulk gauge boundary value & ADE gauge fluctuation or adjoint invariant\\
+\(\Sigma_{ha}\Sigma_{ah}=J\) & stretched string or endpoint overlap & order-parameter/bulk-profile overlap & localized matter or deformation coupling\\
+\(\Sigma_{hh}=0\) & order-parameter reference channel & normalized boundary scalar term & critical-point normalization\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -116,9 +123,9 @@ The target map is
   (J_W,J_Z)=(J_H,J_{\rm adj}).
   \label{eq:route-assignment-map}
 \end{equation}
-This map is a theorem target because the observed W and Z vector bosons are both gauge-sector particles after symmetry breaking.  The route must explain why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  An accepted route therefore produces the ordered pair from the gauge-Higgs coupling structure, from endpoint boundary labels attached to the Higgsing field, from interval boundary data that distinguish charged and neutral sectors, or from a localized singularity model where doublet and adjoint data meet.
+This map is a theorem target because the observed W and Z vector bosons are both gauge-sector particles after symmetry breaking.  The route must explain why the charged comparison samples the order-parameter invariant while the neutral comparison samples the adjoint/current invariant.  The required derivation must produce the ordered pair from the gauge-Higgs coupling structure, from endpoint boundary labels attached to the Higgsing field, from interval boundary data that distinguish charged and neutral sectors, or from a localized singularity model where doublet and adjoint data meet.
 
-The pole-ratio reading then has the common form
+If the ordered assignment and pole-placement theorem hold, the pole-ratio reading has the common form
 \begin{equation}
   \frac{M_{W,\rm pole}^2}{M_{Z,\rm pole}^2}
   =
@@ -151,9 +158,9 @@ be normalized eigenvectors of the route kernel in the DeVries limit.  The positi
   \mathcal F_{{\rm sc},r}.
   \label{eq:route-scalar-map}
 \end{equation}
-The functional \(\mathcal F_{{\rm sc},r}\) depends on the route.  In the endpoint route it may be a brane separation, a stretched-string scalar, or a brane-Higgsing vev.  In the interval route it may be a boundary order-parameter functional, a radion-like deformation, or a localized scalar eigenmode.  In the \(G_2\) route it may be a singularity-deformation parameter, a critical value of \(f_Q\), a charge-density functional \(\rho_Q\), or a localized modulus.
+The functional \(\mathcal F_{{\rm sc},r}\) depends on the route.  Endpoint, interval, and \(G_2\) sources provide candidate scalar addresses: brane or boundary moduli, localized scalar modes, and singularity-deformation data.  These addresses acquire physical content after a gauge-invariant functional, normalization, and electroweak scheme are specified.
 
-The scalar map has to be tied to the electroweak ray.  The gauge-Higgs system has a radial vacuum scale and a projective vector-mass ratio.  A route that derives the determinant should identify how the positive branch fixes the projective vector datum and how the negative branch enters the radial or scalar sector.  This is the point where the two-root structure becomes physically restrictive.  A determinant used for the pole clue automatically supplies its partner branch, and the route must assign that partner branch a controlled role.
+The scalar map has to be tied to the electroweak ray.  The gauge-Higgs system has a radial vacuum scale and a projective vector-mass ratio.  The two-root structure is physically restrictive because a determinant used for the pole clue also supplies the partner branch.  A source route must identify how the positive branch fixes the projective vector datum and how the negative branch enters the radial or scalar sector.
 
 \subsection{Scale placement}
 \label{sec:route-scale-placement}
@@ -186,19 +193,8 @@ kernel into a four-dimensional gauge-Higgs effective action.  The third arrow
 places the result in the dressed transverse pole convention of Sec.~\ref{sec:pole}.
 Endpoint, interval, and \(G_2\) routes differ in the first arrow; they share
 the last two arrows when the pole reading is retained.
-Equivalently, the route must turn the bare two-channel kernel into a
-finite-rank contribution to the four-dimensional transverse self-energy,
-\begin{equation}
-  K_{J,r}^{\rm bare}(\lambda)
-  \longrightarrow
-  \Pi_{T,V}^{(4)}(s;J,r),
-  \qquad
-  \Delta^{-1}_{T,V}(s_V;J,r)=0,
-  \label{eq:route-self-energy-target}
-\end{equation}
-with \(s_V\) defined by Eq.~\eqref{eq:complex-pole}.  Equation~\eqref{eq:route-self-energy-target}
-is schematic until the route fixes the effective action, renormalization
-scheme, and field basis.
+Appendix~\ref{app:target-pole-placement} gives the equivalent transverse
+self-energy form of the same theorem.
 
 For endpoint and interval routes, the most direct challenge is the relation between a boundary determinant and a four-dimensional pole.  Boundary conditions usually define a spectrum before loop corrections and before the conversion to pole observables.  The route must explain how the determinant survives matching to the pole definition, or how the pole reading emerges from a dressed boundary self-energy.
 
@@ -215,17 +211,13 @@ For the \(G_2\) route, the challenge is sharper.  A local singularity model natu
 \end{equation}
 The first arrow is local geometry.  The second arrow is four-dimensional matching.  Both arrows remain open obligations.
 
-\subsection{Completion conditions}
-\label{sec:route-completion-conditions}
+\subsection{Route outcome}
+\label{sec:route-outcome}
 
-The comparison yields seven completion conditions:
-\begin{enumerate}
-\item Choose one source theory \(\mathcal S_r\) and one light subspace \(\mathcal H_{J,r}\).
-\item Derive the reduced kernel \(K_{J,r}(\lambda)\) from an action, boundary condition, endpoint algebra, or local \(G_2\) operator.
-\item Identify the normalization giving Eq.~\eqref{eq:route-common-target}.
-\item Derive the ordered electroweak map in Eq.~\eqref{eq:route-assignment-map}.
-\item Match the positive branch to the pole observable or state the matching theorem required for that placement.
-\item Map the negative branch to a scalar, modulus, brane, or deformation functional.
-\item Check global-form, anomaly, and representation compatibility.
-\end{enumerate}
-Each condition has a defined failure mode.  Extra light channels enlarge the determinant.  A different trace or mixing product gives a different secular relation.  A high-scale placement changes the interpretation of the weak-angle clue.  An incompatible global form rejects a proposed compactification.  These outcomes classify the DeVries relation inside a larger family of spectral constructions.
+A derivation in any route must satisfy the common kernel target, the ordered
+electroweak assignment, the pole-matching chain, the scalar-branch map, and
+the global compatibility checks.  Appendix~\ref{app:derivation-checklist}
+collects the full checklist.  Extra light channels, a different trace, a
+different mixing product, a high-scale placement, or an incompatible global
+form would classify the DeVries relation inside a larger family of spectral
+constructions.

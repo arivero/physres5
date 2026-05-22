@@ -43,8 +43,9 @@
   The required proof uses one gauge-Higgs complex, one inner product, photon-zero and electroweak-ray preservation, a derived pole remainder, and a scalar map for the negative branch.  The parent source-note imports are provenance and guardrails; the manuscript source address is the local Coquereaux fragment set plus Target X.
 - Loop 25 closes O13--O15 into `CLOSED_ISSUES.md`.  Casimir framing,
   trace-space separation, and Wigner--Eckart failed-route status now function as
-  closed guardrails.  O16 remains open with an explicit project-source label for
-  the SO(32) branching data.  The manuscript now uses a neutral-sector
+  closed guardrails.  Loop 29 also closes O16 as a structural flavor/string
+  boundary issue, with SO(32) completion obligations retained in Appendix D
+  Target V and source-route work.  The manuscript now uses a neutral-sector
   determinant pole condition, a CHM current-entry target
   \(\Sigma_{aa,J}=J\), and a Target X superconnection/CHM compatibility square.
 - Loop 25 parent-directory sidecar reads confirm that `../prTalks` is already a
@@ -90,6 +91,11 @@
   Hodge/SUSY-QM off-diagonal target
   \(\Sigma_{ha,J}\Sigma_{ah,J}=J\) with the hatted CHM diagonal-current target
   in one reduced basis.
+- Loop 29 closes O2a, O5, O6, O7, O9, O11, O12, and O16 as structural
+  normalization issues.  The live derivational issues are O1, O2b, O3, O4,
+  O8, O10, and O17--O20.  The latest direct `..` read is recorded in
+  `context/parent_directory_loop29_read.md`; active parent imports remain
+  theorem targets, critique pressure, provenance, and source-upgrade queues.
 
 ## Resume state after context renewal
 
@@ -108,8 +114,13 @@
 - Also preserve the colourless electroweak count: total \(D=7\to D=6\to D=5\), corresponding to internal KK \(3\to2\to1\), with six-dimensional superstrings as the middle-dimensional source anchor.
 - Round 2 converted O10 into a dimensional Schur-complement target: the \(D=10/6\) middle line must provide \(\mathcal B(t_\star)\), \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), \(K_J(t_\star,\lambda)\), and the pole-matching rule.
 - New O10 subquestion: explain why the top quark sits at the electroweak scale. Source-backed SM facts are top Yukawa dominance, nondecoupling, and top sensitivity in Higgs/vacuum-stability physics; any DeVries explanation remains open.
-- New O11 source-note validation issue: preserve `../prTalks` PDFs as source objects, use extracted text only as an access aid, and promote only structural obligations or primary-source-backed claims.
-- New O12 parent-workspace validation issue: preserve adjacent text notes as source-note provenance, promote their critique content into O1/O3/O4/O6/O8/O10 obligations, and replace adjacent-project claims with primary sources before manuscript citation.
+- Closed O11 source-note validation: preserve `../prTalks` PDFs as source
+  objects, use extracted text only as an access aid, and promote only structural
+  obligations or primary-source-backed claims.
+- Closed O12 parent-workspace validation: preserve adjacent text notes as
+  source-note provenance, promote their critique content into the relevant live
+  theorem targets, and require primary sources or explicit project-source
+  status before manuscript citation.
 - Loop 11 normalized the abstract, introduction, VI.G route comparison, and conclusion around the A1--A3/T1--T3 hierarchy.  The active central theorem target is now also recorded as an electroweak mass-map theorem from the Higgs kinetic term and W/Z mass matrix to the ordered DeVries quotient after pole matching.
 - Loop 12 adds Appendix D Target 0: a unified source-to-pole matching theorem
   \[

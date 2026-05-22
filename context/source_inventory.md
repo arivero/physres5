@@ -25,6 +25,11 @@ for electroweak-ray, dimensional-interpolation, Regge, and negative-branch
 provenance; `../weak` and `../phys4` for superconnection, Wigner--Eckart
 obstruction, Higgs-interpolation, brane, and KK source upgrades.
 
+Loop 29 records the latest direct parent-directory read in
+`context/parent_directory_loop29_read.md`.  It promotes no new manuscript claim;
+it confirms the same project-source queues and keeps parent material in
+guardrail, theorem-target, provenance, and source-upgrade roles.
+
 `../physres6/` is a sibling short-note workspace for the alpha route.  Its
 valid use here is O17 provenance and symbolic theorem-target structure.  Its
 numerical checks and compact PRL framing remain outside the current conceptual

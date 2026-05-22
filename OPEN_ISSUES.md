@@ -73,22 +73,6 @@ normalization, and pole map must apply to the odd Higgs/order-parameter channel
 and the even transverse-current channel before their quotient has physical
 meaning.
 
-## O2a. Pole convention formula
-
-**Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?
-
-**Current working idea.** Use complex pole positions for the descriptive low-energy spectral clue. Treat Breit-Wigner/on-shell and running weak angle inputs as scheme transformations. The manuscript currently writes
-\[
-s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole},
-\qquad
-\Delta^{-1}_{T,V}(s_V)=0.
-\]
-The remaining convention task is to state the exact relation to the quoted variable-width Breit--Wigner parameters used for W and Z inputs.
-
-**Success criterion.** A source-backed formula section states the complex-pole convention, the Breit--Wigner translation, and the conditions under which \(M_{V,\rm BW}^2=M_{V,\rm pole}^2+\Gamma_{V,\rm pole}^2\) is used.
-
-**Round 3 refinement.** Sec. III now fixes the \(s_V=M_{V,\rm pole}^2-iM_{V,\rm pole}\Gamma_{V,\rm pole}\) parameterization, records the alternative \(s_{\rm pole}=(M-i\Gamma/2)^2\) convention as a translation target, and states the common variable-width Breit--Wigner conversion chain before \(\sPole\) is formed. The remaining work is a current W/Z input audit in O2b.
-
 ## O2b. Current electroweak input audit
 
 **Question.** What current source-audited W/Z inputs should be used for a descriptive pole-ratio comparison?
@@ -480,74 +464,6 @@ endpoint, \(G_2\), alpha, or Regge route must use the same remainder form before
 it appears as a physical claim.  The CHM interval square is the current active
 test case for fixing the field basis and matching map.
 
-## O5. Electroweak ray and forbidden deformations
-
-**Question.** How does the construction encode the full broken-to-unbroken electroweak ray while avoiding independent unphysical limits?
-
-**Current working idea.** The vacuum scale \(v\) is radial; the DeVries ratio fixes the projective direction. Taking \(v\to0\) restores the full gauge symmetry with the projective ratio held fixed.
-
-**Success criterion.** A precise statement in the gauge-Higgs Lagrangian and the mass matrix.
-
-**Loop 13 rank-and-ray refinement.** Appendix D now states O5 as an
-electroweak ray admissibility theorem.  The tree-level ray is
-\[
-H_t=\frac{1}{\sqrt2}\binom{0}{t v+h},
-\qquad
-g(t)=g,\qquad g'(t)=g',
-\]
-with
-\[
-M_W^2(t)=t^2\frac{g^2v^2}{4},
-\qquad
-M_Z^2(t)=t^2\frac{(g^2+g'^2)v^2}{4},
-\qquad
-M_\gamma^2(t)=0.
-\]
-A source route is ray-admissible when one radial parameter controls the charged
-and neutral massive vector sectors, the photon remains the null mode, and the
-ordered sampling maps commute with the \(t\to0\) limiting projective datum.
-Coupling-space paths such as \(g\to0\), \(g'\to0\), \(g'/g\to0\), and
-custodial-breaking mass shifts are separate deformation problems.
-
-## O6. Flavor boundary
-
-**Question.** How should the Rivero flavor/endpoint material be represented while keeping generation-topology claims conditional?
-
-**Current working idea.** State SO(32)-flavor as a separate organizing clue compatible or incompatible with compactification topology.
-
-**Success criterion.** A section that gives the boundary condition and prevents overclaiming.
-
-**Parent-workspace refinement.** Adjacent SO(32) notes are useful as flavor
-boundary provenance.  The current safe use is representation bookkeeping:
-adjoint branches can supply triplet-like data, spinor branches can supply
-doublet-like data, and orientifold/orbifold projection data are needed for
-branch selection.  Generation-topology claims stay inside the existing caveat
-until a compactification map and global-form check are supplied.
-
-## O7. Global form of the Standard Model gauge group
-
-**Question.** Can line operators or global-form data provide a topological test connected to the DeVries construction?
-
-**Current working idea.** Include as a topological appendix and possible discriminant, separate from the mass-ratio derivation.
-
-**Success criterion.** A clear appendix explaining \((SU(3)\times SU(2)\times U(1))/\Gamma\), \(\Gamma\subset \mathbb Z_6\), and the exact relation to possible tests.
-
-## O9. Theorem-target ledger
-
-**Question.** Can the manuscript state every open derivation as a theorem target with explicit hypotheses, conclusion, source status, and failure mode?
-
-**Current working idea.** Add a formal appendix collecting the pole-placement, electroweak-assignment, boundary-determinant, negative-branch, and global-form compatibility targets.
-
-**Success criterion.** A referee can locate the exact missing proof for each speculative step and see which manuscript claim depends on it.
-
-**Status refinement.** Sec. IX now presents the conclusion and analytical status, while Appendix D holds the claim hierarchy, minimum derivation chain, and derivation checklist. The remaining burden is derivational.
-
-**Loop 12 refinement.** Appendix D now begins with Target 0, the unified
-source-to-pole matching theorem.  The theorem-target ledger therefore has a
-lead object that packages the source reduction, reduced basis, DeVries kernel,
-ordered W/Z sampling maps, and pole matching before the route-specific targets
-are compared.
-
 ## O10. Higgs interpolation \(D=11\to D=10\to D=9\) and colourless \(D=7\to D=6\to D=5\)
 
 **Question.** Can the Higgs/electroweak sector be reconstructed as an interpolation whose full-gauge version has total dimensions \(D=11,10,9\) and KK internal dimensions \(7,6,5\), while its colourless electroweak version has total dimensions \(D=7,6,5\) and KK internal dimensions \(3,2,1\)?
@@ -727,69 +643,6 @@ This scale datum is part of the same single-source burden as the
 electroweak-ray map, negative-branch scalar functional, and top-sector source
 map.
 
-## O11. Adjacent `prTalks` source-note validation
-
-**Question.** Which user-provided `../prTalks` PDFs contain conceptual material that should survive into the manuscript program, and which claims require primary-source upgrades?
-
-**Current working idea.** Treat the PDFs as project source notes. Keep the PDFs themselves as source objects, because text extraction misses plots, equation layout, radicals, and embedded images. Valid content includes the electroweak ray/projective-angle reading, the orbit quadratic, Reggeization alternatives, the minimal \(D_T\) two-channel block, the effective-dimension interpolation, and the negative-branch/top-sector obligation.
-
-**Success criterion.** `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean` record the valid content, the PDF-reading caveat, the agent-read mathematical transcriptions, and the primary-source upgrade queue. Any promotion into manuscript prose must point back either to primary local literature or to an explicitly labeled project-source note.
-
-## O12. Parent-workspace source-note validation
-
-**Question.** Which adjacent parent-workspace text notes can sharpen the
-manuscript while keeping adjacent-project overclaims out of journal-facing
-prose?
-
-**Current working idea.** Use `../weak` as a normalization and failure-mode
-audit, `../phys3` as dimensional-interpolation and SO(32)/Chan--Paton
-provenance, `../signed-dv-custodial-project` as negative-branch and string-UV
-obstruction memory, and `../dualsm` as review-process discipline.  `../recap`
-and `../orbits` remain outside current manuscript claims unless a later
-source-specific task makes them relevant.
-
-**Promoted obligations.**
-
-1. Scalar-seed assignments to W/Z observables require a gauge-Higgs mass
-   matrix, pole self-energy map, or equivalent source-theory reduction.
-2. Negative-branch Higgs/top readings require a scalar potential,
-   gauge-invariant scalar functional, or UV-matched two-state EFT.
-3. Endpoint, interval, brane, KK, Regge, and \(G_2\) routes must produce the
-   DeVries block from one operator and one normalization rule.
-4. Custodial \(3/8=C_F/C_A\) explanations must supply an extra threshold,
-   charge lattice, or generator-sum mechanism beyond the hypercharge
-   \(T_R^3\) spurion.
-5. SO(32)-flavor and Chan--Paton counts remain flavor-boundary provenance until
-   a coupling to the electroweak operator is derived.
-
-**Success criterion.** `context/parent_workspace_source_notes.md` and
-`notes/lean/AdjacentWorkspaceGuardrails.lean` record the audited content and
-the theorem targets.  Parent-derived claims promoted to manuscript prose must
-carry either primary-source support or an explicit project-source label.
-
-## O16. SO(32) flavor/string completion boundary
-
-**Provenance.** Targeted parent audit of `../phys3`, `../phys4`, and
-`../dualsm`.
-
-**Question.** Which part of the SO(32) material is a flavor theorem target, and
-which part requires string completion data?
-
-**Current working idea.** The group-theory target is
-\[
-  16=(5,3)+(1,1),
-  \qquad
-  \wedge^2(5,3)=(15,\bar 3)+(\overline{10},6).
-\]
-The symmetric \(15\) follows from the \((5,3)\) tensor-product block.  SO(32)
-serves as a Type I/heterotic consistency arena.  The compactification claim
-requires orientifold/tadpole data, projection of extra states, and a coupling
-from the flavor boundary to the electroweak DeVries operator.
-
-**Success criterion.** Flavor prose states the SO(32) role as boundary
-bookkeeping and completion arena, with generation topology, extra-state
-projection, and ordered W/Z assignment recorded as open derivations.
-
 ## O17. Electromagnetic coupling \(\alpha\) as the content of the \(D=9\) \(U(1)\) endpoint
 
 **Provenance.** Human operator note (2026-05-22).  Treat as a human directive;
@@ -922,8 +775,9 @@ compatibility ledger before using a low-mass diphoton, charge-\(4/3\), or
 coloured-state reading: primary CMS/ATLAS sources, the phenomenology paper,
 local/global significance, look-elsewhere status, pair-production bounds,
 single-production assumptions, decay channels, and widths.  Records: O1
-(assignment), O4 (dynamical origin), O11 (Regge/prTalks), Appendix D
-Target VIII.  Companion lean note: `notes/lean/ReggeHigherBranch.lean`.
+(assignment), O4 (dynamical origin), the closed prTalks source-note ledger,
+and Appendix D Target VIII.  Companion lean note:
+`notes/lean/ReggeHigherBranch.lean`.
 
 **Loop 17 normalization.**  The manuscript now records O18 as
 Target VIII, a Regge-intercept survival and higher-branch-slot theorem target.

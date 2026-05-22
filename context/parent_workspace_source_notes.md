@@ -118,6 +118,24 @@ D=11/D=9 interpolation provenance.  The root also contains arXiv cache papers,
 older physics workspaces, TeX support files, runtime caches, editor state, and
 generated logs.  Runtime and cache material supplies no manuscript claims.
 
+## Loop 29 parent-root inventory refresh
+
+The current direct `..` read again found a broad workspace around this
+repository.  Relevant manuscript-bearing clusters remain `../prTalks`,
+`../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`, `../physres1`,
+`../physres6`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.
+Additional visible queues include `../balance`, `../cantor`, `../sakurai`,
+`../pdghist`, `../phys6gpd`, `../nokoide`, `../academia`, `../vixra*`, and
+standalone TeX or PDF files at the parent root.  Runtime state, caches,
+credentials, editor data, package trees, generated logs, and administrative
+files supply no manuscript claims.
+
+For Loop 29 the parent read promotes no new physics issue.  The closure pass
+uses it as inventory confirmation: project-source notes from `../prTalks` and
+the parent workspace remain guardrails, provenance, theorem targets, and
+source-upgrade queues.  Manuscript claims still require primary local sources
+or explicit project-source status.
+
 ## Loop 25 parent-directory sidecar read
 
 Loop 25 added two read-only sidecar reads.  The `../prTalks` pass confirmed the

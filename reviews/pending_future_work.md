@@ -76,10 +76,10 @@
   define one gauge-Higgs complex, one inner product, photon-zero preservation,
   electroweak-ray preservation, a derived pole remainder, and a scalar map for
   the negative branch.
-- Use Loop 25's closure ledger to keep O13--O15 out of `OPEN_ISSUES.md`.
-  O16 stays active until the SO(32) branching data receive primary-source
-  support or a derived endpoint/orientifold embedding coupled to the electroweak
-  kernel.
+- Use Loop 25 and Loop 29 closure ledgers to keep structural guardrails out of
+  `OPEN_ISSUES.md`.  O13--O15 and O2a/O5/O6/O7/O9/O11/O12/O16 are closed as
+  structural issues; their residual derivational obligations remain in O1,
+  O2b, O3, O4, O8, O10, and O17--O20.
 - Use the Loop 25 parent-directory sidecar reads as source queues:
   `../prTalks` for electroweak-ray, KK-dimensional, Regge, and negative-branch
   provenance; `../weak` and `../phys4` for superconnection and
@@ -190,6 +190,9 @@
 - Added Loop 28 normalization: hatted CHM current-entry variables, a
   \(\Lambda_J\) source-scale obligation, CHM convention-audit source notes,
   factorization-first proof-spine text, and Loop 28 referee/advisor reports.
+- Added Loop 29 normalization: closed O2a, O5, O6, O7, O9, O11, O12, and O16
+  as structural issues, added the closure packet to `CLOSED_ISSUES.md`,
+  normalized Sec. IX's fixed-filter prose, and updated source/review ledgers.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.
@@ -292,9 +295,10 @@
   products.
 - Revive a Wigner--Eckart/Clebsch route only through a new parent
   representation, operator, projection, and normalization.
-- Turn the SO(32) flavor/string target into a sourced theorem statement with
-  explicit extra-state projection, orientifold/tadpole, and electroweak-operator
-  coupling obligations.
+- Derive the SO(32) flavor/string completion statement with explicit
+  extra-state projection, orientifold/tadpole, and electroweak-operator coupling
+  obligations.  The structural flavor-boundary issue is closed; the completion
+  derivation remains open through Appendix D Target V and source-route work.
 - Derive or reject the electromagnetic endpoint theorem:
   \[
   g_{\rm sec}^2=

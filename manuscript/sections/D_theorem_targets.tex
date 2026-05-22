@@ -390,10 +390,18 @@ custodial constraints, and photon zero-mode accounting.  The proof obligation
 is the projection to \(\mathcal H_J\), the product normalization, the ordered
 W/Z boundary map, and the source-to-pole matching chain.
 The first entry-level subtarget is the normalized transverse-current
-extraction
+extraction.  Let \(\Lambda_J\) be the source scale that makes the spectral
+variable dimensionless,
 \begin{equation}
-  K^{\rm cur}_J(\lambda)
-  =
+  \widehat\lambda=\frac{\lambda}{\Lambda_J^2}.
+  \label{eq:target-chm-hat-lambda}
+\end{equation}
+The current-channel kernel is
+\begin{equation}
+\begin{aligned}
+  \widehat K^{\rm cur}_J(\widehat\lambda)
+  &=
+  \frac{1}{\Lambda_J^2}
   \left\langle a_J,
   \left(
   K^{\rm DtN}_{T,J}(\lambda)
@@ -401,22 +409,30 @@ extraction
   -K^{\rm ref}_{T,J}(\lambda)
   \right)a_J
   \right\rangle_{\rm CHM},
+  \\
+  \lambda&=\Lambda_J^2\widehat\lambda,
   \qquad
   \langle a_J,a_J\rangle_{\rm CHM}=1 .
+\end{aligned}
   \label{eq:target-chm-current-extraction}
 \end{equation}
 The conclusion sought from this extraction is
 \begin{equation}
-  K^{\rm cur}_J(\lambda)
+  \widehat K^{\rm cur}_J(\widehat\lambda)
   =
-  \lambda+\Sigma_{aa,J}^{\rm CHM}
-  +O(\lambda^2/\Lambda_{\rm KK}^2),
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
+  +O(\widehat\lambda^2),
   \qquad
-  \Sigma_{aa,J}^{\rm CHM}=J.
+  \widehat\Sigma_{aa,J}^{\rm CHM}=J.
   \label{eq:target-chm-current-sigma}
 \end{equation}
-Here \(K^{\rm ref}_{T,J}\), the endpoint-normal convention, and the
-dimensionless \(J\)-normalization are part of the theorem data.
+Here \(K^{\rm ref}_{T,J}\), \(\Lambda_J\), the endpoint-normal convention, the
+wavefunction normalization of \(a_J\), and the dimensionless
+\(J\)-normalization are part of the theorem data.  The equality to \(J\) is
+meaningful after these data are fixed from the same CHM source action and
+boundary product.  Target~\ref{app:target-susyqm-origin} supplies the
+complementary square-root entry test; this target supplies the hatted current
+diagonal test.
 
 \paragraph*{Conclusion.}
 There is a controlled field basis, inner product, projection, and
@@ -1025,6 +1041,11 @@ The reduced target is
 \end{equation}
 The route succeeds when \(P_W\), \(P_Z\), the inner product, \(B_J\), and
 \(\Delta_{\rm sc}\) all come from one gauge-Higgs superconnection reduction.
+For the interval implementation, Target~\ref{app:target-boundary-determinant}
+is the diagonal partner of this factorization target: the Hodge/SUSY-QM
+complex supplies the candidate square-root entry, and the hatted CHM current
+kernel supplies the candidate \(\Sigma_{aa,J}=J\) entry after the source scale
+\(\Lambda_J\) and reference subtraction are fixed.
 
 \paragraph*{Current evidence.}
 The square-root entry has a concrete mathematical source: on normalized

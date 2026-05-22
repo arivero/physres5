@@ -51,11 +51,17 @@ PRD phase.
 - `09_Csaki_Hubisz_Meade_EWSB_from_Extra_Dimensions_hep-ph-0510275.pdf` — gauge theories on intervals, boundary conditions, Higgsless electroweak breaking, fermions in extra dimensions, precision observables.
   - Loop 19 use: pages 1--10 support variational boundary conditions,
     boundary mass terms, boundary kinetic terms, eigenvalue-dependent boundary
-    equations, and the modified scalar product.
-  - Loop 18 use: pages 11--20 support boundary scalar vevs modifying vector boundary conditions, Dirichlet limits, and possible scalar remnants from \(A_5\) and boundary Goldstone data.
+    equations, and the modified scalar product.  Loop 28 source audit:
+    rendered-PDF inspection still has to pin endpoint signs, dimensions, and
+    normalization conventions before the hatted CHM current target is used as
+    an equation-level derivation.
+  - Loop 18 use: pages 11--20 support boundary scalar vevs modifying vector
+    boundary conditions, Dirichlet limits, gauge fixing, vector Robin data, and
+    possible scalar remnants from \(A_5\) and boundary Goldstone data.
   - Loop 19 use: pages 21--30 support electroweak interval boundary spectra,
     photon zero-mode accounting, custodial boundary assignments, and brane
-    kinetic-term control of heavy modes.
+    kinetic-term control of heavy modes.  Loop 28 use: these pages are the
+    source anchor for the photon/custodial part of the CHM convention audit.
 - `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` — six-dimensional string-string duality source; type IIA on K3 and heterotic on \(T^4\).
 - `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` — six-dimensional string-string duality and charged solitonic strings.
 - `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` — heterotic small instantons and nonperturbative six-dimensional string dynamics.

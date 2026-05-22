@@ -63,6 +63,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 25 | 5 | 5 | 5 | 5 | 5 | Closed O13--O15 as normalization guardrails, added O16 project-source status, sharpened CHM/superconnection filters, and refreshed the parent-directory source inventory. |
 | 26 | 5 | 5 | 5 | 5 | 5 | Added claim-status taxonomy for dimensional interpolation, expanded the single-source \(u\) datum with \(v,m_h^2,K_J,\mathcal Y_{\rm top}\), and sharpened O17, CHM/top, and \(G_2\) endpoint obligations. |
 | 27 | 5 | 5 | 5 | 5 | 5 | Normalized the CHM current-entry extraction, recorded the Loop 27 parent-directory read, added the BF-admissible Berger-\(S^3\)/CHM target, and updated Lean/source ledgers. |
+| 28 | 5 | 5 | 5 | 5 | 5 | Added hatted CHM current-entry normalization, recorded the source-scale convention audit, and linked the Hodge/SUSY-QM off-diagonal test to the CHM diagonal-current test as the active proof spine. |
 
 ## Scoring rubric
 

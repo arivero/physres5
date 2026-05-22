@@ -85,11 +85,17 @@ projection to \(\mathcal H_J\) and the \(J\)-normalization are theorem data.
 Within the current source corpus, the interval route is the active test case:
 the CHM boundary conditions provide explicit vector and scalar boundary data,
 so one entry of Eq.~\eqref{eq:route-common-target} can be pursued as a
-source-controlled derivation.  The immediate target is the current-channel
-entry
+source-controlled derivation.  The entry tests now have two linked forms:
+Hodge/SUSY-QM factorization tests
+\(\Sigma_{ha,J}\Sigma_{ah,J}=J\), while the CHM boundary current tests
+\(\Sigma_{aa,J}=J\).  The immediate normalization task is the current-channel
+entry in dimensionless variables.  Let
+\(\widehat\lambda=\lambda/\Lambda_J^2\).  Define
 \begin{equation}
-  K^{\rm cur}_J(\lambda)
-  =
+\begin{aligned}
+  \widehat K^{\rm cur}_J(\widehat\lambda)
+  &=
+  \frac{1}{\Lambda_J^2}
   \left\langle a_J,
   \left(
   K^{\rm DtN}_{T,J}(\lambda)
@@ -97,26 +103,29 @@ entry
   -K^{\rm ref}_{T,J}(\lambda)
   \right)a_J
   \right\rangle_{\rm CHM},
+  \\
+  \lambda&=\Lambda_J^2\widehat\lambda,
   \qquad
-  \langle a_J,a_J\rangle_{\rm CHM}=1,
+  \langle a_J,a_J\rangle_{\rm CHM}=1 .
+\end{aligned}
   \label{eq:chm-current-entry-target}
 \end{equation}
 where \(a_J=P_{a,J}A_\mu^{T,\partial}\) is a transverse boundary-current
 sample.  The entry theorem is
 \begin{equation}
-  K^{\rm cur}_J(\lambda)
+  \widehat K^{\rm cur}_J(\widehat\lambda)
   =
-  \lambda+\Sigma_{aa,J}^{\rm CHM}
-  +O(\lambda^2/\Lambda_{\rm KK}^2),
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
+  +O(\widehat\lambda^2),
   \qquad
-  \Sigma_{aa,J}^{\rm CHM}=J .
+  \widehat\Sigma_{aa,J}^{\rm CHM}=J .
   \label{eq:chm-current-entry-normalization}
 \end{equation}
 The CHM source controls the boundary variation, product, vector Robin data,
 scalar \(A_5/\pi_i\) equations, custodial bookkeeping, and photon-zero
-accounting.  The projection \(P_{a,J}\), reference subtraction, dimensionless
-\(J\)-normalization, ordered W/Z boundary map, and pole map remain theorem
-data.  The parent KK-fixing notes sharpen the same issue into a single-source
+accounting.  The projection \(P_{a,J}\), reference subtraction, source scale
+\(\Lambda_J\), endpoint-normal conventions, ordered W/Z boundary map, and pole
+map remain theorem data.  The parent KK-fixing notes sharpen the same issue into a single-source
 test: the dimensional middle line, negative-branch scalar reading, and
 electromagnetic endpoint can be combined only after one source variable
 supplies

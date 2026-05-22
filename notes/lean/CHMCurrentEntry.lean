@@ -16,6 +16,7 @@ constant ScalarFunctional : Type
 constant PoleMap : Type
 constant BergerParameter : Type
 constant BFCondition : Type
+constant SourceScale : Type
 
 structure CurrentExtraction where
   transverseTrace : BoundaryTrace
@@ -24,32 +25,59 @@ structure CurrentExtraction where
   dtnKernel : Kernel
   braneKernel : Kernel
   referenceKernel : Kernel
+  sourceScale : SourceScale
   endpointNormalConvention : Type
   photonProjection : Type
   orderedWZBoundaryMap : Type
   lambdaToPoleMap : PoleMap
   normalizedCurrent : Prop
+  hattedSpectralVariable : Prop
 
 def currentExtractionAdmissible (C : CurrentExtraction) : Prop :=
-  C.normalizedCurrent
+  C.normalizedCurrent ∧ C.hattedSpectralVariable
 
 def currentExtractionGivesSigmaAA (C : CurrentExtraction) : Prop :=
   True
 
-/- Obligation 1:
+/- Obligation 1, updated in Loop 28:
    Define a_J = P_{a,J} A_T^boundary with <a_J,a_J>_CHM = 1 and compute
-     K_cur,J(lambda)
-       = <a_J,(K_DtN,T,J + K_brane,T,J - K_ref,T,J)a_J>_CHM.
-   The target is K_cur,J(lambda) = lambda + Sigma_AA,J + higher-order terms
-   with Sigma_AA,J = J in the selected normalization. -/
+     Khat_cur,J(lambdahat)
+       = Lambda_J^{-2}
+         <a_J,(K_DtN,T,J + K_brane,T,J - K_ref,T,J)a_J>_CHM.
+   The target is
+     Khat_cur,J(lambdahat)
+       = lambdahat + Sigmahat_AA,J + higher-order terms
+   with Sigmahat_AA,J = J in the selected source normalization. -/
 axiom loop27_chm_current_entry_required :
   ∃ C : CurrentExtraction,
     currentExtractionAdmissible C ∧ currentExtractionGivesSigmaAA C
+
+structure FactorizationFirstSpine where
+  hodgeOffDiagonal : Prop
+  chmCurrentDiagonal : Prop
+  commonReducedBasis : Prop
+  commonPoleMap : Prop
+
+def factorizationFirstReady (F : FactorizationFirstSpine) : Prop :=
+  F.hodgeOffDiagonal ∧
+  F.chmCurrentDiagonal ∧
+  F.commonReducedBasis ∧
+  F.commonPoleMap
+
+/- Obligation 1b:
+   The active proof spine separates the Hodge/SUSY-QM off-diagonal target
+     Sigma_HA,J * Sigma_AH,J = J
+   from the hatted CHM current target
+     Sigmahat_AA,J = J.
+   Both targets must live in one reduced basis with one pole map. -/
+axiom loop28_factorization_first_spine_required :
+  ∃ F : FactorizationFirstSpine, factorizationFirstReady F
 
 structure SingleSourceKKFixing where
   u : SourceVariable
   tDim : Type
   tEW : Type
+  sourceScale : SourceScale
   reducedKernel : Kernel
   scalarMap : ScalarFunctional
   poleMap : PoleMap

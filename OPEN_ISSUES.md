@@ -64,6 +64,15 @@ The local source address is Coquereaux's \(SU(2|1)\) superconnection fragments
 in `context/source_fragments/50_coquereaux_algebraic_superconnections_su2_1_electroweak_1992/`;
 Appendix D Target X records the theorem version.
 
+**Loop 28 normalization refinement.** The ordered W/Z assignment also requires
+a common dimensionless source normalization for the \(J_H=3/4\) and
+\(J_{\rm adj}=2\) samples.  The active CHM version introduces a source scale
+\(\Lambda_J\) and hatted spectral variable
+\(\widehat\lambda=\lambda/\Lambda_J^2\).  The same source scale, field
+normalization, and pole map must apply to the odd Higgs/order-parameter channel
+and the even transverse-current channel before their quotient has physical
+meaning.
+
 ## O2a. Pole convention formula
 
 **Question.** Which exact pole convention defines \(M_{V,\rm pole}\) in the W/Z comparison?
@@ -267,6 +276,26 @@ The open data are the transverse projection \(P_{a,J}\), the reference
 subtraction \(K^{\rm ref}_{T,J}\), endpoint-normal conventions, the
 dimensionless \(J\)-normalization, photon projection, ordered W/Z boundary map,
 and \(\lambda\mapsto m_n^2\mapsto\Pi_T^{(4)}(s)\) matching.
+
+**Loop 28 convention and entry-order refinement.** The CHM current-channel
+target must be written in hatted variables:
+\[
+\widehat\lambda=\frac{\lambda}{\Lambda_J^2},
+\qquad
+\widehat K^{\rm cur}_J
+=
+\Lambda_J^{-2}K^{\rm cur}_J .
+\]
+The theorem must derive \(\Lambda_J\), the CHM normalization of \(a_J\),
+endpoint-normal signs, the reference subtraction, and the condition that the
+same dimensionless normalization applies to \(J_H=3/4\) and
+\(J_{\rm adj}=2\).  The active proof spine separates two entry tests:
+Hodge/SUSY-QM factorization targets
+\(\Sigma_{ha,J}\Sigma_{ah,J}=J\), and the hatted CHM current kernel targets
+\(\widehat\Sigma_{aa,J}^{\rm CHM}=J\).  A source-control audit is still needed:
+inspect the rendered CHM PDF for endpoint signs, dimensions of boundary
+kinetic terms, scalar-product normalization, and the variables entering
+\(K^{\rm brane}_{T,J}\).
 
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
@@ -685,6 +714,19 @@ The open data are \(\rho\), \(P_J\), the reduced two-channel subspace, the
 boundary/geometric inner product, extra-channel decoupling, and scalar boundary
 condition.
 
+**Loop 28 normalization refinement.** The middle-dimensional Schur-complement
+data must include the source scale \(\Lambda_J(u)\) and the wavefunction
+normalizations that turn the physical kernel into the dimensionless DeVries
+block:
+\[
+u\mapsto
+\big(t_{\rm dim}(u),t_{\rm EW}(u),\Lambda_J(u),K_J(u,\widehat\lambda),
+\mathcal F_{\rm sc}(u;J),\mathcal Y_{\rm top}(u)\big).
+\]
+This scale datum is part of the same single-source burden as the
+electroweak-ray map, negative-branch scalar functional, and top-sector source
+map.
+
 ## O11. Adjacent `prTalks` source-note validation
 
 **Question.** Which user-provided `../prTalks` PDFs contain conceptual material that should survive into the manuscript program, and which claims require primary-source upgrades?
@@ -996,6 +1038,18 @@ B_J=\begin{pmatrix}0&0\\0&-J\end{pmatrix}.
 The open data are the source of \(J\), the projection to two channels, the
 breaking operator, the electroweak \(su(2/1)\) map, and the pole/scalar
 compatibility chain.
+
+**Loop 28 factorization-first refinement.** Target X is now the off-diagonal
+entry test in the active proof spine.  The conjectural Hodge/superconnection
+route must derive
+\[
+D_Je^0_J=\sqrt J\,e^1_J,\qquad
+D_J^\dagger e^1_J=\sqrt J\,e^0_J
+\]
+in the same reduced basis that carries \(P_W\), \(P_Z\), the hatted CHM current
+entry, and the negative-branch scalar functional.  The projection, breaking
+operator \(B_J=\operatorname{diag}(0,-J)\), and compatibility with O1 and O3
+remain open theorem data.
 
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT ARE TERMINATED, AND COMMIT ===============
 ============================ REMEMBER TO CLOSE AND REMOVE ISSUES THAT HAVE REACHED THE SUCCESS CRITERIUM, AND COMMIT ===============

@@ -165,6 +165,15 @@ same interval model must derive the sign convention in the DeVries block and
 the ordered electroweak map.  Appendix~\ref{app:target-susyqm-origin} records
 this as a theorem target.
 
+This gives the interval route an entry order.  The Hodge/SUSY-QM calculation
+tests the square-root product
+\(\Sigma_{ha,J}^{\rm int}\Sigma_{ah,J}^{\rm int}=J\).  The CHM boundary
+calculation tests the diagonal current entry
+\(\Sigma_{aa,J}^{\rm int}=J\).  A successful route must place both tests in
+one source Hilbert space, with one inner product, one projection to
+\(\mathcal H_J\), and one pole-matching map.  The negative branch is then read
+from the eigenbasis of the same reduced kernel.
+
 \subsection{Dimensional Schur-complement target}
 \label{sec:kk-schur-target}
 
@@ -224,14 +233,21 @@ source-data demand explicit: the Dirichlet-to-Neumann kernel, brane terms,
 projection, inner product, and decoupling rule must be supplied by one
 interval model.
 
-The current-channel entry can be isolated as a one-dimensional extraction
-from the same boundary kernel.  Let \(P_{a,J}\) select a transverse boundary
-gauge trace \(a_J=P_{a,J}A_\mu^{T,\partial}\), normalized by the CHM product,
-\(\langle a_J,a_J\rangle_{\rm CHM}=1\).  With endpoint-normal signs and
-dimensionful brane terms fixed, define
+The current-channel entry can be isolated after the physical boundary kernel
+has been converted to the dimensionless DeVries normalization.  Let \(P_{a,J}\)
+select a transverse boundary gauge trace
+\(a_J=P_{a,J}A_\mu^{T,\partial}\), normalized by the CHM product,
+\(\langle a_J,a_J\rangle_{\rm CHM}=1\).  Let \(\Lambda_J\) denote the source
+scale that makes the spectral variable dimensionless:
 \begin{equation}
-  K^{\rm cur}_J(\lambda)
+  \widehat\lambda=\frac{\lambda}{\Lambda_J^2}.
+  \label{eq:chm-current-hat-lambda}
+\end{equation}
+With endpoint-normal signs and dimensionful brane terms fixed, define
+\begin{equation}
+  \widehat K^{\rm cur}_J(\widehat\lambda)
   =
+  \frac{1}{\Lambda_J^2}
   \left\langle a_J,
   \left(
   K^{\rm DtN}_{T,J}(\lambda)
@@ -239,6 +255,8 @@ dimensionful brane terms fixed, define
   -K^{\rm ref}_{T,J}(\lambda)
   \right)a_J
   \right\rangle_{\rm CHM},
+  \qquad
+  \lambda=\Lambda_J^2\widehat\lambda,
   \label{eq:chm-current-kernel}
 \end{equation}
 where \(K^{\rm ref}_{T,J}\) fixes the reference zero of the current kernel,
@@ -247,17 +265,18 @@ The source-supported CHM statement is the existence of this transverse
 boundary kernel from the action, gauge fixing, boundary variation, and
 modified product.  The DeVries-specific theorem target is
 \begin{equation}
-  K^{\rm cur}_J(\lambda)
+  \widehat K^{\rm cur}_J(\widehat\lambda)
   =
-  \lambda+\Sigma_{aa,J}^{\rm CHM}
-  +O(\lambda^2/\Lambda_{\rm KK}^2),
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
+  +O(\widehat\lambda^2),
   \qquad
-  \Sigma_{aa,J}^{\rm CHM}=J .
+  \widehat\Sigma_{aa,J}^{\rm CHM}=J .
   \label{eq:chm-current-entry-normalized}
 \end{equation}
 The data still to be derived are \(P_{a,J}\), \(K^{\rm ref}_{T,J}\), the
-dimensionless \(J\)-normalization, the photon projection, and the map
-\(\lambda\mapsto m_n^2\mapsto\Pi_T^{(4)}(s)\).
+source scale \(\Lambda_J\), endpoint-normal conventions, the photon projection,
+the ordered W/Z boundary map, and the map
+\(\widehat\lambda\mapsto m_n^2/\Lambda_J^2\mapsto\Pi_T^{(4)}(s)\).
 
 \subsection{Dictionary for the interval entries}
 \label{sec:interval-entry-dictionary}

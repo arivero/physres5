@@ -2,7 +2,7 @@
 
 ## Immediate manuscript work
 
-- Current compiled draft: 84 REVTeX PRD preprint pages after the Loop 24 compile.
+- Current compiled draft: 88 REVTeX PRD preprint pages after the Loop 28 compile.
 - Run the paper-normalization plan in `reviews/paper_normalization_plan.md`.
 - Push the next route-comparison entry toward a derivation from source data.
 - Expand the source-audited historical line from dual resonance models through open-string endpoint data into electroweak spectrum building.
@@ -103,6 +103,20 @@
   the one-form Hodge-Laplacian plus CHM boundary kernel to
   \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), and check BF scalar
   admissibility for the negative branch.
+- Use Loop 28's hatted CHM normalization in every current-entry statement:
+  \[
+  \widehat\lambda=\lambda/\Lambda_J^2,\qquad
+  \widehat K^{\rm cur}_J=\Lambda_J^{-2}K^{\rm cur}_J,\qquad
+  \widehat\Sigma_{aa,J}^{\rm CHM}=J.
+  \]
+  The next source audit must pin \(\Lambda_J\), endpoint-normal signs,
+  dimensions of boundary kinetic terms, scalar-product normalization, photon
+  projection, and the reference subtraction from the rendered CHM PDF.
+- Use Loop 28's proof spine: Hodge/SUSY-QM factorization tests
+  \(\Sigma_{ha,J}\Sigma_{ah,J}=J\), the hatted CHM current kernel tests
+  \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\), and both tests must share one reduced
+  basis, one source scale, and one pole map before O3 or O17 consequences are
+  promoted.
 
 ## Completed in latest pass
 
@@ -173,6 +187,9 @@
   single-source interpolation diagram, O17 dependency chain, CHM top-sector
   localization/boundary-mixing pressure, \(G_2\) compact-embedding acceptance
   criterion, and `notes/lean/DimensionalInterpolation.lean`.
+- Added Loop 28 normalization: hatted CHM current-entry variables, a
+  \(\Lambda_J\) source-scale obligation, CHM convention-audit source notes,
+  factorization-first proof-spine text, and Loop 28 referee/advisor reports.
 - Added radical placement section.
 - Added dual-model/open-string endpoint section.
 - Added Kaluza--Klein boundary spectra section.

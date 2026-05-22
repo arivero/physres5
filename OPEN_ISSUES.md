@@ -368,6 +368,44 @@ source-to-pole matching, O10 for the single source variable and
 \(\Lambda_J(u)\), and O20 for the common reduced basis with the Hodge
 off-diagonal test.  Issue status remains open.
 
+**Loop 34 source-kernel theorem refinement.** The first O4 pass/fail theorem is
+now the hatted CHM current entry:
+\[
+\mathfrak D_{\rm O4}^{\rm CHM}
+=
+(I,g_5,K_T^{\rm DtN},K_T^{\rm brane},
+\langle\cdot,\cdot\rangle_{\rm CHM},
+P_\gamma,P_{a,J},K^{\rm ref}_{T,J},\Lambda_{\rm CHM},\mathcal R_{\rm pole}),
+\]
+with source equations audited from CHM Eqs.~(2.11)--(2.23),
+(2.30)--(2.44), and (3.32)--(3.43).  The theorem target is
+\[
+\widehat K^{\rm cur}_J(\widehat\lambda)
+=
+\widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
++O(\widehat\lambda^2),
+\qquad
+\widehat\Sigma_{aa,J}^{\rm CHM}=J .
+\]
+The companion O20 target is the Hodge/SUSY-QM square-root entry
+\[
+D_Je^0_J=\sqrt J\,e^1_J,\qquad
+D_J^\dagger e^1_J=\sqrt J\,e^0_J,
+\qquad
+\Sigma_{ha,J}\Sigma_{ah,J}=J.
+\]
+Endpoint/Chan--Paton is now recorded as a matrix arena requiring a worldvolume
+quadratic kernel and projection.  The \(G_2\) route is recorded as a local
+operator audit with source equations
+\[
+\Phi=\sum_i t_i df_i,\quad \rho=\sum_i t_i\rho_i,\quad
+f_Q=\sum_i q_i f_i,\quad \rho_Q=\sum_i q_i\rho_i,\quad df_Q(p)=0.
+\]
+O4 remains tied to O1 through \(P_W,P_Z,P_\gamma\), to O3 through the
+same-source scalar package for \(u_-(J)\), to O8 through
+\(\Delta_{\rm match}^{(r)}\), to O10 through \(u\) and \(\Lambda_J(u)\), and
+to O20 through the common reduced basis.
+
 **Dimensional Schur-complement refinement.** Round 2 makes this the active
 O10/O4 bridge.  The \(D=10/6\) middle line is represented by a light boundary
 sector \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), a heavy or compact

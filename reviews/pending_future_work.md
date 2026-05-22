@@ -437,6 +437,18 @@
   \(P_{h,J}\), \(P_{a,J}^{\gamma^\perp}\), \(K^{\rm ref}_{T,J}\), endpoint
   signs, the photon subtraction, and \(\Delta_{\rm O1}\) from one CHM interval
   action and pole map.
+- Loop 34 O4 next step: derive, or reject, the CHM current-entry theorem
+  \[
+  \mathfrak D_{\rm O4}^{\rm CHM}
+  \to
+  \widehat\Sigma_{aa,J}^{\rm CHM}=J
+  \]
+  using the CHM source-equation audit, \(P_{a,J}\), \(P_\gamma\),
+  \(K_T^{\rm ref}\), \(\Lambda_{\rm CHM}\), endpoint signs, photon subtraction,
+  and the source-to-pole map.  Keep the Hodge/SUSY-QM square-root product,
+  \(G_2\) local kernel, endpoint worldvolume kernel, O1 ordered sampling, O3
+  scalar package, O8 pole remainder, and O10 source variable as linked
+  obligations.
 
 ## Review cycle
 

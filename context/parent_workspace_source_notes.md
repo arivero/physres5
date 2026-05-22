@@ -3,7 +3,7 @@
 These notes summarize manuscript-relevant material read from `..` during the
 parent-workspace pass.  They are project source notes and critique provenance.
 Primary literature claims still need support from `references/pdfs/` or newly
-downloaded papers before they enter manuscript prose as cited physics.
+downloaded papers for manuscript prose as cited physics.
 
 ## Reading protocol
 
@@ -29,7 +29,7 @@ downloaded papers before they enter manuscript prose as cited physics.
 | `../hans/signed_dbdevries/` | earlier DeVries workspace | Contains a draft, mechanism notes, literature notes, stress tests, and reports for signed-root DeVries variants.  Valid imports are mechanism obligations, critique patterns, source trails, and failure modes.  Numerical checks and fit tables remain outside the current conceptual phase. |
 | `../signed-dv-custodial-project/` | signed-root higher-slot caution | Contains earlier drafts and referee critiques with aggressive higher-slot phenomenology.  Valid import is the cautionary ledger: a higher positive slot needs a source assignment, gauge representation, and collider audit. |
 | `../weak/criticism.md` | critique provenance | Direct scalar-seed identifications with \(M_W\), \(M_Z\), \(m_h\), or the Higgs order parameter require a gauge-Higgs mass matrix, pole self-energy map, scalar potential, or gauge-invariant scalar functional.  Precision and prediction language require scheme control and independent inputs. |
-| `../weak/PHASE_1.md` | normalization audit | The generalized block \(m_0^2\begin{pmatrix}0&a\sqrt{C_2}\\a\sqrt{C_2}&-bC_2\end{pmatrix}\) records the key normalization issue: \(a\) can be absorbed into the scale convention, while \(b\) remains an independent Wilson coefficient until a source operator fixes it. |
+| `../weak/PHASE_1.md` | normalization audit | The generalized block \(m_0^2\begin{pmatrix}0&a\sqrt{C_2}\\a\sqrt{C_2}&-bC_2\end{pmatrix}\) records the key normalization issue: \(a\) can be absorbed into the scale convention, while \(b\) remains an independent Wilson coefficient pending a source operator. |
 | `../weak/LAGRANGIAN.md` | mechanism audit | Hosotani/Wilson-line spectra provide weight-squared towers.  A DeVries derivation must produce the full \(C_2(R)\) block and the off-diagonal product from one source operator. |
 | `../weak/LAGRANGIAN_PC.md` | mechanism audit | The Wigner-Eckart route fails for the natural parent representations tested there.  A generator matrix element alone leaves the \(\sqrt{C_2(R)}\) off-diagonal unsupplied for the two electroweak samples. |
 | `../weak/PHASE_5.md` | SO(32) audit | SO(32) adjoint branching supplies weak triplets, while weak doublets appear in a spinor branch.  This supports treating SO(32) flavor bookkeeping as separate from the ordered electroweak assignment theorem. |
@@ -59,8 +59,8 @@ manuscript use.  The relevant physics clusters remain `../prTalks`,
 For the current O10 pass, the active imports are the dimensional-interpolation
 provenance in `../phys3`, the already indexed `../prTalks` effective-dimension
 and top/negative-branch notes, and the sibling `../physres6` alpha and
-higher-slot provenance.  The remaining parent folders are triage queues until
-a focused issue opens them.
+higher-slot provenance.  The remaining parent folders are triage queues pending
+a focused issue.
 
 ## Loop 19 parent-root inventory refresh
 
@@ -164,8 +164,8 @@ P_Z:F_{\rm even}^{\gamma^\perp}\mapsto J_{\rm adj}=2,
 \]
 The same pass reread `../prTalks` pages where the electroweak ray, same-radius
 orbit quadratic, dimensional interpolation, and Regge-compatible intercept
-targets appear.  These remain project-source provenance until a primary source
-or theorem-target derivation promotes them.
+targets appear.  These remain project-source provenance pending a primary source
+or theorem-target derivation.
 
 ## Loop 27 parent-directory read
 
@@ -174,8 +174,8 @@ and PDF candidates, `../prTalks` metadata and first pages, `../physres6`
 manuscript/reviews, `../weak` seed and criticism files, and the
 `../hans/signed_dbdevries` synthesis.  The active import is the conditional
 KK-fixing architecture in `../physres6`: the \(D=11/10/9\) and colourless
-\(D=7/6/5\) chains remain reconstruction labels until one source variable
-supplies \(t_{\rm dim}\), \(t_{\rm EW}\), \(K_J\), \(\mathcal F_{\rm sc}\), and
+\(D=7/6/5\) chains remain reconstruction labels pending one source variable
+supplying \(t_{\rm dim}\), \(t_{\rm EW}\), \(K_J\), \(\mathcal F_{\rm sc}\), and
 the pole map.  The sibling reviews also reinforce label discipline for sector
 Casimir, oscillator/tower labels, and physical spin.
 
@@ -233,7 +233,7 @@ The first is the trace of the original DeVries branch matrix.  The second is a
 rank-one, spectator-preserving seed deformation in the `../weak` notes.  The
 third is the signed two-state negative-sector EFT used in the signed-root
 workspace.  Coefficients and trace arguments require separate ledgers across these
-spaces until a common source operator is supplied.
+spaces pending a common source operator.
 
 The `../hans/signed_dbdevries` audit supplies existence templates for
 negative-sector operators.  A paired exotic D-term can realize a signed
@@ -243,7 +243,7 @@ templates with exotic or continuous matching data.  The Casimir coefficient and
 the DeVries branch assignment still require a derivation.
 
 The `../phys4` brane/M-theory notes supply a mechanism dictionary.  Standard
-lemmas to source before manuscript use include Hanany--Witten brane creation,
+lemmas to source for manuscript use include Hanany--Witten brane creation,
 Seiberg duality from brane motion, D6 branes as Kaluza--Klein monopoles in
 M-theory, M5 curves for SQCD, and baryon vertices.  Project-specific
 identifications such as top-as-asymptotic KK-monopole datum, \(84+12\) as an
@@ -289,7 +289,7 @@ Every endpoint, interval, Kaluza-Klein, brane, or \(G_2\) route must produce
 \]
 from one operator, field basis, and normalization rule.  The parent audit
 shows that fixing \(\sqrt{C_2}\) and fixing the \(-C_2\) diagonal entry are
-separate tasks until a common source operator binds them.
+separate tasks pending a common source operator that binds them.
 
 ### Negative-sector EFT obstruction
 
@@ -377,7 +377,7 @@ symbolic:
 The source route must derive \(J_v\), \(C_v\), \(C_W\), the \(U(1)_{\rm em}\)
 generator normalization, \(Q_\alpha\), and \(\Delta_{\alpha,{\rm match}}\).
 The sibling note's numerical comparisons are calculation-phase material and
-require a primary source audit for the running electromagnetic coupling before
+require a primary source audit for the running electromagnetic coupling for
 manuscript promotion.
 
 ### SO(32) and flavor boundary
@@ -423,14 +423,51 @@ map, scalar functional, or equivalent source reduction.  The CHM interval
 ledger is therefore the current priority for O1, with Coquereaux serving as
 generalized-connection grading vocabulary.
 
+### Loop 34 parent-directory read
+
+The current direct `..` pass ran during the O4 source-kernel loop.  The active
+imports are now sharper.  `../weak` supplies the strongest local guardrail:
+Hosotani/Wilson-line spectra, single-generator spurions, and Wigner--Eckart
+tests leave the \(\sqrt{C_2}\), \(C_2\), and common-coefficient lock as an open
+source-kernel problem.  This supports the current CHM-first strategy:
+derive one hatted current entry from source data as the entry point for any
+mechanism claim.
+
+`../physres6` supplies two theorem-target imports.  The KK-fixing note reads the
+positive branch as gauge-spectrum data and the negative branch as a candidate
+order-parameter/modulus-fixing datum.  It also records the partial Hodge
+reduction idea: \(\sqrt J\) from exact/coexact data, a protected zero from gauge
+invariance, and the diagonal \(-J\) as the open source computation.  The branch
+duality note records
+\[
+  x\mapsto -\frac{J}{x},\qquad x_+(J)x_-(J)=-J,
+\]
+as an algebraic involution whose source-duality meaning remains open.
+
+`../phys4` supplies brane and thread genealogy.  The brane/string dictionary
+supports endpoint labels, Chan--Paton matrix arenas, Hanany--Witten source
+queues, and M-theory lift vocabulary as project provenance.  The top-as-brane
+note supports a future source-map target in which a heavy flavor appears as
+global/asymptotic matching data.  The Wrong Turn catalogue records the
+mechanism-search history and the proof-of-concept pressure around SO(32),
+sBootstrap, Seiberg duality, branes, and top exclusion.
+
+The Loop 34 promoted source note is
+`context/parent_directory_loop34_read.md`, with Lean-style obligations in
+`notes/lean/ParentDirectoryLoop34.lean`.  The manuscript-facing consequence is
+the same as the referee cycle: name the CHM current-entry theorem, list the
+minimal CHM source package, keep endpoint/Chan--Paton as a matrix arena, keep
+\(G_2\) as a local-kernel route with an explicit source-equation audit, and use
+Hodge/SUSY-QM as the square-root entry theorem.
+
 ## Source-upgrade queue
 
-- Source-audit custodial EFT and HEFT/SMEFT treatments before using the
-  negative-sector EFT obstruction in manuscript prose.
+- Source-audit custodial EFT and HEFT/SMEFT treatments if the negative-sector
+  EFT obstruction enters manuscript prose.
 - Add primary brane/Chan-Paton sources if SO(32) or endpoint flavor counting
   moves beyond the boundary section.
-- Page-check Witten 1981 and the six-dimensional string sources before
-  promoting the \(D=11/10/9\) and \(D=7/6/5\) interpolation beyond
+- Page-check Witten 1981 and the six-dimensional string sources if the
+  \(D=11/10/9\) and \(D=7/6/5\) interpolation moves beyond
   reconstruction status.
 - Use the signed-root mechanism notes as no-go templates, then replace them
   with primary field-theory or string-theory sources for any journal claim.

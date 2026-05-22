@@ -69,6 +69,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 | 31 | 5 | 5 | 5 | 5 | 5 | Added O10 single-source pass/fail package with \(\Lambda_J\), inner product, projection, hatted kernel, endpoint subtargets, optional CHM top extension, and parent-directory source queues. |
 | 32 | 5 | 5 | 5 | 5 | 5 | Tightened O3 into a same-source scalar-functional target with \(J_\star\), \(C_{\rm sc}\), scheme/scale, holonomy-curvature route, auxiliary-branch failure outcome, and parent-directory source queue. |
 | 33 | 5 | 5 | 5 | 5 | 5 | Tightened O1 into a same-source ordered-sampling package with \(P_W\), \(P_Z\), \(P_\gamma\), shared \(\Lambda_J\), CHM \(h_J/W/Z/\gamma\) ledger, Coquereaux grading vocabulary, and parent-directory source queue. |
+| 34 | 5 | 5 | 5 | 5 | 5 | Tightened O4 into an entry-by-entry source-kernel ledger: CHM current entry first, Hodge/SUSY-QM square-root entry second, \(G_2\) local audit third, endpoint/Chan--Paton matrix arena, and parent-directory source queue. |
 
 ## Scoring rubric
 

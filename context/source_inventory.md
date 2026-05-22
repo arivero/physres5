@@ -104,6 +104,15 @@ PRD phase.
     \(K^{\rm ref}_{T,J}\), \(\Lambda_{\rm CHM}\), endpoint signs, photon
     subtraction, and the pole map.  The charged/order-parameter row and neutral
     current row must use one product and one source scale.
+  - Loop 34 O4 use: CHM is the first source-kernel theorem target.  The
+    hatted current entry uses the source package
+    \((I,g_5,K_T^{\rm DtN},K_T^{\rm brane},
+    \langle\cdot,\cdot\rangle_{\rm CHM},P_\gamma,P_{a,J},
+    K^{\rm ref}_{T,J},\Lambda_{\rm CHM},\mathcal R_{\rm pole})\).
+    The source-equation audit is CHM Eqs.~(2.11)--(2.23),
+    (2.30)--(2.44), and (3.32)--(3.43).  The equality
+    \(\widehat\Sigma_{aa,J}^{\rm CHM}=J\) remains a theorem target tied to
+    O1/O3/O8/O10/O20.
 - `36_Strominger_Heterotic_String_is_a_Soliton_hep-th-9504047.pdf` — six-dimensional string-string duality source; type IIA on K3 and heterotic on \(T^4\).
 - `37_Sen_String_String_Duality_Six_Dimensions_hep-th-9504027.pdf` — six-dimensional string-string duality and charged solitonic strings.
 - `38_Witten_Small_Instantons_String_Theory_hep-th-9511030.pdf` — heterotic small instantons and nonperturbative six-dimensional string dynamics.

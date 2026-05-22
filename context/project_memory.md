@@ -158,6 +158,28 @@
   the active normalization arena.  The direct `..` read is recorded in
   `context/parent_directory_loop33_read.md`; reports are in
   `reviews/normalization_loop33_*.md`.
+- Loop 34 makes O4 an entry-by-entry source-kernel ledger.  The first pass/fail
+  theorem is the hatted CHM current entry
+  \[
+  \widehat K^{\rm cur}_J(\widehat\lambda)
+  =
+  \widehat\lambda+\widehat\Sigma_{aa,J}^{\rm CHM}
+  +O(\widehat\lambda^2),
+  \qquad
+  \widehat\Sigma_{aa,J}^{\rm CHM}=J,
+  \]
+  with source package
+  \[
+  \mathfrak D_{\rm O4}^{\rm CHM}
+  =
+  (I,g_5,K_T^{\rm DtN},K_T^{\rm brane},
+  \langle\cdot,\cdot\rangle_{\rm CHM},P_\gamma,P_{a,J},
+  K^{\rm ref}_{T,J},\Lambda_{\rm CHM},\mathcal R_{\rm pole}).
+  \]
+  The Hodge/SUSY-QM route is the companion square-root entry target; \(G_2\)
+  is the local-operator audit; endpoint/Chan--Paton is the matrix arena.  The
+  direct `..` read is recorded in `context/parent_directory_loop34_read.md`;
+  reports are in `reviews/normalization_loop34_*.md`.
 
 ## Resume state after context renewal
 

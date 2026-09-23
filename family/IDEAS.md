@@ -129,7 +129,10 @@ curator check); the m_H match needs a/b = 1 within 6×10⁻⁴ (weak).
 3. Single displacement square αμ²‖A†Q − p‖² − αμ²‖p‖², which forces γ = α
    (dv2, milestone 1).
 
-Each moves the lock into the choice of functional. Supporting pieces:
+Each moves the lock into the choice of functional. On the round S³ of radius
+R the second form holds exactly at every level with P† = δ and scalar
+harmonics as the h channel, whose Laplacian is the Casimir j(j+1) with no
+shift when c = R/2 (`calculations/squashed_s3_verdict.md`). Supporting pieces:
 
 - **Operator-norm origin of √J.** Σ_p |⟨p|J⃗|v⟩|² = J for every state of
   every representation, so the reduction onto (|v⟩, J⃗|v⟩/√J) has
@@ -362,9 +365,12 @@ within 10⁻³ (chats-regge-kk).
    determinant/gluing source, or the disk-level Hom one-square term from the
    Payen endpoint action with D8 DBI/WZ (kkorchestra thread 1; dvFable
    candidate (i); dv2; weak §6.2; chats-regge-kk gate G1).
-3. The squashed-S³ computation with a Wilson line: test tr = det = −J at
-   s = ½ and 1 with the Henkel–Lauret Laplacian (arXiv:2605.05406). A hit
-   delivers A1 and A3 together (physres6 `OPUS_IDEAS` #1).
+3. The squashed-S³ computation (physres6 `OPUS_IDEAS` #1): **done
+   2026-09-23**, verdict in `calculations/squashed_s3_verdict.md`. Curvature
+   and Wilson lines cannot give −J, and squashing only moves the labels. The
+   round S³ realizes the block exactly at every level through the relative
+   gain with P† = δ and length c = R/2, which turns the free number into
+   2c/R = 1.
 4. The CHM interval kernel (physres5 `OPUS_IDEAS.md` #3), built with the
    indefinite ingredient that Sec. 3 requires.
 5. The coefficient test 2B = 3A, C = 3A on a concrete reduction: 6D

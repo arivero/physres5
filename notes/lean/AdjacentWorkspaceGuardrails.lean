@@ -57,7 +57,7 @@ def parentRootInventoryReady (I : ParentRootInventory) : Prop :=
 axiom parent_root_inventory_requires_triage :
   ∃ I : ParentRootInventory, parentRootInventoryReady I
 
-/- Gauge-Higgs assignment guardrail from ../weak/criticism.md. -/
+/- Gauge-Higgs assignment guardrail from ../physres5lineage/weak/criticism.md. -/
 structure GaugeHiggsMassMap where
   sourceOperator : Type
   fieldBasis : Type

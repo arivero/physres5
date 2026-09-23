@@ -2,9 +2,9 @@
 
 ## Scope
 
-This audit read targeted content from `../phys4/notes`, `../weak`,
-`../hans/signed_dbdevries`, `../phys3`, `../dualsm`,
-`../signed-dv-custodial-project`, and `../recap`.  It used the live
+This audit read targeted content from `../phys4/notes`, `../physres5lineage/weak`,
+`../physres5lineage/hans/signed_dbdevries`, `../phys3`, `../dualsm`,
+`../physres5lineage/signed-dv-custodial-project`, and `../recap`.  It used the live
 PhysicsForums Wrong Turn thread as provenance context.  No numerical checks
 were run.
 
@@ -14,16 +14,16 @@ were run.
   project genealogy: low-energy string/SUSY reading, five light quark
   endpoints, top exclusion, Seiberg-duality mechanism searches,
   Masiero--Veneziano, brane/SQCD routes, and SO(32) flavor bookkeeping.
-- `../weak` sharpens the representation-selection caveat.  The
+- `../physres5lineage/weak` sharpens the representation-selection caveat.  The
   \(\mathbf 2,\mathbf 3\) pair is selected by a lowest-nontrivial-irrep rule;
   the source rule, ordering, and W/Z mass map remain theorem targets.
-- The tested Wigner--Eckart/Clebsch route in `../weak/LAGRANGIAN_PC.md`
+- The tested Wigner--Eckart/Clebsch route in `../physres5lineage/weak/LAGRANGIAN_PC.md`
   fails for the natural parents checked there.  A future version needs a
   different parent representation, operator, or projection.
 - Three trace spaces must stay separated: the DeVries branch trace, the
   rank-one seed deformation trace, and the signed negative-sector
   \(\sigma_3\) EFT trace.
-- `../hans/signed_dbdevries` supplies operator templates for a negative-sector
+- `../physres5lineage/hans/signed_dbdevries` supplies operator templates for a negative-sector
   EFT through paired exotic D-terms and kinetic mixing.  These introduce
   exotic or continuous matching data.
 - `../phys4` brane/M-theory notes give a source-upgrade queue: Hanany--Witten,

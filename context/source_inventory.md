@@ -4,7 +4,7 @@ This inventory maps the local PDFs in `references/pdfs/` to manuscript roles. It
 
 ## Adjacent project source notes
 
-The PDFs in `../prTalks/` are user-provided project notes and prompt
+The PDFs in `../physres5lineage/seeds/prTalks/` are user-provided project notes and prompt
 archives.  They are source objects for idea provenance, while literature
 claims still require primary support from `references/pdfs/` or newly
 downloaded papers.  `context/prtalks_source_notes.md` records the audited
@@ -20,9 +20,9 @@ primary local literature or an explicit project-source label.
 
 Loop 25 records the current broad parent-directory read in
 `context/parent_directory_loop25_read.md` and
-`notes/lean/ParentDirectoryLoop25.lean`.  Active source queues are `../prTalks`
+`notes/lean/ParentDirectoryLoop25.lean`.  Active source queues are `../physres5lineage/seeds/prTalks`
 for electroweak-ray, dimensional-interpolation, Regge, and negative-branch
-provenance; `../weak` and `../phys4` for superconnection, Wigner--Eckart
+provenance; `../physres5lineage/weak` and `../phys4` for superconnection, Wigner--Eckart
 obstruction, Higgs-interpolation, brane, and KK source upgrades.
 
 Loop 29 records a direct parent-directory read in
@@ -33,7 +33,7 @@ guardrail, theorem-target, provenance, and source-upgrade roles.
 Loop 30 records the current direct parent-directory read in
 `context/parent_directory_loop30_read.md` and
 `notes/lean/ParentDirectoryLoop30.lean`.  It also materializes the seven
-`../prTalks` PDFs as extraction aids in
+`../physres5lineage/seeds/prTalks` PDFs as extraction aids in
 `context/source_fragments/parent_prtalks/`.  The PDFs remain the source
 objects; the extracted markdown supports recall and targeted source promotion.
 
@@ -45,16 +45,16 @@ datum, while the manuscript-facing source burden remains Witten 1981, CHM,
 six-dimensional string sources, local \(G_2\) sources, and any future primary
 Hanany--Witten/M-theory/D6 source upgrade.
 
-Loop 33 records a renewed parent-directory and `../prTalks` read in
+Loop 33 records a renewed parent-directory and `../physres5lineage/seeds/prTalks` read in
 `context/parent_directory_loop33_read.md` and
 `notes/lean/ParentDirectoryLoop33.lean`.  The maintained extraction aids for
-the seven `../prTalks` PDFs are in `context/source_fragments/parent_prtalks/`.
+the seven `../physres5lineage/seeds/prTalks` PDFs are in `context/source_fragments/parent_prtalks/`.
 Their valid use is project-source recall for the O1 ordered-sampling package,
 effective \(D=11/10/9\) and KK \(7/6/5\) interpolation, the K6 interface
 language, SO(32)-flavor caveats, and top/negative-branch obligations.  The
 PDFs remain source objects for formula layout and images.
 
-`../physres6/` is a sibling short-note workspace for the alpha route.  Its
+`../physres5lineage/physres6/` is a sibling short-note workspace for the alpha route.  Its
 valid use here is O17 provenance and symbolic theorem-target structure.  Its
 numerical checks and compact PRL framing remain outside the current conceptual
 PRD phase.

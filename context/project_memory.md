@@ -30,7 +30,7 @@
   record any equation, test, fragment gap, or issue-ledger consequence.
 - Use the local source fragments and source inventory before writing literature claims. Use surprise recall and internet search only to find new source material, then record the source trail.
 - Treat `pdftotext` as an access aid. Keep PDFs as source objects for plots, images, radicals, and equation layout. For mathematical content, inspect the rendered PDF and label agent-read transcriptions.
-- Adjacent `../prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
+- Adjacent `../physres5lineage/seeds/prTalks` PDFs have been indexed as project source notes in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`. They preserve idea provenance for the electroweak ray, orbit quadratic, Reggeization alternatives, minimal two-channel block, dimensional interpolation, and negative-branch/top obligations. Literature claims from those PDFs still need primary-source upgrades before manuscript citation.
 - The parent workspace pass is indexed in `context/parent_workspace_source_notes.md` and `notes/lean/AdjacentWorkspaceGuardrails.lean`. Valid imports are guardrails and theorem targets: scalar-seed assignments need gauge-Higgs or pole-self-energy maps, each source route must produce the DeVries block from one operator and normalization rule, the negative-sector EFT coefficient needs UV matching, and SO(32)-flavor notes stay inside the flavor-boundary ledger until coupled to the electroweak operator.
 - Loop 22 added O19 as Appendix D Target IX: branch scaling and brane-duality admissibility.  The large-\(s\) guardrail is \(x\mapsto -J/x\), \(M_+\to\mu\), and \(|M_-|\sim\mu s\) when \(J=s(s+1)\).  The source route still owes a rotating-brane exponent, branch survival rule, negative-branch mass or scalar reading, and boundary-condition duality map.
 - Loop 23 promotes O20 into Appendix D Target X: Hodge/SUSY-QM origin of the DeVries block.  The working target is \(D_Je^0_J=\sqrt J e^1_J\), \(D_J^\dagger e^1_J=\sqrt J e^0_J\), and \(Q_{{\rm red},J}=Q_{{\rm dR},J}+B_J\) with \(B_J=\operatorname{diag}(0,-J)\).  Local source PDFs now cover Witten Morse theory, Fayet gauge/BEH supersymmetry, Gates--Rana worldline supersymmetry, and Coquereaux \(SU(2|1)\) superconnections.  Keep the route in theorem-target status until the \(J\) spectrum, finite projection, breaking term, and O1/O3 compatibility are derived.
@@ -51,9 +51,9 @@
   Target V and source-route work.  The manuscript now uses a neutral-sector
   determinant pole condition, a CHM current-entry target
   \(\Sigma_{aa,J}=J\), and a Target X superconnection/CHM compatibility square.
-- Loop 25 parent-directory sidecar reads confirm that `../prTalks` is already a
+- Loop 25 parent-directory sidecar reads confirm that `../physres5lineage/seeds/prTalks` is already a
   source-object queue for electroweak ray, KK-dimensional, Regge, and
-  negative-branch ideas; `../weak` and `../phys4` provide superconnection,
+  negative-branch ideas; `../physres5lineage/weak` and `../phys4` provide superconnection,
   Wigner--Eckart obstruction, Higgs-interpolation, and brane/KK source queues.
   Treat these as source-note provenance until primary literature or explicit
   project-source status supports manuscript use.
@@ -69,7 +69,7 @@
   open.  `notes/lean/DimensionalInterpolation.lean` records the obligations.
 - Loop 27 answers the direct parent-directory read by recording
   `context/parent_directory_loop27_read.md`.  The active import from
-  `../physres6` is conditional KK-fixing architecture, with the middle
+  `../physres5lineage/physres6` is conditional KK-fixing architecture, with the middle
   \(D=10\) and \(D=6\) lines still reconstruction labels.  The manuscript now
   defines the CHM current-entry extraction
   \[
@@ -106,7 +106,7 @@
   subtraction and a shared \(\Lambda_{\rm CHM}\); \(P_{a,J}\), \(P_\gamma\),
   \(K^{\rm ref}_{T,J}\), ordered W/Z boundary data, and the pole map remain
   open.  The direct `..` read is recorded in
-  `context/parent_directory_loop30_read.md`; `../prTalks` extraction aids live
+  `context/parent_directory_loop30_read.md`; `../physres5lineage/seeds/prTalks` extraction aids live
   in `context/source_fragments/parent_prtalks/`.
 - Loop 31 makes O10 a hatted single-source pass/fail target.  The middle line
   must supply
@@ -346,7 +346,7 @@
 - Also preserve the colourless electroweak count: total \(D=7\to D=6\to D=5\), corresponding to internal KK \(3\to2\to1\), with six-dimensional superstrings as the middle-dimensional source anchor.
 - Round 2 converted O10 into a dimensional Schur-complement target: the \(D=10/6\) middle line must provide \(\mathcal B(t_\star)\), \(\mathcal H_J=\operatorname{span}\{h_J,a_J\}\), \(K_J(t_\star,\lambda)\), and the pole-matching rule.
 - New O10 subquestion: explain why the top quark sits at the electroweak scale. Source-backed SM facts are top Yukawa dominance, nondecoupling, and top sensitivity in Higgs/vacuum-stability physics; any DeVries explanation remains open.
-- Closed O11 source-note validation: preserve `../prTalks` PDFs as source
+- Closed O11 source-note validation: preserve `../physres5lineage/seeds/prTalks` PDFs as source
   objects, use extracted text only as an access aid, and promote only structural
   obligations or primary-source-backed claims.
 - Closed O12 parent-workspace validation: preserve adjacent text notes as
@@ -364,8 +364,8 @@
   projection/decoupling rule, ordered W/Z sampling map, and pole-matching
   scheme before endpoint, interval, and \(G_2\) routes can be compared.
 - Loop 12 also broadens the `..` parent inventory.  Relevant clusters are
-  `../prTalks`, `../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`,
-  `../physres1`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.
+  `../physres5lineage/seeds/prTalks`, `../physres5lineage/hans/signed_dbdevries`, `../physres5lineage/weak`, `../phys3`, `../phys4`,
+  `../physres1`, `../dualsm`, `../physres5lineage/signed-dv-custodial-project`, and `../recap`.
   Runtime state, caches, security reviews, and unrelated generated outputs are
   excluded from manuscript claims.
 - Loop 13 promotes O5 to Appendix D Target IIa: electroweak ray

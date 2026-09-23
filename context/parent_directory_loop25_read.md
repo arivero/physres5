@@ -2,8 +2,8 @@
 
 This note records the Loop 25 read of `..` from `/home/codexssh/physres5`.
 The pass used a shallow parent inventory plus two read-only sidecar reads:
-one over `../prTalks`, and one over adjacent physics folders including
-`../weak`, `../phys4`, `../phys6gpd`, `../recap`, and `../phys3`.
+one over `../physres5lineage/seeds/prTalks`, and one over adjacent physics folders including
+`../physres5lineage/weak`, `../phys4`, `../phys6gpd`, `../recap`, and `../phys3`.
 
 ## Protocol
 
@@ -19,8 +19,8 @@ one over `../prTalks`, and one over adjacent physics folders including
 
 | Parent path | Status | Useful content |
 |---|---|---|
-| `../prTalks/` | project PDF source notes | Electroweak ray, two-branch block, positive pole-spectrum clue, negative branch as order-parameter candidate, KK \(7/6/5\) and \(3/2/1\) interpolation, orbit quadratic, Regge alternatives, and representation-channel reading \(T_H=1/2\), \(T_{\rm adj}=1\). |
-| `../weak/` | critique and obstruction notes | Conservative electroweak scaffold, W/Z assignment obligations, scheme and photon checks, Wigner--Eckart obstruction, Higgs-sector spurion ideas, and referee-style checklists. |
+| `../physres5lineage/seeds/prTalks/` | project PDF source notes | Electroweak ray, two-branch block, positive pole-spectrum clue, negative branch as order-parameter candidate, KK \(7/6/5\) and \(3/2/1\) interpolation, orbit quadratic, Regge alternatives, and representation-channel reading \(T_H=1/2\), \(T_{\rm adj}=1\). |
+| `../physres5lineage/weak/` | critique and obstruction notes | Conservative electroweak scaffold, W/Z assignment obligations, scheme and photon checks, Wigner--Eckart obstruction, Higgs-sector spurion ideas, and referee-style checklists. |
 | `../phys4/notes/` | source queue | SU(2|1) and superconnection source candidates, brane/endpoint dictionaries, Hanany--Witten and M-theory route candidates, Higgs-confinement continuity analogs, and branch-structure analogs. |
 | `../phys3/` | provenance queue | Witten-KK and dimensional-interpolation provenance, SO(32)/Chan--Paton source trails, and older Rivero/DeVries equation context. |
 | `../phys6gpd/` | conjectural mechanism queue | Optional \(G_2\), octonion, and Casimir mechanism context requiring source upgrade before manuscript use. |

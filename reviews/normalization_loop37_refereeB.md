@@ -38,7 +38,7 @@ and pole map for \(\mathcal E_2(u_\star)\).
 
 - Replace "Loop 33 makes..." with manuscript-facing same-source package
   language.
-- Remove `../prTalks`, parent-workspace, project-provenance, and recall-prompt
+- Remove `../physres5lineage/seeds/prTalks`, parent-workspace, project-provenance, and recall-prompt
   language from Appendix E compiled text.
 - Replace "The active refinement of \(T1\)" with theorem-target language.
 - Convert "pending" body hits into explicit derivation requirements.

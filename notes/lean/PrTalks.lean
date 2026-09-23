@@ -1,5 +1,5 @@
 /-!
-Lean-style notes for the adjacent `../prTalks` PDFs.
+Lean-style notes for the adjacent `../physres5lineage/seeds/prTalks` PDFs.
 
 These notes are research memory. They are kept outside compilation.
 The PDFs remain the source objects; text extraction is an access aid.

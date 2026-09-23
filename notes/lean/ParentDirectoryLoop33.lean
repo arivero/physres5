@@ -2,7 +2,7 @@
 Loop 33 parent-directory source note.
 
 This Lean-style file is research memory.  It is kept outside compilation.
-It records valid imports from the direct read of `..` and `../prTalks`.
+It records valid imports from the direct read of `..` and `../physres5lineage/seeds/prTalks`.
 -/
 
 namespace DeVries.ParentDirectoryLoop33

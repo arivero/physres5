@@ -132,7 +132,7 @@ Use scores from 1 to 5. Record the score after each full referee/advisor/impleme
 - Does the A1--A3/T1--T3 hierarchy make the main text read as paper-level exposition while preserving all open obligations?
 - Does Target 0 give a complete derivation path from source theory to the
   reduced kernel, ordered W/Z sampling, and complex-pole matching?
-- Which parent-workspace cluster should receive a targeted audit after the broad `..` inventory: `../prTalks`, `../hans/signed_dbdevries`, `../weak`, or `../phys4/notes`?
+- Which parent-workspace cluster should receive a targeted audit after the broad `..` inventory: `../physres5lineage/seeds/prTalks`, `../physres5lineage/hans/signed_dbdevries`, `../physres5lineage/weak`, or `../phys4/notes`?
 - Does the rank-and-ray theorem make the allowed electroweak deformation precise enough for source-route testing?
 - Can one interval or \(G_2\) source route derive the map from a dimensional or geometric parameter to the electroweak radial ray?
 - Do the audit-derived filters now make coefficient transfer, failed parent routes, and SO(32) completion obligations referee-checkable?

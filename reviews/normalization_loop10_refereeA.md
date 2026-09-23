@@ -4,13 +4,13 @@
 
 Parent material should enter `physres5` as guardrails and theorem obligations.
 The main risk is importing the exact failure mode identified in
-`../weak/criticism.md`: treating DeVries eigenvalues as \(M_W^2\),
+`../physres5lineage/weak/criticism.md`: treating DeVries eigenvalues as \(M_W^2\),
 \(M_Z^2\), or Higgs-sector quantities before deriving the gauge-boson mass
 matrix, scalar functional, or pole self-energy map.
 
 ## Strongest useful content
 
-The strongest adjacent import is the `../weak/criticism.md` checklist:
+The strongest adjacent import is the `../physres5lineage/weak/criticism.md` checklist:
 
 - Scalar seed entries need a gauge-Higgs or pole-self-energy derivation before
   they can be identified with W/Z observables.

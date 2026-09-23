@@ -22,25 +22,25 @@ downloaded papers for manuscript prose as cited physics.
 
 | Parent path | Status for this manuscript | Valid content |
 |---|---|---|
-| `..` root inventory | broad workspace map | The parent directory contains tool/runtime state, project variants, conversation histories, earlier physics workspaces, source experiments, and TeX support files.  Relevant manuscript clusters are `../prTalks`, `../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`, `../physres1`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.  Caches, editor state, security reviews, package trees, generated logs, and private runtime configuration are excluded from manuscript claims. |
-| `../prTalks/` | project PDF source notes | Seven adjacent PDFs preserve the user-provided conceptual thread: electroweak-vacuum concerns, string/orbit connections, Regge scaling, scaling of \(m\) with \(J\), and execution prompts.  The indexed content lives in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`; the PDFs remain source objects. |
-| `../physres6/` | sibling short-note workspace | Contains a compact electroweak-couplings note, inherited source inventory, and calculation notes for the alpha route.  Valid imports are O17 provenance, the exact symbolic dependency on the \(v=\sqrt2 M_-(2)\) assignment, and the source-upgrade warning for \(\alpha(Q)\).  Its numerical checks and short-paper framing stay outside the current conceptual PRD phase. |
-| `../physres6/manuscript/` | sibling higher-slot provenance | Records the direct higher-positive-slot and Regge-intercept idea with a literature pointer for a low-mass diphoton discussion.  Valid import for this manuscript is the symbolic O18 obligation and the source-upgrade queue; numerical and phenomenology claims require local primary sources. |
-| `../hans/signed_dbdevries/` | earlier DeVries workspace | Contains a draft, mechanism notes, literature notes, stress tests, and reports for signed-root DeVries variants.  Valid imports are mechanism obligations, critique patterns, source trails, and failure modes.  Numerical checks and fit tables remain outside the current conceptual phase. |
-| `../signed-dv-custodial-project/` | signed-root higher-slot caution | Contains earlier drafts and referee critiques with aggressive higher-slot phenomenology.  Valid import is the cautionary ledger: a higher positive slot needs a source assignment, gauge representation, and collider audit. |
-| `../weak/criticism.md` | critique provenance | Direct scalar-seed identifications with \(M_W\), \(M_Z\), \(m_h\), or the Higgs order parameter require a gauge-Higgs mass matrix, pole self-energy map, scalar potential, or gauge-invariant scalar functional.  Precision and prediction language require scheme control and independent inputs. |
-| `../weak/PHASE_1.md` | normalization audit | The generalized block \(m_0^2\begin{pmatrix}0&a\sqrt{C_2}\\a\sqrt{C_2}&-bC_2\end{pmatrix}\) records the key normalization issue: \(a\) can be absorbed into the scale convention, while \(b\) remains an independent Wilson coefficient pending a source operator. |
-| `../weak/LAGRANGIAN.md` | mechanism audit | Hosotani/Wilson-line spectra provide weight-squared towers.  A DeVries derivation must produce the full \(C_2(R)\) block and the off-diagonal product from one source operator. |
-| `../weak/LAGRANGIAN_PC.md` | mechanism audit | The Wigner-Eckart route fails for the natural parent representations tested there.  A generator matrix element alone leaves the \(\sqrt{C_2(R)}\) off-diagonal unsupplied for the two electroweak samples. |
-| `../weak/PHASE_5.md` | SO(32) audit | SO(32) adjoint branching supplies weak triplets, while weak doublets appear in a spinor branch.  This supports treating SO(32) flavor bookkeeping as separate from the ordered electroweak assignment theorem. |
+| `..` root inventory | broad workspace map | The parent directory contains tool/runtime state, project variants, conversation histories, earlier physics workspaces, source experiments, and TeX support files.  Relevant manuscript clusters are `../physres5lineage/seeds/prTalks`, `../physres5lineage/hans/signed_dbdevries`, `../physres5lineage/weak`, `../phys3`, `../phys4`, `../physres1`, `../dualsm`, `../physres5lineage/signed-dv-custodial-project`, and `../recap`.  Caches, editor state, security reviews, package trees, generated logs, and private runtime configuration are excluded from manuscript claims. |
+| `../physres5lineage/seeds/prTalks/` | project PDF source notes | Seven adjacent PDFs preserve the user-provided conceptual thread: electroweak-vacuum concerns, string/orbit connections, Regge scaling, scaling of \(m\) with \(J\), and execution prompts.  The indexed content lives in `context/prtalks_source_notes.md` and `notes/lean/PrTalks.lean`; the PDFs remain source objects. |
+| `../physres5lineage/physres6/` | sibling short-note workspace | Contains a compact electroweak-couplings note, inherited source inventory, and calculation notes for the alpha route.  Valid imports are O17 provenance, the exact symbolic dependency on the \(v=\sqrt2 M_-(2)\) assignment, and the source-upgrade warning for \(\alpha(Q)\).  Its numerical checks and short-paper framing stay outside the current conceptual PRD phase. |
+| `../physres5lineage/physres6/manuscript/` | sibling higher-slot provenance | Records the direct higher-positive-slot and Regge-intercept idea with a literature pointer for a low-mass diphoton discussion.  Valid import for this manuscript is the symbolic O18 obligation and the source-upgrade queue; numerical and phenomenology claims require local primary sources. |
+| `../physres5lineage/hans/signed_dbdevries/` | earlier DeVries workspace | Contains a draft, mechanism notes, literature notes, stress tests, and reports for signed-root DeVries variants.  Valid imports are mechanism obligations, critique patterns, source trails, and failure modes.  Numerical checks and fit tables remain outside the current conceptual phase. |
+| `../physres5lineage/signed-dv-custodial-project/` | signed-root higher-slot caution | Contains earlier drafts and referee critiques with aggressive higher-slot phenomenology.  Valid import is the cautionary ledger: a higher positive slot needs a source assignment, gauge representation, and collider audit. |
+| `../physres5lineage/weak/criticism.md` | critique provenance | Direct scalar-seed identifications with \(M_W\), \(M_Z\), \(m_h\), or the Higgs order parameter require a gauge-Higgs mass matrix, pole self-energy map, scalar potential, or gauge-invariant scalar functional.  Precision and prediction language require scheme control and independent inputs. |
+| `../physres5lineage/weak/PHASE_1.md` | normalization audit | The generalized block \(m_0^2\begin{pmatrix}0&a\sqrt{C_2}\\a\sqrt{C_2}&-bC_2\end{pmatrix}\) records the key normalization issue: \(a\) can be absorbed into the scale convention, while \(b\) remains an independent Wilson coefficient pending a source operator. |
+| `../physres5lineage/weak/LAGRANGIAN.md` | mechanism audit | Hosotani/Wilson-line spectra provide weight-squared towers.  A DeVries derivation must produce the full \(C_2(R)\) block and the off-diagonal product from one source operator. |
+| `../physres5lineage/weak/LAGRANGIAN_PC.md` | mechanism audit | The Wigner-Eckart route fails for the natural parent representations tested there.  A generator matrix element alone leaves the \(\sqrt{C_2(R)}\) off-diagonal unsupplied for the two electroweak samples. |
+| `../physres5lineage/weak/PHASE_5.md` | SO(32) audit | SO(32) adjoint branching supplies weak triplets, while weak doublets appear in a spinor branch.  This supports treating SO(32) flavor bookkeeping as separate from the ordered electroweak assignment theorem. |
 | `../phys3/sources/unbroken_susy.md` | dimensional-interpolation provenance | The local note behind O10 records the D=11 chirality obstruction and a D=9/D=11 electroweak interpolation idea.  Witten 1981 fragments remain the primary-source control. |
 | `../phys3/sources/bootstrap_charges.md` and `../phys3/sources/up_to_SO32.md` | Chan-Paton/bootstrap provenance | These files record the project-source trail for \(N=3,k_u=2,k_d=3\) and SO(32)-flavor counting.  Generation claims require the existing flavor caveat and a primary-source upgrade. |
 | `../phys3/results/orientifold_projection.md` | brane-structure caution | Wilson-line data alone leave the separation of the \((15,\bar 3)\) and \((\overline{10},6)\) branches unresolved in that project note.  Projection data require orientifold, orbifold, or equivalent external structure. |
 | `../phys3/results/so30_vs_so32.md` | flavor-boundary caution | The \((15,\bar 3)\) source is the tensor-product embedding; the ambient orthogonal group acts as a container.  This weakens uniqueness claims for SO(32) flavor organization. |
-| `../signed-dv-custodial-project/mechanisms/conditional_no_go.md` | negative-sector no-go template | Under ordinary SM electroweak breaking with hypercharge as a single \(T_R^3\) spurion, custodial EFT can motivate the operator form \(\Delta M_-^2=\kappa(M_Z^2-M_W^2)\sigma_3\).  The coefficient \(\kappa=C_F/C_A=3/8\) requires an additional UV threshold, charge lattice, or matching assumption. |
-| `../signed-dv-custodial-project/mechanisms/minimal_negative_sector_eft.md` | EFT theorem target | A two-state negative sector can be encoded through \(c_Yg'^2(H^\dagger H)\sigma_3\).  The coefficient and the physical identity of \(\Psi_-\) remain matching data. |
-| `../signed-dv-custodial-project/mechanisms/string_uv.md` | string-UV caution | D-brane or string embeddings can host gauge sectors, Chan-Paton factors, hypercharge embeddings, and thresholds.  The needed source-theory result is a coefficient and pole-matching derivation, including a branch-status rule for the negative root. |
-| `../signed-dv-custodial-project/mechanisms/regge_field_theory.md` | Regge theorem target | \(C_F/C_A=3/8\) has a natural leading-log Reggeization meaning in SU(2), while the manuscript still owes a map from that high-energy \(t\)-channel statement to a vacuum scalar functional or vector pole self-energy. |
+| `../physres5lineage/signed-dv-custodial-project/mechanisms/conditional_no_go.md` | negative-sector no-go template | Under ordinary SM electroweak breaking with hypercharge as a single \(T_R^3\) spurion, custodial EFT can motivate the operator form \(\Delta M_-^2=\kappa(M_Z^2-M_W^2)\sigma_3\).  The coefficient \(\kappa=C_F/C_A=3/8\) requires an additional UV threshold, charge lattice, or matching assumption. |
+| `../physres5lineage/signed-dv-custodial-project/mechanisms/minimal_negative_sector_eft.md` | EFT theorem target | A two-state negative sector can be encoded through \(c_Yg'^2(H^\dagger H)\sigma_3\).  The coefficient and the physical identity of \(\Psi_-\) remain matching data. |
+| `../physres5lineage/signed-dv-custodial-project/mechanisms/string_uv.md` | string-UV caution | D-brane or string embeddings can host gauge sectors, Chan-Paton factors, hypercharge embeddings, and thresholds.  The needed source-theory result is a coefficient and pole-matching derivation, including a branch-status rule for the negative root. |
+| `../physres5lineage/signed-dv-custodial-project/mechanisms/regge_field_theory.md` | Regge theorem target | \(C_F/C_A=3/8\) has a natural leading-log Reggeization meaning in SU(2), while the manuscript still owes a map from that high-energy \(t\)-channel statement to a vacuum scalar functional or vector pole self-energy. |
 | `../dualsm/assessment/GENERAL-REPORT.md` | workflow discipline | Dense speculative corpora need source-grounded assessment, contradiction checks, adjudication, and scoped claims.  Use this as process memory only. |
 | `../dualsm/sources/` | future source queue | Seiberg duality and dualized-SM sources may help future duality claims.  Current electroweak determinant work can proceed independently. |
 | `../phys4/notes/` | targeted adjacent-corpus audit | Contains Seiberg/SO(32)/brane/M-theory/PhysicsForums notes, including the Wrong Turn catalogue.  The targeted audit promotes provenance, mechanism-address dictionaries, and theorem targets only; journal-facing claims require primary-source replacement. |
@@ -53,12 +53,12 @@ downloaded papers for manuscript prose as cited physics.
 
 The command-level parent read refreshed the broad `..` map while excluding
 credential, cache, editor, package, and generated-runtime directories from
-manuscript use.  The relevant physics clusters remain `../prTalks`,
-`../phys3`, `../phys4`, `../physres6`, `../hans/signed_dbdevries`,
-`../signed-dv-custodial-project`, `../weak`, `../dualsm`, and `../recap`.
+manuscript use.  The relevant physics clusters remain `../physres5lineage/seeds/prTalks`,
+`../phys3`, `../phys4`, `../physres5lineage/physres6`, `../physres5lineage/hans/signed_dbdevries`,
+`../physres5lineage/signed-dv-custodial-project`, `../physres5lineage/weak`, `../dualsm`, and `../recap`.
 For the current O10 pass, the active imports are the dimensional-interpolation
-provenance in `../phys3`, the already indexed `../prTalks` effective-dimension
-and top/negative-branch notes, and the sibling `../physres6` alpha and
+provenance in `../phys3`, the already indexed `../physres5lineage/seeds/prTalks` effective-dimension
+and top/negative-branch notes, and the sibling `../physres5lineage/physres6` alpha and
 higher-slot provenance.  The remaining parent folders are triage queues pending
 a focused issue.
 
@@ -66,11 +66,11 @@ a focused issue.
 
 The broad `..` scan was repeated while excluding credential-adjacent,
 cache/editor, package, binary, and generated-runtime material from manuscript
-use.  The same relevant clusters remain active: `../prTalks`,
-`../physres6`, `../phys3`, `../phys4`, `../weak`,
-`../signed-dv-custodial-project`, `../physres1`, `../dualsm`, and `../recap`.
+use.  The same relevant clusters remain active: `../physres5lineage/seeds/prTalks`,
+`../physres5lineage/physres6`, `../phys3`, `../phys4`, `../physres5lineage/weak`,
+`../physres5lineage/signed-dv-custodial-project`, `../physres1`, `../dualsm`, and `../recap`.
 For the current interval pass, the parent scan adds only triage confirmation:
-`../prTalks` and `../physres6` are already indexed as
+`../physres5lineage/seeds/prTalks` and `../physres5lineage/physres6` are already indexed as
 source-note provenance, and CHM remains the primary local source for the
 interval boundary theorem target.
 
@@ -80,8 +80,8 @@ The latest `..` read covered first- and second-level directories plus local
 Markdown, TeX, Lean, BibTeX, text, and PDF files while keeping cache,
 credential, editor, package, binary, and generated-runtime directories outside
 manuscript use.  The scan confirmed the same active physics clusters:
-`../prTalks`, `../physres6`, `../phys3`, `../phys4`, `../weak`,
-`../signed-dv-custodial-project`, `../physres1`, `../dualsm`, and `../recap`.
+`../physres5lineage/seeds/prTalks`, `../physres5lineage/physres6`, `../phys3`, `../phys4`, `../physres5lineage/weak`,
+`../physres5lineage/signed-dv-custodial-project`, `../physres1`, `../dualsm`, and `../recap`.
 Additional visible queues include `../balance`, `../cantor`, `../sakurai`,
 `../pdghist`, `../phys6gpd`, `../nokoide`, `../academia`, and root-level
 standalone TeX files.  For the current Loop 20 interval task, these queues add
@@ -94,12 +94,12 @@ interval data.
 ## Loop 22 parent-root inventory refresh
 
 The latest parent read again found a broad workspace around this repository:
-`../prTalks`, `../hans`, `../dualsm`, `../weak`, `../phys3`, `../phys4`,
-`../physres6`, `../phys6gpd`, `../signed-dv-custodial-project`, and several
+`../physres5lineage/seeds/prTalks`, `../physres5lineage/hans`, `../dualsm`, `../physres5lineage/weak`, `../phys3`, `../phys4`,
+`../physres5lineage/physres6`, `../phys6gpd`, `../physres5lineage/signed-dv-custodial-project`, and several
 out-of-scope data or runtime directories.  For the current loop the active
 import is the O19 branch-duality provenance in
-`../physres6/calculations/branch_duality.md`, read together with the already
-indexed `../prTalks` Regge-scaling PDF notes.  The valid content is theorem
+`../physres5lineage/physres6/calculations/branch_duality.md`, read together with the already
+indexed `../physres5lineage/seeds/prTalks` Regge-scaling PDF notes.  The valid content is theorem
 target material: the branch involution \(x\mapsto -J/x\), the large-\(s\)
 branch-scaling diagnostic, the need to keep the oscillator Regge tower separate
 from the DeVries sector label, and the source-upgrade queue for rotating
@@ -108,11 +108,11 @@ from the DeVries sector label, and the source-upgrade queue for rotating
 ## Loop 24 parent-root inventory refresh
 
 The latest `..` read covered first- and second-level directories, visible
-Markdown/TeX/BibTeX/Lean/PDF candidates, the `../prTalks` PDF metadata, and
-targeted source-note files in `../hans/signed_dbdevries`, `../dualsm`,
+Markdown/TeX/BibTeX/Lean/PDF candidates, the `../physres5lineage/seeds/prTalks` PDF metadata, and
+targeted source-note files in `../physres5lineage/hans/signed_dbdevries`, `../dualsm`,
 `../phys3`, and `../phys4`.  Active imports for the present loop are:
-`../prTalks` for electroweak-ray and representation-channel provenance,
-`../hans/signed_dbdevries` for negative-sector mechanism obstructions,
+`../physres5lineage/seeds/prTalks` for electroweak-ray and representation-channel provenance,
+`../physres5lineage/hans/signed_dbdevries` for negative-sector mechanism obstructions,
 `../dualsm` for review/adjudication discipline, and `../phys3` for the
 D=11/D=9 interpolation provenance.  The root also contains arXiv cache papers,
 older physics workspaces, TeX support files, runtime caches, editor state, and
@@ -121,9 +121,9 @@ generated logs.  Runtime and cache material supplies no manuscript claims.
 ## Loop 29 parent-root inventory refresh
 
 The current direct `..` read again found a broad workspace around this
-repository.  Relevant manuscript-bearing clusters remain `../prTalks`,
-`../hans/signed_dbdevries`, `../weak`, `../phys3`, `../phys4`, `../physres1`,
-`../physres6`, `../dualsm`, `../signed-dv-custodial-project`, and `../recap`.
+repository.  Relevant manuscript-bearing clusters remain `../physres5lineage/seeds/prTalks`,
+`../physres5lineage/hans/signed_dbdevries`, `../physres5lineage/weak`, `../phys3`, `../phys4`, `../physres1`,
+`../physres5lineage/physres6`, `../dualsm`, `../physres5lineage/signed-dv-custodial-project`, and `../recap`.
 Additional visible queues include `../balance`, `../cantor`, `../sakurai`,
 `../pdghist`, `../phys6gpd`, `../nokoide`, `../academia`, `../vixra*`, and
 standalone TeX or PDF files at the parent root.  Runtime state, caches,
@@ -131,18 +131,18 @@ credentials, editor data, package trees, generated logs, and administrative
 files supply no manuscript claims.
 
 For Loop 29 the parent read promotes no new physics issue.  The closure pass
-uses it as inventory confirmation: project-source notes from `../prTalks` and
+uses it as inventory confirmation: project-source notes from `../physres5lineage/seeds/prTalks` and
 the parent workspace remain guardrails, provenance, theorem targets, and
 source-upgrade queues.  Manuscript claims still require primary local sources
 or explicit project-source status.
 
 ## Loop 25 parent-directory sidecar read
 
-Loop 25 added two read-only sidecar reads.  The `../prTalks` pass confirmed the
+Loop 25 added two read-only sidecar reads.  The `../physres5lineage/seeds/prTalks` pass confirmed the
 already indexed PDF queue: electroweak-vacuum concerns, the two-branch block,
 the long prompt log with KK \(7/6/5\) and \(3/2/1\) interpolation, the orbit
 quadratic, Regge alternatives, and string-connection prompts.  The adjacent
-physics-folder pass identified `../weak` as the strongest electroweak scaffold
+physics-folder pass identified `../physres5lineage/weak` as the strongest electroweak scaffold
 and obstruction queue, `../phys4/notes` as the superconnection and brane/KK
 source queue, `../phys3` as dimensional and SO(32) provenance, and
 `../phys6gpd` as conjectural \(G_2\)/octonion context.  The promoted result is
@@ -162,7 +162,7 @@ P_Z:F_{\rm even}^{\gamma^\perp}\mapsto J_{\rm adj}=2,
 =
 \frac{x_+(J_H)}{x_+(J_{\rm adj})}+\Delta_{\rm sc}.
 \]
-The same pass reread `../prTalks` pages where the electroweak ray, same-radius
+The same pass reread `../physres5lineage/seeds/prTalks` pages where the electroweak ray, same-radius
 orbit quadratic, dimensional interpolation, and Regge-compatible intercept
 targets appear.  These remain project-source provenance pending a primary source
 or theorem-target derivation.
@@ -170,10 +170,10 @@ or theorem-target derivation.
 ## Loop 27 parent-directory read
 
 The latest direct `..` read covered the parent inventory, visible Markdown/TeX
-and PDF candidates, `../prTalks` metadata and first pages, `../physres6`
-manuscript/reviews, `../weak` seed and criticism files, and the
-`../hans/signed_dbdevries` synthesis.  The active import is the conditional
-KK-fixing architecture in `../physres6`: the \(D=11/10/9\) and colourless
+and PDF candidates, `../physres5lineage/seeds/prTalks` metadata and first pages, `../physres5lineage/physres6`
+manuscript/reviews, `../physres5lineage/weak` seed and criticism files, and the
+`../physres5lineage/hans/signed_dbdevries` synthesis.  The active import is the conditional
+KK-fixing architecture in `../physres5lineage/physres6`: the \(D=11/10/9\) and colourless
 \(D=7/6/5\) chains remain reconstruction labels pending one source variable
 supplying \(t_{\rm dim}\), \(t_{\rm EW}\), \(K_J\), \(\mathcal F_{\rm sc}\), and
 the pole map.  The sibling reviews also reinforce label discipline for sector
@@ -197,7 +197,7 @@ projection, ordered W/Z boundary map, and pole map remain theorem data.
 
 ## Promoted obligations
 
-### Targeted `../phys4`, `../weak`, `../hans`, and `../phys3` audit
+### Targeted `../phys4`, `../physres5lineage/weak`, `../physres5lineage/hans`, and `../phys3` audit
 
 The targeted parent audit adds a second layer to the broad inventory.  The
 valid imports are source-note provenance and route tests.
@@ -212,12 +212,12 @@ the local catalogue is `../phys4/notes/135-pf-wrong-turn-catalogue.md`.
 This is provenance.  A manuscript claim needs either direct thread citation
 with post context or the corresponding primary paper.
 
-The `../weak` audit separates representation selection from dynamics.  The
+The `../physres5lineage/weak` audit separates representation selection from dynamics.  The
 rule that chooses the two lowest non-trivial \(SU(2)\) representations selects
 \(\mathbf 2,\mathbf 3\), while the physical source rule remains open: the
 singlet discard, the ordering, and the coupling to W/Z pole data still require
 a mass-map theorem.  The Wigner--Eckart/Clebsch route tested in
-`../weak/LAGRANGIAN_PC.md` is a failed route result for the natural parents
+`../physres5lineage/weak/LAGRANGIAN_PC.md` is a failed route result for the natural parents
 checked there: the doublet parent vanishes by selection rule and the triplet
 axial parent gives the wrong parent-Casimir datum.  Future use of a
 Wigner--Eckart idea requires a different parent representation, operator, or
@@ -230,12 +230,12 @@ Three trace spaces must remain distinct:
   {\rm tr}\,K_-^{\sigma_3}.
 \]
 The first is the trace of the original DeVries branch matrix.  The second is a
-rank-one, spectator-preserving seed deformation in the `../weak` notes.  The
+rank-one, spectator-preserving seed deformation in the `../physres5lineage/weak` notes.  The
 third is the signed two-state negative-sector EFT used in the signed-root
 workspace.  Coefficients and trace arguments require separate ledgers across these
 spaces pending a common source operator.
 
-The `../hans/signed_dbdevries` audit supplies existence templates for
+The `../physres5lineage/hans/signed_dbdevries` audit supplies existence templates for
 negative-sector operators.  A paired exotic D-term can realize a signed
 two-state operator with a chosen exotic charge; kinetic mixing can engineer an
 effective charge through a continuous mixing parameter.  These are operator
@@ -342,7 +342,7 @@ pole placement.
 
 ### O18 higher-slot and Regge-intercept discipline
 
-The Loop 17 parent scan found higher-slot material in `../physres6` and in the
+The Loop 17 parent scan found higher-slot material in `../physres5lineage/physres6` and in the
 signed-root workspaces.  The valid import is structural:
 \[
   A_j=j(j+1),\qquad
@@ -362,8 +362,8 @@ therefore provenance and failure-mode material.
 ### Alpha endpoint from sibling and parent notes
 
 The Loop 16 parent read found a concentrated alpha route in
-`../physres6/calculations/alpha_derivation_attempt.md` and in
-`../prTalks/DeVries String - Prompt Execution Request.pdf`.  The valid import is
+`../physres5lineage/physres6/calculations/alpha_derivation_attempt.md` and in
+`../physres5lineage/seeds/prTalks/DeVries String - Prompt Execution Request.pdf`.  The valid import is
 symbolic:
 \[
   v^2=C_v\mu^2|x_-(J_v)|,\qquad
@@ -390,12 +390,12 @@ given.
 ### Loop 33 parent-directory read
 
 The current direct `..` pass refreshed the parent inventory while the O1
-ordered-sampling loop was active.  Relevant clusters remain `../prTalks`,
-`../weak`, `../signed-dv-custodial-project`, `../phys3`, `../phys4`,
-`../physres6`, and `../dualsm`.  Runtime state, credentials, caches, editor
+ordered-sampling loop was active.  Relevant clusters remain `../physres5lineage/seeds/prTalks`,
+`../physres5lineage/weak`, `../physres5lineage/signed-dv-custodial-project`, `../phys3`, `../phys4`,
+`../physres5lineage/physres6`, and `../dualsm`.  Runtime state, credentials, caches, editor
 files, generated logs, and package trees remain outside manuscript claims.
 
-The seven `../prTalks` PDFs were read through the maintained extraction aids in
+The seven `../physres5lineage/seeds/prTalks` PDFs were read through the maintained extraction aids in
 `context/source_fragments/parent_prtalks/`; the PDFs remain source objects.
 The valid Loop 33 import is a theorem-target package:
 \[
@@ -417,7 +417,7 @@ KK \(3/2/1\) or \(D=7/6/5\).  These statements remain reconstruction targets:
 source geometry, projectors, normalization, chiral/fermion account, and pole
 map are open.
 
-The `../weak` refresh repeats the mass-map guardrail: direct scalar or
+The `../physres5lineage/weak` refresh repeats the mass-map guardrail: direct scalar or
 representation assignments need a gauge-Higgs mass matrix, pole self-energy
 map, scalar functional, or equivalent source reduction.  The CHM interval
 ledger is therefore the current priority for O1, with Coquereaux serving as
@@ -426,14 +426,14 @@ generalized-connection grading vocabulary.
 ### Loop 34 parent-directory read
 
 The current direct `..` pass ran during the O4 source-kernel loop.  The active
-imports are now sharper.  `../weak` supplies the strongest local guardrail:
+imports are now sharper.  `../physres5lineage/weak` supplies the strongest local guardrail:
 Hosotani/Wilson-line spectra, single-generator spurions, and Wigner--Eckart
 tests leave the \(\sqrt{C_2}\), \(C_2\), and common-coefficient lock as an open
 source-kernel problem.  This supports the current CHM-first strategy:
 derive one hatted current entry from source data as the entry point for any
 mechanism claim.
 
-`../physres6` supplies two theorem-target imports.  The KK-fixing note reads the
+`../physres5lineage/physres6` supplies two theorem-target imports.  The KK-fixing note reads the
 positive branch as gauge-spectrum data and the negative branch as a candidate
 order-parameter/modulus-fixing datum.  It also records the partial Hodge
 reduction idea: \(\sqrt J\) from exact/coexact data, a protected zero from gauge

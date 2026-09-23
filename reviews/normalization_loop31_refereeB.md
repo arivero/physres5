@@ -70,7 +70,7 @@ material supplies possible arenas for the source object.
    -\sqrt J&\widehat\lambda+J
    \end{pmatrix}.
    \]
-3. Add a source-control sentence in Appendix E: Loop 30 `../prTalks` material
+3. Add a source-control sentence in Appendix E: Loop 30 `../physres5lineage/seeds/prTalks` material
    is project provenance; manuscript claims rest on Witten, CHM,
    six-dimensional string, and \(G_2\) primary sources.
 4. Expand the \(D=9\) endpoint obligation into three named subtargets:

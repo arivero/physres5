@@ -9,11 +9,11 @@ administrative files are excluded from manuscript claims.
 
 | Parent path | Loop 29 status | Useful content |
 |---|---|---|
-| `../prTalks/` | project PDF source objects | Seven PDFs preserve electroweak-ray, two-channel block, orbit-quadratic, Regge, dimensional-interpolation, negative-branch, and top-sector provenance. The PDFs remain source objects because extraction can miss images, formula layout, and diagrams. |
-| `../hans/signed_dbdevries/` | mechanism archive | Earlier DeVries mechanism notes, signed-root critiques, negative-sector EFT templates, string-UV cautions, and source-route scorecards. Use as theorem-target provenance or critique pressure. |
-| `../weak/` | electroweak scaffold and critique | Gauge-Higgs mass-map obligations, scalar-seed cautions, superconnection and Lagrangian notes, and precision-language warnings. Use through source-note status or primary-source upgrades. |
+| `../physres5lineage/seeds/prTalks/` | project PDF source objects | Seven PDFs preserve electroweak-ray, two-channel block, orbit-quadratic, Regge, dimensional-interpolation, negative-branch, and top-sector provenance. The PDFs remain source objects because extraction can miss images, formula layout, and diagrams. |
+| `../physres5lineage/hans/signed_dbdevries/` | mechanism archive | Earlier DeVries mechanism notes, signed-root critiques, negative-sector EFT templates, string-UV cautions, and source-route scorecards. Use as theorem-target provenance or critique pressure. |
+| `../physres5lineage/weak/` | electroweak scaffold and critique | Gauge-Higgs mass-map obligations, scalar-seed cautions, superconnection and Lagrangian notes, and precision-language warnings. Use through source-note status or primary-source upgrades. |
 | `../phys3/` and `../phys4/` | older source trails | D=11/D=9 interpolation provenance, Witten-KK pointers, SO(32) and brane/M-theory source queues, Wigner--Eckart failed-route memory, and Wrong Turn provenance. |
-| `../physres1/`, `../physres6/`, `../phys6gpd/`, `../dualsm/`, `../signed-dv-custodial-project/` | sibling project queues | Conditional theorem-target architecture, higher-slot and alpha provenance, adjudication discipline, and higher-slot caution ledgers. |
+| `../physres1/`, `../physres5lineage/physres6/`, `../phys6gpd/`, `../dualsm/`, `../physres5lineage/signed-dv-custodial-project/` | sibling project queues | Conditional theorem-target architecture, higher-slot and alpha provenance, adjudication discipline, and higher-slot caution ledgers. |
 | `../recap/`, `../balance/`, `../cantor/`, `../sakurai/`, `../pdghist/`, `../nokoide/`, `../vixra*` | future queues or out-of-scope material | Possible source trails, datasets, and cautionary corpora. They need focused issue-specific audits before manuscript promotion. |
 | parent root TeX/PDF/text files | triage only | Standalone drafts and notes visible at the parent root. Use requires a focused source note. |
 

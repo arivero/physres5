@@ -38,8 +38,8 @@
 - Develop the top-quark subquestion as a source-map target
   \(\mathcal Y_{\rm top}(u_\star)\to y_t,m_t,\Pi^{(t)}_{VV}\) tied to the same
   source variable as the scalar branch.
-- Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
-- Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../weak`, `../phys3`, `../signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
+- Use `context/prtalks_source_notes.md` as the source-note index for adjacent `../physres5lineage/seeds/prTalks` PDFs. Upgrade any manuscript-bound string, Regge, brane, or endpoint claim to primary local sources before citation.
+- Use `context/parent_workspace_source_notes.md` as the source-note index for adjacent parent-workspace critique and provenance. Promote only guardrails, theorem targets, and source-upgrade queues from `../physres5lineage/weak`, `../phys3`, `../physres5lineage/signed-dv-custodial-project`, `../dualsm`, `../recap`, and `../orbits`.
 - Continue normalizing main-body sections by replacing project-management language with assumption, construction, consequence, and theorem-target statements.
 - Use the Loop 12 parent-root inventory as a triage map.  Targeted future audits should choose a single cluster, read it deeply, and promote only source trails, theorem targets, or failure-mode tests.
 - Use Loop 13's rank-and-ray theorem as a route filter: every endpoint,
@@ -100,8 +100,8 @@
   structural issues; their residual derivational obligations remain in O1,
   O2b, O3, O4, O8, O10, and O17--O20.
 - Use the Loop 25 parent-directory sidecar reads as source queues:
-  `../prTalks` for electroweak-ray, KK-dimensional, Regge, and negative-branch
-  provenance; `../weak` and `../phys4` for superconnection and
+  `../physres5lineage/seeds/prTalks` for electroweak-ray, KK-dimensional, Regge, and negative-branch
+  provenance; `../physres5lineage/weak` and `../phys4` for superconnection and
   Wigner--Eckart obstruction upgrades.
 - Use Loop 26's dimensional-interpolation taxonomy: Witten's \(D=11\) endpoint
   is source-backed, the \(D=9\) \(U(1)_{\rm geom}\) endpoint is an embedding
@@ -140,7 +140,7 @@
   promoted.
 - Use Loop 30's parent-directory read as a refreshed source queue:
   `context/source_fragments/parent_prtalks/` holds extraction aids for the
-  seven `../prTalks` PDFs; `context/parent_directory_loop30_read.md` and
+  seven `../physres5lineage/seeds/prTalks` PDFs; `context/parent_directory_loop30_read.md` and
   `notes/lean/ParentDirectoryLoop30.lean` record the sibling-workspace source
   queues for O1, O3, O4, O8, O10, O17, and O20.  The PDFs and primary local
   literature remain the source objects for manuscript-facing claims.

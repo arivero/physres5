@@ -15,11 +15,11 @@ Relevant local clusters remain:
 
 | Path | Current import |
 |---|---|
-| `../prTalks/` | seven PDF source-note objects for electroweak ray, string/KK routes, Regge alternatives, dimensional interpolation, and top/negative-branch provenance |
-| `../weak/` | electroweak mass-map critiques, Lagrangian failure modes, Wigner--Eckart failure mode, and source-kernel guardrails |
-| `../physres6/` | sibling short-note route for KK fixing, branch duality, alpha/O17, and higher-slot/O18 provenance |
+| `../physres5lineage/seeds/prTalks/` | seven PDF source-note objects for electroweak ray, string/KK routes, Regge alternatives, dimensional interpolation, and top/negative-branch provenance |
+| `../physres5lineage/weak/` | electroweak mass-map critiques, Lagrangian failure modes, Wigner--Eckart failure mode, and source-kernel guardrails |
+| `../physres5lineage/physres6/` | sibling short-note route for KK fixing, branch duality, alpha/O17, and higher-slot/O18 provenance |
 | `../phys4/notes/` | PhysicsForums/Wrong Turn catalogue, brane/string dictionary, top-as-brane-mode provenance, SO(32)/Seiberg-duality genealogy |
-| `../signed-dv-custodial-project/` | signed-root negative-sector caution, mechanism no-go templates, earlier referee discipline |
+| `../physres5lineage/signed-dv-custodial-project/` | signed-root negative-sector caution, mechanism no-go templates, earlier referee discipline |
 | `../phys3/` | dimensional-interpolation and SO(32)/Chan--Paton provenance already indexed in earlier loops |
 | `../dualsm/` | future duality source queue and review discipline |
 
@@ -27,7 +27,7 @@ Out-of-scope queues such as `../balance`, `../cantor`, `../sakurai`,
 `../pdghist`, `../vixra*`, and root-level standalone TeX files remain available
 for future focused issues.
 
-## `../prTalks` Source Objects
+## `../physres5lineage/seeds/prTalks` Source Objects
 
 The seven PDFs were inventoried again:
 
@@ -49,8 +49,8 @@ layout, image-bearing pages, diagrams, radicals, and plots.
 
 ### CHM/weak guardrail
 
-`../weak/LAGRANGIAN.md`, `../weak/PHASE_1.md`, and
-`../weak/LAGRANGIAN_PC.md` reinforce the same O4 burden:
+`../physres5lineage/weak/LAGRANGIAN.md`, `../physres5lineage/weak/PHASE_1.md`, and
+`../physres5lineage/weak/LAGRANGIAN_PC.md` reinforce the same O4 burden:
 \[
 \Sigma_{hh,J}=0,\qquad
 \Sigma_{aa,J}=J,\qquad
@@ -74,7 +74,7 @@ companion theorem.
 
 ### KK fixing and branch duality
 
-`../physres6/calculations/kk_fixing_concept.md` supplies a compact conceptual
+`../physres5lineage/physres6/calculations/kk_fixing_concept.md` supplies a compact conceptual
 package for O3/O4/O10/O17.  The sibling note frames the negative branch as a
 candidate modulus-fixing/order-parameter branch, and the positive branch as the
 gauge-vector spectrum branch.  It records a partial D=10 reduction idea:
@@ -82,7 +82,7 @@ the off-diagonal \(\sqrt J\) can come from exact/coexact Hodge data, the
 protected zero from gauge invariance, and the diagonal \(-J\) remains the
 source computation.
 
-`../physres6/calculations/branch_duality.md` records the branch involution
+`../physres5lineage/physres6/calculations/branch_duality.md` records the branch involution
 \[
 x\mapsto -\frac{J}{x},
 \qquad

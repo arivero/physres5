@@ -2,7 +2,7 @@
 Loop 30 note to self: parent-directory read and source-promotion guards.
 
 These notes are uncompiled.  They record source queues obtained from reading
-`..`, with extraction aids for `../prTalks` and targeted sibling workspaces.
+`..`, with extraction aids for `../physres5lineage/seeds/prTalks` and targeted sibling workspaces.
 -/
 
 namespace DeVries.ParentDirectoryLoop30

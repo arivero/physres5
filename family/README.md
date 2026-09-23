@@ -27,9 +27,10 @@ with five concrete actions for the manuscript.
 | [`weak/`](weak/SUMMARY.md) | `~/weak` | local only | Casimir-locked seesaw as a particle model | `PAPER.tex` (6 pp) | ansatz; strongest list of failed field-theory routes |
 
 None of the sibling repositories has a remote; this folder is their only
-off-machine copy. A complete local snapshot of all of them (git histories,
-chats, third-party PDFs, run outputs) was taken on 2026-09-23 into
-`~/physres5lineage/`, which stays off GitHub.
+off-machine copy. The complete projects (git histories, chats, third-party
+PDFs, run outputs) moved on 2026-09-23 into `~/physres5lineage/`, which stays
+off GitHub; the paths in the table and in each `SUMMARY.md` are their
+locations before the move.
 
 ## Lineage
 
@@ -43,9 +44,10 @@ hans ⇄ signed-dv (same prompt, same night; merged manuscript in signed-dv)
 weak (2026-05-16) ─► golden, golden2 (2026-05-26, same matrix and scale)
 ```
 
-The sources stay in place and depend on each other: dvFable symlinks dv2,
-kkFable symlinks kkorchestra, and kkorchestra reads PDFs from
-`~/physres6/references/` by absolute path.
+In `~/physres5lineage/` the projects keep their dependencies: dvFable
+symlinks dv2 and kkFable symlinks kkorchestra (relative links), and
+kkorchestra's notes cite PDFs under the old path `~/physres6/references/`,
+now `~/physres5lineage/physres6/references/`.
 
 ## Curation rules
 

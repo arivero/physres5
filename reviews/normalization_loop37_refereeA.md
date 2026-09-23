@@ -44,7 +44,7 @@ useful clue and still needs the quotient derivation.
 
 - Replace "Loop 33 makes..." in Sec. IV with manuscript prose naming the
   same-source projection package.
-- Remove compiled-text references to `../prTalks`, parent-workspace material,
+- Remove compiled-text references to `../physres5lineage/seeds/prTalks`, parent-workspace material,
   project provenance, and recall prompts from Appendix E.
 - Replace "active refinement" in the introduction with theorem-target language.
 - Replace remaining body uses of "pending" in the route, \(G_2\), and branch

@@ -15,13 +15,13 @@ clusters visible in the current read are:
 
 | Path | Current use |
 |---|---|
-| `../prTalks/` | seven PDF prompt/source notes for electroweak-ray, string/KK, Regge, dimensional-interpolation, and O1 provenance |
-| `../weak/` | gauge-Higgs mass-map cautions, Wigner--Eckart failed route, SO(32) triplet/doublet caveat |
-| `../signed-dv-custodial-project/` | earlier signed-root mechanism critiques and negative-sector cautions |
-| `../phys3/`, `../phys4/`, `../physres6/` | dimensional-interpolation, source-upgrade, and sibling-route provenance already indexed in earlier loops |
+| `../physres5lineage/seeds/prTalks/` | seven PDF prompt/source notes for electroweak-ray, string/KK, Regge, dimensional-interpolation, and O1 provenance |
+| `../physres5lineage/weak/` | gauge-Higgs mass-map cautions, Wigner--Eckart failed route, SO(32) triplet/doublet caveat |
+| `../physres5lineage/signed-dv-custodial-project/` | earlier signed-root mechanism critiques and negative-sector cautions |
+| `../phys3/`, `../phys4/`, `../physres5lineage/physres6/` | dimensional-interpolation, source-upgrade, and sibling-route provenance already indexed in earlier loops |
 | `../dualsm/`, `../recap/`, `../pdghist/`, `../sakurai/`, `../vixra*` | future queues or out-of-scope data unless a focused issue opens them |
 
-## `../prTalks` read
+## `../physres5lineage/seeds/prTalks` read
 
 The current pass read targeted sections around electroweak rays, K6/K5/K7
 language, the \(D=11/10/9\) and KK \(7/6/5\) interpolation, Regge/product
@@ -29,13 +29,13 @@ alternatives, SO(32) flavor caveats, and top-scale remarks.  Maintained text
 fragments live in `context/source_fragments/parent_prtalks/`.  The PDFs remain
 the source objects:
 
-- `../prTalks/DeVries String - Electroweak Vacuum Concerns.pdf` (9 pages)
-- `../prTalks/DeVries String - Max Juice Ideas.pdf` (5 pages)
-- `../prTalks/DeVries String - Prompt Execution Request.pdf` (100 pages)
-- `../prTalks/DeVries String - String theory and orbits.pdf` (3 pages)
-- `../prTalks/Regge scaling of mass with spin in superstrings - Claude.pdf` (11 pages)
-- `../prTalks/Scaling of m with J.pdf` (35 pages)
-- `../prTalks/cosas alex - String Theory Connections.pdf` (51 pages)
+- `../physres5lineage/seeds/prTalks/DeVries String - Electroweak Vacuum Concerns.pdf` (9 pages)
+- `../physres5lineage/seeds/prTalks/DeVries String - Max Juice Ideas.pdf` (5 pages)
+- `../physres5lineage/seeds/prTalks/DeVries String - Prompt Execution Request.pdf` (100 pages)
+- `../physres5lineage/seeds/prTalks/DeVries String - String theory and orbits.pdf` (3 pages)
+- `../physres5lineage/seeds/prTalks/Regge scaling of mass with spin in superstrings - Claude.pdf` (11 pages)
+- `../physres5lineage/seeds/prTalks/Scaling of m with J.pdf` (35 pages)
+- `../physres5lineage/seeds/prTalks/cosas alex - String Theory Connections.pdf` (51 pages)
 
 `pdftotext` is an access aid.  Rendered-PDF inspection is required before any
 formula, diagram, radical layout, or image-bearing page is promoted as a

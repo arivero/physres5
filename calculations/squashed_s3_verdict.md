@@ -69,6 +69,8 @@ Laplacian computed separately from the Levi-Civita connection. Validation:
    gives them positive masses and leaves the exact block untouched. The
    family's one free number (dvFable's r = γ/α, kkorchestra's α²x₀ = 1) becomes
    the ratio 2c/R = 1 between the length in the gain functional and the radius.
+   Within SO(4)-invariant local functionals this realization is unique up to
+   the mirror exchange of the two channels (`s3_uniqueness.md`).
 
 6. **Squashing as custodial breaking (an illustration, a fit).** With W at
    (j, m) = (½, ±½) and Z at (1, 0), Berger squashing moves only the W level:

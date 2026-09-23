@@ -27,7 +27,9 @@ with five concrete actions for the manuscript.
 | [`weak/`](weak/SUMMARY.md) | `~/weak` | local only | Casimir-locked seesaw as a particle model | `PAPER.tex` (6 pp) | ansatz; strongest list of failed field-theory routes |
 
 None of the sibling repositories has a remote; this folder is their only
-off-machine copy.
+off-machine copy. A complete local snapshot of all of them (git histories,
+chats, third-party PDFs, run outputs) was taken on 2026-09-23 into
+`~/physres5lineage/`, which stays off GitHub.
 
 ## Lineage
 

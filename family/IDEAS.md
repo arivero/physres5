@@ -370,7 +370,9 @@ within 10⁻³ (chats-regge-kk).
    and Wilson lines cannot give −J, and squashing only moves the labels. The
    round S³ realizes the block exactly at every level through the relative
    gain with P† = δ and length c = R/2, which turns the free number into
-   2c/R = 1.
+   2c/R = 1. `calculations/s3_uniqueness.md` proves that realization unique
+   among SO(4)-invariant local functionals on Ω⁰ ⊕ Ω¹, up to one coupling g
+   of the order parameter to the isometry current; de Vries is g = 1.
 4. The CHM interval kernel (physres5 `OPUS_IDEAS.md` #3), built with the
    indefinite ingredient that Sec. 3 requires.
 5. The coefficient test 2B = 3A, C = 3A on a concrete reduction: 6D

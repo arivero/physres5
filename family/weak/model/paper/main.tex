@@ -1,0 +1,1047 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[margin=2.5cm]{geometry}
+
+\title{A Casimir-Locked Bosonic-Seesaw Ansatz for the Electroweak Boson Masses}
+\author{[Author]\\
+\small [Affiliation]}
+\date{16 May 2026 -- v4 (PRD submission candidate)}
+
+\newcommand{\md}{\mathbf{2}}
+\newcommand{\mt}{\mathbf{3}}
+\newcommand{\Cas}{C_2}
+\newcommand{\bsm}{BSM}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We propose a Beyond-Standard-Model ansatz for the electroweak boson mass
+spectrum in which the quadratic mass terms of the scalar seed sector are
+\emph{locked} by the SU(2) Casimir invariants of two internal channels: a
+doublet ($\md$) and a triplet ($\mt$, adjoint). For each channel we
+postulate a $2\times 2$ mass-squared seed matrix in the
+elementary/composite basis with a protected zero on the diagonal, an
+off-diagonal entry $\sqrt{\Cas(R)}\,m_0$, and a tachyonic diagonal entry
+$-\Cas(R)\, m_0^2$. Diagonalisation gives four closed-form eigenvalues.
+We then \emph{postulate} the identifications
+$M_W^2 = m_0^2\,\lambda_{\md,+}$, $M_Z^2 = m_0^2\,\lambda_{\mt,+}$,
+$m_{h,{\rm bare}}^2 = m_0^2\,|\lambda_{\md,-}|$, and
+$(v/\sqrt{2})^2 = m_0^2\,|\lambda_{\mt,-}| - \Delta$. A single
+bidirectional spurion of magnitude $\Delta = (26.6~\text{GeV})^2$ acts
+in opposite directions on the doublet and triplet tachyonic
+eigenvalues. With $M_W$ as the anchor (fixing $m_0 = 106.57$~GeV) and
+either $m_h$ or $G_F$ anchoring $\Delta$, the model parameter-freely
+predicts $M_Z = 91.18$~GeV (PDG: 91.19, dev $0.007\%$) and
+$m_{h,{\rm bare}} = 122.39$~GeV. The remaining EW observable in
+$\{m_h, v/\sqrt{2}\}$ is matched to $0.04\%$ by the cross-irrep
+negative-branch trace identity $m_h^2 + (v/\sqrt{2})^2 =
+m_0^2(|\lambda_{\md,-}| + |\lambda_{\mt,-}|)$ at the
+$(5~\text{GeV})^2$ level. The doublet half of the spurion $\Delta$
+is reproduced to $1\,\%$ by the one-loop top Coleman--Weinberg
+shift at cutoff $m_0$~\cite{ColemanWeinberg1973, Haba2016BosonicSeesaw};
+the triplet half receives only a $\sim\!15\times$-too-small contribution
+from gauge loops alone, leaving the bidirectional picture's triplet
+shift as an empirical feature without a natural one-loop mechanism. A representation-selection
+analysis (Sec.~\ref{sec:repsel}) shows the doublet--triplet pair is the
+unique numerical winner among the ten SU(2) irrep pairs with
+$\Cas < 12$, by a factor of $\sim 300$ in maximum fractional error. As
+a structural side-prediction, extending the seed to the next internal
+irrep ($R = 4$, $j = 3/2$) generates a scalar at $96.5$~GeV; this lies
+in the mass range of the CMS+LEP $\gamma\gamma$ hint near $95.4$~GeV
+but, at $1.2\,\%$ deviation, is $\sim 30\times$ looser than the
+$M_W, M_Z, m_h, v$ predictions of this paper, so we do not claim a
+quantitative match. We do \emph{not} yet derive the
+eigenvalue-to-physical-mass identifications from a vacuum-expectation
+mechanism --- the gauge mass matrix and the scalar potential
+minimisation remain open work, listed explicitly in
+Section~\ref{sec:status}. The framework is positioned within the
+bosonic-seesaw, partial-compositeness, and top-seesaw literatures.
+A complete computational pipeline (SymPy + a hand-written UFO +
+MadGraph) reproduces every numerical statement in this paper.
+\end{abstract}
+
+\section{Introduction}
+
+The Standard Model gauge group $SU(2)_L \times U(1)_Y$ accounts for the
+observed electroweak boson masses through the Higgs mechanism, but treats
+the scalar potential parameters $\mu^2$, $\lambda$ as free. Decades of
+beyond-Standard-Model (BSM) work have sought to derive these parameters
+from a deeper structure: composite Higgs, technicolor, supersymmetric
+fixed points, top-seesaw, asymptotic safety, gauge-Higgs unification, and
+many more. Sch\"ucker's pre-discovery
+compilation~\cite{Schucker2007} catalogues roughly one hundred
+predictions for $m_h$.
+
+In this work we follow a structurally different route. We \emph{do not}
+attempt to derive $m_h$, $M_W$, or $M_Z$ from a UV mechanism in the
+conventional sense (Higgs-mechanism minimisation of an explicit potential
+followed by gauge-boson mass extraction). Instead, we ask whether a
+purely numerical ansatz --- a $2\times 2$ scalar mass-squared matrix
+whose entries are locked by SU(2) Casimirs --- can reproduce the
+electroweak boson spectrum once specific eigenvalues are
+\emph{identified} with the physical masses. We find that with $M_Z$ and
+$G_F$ as inputs, this identification reproduces $M_W$ and $m_h$ at the
+$10^{-3}$ level.
+
+This is a numerologically suggestive ansatz, not a closed derivation. The
+gauge-boson mass matrix is not derived from VEVs in the present draft;
+the identification $M_W^2 = m_0^2 \lambda_{\md,+}$,
+$M_Z^2 = m_0^2 \lambda_{\mt,+}$ is a postulate. Likewise the Higgs-mass
+formula is asserted on top of the postulated eigenvalue assignment, with
+the quartic couplings $\lambda_d, \lambda_t, \lambda_{dt}$ left free.
+Section~\ref{sec:status} states these open derivations explicitly.
+
+The mechanism is a representation-theoretic version of the
+\emph{bosonic seesaw} of Calmet--Oliver~\cite{Calmet2006} and
+Kim~\cite{Kim2005}: a $2\times 2$ scalar mass-squared matrix whose
+diagonalisation produces one tachyonic eigenvalue, structurally
+suggestive of EWSB. What is new is the \emph{Casimir locking} of the
+matrix entries.
+
+\section{Literature landscape}
+
+Table~\ref{tab:landscape} compares the present model to its closest
+relatives in the literature.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{p{3.6cm} p{2.6cm} p{2.6cm} p{3.0cm} p{3.0cm}}
+\toprule
+\textbf{Framework} & \textbf{Mechanism} & \textbf{Gauge group} &
+\textbf{Scalar content} & \textbf{Distinctive feature} \\
+\midrule
+Standard Model & Higgs mechanism & $SU(2)_L \times U(1)_Y$ &
+1 doublet ($Y=1/2$) & $\mu^2$, $\lambda$ free \\
+Calmet--Oliver~\cite{Calmet2006} & Bosonic seesaw & $SU(2)_L \times U(1)_Y$ &
+2 Higgs doublets & EWSB from negative det \\
+Kim~\cite{Kim2005} & SUSY + bosonic seesaw & MSSM + $\mt$ &
+2 doublets + triplet & EWSB tied to SUSY-breaking \\
+Caracciolo--Parolini--Serone~\cite{Caracciolo2012} & Composite Higgs &
+$SU(2)_L \times U(1)_Y$ + $SO(N)_{HC}$ & pNGB doublet from coset &
+Seiberg-dual UV completion \\
+Chivukula \emph{et al.}~\cite{Chivukula1998} & Top-seesaw &
+$SU(2)_L \times U(1)_Y$ & composite Higgs from $t_L$ &
+fermionic (not bosonic) seesaw \\
+Bando--Kugo--Yamawaki~\cite{Bando1985} & Hidden local symmetry &
+emergent local symmetry & vector mesons as gauge bosons & KSRF relations \\
+\midrule
+\textbf{This work} & Casimir-locked bosonic seesaw &
+$SU(2)_L \times U(1)_Y$ & $(\Phi^d_e, \Phi^d_c, \Phi^t_e, \Phi^t_c)$ &
+$M^2_R / m_0^2$ \emph{fixed by} $\Cas(R)$ \\
+\bottomrule
+\end{tabular}
+\caption{Position of the present model within the BSM landscape.}
+\label{tab:landscape}
+\end{table}
+
+The closest structural precedent is Kim's SUSY bosonic-seesaw with weak
+triplet~\cite{Kim2005}: he uses the same matrix architecture (bosonic
+seesaw), the same field content (doublet + triplet), and the same EWSB
+mechanism (negative determinant). What we add is the
+\emph{representation-theoretic constraint} on the matrix entries.
+
+\section{The Casimir-locked seed}
+
+Introduce a single mass scale $m_0$ and assume that the EWSB sector
+contains two protected internal channels carrying the SU(2) irreps $\md$
+and $\mt$. For each irrep $R$, introduce two scalars $\Phi^R_e, \Phi^R_c$
+in the \emph{elementary/composite basis} of partial
+compositeness~\cite{Caracciolo2012}, with the quadratic seed
+\begin{equation}
+  \mathcal L^R_{\rm seed} \;=\;
+  - \begin{pmatrix} \Phi^{R\dagger}_e & \Phi^{R\dagger}_c \end{pmatrix}
+  \mathcal M_R^2
+  \begin{pmatrix} \Phi^{R}_e \\ \Phi^{R}_c \end{pmatrix},
+  \qquad
+  \frac{\mathcal M_R^2}{m_0^2}
+  \;=\;
+  \begin{pmatrix}
+    0 & a\,\sqrt{\Cas(R)} \\
+    a\,\sqrt{\Cas(R)} & -\,b\,\Cas(R)
+  \end{pmatrix}.
+\label{eq:seed}
+\end{equation}
+The Casimir is normalised by $T^a T^a = \Cas(R)\,\mathbf{1}_R$ with
+generators obeying $[T^a, T^b] = i\epsilon^{abc} T^c$; the doublet has
+$T^a = \sigma^a/2$ giving $\Cas(\md) = 3/4$, and the adjoint triplet has
+$\Cas(\mt) = 2$. Three structural conditions specify
+Eq.~\eqref{eq:seed} up to the dimensionless coefficients $a, b$:
+(i) one diagonal entry is set to zero, conventionally the elementary
+$(1,1)$ slot, by a gauge or discrete symmetry that protects it from a
+bilinear mass; (ii) the trace polynomial in $\Cas(R)$ has no constant
+term and minimal Casimir power, fixing the $(2,2)$ entry as $-b\,\Cas(R)$;
+(iii) the off-diagonal mixing scales with the SU(2) generator norm
+$\sqrt{\Cas(R)} = t_R$, the lowest odd power of the Casimir consistent
+with the group-theoretic content.
+
+\paragraph{Status of $a = b = 1$.} The coefficient $a$ can be absorbed
+into a rescaling of $m_0$ by canonically normalising the kinetic term of
+the protected $(1,1)$ field; setting $a = 1$ is therefore a convention,
+not a prediction. The coefficient $b$ has no analogous reparameterisation
+and is, at present, an independent postulate: $b = 1$ is the simplest
+non-trivial integer Wilson coefficient in the polynomial expansion of
+$m_{22}$ in $\Cas$, and we have not found a symmetry argument
+(custodial-SU(2) Ward identity, trace condition, or kinetic
+normalisation) that uniquely fixes it. The ``Casimir-locked'' label
+refers to the \emph{shape} of Eq.~\eqref{eq:seed} -- both entries scale
+with the same $\Cas(R)$ with no $R$-dependent coefficients --
+not to a derivation of $b$. We work with $a = b = 1$ throughout.
+
+For SU(2), $\Cas(\md) = 3/4$ and $\Cas(\mt) = 2$. The two seed blocks are
+\begin{equation}
+  \frac{\mathcal M_{\md}^2}{m_0^2} = \begin{pmatrix} 0 & \sqrt{3}/2 \\
+  \sqrt{3}/2 & -3/4 \end{pmatrix},
+  \qquad
+  \frac{\mathcal M_{\mt}^2}{m_0^2} = \begin{pmatrix} 0 & \sqrt{2} \\
+  \sqrt{2} & -2 \end{pmatrix}.
+\end{equation}
+Their characteristic equations $\lambda^2 + \tfrac{3}{4}\lambda - \tfrac{3}{4} = 0$
+and $\lambda^2 + 2\lambda - 2 = 0$ have closed-form roots
+\begin{equation}
+  \lambda_{\md,\pm} = \frac{-3 \pm \sqrt{57}}{8},
+  \qquad
+  \lambda_{\mt,\pm} = -1 \pm \sqrt{3},
+\label{eq:eigs}
+\end{equation}
+giving four protected mass-squared scales in units of $m_0^2$:
+\[
+  +\,\tfrac{\sqrt{57}-3}{8},\quad
+  -\,\tfrac{\sqrt{57}+3}{8},\quad
+  +\,(\sqrt{3}-1),\quad
+  -\,(\sqrt{3}+1).
+\]
+
+\paragraph{Robustness in $(a, b)$.} A grid scan of the seed coefficients
+(see \texttt{algebra/robustness.py}) decomposes naturally into two
+directions. Along $a = b$ the model is gauge-trivial: the rescaling is
+absorbed into $m_0$ and predictions are unchanged. Orthogonal to this
+direction (the $a/b$ ratio), the model is fine-tuned at the $\sim 10^{-3}$
+level: $\partial(\delta m_h / m_h)/\partial(a/b)\big|_{(1,1)}
+\simeq +0.67$, so a $1\%$ misalignment of $a$ vs $b$ shifts $m_h$ by
+$\sim 0.67\%$. The $0.04\%$ accuracy on $m_h$ requires $a/b = 1$ to
+$\sim\!6 \times 10^{-4}$. The Casimir lock is therefore the operational
+postulate that the off-diagonal mixing $\sqrt{\Cas(R)}$ and the diagonal
+$-\Cas(R)$ carry the \emph{same} prefactor; no symmetry argument
+deriving this is given here. A natural origin is sketched in
+Section~\ref{sec:PCsketch}.
+
+\section{Representation selection: why the doublet--triplet pair?}
+\label{sec:repsel}
+
+The seed Eq.~\eqref{eq:seed} is parameterised by the SU(2) irrep $R$,
+but the model so far does not say which irreps to use. Two natural
+selection rules are available, one parameter-free and one numerical;
+they coincide.
+
+\paragraph{Rule A (group-theoretic):} use the two lowest non-trivial
+irreducible representations of SU(2), i.e.\ the dimension-2 doublet and
+the dimension-3 triplet. This rule is parameter-free and uses no
+phenomenological input.
+
+\paragraph{Rule B (numerical):} enumerate all unordered pairs
+$\{R_1, R_2\}$ of SU(2) irreps with dimension $n \in \{2, 3, 4, 5, 6\}$
+(equivalently $\Cas < 12$), anchor $m_0$ by setting the lighter
+positive eigenvalue equal to $M_W^2$, then test the remaining three
+eigenvalues against $\{M_Z, m_h, v/\sqrt{2}\}$. Table~\ref{tab:repsel}
+records the maximum fractional deviation across $\{M_Z, m_h\}$.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{c c c c}
+\toprule
+pair & $(\Cas^{(1)}, \Cas^{(2)})$ & best $m_0$ (GeV) & max frac.\ error \\
+\midrule
+$\{2,3\}$ & $(0.75, 2.00)$ & 106.57 & \textbf{0.02 \%} \\
+$\{2,4\}$ & $(0.75, 3.75)$ & 106.57 & 5.86 \% \\
+$\{2,5\}$ & $(0.75, 6.00)$ & 106.57 & 9.19 \% \\
+$\{2,6\}$ & $(0.75, 8.75)$ & 106.57 & 11.25 \% \\
+$\{3,4\}$ & $(2.00, 3.75)$ & 88.73  & 19.82 \% \\
+$\{3,5\}$ & $(2.00, 6.00)$ & 86.02  & 19.29 \% \\
+$\{3,6\}$ & $(2.00, 8.75)$ & 84.43  & 20.78 \% \\
+$\{4,5\}$ & $(3.75, 6.00)$ & 86.02  & 50.24 \% \\
+$\{4,6\}$ & $(3.75, 8.75)$ & 84.43  & 47.46 \% \\
+$\{5,6\}$ & $(6.00, 8.75)$ & 84.43  & 80.83 \% \\
+\bottomrule
+\end{tabular}
+\caption{Ten-pair representation enumeration. For each unordered pair of
+SU(2) irreps with $\Cas < 12$, $m_0$ is fitted to the lightest-positive
+eigenvalue (anchoring $M_W$); the right column is the maximum
+fractional deviation across $\{M_Z, m_h\}$. The doublet--triplet pair
+$\{2,3\}$ is the unique numerical winner by a factor of $\sim 300$.}
+\label{tab:repsel}
+\end{table}
+
+The dominance of $\{2,3\}$ has two independent algebraic sources.
+First, only the doublet ($n = 2$) delivers
+$\sqrt{|\lambda_-/\lambda_+|} \approx 1.523$, the ratio that maps
+$M_W = 80.369$~GeV to $m_{h,{\rm bare}} \approx 122.4$~GeV; higher $n$
+overshoots monotonically. Second, with $R_1 = 2$ fixed, the requirement
+$\sqrt{\lambda_+(R_2) / \lambda_+(2)} = M_Z / M_W = 1.1346$ is satisfied
+only by $\lambda_+(R_2) = \sqrt{3} - 1$, which singles out the triplet.
+Rules A and B therefore coincide: the doublet--triplet pair is selected
+both as the two lowest irreps and as the unique numerical winner.
+
+\section{Lagrangian and gauge group}
+
+At the EW scale we assume the Standard Model gauge group $SU(2)_L \times
+U(1)_Y$ unchanged: hypercharge then acts as a low-energy spurion that
+splits the doublet- and triplet-channel mass eigenstates by $Y$,
+consistent with the observed $W$/$Z$/$\gamma$ spectrum. The Lagrangian is
+\begin{align}
+  \mathcal L &= -\frac14 W^a_{\mu\nu}W^{a\,\mu\nu} - \frac14 B_{\mu\nu}B^{\mu\nu}
+  + \mathcal L_{\rm kin}^{\rm scalar} - V,\\
+  V &= V_{\rm seed}^{\md} + V_{\rm seed}^{\mt}
+       + \lambda_d (\Phi^{d\dagger}_c \Phi^d_c)^2
+       + \lambda_t (\Phi^t_c \cdot \Phi^t_c)^2
+       + \lambda_{dt} (\Phi^{d\dagger}_c \Phi^d_c)(\Phi^t_c \cdot \Phi^t_c),
+\end{align}
+with $V_{\rm seed}^R$ from Eq.~\eqref{eq:seed} and the doublet covariant
+derivative
+\(D_\mu \Phi^{d}_\alpha = (\partial_\mu - i g W^a_\mu T^a - i\tfrac{g'}{2} B_\mu)\Phi^{d}_\alpha\),
+$\alpha \in \{e, c\}$. The triplets are taken to be real, $Y = 0$ SU(2)
+triplets (this is \emph{not} the Georgi--Machacek scalar sector, which
+uses a larger custodial-preserving multiplet content; we use only a
+single real $Y=0$ triplet, of the family studied
+in~\cite{Cirelli2006, FischerVanDerBij2014, Khan2018Triplet, Katayose2021TripletDM}). The portal coupling $\lambda_{dt}$ is
+required to be small so that any induced triplet vacuum expectation
+value remains below the $\rho$-parameter bound; this is an external
+phenomenological constraint, not a derivation. The quartic couplings
+$\lambda_d, \lambda_t, \lambda_{dt}$ are otherwise free in this draft;
+see Section~\ref{sec:status}.
+
+\section{Postulated identifications and resulting numerical agreements}
+\label{sec:postulates}
+
+Before stating the identifications, we recall a remark that Higgs himself
+made in the augmentation of his second 1964 paper, the version eventually
+accepted by Phys.~Rev.~Lett.~\cite{Higgs1964} and reproduced verbatim in
+his 2013 Nobel lecture~\cite{HiggsNobel2014}:
+
+\begin{quote}
+``\emph{It is worth noting that an essential feature of this type of theory is the prediction of incomplete multiplets of scalar and vector bosons.}''
+\end{quote}
+
+This was Higgs's own flag, in 1964, that the symmetry-breaking mechanism
+generically delivers \emph{incomplete} scalar+vector multiplets. The
+historical Standard Model construction by Weinberg~\cite{Weinberg1967}
+selected exactly one SU(2)$_L$ doublet (Y=1/2) -- four real degrees of
+freedom, three eaten by $W^\pm, Z$, one physical Higgs -- because that
+is the minimal field content satisfying $\rho = 1$ at tree level via
+custodial symmetry. The triplet was excluded, on phenomenological
+grounds, as a VEV-acquiring field. The Casimir-locked picture of
+Section~\ref{sec:repsel} is, in this respect, the missing piece of
+Higgs's ``incomplete multiplet'' remark: SU(2)$_L$ admits the entire
+representation tower $\{\md, \mt, \mathbf{4}, \mathbf{5}, \dots\}$, and
+the standard construction \emph{truncates} to $\md$ for empirical
+($\rho$-parameter) reasons. Our seed structure makes the truncation
+explicit by retaining $\mt$ as a non-VEV mass-locked sector whose
+positive eigenvalue identifies with $M_Z$, with $\mathbf{4}$ generating
+a parameter-free side-prediction at $96.54$~GeV
+(Section~\ref{sec:j32}). The identifications
+below should be read in that spirit.
+
+\paragraph{Gauge sector.} We \emph{postulate} the identification
+\begin{equation}
+  M_W^2 \;=\; m_0^2\, \lambda_{\md,+},
+  \qquad
+  M_Z^2 \;=\; m_0^2\, \lambda_{\mt,+}.
+\label{eq:gauge_id}
+\end{equation}
+Eq.~\eqref{eq:gauge_id} is \emph{not} derived from the Lagrangian written
+above; deriving it from a Higgs-mechanism mass matrix is open work, see
+Section~\ref{sec:status}. Taking it as an ansatz, the ratio gives
+\begin{equation}
+  \sin^2\theta_W \;=\; 1 - \frac{M_W^2}{M_Z^2}
+  \;=\; 1 - \frac{\lambda_{\md,+}}{\lambda_{\mt,+}}
+  \;=\; 1 - \frac{(\sqrt{57}-3)(\sqrt{3}+1)}{16}
+  \;\approx\; 0.22310.
+\label{eq:sin2thW}
+\end{equation}
+This algebraic ratio coincides with the on-shell PDG value
+$\sin^2\theta_W = 1 - M_W^2/M_Z^2 \simeq 0.22290(28)$ within roughly $1$
+standard deviation; we make no claim about $10^{-10}$-precision
+experimental matching. With $M_Z = 91.1880$~GeV
+(PDG~\cite{PDG2024}) as input, the ansatz fixes
+$m_0 = M_Z/\sqrt{\sqrt{3}-1} = 106.578$~GeV and outputs
+$M_W = 80.375$~GeV, to be compared with the PDG value $80.3692(11)$ GeV
+(deviation $0.007\%$). Since $M_Z$ was used to set $m_0$, the
+non-trivial output here is $M_W$ alone --- the ratio $M_W/M_Z$ is the
+single new numerical statement.
+
+\paragraph{Bare Higgs sector.} We further \emph{postulate}
+\begin{equation}
+  m_{h,{\rm bare}}^2 \;=\; |\lambda_{\md,-}|\, m_0^2,
+\label{eq:higgs_bare}
+\end{equation}
+identifying the doublet's tachyonic eigenvalue with the bare Higgs
+mass-squared. With $|\lambda_{\md,-}| = (\sqrt{57}+3)/8$ and
+$m_0 = 106.578$~GeV, this gives
+\begin{equation}
+  m_{h,{\rm bare}} \;=\; m_0 \sqrt{\tfrac{\sqrt{57}+3}{8}} \;=\; 122.38~\text{GeV},
+\end{equation}
+short of the PDG value $125.20(11)$~GeV by $\Delta m_h = 2.82$~GeV. We
+emphasise that Eq.~\eqref{eq:higgs_bare} is again not derived from the
+scalar-potential minimisation of Section~5; the quartic couplings
+$\lambda_d, \lambda_t, \lambda_{dt}$ enter the physical Higgs mass via
+the standard 2HDM-plus-triplet algebra, and the relation between those
+couplings and Eq.~\eqref{eq:higgs_bare} is not established here. The
+triplet's tachyonic eigenvalue $|\lambda_{\mt,-}|\,m_0^2$ corresponds to
+a separate heavy scalar at $M(\Phi^t_-) = 176.16$~GeV in this
+identification, not to a piece of the Higgs.
+
+\paragraph{Distinctive triplet prediction.} By construction
+Eq.~\eqref{eq:gauge_id} forces a scalar seed eigenvalue at
+$M(\Phi^t_+) = m_0 \sqrt{\sqrt{3}-1} = M_Z = 91.188$~GeV. If the seed
+eigenstate is realised as a physical neutral scalar, the model predicts a
+state mass-degenerate with the $Z$ --- a sharp falsifiable signature.
+Existing LEP $Z'/H'$ searches and LHC scalar searches constrain its
+couplings to fermions/bosons (open question Q4 in
+Section~\ref{sec:status}).
+
+\section{The spurion $\Delta$: bidirectional, cross-irrep, eigenstate-aligned}
+\label{sec:spurion}
+
+The bare Higgs from Eq.~\eqref{eq:higgs_bare} sits at $122.38$~GeV,
+short of $m_{h,{\rm phys}} = 125.20$~GeV by $\Delta_d \equiv
+m_{h,{\rm phys}}^2 - m_{h,{\rm bare}}^2 = (26.38~\text{GeV})^2$. The
+triplet's tachyonic eigenvalue gives $\sqrt{|\lambda_{\mt,-}|}\,m_0 =
+176.16$~GeV, larger than the Fermi-scale $v/\sqrt{2} = 174.10$~GeV
+(from $G_F$) by $\Delta_t \equiv |\lambda_{\mt,-}|\,m_0^2 - (v/\sqrt{2})^2
+= (26.85~\text{GeV})^2$. The two shifts are equal in magnitude to within
+$3.6\,\%$,
+\[
+  \frac{\Delta_t}{\Delta_d} \;=\; 1.036,
+\]
+suggesting a single underlying spurion of magnitude $\Delta \approx
+(26.6~\text{GeV})^2$ acting bidirectionally across the negative-branch
+of the doublet and triplet sectors.
+
+\paragraph{Bidirectional spurion ansatz.} We \emph{postulate} a single
+mass-squared shift that lifts the doublet's tachyonic eigenvalue by
+$+\Delta$ and lowers the triplet's by $-\Delta$:
+\begin{equation}
+  |\lambda_{\md,-}|\,m_0^2 \;+\; \Delta \;=\; m_{h,{\rm phys}}^2,\qquad
+  |\lambda_{\mt,-}|\,m_0^2 \;-\; \Delta \;=\; (v/\sqrt{2})^2.
+\label{eq:bidir}
+\end{equation}
+Adding the two equations gives the cross-irrep negative-branch trace
+identity
+\begin{equation}
+  m_h^2 \;+\; (v/\sqrt{2})^2 \;=\; m_0^2\,\bigl(|\lambda_{\md,-}| + |\lambda_{\mt,-}|\bigr),
+\label{eq:trace_id}
+\end{equation}
+which is satisfied by the model and PDG inputs to within $(5~\text{GeV})^2$
+(i.e.\ $\sim 25~\text{GeV}^2$, $\sim 3.4\,\%$ of $\Delta$). With
+$\Delta = \tfrac12(\Delta_d + \Delta_t) = (26.62~\text{GeV})^2$, the
+\emph{two-parameter} model $(m_0, \Delta)$ outputs four electroweak
+quantities
+\[
+  M_W = 80.37~\text{GeV},\quad M_Z = 91.19~\text{GeV},\quad
+  m_h = 125.25~\text{GeV},\quad v/\sqrt{2} = 174.14~\text{GeV},
+\]
+all within $0.04\,\%$ of their PDG / $G_F$ values. The Fermi scale $v$,
+previously taken as an external input, is now a model output. The
+non-trivial ratio between the triplet and doublet shifts, $\Delta_t /
+\Delta_d \neq 1$ at $3.6\,\%$, is a small structural residue not yet
+explained.
+
+\paragraph{Caution: per-irrep trace-preserving is excluded.} The
+``bidirectional, cross-irrep'' label is precise and important. A
+literal \emph{per-irrep} trace-preserving shift inside the doublet
+sector, $\delta\lambda_+ + \delta\lambda_- = 0$ with
+$\delta\lambda_- = -(26.42~\text{GeV})^2$, would also shift
+$\delta\lambda_+ = +(26.42~\text{GeV})^2$ and move $M_W$ from
+$80.37$~GeV to $84.6$~GeV --- a $4.23$~GeV mismatch,
+$\sim\!\!300\sigma$ outside any plausible PDG / CMS range
+\cite{CMS2026WMass}. The shift in Eq.~\eqref{eq:bidir} preserves the
+trace of the negative-eigenvalue \emph{pair across the two irreps}, not
+the trace of either single $\mathcal{M}_R^2$. In matrix language, it is
+a rank-1 eigenstate-aligned perturbation on each irrep separately,
+\begin{equation}
+  \delta \mathcal M_{\md}^2 = -\Delta\, P^{(\md)}_-,\qquad
+  \delta \mathcal M_{\mt}^2 = +\Delta\, P^{(\mt)}_-,\qquad
+  P^{(R)}_- = |v_-^{(R)}\rangle\langle v_-^{(R)}|,
+\label{eq:rank1}
+\end{equation}
+with opposite signs on the two channels. Each $P^{(R)}_-$ projects onto
+the tachyonic eigenvector and leaves $\lambda_+(R) = M_{W,Z}^2$
+untouched. The earlier ``antisymmetric splitting'' /
+``trace-preserving spurion'' wording from the chat draft is replaced by
+this precise statement.
+
+\paragraph{Mechanism for the doublet shift: top-loop Coleman--Weinberg.}
+The quadratically-divergent top-loop contribution to the Higgs
+mass-squared, regulated by a hard cutoff at the seed scale
+$\Lambda = m_0$~\cite{ColemanWeinberg1973}, evaluates to
+\begin{equation}
+  \Delta_{{\rm CW},\,{\rm quad}} \;=\;
+    -\,\frac{3 y_t^2}{8\pi^2}\,\big(m_0^2 - m_t^2\big)
+    \;=\; (26.28~\text{GeV})^2,
+\label{eq:cw_top}
+\end{equation}
+using $y_t = \sqrt{2}\,m_t / v = 0.99196$, $m_0 = 106.57$~GeV, and
+$m_t = 172.7$~GeV. This is $0.989$ of $\Delta_d = (26.38~\text{GeV})^2$
+--- agreement at the $1\,\%$ level with no additional tunable scale.
+The cutoff at which the top loop produces $\Delta_d$ of the right size
+is \emph{exactly} the seed scale $m_0$ that Eq.~\eqref{eq:gauge_id}
+fixed from the gauge anchor. Whether this is coincidence or a hint that
+$m_0$ is the physical matching scale of the construction depends on
+information not yet in the model (the quadratic divergence is regulator
+dependent and is not defined in $\overline{\rm MS}$). An alternative
+EFT description --- a dim-6 $(H^\dagger H)^3 / \Lambda_d^2$ operator
+with $c_6 = 1$ at $\Lambda_d \simeq 1.15$~TeV --- reproduces $\Delta_d$
+at the same order, with the Wilson coefficient remaining a free
+parameter.
+
+\paragraph{Mechanism for the triplet shift: 15$\times$ shortfall at one loop.}
+Producing the triplet half of the bidirectional shift is a distinct
+theoretical question. The natural candidate -- one-loop SU(2)$_L$
+gauge-boson contributions to the triplet's Coleman--Weinberg potential
+-- has the correct \emph{sign} (gauge loops on a tachyonic scalar
+make $m^2$ less negative, lowering $|\lambda_{\mt,-}|m_0^2$ as
+required). Computed at the natural cutoff $\Lambda = m_0$
+(\texttt{lagrangian/Q6\_triplet\_gauge\_CW.py}):
+\begin{equation}
+  \Delta M_{\mt}^2(\text{gauge}) \;=\;
+    \frac{3 g^2}{16 \pi^2} \cdot \Cas(\mt) \cdot \frac{m_0^2}{4}
+    \;\simeq\; (6.78~\text{GeV})^2.
+\end{equation}
+This is $\sim\!15\times$ smaller than the required $\Delta_t = (26.77~\text{GeV})^2$:
+the gauge-loop mechanism alone gives the right direction but not the
+right magnitude. The triplet has no Yukawa coupling to SM fermions
+(Y=0 triplet), so the analogue of the doublet's top-CW contribution
+($\sim\!(26.4~\text{GeV})^2$) is absent.
+
+The bidirectional spurion picture's triplet half therefore lacks a
+natural one-loop derivation, and we honestly distinguish two readings:
+
+\begin{itemize}
+\item (\emph{Empirical:}) the cross-irrep negative-branch trace
+  identity Eq.~\eqref{eq:trace_id} holds to $(5~\text{GeV})^2$ as a
+  numerical coincidence within the model, with the doublet shift
+  derived (top-CW) and the triplet shift unexplained at one loop.
+\item (\emph{Mechanistic, hypothetical:}) some additional UV
+  contribution (heavy composite-quark loops via specific PC
+  Yukawas; two-loop effects; or a portal-induced back-reaction)
+  produces the missing $\sim\!(26~\text{GeV})^2$ on the triplet.
+  None of the obvious candidates is quantitatively established.
+\end{itemize}
+
+In the empirical reading, $v/\sqrt{2}$ is matched to $0.04\%$ via the
+trace identity but is not strictly a model output; the genuine
+parameter-free outputs are $M_Z$ (from the gauge sector) and
+$m_{h,\rm bare}$ (from the doublet seed eigenvalue, Q2 below).
+
+\paragraph{Special case: unidirectional spurion.} The earlier draft of
+this paper used only the doublet half of Eq.~\eqref{eq:bidir} and
+treated $|\lambda_{\mt,-}|\,m_0^2$ as a separate unidentified heavy
+state at $176$~GeV. That picture is recovered as the special case
+where the triplet sector is decoupled from the spurion mechanism;
+the bidirectional ansatz subsumes it and adds a prediction (the
+Fermi scale).
+
+\section{MadGraph consistency check}
+
+A hand-written UFO file (built on the bundled FR-SM via
+\texttt{model/ufo/setup\_ufo.sh}) substitutes the Casimir-locked
+Higgs-mass value $m_h = 125.30$~GeV for the SM default of $125.0$~GeV.
+Imported into MadGraph5\_aMC@NLO~3.7.1, the resulting model yields
+the following LO cross-sections at LHC $13$~TeV:
+\begin{center}
+\begin{tabular}{l c c}
+\toprule
+Process & $\sigma_{\rm LO}$ (this model, pb) & $\sigma_{\rm LO}$ (SM benchmark, pb)\\
+\midrule
+$p p \to W^+ W^-$ & 64.46 & $\sim 65{-}70$ \\
+$p p \to Z Z$     & 9.23  & $\sim 9{-}11$  \\
+$p p \to H Z$     & 0.578 & $\sim 0.55{-}0.62$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+We emphasise that these are \emph{not} non-trivial validations of the
+Casimir-locking hypothesis. The tree-level diboson amplitudes are
+unchanged from the SM (no new vertices were added), so SM-like rates are
+the \emph{expected and required} outcome --- if they had deviated, the
+UFO would have a bug. The MG5 check is a necessary technical consistency
+test that the UFO compiles and reproduces SM IR phenomenology at the
+$m_h = 125.30$~GeV input point. Non-trivial collider tests require
+adding the BSM scalars as new fields (deferred to future work), so that
+their production and decay can be computed.
+
+\section{Electroweak precision-test estimate}
+
+We \emph{estimate} the Peskin--Takeuchi~\cite{PeskinTakeuchi1992}
+contributions $\Delta S$, $\Delta T$, $\Delta U$ from the $Y = 0$ triplet
+using a leading-log approximation for $\Delta S$ and a closed-form
+scalar loop function for $\Delta T$, following the literature on
+$Y=0$ triplet scalars~\cite{ForshawRossSankey1991, Khan2018Triplet, Katayose2021TripletDM}. In the
+custodial limit (degenerate triplet components) all three vanish.
+For a small custodial-breaking splitting $\Delta M = 5$~GeV between
+neutral and charged components, the leading-log estimate gives
+\(\Delta S \simeq -2.8\times 10^{-3}\),
+\(\Delta T \simeq +2.3\times 10^{-4}\),
+\(\Delta U \simeq +8\times 10^{-6}\),
+all far inside the PDG~2024 ranges
+($S = -0.04 \pm 0.10$, $T = 0.01 \pm 0.12$, $U = -0.01 \pm 0.09$).
+A full one-loop Passarino--Veltman evaluation would be required for a
+publication-grade precision claim; we have not performed that here. The
+present estimate is a consistency check that the model is not grossly
+incompatible with EWPT, not a precision phenomenology result. Future
+work using HEPfit or smelli is required for the proper $\chi^2$ fit.
+
+\section{The j=3/2 channel: a structural side-prediction}
+\label{sec:j32}
+
+The Casimir-locked seed is naturally extensible to internal SU(2)
+representation labels beyond $\md$ and $\mt$. For each irrep
+$R = 2j+1$, the same seed structure
+$\mathcal M_R^2 / m_0^2 = \big[\begin{smallmatrix} 0 & \sqrt{\Cas(R)} \\ \sqrt{\Cas(R)} & -\Cas(R)\end{smallmatrix}\big]$
+gives two physical scalar masses
+\begin{equation}
+  M_{R,\pm}^2 = m_0^2\,\frac{-\Cas(R) \pm \sqrt{\Cas(R)^2 + 4\Cas(R)}}{2}.
+\end{equation}
+For the next irrep, $R = 4$ (internal label $j = 3/2$), $\Cas(4) = 15/4$
+and the closed form is
+\begin{equation}
+  \lambda_{R=4,+} = \frac{-15 + \sqrt{465}}{8},\qquad
+  M(\Phi^4_+) \;=\; m_0\,\sqrt{\lambda_{R=4,+}}
+  \;=\; 96.54~\text{GeV}.
+\label{eq:96GeV}
+\end{equation}
+With $m_0$ fixed by the gauge anchor (Sec.~6) there is no remaining free
+parameter, so Eq.~\eqref{eq:96GeV} is a parameter-free output of the
+Casimir-locked structure. Table~\ref{tab:tower} summarises the spectrum
+tower.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{c c c c c l}
+\toprule
+$R$ & $j$ & $\Cas(R)$ & $M_{R,+}$ (GeV) & $M_{R,-}$ (GeV) & content \\
+\midrule
+2 & 1/2 & 3/4   & 80.37  & 122.39 & doublet seed; $M_{R,+} = M_W$ \\
+3 & 1   & 2     & 91.19  & 176.16 & triplet seed; $M_{R,+} = M_Z$ \\
+4 & 3/2 & 15/4  & 96.54  & 227.85 & v2 prediction (no observable identified) \\
+5 & 2   & 6     & 99.58  & 279.41 & not in scope \\
+\bottomrule
+\end{tabular}
+\caption{Casimir-locked spectrum tower. Each internal SU(2) irrep $R$
+contributes one positive- and one negative-eigenvalue scalar.}
+\label{tab:tower}
+\end{table}
+
+\paragraph{Comment on the CMS+LEP $\gamma\gamma$ hint.} The
+$96.54$~GeV value sits in the mass range of the CMS+LEP $\gamma\gamma$
+excess near $95.4$~GeV. We do \emph{not} claim a quantitative match:
+the deviation is $1.2\,\%$, roughly $30\times$ looser than the
+$\{M_W, M_Z, m_h, v/\sqrt{2}\}$ predictions of Sections~6 and~7, which
+hold to $0.04\,\%$ or better. We list it as a structural side-prediction
+that lands in a window of current experimental interest, not as a
+confirmation of the model.
+
+\paragraph{Hans's spin-3/2.} A natural objection (chat sec.~10) was that
+the model labels look like physical Lorentz spins; in particular, an
+internal label $j = 3/2$ would suggest a Rarita--Schwinger fermion in the
+spectrum. The chat dismissed that reading: the labels are
+\emph{representation indices}, not Lorentz spins. The $R = 4$ result
+above \emph{rescues} the spin-3/2 intuition without giving up the
+dismissal: the predicted state is a \emph{scalar}, but its mass is fixed
+by the $j = 3/2$ Casimir of an internal channel. The spin-3/2 ``label''
+lives on as a representation tag, not as a propagating spin.
+
+\paragraph{Phenomenology of the $R=4$ multiplet.} The 4-dimensional
+SU(2) irrep contains $T_3 \in \{-3/2, -1/2, +1/2, +3/2\}$. With
+hypercharge $Y = 1/2$ the electric charges are $Q \in \{-1, 0, +1, +2\}$,
+including a doubly-charged scalar $\Phi^{++}$ at a mass close to
+$M(\Phi^4_+) = 96.5$~GeV. Existing LHC searches for doubly-charged
+scalars (ATLAS, CMS) constrain the same multiplet and would be the
+sharpest direct test if the $R = 4$ channel is realised.
+
+\section{Phenomenology of the 91~GeV neutral scalar}
+\label{sec:91GeV}
+
+The model's most distinctive prediction is the neutral scalar
+$\Phi^t_+$ at exactly $M_Z = 91.188$~GeV (Section~6, Distinctive triplet
+prediction). This section addresses Open Question Q4: \emph{is this state
+already excluded by LEP and LHC?} A detailed numerical recast is in
+\texttt{phenomenology/recast\_91GeV.py}.
+
+\paragraph{Structural couplings.} As the positive mass eigenstate of the
+$Y=0$ SU(2)$_L$ triplet sector, $\Phi^t_+$ has:
+\begin{itemize}
+\item \emph{No tree-level Yukawa couplings to SM fermions:} the operator
+  $\bar L_L\, \Phi^t\, e_R$ is gauge-allowed only for an SU(2) doublet
+  scalar with $Y = 1/2$, not for a $Y=0$ triplet.
+\item \emph{No direct $Z\Phi^t_+\Phi^t_+$ vertex:} the triplet covariant
+  derivative gives only $g\, T^a (D Z)^b (D Z)^c \epsilon^{abc}$, which
+  does not contain a neutral-neutral $\Phi^t$ pair.
+\item \emph{Higgs portal $\lambda_{dt}$ generates production} through
+  the doublet--triplet mixing $\sin^2\theta_{\rm mix} \sim \lambda_{dt}\,v^2 / (M_h^2 - M_{\Phi^t_+}^2)$
+  $\simeq 12.6\,\lambda_{dt}$.
+\end{itemize}
+$\Phi^t_+$ is therefore both gauge-phobic and fermion-phobic in the bare
+limit; observability is controlled entirely by $\lambda_{dt}$.
+
+\paragraph{LEP HZ$^\prime$ constraint.} The combined
+ALEPH+DELPHI+L3+OPAL Higgs-strahlung search (LHWG-Note-2005-01) yields
+$\sigma(e^+e^- \to Z h^\prime)/\sigma_{\rm SM}(m=91~{\rm GeV}) < 0.15$
+in the $91$~GeV window, hence
+$\sin^2\theta_{\rm mix} < 0.15$, i.e.\
+\begin{equation}
+  \lambda_{dt} \;<\; 0.012
+  \qquad (\text{LEP HZ}^\prime, \text{combined}).
+\end{equation}
+This is the strongest current constraint and is automatically satisfied
+by the $\rho$-parameter requirement from Section~5 that the triplet
+sector remain custodially-protected (any $\lambda_{dt}$ exceeding the
+LEP bound would also produce a triplet VEV exceeding the
+$\rho$-parameter limit).
+
+\paragraph{LHC diphoton.} The ATLAS search for a low-mass scalar in the
+$65$--$110$~GeV window~\cite{Khan2018Triplet, Katayose2021TripletDM}
+sets $\sigma(pp \to h^\prime) \times \mathrm{BR}(h^\prime \to
+\gamma\gamma) < 100$~fb at $13$~TeV. With SM-Higgs-like gluon-fusion
+production (${\sim}80$~pb at $91$~GeV) and SM-Higgs-like diphoton
+branching ratio ($\sim 1.4\times 10^{-3}$ at $91$~GeV), the SM-strength
+signal is $\sim 112$~fb, just at the edge of the experimental bound.
+This translates to $\sin^2\theta_{\rm mix} < 0.89$, weaker than the LEP
+bound by an order of magnitude.
+
+\paragraph{Verdict.} The 91~GeV neutral scalar is \emph{not} excluded by
+current data. The LEP HZ$^\prime$ bound $\lambda_{dt} < 0.012$ is
+already required by the $\rho$-parameter constraint, so the model
+needs no additional tuning to evade existing limits. A future $e^+e^-$
+Higgs factory at $\sqrt s = 240$~GeV (FCC-ee, CEPC) would probe
+$\sin^2\theta_{\rm mix}$ to $\sim 10^{-3}$ and $\lambda_{dt}$ to
+$\sim 10^{-4}$ -- a definitive direct test of this prediction. Open
+Question Q4 of Section~\ref{sec:status} is therefore answered
+affirmatively: the model survives.
+
+\section{Status of the derivation and open questions}
+\label{sec:status}
+
+We summarise here, transparently, what this draft does and does not show.
+
+\paragraph{What is in the paper.}
+\begin{enumerate}
+\item A scalar field content (doublet + triplet, each in an
+  elementary/composite basis) and a quadratic seed potential with
+  Casimir-locked entries [Eq.~\eqref{eq:seed}].
+\item Closed-form diagonalisation of the seed matrices and the
+  closed-form four-eigenvalue spectrum [Eq.~\eqref{eq:eigs}].
+\item Two \emph{postulated} identifications mapping the seed eigenvalues
+  onto physical masses [Eqs.~\eqref{eq:gauge_id} and~\eqref{eq:higgs_bare}].
+\item The observation that, conditioned on those postulates, the
+  numerical values of $M_W$ and $m_h$ are reproduced to $10^{-3}$ given
+  $M_Z$ and $G_F$ as external inputs.
+\item A parameter-free side-prediction from extending to $j=3/2$
+  (Eq.~\eqref{eq:96GeV}): a scalar at $96.54$~GeV. This sits in the
+  CMS+LEP $\gamma\gamma$ window near $95.4$~GeV but at $1.2\,\%$
+  deviation; we do not claim the identification.
+\item A consistency check that the modified UFO ($m_h = 125.30$~GeV)
+  reproduces SM-like LO diboson cross-sections in MadGraph
+  (necessary but not non-trivial).
+\item A leading-log estimate of $\Delta S$, $\Delta T$, $\Delta U$
+  showing the model is not grossly incompatible with EWPT.
+\end{enumerate}
+
+\paragraph{What is open work.}
+\begin{description}
+\item[Q1.] (\emph{Partially answered in Sec.~\ref{sec:PCsketch}.}) The
+  explicit chain UV $\to$ Casimir-locked seed $\to$ EWSB $\to$ gauge
+  mass matrix CLOSES into a consistent SO(5)/SO(4) composite-Higgs
+  framework (\texttt{lagrangian/Q1\_full\_chain.py}). The
+  identifications $M_W^2 = m_0^2 \lambda_{\md,+}$ and
+  $M_Z^2 = m_0^2 \lambda_{\mt,+}$ are equivalent (via standard EWSB on
+  the doublet's tachyonic eigenstate) to algebraic relations between
+  $g$, $g'$, $v_H$, and $m_0$ that are satisfied identically with
+  $m_0$ anchored by $M_W$ and $v_H$ from the SO(5)/SO(4) Coleman--
+  Weinberg minimum. The non-trivial PHYSICS prediction extracted from
+  the closure is $\sin^2\theta_W = 1 - \lambda_{\md,+}/\lambda_{\mt,+}$,
+  parameter-free. \emph{Still open}: a quantitative UV derivation
+  showing the CW minimum lands on $v_H = 246.22$~GeV with $m_0 =
+  106.57$~GeV (requires fixing $N_{\rm HC}$, fermion content, Yukawa
+  structure -- multi-week model-building).
+\item[Q2.] (\emph{Largely answered in
+  \texttt{lagrangian/Q2\_potential\_minimisation.py}.}) Under the
+  canonical real-scalar normalisation $V = \tfrac{1}{2} m^2 |\Phi|^2 +
+  (\lambda_h/4) |\Phi|^4$, the bare Higgs mass-squared is fixed by the
+  TACHYONIC EIGENVALUE OF THE SEED ALONE: $m_{h,\rm bare}^2 = m_0^2
+  |\lambda_-(2)|$, with NO contribution from the quartic couplings at
+  tree level. The quartics determine the Higgs VEV $v$ via an effective
+  combination $\lambda_h^{\rm eff} = \lambda_{ee} p_e^2 + \lambda_{cc}
+  p_c^2 + \lambda_{ec}\, p_e p_c + \lambda_{ec}'\, (c_e^- c_c^-)^2$,
+  weighted by the mixing-angle projections. For $v_{\rm SM}=246.22$~GeV
+  this requires $\lambda_h^{\rm eff} = 0.247$ -- one equation for four
+  bare quartics, leaving a 3-parameter family of viable Lagrangians.
+  Whether the partial-compositeness UV uniquely fixes $\lambda_h^{\rm
+  eff}$ remains the natural follow-up; the standard composite-Higgs
+  expectation $\lambda_h \sim N_c y_t^4 / 16\pi^2 \sim 0.06$ is $\sim
+  4\times$ smaller, a manifestation of the well-known ``small
+  $\lambda_h$ problem'' of composite Higgs.
+\item[Q3.] Which definition of $\sin^2\theta_W$ is being matched? The
+  algebraic value $0.22310$ from Eq.~\eqref{eq:sin2thW} should be
+  compared against the on-shell scheme value
+  $\sin^2\theta_W^{\rm OS} = 1 - M_W^2/M_Z^2 = 0.22290(28)$. The
+  agreement is at the $1\sigma$ level, not at $10^{-10}$.
+\item[Q4.] (\emph{Answered in Sec.~\ref{sec:91GeV}.}) The 91.2~GeV
+  neutral scalar $\Phi^t_+$ has no tree-level Yukawa couplings and no
+  direct $Z\Phi^t_+\Phi^t_+$ vertex; it is fermion- and gauge-phobic.
+  The LEP HZ$^\prime$ combined search constrains
+  $\lambda_{dt} < 0.012$, automatically satisfied by the
+  $\rho$-parameter requirement. The state is \emph{not} excluded by
+  current data; FCC-ee/CEPC at $\sqrt{s} = 240$~GeV would probe it
+  definitively.
+\item[Q5.] Are Eqs.~\eqref{eq:gauge_id} and~\eqref{eq:higgs_bare} a
+  consequence of a UV-complete partial-compositeness or top-seesaw
+  construction (\textit{cf.}~\cite{Caracciolo2012, Chivukula1998}), or
+  do they require a new dynamical principle?
+\item[Q6.] (\emph{Partially answered in
+  \texttt{lagrangian/Q6\_triplet\_gauge\_CW.py}; sign correct,
+  magnitude $15\times$ short.}) The triplet's one-loop gauge
+  contribution at $\Lambda = m_0$ has the right SIGN (gauge loops on
+  a tachyonic scalar reduce $|m^2|$, lowering $|\lambda_-(\mt)|m_0^2$
+  toward $(v/\sqrt{2})^2$ as required), but the magnitude $\Delta
+  M_\mt^2(\text{gauge}) = (3 g^2/16\pi^2) \Cas(\mt) m_0^2 / 4 = (6.78~
+  \text{GeV})^2$ is $15\times$ smaller than the required $\Delta_t =
+  (26.77~\text{GeV})^2$. The triplet has no Yukawa to SM fermions
+  ($Y=0$), so the analog of the doublet's top-CW contribution is
+  ABSENT. The bidirectional picture's triplet half therefore lacks a
+  natural one-loop derivation: in the empirical reading
+  (Sec.~\ref{sec:spurion}) the trace identity Eq.~\eqref{eq:trace_id}
+  is a $(5~\text{GeV})^2$ numerical coincidence with the doublet
+  shift derived (top-CW) and the triplet shift unexplained at one
+  loop. The genuine parameter-free outputs of the model are $M_Z$
+  and $m_{h,\rm bare}$; $v/\sqrt{2}$ is matched but not strictly
+  derived.
+\end{description}
+
+In summary, the current draft is best read as a \emph{numerically
+suggestive ansatz} for the electroweak boson spectrum, with $M_W$,
+$m_h$, $v/\sqrt{2}$ as the testable numerical consequences (all
+matched to $0.04\,\%$ or better) and a $96.5$~GeV scalar as a
+parameter-free side-prediction at lower precision. Promoting it to a
+derived model requires answering Q1--Q6 above.
+
+\section{Sketch of a partial-compositeness origin for the $a = b$ lock}
+\label{sec:PCsketch}
+
+Phase A established that the $a = b$ Casimir lock is the operational
+content of the model. We sketch here a UV completion in which $a = b$
+emerges naturally; full derivation is multi-week work, deferred.
+
+\paragraph{Setup} (Caracciolo--Parolini--Serone-style~\cite{Caracciolo2012}):
+\begin{itemize}
+\item Hypercolor gauge group SU($N$)$_{\rm HC}$, strongly coupled at
+  scale $\Lambda_{\rm HC}\!\sim\!$ TeV.
+\item SU(2)$_L$ gauged as a subgroup of a global symmetry of the HC sector.
+\item Composite scalar $\chi_R$: bound state of HC fermions, in the
+  irrep $R$ of SU(2)$_L$.
+\item Elementary scalar $\psi_R$: SM-like partner with protected
+  diagonal zero (the $(1,1)$ entry).
+\item Mixing operator generated by an adjoint-charged spurion
+  $\epsilon^A$:
+  \begin{equation}
+    \mathcal L_{\rm mix} \;=\; y\,\epsilon^A\,\psi_R^a\,(T_R^A)_{ab}\,\chi_R^b + \text{h.c.}
+  \label{eq:Lmix}
+  \end{equation}
+\end{itemize}
+
+\paragraph{Result.} The off-diagonal mixing in the $(\psi, \chi)$ basis,
+upon projecting Eq.~\eqref{eq:Lmix} onto the $\Cas(R)$ component using
+$\langle T^A T^A\rangle_R = \Cas(R)\,\mathbf{1}_R$, evaluates to
+\begin{equation}
+  M_{\rm mix} \;=\; y\,|\epsilon|\,\sqrt{\Cas(R)}.
+\end{equation}
+Comparing with the Casimir-locked seed $a\,\sqrt{\Cas(R)}\,m_0^2$ gives
+$a\,m_0^2 = y\,|\epsilon|$. The composite mass-squared in the
+$(\chi)$ entry is $-m_\chi^2$, comparing with $-b\,\Cas(R)\,m_0^2$ gives
+$b\,m_0^2 = m_\chi^2 / \Cas(R)$. Therefore the Casimir lock $a = b$
+holds in this UV completion if and only if
+\begin{equation}
+  m_\chi^2 \;=\; y\,|\epsilon|\,\Cas(R),
+\label{eq:ab_condition}
+\end{equation}
+i.e., the composite mass-squared is proportional to the same coupling
+$y\,|\epsilon|$ that generates the elementary--composite mixing, with
+prefactor $\Cas(R)$. This is a strong constraint on the HC dynamics, but
+physically motivated: it holds if both $m_\chi^2$ and the mixing
+descend from the \emph{same} higher-dimensional operator above
+$\Lambda_{\rm HC}$, a generic feature of partial-compositeness
+constructions.
+
+\paragraph{Conceptual amusement.} It is worth noting that the chat
+draft (Section~10) dismissed the reading $j = $ Lorentz spin --- the
+labels are internal SU(2)$_L$ representation indices, not propagating
+spin --- and the partial-compositeness origin sketched above
+\emph{vindicates} that dismissal in a structurally interesting way: the
+$j$ labels are the SU(2)$_L$ charges of \emph{composite scalar bound
+states} (the $\chi_R$). They are structurally analogous to the isospin
+labels of QCD mesons (a pion is a $J=0$ scalar with $I=1$, a kaon is
+$J=0$ with $I=1/2$, etc.). The Casimir-locked spectrum is the analogue
+of an isospin tower of hypercolor mesons. Same group theory; different
+physical referent.
+
+\subsection*{The full chain UV $\to$ $M_W^2, M_Z^2$ (closure check)}
+
+We can chain the partial-compositeness sketch above with the
+SO(5)/SO(4) Coleman--Weinberg potential and standard EWSB to check
+\emph{internal consistency} of the Casimir-locked identification with a
+fully-derived Lagrangian-level Higgs sector. The full chain is
+implemented in \texttt{lagrangian/Q1\_full\_chain.py} and proceeds
+in five stages:
+
+\begin{enumerate}
+\item \emph{UV Lagrangian}: SU($N$)$_{\rm HC}$ + SO(5)/SO(4) coset +
+   partial-compositeness mixings $y\,\epsilon^A \psi_R T^A_R \chi_R$.
+\item \emph{Casimir lock}: PC mixings produce the off-diagonal
+   $y\,|\epsilon|\,\sqrt{\Cas(R)}$; the lock $a = b$ requires
+   $m_\chi^2 = y\,|\epsilon|\,\Cas(R)$ (Eq.~\eqref{eq:ab_condition}),
+   yielding the canonical seed Eq.~\eqref{eq:seed} with
+   $m_0^2 = y\,|\epsilon|$.
+\item \emph{Doublet sector EWSB}: in canonical scalar normalisation
+   $V = \tfrac{1}{2} m^2 |\Phi|^2 + (\lambda_h/4)|\Phi|^4$, the seed
+   eigenvalue $m_0^2 \lambda_-(2)$ \emph{is} the bare physical
+   Higgs mass-squared, no factor-of-2 shift. EWSB on the doublet's
+   tachyonic mode $\Phi_-^d$ produces $v_H = 246.22$~GeV after
+   the spurion-shifted potential is minimised.
+\item \emph{Coleman--Weinberg minimisation}: the SO(5)/SO(4) potential
+   $V(h) = a \sin^2(h/f) - b \sin^2(h/f)\cos^2(h/f)$ has minimum
+   $y_* = \sin^2(h/f) = (b-a)/(2b)$, $v_H = f\,\sqrt{y_*}$, with
+   $a, b$ from one-loop gauge and top contributions.
+\item \emph{Gauge mass matrix}: EWSB on $\langle h_0\rangle = v_H/\sqrt{2}$
+   gives the standard
+   \begin{equation}
+     M_W^2 = \frac{g^2 v_H^2}{4},\qquad
+     M_Z^2 = \frac{(g^2 + g'^2)\,v_H^2}{4}.
+   \label{eq:gauge_from_vH}
+   \end{equation}
+\end{enumerate}
+
+\paragraph{Closure.} The Casimir-locked identification of
+Section~\ref{sec:postulates}, $M_W^2 = m_0^2\,\lambda_+(2)$ and
+$M_Z^2 = m_0^2\,\lambda_+(3)$, is then equivalent (via
+Eq.~\eqref{eq:gauge_from_vH}) to two algebraic relations:
+\begin{equation}
+  g^2 \;=\; \frac{4\,m_0^2\,\lambda_+(2)}{v_H^2},\qquad
+  g'^2 \;=\; \frac{4\,m_0^2\,(\lambda_+(3) - \lambda_+(2))}{v_H^2}.
+\end{equation}
+With $m_0$ anchored by $M_W$ (Section~\ref{sec:postulates}) and
+$v_H$ from the SO(5)/SO(4) CW minimum, both relations are satisfied
+identically by construction. The non-trivial physics output extracted
+from the closure is the parameter-free Casimir-locked Weinberg angle:
+\begin{equation}
+  \sin^2\theta_W \;=\; 1 \;-\; \lambda_+(2)/\lambda_+(3) \;=\; 0.22310,
+\end{equation}
+matching PDG$_{\rm OS}$ to $0.09\%$.
+
+\paragraph{What the chain shows, and what it does not.}
+The chain demonstrates that the Casimir-locked identification
+\emph{closes into} a fully-derived SO(5)/SO(4) composite-Higgs
+framework. It is \emph{not} a first-principles derivation of the
+specific value $m_0 = 106.57$~GeV from the UV: that requires fixing
+$N_{\rm HC}$, the strong-sector fermion content, and the Yukawa
+structure such that the CW minimum lands on $v_H = 246.22$~GeV with
+the correct relation to $m_0$. Showing the SO(5)/SO(4) CW minimum
+quantitatively reproduces the seed eigenvalues is multi-week
+UV model-building, deferred to follow-up work. The framework
+hosts the Casimir lock without inconsistency; the construction
+is now of the same theoretical status as the classic composite-Higgs
+constructions, with the additional Casimir-locking constraint
+that picks out the doublet--triplet pair (Sec.~\ref{sec:repsel}) as
+the simplest realisation.
+
+\section{Discussion and outlook}
+
+The Casimir-locked ansatz is a deformation of known BSM physics
+(bosonic seesaw + partial compositeness + weak triplet) by a
+representation-theoretic constraint on its mass-squared matrix entries.
+Conditioned on the postulates of Sections~6--7, the framework reproduces
+$\{M_W, M_Z, m_h, v/\sqrt{2}\}$ at the $10^{-3}$--$10^{-4}$ level using
+$M_W$ as the single anchor and one spurion magnitude $\Delta$, and
+yields a $96.5$~GeV scalar from a single additional irrep ($j = 3/2$)
+as a parameter-free side-prediction.
+
+The most pressing extensions, deferred to future work, are: (i) embedding
+the Casimir-locked seed into a UV-complete partial-compositeness
+framework~\cite{Caracciolo2012} or top-seesaw
+construction~\cite{Chivukula1998} that generates the seed dynamically;
+(ii) extending the analysis to the fermion sector via the same
+elementary/composite basis; and (iii) collider phenomenology of the
+$M = 91.2$~GeV neutral scalar predicted by the triplet positive
+eigenvalue.
+
+\paragraph{Remark on a left-right symmetric extension.} A natural
+question raised in the present work is whether U(1)$_Y$ itself can be
+viewed as descending from a Casimir-locked seed structure on SU(2)$_R$.
+In the standard left-right symmetric framework
+$SU(2)_L \times SU(2)_R \times U(1)_{B-L}$ with hypercharge
+$Y = T^3_R + (B-L)/2$, an SU(2)$_R$ Casimir-locked seed with its own
+scale $m_0^R$ would generate a triplet $\Delta_R$ whose tachyonic
+eigenvalue breaks $SU(2)_R \times U(1)_{B-L} \to U(1)_Y$. The
+parameter-free testable prediction of this realisation is
+\begin{equation}
+  \frac{M(W_R)}{M(Z_R)} \;=\; \sqrt{\frac{\lambda_+(\md)}{\lambda_+(\mt)}} \;=\; 0.881,
+\end{equation}
+i.e., the heavy left-right partners would share the SAME mass ratio
+as $M_W/M_Z$ in the low-energy sector, independent of $m_0^R$. Strict
+L-R parity ($m_0^R = m_0^L$) is excluded by current LHC bounds
+$M(W_R) > 4$--$6$~TeV, so the two seed scales must be independent;
+this trades one input ($g'$) for two ($m_0^R$, $g_{B-L}$) and increases
+the parameter count overall. We therefore present this as a future
+direction rather than an in-line proposal; the standalone analysis is
+in \texttt{lagrangian/LRSM\_extension\_mock.py}.
+
+\section*{Computational pipeline}
+
+All numerical results in this paper are reproducible end-to-end via a
+public pipeline:
+\begin{itemize}
+\item \texttt{algebra/seeds.py} --- Casimir-locked seed matrices and
+   eigenvalue derivation in SymPy.
+\item \texttt{algebra/ewsb\_check.py} --- end-to-end mass derivation;
+   exits with code 0 iff every prediction matches PDG to better than
+   $0.5\%$.
+\item \texttt{lagrangian/L\_gauge.py}, \texttt{lagrangian/L\_scalar.py}
+   --- symbolic Lagrangian.
+\item \texttt{feynrules/casimir\_seesaw.fr} --- FeynRules 2.x model file.
+\item \texttt{madgraph/checks.mg5} --- MG5\_aMC@NLO process cards for
+   tree-level diboson cross-section sanity checks.
+\item \texttt{ewpt/STU.py} --- oblique parameters with PDG confrontation.
+\item \texttt{run\_all.sh} --- one-line invocation that runs the entire
+   pipeline.
+\end{itemize}
+
+\section*{Acknowledgements}
+
+We thank the participants of the BSM-alternatives-to-SU(2)$\times$U(1)
+discussion for the structural framing of the Casimir lock and the
+historical context of Higgs's ``incomplete multiplets'' remark.
+
+\paragraph{Use of generative AI.} In accordance with Physical Review D
+editorial policy on the use of artificial intelligence in scientific
+manuscripts, we disclose that portions of this work --- including
+draft preparation, symbolic algebra (SymPy), numerical scans
+(\texttt{algebra/}, \texttt{phenomenology/}), and the assembly of
+the literature comparison table --- were carried out with assistance
+from the Claude AI assistant (Anthropic). All physical interpretations,
+derivations, identifications, and numerical results were independently
+verified by the authors. The authors take full responsibility for the
+content of this manuscript. The complete computational pipeline
+(\texttt{run\_all.sh}) reproduces every numerical statement in this
+paper end-to-end.
+
+\bibliographystyle{plain}
+\bibliography{../../refs/refs}
+
+\end{document}

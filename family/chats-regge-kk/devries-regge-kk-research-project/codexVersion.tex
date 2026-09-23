@@ -1,0 +1,8195 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\U}{\mathrm{U}}
+\newcommand{\SO}{\mathrm{SO}}
+\newcommand{\AdS}{\mathrm{AdS}}
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\half}{\tfrac12}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\Xp}{X_+}
+\newcommand{\Xm}{X_-}
+\newcommand{\sinsq}{\sin^2\theta_W}
+
+\title{\bf A D10 Boundary-Current Route To The de Vries Electroweak Operator}
+\author{Codex technical version}
+\date{25 May 2026}
+
+\begin{document}
+\maketitle
+
+% CONTROL: Proof gates for this manuscript are recorded in
+% codexVersion-proof-gates.md. Keep gate lists, completion audits, and task
+% bookkeeping outside the typeset text.
+
+\begin{abstract}
+\noindent
+We formulate a ten-dimensional boundary-current route to the branch operator
+\[
+  \cA(J)=
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix},
+  \qquad J=j(j+1),
+\]
+whose positive eigenvalues at \(j=\half,1\) reproduce the on-shell weak
+mixing angle.  The constructive layer is Type IIA on
+\(M_4\times K_6\), with \(K_6=\CP^2\times\CP^1\) and a flag/current
+refinement.  The active construction is entirely ten-dimensional.  The D9
+endpoint is the \(Q\)-boundary sector
+\((\SU(3)_c\times\U(1)_Q)/\Z_3\).  Under the Stueckelberg Schur assumption
+with unit current metric, the projected D10 fluctuation operator gives the de
+Vries pole relation.  An almost-commutative finite layer supplies the scalar
+dictionary: the Higgs expectation is the finite sheet length
+\(\ell_H=\sqrt2/v_{\rm EW}\), the \(Q\)-neutral vacuum vector gives the
+\(W/Z/\gamma\) Hessian, and modern scalar extensions add a neutral singlet
+Hessian block.  The route emphasized here is the underused \(Q\)-boundary
+mechanism: the D8-like boundary
+\(\Gamma_{\rm EW}=M_4\times\CP^2\times S^1_Q\), the RR/current contribution
+to \(L_{2,{\rm vert}}^2\), and the boundary auxiliary field that generates the
+negative diagonal.
+\end{abstract}
+
+\tableofcontents
+
+\section{D10 Boundary-Current Setup}
+
+The constructive object is the Type IIA compactification
+\[
+  M_4\times K_6,
+  \qquad
+  K_6=\CP^2\times\CP^1,
+\]
+with retained Type IIA \(C_1,F_2\) data and with a boundary/current sector
+carrying the electroweak operator.
+The electroweak endpoint is carried by a different circle, the diagonal
+weak-hypercharge frame circle
+\[
+  S^1_Q\subset P_{T_3}\times P_Y,
+  \qquad Q=T_3+Y.
+\]
+This \(S^1_Q\) cycle is the circle used by the localized
+\(\Gamma_{\rm EW}\) boundary action.
+
+The manuscript develops the following conditional implication.  If the D10
+boundary/current sector gives a projected operator
+\[
+  \Pi_j\cK_{D10,*}\Pi_j
+  =
+  \mu_*^2
+  \begin{pmatrix}
+  0&\sqrt{j(j+1)}\\
+  \sqrt{j(j+1)}&-j(j+1)
+  \end{pmatrix},
+  \qquad
+  j=0,\half,1,
+\]
+then
+\[
+  M_\gamma^2=0,\qquad
+  M_W^2=\mu_*^2\Xp(3/4),\qquad
+  M_Z^2=\mu_*^2\Xp(2),
+\]
+where
+\[
+  \Xp(J)=\frac{-J+\sqrt{J^2+4J}}{2}.
+\]
+The pole weak angle is then
+\[
+  \sin^2\theta_{\rm pole}
+  =
+  1-\frac{\Xp(3/4)}{\Xp(2)}
+  =
+  0.223101\ldots .
+\]
+The localized boundary matrix defines \(L_Q\), and \(L_Q\) fixes the absolute
+electromagnetic normalization of a concrete realization.
+
+\section{Weak Sectors And The Schur Operator}
+
+The weak \(\CP^1\) factor carries the Borel--Weil sectors
+\[
+  H^0(\CP^1,\cO(2j))\simeq V_j,\qquad j=0,\half,1.
+\]
+The affine-current filter supplies the same finite set at level \(k=2\),
+since integrable \(\SU(2)_k\) sectors obey
+\[
+  j=0,\half,\ldots,\frac{k}{2}.
+\]
+For this current-algebra filter the conformal weights are
+\[
+  \Delta_j=\frac{j(j+1)}{k+2},
+  \qquad k=2,
+\]
+with conversion table
+\[
+\begin{array}{c|c|c|c}
+j&J=j(j+1)&\Delta_j=J/4&4\Delta_j\\
+\hline
+0&0&0&0\\
+\half&3/4&3/16&3/4\\
+1&2&1/2&2
+\end{array}
+\]
+The string/interface Regge role is the mass template
+\[
+  M^2(n,j,\sigma)
+  =
+  \frac{n-a_0}{\alpha'}
+  +\mu^2\lambda_\sigma(j(j+1))
+  +\Delta M^2_{\rm compactification}.
+\]
+The string oscillator term carries the tower.  The internal Schur term
+carries the finite electroweak branch.
+The target-space operator uses finite zero modes.  The conformal-weight
+\(L_0\) route supplies the control normalization.  Let
+\[
+  A_j=\sum_{a=1}^3T_a^{(j)}\otimes e_a,
+\]
+with \(e_a\) an orthonormal current frame.  Then
+\[
+  A_j^\dagger A_j
+  =
+  \sum_aT_a^{(j)}T_a^{(j)}
+  =
+  j(j+1)\,\bm 1_{V_j}
+  =
+  J\,\bm 1_{V_j}.
+\]
+The same \(A_j\) admits an Atiyah--Manton-type holonomy reading
+\cite{AtiyahMantonSchroers2011}: a connection determines a Wilson line, and
+the first variation of the holonomy inserts the Lie-algebra generator in the
+same current frame.  The candidate realization list retained for comparison is
+\[
+  {\rm Dolbeault/Dirac},\quad
+  {\rm boundary\ supercharge},\quad
+  {\rm current\ zero\ mode},\quad
+  {\rm brane\ localized\ auxiliary}.
+\]
+The boundary-current branch below supplies the coefficient calculation through
+the Payen endpoint Hilbert space and the localized \(\Gamma_{\rm EW}\) action.
+
+The algebraic boundary Hessian on \(V_j\oplus{\rm Im}\,A_j\) is
+\[
+  \cH_j=
+  \begin{pmatrix}
+  0&A_j^\dagger\\
+  A_j&-A_jA_j^\dagger
+  \end{pmatrix}.
+\]
+Projection to a normalized image vector gives
+\[
+  \cH_j\longrightarrow
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix}.
+\]
+Consequently the secular equation is
+\[
+  X^2+JX-J=0.
+\]
+
+If the retained current metric is
+\[
+  \langle e_a,e_b\rangle_{\rm cur}
+  =
+  \kappa_{\rm cur}\delta_{ab},
+  \qquad c=\sqrt{\kappa_{\rm cur}},
+\]
+the projected block becomes
+\[
+  \begin{pmatrix}
+  0&c\sqrt J\\
+  c\sqrt J&-c^2J
+  \end{pmatrix},
+  \qquad
+  X^2+c^2JX-c^2J=0.
+\]
+Thus the physical normalization is the statement
+\[
+  \kappa_{\rm cur}=1.
+\]
+
+% CONTROL: The derivation of the D10 current metric is gate 3 in
+% codexVersion-proof-gates.md.
+
+\section{The Stueckelberg Normalization}
+
+The coefficient \(c\) can be isolated without committing to a complete
+compactification.  On the unit \(S^3\), the scalar Casimir sector gives
+\[
+  \Delta_0=4J,
+\]
+and the co-exact one-form sector has the Weitzenbock shift
+\[
+  \Delta_1|_{\rm co\text{-}exact}=\Delta_0+1=4J+1=(2j+1)^2.
+\]
+The de Vries operator uses the algebraic Casimir \(A_j^\dagger A_j=J\).
+The shifted geometric operator supplies a concrete failure channel whenever
+the diagonal and off-diagonal are built from independently shifted operators.
+Writing the local quadratic terms as
+\[
+  \alpha_{\rm mix}\,{\rm Re}\,\langle a,A_j\phi\rangle
+  -
+  \beta_{\rm diag}\,
+  \langle\phi,A_j^\dagger A_j\phi\rangle,
+\]
+and normalizing the off-diagonal to \(\sqrt J\), the coefficient in the
+projected block is
+\[
+  c=\frac{\beta_{\rm diag}}{\alpha_{\rm mix}^2}.
+\]
+The single-coupling condition is the equality
+\[
+  \beta_{\rm diag}=\alpha_{\rm mix}^2.
+\]
+
+\begin{proposition}[Stueckelberg Schur normalization]
+\label{prop:stueckelberg}
+Suppose the order-parameter scalar \(\phi\) in the spin-\(j\) sector has
+vanishing fluxless mass and couples to the background through a single
+Stueckelberg coupling
+\[
+  a^\dagger A_j\phi+\hbox{h.c.},
+\]
+where the same \(A_j\) satisfies \(A_j^\dagger A_j=J\).  The reduced
+fluctuation block is the single-operator Schur completion
+\[
+  \begin{pmatrix}
+  0&A_j^\dagger\\
+  A_j&-A_jA_j^\dagger
+  \end{pmatrix},
+\]
+and the coefficient in the deformed block is
+\[
+  c=1.
+\]
+\end{proposition}
+
+\begin{proof}
+The fluxless diagonal term of \(\phi\) vanishes by hypothesis.  The single
+coupling gives the mixing operator \(A_j\).  The rank-one self-energy generated
+by the same coupling is \(-A_jA_j^\dagger\), so projection to
+\({\rm Im}\,A_j\) gives the block
+\[
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix}.
+\]
+The ratio of the diagonal coefficient to the square of the off-diagonal
+coefficient is therefore \(1\).
+\end{proof}
+
+The same one-coupling pattern has a standard higher-dimensional home in
+gauge--Higgs unification \cite{Manton1979,Hosotani1983}.  Splitting a
+higher-dimensional weak gauge field into \(A_\mu\) and internal components
+\(A_a\), the internal components are Wilson-line or Hosotani scalar variables.
+The cross term \(F_{\mu a}\) supplies the Stueckelberg coupling, and on the
+\(\CP^1\) line-bundle modes the weak current zero mode acts as
+\[
+  J_0^a|_{V_j}=T_a^{(j)}.
+\]
+Thus the gauge--Higgs coupling uses the algebraic current operator
+\[
+  A_j=\sum_aT_a^{(j)}\otimes e_a,\qquad A_j^\dagger A_j=J.
+\]
+The shifted curl eigenvalue belongs to the cotangent-bundle control operator;
+the gauge--Higgs coupling supplies the bare-Casimir normalization needed by the
+Schur block.  The Schur completion itself is then the D10 boundary/current
+statement.
+
+The coefficient test is local.  Let
+\[
+  U_H(\xi)
+  =
+  {\cal P}\exp\left(
+  i\mu_\Gamma\int_{\gamma_H}\xi^a e_aT_a^{(j)}
+  \right),
+\]
+where \(e_a\) is the same current frame used in \(A_j\).  Then
+\[
+  \frac{\partial U_H}{\partial\xi^a}\bigg|_0
+  =
+  i\mu_\Gamma T_a^{(j)},
+  \qquad
+  \frac{\partial^2U_H}{\partial\xi^a\partial\xi^b}\bigg|_0
+  =
+  -\mu_\Gamma^2T_a^{(j)}T_b^{(j)}.
+\]
+Thus the Wilson-line expansion gives
+\[
+  \alpha_{\rm mix}=\mu_\Gamma,\qquad
+  \beta_{\rm diag}=\mu_\Gamma^2,\qquad
+  \frac{\beta_{\rm diag}}{\alpha_{\rm mix}^2}=1,
+\]
+after the common physical factor has been extracted.  For the stabilizer
+cycle,
+\[
+  U_Q(\theta)=\exp(i\theta Q),\qquad Q\eta_0=0,
+\]
+the first two insertions on \(\eta_0\) vanish.  The Hosotani cycle must
+therefore come from the retained transverse weak/current or Chan--Paton
+boundary-complex sector.
+
+The proposition separates two issues.  The ratio \(c=1\) follows from the
+single Stueckelberg Schur structure.  The de Vries number additionally uses the
+bare-Casimir argument \(J\) in \(\Xp(J)\).  The curvature-shifted alternatives
+provide numerical controls:
+\[
+  J=\frac34,2
+  \quad\leadsto\quad
+  \sinsq=0.2231\ldots ,
+\]
+The independent shifted assignment gives
+\[
+  c_W=\frac{4(3/4)+1}{4(3/4)}=\frac43,\qquad
+  c_Z=\frac{4(2)+1}{4(2)}=\frac98,
+\]
+and hence
+\[
+  \sin^2\theta_W|_{\rm shifted}=0.267\ldots .
+\]
+
+% CONTROL: The single-coupling hypothesis itself remains assigned to the
+% auxiliary derivation list. Hosotani target: identify phi with a Wilson-line zero
+% mode theta_H=int_gamma A_int, derive alpha_mix A_j and beta_diag A_j^dagger A_j
+% from one localized D10 expansion, verify beta_diag=alpha_mix^2, holonomy
+% periodicity, Q-neutral vacuum component, absence of an independent shifted
+% operator, finite Wilson-line potential, and Connes sheet compatibility.
+% Calculation sequence: select gamma_H; compute f_H^2 and mu_Gamma from the
+% localized Gamma_EW action; expand U_H=P exp(i mu_Gamma int_gamma_H xi^a e_a
+% T_a^(j)); canonically normalize alpha_mix=mu_Gamma/f_H and
+% beta_diag=mu_Gamma^2/f_H^2; derive V_H(theta_H)=sum_m c_m cos(m w_H theta_H);
+% check KO6/Poincare-duality finite-triple compatibility and survival of Q on
+% eta_0. Pure S1_Q supplies electromagnetic stabilizer data and gives zero
+% Schur insertion on eta_0.
+% Hosotani local data in auxiliary notes:
+% (gamma_H,omega_H,n_H^a,(f_H^2)_{ab},w_H), int_gamma_H omega_H=1,
+% current-frame direction n_H^a e_a, localized kinetic matrix from DBI/YM plus
+% endpoint terms, charge-lattice period theta_H~theta_H+2pi/w_H, stationary map
+% |f_H theta_H,*|=v_EW/sqrt(2), and full doublet support before Q-neutral
+% unitary-gauge projection to eta_0.
+
+\section{The \texorpdfstring{\(Q\)}{Q}-Protected Boundary Cycle}
+
+The weak doublet section is
+\[
+  \eta_0\in H^0(\CP^1,\cO(1)),
+  \qquad
+  T_3\eta_0=-\frac12\eta_0,
+  \qquad
+  Y\eta_0=\frac12\eta_0.
+\]
+Therefore
+\[
+  Q\eta_0=(T_3+Y)\eta_0=0,
+\]
+and the photon direction is protected by the same line sector that carries
+the \(j=\half\) slot.
+
+Let \(P_{T_3}\) and \(P_Y\) be the unit-frame bundles for the weak weight line
+and the hypercharge line.  The neutral character is
+\[
+  \chi_N(u_T,u_Y)=u_T^{-1}u_Y.
+\]
+The \(Q\)-circle sector is
+\[
+  P_Q=\ker\chi_N\subset P_{T_3}\times P_Y.
+\]
+For the selected line data,
+\[
+  c_1(L_Y)=6h+7\eta,\qquad c_1(L_{T_3})=\eta,
+\]
+so the neutral line has
+\[
+  c_1(L_N)=c_1(L_Y)-c_1(L_{T_3})
+  =
+  6h+6\eta
+  =
+  6(h+\eta).
+\]
+The diagonal six-unit line class also decomposes the selected class as
+\[
+  6h+7\eta=6(h+\eta)+\eta,
+\]
+namely a diagonal six-unit line class plus one weak \(\cO(1)\) unit.
+
+Using integer hypercharge \(y=6Y\), the ultraviolet diagonal element is
+\[
+  \zeta_6=(\omega_3,-1,e^{i\pi/3}),
+  \qquad
+  \omega_3=e^{2\pi i/3}.
+\]
+On a surviving state with color triality \(t\), weak weight \(T_3=m\), and
+charge \(Q=m+Y\), its action becomes
+\[
+  \omega_3^t\exp(i2\pi m)\exp(i\pi y/3)
+  =
+  \omega_3^t\exp(i2\pi Q).
+\]
+Writing \(q_3=3Q\), the residual generator is
+\[
+  \zeta_3=(\omega_3,e^{2\pi i/3}),
+\]
+and the endpoint group is
+\[
+  G_{D9}=
+  \frac{\SU(3)_c\times\U(1)_Q}{\Z_3}.
+\]
+
+% CONTROL: Detailed finite-triple audits live in
+% connes-kk-higgs-vacuum-bridge.md,
+% connes-finite-hessian-schur-comparison.md, and
+% connes-determinant-one-full-lift-audit.md.
+
+\section{Finite-Higgs Sheet And Scalar Vacuum}
+
+The same \(Q\)-neutral weak line admits an almost-commutative
+finite-geometric reading.  In the Connes--Lott electroweak construction and in
+the later distance calculations for scalar fluctuations, the Higgs field is a
+finite-direction connection and its expectation value is a metric datum
+\cite{ConnesLott1990,Connes1989,MartinettiWulkenhaar2002}.  For a two-point
+finite direction,
+\[
+  D_F(\Phi)=
+  \begin{pmatrix}
+  0&\Phi\\
+  \Phi^\dagger&0
+  \end{pmatrix},
+\]
+and for \(a=(\lambda_L,\lambda_R)\),
+\[
+  [D_F(\Phi),a]=
+  \begin{pmatrix}
+  0&(\lambda_R-\lambda_L)\Phi\\
+  (\lambda_L-\lambda_R)\Phi^\dagger&0
+  \end{pmatrix}.
+\]
+Consequently
+\[
+  \|[D_F(\Phi),a]\|
+  =
+  |\lambda_L-\lambda_R|\,\|\Phi\|,
+  \qquad
+  d_{\rm sheet}=\frac{1}{\|\Phi\|}.
+\]
+For the project scalar,
+\[
+  \Phi_0=v_F\eta_0,\qquad Q\eta_0=0,
+\]
+this gives
+\[
+  \ell_H=\frac{1}{|v_F|}
+  =
+  \frac{\sqrt2}{v_{\rm EW}}.
+\]
+Thus the electroweak vacuum amplitude is simultaneously a finite sheet length
+and a D10 scalar coordinate.
+
+The finite spectral datum underlying this calculation is
+\[
+  \cA_F^{\rm EW}=\C_r\oplus{\mathbb H}_w,\qquad
+  \cH_F^{\rm EW}=H_r\oplus H_w,\qquad
+  \Phi:H_r\longrightarrow H_w .
+\]
+The represented edge matched to the project is
+\[
+  H_r\xrightarrow{\ \Phi_0=v_F\eta_0\ }H_w,
+  \qquad
+  Y(H_r)=0,\qquad
+  Y(H_w)=\half,\qquad
+  Q\eta_0=0 .
+\]
+Inner fluctuation of \(D_F\) gives the finite connection \(\Phi\).  The
+spectral distance gives \(\ell_H\).  The electroweak covariant derivative gives
+the \(W/Z/\gamma\) Hessian.  The D10 boundary-current action compares this
+finite Hessian with the Schur image Hessian through the common vector
+\(\eta_0\).
+
+The finite layer used here is the electroweak Glashow--Weinberg--Salam sector
+of Connes--Lott, together with the scalar-fluctuation distance formula.  It
+supplies the local \(\U(1)\times\SU(2)\) gauge data, a finite Higgs doublet,
+and the auxiliary-field vocabulary.  The full Standard-Model finite triple
+supplies the KO6, Poincare, orientability, and unimodularity controls used
+below.
+
+The local finite potential supplies the radial Higgs curvature.  With
+\[
+  V_F(\Phi)=\lambda_F
+  \left(\langle\Phi,\Phi\rangle-v_F^2\right)^2,
+  \qquad
+  \Phi=v_F\eta_0+\delta\Phi,
+\]
+and
+\[
+  h=\sqrt2\,{\rm Re}\,\langle\eta_0,\delta\Phi\rangle,
+\]
+the quadratic term is
+\[
+  V_F^{(2)}
+  =
+  2\lambda_Fv_F^2h^2
+  =
+  \frac12 m_H^2h^2,
+  \qquad
+  m_H^2=4\lambda_Fv_F^2.
+\]
+Equivalently,
+\[
+  m_H^2=2\lambda_Fv_{\rm EW}^2,
+  \qquad
+  \lambda_F=\frac{m_H^2}{2v_{\rm EW}^2}.
+\]
+The value \(v_F\) fixes the finite sheet scale; the potential shape requires
+the finite triple, spectral-action coefficients, Yukawa data, cutoff
+normalization, and running.  The KK side supplies a separate effective
+potential for compactification variables.  The common object is therefore
+\[
+  V_{\rm eff}(\rho,\lambda,v_F,\theta_H,\sigma,\ldots),
+\]
+with stationarity equations for the finite amplitude, the weak/base shape,
+the overall compactification scale, and possible Wilson-line or singlet
+directions.  A D10 electroweak phase additionally requires the threshold
+window
+\[
+  \Lambda_{9\to10}(\rho_*,\lambda_*)
+  <
+  E_{\rm probe}
+  <
+  \Lambda_{{\rm UV},10}(\rho_*,\lambda_*) .
+\]
+Equivalently, writing the resolved weak-projective scale as
+\[
+  R_{\rm EW}(\ell)=\ell\,\widehat R_{\rm EW},
+\]
+the stationary vacuum must satisfy
+\[
+  R_{\rm EW}(\ell_*)>\Lambda_{{\rm UV},10}^{-1}.
+\]
+This inequality gives the D10 probe regime.  Collapse of the weak/projective
+direction gives the D9 endpoint.
+For the elementary quartic finite-sector model with \(\lambda_F>0\),
+\[
+  V_F=\lambda_F\left(\langle\Phi,\Phi\rangle-v_F^2\right)^2
+  \quad\Longrightarrow\quad
+  V_F\to+\infty\quad {\rm as}\quad |\Phi|\to\infty .
+\]
+In that phase diagram \(v_F=0\) can lose stability as the quadratic
+coefficient changes sign, a finite \(v_0\) becomes the electroweak minimum,
+and the \(v_F\to\infty\) boundary has infinite energy.  A D9 endpoint in the
+present model therefore requires a coupled KK direction whose large-field
+asymptotic flattens or turns the effective potential along a
+compactification-collapse coordinate.
+A factorized potential,
+\[
+  V_{\rm eff}=V_{\rm KK}(\rho,\lambda,\tau)+V_F(v_F,\sigma,\ldots),
+\]
+leaves the finite electroweak scale and the dimension window as separate
+stationarity problems.  The D10 electroweak phase therefore requires mixed
+Hessian entries such as
+\[
+  K_{\rho v}
+  =
+  \left.\frac{\partial^2V_{\rm eff}}{\partial\rho\,\partial v_F}\right|_*,
+  \qquad
+  K_{\lambda v}
+  =
+  \left.\frac{\partial^2V_{\rm eff}}{\partial\lambda\,\partial v_F}\right|_*,
+\]
+or a shared boundary/current scale
+\[
+  \mu_*^2=\mu_*^2(\rho_*,\lambda_*,v_F,\theta_H,\ldots).
+\]
+The reduced radial coefficient skeleton retained for the one-scale pass is
+\[
+  V_{\rm rad}(\ell)
+  =
+  -B_R\ell^{-2}
+  +B_H\ell^{-6}
+  +B_0\ell^6
+  +B_2\ell^2
+  +B_4\ell^{-2}
+  +B_6\ell^{-6}
+  +V_{\rm int}.
+\]
+The stationary calculation must pair this HKT scaling block with the finite
+quartic \(V_F\) and the localized boundary term \(V_\Gamma\).
+% CONTROL: Coefficient extraction and the stationarity proof remain in
+% d10-one-scale-potential-gate.md and project-status-gates-audit.md.
+The gauge Hessian uses the same vacuum vector:
+\[
+  K_{AB}^{\rm gauge}
+  =
+  v_F^2\,g_Ag_B\,
+  \langle T_A\eta_0,T_B\eta_0\rangle.
+\]
+Together with \(T_3\eta_0=-\half\eta_0\), \(Y\eta_0=\half\eta_0\), this gives
+\[
+  M_W^2=\frac{g_2^2v_{\rm EW}^2}{4},
+  \qquad
+  M_Z^2=\frac{(g_2^2+g_Y^2)v_{\rm EW}^2}{4},
+  \qquad
+  M_\gamma^2=0.
+\]
+Using Weinberg's current-length normalization, let
+\(C=2\pi\sqrt{16\pi G}\).  The KK current-length dictionary is
+\[
+  g_2=\frac{C}{L_2},\qquad
+  g_Y=\frac{C}{L_Y},\qquad
+  e=\frac{C}{L_Q},\qquad
+  L_Q^2=L_2^2+L_Y^2 .
+\]
+Hence
+\[
+  \sin^2\theta_W=\frac{L_2^2}{L_Q^2},
+  \qquad
+  \tan^2\theta_W=\frac{L_2^2}{L_Y^2}.
+\]
+The same dictionary rewrites the vector masses as
+\[
+  M_W=\frac{ev_{\rm EW}}{2}\frac{L_Q}{L_2}
+  =
+  \frac{ev_{\rm EW}}{2\sin\theta_W},
+  \qquad
+  M_Z=\frac{ev_{\rm EW}}{2}\frac{L_Q^2}{L_2L_Y}
+  =
+  \frac{ev_{\rm EW}}{2\sin\theta_W\cos\theta_W}.
+\]
+Equivalently, with
+\[
+  G_{\rm EW}(\rho,\lambda,\ldots)
+  =
+  \frac{1}{L_2(\rho,\lambda,\ldots)^2}
+  +
+  \frac{1}{L_Y(\rho,\lambda,\ldots)^2},
+\]
+one has
+\[
+  M_Z^2=\frac{C^2}{4}v_{\rm EW}^2G_{\rm EW},
+  \qquad
+  \mu_*^2=
+  \frac{C^2}{4\Xp(2)}v_{\rm EW}^2G_{\rm EW}.
+\]
+Thus the current-length dependence produces mixed scale sensitivity,
+\[
+  \frac{\partial^2M_Z^2}{\partial\rho\,\partial v_{\rm EW}}
+  =
+  \frac{C^2}{2}v_{\rm EW}\,\partial_\rho G_{\rm EW},
+  \qquad
+  \frac{\partial^2M_Z^2}{\partial\lambda\,\partial v_{\rm EW}}
+  =
+  \frac{C^2}{2}v_{\rm EW}\,\partial_\lambda G_{\rm EW}.
+\]
+The localized source term with the physical electroweak amplitude uses the
+canonically normalized finite mode.  Let
+\[
+  I_0=
+  \int_{\Gamma_{\rm EW,int}}\sqrt{\gamma_\Gamma}\,|\eta_0|^2,
+  \qquad
+  I_{AB}=
+  \int_{\Gamma_{\rm EW,int}}\sqrt{\gamma_\Gamma}\,
+  \langle T_A\eta_0,T_B\eta_0\rangle .
+\]
+For an unnormalized boundary-profile amplitude \(v_b\), the common
+DBI/open-boundary coefficient \(Z_0\) gives
+\[
+  v_{\rm EW}^2=Z_0I_0v_b^2.
+\]
+The physical source term is therefore
+\[
+  V_{\Gamma}
+  =
+  \frac12v_{\rm EW}^2
+  \Sigma_\Gamma^{AB}{\cal G}_{AB}(\rho,\lambda,\ldots),
+  \qquad
+  \Sigma_\Gamma^{AB}=\frac{I_{AB}}{I_0},
+  \qquad Q\eta_0=0.
+\]
+For the selected normalized \(O(1)\) component,
+\[
+  T_3\eta_0=-\half\eta_0,\qquad
+  Y\eta_0=\half\eta_0,
+\]
+so
+\[
+  \Sigma_{33}=\frac14,\qquad
+  \Sigma_{YY}=\frac14,\qquad
+  \Sigma_{3Y}=-\frac14.
+\]
+Hence
+\[
+  \Sigma_\Gamma(Q,Q)=0,\qquad Q=T_3+Y,
+\]
+and the photon direction is protected at the source tensor level.  The
+charged weak entries satisfy
+\[
+  \|T_1\eta_0\|_\Gamma^2
+  =
+  \|T_2\eta_0\|_\Gamma^2
+  =
+  \frac14,
+  \qquad
+  {\rm Re}\,\langle T_1\eta_0,T_2\eta_0\rangle_\Gamma=0.
+\]
+With \(c_2=C/L_2\) and \(c_Y=C/L_Y\), the neutral source block is
+\[
+  K_{\rm neutral}
+  =
+  \frac{v_{\rm EW}^2}{4}
+  \begin{pmatrix}
+    c_2^2&-c_2c_Y\\
+    -c_2c_Y&c_Y^2
+  \end{pmatrix}
+  =
+  \frac{C^2v_{\rm EW}^2}{4}
+  \begin{pmatrix}
+    L_2^{-2}&-(L_2L_Y)^{-1}\\
+    -(L_2L_Y)^{-1}&L_Y^{-2}
+  \end{pmatrix}.
+\]
+Its null eigenvector is proportional to \((L_2,L_Y)\), giving
+\[
+  A_\mu=\frac{L_2}{L_Q}W^3_\mu+\frac{L_Y}{L_Q}B_\mu,
+\]
+and its nonzero eigenvalue is \(M_Z^2=(C^2v_{\rm EW}^2/4)G_{\rm EW}\).
+% CONTROL: Boundary-frame neutral matrix propagation is audited in
+% codexVersion-proof-gates.md and progressReport10.tex.
+The localized boundary frame admits a general neutral length matrix
+\[
+  {\cal L}_{\Gamma}
+  =
+  \begin{pmatrix}
+    L_2^2&\epsilon_\Gamma\\
+    \epsilon_\Gamma&L_Y^2
+  \end{pmatrix},
+  \qquad
+  \det{\cal L}_{\Gamma}=L_2^2L_Y^2-\epsilon_\Gamma^2 .
+\]
+The \(Q\)-circle length is
+\[
+  L_Q^2
+  =
+  (1,1){\cal L}_{\Gamma}\binom{1}{1}
+  =
+  L_2^2+L_Y^2+2\epsilon_\Gamma,
+  \qquad
+  \alpha_\Gamma=\frac{C^2}{4\pi L_Q^2}.
+\]
+The neutral source covector is \(s=(-1,1)\), hence the generalized neutral
+coefficient is
+\[
+  G_Z^\Gamma
+  =
+  s{\cal L}_{\Gamma}^{-1}s^T
+  =
+  \frac{L_2^2+L_Y^2+2\epsilon_\Gamma}
+       {L_2^2L_Y^2-\epsilon_\Gamma^2}
+  =
+  \frac{L_Q^2}{\det{\cal L}_{\Gamma}},
+\]
+and
+\[
+  M_Z^2=\frac{C^2v_{\rm EW}^2}{4}G_Z^\Gamma .
+\]
+The diagonal source metric appears at \(\epsilon_\Gamma=0\), recovering
+\[
+  L_Q^2=L_2^2+L_Y^2,\qquad
+  G_Z^\Gamma=L_2^{-2}+L_Y^{-2}.
+\]
+Let
+\[
+  R_{\rm dV}=\frac{\Xp(3/4)}{\Xp(2)}.
+\]
+Since
+\[
+  M_W^2=\frac{C^2v_{\rm EW}^2}{4L_2^2},
+\]
+the boundary length matrix gives
+\[
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{\det{\cal L}_{\Gamma}}{L_2^2L_Q^2}
+  =
+  \frac{L_2^2L_Y^2-\epsilon_\Gamma^2}
+       {L_2^2(L_2^2+L_Y^2+2\epsilon_\Gamma)}.
+\]
+The de Vries pass equation for the neutral boundary matrix is
+\[
+  \epsilon_\Gamma^2
+  +2R_{\rm dV}L_2^2\epsilon_\Gamma
+  +R_{\rm dV}L_2^4
+  +(R_{\rm dV}-1)L_2^2L_Y^2
+  =
+  0.
+\]
+With
+\[
+  u=\frac{L_2^2}{L_Y^2},
+  \qquad
+  \delta=\frac{\epsilon_\Gamma}{L_Y^2},
+\]
+this becomes
+\[
+  R_{\rm dV}
+  =
+  \frac{u-\delta^2}{u(u+1+2\delta)},
+  \qquad
+  \delta_\pm(u)
+  =
+  -R_{\rm dV}u
+  \pm
+  \sqrt{u(1-R_{\rm dV})(1-R_{\rm dV}u)}.
+\]
+The diagonal source metric sits at
+\[
+  \delta_+(u_{\rm dV})=0,
+  \qquad
+  u_{\rm dV}=\frac{1-R_{\rm dV}}{R_{\rm dV}}
+  =
+  \tan^2\theta_{\rm pole}.
+\]
+Since \({\cal L}_\Gamma\) is a kinetic matrix, the allowed region is
+\[
+  u>0,\qquad
+  |\delta|<\sqrt u,\qquad
+  u+1+2\delta>0.
+\]
+The de Vries branches are real for
+\[
+  0<u\le R_{\rm dV}^{-1}=1.2871691363429836\ldots .
+\]
+At \(u=u_{\rm dV}\) the second branch gives
+\[
+  \delta_-(u_{\rm dV})
+  =
+  -2(1-R_{\rm dV})
+  =
+  -0.4462026446017324\ldots .
+\]
+It also satisfies the kinetic inequalities.  The localized
+\(\Gamma_{\rm EW}\) action is therefore characterized by the neutral branch
+data, including \(L_Q\), together with the charged current length.
+Equivalently, define the normalized neutral current correlation
+\[
+  \chi_\Gamma
+  =
+  \frac{\epsilon_\Gamma}{L_2L_Y}
+  =
+  \frac{\delta}{\sqrt u}.
+\]
+Then \(-1<\chi_\Gamma<1\), and the pass equation reads
+\[
+  R_{\rm dV}
+  =
+  \frac{1-\chi_\Gamma^2}
+       {u+1+2\chi_\Gamma\sqrt u}.
+\]
+Solving for the correlation gives
+\[
+  \chi_\pm(u)
+  =
+  -R_{\rm dV}\sqrt u
+  \pm
+  \sqrt{(1-R_{\rm dV})(1-R_{\rm dV}u)}.
+\]
+At the diagonal source point,
+\[
+  \chi_+(u_{\rm dV})=0,
+  \qquad
+  \chi_-(u_{\rm dV})
+  =
+  -2\sqrt{R_{\rm dV}(1-R_{\rm dV})}
+  =
+  -0.8326514812056032\ldots .
+\]
+The neutral branch question is therefore a bounded current-correlation
+calculation in the localized boundary action.
+The same data factorize the matrix as
+\[
+  {\cal L}_\Gamma
+  =
+  L_Y^2
+  \begin{pmatrix}
+    u&\chi_\Gamma\sqrt u\\
+    \chi_\Gamma\sqrt u&1
+  \end{pmatrix}.
+\]
+Consequently
+\[
+  \det{\cal L}_\Gamma=L_Y^4u(1-\chi_\Gamma^2),
+  \qquad
+  L_Q^2=L_Y^2(u+1+2\chi_\Gamma\sqrt u),
+\]
+and
+\[
+  G_Z^\Gamma
+  =
+  \frac{u+1+2\chi_\Gamma\sqrt u}
+       {L_Y^2u(1-\chi_\Gamma^2)},
+  \qquad
+  \alpha_\Gamma
+  =
+  \frac{C^2}
+       {4\pi L_Y^2(u+1+2\chi_\Gamma\sqrt u)}.
+\]
+The localized action target is the triple
+\[
+  S_\Gamma
+  \quad\leadsto\quad
+  \left(L_Y^2,u,\chi_\Gamma\right),
+\]
+with
+\[
+  u=
+  \frac{\int d\nu_\Gamma\,\|\theta_\Gamma^3\|^2}
+       {\int d\nu_\Gamma\,\|\theta_\Gamma^Y\|^2},
+  \qquad
+  \chi_\Gamma=
+  \frac{\int d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^3,\theta_\Gamma^Y)}
+  {L_2L_Y}.
+\]
+Writing \(y=\sqrt u\), the pass equation is equivalently
+\[
+  R_{\rm dV}y^2
+  +2R_{\rm dV}\chi_\Gamma y
+  +R_{\rm dV}+\chi_\Gamma^2-1
+  =
+  0,
+\]
+so
+\[
+  y_\pm(\chi_\Gamma)
+  =
+  -\chi_\Gamma
+  \pm
+  \sqrt{\frac{(1-R_{\rm dV})(1-\chi_\Gamma^2)}{R_{\rm dV}}},
+  \qquad
+  u_\pm(\chi_\Gamma)=y_\pm(\chi_\Gamma)^2 .
+\]
+At \(\chi_\Gamma=0\), the positive root is
+\[
+  u_+(0)=\frac{1-R_{\rm dV}}{R_{\rm dV}}.
+\]
+At \(u=u_{\rm dV}\), the correlated branch has
+\[
+  \chi_\Gamma=-2\sqrt{R_{\rm dV}(1-R_{\rm dV})}.
+\]
+Define
+\[
+  D_\Gamma=u+1+2\chi_\Gamma\sqrt u,
+  \qquad
+  \Lambda_\Gamma=\frac{C^2}{L_Y^2}.
+\]
+Then the factorized matrix gives
+\[
+  \alpha_\Gamma
+  =
+  \frac{\Lambda_\Gamma}{4\pi D_\Gamma},
+  \qquad
+  M_W^2
+  =
+  \frac{\Lambda_\Gamma v_{\rm EW}^2}{4u},
+  \qquad
+  M_Z^2
+  =
+  \frac{\Lambda_\Gamma v_{\rm EW}^2D_\Gamma}
+       {4u(1-\chi_\Gamma^2)}.
+\]
+Eliminating \(\Lambda_\Gamma\) gives
+\[
+  \frac{M_Z^2}{\pi\alpha_\Gamma v_{\rm EW}^2}
+  =
+  \frac{D_\Gamma^2}{u(1-\chi_\Gamma^2)},
+  \qquad
+  \frac{M_W^2}{\pi\alpha_\Gamma v_{\rm EW}^2}
+  =
+  \frac{D_\Gamma}{u}.
+\]
+The diagonal branch reduces this to
+\[
+  \frac{M_Z^2}{\pi\alpha_\Gamma v_{\rm EW}^2}
+  =
+  \frac{1}{R_{\rm dV}(1-R_{\rm dV})},
+  \qquad
+  \frac{M_W^2}{\pi\alpha_\Gamma v_{\rm EW}^2}
+  =
+  \frac{1}{1-R_{\rm dV}}.
+\]
+The electromagnetic normalization is the localized computation of
+\(\Lambda_\Gamma=C^2/L_Y^2\).
+Given \((u,\chi_\Gamma)\) from the neutral current matrix, the three
+observable channels infer
+\[
+  \Lambda_\Gamma^{(\alpha)}
+  =
+  4\pi\alpha_\Gamma D_\Gamma,
+  \qquad
+  \Lambda_\Gamma^{(W)}
+  =
+  \frac{4uM_W^2}{v_{\rm EW}^2},
+  \qquad
+  \Lambda_\Gamma^{(Z)}
+  =
+  \frac{4u(1-\chi_\Gamma^2)M_Z^2}
+       {v_{\rm EW}^2D_\Gamma}.
+\]
+The D10 observable closure is
+\[
+  \Lambda_\Gamma^{(\alpha)}
+  =
+  \Lambda_\Gamma^{(W)}
+  =
+  \Lambda_\Gamma^{(Z)}.
+\]
+Equivalently,
+\[
+  4\pi\alpha_\Gamma D_\Gamma
+  =
+  \frac{4uM_W^2}{v_{\rm EW}^2}
+  =
+  \frac{4u(1-\chi_\Gamma^2)M_Z^2}
+       {v_{\rm EW}^2D_\Gamma}.
+\]
+Define
+\[
+  S_W=
+  \frac{M_W^2}{\pi\alpha_\Gamma v_{\rm EW}^2},
+  \qquad
+  S_Z=
+  \frac{M_Z^2}{\pi\alpha_\Gamma v_{\rm EW}^2},
+  \qquad
+  R_{\rm obs}=\frac{S_W}{S_Z}.
+\]
+Then
+\[
+  D_\Gamma=S_Wu,
+  \qquad
+  1-\chi_\Gamma^2=R_{\rm obs}S_Wu.
+\]
+With \(\varsigma_\Gamma={\rm sgn}(\chi_\Gamma)\),
+\[
+  \chi_\Gamma
+  =
+  \varsigma_\Gamma
+  \sqrt{1-R_{\rm obs}S_Wu}.
+\]
+The inverse electroweak reconstruction equation is
+\[
+  S_Wu
+  =
+  u+1+
+  2\varsigma_\Gamma
+  \sqrt{u(1-R_{\rm obs}S_Wu)}.
+\]
+For the exact de Vries pass, \(R_{\rm obs}=R_{\rm dV}\).  The common scale is
+\[
+  \Lambda_\Gamma=4\pi\alpha_\Gamma S_Wu.
+\]
+For canonical finite-mode normalization and frame-frozen
+\(\Sigma_\Gamma^{AB}\),
+\[
+  \partial_\rho\log G_{\rm EW}=-\frac1\rho,
+  \qquad
+  \partial_\lambda\log G_{\rm EW}
+  =
+  -\frac{0.118746651783551}{\lambda}.
+\]
+Therefore
+\[
+  \frac{\partial^2M_Z^2}{\partial\rho\,\partial v_{\rm EW}}
+  =
+  -\frac{2M_Z^2}{v_{\rm EW}\rho},
+  \qquad
+  \frac{\partial^2M_Z^2}{\partial\lambda\,\partial v_{\rm EW}}
+  =
+  -0.237493303567102\,
+  \frac{M_Z^2}{v_{\rm EW}\lambda}.
+\]
+The same dimensionless coefficients apply to
+\(\mu_*^2=M_Z^2/\Xp(2)\).
+For the charged weak block,
+\[
+  \frac{\partial^2M_W^2}{\partial\rho\,\partial v_{\rm EW}}
+  =
+  -\frac{2M_W^2}{v_{\rm EW}\rho},
+  \qquad
+  \frac{\partial^2M_W^2}{\partial\lambda\,\partial v_{\rm EW}}
+  =
+  -0.838811351483078\,
+  \frac{M_W^2}{v_{\rm EW}\lambda}.
+\]
+The general mixed block is
+\[
+  K_{\rho v}^{\Gamma}
+  =
+  v_{\rm EW,*}
+  \left[
+  \Sigma_\Gamma^{AB}\partial_\rho{\cal G}_{AB}
+  +(\partial_\rho\Sigma_\Gamma^{AB}){\cal G}_{AB}
+  \right]_*,
+\]
+with the analogous \(\lambda\)-derivative.
+In the one-scale window, \(L_A(\ell,\lambda)=\ell\widehat L_A(\lambda)\)
+and \(\rho=c_\rho(\lambda)\ell^2\).  At fixed \(\lambda\),
+\[
+  {\cal G}^{AB}(\rho)
+  =
+  \frac{c_\rho}{\rho}\widehat{\cal G}^{AB},
+  \qquad
+  \partial_\rho{\cal G}^{AB}
+  =
+  -\frac{1}{\rho}{\cal G}^{AB}.
+\]
+For frame-frozen \(\Sigma_\Gamma^{AB}\), a positive coefficient gives
+\[
+  \partial_\rho V_\Gamma=-\frac{1}{\rho}V_\Gamma,
+  \qquad
+  K_{\rho v}^{\Gamma}
+  =
+  -\frac{1}{\rho_*}
+  v_{\rm EW,*}\Sigma_\Gamma^{AB}{\cal G}_{AB}\big|_* .
+\]
+For an unnormalized boundary-profile amplitude, the DBI-scaled finite-section
+coefficient carries the D8 source scaling
+\[
+  Z_\Gamma\propto\rho\,\tau^{-3}.
+\]
+At fixed \(\tau\), this cancels the radial scaling of
+\({\cal G}^{AB}\).  With
+\[
+  \tau=\tau_*\left(\frac{\ell}{\ell_*}\right)^s,
+  \qquad
+  \rho=c_\rho\ell^2,
+\]
+one obtains
+\[
+  \partial_\rho\log(Z_\Gamma{\cal G}^{AB})
+  =
+  -\frac{3s}{2\rho}.
+\]
+In the canonical \(v_{\rm EW}\) convention, the common DBI factor is absorbed
+into \(v_{\rm EW}\), leaving the normalized matrix \(\Sigma_\Gamma^{AB}\).
+At fixed \(\rho\), the selected source metric also gives local
+\(\lambda\)-derivatives.  For
+\[
+  u(\beta)=\frac{L_2^2}{L_Y^2}
+  =
+  3\frac{n^2q^2}{r^2}\frac{1+\beta}{\beta},
+  \qquad
+  \lambda(\beta)
+  =
+  \frac34\frac{p^2}{q^2}\beta(3-4\beta)^2 ,
+\]
+one obtains
+\[
+  \left.\frac{\partial\log u}{\partial\log\lambda}\right|_*
+  =
+  1.347631602696264 .
+\]
+Combining this with the weak length coefficient gives
+\[
+  \partial_\lambda\log L_2^2
+  =
+  \frac{0.419405675741539}{\lambda},
+  \qquad
+  \partial_\lambda\log L_Y^2
+  =
+  -\frac{0.928225926954725}{\lambda}.
+\]
+Consequently,
+\[
+  \partial_\lambda\log L_Q^2
+  =
+  -\frac{0.627566902996737}{\lambda},
+  \qquad
+  \partial_\lambda\log G_{\rm EW}
+  =
+  -\frac{0.118746651783551}{\lambda}.
+\]
+The total \(\lambda\)-block for the canonical finite-section source adds
+\(\partial_\lambda\Sigma_\Gamma^{AB}\).  For the unnormalized
+boundary-profile control pass, at fixed \(\rho\) and fixed \(\tau\), write
+\[
+  Z_\Gamma=Z_{\Gamma,0}z_\Gamma(\lambda).
+\]
+For a constant-profile boundary-cycle normalization on
+\(\CP^2\times S^1_Q\),
+\[
+  z_{\Gamma,{\rm cp}}(\lambda)
+  \propto
+  c_\rho(\lambda)^{-5/2}\widehat L_Q(\lambda),
+\]
+and the selected source metric gives
+\[
+  \partial_\lambda\log z_{\Gamma,{\rm cp}}
+  =
+  -\frac{0.980450118165035}{\lambda}.
+\]
+Consequently,
+\[
+  \partial_\lambda\log(z_{\Gamma,{\rm cp}}G_{\rm EW})
+  =
+  -\frac{1.099196769948586}{\lambda}.
+\]
+A canonically normalized four-dimensional finite mode can absorb the
+cycle-volume factor into \(v_{\rm EW}\).  In that convention
+\[
+  z_{\Gamma,{\rm unit}}(\lambda)=1,
+  \qquad
+  \partial_\lambda\log(z_{\Gamma,{\rm unit}}G_{\rm EW})
+  =
+  -\frac{0.118746651783551}{\lambda}.
+\]
+% CONTROL: derive Z_Gamma and the direct localized-current tensor signs in
+% mixed-current-vacuum-hessian-gate.md.
+Standard KK scaling gives a second D9 boundary at finite electroweak vacuum
+value.  Since \(g_2\propto L_2^{-1}\),
+\[
+  L_2\to0,\qquad v_{\rm EW}=v_0<\infty
+  \quad\Longrightarrow\quad
+  M_W,M_Z\to\infty .
+\]
+With finite \(L_Y\),
+\[
+  e=\frac{g_2g_Y}{\sqrt{g_2^2+g_Y^2}}\to g_Y,
+  \qquad
+  \sin^2\theta_W\to0,
+\]
+so the surviving photon is the finite \(U(1)_Q\) current at the D9 boundary.
+Indeed, with
+\[
+  A_\mu=\sin\theta_W\,W^3_\mu+\cos\theta_W\,B_\mu,
+  \qquad
+  Q=T_3+Y,
+\]
+the field direction tends to \(B_\mu\), and the charge generator remains
+\(Q\) because
+\[
+  g_2\sin\theta_W=e,
+  \qquad
+  g_Y\cos\theta_W=e .
+\]
+The branch with \(L_2,L_Y\to0\) has \(e\to\infty\) and gives a singular
+endpoint.  This finite-\(v\) route is controlled by the current metric,
+and the large-\(v_F\) route is controlled by the scalar asymptotic.  As a
+vacuum endpoint, finite \(v_{\rm EW}\) with \(M_W,M_Z\to\infty\) is a
+pathological decoupling limit; its value here is diagnostic for the
+\(Q\)-projection.
+
+The de Vries operator enters through the boundary-current image channel.  For
+\[
+  A_j=\sum_aT_a^{(j)}\otimes e_a,\qquad A_j^\dagger A_j=J\bm1,
+\]
+the source/image Hessian is
+\[
+  \cH_j=
+  \begin{pmatrix}
+  0&\sqrt J\\
+  \sqrt J&-J
+  \end{pmatrix},
+  \qquad
+  \det\cH_j=-J.
+\]
+For \(j=\half\), the same neutral doublet gives \(J=3/4\).  The finite
+potential, the gauge Hessian, and the Schur image Hessian therefore share the
+vacuum vector \(\eta_0\) and occupy different quadratic sectors of the D10
+interface.
+The corresponding Schur mass scale obeys
+\[
+  \mu_*^2=\frac{M_Z^2}{X_+(2)}
+  =
+  \frac{g_2^2+g_Y^2}{4X_+(2)}v_{\rm EW}^2.
+\]
+The canonical electroweak source tensor fixes the physical \(j=1\) neutral
+eigenvalue, so the dimensionful Schur scale is anchored by
+\[
+  \mu_*^2X_+(2)=
+  M_Z^2
+  =
+  \frac{C^2v_{\rm EW}^2}{4}G_{\rm EW}.
+\]
+The coefficient split is
+\[
+  \hbox{scale:}\quad
+  \mu_*^2=
+  \frac{C^2v_{\rm EW}^2}{4X_+(2)}G_{\rm EW},
+  \qquad
+  \hbox{ratio:}\quad
+  a=1,\quad \kappa_{\rm cur}=1.
+\]
+Anchoring the \(j=1\) channel converts the charged channel into the
+weak-angle length equation.  The source block gives
+\[
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{L_Y^2}{L_2^2+L_Y^2}
+  =
+  \frac{1}{1+u},
+  \qquad
+  u=\frac{L_2^2}{L_Y^2}.
+\]
+The Schur block gives
+\[
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{X_+(3/4)}{X_+(2)}.
+\]
+Source/Schur agreement is therefore equivalent to
+\[
+  u=
+  \frac{X_+(2)}{X_+(3/4)}-1
+  =
+  0.2871691363429836.
+\]
+Thus the source tensor supplies the common mass scale, and the Payen
+Wilson/current-frame calculation supplies the Schur ratio.
+% CONTROL: Local Gamma_EW action derivation of the common mu_*^2 coefficient
+% and M_perp^2 gap lives in gamma-ew-boundary-quadratic-action-audit.md.
+Modern spectral-action variants can add a real singlet scalar \(\sigma\)
+coupled to the finite Higgs sector
+\cite{ChamseddineConnes2012,ChamseddineConnesVanSuijlekom2013a,
+ChamseddineConnesVanSuijlekom2013b,Martinetti2015,
+FilaciMartinettiPesco2020}.  A local model is
+\[
+  V_{h\sigma}
+  =
+  \lambda_F(\langle\Phi,\Phi\rangle-v_F^2)^2
+  +\frac12M_{\sigma,0}^2\sigma^2
+  +a_\sigma\sigma(\langle\Phi,\Phi\rangle-v_F^2).
+\]
+In the canonical basis \((h,\sigma)\), the Hessian is
+\[
+  K_{h\sigma}=
+  \begin{pmatrix}
+  2\lambda_Fv_{\rm EW}^2&a_\sigma v_{\rm EW}\\
+  a_\sigma v_{\rm EW}&M_{\sigma,0}^2
+  \end{pmatrix}.
+\]
+Writing \(M_{h,0}^2=2\lambda_Fv_{\rm EW}^2\), the scalar eigenvalues are
+\[
+  m_\pm^2=
+  \frac12\left(
+  M_{h,0}^2+M_{\sigma,0}^2
+  \pm
+  \sqrt{(M_{h,0}^2-M_{\sigma,0}^2)^2
+  +4a_\sigma^2v_{\rm EW}^2}
+  \right),
+\]
+with mixing angle
+\[
+  \tan 2\alpha
+  =
+  \frac{2a_\sigma v_{\rm EW}}
+       {M_{\sigma,0}^2-M_{h,0}^2}.
+\]
+Since \(Q\sigma=0\), this mixing leaves the photon-protection equation
+unchanged and enlarges the scalar vacuum system.
+
+The finite-triple control layer uses the Standard-Model KO6 structure
+\cite{ChamseddineConnesMarcolli2007,Stephan2009,DAndreaDabrowski2016}.  A
+local four-summand lift is
+\[
+  A_{\rm lift}=
+  M_3(\C)_c\oplus{\mathbb H}_w\oplus\C_r\oplus\C_q,
+\]
+with project edge
+\[
+  H_{rq}^-\longrightarrow H_{wq}^+.
+\]
+The first-order factors are
+\[
+  (a_w-a_r)(b_q-b_q)=0,
+  \qquad
+  (a_q-a_q)(b_w-b_r)=0,
+\]
+and the local charge equations are
+\[
+  Y(H_{rq})=0,\qquad Y(H_{wq})=\half.
+\]
+With \(y_w=0\), this fixes
+\[
+  y_r=y_q=-\half.
+\]
+The project edge contribution to the four-summand intersection form has
+\[
+  \det(\cap_\Phi)=0.
+\]
+The full represented Krajewski matrix supplies the Standard-Model Poincare
+form, determinant-one hypercharge lift, and fermion Hilbert-space data.
+Modern finite-geometry checks add Hodge-duality and spectral-torsion
+constraints involving Yukawa and Majorana data
+\cite{DabrowskiSitarz2019,DabrowskiMukhopadhyayPozar2025}.
+
+\section{The D8-Like Boundary And Schur Auxiliary}
+
+The common boundary interface for \(Q\) protection and the Schur auxiliary
+channel is
+\[
+  \Gamma_{\rm EW}=M_4\times\CP^2\times S^1_Q.
+\]
+The localized action on this interface is split as
+\[
+  S_\Gamma
+  =
+  S_{\rm DBI}^{\Gamma}
+  +S_{\rm CS}^{\Gamma}
+  +S_{\rm Payen}^{\Gamma}
+  +S_{\rm aux}^{\Gamma}.
+\]
+The D8-like DBI term is
+\[
+  S_{\rm DBI}^{\Gamma}
+  =
+  -T_8\int_{\Gamma_{\rm EW}}d^9\xi\,
+  e^{-\phi}
+  \sqrt{-\det\!\left(P[g+B]+2\pi\alpha'F_Q\right)} .
+\]
+Its quadratic finite/current density is
+\[
+  d\nu_\Gamma
+  =
+  T_8(2\pi\alpha')^2e^{-\phi}\sqrt{\gamma_\Gamma}\,
+  {\cal W}_\Gamma\,d^5\sigma ,
+\]
+where \({\cal W}_\Gamma\) collects the orientifold-image, frame, and
+reduction factors.
+It is D8-like in Type IIA.  The universal localized-source scaling gives
+\[
+  V_{Dp}\propto \rho^{(p-6)/2}\tau^{-3},
+\]
+so for \(p=8\),
+\[
+  V_{D8}\propto \rho\,\tau^{-3}.
+\]
+With one-scale variables
+\[
+  \rho=c_\rho\ell^2,\qquad
+  \tau=\tau_*\left(\frac{\ell}{\ell_*}\right)^s,
+\]
+this contribution scales as
+\[
+  V_{D8}\propto x^{2-3s},
+  \qquad x=\frac{\ell}{\ell_*}.
+\]
+The Romans-mass jump takes the distributional form
+\[
+  \dd F_0=N_8\,\delta_{\Gamma_{\rm EW}}.
+\]
+
+The Wess--Zumino skeleton is
+\[
+  S_{\rm WZ}
+  =
+  \mu_8\int_{\Gamma_{\rm EW}}
+  C\wedge{\rm ch}(E_Q)
+  \sqrt{\frac{\widehat A(T\Gamma_{\rm EW})}
+             {\widehat A(N\Gamma_{\rm EW})}}.
+\]
+On the \(\CP^2\) boundary the spin\(^c\) shift gives
+\[
+  \frac{F_Q}{2\pi}=6h_Q+\frac{x}{2},
+  \qquad x=(2m+1)h_Q.
+\]
+For the minimal lift,
+\[
+  \frac{F_Q}{2\pi}=\frac{13}{2}h_Q,
+  \qquad
+  \frac{2F_Q}{2\pi}=13h_Q.
+\]
+The boundary therefore carries the determinant signal \(P+Q=13\).  In a
+realization with weak period \(Q=7\), the internal consistency check reads
+\[
+  r=Q(P+Q)=7\cdot13=91.
+\]
+This relation is used inside a specified realization as an internal
+consistency condition.
+
+The source-backed boundary placement is Payen's Chan--Paton action for a
+group-valued endpoint field \(g(\tau)\) \cite{Payen2007}:
+\[
+  S_{\rm CP}
+  =
+  \int_{\partial\Sigma}d\tau\,
+  \kappa\!\left(
+  -ig^{-1}(\partial_\tau+A_\tau)g
+  \right).
+\]
+Canonical quantization gives a finite-dimensional representation \(R\) of the
+endpoint group, and the boundary path integral gives the Wilson loop
+\[
+  {\rm Tr}\,{\cal T}_{\partial\Sigma}
+  \exp\left(
+  i\int_{\partial\Sigma}d\tau\,R(A_\tau)
+  \right).
+\]
+For \(G=\SU(2)\), \(R=V_j\), and
+\[
+  R_j(A_\tau)=A_\tau^aT_a^{(j)},
+\]
+the Wilson expansion supplies the linear charge insertion \(T_a^{(j)}\) and
+the bilinear insertion \(T_a^{(j)}T_b^{(j)}\).
+With a boundary fluctuation
+\[
+  R_j(A_\tau)=\mu\,\xi^aT_a^{(j)},
+\]
+the expansion has one tensor normalization:
+\[
+  \delta W_j|_{\xi=0}\sim i\mu\,T_a^{(j)}\delta\xi^a,
+  \qquad
+  \delta^2W_j|_{\xi=0}\sim
+  -\mu^2T_a^{(j)}T_b^{(j)}\delta\xi^a\delta\xi^b.
+\]
+The representation product is therefore fixed once the boundary fluctuation
+scale \(\mu\) is fixed.  Equivalently, a rescaling \(A_j\mapsto aA_j\)
+sends the image bilinear to \(a^2A_jA_j^\dagger\).  The boundary exponential
+therefore gives the tensor relation \(b=a^2\).  After the common physical
+scale \(\mu_*^2\) is factored out, the orthonormal current frame gives the
+canonical dimensionless coefficient \(a=1\).
+The coefficient \(\mu\) belongs to the boundary fluctuation and the retained
+current frame.  Representation dependence enters through \(T_a^{(j)}\) and
+its Casimir \(j(j+1)\).  Thus a single \(\Gamma_{\rm EW}\) boundary sector
+uses one worldvolume scale \(\mu_\Gamma^2\) for \(j=\half\) and \(j=1\).
+
+The same boundary can carry the auxiliary field \(y\in V_j\).  Before the
+\(Q\) projection, the weak Chan--Paton line sectors are \(\cO(0)\) and
+\(\cO(2j)\).  Their mixed boundary-changing zero-mode space is
+\[
+  H^0(\CP^1,{\rm Hom}(\cO(0),\cO(2j)))
+  =
+  H^0(\CP^1,\cO(2j))
+  =
+  V_j.
+\]
+Thus the representation space for the auxiliary is the same Borel--Weil
+sector used by the current map.
+The D-brane charge formula uses a Chan--Paton bundle with connection on the
+wrapped worldvolume \cite{MinasianMoore1997}, and Payen's boundary action
+quantizes the endpoint degree into the representation \(V_j\)
+\cite{Payen2007}.  For the two-line weak interface set
+\[
+  E_0=\cO(0),\qquad E_j=\cO(2j),\qquad
+  \mathcal E_j={\rm Hom}(E_0,E_j)\simeq \cO(2j).
+\]
+The Hermitian metrics on \(E_0\) and \(E_j\) induce one Hermitian metric on
+\(\mathcal E_j\), hence on
+\[
+  V_j=H^0(\CP^1,\mathcal E_j).
+\]
+Thus
+\[
+  y,\quad t,\quad A_j^\dagger n
+  \in V_j
+\]
+are measured by the same boundary-complex norm.  The physical coefficient is
+the common worldvolume normalization multiplying this norm.
+For the neutral anchor \(j=1\), this boundary-complex metric is tied to the
+finite weak doublet metric by the line-square map.  Let \(L=\cO(1)\).  Then
+\[
+  V_{\half}=H^0(\CP^1,L),
+  \qquad
+  V_1=H^0(\CP^1,L^{\otimes2})
+  \simeq {\rm Sym}^2 V_{\half}.
+\]
+If the \(Q\)-neutral section \(\eta_0\in V_{\half}\) has unit norm, the
+induced tensor-square metric gives
+\[
+  \|\eta_0\odot\eta_0\|_{V_1}
+  =
+  \|\eta_0\|_{V_{\half}}^2
+  =
+  1.
+\]
+Thus the \(j=1\) Schur scale anchor can use the same finite-section
+normalization that defines \(v_{\rm EW}^2=Z_0I_0v_b^2\).
+Writing \(Z_{\mathcal E,1}\) for the localized line-square boundary-complex
+norm, the source-matched coefficient is
+\[
+  \mu_\Gamma^2
+  =
+  \frac{C^2}{4X_+(2)}
+  Z_{\mathcal E,1}v_b^2\,G_{\rm EW},
+  \qquad
+  Z_{\mathcal E,1}=Z_0I_0.
+\]
+In a standard spin basis, the \(Q\)-neutral choice
+\[
+  \eta_0=|{\textstyle -\frac12}\rangle\in V_{\half}
+\]
+has tensor square
+\[
+  \eta_0\odot\eta_0=|-1\rangle\in V_1.
+\]
+Its charges are
+\[
+  T_3(\eta_0\odot\eta_0)=-(\eta_0\odot\eta_0),
+  \qquad
+  Y(\eta_0\odot\eta_0)=\eta_0\odot\eta_0,
+\]
+so
+\[
+  Q(\eta_0\odot\eta_0)=0.
+\]
+Consequently \(\eta_0\odot\eta_0\) is basic for the \(S^1_Q\) boundary action
+and descends to the \(\Gamma_{\rm EW}\) boundary.
+The spin-one Casimir then gives
+\[
+  \sum_aT_a^{(1)}T_a^{(1)}|-1\rangle=2|-1\rangle,
+\]
+so the neutral Schur anchor carries \(J=2\) from the symmetric square of the
+same finite section that supplies the electroweak source tensor.
+
+The scale equality is now a zero-mode normalization test.  In the Hilbert
+normalization of the boundary zero modes,
+\[
+  \|\widehat\eta_0\|_{V_{\half}}=1,
+  \qquad
+  \|\widehat\eta_0\odot\widehat\eta_0\|_{{\rm Sym}^2V_{\half}}=1,
+\]
+so the induced neutral-anchor coefficient is
+\[
+  Z_{\mathcal E,1}^{\rm zm}=Z_0I_0,
+  \qquad
+  \chi_\Gamma^{\rm zm}=1.
+\]
+A pointwise tensor-profile reading gives a distinct diagnostic.  With
+\[
+  I_2=
+  \int_{\Gamma_{\rm EW,int}}
+  \sqrt{\gamma_\Gamma}\,|\eta_0|^4 ,
+\]
+the same local density gives
+\[
+  Z_{\mathcal E,1}^{\rm pt}=Z_0I_2,
+  \qquad
+  \chi_\Gamma^{\rm pt}=\frac{I_2}{I_0}.
+\]
+Thus source matching selects the zero-mode Hilbert tensor metric, or a
+localized profile identity \(I_2=I_0\).
+The Payen boundary construction supports the zero-mode branch: the endpoint
+variable quantizes to a finite-dimensional Hilbert space carrying \(R\), and
+the boundary path integral is the Wilson trace \cite{Payen2007}.  With
+\[
+  R=V_j=H^0(\CP^1,\cO(2j)),
+\]
+the line-square anchor is a tensor inside the endpoint Hilbert representation.
+The pointwise \(I_2/I_0\) branch is a separate DBI profile assumption for a
+composite line-square field.
+Payen's non-oriented extension adds an orientifold compatibility check:
+the endpoint representation must be equivalent to its dual
+\cite{Payen2007}.  For \(\SU(2)\),
+\[
+  V_j^*\simeq V_j,
+\]
+with integer \(j\) real and half-integer \(j\) pseudoreal.  Hence the retained
+\(j=\half\) doublet and \(j=1\) triplet both pass the D8/O8 endpoint reality
+test.
+Endpoint reality is a survival test.  The finite retained set
+\[
+  j=0,\half,1
+\]
+still comes from the line-bundle or level-two selection.
+
+\begin{proposition}[Zero-mode scale pass]
+Assume that the localized \(\Gamma_{\rm EW}\) boundary action uses the Payen
+endpoint Hilbert representation \(R=V_j\), tensors the \(Q\)-neutral line
+inside \(V_{\half}\), and multiplies the finite source and neutral Schur
+anchor by the same D8/open-boundary density.  Then
+\[
+  Z_{\mathcal E,1}=Z_0I_0,
+  \qquad
+  \chi_\Gamma=1,
+\]
+and
+\[
+  \mu_\Gamma^2
+  =
+  \frac{C^2}{4\Xp(2)}Z_0I_0v_b^2G_{\rm EW}
+  =
+  \mu_*^2 .
+\]
+\end{proposition}
+
+\begin{proof}
+The zero-mode tensor metric gives
+\(\|\widehat\eta_0\odot\widehat\eta_0\|=1\).  The shared
+D8/open-boundary density gives \(Z_{\mathcal E,1}=Z_0I_0\).  Substitution in
+\(\chi_\Gamma=Z_{\mathcal E,1}/(Z_0I_0)\) gives \(\chi_\Gamma=1\), and the
+definition of \(\mu_\Gamma^2\) gives the stated scale.
+\end{proof}
+
+The shared-density form can be written explicitly as
+\[
+  d\nu_\Gamma
+  =
+  T_8(2\pi\alpha')^2e^{-\phi}\sqrt{\gamma_\Gamma}\,
+  {\cal W}_\Gamma\,d^5\sigma ,
+\]
+where \({\cal W}_\Gamma\) collects the frame, orientifold-image, and
+reduction factors of the localized action.  The finite source coefficient is
+\[
+  Z_0I_0
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,|\eta_0|^2 .
+\]
+For the endpoint Hilbert embedding,
+\[
+  Z_{\mathcal E,1}^{\rm zm}
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,|\eta_0|^2
+  \|\widehat\eta_0\odot\widehat\eta_0\|^2
+  =
+  Z_0I_0 .
+\]
+Thus the coefficient datum is the same \(d\nu_\Gamma\) in the finite source
+term and in the Payen endpoint Hilbert action.
+Consequently, for any modulus \(m\) whose dependence in both coefficients is
+carried by the same \(d\nu_\Gamma\),
+\[
+  \partial_m\log Z_{\mathcal E,1}^{\rm zm}
+  =
+  \partial_m\log(Z_0I_0),
+  \qquad
+  \partial_m\log\chi_\Gamma^{\rm zm}=0.
+\]
+Frame, orientifold-image, and reduction factors affect the common scale
+\(Z_0I_0\) and cancel from the scale-pass ratio.
+At fixed shape and finite profile, the D8-like density carries the source
+scaling
+\[
+  Z_0I_0\propto \rho\,\tau^{-3},
+  \qquad
+  G_{\rm EW}\propto \rho^{-1}.
+\]
+Hence the Schur scale has
+\[
+  \mu_\Gamma^2\propto Z_0I_0G_{\rm EW}\propto \tau^{-3},
+  \qquad
+  \partial_\rho\log(Z_0I_0G_{\rm EW})\big|_{\tau,\lambda}=0.
+\]
+Along \(\rho=c_\rho\ell^2\) and
+\(\tau=\tau_*(\ell/\ell_*)^s\),
+\[
+  \partial_{\log\ell}\log\mu_\Gamma^2=-3s.
+\]
+
+For \(J=j(j+1)>0\), the image projector is fixed by the Casimir identity:
+\[
+  A_j^\dagger A_j=J\,\bm1_{V_j},
+  \qquad
+  P_{\rm im}^{(j)}=\frac{1}{J}A_jA_j^\dagger .
+\]
+The current codomain decomposes under the diagonal \(\SU(2)\) action as
+\[
+  V_j\otimes V_1=V_{j+1}\oplus V_j\oplus V_{j-1},
+\]
+with the absent negative-spin summand omitted.  The map \(A_j\) is an
+equivariant embedding of \(V_j\) into the middle summand.  Thus
+\[
+  n_{\rm im}=P_{\rm im}^{(j)}n,
+  \qquad
+  n_\perp=(1-P_{\rm im}^{(j)})n
+\]
+gives a canonical image/orthogonal split.  For \(j=0\), \(A_0=0\) gives the
+photon slot.
+Equivalently, with
+\[
+  {\cal B}_j=\sum_aT_a^{(j)}\otimes S_a^{(1)}
+\]
+on \(V_j\otimes V_1\), the diagonal Casimir gives eigenvalues
+\[
+  j,\quad -1,\quad -(j+1)
+\]
+on \(V_{j+1}\), \(V_j\), and \(V_{j-1}\), respectively.  Hence
+\[
+  P_{\rm im}^{(j)}
+  =
+  -\frac{({\cal B}_j-j)({\cal B}_j+j+1)}{j(j+1)}.
+\]
+The complementary projector is
+\[
+  P_{\perp}^{(j)}
+  =
+  1-P_{\rm im}^{(j)}
+  =
+  \frac{{\cal B}_j({\cal B}_j+1)}{j(j+1)}.
+\]
+It has eigenvalue zero on the image summand and eigenvalue one on the
+orthogonal summands.  Thus \(M_\perp^2\langle n,P_\perp^{(j)}n\rangle\) is a
+canonical local gap term for \(M_\perp^2>0\).
+Equivalently, let \(\Delta_{\Gamma,j}\) be the self-adjoint Laplacian of the
+localized boundary complex whose zero modes are the image summand.  Compactness
+of the internal boundary image gives
+\[
+  \lambda_{\perp,j}
+  =
+  \inf_{\substack{n\in P_\perp^{(j)}(V_j\otimes V_1)\\ \|n\|=1}}
+  \langle n,\Delta_{\Gamma,j}n\rangle
+  >
+  0.
+\]
+The complement gap can then be written as \(M_\perp^2=\lambda_{\perp,j}\)
+up to the common boundary kinetic normalization.
+% CONTROL: Complement-kernel and density audit lives in
+% codexVersion-proof-gates.md.
+With the shared density, the finite projector acts fibrewise:
+\[
+  {\cal H}_{\Gamma,j}
+  =
+  L^2(\Gamma_{\rm EW,int},d\nu_\Gamma)
+  \otimes (V_j\otimes V_1),
+\]
+\[
+  \langle n,P_\perp^{(j)}n\rangle_\Gamma
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \langle n(\sigma),P_\perp^{(j)}n(\sigma)\rangle_{V_j\otimes V_1}.
+\]
+All frame, orientifold-image, and reduction factors stay in \(d\nu_\Gamma\).
+If
+\[
+  \ker\Delta_{\Gamma,j}={\rm Im}\,A_j,
+\]
+then
+\[
+  M_{\perp,j}^2
+  =
+  \inf_{\substack{
+  n\in P_\perp^{(j)}{\cal H}_{\Gamma,j}\\
+  \|n\|_\Gamma=1}}
+  \langle n,\Delta_{\Gamma,j}n\rangle_\Gamma
+  >
+  0.
+\]
+The residual dimensionless number is
+\[
+  r_{\perp,j}=\frac{M_{\perp,j}^2}{\mu_\Gamma^2}.
+\]
+It leaves the image-block de Vries eigenvalue unchanged and assigns the
+complement datum to the localized boundary complex.
+
+Let
+\[
+  t\in V_j,\qquad n=n_{\rm im}+n_\perp,\qquad
+  n_{\rm im}\in{\rm Im}\,A_j,\qquad y\in V_j.
+\]
+The dimensionful local auxiliary form is
+\[
+  S_{\Gamma,j}^{(2)}
+  =
+  \mu_\Gamma^2
+  \left[
+  \|t\|^2+\|y\|^2+
+  \langle y,t-A_j^\dagger n\rangle+
+  \langle t-A_j^\dagger n,y\rangle
+  \right]
+  +M_\perp^2\langle n,P_\perp^{(j)}n\rangle
+\]
+eliminates \(y\) and leaves
+\[
+  \mu_\Gamma^2
+  \left[
+  \langle t,A_j^\dagger n\rangle+
+  \langle n,A_jt\rangle-
+  \langle n,A_jA_j^\dagger n\rangle
+  \right]
+  +M_\perp^2\langle n,P_\perp^{(j)}n\rangle .
+\]
+Equivalently, setting \(s=t-A_j^\dagger n\), the \(y\)-dependent part is
+\[
+  \mu_\Gamma^2
+  \left[
+  \|t\|^2+\|y\|^2+\langle y,s\rangle+\langle s,y\rangle
+  \right]
+  =
+  \mu_\Gamma^2
+  \left[
+  \|y+s\|^2+\|t\|^2-\|s\|^2
+  \right].
+\]
+Thus the equal-coefficient test is local: the D8 boundary complex provides
+the same Hermitian metric for \(y\), for \(t-A_j^\dagger n\), and for
+the endpoint field \(t\).
+At the selected stationary point, the source-to-Schur scale equation is
+\[
+  \mu_\Gamma^2=\mu_*^2
+  =
+  \frac{C^2v_{\rm EW}^2}{4X_+(2)}G_{\rm EW}.
+\]
+Since \(X_+(2)=\sqrt3-1\), equivalently
+\[
+  \mu_\Gamma^2
+  =
+  \frac{\sqrt3+1}{2}\,M_Z^2.
+\]
+In boundary-profile variables, \(v_{\rm EW}^2=Z_0I_0v_b^2\) gives
+\[
+  \mu_\Gamma^2
+  =
+  \frac{C^2}{4X_+(2)}
+  Z_0I_0v_b^2\,G_{\rm EW}.
+\]
+% CONTROL: Auxiliary coefficient pass scalar:
+% chi_Gamma = mu_Gamma^2 X_+(2)/M_Z^2
+% = 4 X_+(2) mu_Gamma^2 /(C^2 Z_0 I_0 v_b^2 G_EW).
+This boundary Schur term supplies the negative diagonal in the projected
+block on \(V_j\oplus{\rm Im}\,A_j\).  The orthogonal image complement is
+gapped by \(M_\perp^2\).
+
+% CONTROL: The concrete derivation of y, its sign, and its coefficient lives
+% in codexVersion-proof-gates.md and the D10 boundary notes.
+
+\section{RR/Current Boundary Length}
+
+The weak coupling normalization follows Weinberg's rms-circumference rule,
+\[
+  g^2=\frac{4\pi^2\kappa^2}{L^2},
+  \qquad
+  \kappa^2=16\pi G.
+\]
+The D10 current-frame normalization is the retained weak length from the
+localized current frame on \(\Gamma_{\rm EW}\).  Write
+\[
+  \Pi_{\rm EW}\iota_\Gamma^*C_1
+  =
+  q_\Gamma\,\theta_\Gamma^3,
+  \qquad
+  \Pi_{\rm EW}\iota_\Gamma^*F_2
+  =
+  q_\Gamma\,d_\Gamma\theta_\Gamma^3 .
+\]
+The \(\SU(2)\)-equivariant completion gives the triplet
+\(\theta_\Gamma^a\).  The boundary-current length matrix is
+\[
+  K_{ab}^\Gamma
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^a,\theta_\Gamma^b).
+\]
+The unit current metric condition is the D10 equation
+\[
+  K_{ab}^\Gamma=L_{2,\Gamma}^2\delta_{ab}.
+\]
+A useful split is
+\[
+  L_{2,\Gamma}^2=L_{2,{\rm horiz}}^2+L_{2,{\rm vert}}^2,
+\]
+with the horizontal term supplied by the \(\CP^1\) weak orbit and the vertical
+term supplied by the localized \(C_1,F_2\) current channel.  On a round
+\(\CP^1\simeq S^2\) weak factor of radius \(R_w\),
+\[
+  K_a=x\times e_a,
+  \qquad
+  |K_a|^2=R_w^2-x_a^2,
+\]
+and the sphere average gives
+\[
+  \frac{1}{{\rm Vol}(\CP^1)}
+  \int_{\CP^1}\sqrt g\,g(K_a,K_b)
+  =
+  \frac{2}{3}R_w^2\delta_{ab}.
+\]
+Thus
+\[
+  L_{2,{\rm horiz}}^2=\frac23\ell^2\lambda R_0^2.
+\]
+The vertical term is the localized RR/current integral
+\[
+  L_{2,{\rm vert}}^2\delta_{ab}
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\theta_{\Gamma,{\rm vert}}^a,
+  \theta_{\Gamma,{\rm vert}}^b).
+\]
+Equivalently, let \(\widetilde K_a\) be the retained boundary-current lift
+whose horizontal part is the \(\CP^1\) rotation field \(K_a\), with vertical
+part supplied by the localized \(C_1,F_2\) current channel.  The averaged
+metric condition is
+\[
+  {\rm Av}_\Gamma\,g(\widetilde K_a,\widetilde K_b)
+  =
+  \left(L_{2,{\rm horiz}}^2+L_{2,{\rm vert}}^2\right)\delta_{ab}
+  =
+  L_{2,\Gamma}^2\delta_{ab}.
+\]
+Thus the current frame used in the Schur operator is
+\[
+  e_a=\frac{\widetilde K_a}{L_{2,\Gamma}},
+  \qquad
+  A_j=\sum_aT_a^{(j)}\otimes e_a,
+  \qquad
+  A_j^\dagger A_j=j(j+1)\bm1 .
+\]
+The same density \(d\nu_\Gamma\) appears in the finite source coefficient
+and in the Payen endpoint Hilbert coefficient, so the vertical length and the
+Schur scale are computed inside one boundary action.
+
+\subsection{Neutral Matrix Extraction}
+
+Set
+\[
+  \Theta_\Gamma
+  =
+  \binom{\theta_\Gamma^3}{\theta_\Gamma^Y},
+  \qquad
+  I_{AB}^\Gamma
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\theta_\Gamma^B),
+  \quad A,B\in\{3,Y\}.
+\]
+The localized action extracts the neutral length matrix as
+\[
+  {\cal L}_\Gamma
+  =
+  \begin{pmatrix}
+  I_{33}^\Gamma&I_{3Y}^\Gamma\\
+  I_{3Y}^\Gamma&I_{YY}^\Gamma
+  \end{pmatrix},
+\]
+so
+\[
+  L_2^2=I_{33}^\Gamma,\qquad
+  L_Y^2=I_{YY}^\Gamma,\qquad
+  \epsilon_\Gamma=I_{3Y}^\Gamma.
+\]
+Equivalently,
+\[
+  u=\frac{I_{33}^\Gamma}{I_{YY}^\Gamma},
+  \qquad
+  \chi_\Gamma=
+  \frac{I_{3Y}^\Gamma}{\sqrt{I_{33}^\Gamma I_{YY}^\Gamma}},
+  \qquad
+  D_\Gamma=u+1+2\chi_\Gamma\sqrt u .
+\]
+The common current scale is
+\[
+  \Lambda_\Gamma=\frac{C^2}{I_{YY}^\Gamma}.
+\]
+The local boundary calculation then gives
+\[
+  \alpha_\Gamma
+  =
+  \frac{\Lambda_\Gamma}{4\pi D_\Gamma},
+  \qquad
+  M_W^2
+  =
+  \frac{\Lambda_\Gamma v_{\rm EW}^2}{4u},
+  \qquad
+  M_Z^2
+  =
+  \frac{\Lambda_\Gamma v_{\rm EW}^2D_\Gamma}
+       {4u(1-\chi_\Gamma^2)}.
+\]
+The de Vries pass condition becomes the integral constraint
+\[
+  R_{\rm dV}
+  =
+  \frac{I_{33}^\Gamma I_{YY}^\Gamma-(I_{3Y}^\Gamma)^2}
+       {I_{33}^\Gamma
+       (I_{33}^\Gamma+I_{YY}^\Gamma+2I_{3Y}^\Gamma)}.
+\]
+The D10 task has therefore been reduced to constructing
+\(\theta_\Gamma^3,\theta_\Gamma^Y,d\nu_\Gamma\) from the localized
+DBI/CS boundary system and evaluating these three current integrals.
+
+A rank-one specialization gives a viability test.  If
+\[
+  \theta_\Gamma^Y=c\,\theta_\Gamma^3
+\]
+in the retained current Hilbert space, then
+\[
+  I_{YY}^\Gamma=c^2I_{33}^\Gamma,
+  \qquad
+  I_{3Y}^\Gamma=cI_{33}^\Gamma,
+  \qquad
+  \det{\cal L}_\Gamma=0.
+\]
+The neutral coefficient \(G_Z^\Gamma=L_Q^2/\det{\cal L}_\Gamma\) lacks a
+finite value.  Thus the \(S^1_Q\) factor supplies photon protection, and a
+viable neutral matrix requires a second current direction from the
+\(\CP^2\), Chan--Paton, or boundary-complex sector.
+
+A rank-two normal form makes this requirement explicit.  Let \(e_Q,e_N\) be
+orthonormal retained current directions, with \(e_Q\) the \(Q\)-protected
+photon direction, and write
+\[
+  \theta_\Gamma^3=a_\Gamma e_Q+b_\Gamma e_N,
+  \qquad
+  \theta_\Gamma^Y=c_\Gamma e_Q-b_\Gamma e_N.
+\]
+Then
+\[
+  \theta_\Gamma^Q=\theta_\Gamma^3+\theta_\Gamma^Y
+  =
+  (a_\Gamma+c_\Gamma)e_Q,
+\]
+so the massive-neutral direction cancels from the photon current.  The
+integrals are
+\[
+  I_{33}^\Gamma=a_\Gamma^2+b_\Gamma^2,
+  \qquad
+  I_{YY}^\Gamma=c_\Gamma^2+b_\Gamma^2,
+  \qquad
+  I_{3Y}^\Gamma=a_\Gamma c_\Gamma-b_\Gamma^2.
+\]
+Consequently
+\[
+  L_Q^2=(a_\Gamma+c_\Gamma)^2,
+  \qquad
+  \det{\cal L}_\Gamma=b_\Gamma^2(a_\Gamma+c_\Gamma)^2,
+\]
+and
+\[
+  G_Z^\Gamma=\frac{1}{b_\Gamma^2},
+  \qquad
+  G_W^\Gamma=\frac{1}{a_\Gamma^2+b_\Gamma^2}.
+\]
+The de Vries pass condition is therefore the current-splitting condition
+\[
+  R_{\rm dV}
+  =
+  \frac{M_W^2}{M_Z^2}
+  =
+  \frac{b_\Gamma^2}{a_\Gamma^2+b_\Gamma^2},
+\]
+or
+\[
+  b_\Gamma^2=R_{\rm dV}L_2^2,
+  \qquad
+  a_\Gamma^2=(1-R_{\rm dV})L_2^2,
+  \qquad
+  \frac{|b_\Gamma|}{|a_\Gamma|}
+  =
+  \sqrt{\frac{R_{\rm dV}}{1-R_{\rm dV}}}
+  =
+  1.866083698\ldots .
+\]
+The neutral datum is \(L_Q=|a_\Gamma+c_\Gamma|\), equivalently
+\[
+  c_\Gamma=\sigma_Q L_Q-a_\Gamma,\qquad \sigma_Q=\pm1.
+\]
+
+The second direction has a canonical boundary-line source.  The combined
+weak-hypercharge frame bundle carries the neutral character
+\[
+  \chi_N(u_T,u_Y)=u_T^{-1}u_Y,
+  \qquad
+  L_N=L_{T_3}^{-1}\otimes L_Y,
+\]
+whose connection is represented by
+\[
+  \theta_\Gamma^N=\theta_\Gamma^Y-\theta_\Gamma^3.
+\]
+For the neutral finite section,
+\[
+  T_3\eta_0=-\frac12\eta_0,
+  \qquad
+  Y\eta_0=\frac12\eta_0,
+\]
+and therefore
+\[
+  (T_3\theta_\Gamma^3+Y\theta_\Gamma^Y)\eta_0
+  =
+  \frac12\theta_\Gamma^N\eta_0.
+\]
+The massive-neutral current is the current-metric projection of this neutral
+line away from the photon direction:
+\[
+  P_{Q^\perp}\omega
+  =
+  \omega
+  -
+  \frac{\langle \omega,\theta_\Gamma^Q\rangle_\Gamma}
+       {\langle \theta_\Gamma^Q,\theta_\Gamma^Q\rangle_\Gamma}
+  \theta_\Gamma^Q ,
+  \qquad
+  e_N
+  =
+  -\frac{P_{Q^\perp}\theta_\Gamma^N}
+        {\|P_{Q^\perp}\theta_\Gamma^N\|_\Gamma}.
+\]
+The projection has a matrix expression:
+\[
+  \|P_{Q^\perp}\theta_\Gamma^N\|_\Gamma^2
+  =
+  \|\theta_\Gamma^N\|_\Gamma^2
+  -
+  \frac{\langle\theta_\Gamma^N,\theta_\Gamma^Q\rangle_\Gamma^2}
+       {\|\theta_\Gamma^Q\|_\Gamma^2}
+  =
+  \frac{4\det{\cal L}_\Gamma}{L_Q^2}.
+\]
+The rank-two normal form gives
+\[
+  P_{Q^\perp}\theta_\Gamma^N=-2b_\Gamma e_N,
+  \qquad
+  \|P_{Q^\perp}\theta_\Gamma^N\|_\Gamma^2=4b_\Gamma^2.
+\]
+Thus the de Vries pass becomes the projected neutral-line norm condition
+\[
+  \|P_{Q^\perp}\theta_\Gamma^N\|_\Gamma^2
+  =
+  4R_{\rm dV}L_2^2.
+\]
+Equivalently,
+\[
+  \det{\cal L}_\Gamma=R_{\rm dV}L_2^2L_Q^2.
+\]
+This replaces the abstract second-current condition by concrete D10 data:
+\(L_N\), its projected boundary norm using \(d\nu_\Gamma\), and the
+comparison with the weak-current norm.
+
+The associated line-lattice data are
+\[
+  c_1(L_Y)=6h+7\eta,
+  \qquad
+  c_1(L_{T_3})=\eta,
+\]
+so
+\[
+  c_1(L_N)
+  =
+  c_1(L_Y)-c_1(L_{T_3})
+  =
+  6(h+\eta).
+\]
+The topological class fixes the neutral line; the physical condition is the
+projected norm
+\[
+  {\cal N}_N^\Gamma
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}
+  \left(
+  P_{Q^\perp}\theta_\Gamma^N,
+  P_{Q^\perp}\theta_\Gamma^N
+  \right),
+\]
+with
+\[
+  \frac{{\cal N}_N^\Gamma}{4L_2^2}
+  =
+  R_{\rm dV}
+  =
+  0.776898678\ldots .
+\]
+Thus the diagonal six-unit line class supplies the neutral line class, and the
+localized DBI/CS action supplies the current metric whose projected norm gives
+the de Vries ratio.
+
+Equivalently, let \(\omega_h,\omega_\eta\) be the localized boundary
+representatives of \(h,\eta\) and define
+\[
+  H_{ij}^\Gamma
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\omega_i,\omega_j),
+  \qquad i,j\in\{h,\eta\}.
+\]
+For
+\[
+  \omega_T=\omega_\eta,
+  \qquad
+  \omega_Y=6\omega_h+7\omega_\eta,
+\]
+the neutral and photon representatives are
+\[
+  \omega_N=6(\omega_h+\omega_\eta),
+  \qquad
+  \omega_Q=6\omega_h+8\omega_\eta.
+\]
+Hence
+\[
+  {\cal N}_N^\Gamma
+  =
+  \langle \omega_N,\omega_N\rangle_\Gamma
+  -
+  \frac{\langle \omega_N,\omega_Q\rangle_\Gamma^2}
+       {\langle \omega_Q,\omega_Q\rangle_\Gamma},
+\]
+with
+\[
+  \langle \omega_N,\omega_N\rangle_\Gamma
+  =
+  36\left(H_{hh}^\Gamma+2H_{h\eta}^\Gamma+H_{\eta\eta}^\Gamma\right),
+\]
+\[
+  \langle \omega_N,\omega_Q\rangle_\Gamma
+  =
+  36H_{hh}^\Gamma+84H_{h\eta}^\Gamma+48H_{\eta\eta}^\Gamma,
+\]
+and
+\[
+  \langle \omega_Q,\omega_Q\rangle_\Gamma
+  =
+  36H_{hh}^\Gamma+96H_{h\eta}^\Gamma+64H_{\eta\eta}^\Gamma.
+\]
+The neutral-line pass becomes a boundary Hodge-matrix equation:
+\[
+  {\cal N}_N^\Gamma=4R_{\rm dV}L_2^2.
+\]
+Writing
+\[
+  A=H_{hh}^\Gamma,\qquad B=H_{h\eta}^\Gamma,\qquad C=H_{\eta\eta}^\Gamma,
+\]
+the projection simplifies to
+\[
+  {\cal N}_N^\Gamma
+  =
+  \frac{36(AC-B^2)}{9A+24B+16C}.
+\]
+Thus the localized pass equation is
+\[
+  \frac{9(AC-B^2)}{9A+24B+16C}
+  =
+  R_{\rm dV}L_2^2.
+\]
+The weak-current representative \(\omega_T=\omega_\eta\) gives a useful
+specialization:
+\[
+  L_2^2=C=H_{\eta\eta}^\Gamma.
+\]
+With
+\[
+  r_H=\frac{A}{C},\qquad s_H=\frac{B}{C},
+\]
+the pass condition is
+\[
+  \frac{9(r_H-s_H^2)}{9r_H+24s_H+16}
+  =
+  R_{\rm dV},
+\]
+so
+\[
+  r_H(s_H)
+  =
+  \frac{9s_H^2+24R_{\rm dV}s_H+16R_{\rm dV}}
+       {9(1-R_{\rm dV})}.
+\]
+Along this curve,
+\[
+  r_H-s_H^2
+  =
+  \frac{R_{\rm dV}(3s_H+4)^2}{9(1-R_{\rm dV})},
+  \qquad
+  9r_H+24s_H+16
+  =
+  \frac{(3s_H+4)^2}{1-R_{\rm dV}}.
+\]
+The diagonal Hodge case gives the concrete target
+\[
+  s_H=0,\qquad
+  \frac{H_{hh}^\Gamma}{H_{\eta\eta}^\Gamma}
+  =
+  \frac{16R_{\rm dV}}{9(1-R_{\rm dV})}
+  =
+  6.190\ldots .
+\]
+For comparison, the bulk KLT harmonic representatives
+\[
+  h=x+y,\qquad
+  \eta_{\rm harm}=-\frac12x+\frac12y+z
+\]
+with \(x=e^{12}\), \(y=e^{34}\), \(z=e^{56}\), have weights
+\[
+  \|x\|^2=\|y\|^2\propto\lambda^{1/2},
+  \qquad
+  \|z\|^2\propto\lambda^{-3/2}.
+\]
+They give
+\[
+  A_{\rm bulk}=2\lambda^{1/2},\qquad
+  B_{\rm bulk}=0,\qquad
+  C_{\rm bulk}=\frac12\lambda^{1/2}+\lambda^{-3/2},
+\]
+so
+\[
+  r_H^{\rm bulk}(\lambda)
+  =
+  \frac{4\lambda^2}{\lambda^2+2}.
+\]
+On \(2/5\leq\lambda\leq2\), this ranges from \(0.296\ldots\) to
+\(2.666\ldots\).  The boundary-current pass therefore requires either a
+localized boundary Hodge measure or a weak-current frame factor beyond the
+unlocalized KLT harmonic metric.  If
+\[
+  L_2^2=\kappa_H C_{\rm bulk},
+\]
+then
+\[
+  \kappa_H(\lambda)
+  =
+  \frac{9\lambda^2}{R_{\rm dV}(13\lambda^2+8)}.
+\]
+At \(\lambda=0.514554893751227\), one obtains \(\kappa_H=0.268\ldots\).
+
+A localized representative can also shift the horizontal component:
+\[
+  \eta(t)=t(x+y)+y+z,\qquad q=\lambda^2.
+\]
+For the same KLT weights,
+\[
+  A=2q,\qquad
+  B=(2t+1)q,\qquad
+  C=(2t^2+2t+1)q+1,
+\]
+so
+\[
+  AC-B^2=q(q+2),
+\]
+and the weak-current identification gives
+\[
+  9q(q+2)
+  =
+  2R_{\rm dV}
+  (16qt^2+40qt+29q+8)(q(2t^2+2t+1)+1).
+\]
+For example, \(\lambda=1.915\) has roots
+\[
+  t=-0.811\ldots,\qquad (r_H,s_H)=(2.070\ldots,-0.644\ldots),
+\]
+and
+\[
+  t=-0.939\ldots,\qquad (r_H,s_H)=(1.727\ldots,-0.758\ldots).
+\]
+The quartic can be centered by setting \(s=t+7/8\).  It becomes
+\[
+  F(q,s)=F_0(q)-2R_{\rm dV}q(7q+32)s^2-64R_{\rm dV}q^2s^4,
+\]
+where
+\[
+  F_0(q)
+  =
+  \frac{576q^2+1152q-R_{\rm dV}(625q^2+1600q+1024)}{64}.
+\]
+Consequently real representatives occur for \(F_0(q)\ge0\).  The positive
+threshold is
+\[
+  q_c=
+  \frac{32(25R_{\rm dV}+18\sqrt{1-R_{\rm dV}}-18)}
+       {576-625R_{\rm dV}}
+  =
+  3.511614004347\ldots ,
+  \qquad
+  \lambda_c=1.873930095907\ldots .
+\]
+For \(q\ge q_c\), the roots are
+\[
+  t_\pm=-\frac78\pm
+  \sqrt{
+  \frac{-(7q+32)+\sqrt{(7q+32)^2+64F_0(q)/R_{\rm dV}}}
+       {64q}} .
+\]
+At \(\lambda=2\), this gives
+\[
+  t_-=-0.983371\ldots,\qquad t_+=-0.766629\ldots .
+\]
+The localized representative \(t\) is therefore a computable boundary datum
+near \(t=-7/8\).
+With a weak-current frame factor \(L_2^2=\kappa_H C\), the same calculation
+gives
+\[
+  \kappa_H(q,t)
+  =
+  \frac{9q(q+2)}
+       {2R_{\rm dV}(16qt^2+40qt+29q+8)(q(2t^2+2t+1)+1)}.
+\]
+The maximum over this representative family occurs at \(t=-7/8\):
+\[
+  \kappa_H^{\max}(q)
+  =
+  \frac{576q(q+2)}{R_{\rm dV}(25q+32)^2}.
+\]
+Thus \(\kappa_H^{\max}=1\) gives the same threshold \(q_c\).  Below
+\(\lambda_c\), the neutral boundary condition requires a reduced
+weak-current frame factor.
+The center also has a boundary-orthogonality interpretation.  For horizontal
+weights
+\[
+  \langle x,x\rangle_\partial=w_x,\qquad
+  \langle y,y\rangle_\partial=w_y,\qquad
+  \langle x,y\rangle_\partial=0,
+\]
+the condition \(\langle\eta(t),h\rangle_\partial=0\) gives
+\[
+  t=-\frac{w_y}{w_x+w_y}.
+\]
+Hence \(t=-7/8\) corresponds to a localized horizontal split
+\[
+  w_y:w_x=7:1.
+\]
+For the weak-period value \(Q=7\), this split is the special case of
+\[
+  w_y:w_x=Q:1,\qquad t_Q=-\frac{Q}{Q+1}.
+\]
+Together with the primitive line-lattice relation \(P=Q-1\), the retained
+class
+\[
+  \zeta=P h+Q\eta(t_Q)
+\]
+has the form
+\[
+  \zeta
+  =
+  Q(y+z)-\frac{h}{Q+1}.
+\]
+Thus for \(Q=7\),
+\[
+  \zeta=7(y+z)-\frac18h,\qquad 8\zeta=56(y+z)-h.
+\]
+The centered representative therefore converts the weak period and the single
+weak \(\cO(1)\) unit into an eightfold boundary lift.
+The D8/O8 bookkeeping uses
+\[
+  N_8=2n,\qquad
+  q_8^{\rm net}=N_8-16=2(n-8),\qquad
+  k=n-8.
+\]
+Identifying the lift denominator with the Chan--Paton half-rank,
+\[
+  n=Q+1,
+\]
+gives, for \(Q=7\),
+\[
+  n=8,\qquad N_8=16,\qquad q_8^{\rm net}=0,\qquad k=0.
+\]
+The same integer that centers the representative therefore selects the locally
+neutral D8/O8 endpoint.
+Borel--Weil supplies a concrete source for the half-rank relation.  The
+weak-period line has
+\[
+  L_Q|_{\CP^1}\simeq\cO(Q),
+\]
+and hence
+\[
+  H^0(\CP^1,\cO(Q))\simeq{\rm Sym}^Q(\mathbb C^2)^*,
+  \qquad
+  \dim H^0(\CP^1,\cO(Q))=Q+1.
+\]
+Taking the Chan--Paton half-stack to be this zero-mode space gives
+\[
+  n=\dim H^0(\CP^1,\cO(Q))=Q+1.
+\]
+For \(Q=7\),
+\[
+  N_8=2\,\dim H^0(\CP^1,\cO(7))=16.
+\]
+The same line gives the horizontal weight split through point evaluation.
+Fix \(p\in\CP^1\).  Since the ideal sheaf of \(p\) is \(\cO(-1)\), tensoring
+by \(\cO(Q)\) gives
+\[
+  0\longrightarrow \cO(Q-1)
+  \longrightarrow \cO(Q)
+  \stackrel{\mathrm{ev}_p}{\longrightarrow}
+  \cO(Q)|_p
+  \longrightarrow 0 .
+\]
+For \(Q\ge1\), global sections form the exact sequence
+\[
+  0\longrightarrow H^0(\CP^1,\cO(Q-1))
+  \longrightarrow H^0(\CP^1,\cO(Q))
+  \stackrel{\mathrm{ev}_p}{\longrightarrow}
+  \cO(Q)|_p
+  \longrightarrow 0 ,
+\]
+with
+\[
+  \dim\ker{\rm ev}_p=Q,\qquad
+  \dim{\rm im}\,{\rm ev}_p=1 .
+\]
+In coordinates \([u:v]\) with \(p=[1:0]\),
+\[
+  H^0(\CP^1,\cO(Q))
+  =
+  {\rm span}\{u^Q,u^{Q-1}v,\ldots,v^Q\},
+\]
+and \({\rm ev}_p\) selects the coefficient of \(u^Q\).  If \(P_p\) projects
+onto \(u^Q\) and \(K_p=1-P_p\), the trace metric gives
+\[
+  {\rm Tr}\,P_p=1,\qquad {\rm Tr}\,K_p=Q.
+\]
+The same projector gives the local current metric on the transverse weak
+plane.  Let \(J_Q=Q/2\), let \(|0\rangle=|J_Q,J_Q\rangle\), and define
+\[
+  G_{ab}^{(p)}
+  =
+  {\rm Re}\,\langle0|T_aK_pT_b|0\rangle .
+\]
+With
+\[
+  T_1=\frac12(T_++T_-),\qquad
+  T_2=\frac{1}{2i}(T_+-T_-),\qquad
+  T_3|0\rangle=J_Q|0\rangle,
+\]
+and \(T_-|0\rangle=\sqrt Q\,|J_Q,J_Q-1\rangle\), one obtains
+\[
+  G_{ab}^{(p)}
+  =
+  \frac Q4
+  \begin{pmatrix}
+  1&0&0\\
+  0&1&0\\
+  0&0&0
+  \end{pmatrix}.
+\]
+With common localized density factor \(f_\Gamma^2\), the transverse Hosotani
+normalization is
+\[
+  f_{H,\perp}^2=f_\Gamma^2\frac Q4.
+\]
+Thus a holonomy scale \(\mu_\Gamma\) gives
+\[
+  \alpha_{\rm mix}=\frac{2\mu_\Gamma}{\sqrt Q\,f_\Gamma},
+  \qquad
+  \beta_{\rm diag}=\frac{4\mu_\Gamma^2}{Qf_\Gamma^2},
+  \qquad
+  \frac{\beta_{\rm diag}}{\alpha_{\rm mix}^2}=1 .
+\]
+The endpoint line also carries the neutral weak-hypercharge character.  Write
+\(Q_{\rm w}\) for the weak-period integer here and set
+\[
+  J_{\rm w}=\frac{Q_{\rm w}}2,\qquad |0\rangle=|J_{\rm w},J_{\rm w}\rangle,
+  \qquad
+  Y|0\rangle=-J_{\rm w}|0\rangle .
+\]
+Then \(Q_{\rm em}=T_3+Y\) satisfies \(Q_{\rm em}|0\rangle=0\).  For
+\((T_3,Y)\), the endpoint charge vector is \(q=(J_{\rm w},-J_{\rm w})\), hence
+\[
+  N_{AB}^{(p)}
+  =
+  \langle0|q_Aq_B|0\rangle
+  =
+  \frac{Q_{\rm w}^2}{4}
+  \begin{pmatrix}
+  1&-1\\
+  -1&1
+  \end{pmatrix}.
+\]
+The null vector is \((1,1)\), the \(Q_{\rm em}\) direction.  The vector
+\((1,-1)\) has eigenvalue \(Q_{\rm w}^2/2\).  This endpoint-line block is the
+rank-one neutral mass block; the gauge-kinetic neutral lengths are supplied by
+the localized current matrix.
+With gauge fields \((W^3_\mu,B_\mu)\), this block becomes
+\[
+  M_N^2
+  =
+  v_\Gamma^2J_{\rm w}^2
+  \begin{pmatrix}
+  g_2^2&-g_2g_Y\\
+  -g_2g_Y&g_Y^2
+  \end{pmatrix}.
+\]
+Thus
+\[
+  A_\mu=\frac{g_YW^3_\mu+g_2B_\mu}{\sqrt{g_2^2+g_Y^2}},
+  \qquad
+  Z_\mu=\frac{g_2W^3_\mu-g_YB_\mu}{\sqrt{g_2^2+g_Y^2}},
+\]
+and
+\[
+  M_\gamma^2=0,\qquad
+  M_Z^2=v_\Gamma^2J_{\rm w}^2(g_2^2+g_Y^2).
+\]
+The transverse \(K_p\) metric gives
+\[
+  M_W^2=v_\Gamma^2\frac{Q_{\rm w}}4g_2^2.
+\]
+For \(Q_{\rm w}=1\), the \(\mathcal O(1)\) doublet gives
+\[
+  M_W^2=\frac{g_2^2v_\Gamma^2}{4},
+  \qquad
+  M_Z^2=\frac{(g_2^2+g_Y^2)v_\Gamma^2}{4}.
+\]
+The Connes finite-line amplitude satisfies
+\[
+  |v_F|=\frac{v_{\rm EW}}{\sqrt2},
+\]
+so the endpoint gauge-mass convention is
+\[
+  v_\Gamma=v_{\rm EW}=\sqrt2\,|v_F|.
+\]
+Equivalently,
+\[
+  M_W^2=\frac{g_2^2|v_F|^2}{2},
+  \qquad
+  M_Z^2=\frac{(g_2^2+g_Y^2)|v_F|^2}{2}.
+\]
+The \(Q_{\rm w}=7\) period stack supplies the boundary filtration, half-rank,
+and endpoint metric factors; electroweak mass normalization uses the
+\(\mathcal O(1)\) doublet together with the localized current lengths.
+The endpoint convention then gives the localized Schur scale target
+\[
+  \mu_{\Gamma,{\rm Schur}}^2
+  =
+  \mu_*^2
+  =
+  \frac{M_Z^2}{\Xp(2)}
+  =
+  \frac{g_2^2+g_Y^2}{4\Xp(2)}v_\Gamma^2
+  =
+  \frac{g_2^2+g_Y^2}{2\Xp(2)}|v_F|^2 .
+\]
+For a stationary Hosotani scalar with
+\[
+  f_H\theta_{H,*}=|v_F|=\frac{v_{\rm EW}}{\sqrt2},
+  \qquad
+  v_\Gamma=\sqrt2\,f_H\theta_{H,*},
+\]
+this becomes
+\[
+  \mu_{\Gamma,{\rm Schur}}^2
+  =
+  \frac{g_2^2+g_Y^2}{2\Xp(2)}f_H^2\theta_{H,*}^2 .
+\]
+Thus the D10 matching datum is the dimensionless scale-ratio coordinate
+\[
+  \chi_H
+  =
+  \frac{2\Xp(2)\mu_{\Gamma,{\rm Schur}}^2}
+       {(g_2^2+g_Y^2)f_H^2\theta_{H,*}^2}
+  =
+  1.
+\]
+With the point-projector normalization \(f_H^2=Qf_\Gamma^2/4\), the same
+target is
+\[
+  \mu_{\Gamma,{\rm Schur}}^2
+  =
+  \frac{Q(g_2^2+g_Y^2)}{8\Xp(2)}
+  f_\Gamma^2\theta_{H,*}^2 .
+\]
+Writing \(x=w_H\theta_H\), the minimal localized Wilson potential with an
+interior stationary value is
+\[
+  V_H(\theta_H)=c_1\cos x+c_2\cos(2x).
+\]
+Its stationary equation is
+\[
+  \partial_{\theta_H}V_H
+  =
+  -w_H\sin x\,[c_1+4c_2\cos x],
+\]
+so the interior branch satisfies
+\[
+  \cos x_*=-\frac{c_1}{4c_2},
+  \qquad
+  c_2>0,\qquad |c_1|<4c_2.
+\]
+Matching the finite-sheet value
+\[
+  x_*=\frac{w_Hv_{\rm EW}}{\sqrt2\,f_H}
+\]
+fixes the Fourier ratio
+\[
+  \frac{c_1}{c_2}=-4\cos\!\left(
+  \frac{w_Hv_{\rm EW}}{\sqrt2\,f_H}
+  \right).
+\]
+The canonical scalar curvature from this Wilson sector is
+\[
+  m_\theta^2
+  =
+  \frac{1}{f_H^2}\partial_{\theta_H}^2V_H\big|_{\theta_{H,*}}
+  =
+  \frac{4w_H^2c_2}{f_H^2}\sin^2x_*.
+\]
+The full-curvature specialization \(m_\theta^2=M_H^2\) gives
+\[
+  c_2=
+  \frac{M_H^2f_H^2}{4w_H^2\sin^2x_*},
+  \qquad
+  c_1=
+  -\frac{M_H^2f_H^2}{w_H^2}
+  \frac{\cos x_*}{\sin^2x_*}.
+\]
+With \(M_H^2=2\lambda_Fv_{\rm EW}^2\), the same coefficients are
+\[
+  c_2=
+  \frac{\lambda_Fv_{\rm EW}^2f_H^2}{2w_H^2\sin^2x_*},
+  \qquad
+  c_1=
+  -\frac{2\lambda_Fv_{\rm EW}^2f_H^2}{w_H^2}
+  \frac{\cos x_*}{\sin^2x_*}.
+\]
+Eliminating \(f_H\) by
+\[
+  f_H=\frac{w_Hv_{\rm EW}}{\sqrt2\,x_*}
+\]
+gives the dimensionless coefficient target
+\[
+  \frac{c_2}{v_{\rm EW}^4}
+  =
+  \frac{\lambda_F}{4x_*^2\sin^2x_*},
+  \qquad
+  \frac{c_1}{v_{\rm EW}^4}
+  =
+  -\frac{\lambda_F\cos x_*}{x_*^2\sin^2x_*}.
+\]
+A localized spectrum calculation of \(c_1/c_2\) fixes
+\[
+  x_*=\arccos\!\left(-\frac{c_1}{4c_2}\right),
+  \qquad
+  f_H=\frac{w_Hv_{\rm EW}}{\sqrt2\,x_*},
+\]
+on the chosen \(0<x_*<\pi\) minimum branch.
+For the standard four-dimensional Coleman--Weinberg integral over one
+circle, a massless charge-one tower contributes
+\[
+  c_m^{(1)}=\frac{A_1}{m^5}.
+\]
+Such a tower gives \(c_1/c_2=32\).  The interior minimum condition
+\[
+  \left|\frac{c_1}{c_2}\right|<4
+\]
+therefore demands additional charged sectors, massive thresholds, or
+localized boundary terms.  With charge-one amplitude \(A_1\) and charge-two
+amplitude \(A_2\) at the fundamental period,
+\[
+  c_1=A_1,\qquad c_2=\frac{A_1}{32}+A_2,
+\]
+and the stationary electroweak angle fixes
+\[
+  \frac{A_2}{A_1}
+  =
+  -\frac{1}{4\cos x_*}-\frac{1}{32}.
+\]
+The local minimum condition \(c_2>0\) gives two sign branches:
+\[
+  A_1>0:\quad
+  \frac{A_2}{A_1}>\frac{7}{32},
+  \qquad \frac{\pi}{2}<x_*<\pi,
+\]
+and
+\[
+  A_1<0:\quad
+  \frac{A_2}{A_1}<-\frac{9}{32},
+  \qquad 0<x_*<\frac{\pi}{2}.
+\]
+More generally, let \(A_r\) be the total signed amplitude of massless towers
+with charge \(r\) under \(x=w_H\theta_H\).  Then
+\[
+  V_H(x)
+  =
+  \sum_{r\ge1}A_r
+  \sum_{m\ge1}\frac{\cos(mrx)}{m^5}
+  =
+  \sum_{n\ge1}c_n\cos(nx),
+\]
+with divisor-sum coefficients
+\[
+  c_n=\frac{1}{n^5}\sum_{r|n}r^5A_r .
+\]
+Thus
+\[
+  c_1=A_1,\qquad
+  c_2=\frac{A_1}{32}+A_2,\qquad
+  c_3=\frac{A_1}{243}+A_3,\qquad
+  c_4=\frac{A_1}{1024}+\frac{A_2}{32}+A_4 .
+\]
+The two-harmonic approximation requires the higher harmonics to be small
+against \(|c_1|+|c_2|\).  Massive thresholds and localized boundary terms
+enter through the same harmonic bookkeeping with threshold-adjusted
+coefficients.
+In the Borel--Weil convention \(H^0(\CP^1,\cO(n))\simeq V_{n/2}\), use
+integer current charge \(q=2m\).  The charge set is
+\[
+  q=-n,-n+2,\ldots,n-2,n.
+\]
+Thus \(\cO(1)\) supplies \(|q|=1\), \(\cO(2)\) supplies \(|q|=2\), and
+\(\cO(7)\) supplies \(|q|=1,3,5,7\).  The physical doublet gives the
+charge-one tower.  The active \(\cO(1)\oplus\cO(2)\) charged set has
+\(\gcd(1,2)=1\), and the \(\cO(7)\) stack has \(\gcd(1,3,5,7)=1\).  Thus
+\[
+  w_H=1
+\]
+in the integer current-charge convention.  A global-form lift rescales the
+endpoint charge lattice by an explicit factor.  The weak-period stack gives
+zero \(A_2\) and higher odd harmonics.  The minimal Borel--Weil
+second-harmonic source is
+\[
+  \cO(2)\simeq {\rm Sym}^2\cO(1),
+\]
+with
+\[
+  A_1>0:\quad A_2>\frac{7}{32}A_1,
+  \qquad
+  A_1<0:\quad A_2<-\frac{9}{32}A_1.
+\]
+The line-square sector used for the \(j=1\) Schur anchor therefore supplies
+the Hosotani second harmonic in the minimal localized spectrum.
+Let the localized towers coupled to \(\gamma_H\) have integral charges
+\(q_\alpha\), one-loop signs \(\sigma_\alpha\), degeneracies \(d_\alpha\),
+and positive threshold weights \(\tau_\alpha\).  With common loop factor
+\({\cal C}_H>0\),
+\[
+  A_r=
+  {\cal C}_H
+  \sum_{\alpha:\ |q_\alpha|=r}
+  \sigma_\alpha d_\alpha\tau_\alpha .
+\]
+For \(\cO(1)\oplus\cO(2)\), write the signed charged weights as
+\[
+  S_1=
+  \sum_{\alpha\in\cO(1),\ |q_\alpha|=1}
+  \sigma_\alpha d_\alpha\tau_\alpha,
+  \qquad
+  S_2=
+  \sum_{\alpha\in\cO(2),\ |q_\alpha|=2}
+  \sigma_\alpha d_\alpha\tau_\alpha .
+\]
+Then \(A_2/A_1=S_2/S_1\), and the finite Hosotani minimum requires
+\[
+  S_1>0:\quad \frac{S_2}{S_1}>\frac{7}{32},
+  \qquad
+  S_1<0:\quad \frac{S_2}{S_1}<-\frac{9}{32}.
+\]
+A same-sign charged-weight pass has \(S_2=S_1\).  It gives
+\[
+  \frac{c_1}{c_2}=\frac{32}{33},
+  \qquad
+  \cos x_*=-\frac{8}{33},
+  \qquad
+  x_*=1.815660181000518\ldots ,
+\]
+and hence
+\[
+  \frac{f_H}{v_{\rm EW}}
+  =
+  \frac{w_H}{\sqrt2\,x_*}
+  =
+  0.389448856446748\ldots\, w_H .
+\]
+For \(m_\theta^2=M_H^2=2\lambda_Fv_{\rm EW}^2\),
+\[
+  \frac{c_2}{v_{\rm EW}^4}
+  =
+  0.080570282164285\ldots\,\lambda_F,
+  \qquad
+  \frac{c_1}{v_{\rm EW}^4}
+  =
+  0.078128758462337\ldots\,\lambda_F .
+\]
+The Borel--Weil weights occur in charge-conjugate pairs.  If the localized
+real structure pairs \(+r\) with \(-r\) and preserves the threshold weight,
+then \(S_r=2\sigma_rd_r\tau_r\).  The \(\cO(1)\) sector has \(q=\pm1\); the
+\(\cO(2)\) sector has \(q=\pm2\), with a \(\theta_H\)-independent middle
+state at \(q=0\).  Hence
+\[
+  \frac{S_2}{S_1}
+  =
+  \frac{\sigma_2d_2\tau_2}{\sigma_1d_1\tau_1}
+  =:\chi_{12}.
+\]
+The equal-weight pass is \(\chi_{12}=1\).  More generally,
+\[
+  \sigma_1d_1\tau_1>0:\quad \chi_{12}>\frac{7}{32},
+  \qquad
+  \sigma_1d_1\tau_1<0:\quad \chi_{12}<-\frac{9}{32}.
+\]
+For harmonic computations, split the threshold weight by wrapping number.
+For a flat local circle pass with charged mass \(M_r\), set
+\[
+  z_r=M_rL_H,
+  \qquad
+  F(z)=e^{-z}\left(1+z+\frac{z^2}{3}\right).
+\]
+The \(m\)-th wrapping of the charge-\(r\) pair carries
+\(\tau_{r,m}=F(mz_r)\).  With signed base pair weights
+\[
+  D_r={\cal C}_H\,2\sigma_rd_r,
+  \qquad
+  \chi_{12}^{(0)}=\frac{D_2}{D_1},
+\]
+the first two Fourier coefficients are
+\[
+  c_1=D_1F(z_1),
+  \qquad
+  c_2=\frac{D_1}{32}F(2z_1)+D_2F(z_2).
+\]
+Hence
+\[
+  \frac{c_2}{c_1}
+  =
+  \frac{F(2z_1)}{32F(z_1)}
+  +
+  \chi_{12}^{(0)}\frac{F(z_2)}{F(z_1)}.
+\]
+For a chosen stationary angle,
+\[
+  \chi_{12}^{(0)}
+  =
+  \frac{F(z_1)}{F(z_2)}
+  \left[
+  -\frac{1}{4\cos x_*}
+  -
+  \frac{F(2z_1)}{32F(z_1)}
+  \right].
+\]
+The equal signed-base pass gives
+\[
+  \cos x_*=
+  -\frac{1}{4\left(
+  F(2z_1)/(32F(z_1))+F(z_2)/F(z_1)
+  \right)}.
+\]
+At \(z_1=z_2=0\), the result is \(\cos x_*=-8/33\).
+Since
+\[
+  F'(z)=-\frac13 e^{-z}z(1+z)\le0,
+\]
+the equal signed-base pass with \(D_1>0\) has a simple threshold domain:
+\[
+  F(z_2)>\frac14F(z_1)-\frac1{32}F(2z_1).
+\]
+For \(z_1=0\), this gives
+\[
+  F(z_2)>\frac{7}{32},
+  \qquad
+  z_2<3.773046018411012\ldots .
+\]
+For common thresholds \(z_2=z_1\), the pass condition is automatic because
+\[
+  1+\frac{F(2z_1)}{32F(z_1)}>\frac14 .
+\]
+The Borel--Weil sectors themselves give a distinguished zero-mode pass.  For
+\(n\ge0\),
+\[
+  H^0(\CP^1,\cO(n))=\ker\bar\partial_{\cO(n)}.
+\]
+Thus the charge pair \(q=\pm1\) in \(\cO(1)\) and the charge pair \(q=\pm2\)
+in \(\cO(2)\) lie in holomorphic zero-eigenvalue sectors.  The localized
+determinant then has
+\[
+  z_1=z_2=0,
+  \qquad F(z_1)=F(z_2)=F(2z_1)=1.
+\]
+The \(q=0\) middle state of \(\cO(2)\) is independent of \(\theta_H\).  With
+common signed oscillator data,
+\[
+  \sigma_2d_2=\sigma_1d_1,
+\]
+one obtains
+\[
+  c_1=D_1,\qquad c_2=\frac{33}{32}D_1,
+  \qquad
+  \frac{c_1}{c_2}=\frac{32}{33}.
+\]
+Therefore
+\[
+  \cos x_*=-\frac{8}{33},
+  \qquad
+  \frac{f_H}{v_{\rm EW}}=
+  0.389448856446748\ldots\,w_H .
+\]
+In homogeneous coordinates \([u:v]\) on \(\CP^1\), the charged bases are
+\[
+  H^0(\CP^1,\cO(1)):
+  \quad u\ (q=+1),\quad v\ (q=-1),
+\]
+and
+\[
+  H^0(\CP^1,\cO(2)):
+  \quad u^2\ (q=+2),\quad uv\ (q=0),\quad v^2\ (q=-2).
+\]
+Thus each charged pair has one positive-charge and one negative-charge complex
+mode, and the \(uv\) mode is neutral for the Wilson angle.  For a common
+localized boundary complex \({\cal B}_\Gamma\) whose oscillator operator acts
+with the same sign and degeneracy on \((u,v)\) and \((u^2,v^2)\),
+\[
+  \sigma_2=\sigma_1,\qquad d_2=d_1,\qquad D_2=D_1.
+\]
+The holomorphic zero-mode pass then yields the coefficient ratio \(32/33\).
+Equivalently, define charged projectors by
+\[
+  P_1^\chi:\ H^0(\CP^1,\cO(1))\to{\rm span}\{u,v\},
+  \qquad
+  P_2^\chi:\ H^0(\CP^1,\cO(2))\to{\rm span}\{u^2,v^2\}.
+\]
+Then
+\[
+  {\rm Tr}\,P_1^\chi={\rm Tr}\,P_2^\chi=2,
+  \qquad
+  P_2^\chi=1-|uv\rangle\langle uv|.
+\]
+For a common localized charged oscillator block
+\[
+  {\cal B}_\Gamma^\chi=B_0\otimes P_r^\chi,
+\]
+the signed base weights are
+\[
+  D_r={\cal C}_H\,\sigma\,{\rm Tr}_{P_r^\chi}{\bf 1}
+  =
+  2{\cal C}_H\sigma .
+\]
+Thus
+\[
+  D_2=D_1,
+  \qquad
+  V_H(x)=D_1\cos x+\frac{33}{32}D_1\cos(2x).
+\]
+The same equality can be expressed as an equivariant index calculation.  For
+the \(S^1\) action generated by \(x=w_H\theta_H\),
+\[
+  {\rm Ind}_{S^1}\bar\partial_{\cO(n)}(x)
+  =
+  \sum_{k=0}^{n}\exp\!\big(i(n-2k)x\big),
+  \qquad n\ge0,
+\]
+because \(H^1(\CP^1,\cO(n))=0\).  Consequently
+\[
+  I_1(x)=2\cos x,
+  \qquad
+  I_2(x)=1+2\cos(2x).
+\]
+The charged endpoint trace is
+\[
+  I_\chi(x)=I_1(x)+I_2(x)-1
+  =
+  2\cos x+2\cos(2x).
+\]
+The \(1\) in \(I_2\) is the Wilson-neutral \(uv\) mode.  The charged
+character coefficients for the \(\cO(1)\) and \(\cO(2)\) sectors are equal.
+Payen's boundary path integral fixes the trace convention
+\cite{Payen2007}: the discretized endpoint integral uses
+\[
+  \int N_R\,Dg\,R(g)v_\kappa v_\kappa^\dagger R^\dagger(g)
+  =
+  {\bf 1}_{V_R},
+\]
+and the external Yang--Mills coupling reduces to
+\[
+  {\rm Tr}_{V_R}\,
+  {\cal T}_{\partial\Sigma}
+  \exp\left(
+    i\int_{\partial\Sigma}d\tau\,R(A_\tau(\tau))
+  \right).
+\]
+The endpoint determinant therefore uses the ordinary finite representation
+trace with no dimension divisor.  In the charged Borel--Weil subspaces,
+\[
+  {\rm Tr}_{P_1^\chi}{\bf 1}
+  =
+  {\rm Tr}_{P_2^\chi}{\bf 1}
+  =
+  2,
+\]
+so the source-backed endpoint trace gives \(d_1=d_2=d_\chi\) before oscillator
+thresholds.
+An endpoint determinant with common sign and localized density on these
+Dolbeault zero-mode sectors gives \(A_1=A_2\), hence
+\[
+  c_1=A_1,\qquad
+  c_2=\frac{A_1}{32}+A_2=\frac{33}{32}A_1,
+  \qquad
+  \frac{c_1}{c_2}=\frac{32}{33}.
+\]
+In pair-normalized form this contribution is
+\[
+  V_{\rm BW}(x)
+  =
+  D\sum_{m\ge1}\frac{\cos(mx)+\cos(2mx)}{m^5},
+\]
+so that
+\[
+  c_1=D,\qquad
+  c_2=\frac{33}{32}D .
+\]
+At the two-harmonic level this gives \(\cos x_*=-8/33\).  The full massless
+character has stationary equation
+\[
+  \operatorname{Im}{\rm Li}_4(e^{ix})
+  +
+  2\operatorname{Im}{\rm Li}_4(e^{2ix})
+  =0,
+\]
+with interior solution
+\[
+  x_{\rm full}=1.837672606049940\ldots,
+  \qquad
+  \frac{f_H}{v_{\rm EW}}
+  =
+  \frac{w_H}{\sqrt2\,x_{\rm full}}
+  =
+  0.384783872197163\ldots\,w_H .
+\]
+At this point
+\[
+  K_{\rm full}
+  =
+  -{\rm Re}\,{\rm Li}_3(e^{ix_{\rm full}})
+  -
+  4{\rm Re}\,{\rm Li}_3(e^{2ix_{\rm full}})
+  =
+  3.557941701817797\ldots ,
+\]
+and matching \(m_\theta^2=M_H^2=2\lambda_Fv_{\rm EW}^2\) gives
+\[
+  \frac{D}{v_{\rm EW}^4}
+  =
+  \frac{\lambda_F}{x_{\rm full}^2K_{\rm full}}
+  =
+  0.083227124394645\ldots\,\lambda_F .
+\]
+With a common threshold \(z\), the same character gives
+\[
+  V_z(x)
+  =
+  D\sum_{m\ge1}
+  F(mz)\frac{\cos(mx)+\cos(2mx)}{m^5},
+\]
+and the stationary equation
+\[
+  \sum_{m\ge1}F(mz)
+  \frac{\sin(mx)+2\sin(2mx)}{m^4}
+  =0 .
+\]
+The root moves from \(x_0=1.837672606\ldots\) to
+\[
+  x_\infty=\arccos(-1/4)=1.8234765819\ldots
+\]
+as higher wrappings are suppressed.  Correspondingly
+\[
+  \frac{f_H}{w_Hv_{\rm EW}}
+  =
+  0.384783872\ldots\quad(z=0),
+  \qquad
+  0.387779469\ldots\quad(z=\infty).
+\]
+The corresponding D10 coefficient target is the determinant amplitude.  Write
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  {\rm Str}_{\chi}\,\zeta_\alpha
+\]
+for the signed charged endpoint supertrace after canonical CP2 and boundary
+zero-mode normalization.  The weights \(\zeta_\alpha\) are dimensionless and
+may include threshold factors.  For a tower with quadratic density \(Z_\alpha\),
+\[
+  \frac12{\rm Tr}\log[Z_\alpha\Delta_\alpha(x)]
+  =
+  \frac12{\rm Tr}\log\Delta_\alpha(x)
+  +
+  \frac12{\rm Tr}\log Z_\alpha .
+\]
+The last term is angle-independent and is absorbed into the vacuum constant.
+Thus the angle-dependent determinant uses the canonical signed supertrace.
+The DBI/open-boundary density enters \(f_H^2\) and the threshold parameters.
+Then
+\[
+  D=
+  \frac{3}{4\pi^2}\,
+  \frac{{\cal N}_\Gamma^\chi}{L_H^4}.
+\]
+The coefficient follows from the standard circle determinant
+\[
+  \frac12\sum_{n\in\mathbb Z}
+  \int\frac{d^4p_E}{(2\pi)^4}
+  \log\!\left[
+    p_E^2+\left(\frac{2\pi n+x}{L_H}\right)^2
+  \right]
+\]
+after Schwinger parameterization and Poisson resummation; the tower sign is
+included in \({\cal N}_\Gamma^\chi\).
+For the full massless character, the Higgs-curvature match is
+\[
+  \frac{3}{4\pi^2}
+  \frac{{\cal N}_\Gamma^\chi}{L_H^4v_{\rm EW}^4}
+  =
+  0.083227124394645\ldots\,\lambda_F .
+\]
+Equivalently,
+\[
+  \frac{{\cal N}_\Gamma^\chi}{L_H^4v_{\rm EW}^4}
+  =
+  1.095225057620535\ldots\,\lambda_F .
+\]
+The same loop length enters the scalar kinetic term.  With arclength \(s\) on
+\(\gamma_H\),
+\[
+  \omega_H=\frac{ds}{L_H},\qquad
+  \int_{\gamma_H}\omega_H=1,\qquad
+  \int_{\gamma_H}|\omega_H|^2ds=\frac1{L_H}.
+\]
+Writing \(Z_{\Gamma,H}\) for the localized density gives
+\[
+  f_H^2=\frac{Z_{\Gamma,H}}{L_H}.
+\]
+Since \(f_H\theta_{H,*}=v_{\rm EW}/\sqrt2\) and
+\(x_*=w_H\theta_{H,*}\),
+\[
+  L_H=
+  \frac{2x_*^2Z_{\Gamma,H}}{w_H^2v_{\rm EW}^2}.
+\]
+For the full massless-character root, the amplitude target becomes
+\[
+  \frac{{\cal N}_\Gamma^\chi w_H^8 v_{\rm EW}^4}
+       {16x_*^8 Z_{\Gamma,H}^4}
+  =
+  1.095225057620535\ldots\,\lambda_F .
+\]
+The point-projector current metric in the transverse weak channel gives
+\[
+  f_H^2=\frac{Q}{4}f_\Gamma^2 .
+\]
+Combining this metric with \(x_{\rm full}=1.837672606049940\ldots\) gives
+\[
+  \frac{f_H}{v_{\rm EW}}
+  =
+  \frac{w_H}{\sqrt2\,x_{\rm full}}
+  =
+  0.384783872197163\ldots\,w_H,
+\]
+and hence
+\[
+  \frac{f_\Gamma}{v_{\rm EW}}
+  =
+  \frac{\sqrt2}{\sqrt Q\,x_{\rm full}}\,w_H .
+\]
+For the \(Q=7\) boundary stack,
+\[
+  \frac{f_\Gamma}{v_{\rm EW}}
+  =
+  0.290869266954901\ldots\,w_H .
+\]
+The loop and point-projector normalizations meet through
+\[
+  \frac{Z_{\Gamma,H}}{L_H}=\frac{Q}{4}f_\Gamma^2 .
+\]
+Eliminating \(L_H\) gives the localized density target
+\[
+  \frac{{\cal N}_\Gamma^\chi}{Z_{\Gamma,H}^4}
+  =
+  \frac{2279.126786313921\ldots}{w_H^8v_{\rm EW}^4}\,
+  \lambda_F
+\]
+at the full massless-character root.
+The kinetic density in this equation comes from the localized Yang--Mills
+term
+\[
+  S_{\rm YM}^{\Gamma}
+  =
+  -\frac{T_8(2\pi\alpha')^2}{4}
+  \int_{\Gamma_{\rm EW}}
+  e^{-\phi}\sqrt{\gamma_\Gamma}\,
+  {\rm tr}_{\rm end}(F_{MN}F^{MN}) .
+\]
+For the Wilson ansatz
+\[
+  A_s(x,y)=\theta_H(x)\omega_{H,s}(y)n_H^aT_a ,
+  \qquad
+  F_{\mu s}=(\partial_\mu\theta_H)\omega_{H,s}n_H^aT_a ,
+\]
+one obtains
+\[
+  f_H^2
+  =
+  T_8(2\pi\alpha')^2
+  \int_{\Gamma_{\rm EW,int}}
+  e^{-\phi}\sqrt{\gamma_\Gamma}\,
+  g^{ss}\omega_{H,s}\omega_{H,s}\,
+  {\cal T}_H ,
+\]
+with
+\[
+  {\cal T}_H=
+  {\rm tr}_{\rm end}(n_H^aT_a\,n_H^bT_b)\Pi_{ab}^{\rm Schur}.
+\]
+For \(\omega_H=ds/L_H\) and uniform transverse density,
+\[
+  Z_{\Gamma,H}
+  =
+  T_8(2\pi\alpha')^2
+  \int_{\CP^2}
+  e^{-\phi}\sqrt{\gamma_\perp}\,
+  {\cal T}_H .
+\]
+The determinant factor is the canonical charged-kernel supertrace
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  \sum_{\alpha\in\ker{\cal B}_\Gamma^\chi}
+  \sigma_\alpha d_\alpha\tau_\alpha .
+\]
+In the equal-amplitude Borel--Weil pass,
+\[
+  {\cal N}_{\Gamma,1}^\chi
+  =
+  {\cal N}_{\Gamma,2}^\chi
+  =
+  {\cal N}_\Gamma^\chi ,
+\]
+so the total charged supertrace over
+\(\cO(1)\oplus\cO(2)\) is
+\[
+  {\cal N}_{\Gamma,{\rm tot}}^\chi
+  =
+  2{\cal N}_\Gamma^\chi .
+\]
+The curvature target uses the per-pair amplitude
+\({\cal N}_\Gamma^\chi\), multiplying
+\(\cos(mx)+\cos(2mx)\) with a common coefficient.
+For the zero-threshold endpoint trial, the charged kernels are
+\[
+  H^0(\CP^1,\cO(1))^\chi={\rm span}\{u,v\},
+  \qquad
+  H^0(\CP^1,\cO(2))^\chi={\rm span}\{u^2,v^2\}.
+\]
+The \(uv\) state is neutral under the Wilson angle.  With common oscillator
+multiplicity \(d_\chi\) and Dolbeault index sign \(\sigma_\chi\),
+\[
+  {\cal N}_\Gamma^\chi=2\sigma_\chi d_\chi .
+\]
+The Higgs-curvature match has \(D>0\) for \(\lambda_F>0\), hence
+\[
+  \sigma_\chi d_\chi>0 .
+\]
+For the minimal even endpoint determinant,
+\[
+  d_\chi=1,\qquad
+  \sigma_\chi=+1,\qquad
+  {\cal N}_\Gamma^\chi=2 .
+\]
+With threshold parameters \(z_r=M_rL_H\), the charged-pair amplitudes become
+\[
+  {\cal N}_{\Gamma,1}^\chi
+  =
+  2\sigma_\chi d_1F(z_1),
+  \qquad
+  {\cal N}_{\Gamma,2}^\chi
+  =
+  2\sigma_\chi d_2F(z_2),
+\]
+where
+\[
+  F(z)=e^{-z}\left(1+z+\frac{z^2}{3}\right).
+\]
+The equal-amplitude Borel--Weil shape requires
+\[
+  d_1F(z_1)=d_2F(z_2).
+\]
+A sufficient local source for this equality is a product Dolbeault boundary
+complex
+\[
+  {\cal D}_\Gamma^\chi
+  =
+  \left(
+  \bar\partial_{\cO(1)}^\chi
+  \oplus
+  \bar\partial_{\cO(2)}^\chi
+  \right)\otimes{\bf 1}_{E_\chi}
+  +
+  {\bf 1}\otimes{\cal D}_{E,\chi}.
+\]
+On the product zero-mode reduction,
+\[
+  ({\cal D}_\Gamma^\chi)^\dagger{\cal D}_\Gamma^\chi
+  =
+  \Delta_{\bar\partial,\chi}\otimes{\bf 1}_{E_\chi}
+  +
+  {\bf 1}\otimes\Delta_{E,\chi}.
+\]
+% CONTROL: Bochner split test. A rough CP1 kinetic determinant gives
+% alpha_B=kappa_B, alpha_C=0 and splits the O(1), O(2) thresholds.
+% A pure Casimir threshold gives alpha_B=0, alpha_C=kappa_C and also
+% splits them. The Hosotani pass row uses a cohomological determinant
+% alpha_B=alpha_C=0 or a sourced mixed relation alpha_C=-4alpha_B/5.
+For \(n\geq0\),
+\[
+  H^0(\CP^1,\cO(n))=\ker\bar\partial_{\cO(n)},
+  \qquad
+  H^1(\CP^1,\cO(n))=0 .
+\]
+Thus \(\Delta_{\bar\partial,\chi}\) vanishes on the charged projectors
+\[
+  P_1^\chi={\rm span}\{u,v\},
+  \qquad
+  P_2^\chi={\rm span}\{u^2,v^2\}.
+\]
+The charged-pair threshold spectrum is then supplied by the common oscillator
+block \(\Delta_{E,\chi}\), so a single eigenvalue \(M^2\) gives
+\[
+  z_1=z_2=ML_H,\qquad d_1=d_2=d_\chi .
+\]
+Degree-dependent rough-Laplacian, Casimir, or curvature terms give the
+splitting parameters in the general equation above.
+The minimal common-threshold pass has
+\[
+  d_1=d_2=1,\qquad z_1=z_2=z,
+\]
+and gives
+\[
+  {\cal N}_\Gamma^\chi=2F(z)
+\]
+for positive endpoint parity.
+The point-projector endpoint trace evaluates the Schur-channel trace factor:
+\[
+  G_{ab}^{(p)}
+  =
+  {\rm Re}\,\langle0|T_aK_pT_b|0\rangle
+  =
+  \frac{Q}{4}{\rm diag}(1,1,0)_{ab}.
+\]
+Writing
+\[
+  Z_{\Gamma,0}
+  =
+  T_8(2\pi\alpha')^2
+  \int_{\CP^2}
+  e^{-\phi}\sqrt{\gamma_\perp}\,{\cal Z}_{\rm end},
+\]
+one gets
+\[
+  Z_{\Gamma,H}=\frac{Q}{4}Z_{\Gamma,0},
+  \qquad
+  f_\Gamma^2=\frac{Z_{\Gamma,0}}{L_H}.
+\]
+The same localized measure defines the charged-kernel inner product.  For an
+orthonormal determinant basis
+\[
+  \psi_\alpha\in
+  L^2(\Gamma_{\rm EW,int},d\nu_\Gamma)\otimes E_\chi,
+  \qquad
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,|\psi_\alpha|^2=1 ,
+\]
+the angle-dependent Wilson determinant has the finite coefficient
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  \sum_{\alpha\in\ker{\cal B}_\Gamma^\chi}
+  \sigma_\alpha d_\alpha\tau_\alpha .
+\]
+Consequently the local density fixes the Hilbert normalization and the kinetic
+scale \(Z_{\Gamma,0}\).  The Wilson amplitude is the finite supertrace over
+the normalized kernel.
+For \(Q=7\), the same determinant target becomes
+\[
+  \frac{{\cal N}_\Gamma^\chi}{Z_{\Gamma,0}^4}
+  =
+  \frac{21375.716460702053\ldots}
+       {w_H^8v_{\rm EW}^4}\,\lambda_F .
+\]
+In the minimal even endpoint trial the equivalent form is
+\[
+  \frac{Z_{\Gamma,0}}{v_{\rm EW}}
+  =
+  \left(
+  \frac{2}{21375.716460702053\ldots\,\lambda_F}
+  \right)^{1/4}w_H^2 .
+\]
+With a common threshold \(z\), this becomes
+\[
+  \frac{Z_{\Gamma,0}}{v_{\rm EW}}
+  =
+  \left(
+  \frac{2F(z)}{21375.716460702053\ldots\,\lambda_F}
+  \right)^{1/4}w_H^2 .
+\]
+Since
+\[
+  F'(z)=-\frac13e^{-z}z(1+z),
+\]
+one has \(0<F(z)\leq1\) for \(z\geq0\).  Define
+\[
+  C_0=
+  \left(
+  \frac{2}{21375.716460702053\ldots}
+  \right)^{1/4}
+  =
+  0.0983506713707568\ldots .
+\]
+Then every minimal positive endpoint realization satisfies the density window
+\[
+  0<
+  \frac{Z_{\Gamma,0}}{w_H^2v_{\rm EW}}
+  \leq
+  C_0\lambda_F^{-1/4}.
+\]
+Equivalently, a localized D8/O8 calculation passes this row exactly when
+\[
+  0<
+  \frac{21375.716460702053\ldots\,\lambda_F}{2w_H^8}
+  \left(\frac{Z_{\Gamma,0}}{v_{\rm EW}}\right)^4
+  \leq1,
+\]
+with \(z\) then fixed by the monotone equation for \(F(z)\).
+It is useful to name the left-hand side
+\[
+  \Xi_\Gamma
+  =
+  \frac{21375.716460702053\ldots\,\lambda_F}{2w_H^8}
+  \left(\frac{Z_{\Gamma,0}}{v_{\rm EW}}\right)^4 .
+\]
+The value \(\Xi_\Gamma=1\) gives the massless endpoint threshold \(z=0\).
+Values \(0<\Xi_\Gamma<1\) give a unique \(z>0\) through
+\[
+  e^{-z}\left(1+z+\frac{z^2}{3}\right)=\Xi_\Gamma .
+\]
+Values \(\Xi_\Gamma>1\) reject the minimal positive endpoint row and require
+additional localized spectrum data.
+Equivalently,
+\[
+  R_\Gamma
+  =
+  \Xi_\Gamma^{1/4}
+  =
+  \frac{Z_{\Gamma,0}}
+       {C_0\lambda_F^{-1/4}w_H^2v_{\rm EW}}
+  =
+  F(z)^{1/4}.
+\]
+Thus \(R_\Gamma\) is the direct threshold-suppression coordinate for this
+localized row.
+% CONTROL: The auxiliary ratio chi_H tracks the local Hosotani scale match.
+% It belongs to codexVersion-proof-gates.md, the Hosotani auxiliary note,
+% and connes-kk-scale-normalization-bridge.md.
+An endpoint trace metric therefore gives
+\[
+  w_y:w_x=Q:1,
+\]
+and for \(Q=7\) the center is \(t_Q=-7/8\).  The same filtration gives
+\[
+  \dim H^0(\CP^1,\cO(Q))=Q+1,
+\]
+the Chan--Paton half-rank used above.
+Substitution of \(t_Q\) in the neutral pass equation yields
+\[
+  9q(q+2)
+  =
+  2R_{\rm dV}
+  \left(
+  q\frac{5Q^2+18Q+29}{(Q+1)^2}+8
+  \right)
+  \left(
+  q\frac{Q^2+1}{(Q+1)^2}+1
+  \right).
+\]
+For \(Q=7\), the equation becomes
+\[
+  576q(q+2)=R_{\rm dV}(25q+32)^2,
+\]
+with positive root
+\[
+  q_c=3.511614004347\ldots,\qquad
+  \lambda_c=1.873930095907\ldots .
+\]
+The same point-evaluation specialization has an explicit photon length.
+With the primitive relation \(P=Q-1\),
+\[
+  \omega_T=\eta(t_Q),
+  \qquad
+  \omega_Y=(Q-1)h+Q\eta(t_Q),
+  \qquad
+  \omega_Q=(Q-1)h+(Q+1)\eta(t_Q).
+\]
+For \(t_Q=-Q/(Q+1)\),
+\[
+  A=2q,\qquad
+  B=-\frac{Q-1}{Q+1}q,\qquad
+  C=\frac{Q^2+1}{(Q+1)^2}q+1.
+\]
+In the weak-current specialization \(L_2^2=C\), one obtains
+\[
+  L_Q^2
+  =
+  (Q-1)^2A+2(Q-1)(Q+1)B+(Q+1)^2C
+  =
+  (Q+1)^2L_2^2.
+\]
+For \(Q=7\), this gives \(L_Q^2=64L_2^2\).  The neutral determinant is
+\[
+  \det{\cal L}_\Gamma=(Q-1)^2q(q+2),
+\]
+so the equation
+\[
+  \det{\cal L}_\Gamma=R_{\rm dV}L_2^2L_Q^2
+\]
+recovers the reduced \(Q\)-row above.
+On this neutral pass surface,
+\[
+  G_Z^\Gamma
+  =
+  \frac{L_Q^2}{\det{\cal L}_\Gamma}
+  =
+  \frac{1}{R_{\rm dV}L_2^2}.
+\]
+Writing \(C_{\rm W}\) for the Weinberg length-normalization constant in this
+local calculation, the charged and neutral source masses read
+\[
+  M_W^2=\frac{C_{\rm W}^2v_{\rm EW}^2}{4L_2^2},
+  \qquad
+  M_Z^2=\frac{C_{\rm W}^2v_{\rm EW}^2}{4R_{\rm dV}L_2^2}.
+\]
+Since \(R_{\rm dV}=\Xp(3/4)/\Xp(2)\), the Schur coefficient becomes
+\[
+  \mu_\Gamma^2
+  =
+  \frac{M_Z^2}{\Xp(2)}
+  =
+  \frac{M_W^2}{\Xp(3/4)}
+  =
+  \frac{C_{\rm W}^2v_{\rm EW}^2}{4\Xp(3/4)L_2^2}.
+\]
+The electromagnetic normalization in the same specialization is
+\[
+  \alpha_\Gamma
+  =
+  \frac{C_{\rm W}^2}{4\pi L_Q^2}
+  =
+  \frac{C_{\rm W}^2}{4\pi(Q+1)^2L_2^2}
+  =
+  \frac{M_W^2}{\pi(Q+1)^2v_{\rm EW}^2}.
+\]
+For \(Q=7\), this specialization gives
+\[
+  \alpha_\Gamma=\frac{M_W^2}{64\pi v_{\rm EW}^2}.
+\]
+Using \(M_W=80.377\,{\rm GeV}\) and
+\(v_{\rm EW}=246.21965\,{\rm GeV}\) as representative electroweak inputs,
+\[
+  \alpha_\Gamma^{-1}=1886.738366864\ldots .
+\]
+The physical electromagnetic input \(\alpha^{-1}=137.035999084\ldots\)
+corresponds to
+\[
+  k_\alpha=
+  \frac{M_W^2}{\pi\alpha v_{\rm EW}^2}
+  =
+  4.648394337766\ldots,
+  \qquad
+  \frac{64}{k_\alpha}=13.768195069001\ldots .
+\]
+Thus the point-evaluation Hodge row is a neutral-matrix filter.  Full
+electromagnetic normalization requires an additional localized contribution
+to the \(Q\)-current norm.
+Equivalently, set \(L_2^2=1\), \(k=k_\alpha\), and write
+\[
+  \widehat{\cal L}_\Gamma=
+  \begin{pmatrix}
+    1&\varepsilon\\
+    \varepsilon&y
+  \end{pmatrix}.
+\]
+The alpha-closed neutral matrix obeys
+\[
+  1+y+2\varepsilon=k,
+  \qquad
+  y-\varepsilon^2=R_{\rm dV}k,
+\]
+hence
+\[
+  \varepsilon_\pm=-1\pm\sqrt{k(1-R_{\rm dV})},
+  \qquad
+  y_\pm=k+1\mp2\sqrt{k(1-R_{\rm dV})}.
+\]
+For the numerical inputs above,
+\[
+\begin{array}{c|c|c|c}
+{\rm branch}&\varepsilon&y&\varepsilon/\sqrt y\\ \hline
++&0.018362864274\ldots&3.611668609219\ldots&0.009662432587\ldots\\
+-&-2.018362864274\ldots&7.685120066313\ldots&-0.728071311237\ldots .
+\end{array}
+\]
+At the point-evaluation neutral root, the corresponding normalized matrix is
+\[
+  \widehat{\cal L}_{\rm pt}
+  =
+  \begin{pmatrix}
+  1&2.778688215142\ldots\\
+  2.778688215142\ldots&57.442623569715\ldots
+  \end{pmatrix}.
+\]
+A sharper decomposition writes each alpha-closed branch \(T_\pm\) as
+\[
+  T_\pm=\frac{\widehat{\cal L}_{\rm pt}-D_\pm}{s_\pm},
+  \qquad
+  D_\pm\succeq0,\qquad {\rm rank}\,D_\pm=1 .
+\]
+The two decompositions are
+\[
+\begin{array}{c|c|c|c}
+{\rm branch}&s&{\rm nonzero\ eigenvalue\ of\ }D&
+{\rm slope\ of\ the\ image\ line}\\ \hline
++&0.859516413258733\ldots&
+54.478818707582\ldots&
+19.667102015222\ldots\\
+-&0.672682628439277\ldots&
+52.600294175197\ldots&
+12.637293988103\ldots .
+\end{array}
+\]
+Thus the localized action data are a rank-one subtraction in the
+\(Q\)-current plane together with a common current-frame rescaling.  The local
+coefficient row is the extraction of
+\(H_{hh}^\Gamma,H_{h\eta}^\Gamma,H_{\eta\eta}^\Gamma\) and \(L_2^2\) from the
+same \(d\nu_\Gamma\), endpoint image data, and DBI/CS pullback forms.
+A single boundary auxiliary gives the required algebra.  For \(J=(J_3,J_Y)\),
+write
+\[
+  S_{\rm img}^{(2)}
+  =
+  \frac12J^T\widehat{\cal L}_{\rm pt}J
+  +r_{\rm img}\ell_\pm^TJ
+  +\frac12m_\pm r_{\rm img}^2 .
+\]
+Eliminating \(r_{\rm img}\) gives
+\[
+  T_\pm
+  =
+  s_\pm^{-1}
+  \left(
+  \widehat{\cal L}_{\rm pt}
+  -\frac{\ell_\pm\ell_\pm^T}{m_\pm}
+  \right),
+  \qquad
+  \frac{\ell_\pm\ell_\pm^T}{m_\pm}
+  =
+  \delta_\pm
+  \binom{1}{\rho_\pm}
+  \begin{pmatrix}1&\rho_\pm\end{pmatrix}.
+\]
+The coefficient extraction target is therefore
+\[
+\begin{aligned}
++:\quad&
+s_+=0.859516413258733\ldots,
+\quad
+s_+^{-1}=1.163444914575446\ldots,\\
+&
+\delta_+=0.140483586741\ldots,
+\quad
+\rho_+=19.667102015222\ldots,\\
+-:\quad&
+s_-=0.672682628439277\ldots,
+\quad
+s_-^{-1}=1.486585140930646\ldots,\\
+&
+\delta_-=0.327317371561\ldots,
+\quad
+\rho_-=12.637293988103\ldots .
+\end{aligned}
+\]
+Equivalently, for \(c_\rho=(1,\rho)^T\) and
+\[
+  M_\rho=\widehat{\cal L}_{\rm pt}-\delta(\rho)c_\rho c_\rho^T ,
+\]
+the equations
+\[
+  (1,1)M_\rho\binom11=k_\alpha(M_\rho)_{33},
+  \qquad
+  \det M_\rho=R_{\rm dV}k_\alpha(M_\rho)_{33}^2
+\]
+give
+\[
+\begin{aligned}
+0=P_\rho(\rho)
+={}&
+\rho^4
+-29.874189325032\ldots\,\rho^3
++170.407256725780\ldots\,\rho^2\\
+&+591.897671281551\ldots\,\rho
++93.118987613750\ldots .
+\end{aligned}
+\]
+Positive Schur subtraction selects the roots
+\[
+  \rho_-=12.637293988103\ldots,
+  \qquad
+  \rho_+=19.667102015221\ldots .
+\]
+For positive image mass \(m>0\), the coefficient extraction reads
+\[
+  \frac{\ell_3^2}{m}=\delta,\qquad
+  \frac{\ell_Y}{\ell_3}=\rho,\qquad
+  s=(M_\rho)_{33}=1-\delta .
+\]
+Thus a real localized image auxiliary realizes either
+\[
+  \delta_+=0.140483586741\ldots,\quad
+  \rho_+=19.667102015221\ldots,
+\]
+or
+\[
+  \delta_-=0.327317371561\ldots,\quad
+  \rho_-=12.637293988103\ldots .
+\]
+In local variables, choose a normalized image eigenmode \(\psi\) with
+\[
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma|\psi|^2=1,\qquad
+  m_\psi=\langle\psi,{\cal M}_{\rm img}\psi\rangle_\Gamma .
+\]
+For image current profile \(\Theta_{\rm img}\), define
+\[
+  {\cal J}_A=\gamma_\Gamma^{-1}(\theta_\Gamma^A,\Theta_{\rm img}),
+  \qquad
+  \ell_A[\psi]=
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,\psi{\cal J}_A,
+  \qquad A=3,Y .
+\]
+The extraction invariants are
+\[
+  \delta_\psi=\frac{\ell_3[\psi]^2}{m_\psi L_2^2},
+  \qquad
+  \rho_\psi=\frac{\ell_Y[\psi]}{\ell_3[\psi]},
+  \qquad
+  s_\psi=1-\delta_\psi .
+\]
+Equivalently, the full image sector gives the Green-kernel correction
+\[
+  {\cal D}_{AB}
+  =
+  \frac{1}{L_2^2}
+  \left\langle
+  {\cal J}_A,
+  {\cal M}_{\rm img}^{-1}{\cal J}_B
+  \right\rangle_\Gamma,
+  \qquad A,B=3,Y .
+\]
+The one-field Schur row is the rank-one case
+\[
+  {\cal D}_{33}{\cal D}_{YY}-{\cal D}_{3Y}^2=0,
+  \qquad
+  {\cal D}_{33}>0 .
+\]
+A spectral resolution makes this condition computable from the localized
+image spectrum.  For
+\[
+  {\cal M}_{\rm img}\psi_n=m_n\psi_n,
+  \qquad m_n>0,
+\]
+set
+\[
+  \ell_A^{(n)}
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,\psi_n{\cal J}_A .
+\]
+Then
+\[
+  {\cal D}_{AB}
+  =
+  \sum_n
+  \frac{\ell_A^{(n)}\ell_B^{(n)}}{m_nL_2^2}.
+\]
+Writing
+\[
+  u_n
+  =
+  \frac{1}{L_2\sqrt{m_n}}
+  \binom{\ell_3^{(n)}}{\ell_Y^{(n)}},
+\]
+one has
+\[
+  {\cal D}=\sum_n u_nu_n^T,
+  \qquad
+  \Delta_{\rm rank}
+  =
+  {\cal D}_{33}{\cal D}_{YY}-{\cal D}_{3Y}^2
+  =
+  \sum_{n<m}
+  \left(u_n^3u_m^Y-u_n^Yu_m^3\right)^2 .
+\]
+Thus rank one is the collinearity condition for the sourced overlap vectors.
+For \({\cal D}_{33}>0\), put
+\[
+  \delta_D={\cal D}_{33},
+  \qquad
+  \rho_D=\frac{{\cal D}_{3Y}}{{\cal D}_{33}} .
+\]
+The two Schur branches are selected by
+\[
+  \Delta_{\rm rank}=0,\qquad
+  (\delta_D,\rho_D)
+  \in
+  \{(\delta_+,\rho_+),(\delta_-,\rho_-)\}.
+\]
+Several localized image modes can contribute to one branch when the
+source-slope ratio is common and the strengths add to \(\delta_\pm\).
+A Green-metric form records the same condition directly on the source
+profiles.  Define
+\[
+  (F,G)_G
+  =
+  \frac{1}{L_2^2}
+  \langle F,{\cal M}_{\rm img}^{-1}G\rangle_\Gamma .
+\]
+Then \({\cal D}_{AB}=({\cal J}_A,{\cal J}_B)_G\).  For
+\(\sigma\in\{+,-\}\), the target branch is
+\[
+  {\cal D}^{(\sigma)}
+  =
+  \delta_\sigma
+  \binom{1}{\rho_\sigma}
+  \begin{pmatrix}1&\rho_\sigma\end{pmatrix},
+\]
+equivalently
+\[
+  \|{\cal J}_Y-\rho_\sigma{\cal J}_3\|_G^2=0,
+  \qquad
+  \|{\cal J}_3\|_G^2=\delta_\sigma .
+\]
+For a positive image Green metric, the local calculation reduces to source
+proportionality in the sourced image quotient plus one norm calculation.
+If the image source is the pure weak-period line
+\[
+  {\cal J}_Y=\rho_Q{\cal J}_3,\qquad \rho_Q=2Q+1,
+\]
+then
+\[
+  {\cal D}
+  =
+  \delta_Q
+  \binom{1}{\rho_Q}
+  \begin{pmatrix}1&\rho_Q\end{pmatrix}.
+\]
+For \(Q=7\), \(\rho_Q=15\).  The Schur branch equations require
+\[
+  \rho_D
+  \in
+  \{12.637293988103\ldots,\;19.667102015221\ldots\}.
+\]
+The pure weak-period line is therefore excluded as the final image source.
+With the alpha-length value,
+\[
+  \delta_Q
+  =
+  \frac{64-k_\alpha}{(1+\rho_Q)^2-k_\alpha}
+  =
+  0.236129805122\ldots,
+  \qquad
+  {\cal R}(15)=0.999999862211\ldots .
+\]
+Thus the localized action must deform the source line to one Schur slope or
+project the weak-period source away from the Schur image channel.
+Using \(\delta_Q\) as the alpha-normalized reference strength, a coframe
+deformation in the sourced quotient may be parameterized by
+\[
+  {\cal J}_3^{(\sigma)}=a_\sigma{\cal J}_3^{(Q)},
+  \qquad
+  {\cal J}_Y^{(\sigma)}
+  =
+  a_\sigma(\rho_Q+\zeta_\sigma){\cal J}_3^{(Q)} .
+\]
+Branch matching gives
+\[
+  \zeta_\sigma=\rho_\sigma-\rho_Q,
+  \qquad
+  a_\sigma^2=\frac{\delta_\sigma}{\delta_Q}.
+\]
+For \(Q=7\),
+\[
+\begin{array}{c|c|c|c}
+{\rm branch}&\zeta_\sigma&a_\sigma^2&a_\sigma\\ \hline
++&4.667102015221\ldots&0.594942204219\ldots&0.771324966677\ldots\\
+-&-2.362706011897\ldots&1.386175588431\ldots&1.177359583318\ldots .
+\end{array}
+\]
+These two rows are the local coefficient targets for a sourced D8/O8 coframe
+deformation.
+Equivalently, let
+\[
+  {\cal C}_Q=
+  \binom{{\cal J}_3^{(Q)}}{{\cal J}_Y^{(Q)}},
+  \qquad
+  {\cal J}_Y^{(Q)}=\rho_Q{\cal J}_3^{(Q)} .
+\]
+The deformation can be placed in a lower-triangular source-coframe map
+\[
+  {\cal C}_\sigma=R_\sigma{\cal C}_Q,
+  \qquad
+  R_\sigma
+  =
+  a_\sigma
+  \begin{pmatrix}
+  1&0\\
+  \zeta_\sigma&1
+  \end{pmatrix}.
+\]
+It satisfies
+\[
+  R_\sigma\binom{1}{\rho_Q}
+  =
+  a_\sigma\binom{1}{\rho_\sigma},
+  \qquad
+  R_\sigma{\cal D}_QR_\sigma^T
+  =
+  {\cal D}_\sigma .
+\]
+For \(Q=7\),
+\[
+R_+
+=
+\begin{pmatrix}
+0.771324966677\ldots&0\\
+3.599852306368\ldots&0.771324966677\ldots
+\end{pmatrix}
+\]
+and
+\[
+R_-
+=
+\begin{pmatrix}
+1.177359583318\ldots&0\\
+-2.781754565670\ldots&1.177359583318\ldots
+\end{pmatrix}.
+\]
+The diagonal entry is the Green-norm rescaling, and the lower-left entry is
+the localized \(T_3\)-to-\(Y\) source mixing required from the D8/O8 pullback.
+The equivalent pullback condition on localized source coframes is
+\[
+  \theta_{\Gamma,\sigma}^{3}
+  =
+  a_\sigma\theta_{\Gamma,Q}^{3},
+  \qquad
+  \theta_{\Gamma,\sigma}^{Y}
+  =
+  a_\sigma
+  \left(
+  \theta_{\Gamma,Q}^{Y}
+  +\zeta_\sigma\theta_{\Gamma,Q}^{3}
+  \right)
+\]
+inside the image source quotient.  Thus the localized action returns
+\[
+  Z_{\rm img}^{(\sigma)}=a_\sigma^2Z_{\rm img}^{(Q)},
+  \qquad
+  \beta_{Y3}^{(\sigma)}=\zeta_\sigma .
+\]
+For \(Q=7\),
+\[
+\begin{array}{c|c|c}
+{\rm branch}&Z_{\rm img}^{(\sigma)}/Z_{\rm img}^{(Q)}
+&\beta_{Y3}^{(\sigma)}\\ \hline
++&0.594942204219\ldots&4.667102015221\ldots\\
+-&1.386175588431\ldots&-2.362706011897\ldots .
+\end{array}
+\]
+For a computed localized action, define
+\[
+  \widehat\delta_G
+  =
+  ({\cal J}_3,{\cal J}_3)_G={\cal D}_{33},
+  \qquad
+  \widehat\rho_G
+  =
+  \frac{({\cal J}_3,{\cal J}_Y)_G}
+       {({\cal J}_3,{\cal J}_3)_G}
+  =
+  \frac{{\cal D}_{3Y}}{{\cal D}_{33}},
+\]
+and
+\[
+  \widehat\epsilon_G^2
+  =
+  \frac{\|{\cal J}_Y-\widehat\rho_G{\cal J}_3\|_G^2}
+       {\widehat\delta_G}
+  =
+  \frac{{\cal D}_{33}{\cal D}_{YY}-{\cal D}_{3Y}^2}
+       {{\cal D}_{33}^2}.
+\]
+The Schur-branch extraction condition is
+\[
+  (\widehat\delta_G,\widehat\rho_G,\widehat\epsilon_G^2)
+  =
+  (\delta_\sigma,\rho_\sigma,0),
+  \qquad \sigma\in\{+,-\}.
+\]
+The deformation coefficients are then
+\[
+  a_\sigma^2=\frac{\widehat\delta_G}{\delta_Q},
+  \qquad
+  \zeta_\sigma=\widehat\rho_G-\rho_Q .
+\]
+In the pullback notation the direct readout is
+\[
+  \widehat Z_{\rm img}= {\cal D}_{33},
+  \qquad
+  \widehat\beta_{Y3}=\frac{{\cal D}_{3Y}}{{\cal D}_{33}}-\rho_Q,
+\]
+\[
+  \widehat E_\perp
+  =
+  {\cal D}_{YY}-\frac{{\cal D}_{3Y}^2}{{\cal D}_{33}} .
+\]
+The branch extraction condition becomes
+\[
+  \frac{\widehat Z_{\rm img}}{Z_{\rm img}^{(Q)}}=a_\sigma^2,
+  \qquad
+  \widehat\beta_{Y3}=\zeta_\sigma,
+  \qquad
+  \widehat E_\perp=0 .
+\]
+A projected-image realization uses a \(G\)-self-adjoint idempotent
+\(\Pi_\sigma\) satisfying
+\[
+  \Pi_\sigma^2=\Pi_\sigma,
+  \qquad
+  (\Pi_\sigma F,G)_G=(F,\Pi_\sigma G)_G,
+\]
+\[
+  \Pi_\sigma{\cal J}_Y
+  =
+  \rho_\sigma\Pi_\sigma{\cal J}_3,
+  \qquad
+  \|\Pi_\sigma{\cal J}_3\|_G^2=\delta_\sigma .
+\]
+The coframe map also defines a symmetric source-index block
+\[
+  {\cal H}_\sigma=R_\sigma R_\sigma^T
+  =
+  a_\sigma^2
+  \begin{pmatrix}
+  1&\zeta_\sigma\\
+  \zeta_\sigma&1+\zeta_\sigma^2
+  \end{pmatrix}.
+\]
+It has
+\[
+  \det{\cal H}_\sigma=a_\sigma^4,
+  \qquad
+  \chi_\sigma
+  =
+  \frac{\zeta_\sigma}{\sqrt{1+\zeta_\sigma^2}} .
+\]
+For \(Q=7\),
+\[
+{\cal H}_+
+=
+\begin{pmatrix}
+0.594942204219\ldots&2.776655960251\ldots\\
+2.776655960251\ldots&13.553878831880\ldots
+\end{pmatrix},
+\qquad
+\chi_+=0.977806418243\ldots ,
+\]
+and
+\[
+{\cal H}_-
+=
+\begin{pmatrix}
+1.386175588431\ldots&-3.275125396331\ldots\\
+-3.275125396331\ldots&9.124334052058\ldots
+\end{pmatrix},
+\qquad
+\chi_-=-0.920912188652\ldots .
+\]
+The same rank-one image subtraction can be written with one real localized
+field \(r_\sigma\):
+\[
+  S_{{\rm img},\sigma}^{(2)}
+  =
+  \frac12m_\sigma r_\sigma^2
+  +L_2\sqrt{m_\sigma}\,
+  r_\sigma\,g_\sigma^TJ,
+  \qquad
+  J=\binom{J_3}{J_Y}.
+\]
+With
+\[
+  g_\sigma=\sqrt{\delta_\sigma}\binom{1}{\rho_\sigma},
+\]
+eliminating \(r_\sigma\) gives
+\[
+  -\frac12L_2^2J^Tg_\sigma g_\sigma^TJ,
+  \qquad
+  {\cal D}_\sigma=g_\sigma g_\sigma^T .
+\]
+For the two branches,
+\[
+\begin{array}{c|c|c}
+{\rm branch}&(g_\sigma)_3&(g_\sigma)_Y\\ \hline
++&0.374811401563\ldots&7.371454070999\ldots\\
+-&0.572116571654\ldots&7.230005311453\ldots .
+\end{array}
+\]
+Return to the local source definition
+\[
+  {\cal J}_A
+  =
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Theta_{\rm img}),
+  \qquad A=3,Y .
+\]
+For a normalized image eigenmode \(\psi_\sigma\),
+\[
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma|\psi_\sigma|^2=1,
+  \qquad
+  {\cal M}_{\rm img}\psi_\sigma=m_\sigma\psi_\sigma ,
+\]
+the one-field packet is equivalent to
+\[
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Theta_{{\rm img},\sigma})
+  =
+  L_2\sqrt{m_\sigma}\,(g_\sigma)_A,
+  \qquad A=3,Y .
+\]
+With \(\Xi_\sigma=\Theta_{{\rm img},\sigma}/\sqrt{m_\sigma}\), this reads
+\[
+  \frac{1}{L_2}
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Xi_\sigma)
+  =
+  (g_\sigma)_A .
+\]
+A sufficient local profile is obtained from
+\[
+  {\cal G}_{AB}^{(\psi)}
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma^2\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\theta_\Gamma^B).
+\]
+When this matrix is invertible,
+\[
+  \Xi_\sigma
+  =
+  L_2\psi_\sigma\,
+  c_\sigma^B\theta_{\Gamma B},
+  \qquad
+  c_\sigma^B
+  =
+  \left({\cal G}^{(\psi)-1}\right)^{BA}(g_\sigma)_A
+\]
+solves the two overlap equations.  The D8/O8 source row is therefore tested by
+\({\cal G}^{(\psi)}\) and the Gram-dual current combination in the
+sourced image quotient.
+Writing
+\[
+  {\cal G}^{(\psi)}
+  =
+  \begin{pmatrix}
+  A_\psi&B_\psi\\
+  B_\psi&C_\psi
+  \end{pmatrix},
+  \qquad
+  \Delta_\psi=A_\psi C_\psi-B_\psi^2,
+\]
+the coefficients are
+\[
+  c_\sigma^3
+  =
+  \frac{C_\psi(g_\sigma)_3-B_\psi(g_\sigma)_Y}{\Delta_\psi},
+  \qquad
+  c_\sigma^Y
+  =
+  \frac{-B_\psi(g_\sigma)_3+A_\psi(g_\sigma)_Y}{\Delta_\psi}.
+\]
+In an orthonormal weighted current frame,
+\({\cal G}^{(\psi)}=\mathbf 1\), hence
+\[
+  \Xi_\sigma
+  =
+  L_2\psi_\sigma
+  \left((g_\sigma)_3\theta_\Gamma^3
+  +(g_\sigma)_Y\theta_\Gamma^Y\right).
+\]
+The general solution splits as
+\[
+  \Xi_\sigma
+  =
+  \Xi_{\sigma,\min}+\Xi_{\sigma,\perp},
+  \qquad
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Xi_{\sigma,\perp})=0 .
+\]
+The forced profile has norm
+\[
+  \frac{\|\Xi_{\sigma,\min}\|_\Gamma^2}{L_2^2}
+  =
+  g_\sigma^T{\cal G}^{(\psi)-1}g_\sigma .
+\]
+In an orthonormal weighted current frame this gives
+\[
+\begin{array}{c|c}
+{\rm branch}&\|\Xi_{\sigma,\min}\|_\Gamma^2/L_2^2\\ \hline
++&54.478818707582\ldots\\
+-&52.600294175197\ldots .
+\end{array}
+\]
+Any nonzero \(\Xi_{\sigma,\perp}\) raises the image-profile norm without
+changing the Schur matrix.
+Define the profile residual
+\[
+  {\cal R}_{\Xi,\sigma}
+  =
+  \frac{\|\Xi_{\sigma,\perp}\|_\Gamma^2}
+       {\|\Xi_{\sigma,\min}\|_\Gamma^2}.
+\]
+The minimal image-source realization has
+\[
+  {\cal R}_{\Xi,\sigma}=0 .
+\]
+A positive value records extra localized image content that leaves
+\({\cal D}_\sigma\) invariant and belongs to the D8/O8 spectrum.
+
+\begin{proposition}[One-mode image-source closure]
+Fix \(\sigma\in\{+,-\}\) and fix the orientation of the real image field
+\(r_\sigma\).  A positive one-mode image sector over \(\Gamma_{\rm EW}\)
+realizes the Schur branch
+\[
+  {\cal D}_\sigma
+  =
+  \delta_\sigma
+  \binom{1}{\rho_\sigma}
+  \begin{pmatrix}1&\rho_\sigma\end{pmatrix}
+\]
+precisely when the mass-normalized image profile satisfies
+\[
+  \frac{1}{L_2}
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Xi_\sigma)
+  =
+  (g_\sigma)_A,
+  \qquad A=3,Y .
+\]
+\end{proposition}
+
+\begin{proof}
+The overlap vector is
+\[
+  \ell_A
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Theta_{{\rm img},\sigma})
+  =
+  L_2\sqrt{m_\sigma}(g_\sigma)_A .
+\]
+Integrating out \(r_\sigma\) gives
+\[
+  {\cal D}_{AB}
+  =
+  \frac{\ell_A\ell_B}{m_\sigma L_2^2}
+  =
+  (g_\sigma)_A(g_\sigma)_B .
+\]
+Since \(g_\sigma=\sqrt{\delta_\sigma}(1,\rho_\sigma)^T\), the displayed branch
+matrix follows.  The reverse implication follows by choosing the orientation of
+\(r_\sigma\) so that \(\ell_3>0\).
+\end{proof}
+
+The localized realization data are the packet
+\[
+  {\cal P}_{\Gamma,\sigma}
+  =
+  \left(
+  d\nu_\Gamma,\,
+  \psi_\sigma,\,
+  m_\sigma,\,
+  \Xi_\sigma,\,
+  {\cal G}^{(\psi)},\,
+  Z_{\Gamma,0},\,
+  {\cal N}_\Gamma^\chi
+  \right)
+\]
+with
+\[
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma|\psi_\sigma|^2=1,
+  \qquad
+  {\cal M}_{\rm img}\psi_\sigma=m_\sigma\psi_\sigma,
+  \qquad
+  m_\sigma>0,
+\]
+\[
+  L_2^{-1}
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_\sigma
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Xi_\sigma)
+  =
+  (g_\sigma)_A,
+  \qquad A=3,Y,
+\]
+\[
+  {\cal R}_{\Xi,\sigma}=0,
+  \qquad
+  Z_{\Gamma,H}=\frac Q4Z_{\Gamma,0},
+  \qquad
+  {\cal N}_\Gamma^\chi=2\sigma_\chi d_\chi F(z).
+\]
+
+\subsection{Localized Quadratic Master Form}
+
+Let
+\[
+  \Gamma_{\rm int}=\CP^2\times S^1_Q .
+\]
+Let \({\cal S}_\Gamma\) label the D8 image sectors retained by the O8
+projection, and set
+\[
+  \kappa_8=T_8(2\pi\alpha')^2 .
+\]
+The string-frame DBI expansion on sector \(s\),
+\[
+  S_{{\rm DBI},s}
+  =
+  -T_8\int e^{-\phi_s}
+  {\rm Str}_{E_s}
+  \sqrt{-\det\bigl(P_s[G+B]+2\pi\alpha'F_s\bigr)},
+\]
+has quadratic Yang--Mills density
+\[
+  d\nu_{\Gamma,s}
+  =
+  \kappa_8\,\omega_s\,e^{-\phi_s}
+  \sqrt{\gamma_{\Gamma,s}}\,
+  d^5\sigma ,
+\]
+where \(\omega_s\) is the orientifold and endpoint multiplicity assigned to
+the retained sector.  The common \(\Gamma\)-inner product is
+\[
+  \langle X,Y\rangle_\Gamma
+  =
+  \sum_{s\in{\cal S}_\Gamma}
+  \int_{\Gamma_{\rm int}^{(s)}}d\nu_{\Gamma,s}\,
+  \gamma_s^{mn}\,
+  {\rm tr}_{E_s}
+  \bigl(\Pi_sX_{m,s}\Pi_sY_{n,s}\bigr).
+\]
+The scalar density \(d\nu_\Gamma\) used below denotes this sector-sum measure
+together with its finite trace projectors.  The immediate DBI readouts are
+\[
+  {\cal K}_{AB}^\Gamma
+  =
+  \langle\theta_\Gamma^A,\theta_\Gamma^B\rangle_\Gamma,
+  \qquad
+  {\cal G}_{AB}^{(\psi)}
+  =
+  \langle\psi_\sigma\theta_\Gamma^A,
+  \psi_\sigma\theta_\Gamma^B\rangle_\Gamma,
+\]
+\[
+  Z_{\Gamma,0}=\langle\eta_0,\eta_0\rangle_\Gamma,
+  \qquad
+  Z_{\Gamma,H}
+  =
+  \langle\omega_H n_H^aT_a\eta_0,
+  \omega_H n_H^bT_b\eta_0\rangle_\Gamma .
+\]
+The image operator is an adjoint square,
+\[
+  {\cal M}_{\rm img}={\cal Q}_{\Gamma,\sigma}^\dagger
+  {\cal Q}_{\Gamma,\sigma},
+  \qquad
+  \dagger \text{ taken with } \langle\,,\,\rangle_\Gamma .
+\]
+The weak-period Chan--Paton half-stack is
+\[
+  W_Q=H^0(\CP^1,\mathcal O(Q)),
+  \qquad
+  \dim W_Q=Q+1 .
+\]
+The local D8 endpoint space is the orientifold-real double
+\[
+  E_Q=(W_Q\oplus W_Q^\vee)^\Omega,
+  \qquad
+  {\rm rk}_{\mathbb C}(E_Q^{\mathbb C})=2(Q+1).
+\]
+At the active value \(Q=7\),
+\[
+  {\rm rk}_{\mathbb C}(E_Q^{\mathbb C})=16,
+  \qquad
+  q_8^{\rm net}=16-16=0,
+  \qquad
+  k=\frac{16}{2}-8=0 .
+\]
+Thus the retained endpoint is the locally neutral D8/O8 row in the doubled
+type-I' convention.
+
+Introduce row projectors
+\[
+  \Pi_Q=P_\Omega P_{E_Q},
+  \qquad
+  \Pi_\sigma=|e_\sigma\rangle\langle e_\sigma|,
+  \qquad
+  \Pi_\chi=P_1^\chi+P_2^\chi ,
+\]
+with
+\[
+  P_1^\chi={\rm proj}_{\rm span\{u,v\}},
+  \qquad
+  P_2^\chi={\rm proj}_{\rm span\{u^2,v^2\}} .
+\]
+For a row projector \(\Pi\), define
+\[
+  \langle X,Y\rangle_{\Gamma,\Pi}
+  =
+  \int_{\Gamma_{\rm int}}d\mu_\Gamma\,
+  \gamma_\Gamma^{mn}\,
+  {\rm tr}_{{\cal H}_\Gamma^{\rm loc}}
+  \bigl(\Pi X_m\Pi Y_n\bigr),
+  \qquad
+  d\mu_\Gamma=\kappa_8e^{-\phi}\sqrt{\gamma_\Gamma}\,d^5\sigma .
+\]
+The row readouts become
+\[
+  {\cal K}_{AB}^\Gamma
+  =
+  \langle\theta_\Gamma^A,\theta_\Gamma^B\rangle_{\Gamma,\Pi_Q},
+  \qquad
+  {\cal G}_{AB}^{(\psi)}
+  =
+  \langle\psi_\sigma\theta_\Gamma^A,
+  \psi_\sigma\theta_\Gamma^B\rangle_{\Gamma,\Pi_\sigma},
+\]
+\[
+  Z_{\Gamma,0}=\langle\eta_0,\eta_0\rangle_{\Gamma,\Pi_Q},
+  \qquad
+  Z_{\Gamma,H}
+  =
+  \langle\omega_H n_H^aT_a\eta_0,
+  \omega_H n_H^bT_b\eta_0\rangle_{\Gamma,\Pi_Q},
+\]
+and
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  {\rm Str}_{\Pi_\chi\ker{\cal B}_\Gamma^\chi}
+  (\tau_\alpha).
+\]
+Let
+\[
+  {\cal H}_n=H^0(\CP^1,\mathcal O(n)),
+  \qquad
+  e_k=u^{n-k}v^k,\quad k=0,\ldots,n .
+\]
+The \(\SU(2)\)-equivariant antiunitary
+\[
+  J_n e_k=(-1)^k e_{n-k}
+\]
+satisfies
+\[
+  J_n^2=(-1)^n .
+\]
+Thus \(n=1\) gives the pseudoreal doublet and \(n=2\) gives the real triplet.
+Using the invariant pairing to identify \({\cal H}_n^\vee\) with
+\({\cal H}_n\), the doubled endpoint involution is
+\[
+  \Omega_n(s,\lambda)=(J_n^{-1}\lambda,J_ns),
+  \qquad
+  \Omega_n^2=1,
+  \qquad
+  P_{\Omega,n}=\frac12(1+\Omega_n).
+\]
+On the charged bases,
+\[
+  J_1u=v,\qquad J_1v=-u,
+\]
+and
+\[
+  J_2u^2=v^2,\qquad J_2uv=-uv,\qquad J_2v^2=u^2 .
+\]
+Consequently \(P_{\Omega,1}\) preserves the \((u,v)\) charged doublet, and
+\(P_{\Omega,2}\) preserves the charged pair \((u^2,v^2)\) after applying
+\(P_2^\chi=1-|uv\rangle\langle uv|\).  The trace readout is
+\[
+  {\rm Tr}\,P_{\Omega,1}P_1^\chi=2,
+  \qquad
+  {\rm Tr}\,P_{\Omega,2}P_2^\chi=2 .
+\]
+The orientifold row therefore contributes
+\[
+  \alpha_{\rm parity}=0,
+  \qquad
+  d_1=d_2=d_\chi .
+\]
+The determinant sign \(\sigma_\chi\) and the common threshold \(M_\chi\) are
+properties of the localized oscillator \({\cal B}_\Gamma^\chi\).
+Let \(x=w_H\theta_H\).  On the charged Borel--Weil pair with charges
+\[
+  r=1,\qquad r=2 ,
+\]
+take the localized oscillator block to have eigenvalues
+\[
+  \lambda_{\ell,r}(x)
+  =
+  p_E^2+M_\chi^2+
+  \frac{(2\pi\ell+r x)^2}{L_H^2},
+  \qquad
+  \ell\in\mathbb Z,
+\]
+on \(P_r^\chi\otimes E_\chi\).  The Euclidean complex-boson Gaussian gives
+the positive one-loop sign
+\[
+  \sigma_\chi=+1.
+\]
+After Schwinger parameterization and Poisson resummation, the
+angle-dependent term is
+\[
+  V_\chi(x)
+  =
+  \frac{3}{4\pi^2L_H^4}\,2d_\chi
+  \sum_{m\ge1}
+  \frac{F(mz_\chi)}{m^5}
+  \bigl(\cos(mx)+\cos(2mx)\bigr),
+  \qquad
+  z_\chi=M_\chi L_H ,
+\]
+with
+\[
+  F(z)=e^{-z}\left(1+z+\frac{z^2}{3}\right).
+\]
+Thus the first-wrapping determinant density is
+\[
+  {\cal N}_\Gamma^\chi=2d_\chi F(z_\chi).
+\]
+For \(d_\chi=1\),
+\[
+  {\cal N}_\Gamma^\chi=2F(z_\chi),
+  \qquad
+  M_\chi=L_H^{-1}F^{-1}
+  \left(\frac{{\cal N}_\Gamma^\chi}{2}\right),
+\]
+with \(F^{-1}\) taken on \(0<F\le1\).
+Let \(\Pi_A\) denote projection of the pulled-back RR one-form to the retained
+current generator \(A\in\{3,Y\}\).  Split the localized coframe as
+\[
+  \theta_\Gamma^A
+  =
+  \theta_{\Gamma,{\rm CP}}^A
+  +
+  q_A^{-1}\Pi_A\iota_\Gamma^*C_1,
+  \qquad A=3,Y,
+\]
+with curvature check
+\[
+  d_\Gamma\theta_\Gamma^A
+  =
+  d_\Gamma\theta_{\Gamma,{\rm CP}}^A
+  +
+  q_A^{-1}\Pi_A\iota_\Gamma^*F_2 .
+\]
+The weak triplet is the equivariant completion of \(\theta_\Gamma^3\), and
+the unit-current pass is
+\[
+  \langle\theta_\Gamma^a,\theta_\Gamma^b\rangle_{\Gamma,\Pi_Q}
+  =
+  L_{2,\Gamma}^2\delta^{ab},
+  \qquad
+  e_\Gamma^a=L_{2,\Gamma}^{-1}\theta_\Gamma^a .
+\]
+The neutral current matrix is
+\[
+  {\cal L}_\Gamma
+  =
+  \begin{pmatrix}
+  K_{33}^\Gamma&K_{3Y}^\Gamma\\
+  K_{3Y}^\Gamma&K_{YY}^\Gamma
+  \end{pmatrix},
+  \qquad
+  K_{AB}^\Gamma
+  =
+  \langle\theta_\Gamma^A,\theta_\Gamma^B\rangle_{\Gamma,\Pi_Q}.
+\]
+The photon coframe and length are
+\[
+  \theta_\Gamma^Q=\theta_\Gamma^3+\theta_\Gamma^Y,
+  \qquad
+  L_Q^2=(1,1){\cal L}_\Gamma\binom{1}{1}.
+\]
+The neutral branch test becomes
+\[
+  \det{\cal L}_\Gamma
+  =
+  R_{\rm dV}\,K_{33}^\Gamma L_Q^2,
+  \qquad
+  R_{\rm dV}=\frac{\Xp(3/4)}{\Xp(2)}.
+\]
+In this row the vertical contribution is read directly as
+\[
+  L_{2,{\rm vert}}^2
+  =
+  q_3^{-2}
+  \langle\Pi_3\iota_\Gamma^*C_1,
+  \Pi_3\iota_\Gamma^*C_1\rangle_{\Gamma,\Pi_Q}.
+\]
+The Chern--Simons source for this one-form is
+\[
+  S_{\rm CS}^{\Gamma}
+  =
+  \mu_8\sum_{s\in{\cal S}_\Gamma}\epsilon_s
+  \int_{\Gamma_{\rm EW}^{(s)}}
+  \sum_r C_{9-2r}\wedge
+  \left[{\cal Y}_{\Gamma,s}\right]_{2r},
+\]
+with
+\[
+  {\cal Y}_{\Gamma,s}
+  =
+  {\rm ch}({\cal F}_s)
+  \sqrt{\frac{\widehat A(T\Gamma_s)}{\widehat A(N\Gamma_s)}} .
+\]
+On the spin\(^c\) \(\CP^2\) boundary row,
+\[
+  {\cal F}_Q/(2\pi)=f_mh_Q,
+  \qquad
+  f_m=m+\frac{13}{2},
+  \qquad
+  \int_{\CP^2}h_Q^2=1,
+\]
+and
+\[
+  {\cal Y}_{\Gamma}
+  =
+  N_8\left(
+  1+f_mh_Q+
+  \left(\frac{f_m^2}{2}-\frac{1}{16}\right)h_Q^2
+  \right).
+\]
+Hence the \(C_1\) variation gives the boundary source coefficient
+\[
+  \mathfrak q_{C_1}
+  =
+  N_8\left(\frac{f_m^2}{2}-\frac{1}{16}\right),
+  \qquad
+  \delta_{C_1}S_{\rm CS}^{\Gamma}
+  =
+  \mu_8\int_{M_4\times S^1_Q}
+  \delta C_{1,Q}\,\mathfrak q_{C_1}.
+\]
+For the minimal spin\(^c\) local stack \(m=0,\ N_8=16\),
+\[
+  \mathfrak q_{C_1}=337.
+\]
+Define the total projected one-form source by adding the orientifold and bulk
+counterterms:
+\[
+  {\cal I}_{1,A}^{\Gamma}
+  =
+  \Pi_A(\mathfrak q_{C_1}\,ds_Q)
+  +{\cal I}_{1,A}^{\rm O8}
+  +{\cal I}_{1,A}^{\rm bulk}.
+\]
+Compact solvability imposes the zero-mode equation
+\[
+  \langle{\cal I}_{1,A}^{\Gamma},\omega_Q\rangle_\Gamma=0,
+  \qquad
+  \omega_Q=L_Q^{-1}ds_Q .
+\]
+The Green operator acts on
+\[
+  {\cal I}_{1,A}^{\perp}
+  =
+  {\cal I}_{1,A}^{\Gamma}
+  -
+  \frac{\langle{\cal I}_{1,A}^{\Gamma},\omega_Q\rangle_\Gamma}
+       {\langle\omega_Q,\omega_Q\rangle_\Gamma}\omega_Q .
+\]
+The projected Green solve is
+\[
+  \Pi_A\iota_\Gamma^*C_1
+  =
+  \Pi_A C_{1,{\rm harm}}
+  +
+  \mu_8\,G_{1,\Gamma}{\cal I}_{1,A}^{\perp},
+  \qquad A=3,Y,
+\]
+and therefore
+\[
+  L_{2,{\rm vert}}^2
+  =
+  q_3^{-2}
+  \left\|
+  \Pi_3 C_{1,{\rm harm}}
+  +
+  \mu_8\,G_{1,\Gamma}{\cal I}_{1,3}^{\perp}
+  \right\|_{\Gamma,\Pi_Q}^2 .
+\]
+Choose a \(\Gamma\)-orthonormal eigenbasis
+\(\{\alpha_i\}_{i\ge1}\) of the zero-mode-orthogonal retained one-form
+sector:
+\[
+  \langle\alpha_i,\alpha_j\rangle_{\Gamma,\Pi_Q}=\delta_{ij},
+  \qquad
+  \Delta_{1,\Gamma}\alpha_i=\lambda_i\alpha_i,
+  \qquad
+  \lambda_i>0 .
+\]
+Set
+\[
+  B_{Ai}=\langle\alpha_i,{\cal I}_{1,A}^{\perp}\rangle_{\Gamma,\Pi_Q},
+  \qquad
+  P_{Ai}=\langle\alpha_i,\theta_{\Gamma,{\rm CP}}^A\rangle_{\Gamma,\Pi_Q},
+\]
+and
+\[
+  \Pi_A C_{1,{\rm harm}}=h_A\omega_Q,
+  \qquad
+  \Omega_Q=\langle\omega_Q,\omega_Q\rangle_{\Gamma,\Pi_Q},
+  \qquad
+  p_A=\langle\theta_{\Gamma,{\rm CP}}^A,\omega_Q\rangle_{\Gamma,\Pi_Q}.
+\]
+Then
+\[
+  G_{1,\Gamma}{\cal I}_{1,A}^{\perp}
+  =
+  \sum_{i\ge1}\frac{B_{Ai}}{\lambda_i}\alpha_i ,
+\]
+and the retained coframe is
+\[
+  \theta_\Gamma^A
+  =
+  \theta_{\Gamma,{\rm CP}}^A
+  +q_A^{-1}h_A\omega_Q
+  +q_A^{-1}\mu_8
+  \sum_{i\ge1}\frac{B_{Ai}}{\lambda_i}\alpha_i .
+\]
+Thus the current matrix entries are
+\[
+\begin{aligned}
+  K_{AB}^\Gamma
+  &=
+  K_{AB}^{\rm CP}
+  +q_A^{-1}h_Ap_B
+  +q_B^{-1}h_Bp_A
+  +q_A^{-1}q_B^{-1}h_Ah_B\Omega_Q\\
+  &\quad
+  +\mu_8 q_A^{-1}\sum_i\frac{B_{Ai}P_{Bi}}{\lambda_i}
+  +\mu_8 q_B^{-1}\sum_i\frac{B_{Bi}P_{Ai}}{\lambda_i}
+  +\mu_8^2q_A^{-1}q_B^{-1}
+  \sum_i\frac{B_{Ai}B_{Bi}}{\lambda_i^2},
+\end{aligned}
+\]
+where
+\[
+  K_{AB}^{\rm CP}
+  =
+  \langle\theta_{\Gamma,{\rm CP}}^A,
+  \theta_{\Gamma,{\rm CP}}^B\rangle_{\Gamma,\Pi_Q}.
+\]
+On the product zero-mode reduction of the boundary circle, let
+\(\varphi\in[0,2\pi]\) parameterize \(S^1_Q\), with
+\[
+  ds_Q=R_Q\,d\varphi,
+  \qquad
+  L_Q=2\pi R_Q .
+\]
+After the \(\CP^2\) zero-mode projection, write
+\[
+  {\cal I}_{1,A}^{\Gamma}
+  =
+  \rho_A(\varphi)\,ds_Q .
+\]
+The compact condition removes the average
+\[
+  \bar\rho_A=\frac1{2\pi}\int_0^{2\pi}\rho_A(\varphi)\,d\varphi,
+  \qquad
+  \rho_A^\perp(\varphi)=\rho_A(\varphi)-\bar\rho_A .
+\]
+With
+\[
+  \rho_A^\perp(\varphi)
+  =
+  \sum_{n\ge1}
+  \left(a_{A,n}\cos n\varphi+b_{A,n}\sin n\varphi\right),
+\]
+the retained one-form eigenvalues are
+\[
+  \lambda_n=\frac{n^2}{R_Q^2}
+  =
+  \left(\frac{2\pi n}{L_Q}\right)^2 .
+\]
+In an orthonormal Fourier basis, the Green part of the current matrix is
+\[
+  K_{AB}^{\rm Green}
+  =
+  \mu_8^2q_A^{-1}q_B^{-1}
+  \sum_{n\ge1}
+  \frac{a_{A,n}a_{B,n}+b_{A,n}b_{B,n}}{\lambda_n^2}.
+\]
+The constant spin\(^c\) stack source
+\[
+  \rho_A(\varphi)=\Pi_A\mathfrak q_{C_1}
+\]
+has \(\rho_A^\perp=0\) and contributes through the tadpole equation.  Its
+Green-current contribution is
+\[
+  K_{AB}^{\rm Green}=0 .
+\]
+Thus a nonzero sourced vertical current from the CS row requires Fourier
+content in
+\[
+  {\cal I}_{1,A}^{\rm O8}+{\cal I}_{1,A}^{\rm bulk}
+\]
+or a harmonic coefficient \(h_A\) in \(\Pi_A C_{1,{\rm harm}}\).
+Let
+\[
+  v_A=q_A^{-1}h_A,\qquad A=3,Y,
+\]
+and collect the zero-mode-orthogonal part into
+\[
+  \widehat C_{AB}
+  =
+  K_{AB}^{\rm CP}
+  +K_{AB}^{\rm Green}
+  +K_{AB}^{\rm CP-Green}.
+\]
+With
+\[
+  p_A=\langle\theta_{\Gamma,{\rm CP}}^A,\omega_Q\rangle_{\Gamma,\Pi_Q},
+  \qquad
+  \Omega_Q=\langle\omega_Q,\omega_Q\rangle_{\Gamma,\Pi_Q},
+\]
+the neutral current matrix is
+\[
+  {\cal L}_{AB}^{\Gamma}
+  =
+  \widehat C_{AB}
+  +v_Ap_B+v_Bp_A+\Omega_Qv_Av_B .
+\]
+Set
+\[
+  C_Q=(1,1)\widehat C\binom{1}{1},
+  \qquad
+  p_Q=p_3+p_Y,
+  \qquad
+  v_Q=v_3+v_Y .
+\]
+Then the branch-current closure condition becomes
+\[
+  \det{\cal L}^{\Gamma}
+  =
+  R_{\rm dV}
+  \left(\widehat C_{33}+2v_3p_3+\Omega_Qv_3^2\right)
+  \left(C_Q+2v_Qp_Q+\Omega_Qv_Q^2\right).
+\]
+For the product specialization \(p_A=0\) with vanishing perpendicular Green
+contribution,
+\[
+  {\cal L}^{\Gamma}=C+\Omega_Qvv^T,
+\]
+and therefore
+\[
+\begin{aligned}
+  \det C
+  &+\Omega_Q
+  \left(C_{YY}v_3^2-2C_{3Y}v_3v_Y+C_{33}v_Y^2\right)\\
+  &=
+  R_{\rm dV}
+  \left(C_{33}+\Omega_Qv_3^2\right)
+  \left(C_Q+\Omega_Q(v_3+v_Y)^2\right).
+\end{aligned}
+\]
+This specialization gives
+\[
+  L_{2,{\rm vert}}^2=\Omega_Qv_3^2 .
+\]
+For a fixed harmonic direction
+\[
+  t=\frac{v_Y}{v_3},
+  \qquad
+  u=\Omega_Qv_3^2,
+\]
+define
+\[
+  \Delta_C=\det C,
+  \qquad
+  C_Q=C_{33}+2C_{3Y}+C_{YY},
+  \qquad
+  C_N=C_{33}-2C_{3Y}+C_{YY}.
+\]
+The same branch equation becomes
+\[
+  A_tu^2+B_tu+D_C=0,
+\]
+where
+\[
+  A_t=R_{\rm dV}(1+t)^2,
+\]
+\[
+  B_t=
+  R_{\rm dV}\left(C_{33}(1+t)^2+C_Q\right)
+  -\left(C_{YY}-2tC_{3Y}+t^2C_{33}\right),
+\]
+and
+\[
+  D_C=R_{\rm dV}C_{33}C_Q-\Delta_C .
+\]
+For \(t\ne-1\),
+\[
+  u_\pm(t)=
+  \frac{-B_t\pm\sqrt{B_t^2-4A_tD_C}}{2A_t}.
+\]
+The massive-neutral harmonic alignment \(v_Y=-v_3\) has \(v_Q=0\) and
+\[
+  L_Q^2=C_Q,
+  \qquad
+  u_N=\frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+The \(Q\)-parallel alignment \(v_Y=v_3\) obeys
+\[
+  4R_{\rm dV}u^2+
+  \left(R_{\rm dV}(4C_{33}+C_Q)-C_N\right)u+D_C=0 .
+\]
+Normalize the circle one-form by
+\[
+  \int_{S^1_Q}\omega_Q=1 .
+\]
+The harmonic RR potential is parametrized by Wilson-line variables
+\[
+  \Pi_A C_{1,{\rm harm}}=2\pi\vartheta_A\omega_Q,
+  \qquad
+  \vartheta_A\in\mathbb R/\mathbb Z,
+  \qquad A=3,Y.
+\]
+Consequently
+\[
+  v_A=2\pi q_A^{-1}\vartheta_A,
+\]
+and, for \(v_3\ne0\),
+\[
+  t=\frac{q_3\vartheta_Y}{q_Y\vartheta_3},
+  \qquad
+  u=(2\pi)^2\Omega_Q q_3^{-2}\vartheta_3^2 .
+\]
+The massive-neutral harmonic row is
+\[
+  q_3^{-1}\vartheta_3+q_Y^{-1}\vartheta_Y=0,
+\]
+and the \(Q\)-parallel harmonic row is
+\[
+  q_3^{-1}\vartheta_3-q_Y^{-1}\vartheta_Y=0 .
+\]
+Retaining the CP--circle cross vector \(p=(p_3,p_Y)\) gives a closed
+photon-preserving row.  Put
+\[
+  v=a\binom{1}{-1},
+  \qquad
+  C=
+  \begin{pmatrix}
+  A&B\\B&D
+  \end{pmatrix},
+  \qquad
+  C_Q=A+2B+D,
+  \qquad
+  p_Q=p_3+p_Y,
+\]
+and
+\[
+  S_p=p_3(D+B)-p_Y(A+B).
+\]
+Then
+\[
+  \det(C+vp^T+pv^T+\Omega_Qvv^T)
+  =
+  \Delta_C+2aS_p
+  +a^2(\Omega_QC_Q-p_Q^2).
+\]
+Since \(L_Q^2=C_Q\), branch closure becomes
+\[
+  \left((1-R_{\rm dV})\Omega_QC_Q-p_Q^2\right)a^2
+  +2\left(S_p-R_{\rm dV}p_3C_Q\right)a
+  -D_C=0 .
+\]
+Equivalently, with \(u=\Omega_Qa^2\), \(\epsilon={\rm sign}(a)\), and
+\[
+  A_N=(1-R_{\rm dV})C_Q-\frac{p_Q^2}{\Omega_Q},
+  \qquad
+  B_N=\frac{S_p-R_{\rm dV}p_3C_Q}{\sqrt{\Omega_Q}},
+\]
+the positive square-root variable \(y=\sqrt u\) obeys
+\[
+  A_Ny^2+2\epsilon B_Ny-D_C=0 .
+\]
+Thus the harmonic square is
+\[
+  u_{\epsilon}
+  =
+  \left(
+  \frac{-\epsilon B_N+\sqrt{B_N^2+A_ND_C}}{A_N}
+  \right)^2,
+  \qquad A_N\ne0,
+\]
+with affine limit \(u_\epsilon=D_C^2/(4B_N^2)\) when
+\(A_N=0\) and \(\epsilon B_N>0\).  For \(p_A=0\), the row gives
+\[
+  u_N=\frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+The cross vector has a direct DBI readout.  Let \(s_Q\) be arclength on
+the \(Q\)-circle, \(0\le s_Q<L_Q\), and take
+\[
+  \theta_{\Gamma,{\rm CP}}^A=\theta_i^A(y,\sigma)dy^i,
+  \qquad
+  \omega_Q=\frac{ds_Q}{L_Q}.
+\]
+With sector density
+\[
+  d\nu_{\Gamma,\sigma}
+  =
+  \kappa_8\omega_\sigma e^{-\phi_\sigma}
+  \sqrt{\gamma_{\Gamma,\sigma}}\,
+  d^4y\,ds_Q ,
+\]
+one obtains
+\[
+  p_A
+  =
+  \frac{1}{L_Q}
+  \sum_{\sigma\in{\cal S}_\Gamma}
+  \int_{\Gamma_{{\rm int},\sigma}}
+  d\nu_{\Gamma,\sigma}\,
+  \gamma_\sigma^{is_Q}\,
+  {\rm tr}_{E_\sigma}
+  \left(\Pi_Q\theta_i^A\Pi_Q\right),
+\]
+and
+\[
+  \Omega_Q
+  =
+  \frac{1}{L_Q^2}
+  \sum_{\sigma\in{\cal S}_\Gamma}
+  \int_{\Gamma_{{\rm int},\sigma}}
+  d\nu_{\Gamma,\sigma}\,
+  \gamma_\sigma^{s_Qs_Q}\,
+  {\rm tr}_{E_\sigma}\Pi_Q .
+\]
+For a block-product internal metric,
+\[
+  \gamma_\sigma^{is_Q}=0,
+  \qquad
+  \gamma_\sigma^{s_Qs_Q}=1,
+\]
+hence
+\[
+  p_3=p_Y=0,
+  \qquad
+  \Omega_Q=\frac{Z_{\Gamma,Q}}{L_Q}.
+\]
+A nonzero \(p_A\) records vertical leakage of the retained CP coframe or an
+off-diagonal frame contribution after choosing the adapted \(Q\)-circle
+one-form.
+Equivalently, for
+\[
+  \chi_Q=ds_Q+{\cal A}_i(y)dy^i,
+  \qquad
+  \omega_Q=\frac{\chi_Q}{L_Q},
+\]
+decompose
+\[
+  \theta_{\Gamma,{\rm CP}}^A
+  =
+  \theta_H^A+\ell_A\chi_Q,
+  \qquad
+  \gamma_\Gamma^{-1}(\theta_H^A,\chi_Q)=0 .
+\]
+Then
+\[
+  p_A
+  =
+  \frac{1}{L_Q}
+  \sum_{\sigma\in{\cal S}_\Gamma}
+  \int_{\Gamma_{{\rm int},\sigma}}
+  d\nu_{\Gamma,\sigma}\,
+  \ell_A\,
+  {\rm tr}_{E_\sigma}\Pi_Q .
+\]
+Thus the horizontal adapted row has \(p_A=0\), and the leakage functions
+\(\ell_3,\ell_Y\) are the localized sources for the cross-vector branch.
+Pointwise,
+\[
+  \ell_A
+  =
+  \frac{\gamma_\Gamma^{-1}(\theta_{\Gamma,{\rm CP}}^A,\chi_Q)}
+       {\gamma_\Gamma^{-1}(\chi_Q,\chi_Q)} .
+\]
+For the product representative
+\[
+  \pi_{\CP^2}:\CP^2\times S^1_Q\longrightarrow\CP^2,
+  \qquad
+  \theta_{\Gamma,{\rm CP}}^A=\pi_{\CP^2}^*\alpha_A,
+\]
+and adapted metric
+\[
+  ds_\Gamma^2=g_{ij}(y)dy^idy^j+L_Q^2\chi_Q^2,
+\]
+one obtains
+\[
+  \gamma_\Gamma^{-1}(\pi_{\CP^2}^*\alpha_A,\chi_Q)=0,
+\]
+hence
+\[
+  \ell_3=\ell_Y=0,
+  \qquad
+  p_3=p_Y=0,
+  \qquad
+  \Omega_Q=\frac{Z_{\Gamma,Q}}{L_Q}.
+\]
+A cross-vector branch with \(p_A\ne0\) is a separate leakage realization in
+which the retained CP coframe has a \(\chi_Q\)-component after adapted
+projection.
+For the product \(\CP^2\times S^1_Q\) row, take
+\[
+  \omega_Q=\frac{ds_Q}{L_Q},
+  \qquad
+  \int_{S^1_Q}\omega_Q=1 .
+\]
+The CP2 zero-mode DBI density is
+\[
+  Z_{\Gamma,Q}
+  =
+  \sum_s\int_{\CP^2_s}
+  \kappa_8\,\omega_s e^{-\phi_s}
+  \sqrt{\gamma_{\CP^2,s}}\,
+  {\rm tr}_{E_s}\Pi_Q .
+\]
+Hence
+\[
+  \Omega_Q
+  =
+  \langle\omega_Q,\omega_Q\rangle_{\Gamma,\Pi_Q}
+  =
+  \frac{Z_{\Gamma,Q}}{L_Q},
+\]
+and the harmonic weak vertical length is
+\[
+  L_{2,{\rm vert}}^2
+  =
+  (2\pi)^2\frac{Z_{\Gamma,Q}}{L_Q}\,
+  q_3^{-2}\vartheta_3^2 .
+\]
+Define the finite trace ratio
+\[
+  \tau_Q=\frac{Z_{\Gamma,Q}}{Z_{\Gamma,0}} .
+\]
+Then
+\[
+  L_{2,{\rm vert}}^2
+  =
+  (2\pi)^2
+  \frac{\tau_QZ_{\Gamma,0}}{L_Q}\,
+  q_3^{-2}\vartheta_3^2 .
+\]
+For a shared CP2 density profile and normalized endpoint vector \(\eta_0\),
+\[
+  \tau_Q={\rm tr}_{E_Q}\Pi_Q .
+\]
+At \(Q=7\), the full retained \(E_Q\) trace gives
+\[
+  \tau_Q=16 .
+\]
+Using the integer residual convention
+\[
+  q_3=3Q,
+\]
+and the full retained trace \(\tau_Q=2(Q+1)\), this becomes
+\[
+  L_{2,{\rm vert}}^2
+  =
+  \frac{8\pi^2(Q+1)}{9Q^2}
+  \frac{Z_{\Gamma,0}}{L_Q}\,\delta\vartheta_3^2 ,
+\]
+where \(\delta\vartheta_3\) is the shortest representative of
+\(\vartheta_3\in\mathbb R/\mathbb Z\).  For \(Q=7\),
+\[
+  L_{2,{\rm vert}}^2
+  =
+  \frac{64\pi^2}{441}
+  \frac{Z_{\Gamma,0}}{L_Q}\,\delta\vartheta_3^2 .
+\]
+Equivalently,
+\[
+  \delta\vartheta_3
+  =
+  \frac{21}{8\pi}
+  \sqrt{\frac{L_QL_{2,{\rm vert}}^2}{Z_{\Gamma,0}}}.
+\]
+The Wilson chamber \(|\delta\vartheta_3|\le\half\) gives
+\[
+  L_{2,{\rm vert}}^2
+  \le
+  \frac{16\pi^2}{441}\frac{Z_{\Gamma,0}}{L_Q}.
+\]
+For a nonzero harmonic representative, define
+\[
+  \Xi_Q^{\rm harm}
+  =
+  \frac{Z_{\Gamma,0}}{L_QL_{2,{\rm vert}}^2}.
+\]
+Then the full-trace row gives
+\[
+  \Xi_Q^{\rm harm}
+  =
+  \frac{9Q^2}{8\pi^2(Q+1)}
+  \frac{1}{\delta\vartheta_3^2},
+\]
+and, at \(Q=7\),
+\[
+  \Xi_7^{\rm harm}
+  =
+  \frac{441}{64\pi^2}
+  \frac{1}{\delta\vartheta_3^2}.
+\]
+The fundamental Wilson chamber gives
+\[
+  \Xi_7^{\rm harm}
+  \ge
+  \frac{441}{16\pi^2}
+  =
+  2.792665124141\ldots .
+\]
+The D9 global-form descent fixes \(q_3=3Q\).  For the retained \(Q=7\)
+stack, \(q_3=21\), so
+\[
+  \Theta_N(21,q_Y)
+  =
+  \half\min\left(1,\left|\frac{21}{q_Y}\right|\right).
+\]
+Equivalently,
+\[
+  \Theta_N(21,q_Y)=\half
+  \qquad (|q_Y|\le21),
+\]
+and
+\[
+  \Theta_N(21,q_Y)=\frac{21}{2|q_Y|}
+  \qquad (|q_Y|>21).
+\]
+For the endpoint character in the same retained \(Q=7\) row,
+\[
+  c_1(L_Y)=6h+Q\eta,
+  \qquad
+  c_1(L_{T_3})=\eta,
+  \qquad
+  c_1(L_Y)-Q\,c_1(L_{T_3})=6h .
+\]
+The quotient line operator
+\[
+  {\cal O}_Y(\gamma_Q)
+  =
+  {\rm Hol}_{L_Y}(\gamma_Q)\,
+  {\rm Hol}_{L_{T_3}}(\gamma_Q)^{-Q}
+\]
+has Chern class \(6h\).  Since \(h\) pulls back from \(\CP^2\), this operator
+has unit \(S^1_Q\) character.  The hypercharge boundary holonomy on
+\(\gamma_Q\) is therefore the \(Q\)-fold weak endpoint holonomy:
+\[
+  {\rm Hol}_{L_Y}(\gamma_Q)
+  =
+  {\rm Hol}_{L_{T_3}}(\gamma_Q)^Q .
+\]
+For the retained endpoint vector \(\eta_Q=\eta_0^{\odot Q}\),
+\[
+  T_3\eta_Q=-\frac Q2\eta_Q,
+  \qquad
+  Y\eta_Q=\frac Q2\eta_Q .
+\]
+With integer hypercharge \(y=6Y\), the hypercharge Wilson period is
+\[
+  q_Y=3Q=21 .
+\]
+Consequently
+\[
+  \Theta_N(21,21)=\half,
+  \qquad
+  \delta\vartheta_Y=-\delta\vartheta_3 .
+\]
+For the photon-preserving massive-neutral branch,
+\[
+  v_Q=0,
+  \qquad
+  \delta\vartheta_Y=-\frac{q_Y}{q_3}\delta\vartheta_3 .
+\]
+Inside the identity chamber, both Wilson representatives obey
+\[
+  |\delta\vartheta_3|\le\Theta_N(q_3,q_Y),
+  \qquad
+  \Theta_N(q_3,q_Y)
+  =
+  \half\min\left(1,\left|\frac{q_3}{q_Y}\right|\right).
+\]
+Thus
+\[
+  \Xi_Q^{\rm harm}
+  \ge
+  \frac{9Q^2}{8\pi^2(Q+1)\Theta_N(q_3,q_Y)^2},
+\]
+with the \(Q=7\) specialization
+\[
+  \Xi_7^{\rm harm}
+  \ge
+  \frac{441}{64\pi^2\Theta_N(q_3,q_Y)^2}.
+\]
+For the massive-neutral amplitude
+\[
+  u_N=\frac{D_C}{(1-R_{\rm dV})C_Q},
+\]
+the density condition becomes
+\[
+  \frac{Z_{\Gamma,0}}{L_Q}
+  \ge
+  \frac{9Q^2}{8\pi^2(Q+1)\Theta_N(q_3,q_Y)^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+At \(Q=7\),
+\[
+  \frac{Z_{\Gamma,0}}{L_Q}
+  \ge
+  \frac{441}{64\pi^2\Theta_N(q_3,q_Y)^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+With \(q_3=21\), the same condition is
+\[
+  \frac{Z_{\Gamma,0}}{L_Q}
+  \ge
+  \frac{441}{16\pi^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}
+  \qquad (|q_Y|\le21),
+\]
+and
+\[
+  \frac{Z_{\Gamma,0}}{L_Q}
+  \ge
+  \frac{q_Y^2}{16\pi^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}
+  \qquad (|q_Y|>21).
+\]
+For the endpoint-character value \(q_Y=21\), the density condition reduces to
+\[
+  \frac{Z_{\Gamma,0}}{L_Q}
+  \ge
+  \frac{441}{16\pi^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+Equivalently,
+\[
+  U_\Gamma^{(21)}
+  =
+  \frac{16\pi^2}{441}\frac{Z_{\Gamma,0}}{L_Q}
+\]
+obeys
+\[
+  U_\Gamma^{(21)}
+  \ge
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+The corresponding shortest Wilson representatives satisfy
+\[
+  \delta\vartheta_3^2
+  =
+  \delta\vartheta_Y^2
+  =
+  \frac{1}{4U_\Gamma^{(21)}}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+The product DBI density factors the endpoint norm.  Write
+\[
+  d\nu_{\Gamma,s}
+  =
+  d\mu_{\Gamma,s}^{\CP^2}\,ds_Q,
+  \qquad
+  d\mu_{\Gamma,s}^{\CP^2}
+  =
+  \kappa_8\omega_se^{-\phi_s}
+  \sqrt{\gamma_{\CP^2,s}}\,d^4y .
+\]
+For an \(S^1_Q\)-invariant neutral endpoint section,
+\[
+  Z_{\Gamma,0}
+  =
+  L_Q\,{\cal Z}_{\Gamma,0}^{\CP^2},
+\]
+where
+\[
+  {\cal Z}_{\Gamma,0}^{\CP^2}
+  =
+  \sum_s
+  \int_{\CP^2_s}d\mu_{\Gamma,s}^{\CP^2}\,
+  {\rm tr}_{E_s}\left(\Pi_Q|\eta_Q|^2\Pi_Q\right).
+\]
+Hence
+\[
+  U_\Gamma^{(21)}
+  =
+  \frac{16\pi^2}{441}{\cal Z}_{\Gamma,0}^{\CP^2}.
+\]
+The localized density condition becomes
+\[
+  {\cal Z}_{\Gamma,0}^{\CP^2}
+  \ge
+  \frac{441}{16\pi^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+Let \({\mathfrak z}_{\Gamma}^{\CP^2}\) denote the common CP2 density per
+finite endpoint state,
+\[
+  {\mathfrak z}_{\Gamma}^{\CP^2}
+  =
+  \sum_s
+  \int_{\CP^2_s}d\mu_{\Gamma,s}^{\CP^2}.
+\]
+The unit rank-one endpoint normalization gives
+\[
+  {\rm tr}_{E_Q}
+  \left(\Pi_Q|\eta_Q\rangle\langle\eta_Q|\Pi_Q\right)=1,
+\]
+and the full retained trace gives
+\[
+  {\rm tr}_{E_Q}\Pi_Q=2(Q+1)=16.
+\]
+Thus
+\[
+  {\cal Z}_{\Gamma,0}^{\CP^2}
+  =
+  {\mathfrak z}_{\Gamma}^{\CP^2},
+  \qquad
+  {\cal Z}_{\Gamma,Q}^{\CP^2}
+  =
+  16\,{\mathfrak z}_{\Gamma}^{\CP^2},
+  \qquad
+  \tau_Q=16 .
+\]
+The D8/O8 density datum is the scalar \({\mathfrak z}_{\Gamma}^{\CP^2}\).
+In a constant product profile, \(\omega_s\), \(\phi_s\), and
+\(\gamma_{\CP^2,s}\) are constant on each retained sector, giving
+\[
+  {\mathfrak z}_{\Gamma}^{\CP^2}
+  =
+  \kappa_8
+  \sum_s\omega_s e^{-\phi_s}
+  {\rm Vol}(\CP^2_s,\gamma_{\CP^2,s}) .
+\]
+The density-dominated pass is therefore the effective volume inequality
+\[
+  \kappa_8
+  \sum_s\omega_s e^{-\phi_s}
+  {\rm Vol}(\CP^2_s,\gamma_{\CP^2,s})
+  \ge
+  9.724809426610\ldots .
+\]
+For a common CP2 metric and dilaton, this becomes
+\[
+  \kappa_8 e^{-\phi_0}\Omega_\Gamma
+  {\rm Vol}(\CP^2,\gamma_{\CP^2})
+  \ge
+  9.724809426610\ldots,
+  \qquad
+  \Omega_\Gamma=\sum_s\omega_s .
+\]
+Use the same WZ normalization as the CS source row,
+\[
+  \int_{\CP^2}h_Q^2=1.
+\]
+Writing
+\[
+  J_{\Gamma,s}=r_{\Gamma,s}h_Q
+\]
+gives
+\[
+  {\rm Vol}(\CP^2_s,\gamma_{\CP^2,s})
+  =
+  \frac12\int_{\CP^2_s}J_{\Gamma,s}^2
+  =
+  \frac12 r_{\Gamma,s}^2 .
+\]
+Thus the density condition is
+\[
+  \frac{\kappa_8}{2}
+  \sum_s\omega_s e^{-\phi_s}r_{\Gamma,s}^2
+  \ge
+  \frac{441}{16\pi^2}
+  \frac{D_C}{(1-R_{\rm dV})C_Q}.
+\]
+The density-dominated metric pass is
+\[
+  \sum_s\omega_s e^{-\phi_s}r_{\Gamma,s}^2
+  \ge
+  \frac{19.449618853220\ldots}{\kappa_8}.
+\]
+For a common metric and dilaton,
+\[
+  r_\Gamma^2
+  \ge
+  \frac{19.449618853220\ldots}
+       {\kappa_8e^{-\phi_0}\Omega_\Gamma}.
+\]
+The density scalar fixes \(U_\Gamma^{\CP^2}\).  The point-row shape parameter
+comes from a separate normalized Hodge readout.  Split the retained weak
+coframe into a unit endpoint component and a horizontal excess,
+\[
+  \theta_\Gamma^3=\theta_{3,0}+\theta_{3,h},
+  \qquad
+  \langle\theta_{3,0},\theta_{3,h}\rangle_\Gamma=0 .
+\]
+Define
+\[
+  C_0^\Gamma
+  =
+  \sum_s\int_{\CP^2_s}d\mu_{\Gamma,s}^{\CP^2}\,
+  {\rm tr}_{E_s}
+  \left(\Pi_Q|\theta_{3,0}|^2\Pi_Q\right),
+\]
+and
+\[
+  C_h^\Gamma
+  =
+  \sum_s\int_{\CP^2_s}d\mu_{\Gamma,s}^{\CP^2}\,
+  {\rm tr}_{E_s}
+  \left(\Pi_Q|\theta_{3,h}|^2\Pi_Q\right).
+\]
+The point-evaluation row reads
+\[
+  \widehat C_{33}^\Gamma
+  =
+  \frac{C_0^\Gamma+C_h^\Gamma}{C_0^\Gamma}
+  =
+  1+\frac{Q^2+1}{(Q+1)^2}q_\Gamma .
+\]
+Hence the localized shape readout is
+\[
+  q_\Gamma
+  =
+  \frac{(Q+1)^2}{Q^2+1}
+  \frac{C_h^\Gamma}{C_0^\Gamma}.
+\]
+For \(Q=7\),
+\[
+  q_\Gamma=\frac{32}{25}\frac{C_h^\Gamma}{C_0^\Gamma}.
+\]
+Define the dimensionless shape ratio
+\[
+  \varrho_\Gamma=\frac{C_h^\Gamma}{C_0^\Gamma}.
+\]
+Then
+\[
+  q_\Gamma=\frac{32}{25}\varrho_\Gamma,
+  \qquad
+  0<\varrho_\Gamma<\varrho_c,
+  \qquad
+  \varrho_c=\frac{25}{32}q_c=2.743448440896\ldots .
+\]
+The point-row amplitude as a function of the localized shape ratio is
+\[
+  u_\Gamma^{\rm sh}(\varrho_\Gamma)
+  =
+  \frac{
+  625R_{\rm dV}(1+\varrho_\Gamma)^2
+  -576\varrho_\Gamma^2-900\varrho_\Gamma}
+  {625(1-R_{\rm dV})(1+\varrho_\Gamma)} .
+\]
+The charge chamber becomes the pair of localized inequalities
+\[
+  U_\Gamma^{\CP^2}\ge u_\Gamma^{\rm sh}(\varrho_\Gamma),
+  \qquad
+  0<\varrho_\Gamma<\varrho_c .
+\]
+Equivalently, the localized density satisfies
+\[
+  {\cal Z}_{\Gamma,0}^{\CP^2}
+  \ge
+  \frac{441}{16\pi^2}
+  u_\Gamma^{\rm sh}(\varrho_\Gamma).
+\]
+In the constant-profile metric row this becomes
+\[
+  \sum_s\omega_s e^{-\phi_s}r_{\Gamma,s}^2
+  \ge
+  \frac{441}{8\pi^2\kappa_8}
+  u_\Gamma^{\rm sh}(\varrho_\Gamma).
+\]
+For a common metric and dilaton,
+\[
+  r_\Gamma^2
+  \ge
+  \frac{441}{8\pi^2\kappa_8e^{-\phi_0}\Omega_\Gamma}
+  u_\Gamma^{\rm sh}(\varrho_\Gamma).
+\]
+The point-evaluation row gives a concrete base matrix.  Put
+\[
+  q=\lambda^2,
+  \qquad
+  t_Q=-\frac{Q}{Q+1},
+\]
+and
+\[
+  C_{33}^{\rm pt}
+  =
+  1+\frac{Q^2+1}{(Q+1)^2}q .
+\]
+Then
+\[
+  C_Q^{\rm pt}=(Q+1)^2C_{33}^{\rm pt},
+  \qquad
+  \Delta_C^{\rm pt}=(Q-1)^2q(q+2),
+\]
+so
+\[
+  u_N^{\rm pt}(q)
+  =
+  \frac{
+  R_{\rm dV}(Q+1)^2(C_{33}^{\rm pt})^2
+  -(Q-1)^2q(q+2)}
+  {(1-R_{\rm dV})(Q+1)^2C_{33}^{\rm pt}}.
+\]
+For \(Q=7\),
+\[
+  u_N^{\rm pt}(q)
+  =
+  \frac{R_{\rm dV}(25q+32)^2-576q(q+2)}
+       {32(1-R_{\rm dV})(25q+32)}.
+\]
+The zero of this amplitude is
+\[
+  q_c=3.511614004347\ldots .
+\]
+The derivative is
+\[
+  \frac{d u_N^{\rm pt}}{dq}
+  =
+  -\frac{
+  (14400-15625R_{\rm dV})q^2
+  +(36864-40000R_{\rm dV})q
+  +(36864-25600R_{\rm dV})}
+  {32(1-R_{\rm dV})(25q+32)^2}.
+\]
+Since \(0<R_{\rm dV}<1\), the amplitude is strictly decreasing for
+\(q>0\), with
+\[
+  u_N^{\rm pt}(0)=\frac{R_{\rm dV}}{1-R_{\rm dV}}
+  =
+  3.482268368857\ldots,
+  \qquad
+  u_N^{\rm pt}(q_c)=0.
+\]
+Together with the product DBI readout, this gives a density-dominated pass:
+\[
+  {\cal Z}_{\Gamma,0}^{\CP^2}
+  \ge
+  \frac{441}{16\pi^2}
+  \frac{R_{\rm dV}}{1-R_{\rm dV}}
+  =
+  9.724809426610\ldots .
+\]
+In that regime the full interval \(0<q<q_c\) satisfies the
+endpoint-character chamber condition.  For lower positive density, set
+\[
+  U_\Gamma^{\CP^2}
+  =
+  \frac{16\pi^2}{441}{\cal Z}_{\Gamma,0}^{\CP^2}.
+\]
+Then the active interval is
+\[
+  q_{\rm sat}(U_\Gamma^{\CP^2})\le q<q_c .
+\]
+For \(0<q<q_c\), the photon-preserving harmonic lift has positive
+amplitude, and the \(Q=7\) density condition becomes
+\[
+  \frac{Z_{\Gamma,0}}{L_Q}
+  \ge
+  \frac{
+  441\left(R_{\rm dV}(25q+32)^2-576q(q+2)\right)}
+  {2048\pi^2\Theta_N(q_3,q_Y)^2(1-R_{\rm dV})(25q+32)} .
+\]
+Define the normalized density
+\[
+  U_\Gamma
+  =
+  \frac{64\pi^2\Theta_N(q_3,q_Y)^2}{441}
+  \frac{Z_{\Gamma,0}}{L_Q}.
+\]
+The chamber condition is \(U_\Gamma\ge u_N^{\rm pt}(q)\).  On the saturation
+curve \(U_\Gamma=u_N^{\rm pt}(q)\), \(q\) solves
+\[
+  A_q q^2+B_q(U_\Gamma)q+C_q(U_\Gamma)=0,
+\]
+where
+\[
+  A_q=576-625R_{\rm dV},
+\]
+\[
+  B_q(U_\Gamma)
+  =
+  1152-1600R_{\rm dV}+800(1-R_{\rm dV})U_\Gamma,
+\]
+and
+\[
+  C_q(U_\Gamma)
+  =
+  1024\left((1-R_{\rm dV})U_\Gamma-R_{\rm dV}\right).
+\]
+For
+\[
+  0\le U_\Gamma\le \frac{R_{\rm dV}}{1-R_{\rm dV}},
+\]
+the positive branch is
+\[
+  q_{\rm sat}(U_\Gamma)
+  =
+  \frac{
+  -B_q(U_\Gamma)
+  +\sqrt{B_q(U_\Gamma)^2-4A_qC_q(U_\Gamma)}}
+  {2A_q}.
+\]
+The chamber pass is \(q_{\rm sat}(U_\Gamma)\le q<q_c\).  Given \(q\) and
+\(U_\Gamma\), the Wilson representative is
+\[
+  \delta\vartheta_3^2
+  =
+  \Theta_N(q_3,q_Y)^2
+  \frac{u_N^{\rm pt}(q)}{U_\Gamma}.
+\]
+A quadratic local expansion has the form
+\[
+\begin{aligned}
+S_\Gamma^{(2)}
+=\int_{M_4}\Bigg[
+&-\frac14{\cal K}_{AB}^\Gamma F_{\mu\nu}^AF^{B\mu\nu}
++\frac12(f_H^2)_{ab}
+  \partial_\mu\theta_H^a\partial^\mu\theta_H^b\\
+&+\frac12\langle r,{\cal M}_{\rm img}r\rangle_\Gamma
++L_2\,{\mathfrak j}_A
+  \langle r,{\cal J}_A\rangle_\Gamma
++\frac12{\rm Str}_\chi\log{\cal B}_\Gamma^\chi(\theta_H)
+\Bigg].
+\end{aligned}
+\]
+The current matrix is
+\[
+  {\cal K}_{AB}^\Gamma
+  =
+  \int_{\Gamma_{\rm int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\theta_\Gamma^B),
+  \qquad A,B=3,Y,Q .
+\]
+The image source functions are
+\[
+  {\cal J}_A
+  =
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Theta_{\rm img}),
+  \qquad A=3,Y .
+\]
+Eliminating \(r\) gives
+\[
+  \Delta S_{\rm eff}
+  =
+  -\frac12L_2^2{\mathfrak j}_A
+  {\cal D}_{AB}{\mathfrak j}_B,
+  \qquad
+  {\cal D}_{AB}
+  =
+  L_2^{-2}
+  \langle{\cal J}_A,
+  {\cal M}_{\rm img}^{-1}{\cal J}_B\rangle_\Gamma .
+\]
+Thus the same local expression yields
+\[
+  L_2^2={\cal K}_{33}^\Gamma,
+  \qquad
+  L_Q^2=(1,1){\cal K}_{(3,Y)}^\Gamma\binom{1}{1},
+\]
+\[
+  \Delta_{\rm rank}
+  =
+  {\cal D}_{33}{\cal D}_{YY}-{\cal D}_{3Y}^2,
+  \qquad
+  \rho_D=\frac{{\cal D}_{3Y}}{{\cal D}_{33}},
+\]
+and the Wilson kinetic entry
+\[
+  (f_H^2)_{ab}
+  =
+  \int_{\Gamma_{\rm int}}d\nu_\Gamma\,
+  g^{ss}\omega_{H,s}\omega_{H,s}\,
+  {\rm tr}_{\rm end}(n_H^cT_c\,n_H^dT_d)\Pi_{ab}^{\rm Schur}.
+\]
+For the point-projector endpoint metric this row gives
+\[
+  Z_{\Gamma,H}=\frac Q4Z_{\Gamma,0}.
+\]
+The charged determinant readout is
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  {\rm Str}_{\ker{\cal B}_\Gamma^\chi}
+  (\tau_\alpha)
+  =
+  2\sigma_\chi d_\chi F(z)
+\]
+on the equal-threshold Borel--Weil charged pair.  The single local coefficient
+test is therefore
+\[
+  \left(
+  {\cal D}_{AB},\,
+  \frac{Z_{\Gamma,H}}{Z_{\Gamma,0}},\,
+  {\cal N}_\Gamma^\chi
+  \right)
+  =
+  \left(
+  {\cal D}_\sigma,\,
+  \frac Q4,\,
+  2\sigma_\chi d_\chi F(z)
+  \right).
+\]
+
+\subsection{Finite-Matrix Extraction}
+
+Choose a \(\Gamma\)-orthonormal basis
+\(\{e_i\}_{i=1}^N\) for the sourced image subspace and define
+\[
+  M_{ij}=\langle e_i,{\cal M}_{\rm img}e_j\rangle_\Gamma,
+  \qquad
+  C_{Ai}=\langle e_i,{\cal J}_A\rangle_\Gamma ,
+  \qquad A=3,Y .
+\]
+The image correction is
+\[
+  {\cal D}_{AB}
+  =
+  L_2^{-2}\,C_{Ai}(M^{-1})^{ij}C_{Bj}.
+\]
+With
+\[
+  w_A^i=L_2^{-1}(M^{-1/2})^{ij}C_{Aj},
+\]
+one has
+\[
+  {\cal D}_{AB}=w_A\cdot w_B .
+\]
+The Schur branch condition is the finite-vector equation
+\[
+  w_Y=\rho_\sigma w_3,
+  \qquad
+  \|w_3\|^2=\delta_\sigma .
+\]
+Thus any localized image spectrum produces the two Schur numbers by a direct
+matrix inversion.  Sourced modes away from this line contribute to
+\(\Delta_{\rm rank}\); unsourced modes drop out of \({\cal D}_{AB}\).
+
+For the charged endpoint determinant, let
+\[
+  ({\cal B}_{r,\Gamma}^\chi)^\dagger
+  {\cal B}_{r,\Gamma}^\chi u_{\alpha r}
+  =
+  M_{\alpha r}^2u_{\alpha r},
+  \qquad r=1,2 .
+\]
+The equal-amplitude Borel--Weil row is the spectral equality
+\[
+  \{(\sigma_{\alpha1},d_{\alpha1},M_{\alpha1})\}_\alpha
+  =
+  \{(\sigma_{\alpha2},d_{\alpha2},M_{\alpha2})\}_\alpha .
+\]
+It gives
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  2\sum_\alpha
+  \sigma_\alpha d_\alpha
+  F(M_\alpha L_H).
+\]
+The minimal endpoint row is
+\[
+  M_\alpha=M,\qquad
+  {\cal N}_\Gamma^\chi=2\sigma_\chi d_\chi F(ML_H).
+\]
+
+\subsection{Minimal Finite Spectrum Package}
+
+The finite extraction has a minimal image realization on
+\[
+  {\cal H}_{{\rm img},\sigma}^{\rm src}
+  =
+  {\rm span}\{e_\sigma\},
+  \qquad
+  \langle e_\sigma,e_\sigma\rangle_\Gamma=1,
+  \qquad
+  {\cal M}_{\rm img}e_\sigma=m_\sigma e_\sigma .
+\]
+The source couplings are
+\[
+  C_{3\sigma}
+  =
+  L_2\sqrt{m_\sigma}\sqrt{\delta_\sigma},
+  \qquad
+  C_{Y\sigma}
+  =
+  L_2\sqrt{m_\sigma}\sqrt{\delta_\sigma}\rho_\sigma .
+\]
+Equivalently,
+\[
+  \frac{1}{L_2\sqrt{m_\sigma}}
+  \binom{C_{3\sigma}}{C_{Y\sigma}}
+  =
+  g_\sigma .
+\]
+For the two branches,
+\[
+\begin{array}{c|c|c}
+{\rm branch}&(g_\sigma)_3&(g_\sigma)_Y\\ \hline
++&0.374811401563\ldots&7.371454070999\ldots\\
+-&0.572116571654\ldots&7.230005311453\ldots .
+\end{array}
+\]
+Substitution gives
+\[
+  {\cal D}_{AB}
+  =
+  \frac{C_{A\sigma}C_{B\sigma}}{m_\sigma L_2^2}
+  =
+  (g_\sigma)_A(g_\sigma)_B
+  =
+  ({\cal D}_\sigma)_{AB}.
+\]
+In the constant-profile product row, the same density gives the normalized
+source mode
+\[
+  \psi_{\Gamma,0}
+  =
+  \left(L_Q{\mathfrak z}_{\Gamma}^{\CP^2}\right)^{-1/2}\eta_Q,
+  \qquad
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  {\rm tr}_{E_Q}\left(\Pi_Q|\psi_{\Gamma,0}|^2\Pi_Q\right)=1 .
+\]
+Taking \(e_\sigma=\psi_{\Gamma,0}\), the branch source current is
+\[
+  {\cal J}_A^{(\sigma)}
+  =
+  L_2\sqrt{m_\sigma}\,(g_\sigma)_A\,e_\sigma^\flat,
+  \qquad A=3,Y.
+\]
+For the current Gram matrix
+\[
+  G_{AB}^{(0)}
+  =
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \psi_{\Gamma,0}^2
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\theta_\Gamma^B),
+\]
+the Gram-dual image one-form is
+\[
+  \Xi_\sigma
+  =
+  L_2\psi_{\Gamma,0}\,
+  (G^{(0)})^{-1\,BC}(g_\sigma)_C\theta_\Gamma^B .
+\]
+It satisfies
+\[
+  L_2^{-1}
+  \int d\nu_\Gamma\,\psi_{\Gamma,0}\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\Xi_\sigma)
+  =
+  (g_\sigma)_A,
+  \qquad
+  R_{\Xi,\sigma}=0 .
+\]
+The constant-profile row therefore forms a single-pass data packet
+\[
+  {\cal P}_{\Gamma}^{\rm cp}
+  =
+  \left(
+  \kappa_8,\,
+  e^{-\phi_0}\Omega_\Gamma,\,
+  r_\Gamma,\,
+  L_Q,\,
+  \varrho_\Gamma,\,
+  m_\sigma,\,
+  z_\chi,\,
+  \sigma_\chi d_\chi
+  \right).
+\]
+It returns
+\[
+  e^{-\phi_0}\Omega_\Gamma
+  =
+  \sum_{s\in{\cal S}_\Gamma}\omega_s e^{-\phi_s},
+  \qquad
+  \Omega_\Gamma
+  =
+  \sum_{s\in{\cal S}_\Gamma}\omega_s .
+\]
+The Chan--Paton trace factor remains the finite endpoint multiplier
+\(\tau_Q=16\) in \(Z_{\Gamma,Q}\).  In the common-metric sector row,
+\[
+  e^{-\phi_0}
+  =
+  \frac{\sum_{s\in{\cal S}_\Gamma}\omega_s e^{-\phi_s}}
+  {\sum_{s\in{\cal S}_\Gamma}\omega_s}.
+\]
+The measure and CP2 density are
+\[
+  d\nu_\Gamma
+  =
+  \kappa_8e^{-\phi_0}\Omega_\Gamma
+  \sqrt{\gamma_{\CP^2}}\,d^4y\,ds_Q,
+  \qquad
+  {\mathfrak z}_{\Gamma}^{\CP^2}
+  =
+  \frac{\kappa_8}{2}e^{-\phi_0}\Omega_\Gamma r_\Gamma^2 ,
+\]
+\[
+  Z_{\Gamma,0}=L_Q{\mathfrak z}_{\Gamma}^{\CP^2},
+  \qquad
+  Z_{\Gamma,Q}=16L_Q{\mathfrak z}_{\Gamma}^{\CP^2},
+  \qquad
+  Z_{\Gamma,H}=\frac Q4Z_{\Gamma,0},
+\]
+and
+\[
+  q_\Gamma=\frac{32}{25}\varrho_\Gamma,
+  \qquad
+  U_\Gamma^{\CP^2}
+  =
+  \frac{16\pi^2}{441}{\mathfrak z}_{\Gamma}^{\CP^2}.
+\]
+The shape parameter is the current-frame Rayleigh quotient
+\[
+  \varrho_\Gamma
+  =
+  \frac{C_h^\Gamma}{C_0^\Gamma},
+  \qquad
+  C_0^\Gamma
+  =
+  \langle P_0^\Gamma\theta_\Gamma^3,
+  P_0^\Gamma\theta_\Gamma^3\rangle_{\Gamma,\Pi_Q},
+\]
+\[
+  C_h^\Gamma
+  =
+  \langle P_h^\Gamma\theta_\Gamma^3,
+  P_h^\Gamma\theta_\Gamma^3\rangle_{\Gamma,\Pi_Q},
+  \qquad
+  C_0^\Gamma>0 .
+\]
+Here \(P_0^\Gamma\) projects to the endpoint component and \(P_h^\Gamma\)
+projects to the horizontal \(\CP^2\) component in the localized current
+frame.
+In sector form,
+\[
+  C_{0,s}^\Gamma
+  =
+  \omega_s e^{-\phi_s}
+  \langle P_0^\Gamma\theta_{\Gamma,s}^3,
+  P_0^\Gamma\theta_{\Gamma,s}^3\rangle_{s,\Pi_Q},
+  \qquad
+  C_{h,s}^\Gamma
+  =
+  \omega_s e^{-\phi_s}
+  \langle P_h^\Gamma\theta_{\Gamma,s}^3,
+  P_h^\Gamma\theta_{\Gamma,s}^3\rangle_{s,\Pi_Q}.
+\]
+Therefore
+\[
+  C_0^\Gamma=\sum_sC_{0,s}^\Gamma,
+  \qquad
+  C_h^\Gamma=\sum_sC_{h,s}^\Gamma,
+  \qquad
+  \varrho_\Gamma
+  =
+  \frac{\sum_sC_{h,s}^\Gamma}{\sum_sC_{0,s}^\Gamma}.
+  \tag{5.1}
+\]
+On \({\cal S}_{\Gamma,0}=\{s:C_{0,s}^\Gamma>0\}\), set
+\[
+  b_{\Gamma,s}=\frac{C_{0,s}^\Gamma}{C_0^\Gamma},
+  \qquad
+  \rho_{\Gamma,s}=\frac{C_{h,s}^\Gamma}{C_{0,s}^\Gamma}.
+\]
+Then
+\[
+  b_{\Gamma,s}\ge0,\qquad
+  \sum_{s\in{\cal S}_{\Gamma,0}}b_{\Gamma,s}=1,
+  \qquad
+  \varrho_\Gamma
+  =
+  \sum_{s\in{\cal S}_{\Gamma,0}}b_{\Gamma,s}\rho_{\Gamma,s}.
+  \tag{5.2}
+\]
+The density-shape pass is
+\[
+  0<\varrho_\Gamma<2.743448440896\ldots,
+  \qquad
+  U_\Gamma^{\CP^2}\ge u_\Gamma^{\rm sh}(\varrho_\Gamma).
+\]
+The image and determinant entries are
+\[
+  \psi_\sigma=\psi_{\Gamma,0},
+  \qquad
+  {\cal M}_{\rm img}\psi_\sigma=m_\sigma\psi_\sigma,
+  \qquad
+  N_\Gamma^\chi=2\sigma_\chi d_\chi F(z_\chi).
+\]
+An endpoint-matrix realization makes the image mass a spectral readout:
+\[
+  {\cal M}_{\rm img}
+  =
+  {\cal Q}_{\rm img}^\dagger{\cal Q}_{\rm img},
+  \qquad
+  {\cal Q}_{\rm img}
+  =
+  {\bf 1}_{\CP^2\times S^1_Q}\otimes B_\sigma .
+\]
+The product density cancels from the normalized image quotient:
+\[
+  m_\sigma
+  =
+  \frac{
+  \langle\eta_Q,B_\sigma^\dagger B_\sigma\eta_Q\rangle_{E_Q}}
+  {\langle\eta_Q,\eta_Q\rangle_{E_Q}} .
+\]
+The one-line image sector is the eigenline condition
+\[
+  B_\sigma^\dagger B_\sigma\eta_Q=m_\sigma\eta_Q,
+  \qquad
+  \Pi_\sigma^\perp B_\sigma^\dagger B_\sigma\eta_Q=0,
+  \qquad
+  m_\sigma>0 .
+\]
+Let
+\[
+  \Pi_{\eta_Q}
+  =
+  \frac{|\eta_Q\rangle\langle\eta_Q|}
+  {\langle\eta_Q,\eta_Q\rangle_{E_Q}},
+  \qquad
+  \Pi_{\eta_Q}^\perp={\bf 1}_{E_Q}-\Pi_{\eta_Q}.
+\]
+The finite endpoint normal form is
+\[
+  B_\sigma^\dagger B_\sigma
+  =
+  m_\sigma\Pi_{\eta_Q}
+  +
+  {\cal B}_{\sigma,\perp}^\dagger{\cal B}_{\sigma,\perp},
+  \qquad
+  {\cal B}_{\sigma,\perp}
+  =
+  \Pi_{\eta_Q}^\perp{\cal B}_{\sigma,\perp}\Pi_{\eta_Q}^\perp .
+\]
+The one-mode reduction has a separated complement whenever
+\[
+  {\cal B}_{\sigma,\perp}^\dagger{\cal B}_{\sigma,\perp}
+  \ge
+  M_{\sigma,\perp}^2\Pi_{\eta_Q}^\perp,
+  \qquad
+  M_{\sigma,\perp}^2>m_\sigma .
+\]
+Equivalently, define
+\[
+  g_{\sigma,\perp}
+  =
+  \frac{M_{\sigma,\perp}^2}{m_\sigma}.
+\]
+The finite endpoint image row passes exactly for
+\[
+  g_{\sigma,\perp}>1 .
+  \tag{5.3}
+\]
+For a diagonal endpoint spectrum on \(\Pi_{\eta_Q}^\perp E_Q\),
+\[
+  B_\sigma^\dagger B_\sigma e_{\sigma,\alpha}
+  =
+  \lambda_{\sigma,\alpha}e_{\sigma,\alpha},
+  \qquad
+  e_{\sigma,\alpha}\in\Pi_{\eta_Q}^\perp E_Q,
+\]
+the ratio is
+\[
+  g_{\sigma,\perp}
+  =
+  \frac{\min_\alpha\lambda_{\sigma,\alpha}}{m_\sigma}.
+  \tag{5.4}
+\]
+The finite eigenline residual is
+\[
+  \varepsilon_{\sigma,Q}^2
+  =
+  \frac{
+  \left\|
+  \Pi_{\eta_Q}^\perp B_\sigma^\dagger B_\sigma\eta_Q
+  \right\|_{E_Q}^2}
+  {m_\sigma^2\|\eta_Q\|_{E_Q}^2}.
+\]
+The one-line image condition is \(\varepsilon_{\sigma,Q}=0\).
+For the minimal positive endpoint block,
+\[
+  {\cal B}_\chi^\dagger{\cal B}_\chi
+  =
+  M_\chi^2{\bf 1}_{E_\chi},
+  \qquad
+  E_\chi=\mathbb C,
+  \qquad
+  \sigma_\chi d_\chi=+1 .
+\]
+The determinant threshold coordinate is \(z_\chi=M_\chi L_H\).  Combining
+with the density target gives
+\[
+  F(z_\chi)
+  =
+  \Xi_\Gamma^{\rm cp},
+  \qquad
+  \Xi_\Gamma^{\rm cp}
+  =
+  \frac{21375.716460702053\ldots\,\lambda_F}{2w_H^8}
+  \left(
+  \frac{L_Q{\mathfrak z}_{\Gamma}^{\CP^2}}{v_{\rm EW}}
+  \right)^4 .
+\]
+Since
+\[
+  F'(z)=-\frac13e^{-z}z(1+z),
+\]
+the minimal positive endpoint row passes exactly for
+\[
+  0<\Xi_\Gamma^{\rm cp}\le1,
+  \qquad
+  z_\chi=F^{-1}(\Xi_\Gamma^{\rm cp}).
+\]
+The same determinant equation gives the neutral-density upper constraint
+\[
+  0<Z_{\Gamma,0}
+  =
+  L_Q{\mathfrak z}_{\Gamma}^{\CP^2}
+  \le
+  Z_{\chi,\max}.
+\]
+Here
+\[
+  \begin{aligned}
+  Z_{\chi,\max}
+  &=
+  v_{\rm EW}
+  \left(
+  \frac{2w_H^8}{21375.716460702053\ldots\,\lambda_F}
+  \right)^{1/4}  \\
+  &=
+  0.0983506713707568\ldots\,
+  w_H^2\lambda_F^{-1/4}v_{\rm EW}.
+  \end{aligned}
+\]
+Together with the density-shape lower row, this gives the loop-length
+envelope
+\[
+  0<L_Q
+  \le
+  \frac{Z_{\chi,\max}}{{\mathfrak z}_{\Gamma}^{\CP^2}}
+  \le
+  \frac{16\pi^2 Z_{\chi,\max}}
+  {441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)} .
+\]
+Equivalently, the CP2 radius must lie in the band
+\[
+  \frac{441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)}
+  {8\pi^2\kappa_8e^{-\phi_0}\Omega_\Gamma}
+  \le
+  r_\Gamma^2
+  \le
+  \frac{2Z_{\chi,\max}}
+  {\kappa_8e^{-\phi_0}\Omega_\Gamma L_Q}.
+\]
+For the full sector-sum row define the weighted radius moment
+\[
+  {\cal R}_\Gamma^2
+  =
+  \sum_{s\in{\cal S}_\Gamma}
+  \omega_s e^{-\phi_s}r_{\Gamma,s}^2 .
+\]
+Equivalently, introduce the sector label space
+\[
+  {\cal H}_{\cal S}
+  =
+  \bigoplus_{s\in{\cal S}_\Gamma}\mathbb C|s\rangle
+\]
+and diagonal sector operators
+\[
+  {\sf W}_\Gamma|s\rangle
+  =
+  \omega_s e^{-\phi_s}|s\rangle,
+  \qquad
+  {\sf R}_\Gamma|s\rangle
+  =
+  r_{\Gamma,s}^2|s\rangle .
+\]
+Then
+\[
+  e^{-\phi_0}\Omega_\Gamma={\rm Tr}_{\cal S}{\sf W}_\Gamma,
+  \qquad
+  {\cal R}_\Gamma^2
+  =
+  {\rm Tr}_{\cal S}({\sf W}_\Gamma{\sf R}_\Gamma).
+\]
+Then
+\[
+  {\mathfrak z}_{\Gamma}^{\CP^2}
+  =
+  \frac{\kappa_8}{2}{\cal R}_\Gamma^2,
+  \qquad
+  e^{-\phi_0}\Omega_\Gamma r_\Gamma^2
+  =
+  {\cal R}_\Gamma^2
+  \quad
+  \hbox{in the common-metric row}.
+\]
+The sector-sum compactification band is
+\[
+  \frac{441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)}
+  {8\pi^2\kappa_8}
+  \le
+  {\cal R}_\Gamma^2
+  \le
+  \frac{2Z_{\chi,\max}}{\kappa_8L_Q}.
+\]
+The determinant threshold depends on the weighted product
+\[
+  {\cal V}_{\Gamma,Q}
+  =
+  L_Q{\cal R}_\Gamma^2,
+  \qquad
+  Z_{\Gamma,0}
+  =
+  \frac{\kappa_8}{2}{\cal V}_{\Gamma,Q}.
+\]
+In trace form the local density outputs read
+\[
+  Z_{\Gamma,0}
+  =
+  \frac{\kappa_8L_Q}{2}
+  {\rm Tr}_{\cal S}({\sf W}_\Gamma{\sf R}_\Gamma),
+  \qquad
+  Z_{\Gamma,Q}
+  =
+  8\kappa_8L_Q
+  {\rm Tr}_{\cal S}({\sf W}_\Gamma{\sf R}_\Gamma),
+\]
+\[
+  Z_{\Gamma,H}
+  =
+  \frac{Q\kappa_8L_Q}{8}
+  {\rm Tr}_{\cal S}({\sf W}_\Gamma{\sf R}_\Gamma).
+\]
+Set
+\[
+  {\cal T}_\Gamma
+  =
+  {\rm Tr}_{\cal S}({\sf W}_\Gamma{\sf R}_\Gamma).
+\]
+The trace pass surface is
+\[
+  {\cal T}_\Gamma
+  \ge
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma)
+  =
+  \frac{441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)}
+  {8\pi^2\kappa_8},
+  \qquad
+  0<L_Q\le
+  \frac{2Z_{\chi,\max}}{\kappa_8{\cal T}_\Gamma}.
+\]
+Equivalently, with \(0<x_{\Gamma,Q}\le1\),
+\[
+  L_Q
+  =
+  \frac{2Z_{\chi,\max}}{\kappa_8{\cal T}_\Gamma}
+  x_{\Gamma,Q},
+  \qquad
+  {\cal T}_\Gamma\ge
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma).
+\]
+At lower-density saturation,
+\[
+  {\cal T}_\Gamma={\cal T}_{\Gamma,\min}(\varrho_\Gamma),
+  \qquad
+  L_Q=x_{\Gamma,Q}L_{Q,\max}(\varrho_\Gamma).
+\]
+Define
+\[
+  \chi_\Gamma
+  =
+  \frac{{\cal T}_\Gamma}
+  {{\cal T}_{\Gamma,\min}(\varrho_\Gamma)}
+  \ge1 .
+\]
+Then
+\[
+  L_Q
+  =
+  \frac{x_{\Gamma,Q}}{\chi_\Gamma}
+  L_{Q,\max}(\varrho_\Gamma),
+  \qquad
+  x_{\Gamma,Q}
+  =
+  \chi_\Gamma
+  \frac{L_Q}{L_{Q,\max}(\varrho_\Gamma)} .
+\]
+Therefore
+\[
+  0<L_Q\le
+  \frac{L_{Q,\max}(\varrho_\Gamma)}{\chi_\Gamma}.
+\]
+In sector variables set
+\[
+  \zeta_{\Gamma,s}
+  =
+  \frac{\omega_s e^{-\phi_s}r_{\Gamma,s}^2}
+  {{\cal T}_{\Gamma,\min}(\varrho_\Gamma)}
+  \ge0 .
+\]
+Then
+\[
+  \chi_\Gamma
+  =
+  \sum_{s\in{\cal S}_\Gamma}\zeta_{\Gamma,s},
+  \qquad
+  L_Q
+  =
+  \frac{x_{\Gamma,Q}}
+  {\sum_{s\in{\cal S}_\Gamma}\zeta_{\Gamma,s}}
+  L_{Q,\max}(\varrho_\Gamma).
+  \tag{6.1}
+\]
+For a fixed loop length,
+\[
+  x_{\Gamma,Q}
+  =
+  \frac{L_Q}{L_{Q,\max}(\varrho_\Gamma)}
+  \sum_{s\in{\cal S}_\Gamma}\zeta_{\Gamma,s},
+  \qquad
+  1\le
+  \sum_{s\in{\cal S}_\Gamma}\zeta_{\Gamma,s}
+  \le
+  \frac{L_{Q,\max}(\varrho_\Gamma)}{L_Q}.
+  \tag{6.2}
+\]
+Define sector fractions
+\[
+  p_{\Gamma,s}
+  =
+  \frac{\zeta_{\Gamma,s}}{\chi_\Gamma},
+  \qquad
+  p_{\Gamma,s}\ge0,
+  \qquad
+  \sum_{s\in{\cal S}_\Gamma}p_{\Gamma,s}=1 .
+\]
+Then each retained sector obeys
+\[
+  \omega_s e^{-\phi_s}r_{\Gamma,s}^2
+  =
+  p_{\Gamma,s}\chi_\Gamma
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma)
+  =
+  p_{\Gamma,s}\chi_\Gamma
+  \frac{441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)}
+  {8\pi^2\kappa_8}.
+  \tag{6.3}
+\]
+Equivalently,
+\[
+  r_{\Gamma,s}^2
+  =
+  \frac{441\,p_{\Gamma,s}\chi_\Gamma
+  u_\Gamma^{\rm sh}(\varrho_\Gamma)}
+  {8\pi^2\kappa_8\omega_s e^{-\phi_s}} .
+  \tag{6.4}
+\]
+Collecting the local rows, define the finite D8/O8 data record
+\[
+  {\cal D}_\Gamma
+  =
+  \left(
+  {\cal S}_\Gamma;\,
+  \omega_s,\phi_s,p_{\Gamma,s},b_{\Gamma,s},\rho_{\Gamma,s};\,
+  \chi_\Gamma,x_{\Gamma,Q},L_Q;\,
+  m_\sigma,\varepsilon_{\sigma,Q},\lambda_{\sigma,\alpha}
+  \right).
+\]
+It gives
+\[
+  \varrho_\Gamma
+  =
+  \sum_{s\in{\cal S}_{\Gamma,0}}b_{\Gamma,s}\rho_{\Gamma,s},
+  \qquad
+  {\cal T}_\Gamma
+  =
+  \chi_\Gamma{\cal T}_{\Gamma,\min}(\varrho_\Gamma),
+  \qquad
+  L_Q
+  =
+  \frac{x_{\Gamma,Q}}{\chi_\Gamma}
+  L_{Q,\max}(\varrho_\Gamma),
+  \tag{6.5}
+\]
+\[
+  z_\chi=F^{-1}(x_{\Gamma,Q}^4),
+  \qquad
+  \varepsilon_{\sigma,Q}^2
+  =
+  \frac{
+  \left\|
+  \Pi_{\eta_Q}^\perp B_\sigma^\dagger B_\sigma\eta_Q
+  \right\|_{E_Q}^2}
+  {m_\sigma^2\|\eta_Q\|_{E_Q}^2},
+  \qquad
+  g_{\sigma,\perp}
+  =
+  \frac{\min_\alpha\lambda_{\sigma,\alpha}}{m_\sigma}.
+  \tag{6.6}
+\]
+The admissible finite row satisfies
+\[
+  \chi_\Gamma\ge1,\quad
+  0<x_{\Gamma,Q}\le1,\quad
+  0<\varrho_\Gamma<\varrho_c,\quad
+  \varepsilon_{\sigma,Q}=0,\quad
+  g_{\sigma,\perp}>1,
+  \tag{6.7}
+\]
+\[
+  \sum_{s\in{\cal S}_\Gamma}p_{\Gamma,s}=1,
+  \qquad
+  \sum_{s\in{\cal S}_{\Gamma,0}}b_{\Gamma,s}=1,
+  \qquad
+  p_{\Gamma,s},b_{\Gamma,s},\rho_{\Gamma,s}\ge0 .
+  \tag{6.8}
+\]
+The corresponding localized-action map starts from the quadratic data
+\[
+  {\cal Q}_\Gamma^{(2)}
+  =
+  \left(
+  {\cal S}_\Gamma;\,
+  \omega_s,\phi_s,\gamma_{\Gamma,s}^{\CP^2};\,
+  \theta_{\Gamma,s}^3,P_0^\Gamma,P_h^\Gamma,\Pi_Q;\,
+  B_\sigma,\eta_Q,L_Q
+  \right).
+\]
+Let \(\widehat\gamma_s\) be the unit \(\CP^2\) reference metric in sector
+\(s\), and define
+\[
+  {\rm Av}_{s,\Pi_Q}(f)
+  =
+  \frac{
+  \int_{\CP^2_s}\sqrt{\widehat\gamma_s}\,
+  {\rm tr}_{E_s}(\Pi_Qf\Pi_Q)}
+  {\int_{\CP^2_s}\sqrt{\widehat\gamma_s}\,
+  {\rm tr}_{E_s}(\Pi_Q)} .
+  \tag{6.9}
+\]
+For each retained sector, set
+\[
+  r_{\Gamma,s}^2
+  =
+  {\rm Av}_{s,\Pi_Q}\!\left(
+  \frac14{\rm tr}_{\widehat\gamma_s}
+  \gamma_{\Gamma,s}^{\CP^2}
+  \right),
+  \qquad
+  {\cal T}_\Gamma
+  =
+  \sum_s\omega_s e^{-\phi_s}r_{\Gamma,s}^2 .
+  \tag{6.10}
+\]
+Then
+\[
+  \varrho_\Gamma
+  =
+  \frac{\sum_sC_{h,s}^\Gamma}{\sum_sC_{0,s}^\Gamma},
+  \qquad
+  \chi_\Gamma
+  =
+  \frac{{\cal T}_\Gamma}
+  {{\cal T}_{\Gamma,\min}(\varrho_\Gamma)},
+  \qquad
+  x_{\Gamma,Q}
+  =
+  \frac{\kappa_8L_Q{\cal T}_\Gamma}{2Z_{\chi,\max}} .
+  \tag{6.11}
+\]
+The endpoint spectrum supplies
+\[
+  m_\sigma
+  =
+  \frac{\langle\eta_Q,B_\sigma^\dagger B_\sigma\eta_Q\rangle_{E_Q}}
+  {\langle\eta_Q,\eta_Q\rangle_{E_Q}},
+  \qquad
+  \{\lambda_{\sigma,\alpha}\}
+  =
+  {\rm Spec}\!
+  \left(
+  \Pi_{\eta_Q}^{\perp}B_\sigma^\dagger B_\sigma
+  \Pi_{\eta_Q}^{\perp}
+  \right).
+  \tag{6.12}
+\]
+The same endpoint operator gives
+\[
+  \varepsilon_{\sigma,Q}^2
+  =
+  \frac{
+  \left\|
+  \Pi_{\eta_Q}^\perp B_\sigma^\dagger B_\sigma\eta_Q
+  \right\|_{E_Q}^2}
+  {m_\sigma^2\|\eta_Q\|_{E_Q}^2}.
+\]
+Together with
+\[
+  p_{\Gamma,s}
+  =
+  \frac{\omega_s e^{-\phi_s}r_{\Gamma,s}^2}
+  {{\cal T}_\Gamma},
+  \qquad
+  b_{\Gamma,s}
+  =
+  \frac{C_{0,s}^\Gamma}{\sum_tC_{0,t}^\Gamma},
+  \qquad
+  \rho_{\Gamma,s}
+  =
+  \frac{C_{h,s}^\Gamma}{C_{0,s}^\Gamma},
+  \tag{6.13}
+\]
+these equations define
+\[
+  {\mathfrak E}_\Gamma({\cal Q}_\Gamma^{(2)})
+  =
+  {\cal D}_\Gamma .
+  \tag{6.14}
+\]
+The algebraic inverse local packet is explicit on the support
+\[
+  {\cal S}_{\Gamma,+}=\{s:p_{\Gamma,s}>0\}.
+\]
+Choose \({\cal C}_\Gamma>0\), endpoint-normalized one-forms
+\(\widehat e_{0,s}\) and \(\widehat e_{h,s}\), and set
+\[
+  \gamma_{\Gamma,s}^{\CP^2}=r_{\Gamma,s}^2\widehat\gamma_s,
+  \qquad
+  r_{\Gamma,s}^2
+  =
+  \frac{p_{\Gamma,s}\chi_\Gamma
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma)}
+  {\omega_s e^{-\phi_s}} .
+  \tag{6.15}
+\]
+The coframe pieces may be chosen as
+\[
+  P_0^\Gamma\theta_{\Gamma,s}^3
+  =
+  \left(
+  \frac{b_{\Gamma,s}{\cal C}_\Gamma}
+  {\omega_s e^{-\phi_s}}
+  \right)^{1/2}\widehat e_{0,s},
+  \qquad
+  P_h^\Gamma\theta_{\Gamma,s}^3
+  =
+  \left(
+  \frac{b_{\Gamma,s}\rho_{\Gamma,s}{\cal C}_\Gamma}
+  {\omega_s e^{-\phi_s}}
+  \right)^{1/2}\widehat e_{h,s}.
+  \tag{6.16}
+\]
+With \(e_0=\eta_Q/\|\eta_Q\|_{E_Q}\) and an orthonormal complement
+\(\{e_\alpha\}\subset\Pi_{\eta_Q}^\perp E_Q\), take
+\[
+  B_\sigma^\dagger B_\sigma
+  =
+  m_\sigma |e_0\rangle\langle e_0|
+  +
+  \sum_\alpha
+  \lambda_{\sigma,\alpha}
+  |e_\alpha\rangle\langle e_\alpha|.
+  \tag{6.17}
+\]
+Then
+\[
+  {\mathfrak I}_\Gamma({\cal D}_\Gamma;{\cal C}_\Gamma,\widehat e)
+  =
+  {\cal Q}_\Gamma^{(2)},
+  \qquad
+  {\mathfrak E}_\Gamma
+  \!\left(
+  {\mathfrak I}_\Gamma({\cal D}_\Gamma;{\cal C}_\Gamma,\widehat e)
+  \right)
+  =
+  {\cal D}_\Gamma .
+  \tag{6.18}
+\]
+The charged determinant extension uses the same threshold coordinate.  Let
+\[
+  z_\chi=F^{-1}(x_{\Gamma,Q}^4),
+  \qquad
+  M_\chi=\frac{z_\chi}{L_H},
+  \qquad
+  E_\chi=\mathbb C,
+  \qquad
+  \sigma_\chi d_\chi=+1 .
+  \tag{6.19}
+\]
+Set
+\[
+  P_1^\chi={\rm span}\{u,v\},
+  \qquad
+  P_2^\chi={\rm span}\{u^2,v^2\},
+  \tag{6.20}
+\]
+and
+\[
+  B_\chi^\dagger B_\chi=M_\chi^2{\bf 1}_{E_\chi},
+  \qquad
+  {\cal B}_{r,\Gamma}^\chi
+  =
+  {\bf 1}_{P_r^\chi}\otimes B_\chi,
+  \qquad r=1,2 .
+  \tag{6.21}
+\]
+Then
+\[
+  {\cal N}_\Gamma^\chi
+  =
+  2F(M_\chi L_H)
+  =
+  2x_{\Gamma,Q}^4 .
+  \tag{6.22}
+\]
+The extended local packet is
+\[
+  \widetilde{\cal Q}_\Gamma^{(2)}
+  =
+  \left(
+  {\cal Q}_\Gamma^{(2)};\,
+  P_1^\chi,P_2^\chi,E_\chi,B_\chi,L_H,\sigma_\chi d_\chi
+  \right).
+  \tag{6.23}
+\]
+The finite package carries the density, coframe, image, and determinant rows.
+For concrete localized data
+\[
+  {\cal A}_\Gamma
+  =
+  \left(
+  P_s[G+B],F_s,\phi_s,\omega_s,\Pi_s;\,
+  \iota_\Gamma^*C_1;\,
+  B_\sigma,B_\chi,L_Q,L_H
+  \right)_{s\in{\cal S}_\Gamma},
+\]
+the action-matching residual is the finite vector
+\[
+  {\cal R}_\Gamma({\cal A}_\Gamma;{\cal D}_\Gamma)
+  =
+  \left(
+  R_T,\ R_x,\ R_\varrho,\ R_\epsilon,\ R_g,\ R_\chi
+  \right),
+  \tag{6.24}
+\]
+where
+\[
+  R_T
+  =
+  \frac{{\cal T}_\Gamma({\cal A}_\Gamma)}
+  {{\cal T}_{\Gamma,\min}(\varrho_\Gamma)}
+  -\chi_\Gamma,
+  \qquad
+  R_x
+  =
+  \frac{\kappa_8L_Q{\cal T}_\Gamma({\cal A}_\Gamma)}
+  {2Z_{\chi,\max}}
+  -x_{\Gamma,Q},
+  \tag{6.25}
+\]
+\[
+  R_\varrho
+  =
+  \frac{C_h^\Gamma({\cal A}_\Gamma)}
+  {C_0^\Gamma({\cal A}_\Gamma)}
+  -\varrho_\Gamma,
+  \qquad
+  R_\epsilon=\varepsilon_{\sigma,Q},
+  \tag{6.26}
+\]
+\[
+  R_g
+  =
+  \max\!\left\{0,\,
+  1-\frac{\min_\alpha\lambda_{\sigma,\alpha}}{m_\sigma}
+  \right\},
+  \qquad
+  R_\chi
+  =
+  \frac{M_\chi L_H-z_\chi}{1+z_\chi}.
+  \tag{6.27}
+\]
+The localized action produces the finite packet exactly when
+\[
+  {\cal R}_\Gamma({\cal A}_\Gamma;{\cal D}_\Gamma)=0 .
+  \tag{6.28}
+\]
+A localized finite normal form realizing an admissible row is explicit.  Write
+\[
+  W_s=\omega_s e^{-\phi_s},
+  \qquad
+  {\cal S}_{\Gamma,+}=\{s:p_{\Gamma,s}>0\}.
+\]
+On \({\cal S}_{\Gamma,+}\), take endpoint-normalized one-forms
+\(\widehat e_{0,s},\widehat e_{h,s}\) and set
+\[
+  P_s[G+B]_{\CP^2}
+  =
+  r_{\Gamma,s}^2\widehat\gamma_s,
+  \qquad
+  r_{\Gamma,s}^2
+  =
+  \frac{p_{\Gamma,s}\chi_\Gamma
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma)}
+  {W_s}.
+\]
+The retained current pullback is
+\[
+  \Pi_{\rm EW}\iota_\Gamma^*C_1|_s
+  =
+  q_\Gamma\theta_{\Gamma,s}^3,
+  \qquad q_\Gamma>0,
+\]
+with
+\[
+  P_0^\Gamma\theta_{\Gamma,s}^3
+  =
+  \left(\frac{b_{\Gamma,s}{\cal C}_\Gamma}{W_s}\right)^{1/2}
+  \widehat e_{0,s},
+  \qquad
+  P_h^\Gamma\theta_{\Gamma,s}^3
+  =
+  \left(\frac{b_{\Gamma,s}\rho_{\Gamma,s}{\cal C}_\Gamma}{W_s}\right)^{1/2}
+  \widehat e_{h,s}.
+\]
+The endpoint image and determinant blocks are
+\[
+  B_\sigma^\dagger B_\sigma
+  =
+  m_\sigma |e_0\rangle\langle e_0|
+  +
+  \sum_\alpha
+  \lambda_{\sigma,\alpha}|e_\alpha\rangle\langle e_\alpha|,
+  \qquad
+  \frac{\min_\alpha\lambda_{\sigma,\alpha}}{m_\sigma}>1,
+\]
+\[
+  B_\chi^\dagger B_\chi
+  =
+  \left(\frac{z_\chi}{L_H}\right)^2{\bf 1}_{E_\chi},
+  \qquad
+  L_Q
+  =
+  \frac{x_{\Gamma,Q}}{\chi_\Gamma}L_{Q,\max}(\varrho_\Gamma).
+\]
+Then
+\[
+  {\cal T}_\Gamma({\cal A}_\Gamma^{\rm nf})
+  =
+  \chi_\Gamma{\cal T}_{\Gamma,\min}(\varrho_\Gamma),
+  \qquad
+  \frac{C_h^\Gamma({\cal A}_\Gamma^{\rm nf})}
+  {C_0^\Gamma({\cal A}_\Gamma^{\rm nf})}
+  =
+  \varrho_\Gamma,
+\]
+\[
+  \varepsilon_{\sigma,Q}=0,
+  \qquad
+  M_\chi L_H=z_\chi,
+  \qquad
+  {\cal R}_\Gamma({\cal A}_\Gamma^{\rm nf};{\cal D}_\Gamma)=0 .
+\]
+A global Type IIA source datum can be written as
+\[
+  {\mathfrak G}_\Gamma
+  =
+  \left(
+  X_{10},{\cal I}_{O8},
+  \iota_{\Gamma,s},E_s,F_s,\phi_s,G,B,C_1,F_0,\Omega
+  \right)_{s\in{\cal S}_\Gamma},
+\]
+with localized DBI/CS/Payen readout
+\[
+  {\mathfrak L}_\Gamma({\mathfrak G}_\Gamma)={\cal A}_\Gamma .
+\]
+The finite normal form is the local image of this global datum when
+\[
+  {\mathfrak L}_\Gamma({\mathfrak G}_\Gamma)={\cal A}_\Gamma^{\rm nf}.
+\]
+Component form:
+\[
+  P_s[G+B]_{\CP^2}=r_{\Gamma,s}^2\widehat\gamma_s,
+  \qquad
+  \Pi_{\rm EW}\iota_{\Gamma,s}^*C_1=q_\Gamma\theta_{\Gamma,s}^3,
+\]
+\[
+  \Pi_{\rm EW}\iota_{\Gamma,s}^*F_2
+  =
+  q_\Gamma d_\Gamma\theta_{\Gamma,s}^3,
+  \qquad
+  {\rm End}_\Omega(E_s,F_s)
+  =
+  (\Pi_Q,e_0,E_\chi,B_\sigma,B_\chi).
+\]
+The source and lower-charge rows are
+\[
+  dF_0
+  =
+  \sum_sN_{8,s}\delta_{\Gamma_s}
+  +
+  \sum_aQ_{O8,a}\delta_{O8,a},
+  \qquad
+  \sum_sN_{8,s}+\sum_aQ_{O8,a}=0,
+\]
+\[
+  Q_{\rm lower}^{\rm tot}
+  =
+  \left[
+  \sum_s{\rm ch}(E_s)e^{F_s/2\pi}
+  \sqrt{\frac{\widehat A(T\Gamma_s)}
+  {\widehat A(N\Gamma_s)}}
+  +
+  \sum_aQ_{O8,a}^{\rm curv}
+  \right]_{<8}
+  =
+  0 .
+\]
+Equivalently, define
+\[
+  {\cal R}_\Gamma^{\rm glob}({\mathfrak G}_\Gamma)
+  =
+  \left(
+  {\mathfrak L}_\Gamma({\mathfrak G}_\Gamma)-{\cal A}_\Gamma^{\rm nf},
+  dF_0-\sum_sN_{8,s}\delta_{\Gamma_s}
+  -\sum_aQ_{O8,a}\delta_{O8,a},
+  Q_{\rm lower}^{\rm tot}
+  \right).
+\]
+Then
+\[
+  {\cal R}_\Gamma^{\rm glob}({\mathfrak G}_\Gamma)=0
+  \quad\Longrightarrow\quad
+  {\cal R}_\Gamma({\cal A}_\Gamma;{\cal D}_\Gamma)=0 .
+\]
+The minimal endpoint-real type-I' datum has
+\[
+  Q_{O8,L}=Q_{O8,R}=-16,
+  \qquad
+  N_{8,L}=N_{8,R}=16.
+\]
+Thus
+\[
+  \sum_{\epsilon=L,R}(N_{8,\epsilon}+Q_{O8,\epsilon})=0,
+  \qquad
+  k_\epsilon=\frac{N_{8,\epsilon}}{2}-8=0.
+\]
+At \(Q=7\),
+\[
+  W_7=H^0(\CP^1,\mathcal O(7)),
+  \qquad
+  \dim W_7=8,
+\]
+\[
+  E_7=(W_7\oplus W_7^\vee)^\Omega,
+  \qquad
+  {\rm rk}_{\mathbb C}(E_7^{\mathbb C})=16.
+\]
+The minimal spin\(^c\) \(\CP^2\) source has \(m=0\), \(f_0=13/2\), and
+\[
+  {\mathfrak q}_{C_1}
+  =
+  16\left(\frac{f_0^2}{2}-\frac1{16}\right)
+  =
+  337.
+\]
+For the two endpoints,
+\[
+  Q_{D8/O8}^{<8}
+  =
+  208h_Q+673h_Q^2.
+\]
+A bulk lower-source completion
+\[
+  Q_{\rm bulk}^{<8}
+  =
+  -208h_Q-673h_Q^2
+\]
+gives
+\[
+  Q_{\rm lower}^{\rm tot}=0.
+\]
+Consequently, a datum \({\mathfrak G}_\Gamma^{(7)}\) with
+\[
+  {\mathfrak L}_\Gamma({\mathfrak G}_\Gamma^{(7)})
+  =
+  {\cal A}_\Gamma^{\rm nf}
+\]
+satisfies
+\[
+  {\cal R}_\Gamma^{\rm glob}({\mathfrak G}_\Gamma^{(7)})=0.
+\]
+The localized type-I' readout realizing the finite normal form is explicit.
+Set
+\[
+  W_s=\omega_s e^{-\phi_s},
+  \qquad
+  P_sB_{\CP^2}=0,
+\]
+and choose
+\[
+  P_sG_{\CP^2}
+  =
+  r_{\Gamma,s}^2\widehat\gamma_s,
+  \qquad
+  W_s r_{\Gamma,s}^2
+  =
+  p_{\Gamma,s}\chi_\Gamma
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma).
+\]
+Then
+\[
+  {\cal T}_\Gamma^{\rm rd}
+  =
+  \sum_sW_s r_{\Gamma,s}^2
+  =
+  \chi_\Gamma{\cal T}_{\Gamma,\min}(\varrho_\Gamma).
+\]
+The RR/current row is
+\[
+  \Pi_{\rm EW}\iota_{\Gamma,s}^*C_1
+  =
+  q_\Gamma\theta_{\Gamma,s}^3,
+  \qquad
+  \Pi_{\rm EW}\iota_{\Gamma,s}^*F_2
+  =
+  q_\Gamma d_\Gamma\theta_{\Gamma,s}^3.
+\]
+Choose endpoint-normalized coframes by
+\[
+  P_0^\Gamma\theta_{\Gamma,s}^3
+  =
+  \left(\frac{b_{\Gamma,s}{\cal C}_\Gamma}{W_s}\right)^{1/2}
+  \widehat e_{0,s},
+  \qquad
+  P_h^\Gamma\theta_{\Gamma,s}^3
+  =
+  \left(\frac{b_{\Gamma,s}\rho_{\Gamma,s}{\cal C}_\Gamma}{W_s}\right)^{1/2}
+  \widehat e_{h,s}.
+\]
+The readout gives
+\[
+  C_{0,s}^{\Gamma,{\rm rd}}=b_{\Gamma,s}{\cal C}_\Gamma,
+  \qquad
+  C_{h,s}^{\Gamma,{\rm rd}}
+  =
+  b_{\Gamma,s}\rho_{\Gamma,s}{\cal C}_\Gamma,
+\]
+and hence
+\[
+  \frac{\sum_sC_{h,s}^{\Gamma,{\rm rd}}}
+  {\sum_sC_{0,s}^{\Gamma,{\rm rd}}}
+  =
+  \sum_s b_{\Gamma,s}\rho_{\Gamma,s}
+  =
+  \varrho_\Gamma.
+\]
+The endpoint operators are
+\[
+  B_\sigma^\dagger B_\sigma
+  =
+  m_\sigma |e_0\rangle\langle e_0|
+  +
+  \sum_\alpha
+  \lambda_{\sigma,\alpha}|e_\alpha\rangle\langle e_\alpha|,
+  \qquad
+  \min_\alpha\lambda_{\sigma,\alpha}>m_\sigma,
+\]
+\[
+  B_\chi^\dagger B_\chi
+  =
+  \left(\frac{z_\chi}{L_H}\right)^2{\bf 1}_{E_\chi},
+  \qquad
+  L_Q=
+  \frac{x_{\Gamma,Q}}{\chi_\Gamma}L_{Q,\max}(\varrho_\Gamma).
+\]
+The residual coordinates satisfy
+\[
+  R_T=R_\varrho=R_\epsilon=R_g=R_\chi=0,
+\]
+and
+\[
+  R_x
+  =
+  \frac{\kappa_8L_Q\chi_\Gamma
+  {\cal T}_{\Gamma,\min}(\varrho_\Gamma)}
+  {2Z_{\chi,\max}}
+  -x_{\Gamma,Q}
+  =
+  0.
+\]
+Therefore
+\[
+  {\mathfrak L}_\Gamma({\mathfrak G}_{\Gamma,{\rm loc}}^{(7)})
+  =
+  {\cal A}_\Gamma^{\rm nf}.
+\]
+The extension from the local readout to a global type-I' representative
+separates into a period condition and an endpoint spectral condition.  Let
+\(\omega_Q\) be the integral generator on \(S_Q^1\), normalized by
+\(\int_{S_Q^1}\omega_Q=1\), and set
+\[
+  \ell_{\Gamma,s}
+  =
+  \int_{S_Q^1}\theta_{\Gamma,s}^3 .
+\]
+The RR one-form periods obey
+\[
+  R_{{\rm per},s}
+  =
+  \frac{q_\Gamma\ell_{\Gamma,s}}{2\pi}
+  -n_{\Gamma,s}-\nu_{\Gamma,s},
+  \qquad
+  n_{\Gamma,s}\in{\mathbb Z},
+  \qquad
+  \nu_{\Gamma,s}\in{\mathbb Q}/{\mathbb Z}.
+\]
+A common \(q_\Gamma\) lies on the rational-period locus
+\[
+  q_\Gamma\ell_{\Gamma,s}
+  =
+  2\pi(n_{\Gamma,s}+\nu_{\Gamma,s})
+  \qquad
+  \hbox{for every retained }s.
+\]
+The metric, dilaton, and \(B\)-field rows extend through disjoint endpoint
+collars by partition of unity with preservation of the local readout values.
+For the endpoint operator, let \(D_{\partial,\Gamma}^{(7)}\) be the real
+boundary Dirac--Dolbeault operator on
+\[
+  E_7\oplus E_\sigma\oplus
+  (P_1^\chi\oplus P_2^\chi)\otimes E_\chi .
+\]
+The endpoint spectral condition is
+\[
+  R_{\rm DD}
+  =
+  \left\|
+  \Pi_{\eta_Q}D_{\partial,\Gamma}^{(7)\,2}\Pi_{\eta_Q}
+  -m_\sigma\Pi_{\eta_Q}
+  \right\|
+  +
+  \left\|
+  \Pi_{\eta_Q}^{\perp}D_{\partial,\Gamma}^{(7)\,2}\Pi_{\eta_Q}
+  \right\|
+\]
+\[
+  \quad+
+  \left\|
+  \Pi_\chi D_{\partial,\Gamma}^{(7)\,2}\Pi_\chi
+  -
+  \left(\frac{z_\chi}{L_H}\right)^2\Pi_\chi
+  \right\|,
+  \qquad
+  \Pi_\chi=P_1^\chi\oplus P_2^\chi .
+\]
+The global representative satisfies
+\[
+  R_{{\rm per},s}=0\quad(\forall s),
+  \qquad
+  R_{\rm DD}=0,
+  \qquad
+  Q_{\rm lower}^{\rm tot}=0 .
+\]
+Thus
+\[
+  \Xi_\Gamma^{\rm cp}
+  =
+  \left(
+  \frac{Z_{\Gamma,0}}{Z_{\chi,\max}}
+  \right)^4
+  =
+  \left(
+  \frac{\kappa_8{\cal V}_{\Gamma,Q}}
+  {2Z_{\chi,\max}}
+  \right)^4 .
+\]
+The determinant pass is equivalently
+\[
+  0<{\cal V}_{\Gamma,Q}\le
+  \frac{2Z_{\chi,\max}}{\kappa_8},
+  \qquad
+  z_\chi
+  =
+  F^{-1}\!\left[
+  \left(
+  \frac{\kappa_8{\cal V}_{\Gamma,Q}}
+  {2Z_{\chi,\max}}
+  \right)^4
+  \right].
+\]
+The normalized endpoint coordinate is
+\[
+  x_{\Gamma,Q}
+  =
+  \frac{Z_{\Gamma,0}}{Z_{\chi,\max}}
+  =
+  \frac{\kappa_8{\cal V}_{\Gamma,Q}}{2Z_{\chi,\max}}
+  =
+  \frac{\kappa_8L_Q{\cal T}_\Gamma}{2Z_{\chi,\max}} .
+\]
+Then
+\[
+  \Xi_\Gamma^{\rm cp}=x_{\Gamma,Q}^4,
+  \qquad
+  z_\chi=F^{-1}(x_{\Gamma,Q}^4),
+  \qquad
+  0<x_{\Gamma,Q}\le1 .
+\]
+Combining the sector-sum lower row with the determinant upper row gives
+\[
+  \frac{L_Q}{L_{Q,\max}(\varrho_\Gamma)}
+  \le
+  x_{\Gamma,Q}
+  \le
+  1 .
+\]
+Define
+\[
+  r_{\min}^2(\varrho_\Gamma)
+  =
+  \frac{441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)}
+  {8\pi^2\kappa_8e^{-\phi_0}\Omega_\Gamma},
+  \qquad
+  r_{\max}^2(L_Q)
+  =
+  \frac{2Z_{\chi,\max}}
+  {\kappa_8e^{-\phi_0}\Omega_\Gamma L_Q}.
+\]
+The compactification interval
+\[
+  {\cal I}_{r^2}(\varrho_\Gamma,L_Q)
+  =
+  [r_{\min}^2(\varrho_\Gamma),r_{\max}^2(L_Q)]
+\]
+is populated exactly when
+\[
+  0<L_Q\le L_{Q,\max}(\varrho_\Gamma),
+  \qquad
+  L_{Q,\max}(\varrho_\Gamma)
+  =
+  \frac{16\pi^2Z_{\chi,\max}}
+  {441\,u_\Gamma^{\rm sh}(\varrho_\Gamma)} .
+\]
+
+The matching endpoint determinant spectrum is a paired charged oscillator:
+\[
+  {\cal E}_{1}^{\chi}
+  =
+  {\rm span}\{u,v\}\otimes E_\chi,
+  \qquad
+  {\cal E}_{2}^{\chi}
+  =
+  {\rm span}\{u^2,v^2\}\otimes E_\chi,
+\]
+with
+\[
+  ({\cal B}_{r,\Gamma}^\chi)^\dagger{\cal B}_{r,\Gamma}^\chi
+  =
+  M_\chi^2{\bf 1}_{2d_\chi},
+  \qquad r=1,2 .
+\]
+For positive determinant sign this gives
+\[
+  {\cal N}_\Gamma^\chi=2d_\chi F(M_\chi L_H).
+\]
+The minimal row has \(d_\chi=1\), hence
+\[
+  {\cal N}_\Gamma^\chi=2F(z_\chi),
+  \qquad z_\chi=M_\chi L_H .
+\]
+The local spectrum package identifies \(e_\sigma\) and the paired oscillator
+block \(E_\chi\) inside the same D8/O8 boundary spectrum.
+
+\subsection{Single-Block Boundary Complex}
+
+A local complex that generates the spectrum package has Hilbert space
+\[
+  {\cal H}_\Gamma^{\rm loc}
+  =
+  {\rm span}\{e_\sigma\}
+  \oplus
+  \left(P_1^\chi\oplus P_2^\chi\right)\otimes E_\chi
+  \oplus{\cal H}_\perp ,
+\]
+where
+\[
+  P_1^\chi={\rm span}\{u,v\},
+  \qquad
+  P_2^\chi={\rm span}\{u^2,v^2\}.
+\]
+Let
+\[
+  {\cal Q}_{\Gamma,\sigma}
+  =
+  \sqrt{m_\sigma}\,\Pi_{e_\sigma}
+  \oplus
+  \left({\bf 1}_{P_1^\chi}\oplus{\bf 1}_{P_2^\chi}\right)
+  \otimes B_\chi
+  \oplus Q_\perp .
+\]
+Then
+\[
+  {\cal M}_{\rm img}
+  =
+  {\cal Q}_{\Gamma,\sigma}^\dagger
+  {\cal Q}_{\Gamma,\sigma}\big|_{{\rm span}\{e_\sigma\}},
+  \qquad
+  {\cal B}_{r,\Gamma}^\chi
+  =
+  {\bf 1}_{P_r^\chi}\otimes B_\chi .
+\]
+The current-source row is
+\[
+  {\cal J}_A^{\rm src}
+  =
+  C_{A\sigma}e_\sigma^\flat,
+  \qquad A=3,Y,
+\]
+with
+\[
+  C_{3\sigma}=L_2\sqrt{m_\sigma\delta_\sigma},
+  \qquad
+  C_{Y\sigma}=\rho_\sigma C_{3\sigma}.
+\]
+The charged block obeys
+\[
+  B_\chi^\dagger B_\chi=M_\chi^2{\bf 1}_{E_\chi},
+  \qquad
+  {\rm Str}_{E_\chi}{\bf 1}=d_\chi,
+  \qquad
+  \sigma_\chi=+1 .
+\]
+It follows that
+\[
+  F(M_\chi L_H)=\frac{{\cal N}_\Gamma^\chi}{2d_\chi}.
+\]
+Using the density target,
+\[
+  F(M_\chi L_H)
+  =
+  \frac{21375.716460702053\ldots\,\lambda_F}
+       {2d_\chi w_H^8}
+  \left(\frac{Z_{\Gamma,0}}{v_{\rm EW}}\right)^4 .
+\]
+For \(d_\chi=1\), the right hand side is \(\Xi_\Gamma^{\rm cp}\).  Values in
+\((0,1]\) determine
+\[
+  M_\chi=\frac{z_\chi}{L_H},
+  \qquad
+  F(z_\chi)=\Xi_\Gamma^{\rm cp}.
+\]
+The image mass \(m_\sigma\) enters the source coupling \(C_{A\sigma}\) and
+cancels from \({\cal D}_{AB}\).  The local action supplies \(m_\sigma\) and
+the profile \(e_\sigma\).
+
+\subsection{Profile-To-Matrix Closure}
+
+Identify the image eigenline with
+\[
+  e_\sigma=\psi_\sigma,
+  \qquad
+  \int_{\Gamma_{\rm int}}d\nu_\Gamma|\psi_\sigma|^2=1 .
+\]
+For the weighted current Gram matrix
+\[
+  {\cal G}_{AB}^{(\psi)}
+  =
+  \int_{\Gamma_{\rm int}}d\nu_\Gamma\,
+  \psi_\sigma^2
+  \gamma_\Gamma^{-1}(\theta_\Gamma^A,\theta_\Gamma^B),
+  \qquad A,B=3,Y ,
+\]
+define
+\[
+  c_\sigma^B
+  =
+  \left({\cal G}^{(\psi)-1}\right)^{BA}(g_\sigma)_A .
+\]
+The minimal source profile is
+\[
+  \Xi_{\sigma,\min}
+  =
+  L_2\psi_\sigma c_\sigma^B\theta_{\Gamma B},
+  \qquad
+  \Theta_{{\rm img},\sigma}
+  =
+  \sqrt{m_\sigma}\,\Xi_{\sigma,\min}.
+\]
+Then
+\[
+\begin{aligned}
+  C_{A\sigma}
+  &=
+  \int_{\Gamma_{\rm int}}d\nu_\Gamma\,
+  \psi_\sigma
+  \gamma_\Gamma^{-1}
+  (\theta_\Gamma^A,\Theta_{{\rm img},\sigma})\\
+  &=
+  L_2\sqrt{m_\sigma}\,
+  {\cal G}_{AB}^{(\psi)}c_\sigma^B
+  =
+  L_2\sqrt{m_\sigma}(g_\sigma)_A .
+\end{aligned}
+\]
+Thus
+\[
+  M_{11}=m_\sigma,
+  \qquad
+  {\cal D}_{AB}
+  =
+  \frac{C_{A\sigma}C_{B\sigma}}{m_\sigma L_2^2}
+  =
+  (g_\sigma)_A(g_\sigma)_B .
+\]
+The source-profile norm is
+\[
+  \frac{\|\Xi_{\sigma,\min}\|_\Gamma^2}{L_2^2}
+  =
+  g_\sigma^T{\cal G}^{(\psi)-1}g_\sigma .
+\]
+In an orthonormal weighted current frame this gives
+\[
+\begin{array}{c|c}
+{\rm branch}&\|\Xi_{\sigma,\min}\|_\Gamma^2/L_2^2\\ \hline
++&54.478818707582\ldots\\
+-&52.600294175197\ldots .
+\end{array}
+\]
+The image row is therefore reduced to the local production of
+\(\psi_\sigma\), \(m_\sigma\), and \({\cal G}^{(\psi)}\).
+
+If a Schur slope came from an effective weak period,
+\[
+  \rho_\sigma=2Q_{\rm eff}^{(\sigma)}+1 .
+\]
+The two branches give
+\[
+  Q_{\rm eff}^{(+)}
+  =
+  9.333551007611\ldots,
+  \qquad
+  Q_{\rm eff}^{(-)}
+  =
+  5.818646994052\ldots .
+\]
+Both values lie outside the integral weak-period lattice.  A period relabel is
+therefore excluded; the viable realization rows are Green-source coframe
+deformation or projection inside the localized image sector.
+% CONTROL: The scale row uses C_W to separate the Weinberg length constant
+% from the Hodge entry C in the local A,B,C notation.
+
+\subsection{Boundary Operator Package}
+
+Collect the local realization data as
+\[
+  {\cal B}_\Gamma
+  =
+  \left(
+  d\nu_\Gamma,\,
+  \theta_\Gamma^a,\,
+  \theta_\Gamma^Y,\,
+  \eta_0,\,
+  \Delta_{\Gamma,j},\,
+  \mu_\Gamma^2
+  \right).
+\]
+The branch-operator realization is then governed by the boundary system
+\[
+\begin{array}{ll}
+{\rm current:}&
+\displaystyle
+\int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+\gamma_\Gamma^{-1}(\theta_\Gamma^a,\theta_\Gamma^b)
+=L_{2,\Gamma}^2\delta^{ab},
+\\[3mm]
+{\rm neutral:}&
+\displaystyle
+L_Q^2=(1,1){\cal L}_\Gamma\binom{1}{1},
+\qquad
+Q\eta_0=0,
+\\[3mm]
+{\rm endpoint:}&
+\displaystyle
+Z_{\mathcal E,1}
+=
+\int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,|\eta_0|^2
+\|\widehat\eta_0\odot\widehat\eta_0\|^2
+=Z_0I_0,
+\\[3mm]
+{\rm complement:}&
+\displaystyle
+\ker\Delta_{\Gamma,j}={\rm Im}\,A_j,
+\qquad
+M_{\perp,j}^2>0,
+\\[3mm]
+{\rm image:}&
+\displaystyle
+{\cal D}_{AB}
+=
+L_2^{-2}
+\langle{\cal J}_A,{\cal M}_{\rm img}^{-1}{\cal J}_B\rangle_\Gamma,
+\qquad A,B=3,Y,
+\\[1mm]
+&
+\displaystyle
+\Delta_{\rm rank}=0,\qquad
+({\cal D}_{33},{\cal D}_{3Y}/{\cal D}_{33})
+\in
+\{(\delta_+,\rho_+),(\delta_-,\rho_-)\},
+\\[3mm]
+{\rm auxiliary:}&
+\displaystyle
+S_{\rm aux}^{\Gamma}
+\leadsto
+\mu_\Gamma^2
+\begin{pmatrix}
+0&A_j^\dagger\\
+A_j&-A_jA_j^\dagger
+\end{pmatrix}.
+\end{array}
+\]
+A D10 realization that hosts the branch operator supplies the displayed
+boundary system.  The absolute electromagnetic normalization, the neutral
+mass, and the Schur coefficient are outputs once \({\cal B}_\Gamma\) is
+computed.
+% CONTROL: Candidate-filter audits remain in codexVersion-proof-gates.md,
+% project-status-gates-audit.md, and progressReport10.tex.
+
+\begin{proposition}[Boundary-current closure constraint]
+\label{prop:d10currentunit}
+A D10 IIA realization hosting the branch operator with unit current metric
+supplies a localized weak-current coframe satisfying
+\[
+  \int_{\Gamma_{\rm EW,int}}d\nu_\Gamma\,
+  \gamma_\Gamma^{-1}(\theta_\Gamma^a,\theta_\Gamma^b)
+  =
+  L_{2,\Gamma}^2\delta^{ab}.
+\]
+When this closure equation holds, define
+\[
+  e_\Gamma^a=\frac{\theta_\Gamma^a}{L_{2,\Gamma}}.
+\]
+Then
+\[
+  \langle e_\Gamma^a,e_\Gamma^b\rangle_{\rm cur}=\delta^{ab},
+  \qquad
+  \kappa_{\rm cur}=1,
+\]
+and
+\[
+  A_j=\sum_aT_a^{(j)}\otimes e_\Gamma^a,
+  \qquad
+  A_j^\dagger A_j=j(j+1)\bm1_{V_j}.
+\]
+\end{proposition}
+
+\begin{proof}
+The displayed norm equation makes \(e_\Gamma^a\) orthonormal in the retained
+current Hilbert space.  Substitution into the current operator leaves the
+finite \(\SU(2)\) Casimir \(\sum_aT_a^{(j)}T_a^{(j)}=j(j+1)\bm1\).
+\end{proof}
+
+% CONTROL: Derive theta_Gamma^a, dnu_Gamma, and L_2,Gamma from the localized
+% D10 boundary action in codexVersion-proof-gates.md and Report 10.
+
+\section{Product-To-Flag Interface}
+
+The source-backed D10 base is \(\CP^2\times\CP^1\).  The active refinement is
+the flag
+\[
+  F_{1,2}(\C^3)=\SU(3)/T^2=P(Q)\longrightarrow\CP^2,
+\]
+where \(Q\) is the tautological quotient bundle.  With
+\[
+  h=c_1(\cO_{\CP^2}(1)),
+  \qquad
+  \eta=c_1(\cO_{P(Q)}(1)),
+\]
+the projective-bundle relation is
+\[
+  \eta^2-h\eta+h^2=0.
+\]
+For a retained primitive class
+\[
+  \zeta=P h+Q\eta,
+\]
+the cubic is
+\[
+  \zeta^3=3PQ(P+Q)h^2\eta.
+\]
+This gives a D10 flag-ring normalization candidate for the boundary/current
+sector.
+
+The KLT flag metric uses
+\[
+  J=-ae^{12}+be^{34}-ce^{56},
+  \qquad a,b,c>0,
+\]
+with
+\[
+  d^2=abc.
+\]
+The \(\CP^2\)-base-symmetric line is
+\[
+  a=b=A,\qquad c=\lambda A.
+\]
+On this line,
+\[
+  W_2^-
+  =
+  -\frac{2iA^2(1-\lambda)}{3d}
+  \left(e^{12}-e^{34}-2\lambda e^{56}\right),
+  \qquad d^2=\lambda A^3.
+\]
+The KLT admissibility expression reduces to
+\[
+  \frac{-5\lambda^2+12\lambda-4}{8A\lambda},
+  \qquad
+  \frac25\leq\lambda\leq2.
+\]
+The D10 stationary value \(\lambda_*\) must lie in this interval.
+
+% CONTROL: The product-to-flag transition is kept as a proof gate in the
+% auxiliary file. The rendered text records the algebraic interface.
+
+\section{\texorpdfstring{Finite Direction, Branched Base, And \(S^3\) Fiber}{Finite Direction, Branched Base, And S3 Fiber}}
+
+The finite-direction reading places the neutral \(O(1)\) field as a
+two-sheet connection.  For a finite field \(\Phi_0\),
+\[
+  \ell_H=\frac{1}{\|\Phi_0\|}=\frac{\sqrt2}{v_{\rm EW}}.
+\]
+This supplies a language for the scalar Hessian and the electroweak scale.
+The same \(Q\)-neutral \(O(1)\) component protects the photon and provides the
+branch \(j=\half\) sector.
+
+The branched-projective clue supplies the four-dimensional base replacement
+\[
+  \CP^2/\hbox{complex conjugation}=S^4.
+\]
+The quotient map \(\CP^2\to S^4\) is a two-fold branched covering with branch
+locus \(\mathbb{RP}^2\).  Away from \(\mathbb{RP}^2\) it has two local sheets;
+along \(\mathbb{RP}^2\) the sheets meet.  This gives a geometric setting for
+double-cover memory, branch/interface data, and spin or twisted sectors.
+
+The corresponding seven-dimensional Hopf model is
+\[
+  S^3\longrightarrow S^7\longrightarrow S^4,
+  \qquad 3+4=7.
+\]
+Replacing the spherical base by the projective base asks for an
+\(S^3\)-type parent over \(\CP^2\):
+\[
+  S^3\hbox{-type fiber}\longrightarrow K_7^{\rm br}\longrightarrow\CP^2.
+\]
+A precise geometric test object is the pullback
+\[
+  K_7^{\rm br}=\CP^2\times_{S^4}S^7.
+\]
+Over the smooth locus of the branched map, \(K_7^{\rm br}\) gives an
+\(S^3\)-fibered seven-dimensional space over \(\CP^2\); over
+\(\mathbb{RP}^2\) it carries the special branch/interface data.
+
+The D10 compactification keeps the six-dimensional projective object
+\[
+  K_6=\CP^2\times\CP^1
+\]
+with retained \(C_1\), \(F_2\), current, boundary, and branch data.  Local
+\(\SU(2)\) double-cover memory can be carried by current, flat, spin, branch,
+or boundary sectors inside this D10 object.  The flag target
+\[
+  \CP^1\longrightarrow F_{1,2}(\C^3)=\SU(3)/T^2\longrightarrow\CP^2
+\]
+ties the weak projective fiber to the projective base.
+
+The D9 projection keeps the \(\CP^2\) base and the electromagnetic stabilizer:
+\[
+  K_{5,{\rm eff}}=\CP^2\times S^1_Q.
+\]
+The weak projective direction is projected by the neutral \(O(1)\) section,
+\[
+  \eta_0\in H^0(\CP^1,\cO(1)),
+  \qquad Q\eta_0=0.
+\]
+The ladder is therefore
+\[
+\begin{array}{ccccc}
+S^3 &\longrightarrow& S^7 &\longrightarrow& S^4\\[1mm]
+S^3\hbox{-type} &\longrightarrow& K_7^{\rm br} &\longrightarrow& \CP^2\\[1mm]
+\CP^1 &\longrightarrow& K_6 &\longrightarrow& \CP^2\\
+&& \downarrow Q &&\\[-1mm]
+S^1_Q &\longrightarrow& K_5 && \CP^2 .
+\end{array}
+\]
+The branched \(\CP^2\to S^4\) map is the comparison between the spherical
+Hopf base and the projective base; the \(S^3\)-type fiber supplies the
+seven-dimensional parent.
+
+The pure Hopf branch gives a useful control endpoint.  Keeping \(S^7\) as the
+parent and projecting to the electromagnetic stabilizer leads to
+\[
+  S^4\times S^1_Q,
+  \qquad
+  \mathrm{Spin}(5)\times\U(1)_Q\simeq \mathrm{Sp}(2)\times\U(1)_Q
+\]
+at the double-cover level, or \(\SO(5)\times\U(1)_Q\) at the adjoint level.
+The projective lift
+\[
+  \CP^2\simeq \SU(3)/S(\U(2)\times\U(1))
+\]
+supplies the eight-generator \(SU(3)\) action and the \(\Z_3\) center entering
+\[
+  (\SU(3)_c\times\U(1)_Q)/\Z_3.
+\]
+Thus the \(S^7/S^4\) chain is the quaternionic control branch.  The \(\CP^2\)
+lift is the color branch.
+
+% CONTROL: The pullback K7^br=CP2 x_{S4} S7 and the branch-sector
+% representation test are recorded in branched-cp2-s4-s3-ladder.md.
+
+\section{Numerical Consequences}
+
+At \(c=1\),
+\[
+  \Xp(3/4)=\frac18(-3+\sqrt{57})=0.568729\ldots,
+  \qquad
+  \Xp(2)=-1+\sqrt3=0.732051\ldots .
+\]
+Hence
+\[
+  \sin^2\theta_W
+  =
+  1-\frac{\Xp(3/4)}{\Xp(2)}
+  =
+  0.223101\ldots,
+\]
+and
+\[
+  \tan^2\theta_{\rm pole}=0.2871691363429836.
+\]
+The same definitions give the custodial tree-level identity.  Since
+\[
+  \cos^2\theta_W=\frac{\Xp(3/4)}{\Xp(2)},
+  \qquad
+  \frac{M_W^2}{M_Z^2}=\frac{\Xp(3/4)}{\Xp(2)},
+\]
+one has
+\[
+  \rho_{\rm cust}
+  =
+  \frac{M_W^2}{M_Z^2\cos^2\theta_W}
+  =1.
+\]
+The absolute electromagnetic normalization is assigned to the D10 boundary
+length matrix.  With
+\[
+  L_Q^2=(1,1){\cal L}_\Gamma\binom{1}{1},
+  \qquad
+  \alpha_\Gamma=\frac{C^2}{4\pi L_Q^2},
+\]
+alpha is obtained from the same localized current calculation that gives
+\(M_Z\) and the photon null direction.
+% CONTROL: Tuple-family scans are density diagnostics and rejected as
+% construction evidence.  The active calculation is the D10 Gamma_EW action.
+
+\section{Conclusion}
+
+The D10 boundary-current route has a compact operator core.  The
+Borel--Weil weak sectors supply \(j=0,\half,1\).  The finite current zero modes
+give \(A_j^\dagger A_j=J\).  A single Stueckelberg boundary Schur completion
+gives the block \(\cA(J)\).  The \(Q\)-boundary sector protects the photon and
+descends the global form to \((\SU(3)_c\times\U(1)_Q)/\Z_3\).  The D8-like
+boundary \(\Gamma_{\rm EW}\) also supplies a natural location for the Romans
+jump, the RR/current vertical length, and the auxiliary field producing the
+negative diagonal.
+
+The finite electroweak Connes layer supplies the scalar-vacuum dictionary:
+\(\ell_H=\sqrt2/v_{\rm EW}\), \(Q\eta_0=0\), the standard \(W/Z/\gamma\)
+Hessian, and the local \((h,\sigma)\) extension.  This fixes the finite sheet
+scale.  A stationary D10 realization is specified by the common compactification
+potential
+\[
+  V_{\rm eff}(\rho,\lambda,v_F,\theta_H,\sigma,\ldots)
+\]
+with a stable or metastable D10 threshold window above the D9 endpoint.  The
+KO6 layer supplies the finite-triple tests; fermion data are assigned to the
+full Standard-Model lift.
+
+The resulting conditional manuscript is concentrated on one boundary/current
+sector.  Its realization data are the localized vertical current, the unit
+current metric, the Schur auxiliary coefficient and complement gap, and the
+finite/KK scalar Hessian on the D10 interface.
+
+\begingroup
+\raggedright
+\begin{thebibliography}{99}
+
+\bibitem{Weinberg1983}
+S. Weinberg,
+``Charges from extra dimensions,''
+Phys. Lett. B 125 (1983) 265.
+
+\bibitem{KoerberLustTsimpis2008}
+P. Koerber, D. Lust, and D. Tsimpis,
+``Type IIA \(\AdS_4\) compactifications on cosets, interpolations and domain
+walls,''
+JHEP 07 (2008) 017, arXiv:0804.0614.
+
+\bibitem{HertzbergKachruTaylorTegmark2007}
+M. P. Hertzberg, S. Kachru, W. Taylor, and M. Tegmark,
+``Inflationary constraints on type IIA string theory,''
+arXiv:0711.2512.
+
+\bibitem{BergshoeffKalloshOrtinRoestVanProeyen2001}
+E. Bergshoeff, R. Kallosh, T. Ortin, D. Roest, and A. Van Proeyen,
+``New formulations of D=10 supersymmetry and D8-O8 domain walls,''
+arXiv:hep-th/0103233.
+
+\bibitem{GreenHarveyMoore1996}
+M. B. Green, J. A. Harvey, and G. Moore,
+``I-brane inflow and anomalous couplings on D-branes,''
+arXiv:hep-th/9605033.
+
+\bibitem{MinasianMoore1997}
+R. Minasian and G. Moore,
+``K-theory and Ramond-Ramond charge,''
+arXiv:hep-th/9710230.
+
+\bibitem{FreedWitten1999}
+D. S. Freed and E. Witten,
+``Anomalies in string theory with D-branes,''
+arXiv:hep-th/9907189.
+
+\bibitem{HenryLabordereJulia2001}
+P. Henry-Labordere and B. Julia,
+``Gravitational couplings of orientifold-planes,''
+arXiv:hep-th/0112065.
+
+\bibitem{Payen2007}
+R. Payen,
+``An action for Chan-Paton factors,''
+arXiv:0708.0888.
+
+\bibitem{BouwknegtSchoutensLudwig1995}
+P. Bouwknegt, A. W. W. Ludwig, and K. Schoutens,
+``Spinon basis for higher level SU(2) WZW models,''
+arXiv:hep-th/9412108.
+
+\bibitem{Manton1979}
+N. S. Manton,
+``A new six-dimensional approach to the Weinberg--Salam model,''
+Nucl. Phys. B 158 (1979) 141.
+
+\bibitem{Hosotani1983}
+Y. Hosotani,
+``Dynamical mass generation by compact extra dimensions,''
+Phys. Lett. B 126 (1983) 309.
+
+\bibitem{ConnesLott1990}
+A. Connes and J. Lott,
+``Particle models and noncommutative geometry,''
+Nucl. Phys. B Proc. Suppl. 18B (1990) 29.
+
+\bibitem{Connes1989}
+A. Connes,
+``Essay on physics and non-commutative geometry,''
+IHES preprint M/89/69.
+
+\bibitem{ChamseddineConnes2012}
+A. H. Chamseddine and A. Connes,
+``Resilience of the spectral standard model,''
+JHEP 09 (2012) 104, arXiv:1208.1030.
+
+\bibitem{ChamseddineConnesVanSuijlekom2013a}
+A. H. Chamseddine, A. Connes, and W. D. van Suijlekom,
+``Inner fluctuations in noncommutative geometry without the first order
+condition,''
+J. Geom. Phys. 73 (2013) 222, arXiv:1304.7583.
+
+\bibitem{ChamseddineConnesVanSuijlekom2013b}
+A. H. Chamseddine, A. Connes, and W. D. van Suijlekom,
+``Beyond the spectral standard model: emergence of Pati--Salam unification,''
+JHEP 11 (2013) 132, arXiv:1304.8050.
+
+\bibitem{Martinetti2015}
+P. Martinetti,
+``Twisted spectral geometry for the standard model,''
+arXiv:1503.07548.
+
+\bibitem{FilaciMartinettiPesco2020}
+M. Filaci, P. Martinetti, and S. Pesco,
+``Twisted Standard Model in noncommutative geometry I: the field content,''
+arXiv:2008.01629.
+
+\bibitem{MartinettiWulkenhaar2002}
+P. Martinetti and R. Wulkenhaar,
+``Discrete Kaluza--Klein from scalar fluctuations in noncommutative
+geometry,''
+J. Math. Phys. 43 (2002) 182, arXiv:hep-th/0104108.
+
+\bibitem{ChamseddineConnesMarcolli2007}
+A. H. Chamseddine, A. Connes, and M. Marcolli,
+``Gravity and the standard model with neutrino mixing,''
+Adv. Theor. Math. Phys. 11 (2007) 991, arXiv:hep-th/0610241.
+
+\bibitem{Stephan2009}
+C. A. Stephan,
+``Krajewski diagrams and the standard model,''
+J. Math. Phys. 50 (2009) 043515, arXiv:0809.5137.
+
+\bibitem{DAndreaDabrowski2016}
+F. D'Andrea and L. Dabrowski,
+``The standard model in noncommutative geometry and Morita equivalence,''
+J. Noncommut. Geom. 10 (2016) 551, arXiv:1501.00156.
+
+\bibitem{DabrowskiSitarz2019}
+L. Dabrowski and A. Sitarz,
+``Fermion masses, mass-mixing and the almost commutative geometry of the
+standard model,''
+JHEP 02 (2019) 068, arXiv:1806.07282.
+
+\bibitem{DabrowskiMukhopadhyayPozar2025}
+L. Dabrowski, S. Mukhopadhyay, and F. Pozar,
+``Spectral torsion of the internal noncommutative geometry of the standard
+model,''
+arXiv:2511.08159.
+
+\bibitem{Hillman2017}
+J. A. Hillman,
+``An explicit formula for a branched covering from \(CP^2\) to \(S^4\),''
+arXiv:1705.05038.
+
+\bibitem{AtiyahMantonSchroers2011}
+M. F. Atiyah, N. S. Manton, and B. J. Schroers,
+``Geometric models of matter,''
+Proc. R. Soc. A 468 (2012) 1252, arXiv:1108.5151.
+
+\end{thebibliography}
+\endgroup
+
+\end{document}

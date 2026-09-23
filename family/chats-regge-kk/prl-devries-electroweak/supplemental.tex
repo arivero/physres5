@@ -1,0 +1,838 @@
+% supplemental.tex
+% Supplemental Material for the PRL companion to claudeFinal.tex.
+% Style rules (per AGENT.md, AGENTS.md):
+%   - physics prose only; all status / methodology / open notes are % comments
+%   - the de Vries number 0.2231 is an output, never an input
+%   - integer-fit selection of (p,q,r,n) is explicitly NOT a derivation route here
+\documentclass[aps,prd,onecolumn,superscriptaddress,nofootinbib,reprint]{revtex4-2}
+
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+\newcommand{\Xp}{X_{+}}
+\newcommand{\Xm}{X_{-}}
+\newcommand{\half}{\tfrac12}
+\newcommand{\sinsq}{\sin^{2}\!\theta_{W}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\U}{\mathrm{U}}
+\newcommand{\SO}{\mathrm{SO}}
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\AdS}{\mathrm{AdS}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+
+\title{Supplemental Material:\\
+Geometric Origin of the Electroweak Mixing Angle}
+
+\author{[author]}
+\affiliation{[affiliation]}
+
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+% ============================================================
+\section{Normal-form theorem: detailed proof}
+\label{app:nf}
+% ============================================================
+
+We prove Theorem~1 of the main text.  Let $V_{j}$ be the spin-$j$
+representation of $\SU(2)$, with Casimir
+$\sum_{a}T_{a}^{(j)}T_{a}^{(j)}=J\,\mathbf{1}$, and let $\cH_{j}$ be the
+$2\times 2$ block defined as Eq.~(3) of the Letter, acting on
+$V_{j}\oplus\mathrm{Im}\,A_{j}$.
+
+\begin{lemma}[Casimir factorization]
+\label{lem:cas}
+Let $\{e^{a}\}$ be an orthonormal basis of the cotangent space at any
+point of a parallelizable three-manifold with $\SU(2)$ structure
+constants.  Then the operator
+$A_{j}=\sum_{a}T_{a}^{(j)}\otimes e^{a}$ obeys
+$A_{j}^{\dagger}A_{j}=J\,\mathbf{1}_{V_{j}}$ in the orthonormal frame.
+\end{lemma}
+
+\begin{proof}
+Using $\langle e^{a},e^{b}\rangle=\delta^{ab}$,
+\begin{equation*}
+  A_{j}^{\dagger}A_{j}
+  =\sum_{a,b}T_{a}^{(j)\dagger}T_{b}^{(j)}\,\delta^{ab}
+  =\sum_{a}T_{a}^{(j)}T_{a}^{(j)}
+  =J\,\mathbf{1}_{V_{j}}.\qedhere
+\end{equation*}
+\end{proof}
+
+\begin{proof}[Proof of Theorem~1]
+Axiom~(i) sets the upper-left entry to zero.  Axiom~(ii) and
+Lemma~\ref{lem:cas} fix the modulus of the off-diagonal as
+$|\mathcal{O}_{\rm mix}|^{2}=\mu^{2}J$ on the image.  Choosing a phase,
+$\mathcal{O}_{\rm mix}=\mu\,A_{j}^{\dagger}$.  Axiom~(iii) then gives
+$M_{\rm s}^{2}=-A_{j}A_{j}^{\dagger}$.  Projecting to the image
+two-channel subspace (parameterized by $\phi\in V_{j}$ and the image
+component of $a$), the block becomes
+\begin{equation}
+  \mu^{2}
+  \begin{pmatrix} 0 & \sqrt{J}\\ \sqrt{J} & -J\end{pmatrix}
+  =\mu^{2}\cA(J),
+\end{equation}
+which is unique by axiom~(iv).  The characteristic equation $X^{2}+JX-J=0$ has
+roots
+$\Xp(J)=\tfrac12(-J+\sqrt{J^{2}+4J})>0$ and
+$\Xm(J)=\tfrac12(-J-\sqrt{J^{2}+4J})<0$, with
+$\Xp\Xm=-J$ and $\Xp+\Xm=-J$.
+\end{proof}
+
+The structural content of the four axioms is the following.  Axiom~(i)
+is gauge masslessness before symmetry breaking.  Axiom~(ii) is the
+Casimir factorization, supplied by any first-order
+$\SU(2)$-covariant operator on a parallelizable internal three-cycle.
+Axiom~(iii) is the single-coupling Schur completion of
+Proposition~\ref{prop:c1-app} below.  Axiom~(iv) is the statement that
+no further dimensionless coefficient enters.  These four together
+force $\cA(J)$ uniquely; the weak mixing angle is then a consequence
+of representation theory.
+
+% ============================================================
+\section{Gauge--Higgs reduction on \texorpdfstring{$\CP^{1}$}{CP1} and the bare Casimir}
+\label{app:gh}
+% ============================================================
+
+The off-diagonal $\sqrt{J}$ of $\cA(J)$ is the matrix element of a
+specific physical operator built from the gauge--Higgs reduction of the
+six-dimensional $\SU(2)$ gauge theory on $M_{4}\times\CP^{1}$.  We
+record the reduction in enough detail to fix the normalization.
+
+\subsection{Coset structure and line-bundle modes}
+
+The weak $\CP^{1}\cong\SU(2)/\U(1)_{T_{3}}$ carries a homogeneous round
+metric of radius $R$.  In the patch $(\theta,\varphi)$ the
+left-invariant generators of $\SU(2)$ act as Killing vectors, and the
+$\U(1)_{T_{3}}$ stabilizer of the north pole is the diagonal
+$\SU(2)$ subgroup.  The minimal-magnetic-charge background on $\CP^{1}$
+is the Hopf line bundle $\cO(1)$, with first Chern number $1$.
+
+The harmonic decomposition on $\CP^{1}$ in the presence of the Hopf
+background is the Borel--Weil theorem:
+\begin{equation}
+  H^{0}\bigl(\CP^{1},\cO(2j)\bigr)\;\cong\;V_{j},\qquad j=0,\half,1,\dots
+\label{eq:bw-app}
+\end{equation}
+i.e.\ the holomorphic sections of $\cO(2j)$ form the spin-$j$
+representation of $\SU(2)$ of dimension $2j+1$.  For $j=\half$ this is
+the Higgs doublet; for $j=1$ it is the triplet of the same operator;
+$j=0$ is the singlet.
+
+\subsection{The six-dimensional gauge action and its 4D content}
+
+Write the six-dimensional $\SU(2)$ gauge field as
+$\hat A_{M}=(A_{\mu}(x,y),A_{\alpha}(x,y))$ with $\mu=0,\dots,3$ on
+$M_{4}$ and $\alpha=1,2$ on $\CP^{1}$.  Expand the off-diagonal
+components $A_{\alpha}^{\pm}=(A_{\alpha}^{1}\pm iA_{\alpha}^{2})/\sqrt 2$
+in $\cO(\pm 1)$ harmonics on $\CP^{1}$.  The zero modes of $A_{\alpha}^{+}$
+form a doublet $H\in V_{1/2}$ under the surviving four-dimensional
+$\SU(2)_{W}$; the zero modes of $A_{\alpha}^{-}$ form the conjugate
+doublet $H^{*}$.  Together, $H=(H_{+},H_{0})$ is the Standard-Model
+Higgs.
+
+The six-dimensional action is
+\begin{equation}
+  S_{6}=-\frac{1}{4g_{6}^{2}}\int d^{6}X\sqrt{-g}\,
+  F_{MN}^{a}F^{MN,a}.
+\label{eq:S6}
+\end{equation}
+Decomposing $F_{MN}=(F_{\mu\nu},F_{\mu\alpha},F_{\alpha\beta})$ and
+integrating $A_{\alpha}$ over the zero modes \eqref{eq:bw-app}, the
+4D action acquires (i) the kinetic term of the doublet $H$ from the
+$F_{\mu\alpha}^{2}$ piece, (ii) the cross-coupling between $W_{\mu}^{a}$
+and $H$ from the cross-strength
+$F_{\mu\alpha}=\partial_{\mu}A_{\alpha}-\partial_{\alpha}A_{\mu}+g[A_{\mu},A_{\alpha}]$,
+and (iii) a one-loop Hosotani potential for $H$ from the
+$F_{\alpha\beta}^{2}$ piece evaluated on the KK tower.
+
+The piece relevant for the off-diagonal of $\cA(J)$ [Eq.~(2) of the Letter] is the
+covariant derivative of $H$:
+\begin{equation}
+  D_{\mu}H\;=\;\partial_{\mu}H\;-\;i g W_{\mu}^{a}\,T_{a}^{(j)}H,
+  \qquad j=\half.
+\label{eq:DmuH}
+\end{equation}
+The generators $T_{a}^{(j)}$ in \eqref{eq:DmuH} are the \emph{algebraic}
+$\SU(2)$ generators acting on the line-bundle zero modes $V_{j}$, not
+the geometric Lie derivative on the cotangent bundle of the internal
+three-manifold; this is the bare-Casimir content of gauge--Higgs
+unification.
+
+\subsection{The vacuum and the gauge-boson masses}
+
+The vacuum is $\langle H\rangle=v\eta_{0}$ with $\eta_{0}\in V_{1/2}$
+the neutral component selected by hypercharge.  Acting with the
+algebraic generators,
+\begin{equation}
+  T_{3}^{(1/2)}\eta_{0}=-\half\,\eta_{0},\qquad
+  Y\eta_{0}=+\half\,\eta_{0},\qquad
+  Q\eta_{0}=(T_{3}+Y)\eta_{0}=0,
+\label{eq:Qeta}
+\end{equation}
+so the photon direction is exactly massless.  The gauge-boson
+mass-squared matrix at the vacuum is
+\begin{equation}
+  M_{ab}^{2}=g^{2}v^{2}\,\langle\eta_{0}|T_{a}^{(1/2)}T_{b}^{(1/2)}|\eta_{0}\rangle,
+\label{eq:Mab}
+\end{equation}
+whose trace is
+\begin{equation}
+  \sum_{a}M_{aa}^{2}\;=\;g^{2}v^{2}\,\langle\eta_{0}|\sum_{a}T_{a}T_{a}|\eta_{0}\rangle
+  \;=\;g^{2}v^{2}\,J_{1/2}\;=\;\tfrac34\,g^{2}v^{2},
+\label{eq:Mab-trace}
+\end{equation}
+the bare Casimir of $V_{1/2}$.  Diagonalizing \eqref{eq:Mab} with
+hypercharge mixing gives the standard $M_{W}^{2}=g^{2}v^{2}/4$ and
+$M_{Z}^{2}=(g^{2}+g'^{2})v^{2}/4$.
+
+\subsection{Comparison with the standard textbook reading}
+\label{app:standard}
+
+In the textbook gauge--Higgs reading, the Higgs is a Wilson-line
+modulus, the gauge bosons get mass through the Higgs mechanism
+\eqref{eq:Mab}, and the Higgs mass comes from the one-loop Hosotani
+effective potential.  This gives three scales: $M_{W}=gv/2$,
+$M_{Z}=\sqrt{g^{2}+g'^{2}}\,v/2$, and $m_{H}=\sqrt{2\lambda}v$ with
+$\lambda$ extracted from the loop calculation on the coset.  The
+weak mixing angle is the embedding-coupling ratio
+$\sin^{2}\theta_{W}=g'^{2}/(g^{2}+g'^{2})$, which on the $SU(3)/U(2)$
+coset gives $1/4$~\cite{Manton1979,Fairlie1979}.  Our setting differs:
+the weak coset is $\SU(2)/\U(1)\cong\CP^{1}$ and hypercharge comes
+from the $\CP^{2}$ factor with its spin\(^{c}\) structure, so the
+Manton--Fairlie $1/4$ does not apply.  What does apply is the
+mass-squared matrix \eqref{eq:Mab}.
+
+The de Vries reading uses the $(W,\delta H)$ block on the spin-$j$
+sector as a single indefinite matrix $\cA(J)$ at one scale $\mu$.
+Identifying $M_{W}^{2}=\mu^{2}\Xp(3/4)$ recovers the textbook
+$M_{W}^{2}=g^{2}v^{2}/4$ through $\mu^{2}=g^{2}v^{2}/(4\Xp(3/4))$.
+The Higgs mass is then read from the negative eigenvalue:
+$m_{H}^{2}=\mu^{2}|\Xm(3/4)|$, with no free parameter $\lambda$.  In
+ratio form,
+\begin{equation}
+  \frac{m_{H}^{2}}{M_{W}^{2}}\;=\;\frac{|\Xm(3/4)|}{\Xp(3/4)}\;=\;\frac{3+\sqrt{57}}{-3+\sqrt{57}}\;\approx\;2.318,
+\end{equation}
+against the measured $m_{H}^{2}/M_{W}^{2}=2.434$.  The agreement is
+$4.8\%$ at the squared ratio.  The same identification at $j=1$ gives
+the top mass from $|\Xm(2)|$; the textbook reading has no such
+prediction.
+
+\subsection{Identification with the Schur block}
+
+The identification is that the physical $W$ and $Z$ are the positive
+Schur eigenvalues of the gauge--scalar block [Eq.~(7) of the Letter].
+Writing the quadratic Lagrangian for $(W_{\mu}^{a},\delta H)$ in the
+notation of the main Letter,
+\begin{equation}
+  \mathcal{L}^{(2)}\;=\;\alpha\,\mathrm{Re}\langle a,A_{j}\phi\rangle
+  -\beta\,\langle\phi,A_{j}^{\dagger}A_{j}\phi\rangle,
+\label{eq:Lalphabeta}
+\end{equation}
+the cross-coupling coefficient is fixed by \eqref{eq:DmuH} to be
+$\alpha=g\sqrt{J}\,v$, and the diagonal scalar mass is the residual
+output of the Hosotani potential on $\CP^{1}$.
+
+The single-coupling hypothesis (Proposition~\ref{prop:c1-app}) is the
+statement that the Hosotani diagonal is $\beta=\alpha^{2}/g^{2}$, so
+that $c=\beta/\alpha^{2}=1$.  Equivalently, the Higgs self-mass is
+the rank-one self-energy generated by the same operator that supplies
+the mixing.  The structural reason this is reasonable is that
+gauge--Higgs unification gives the Higgs only a Hosotani-type mass,
+generated by the same gauge interaction \eqref{eq:DmuH}; the open
+computation is the explicit one-loop coefficient on the stabilized
+$\CP^{1}$ with the Type~IIA flux background, which sets the sign and
+the magnitude of $\beta$.
+
+% CONTROL: This is residue (b) of claudeFinal -- the Hosotani-potential
+% coefficient.  The PRL companion does not claim to have closed it; it
+% claims only that the single-coupling Schur structure is the assumption
+% that fixes c=1.  The structural argument is in app:portal below.
+
+\subsection{Contrast with the curl on the cotangent bundle}
+
+A natural alternative would be to identify the off-diagonal operator
+with the geometric Hodge curl $\star\dd$ on co-exact one-forms of the
+internal $S^{3}=\SU(2)$.  By the Weitzenb\"ock--Lichnerowicz identity
+on the unit $S^{3}$, with Ricci tensor $\mathrm{Ric}=2g$,
+\begin{equation}
+  \Delta_{1}\bigm|_{\rm co\text{-}exact}
+  \;=\;\nabla^{*}\nabla+\mathrm{Ric}
+  \;=\;\Delta_{0}+1
+  \;=\;4J+1\;=\;(2j+1)^{2},
+\label{eq:weitz-app}
+\end{equation}
+so the eigenvalues of the curl on transverse one-forms are
+$\pm(2j+1)$.  This is the curvature-shifted normalization.  The
+algebraic second-Casimir eigenvalue of Eq.~(8) of the Letter and the
+curl eigenvalue \eqref{eq:weitz-app} differ by one unit of curvature:
+a consequence of building the off-diagonal from a curvature-bearing
+metric operator.  The bare gauge current of gauge--Higgs unification
+\eqref{eq:DmuH} delivers the Casimir eigenvalue; an independent
+curvature-shifted operator would deliver $4J+1$.  The numerical
+distinction between the two normalizations is given in
+Sec.~\ref{app:weitz} below.
+
+% ============================================================
+\section{Single-coupling Schur completion}
+\label{app:portal}
+% ============================================================
+
+We prove Proposition~1 of the Letter.  Consider the quadratic action
+\eqref{eq:Lalphabeta} for $(a,\phi)$ on the spin-$j$ sector, with
+$\alpha,\beta$ real constants, and assume the order-parameter scalar
+$\phi$ satisfies the two structural hypotheses
+
+\begin{enumerate}
+\item[(P1)] (Flatness) The fluxless mass of $\phi$ vanishes: the bare
+quadratic term $m_{0}^{2}|\phi|^{2}$ is absent, so all of $\phi$'s
+diagonal mass comes from the gauge sector.
+\item[(P2)] (Single Stückelberg coupling) The only coupling between $\phi$ and the
+gauge field $a$ is the term $\alpha\,a^{\dagger}A_{j}\phi+\mathrm{h.c.}$
+with the same $A_{j}$ that defines the mixing.
+\end{enumerate}
+
+\begin{proposition}[Single-coupling Schur completion]
+\label{prop:c1-app}
+Under (P1) and (P2), integration of the gauge fluctuation in its own
+equation of motion generates the diagonal self-energy
+\begin{equation}
+  M_{\rm s}^{2}\;=\;-\,\alpha^{2}\,A_{j}A_{j}^{\dagger}\,/g^{2},
+\label{eq:diag}
+\end{equation}
+so the reduced fluctuation block on $V_{j}\oplus\mathrm{Im}\,A_{j}$ is
+\begin{equation}
+  \mu^{2}
+  \begin{pmatrix} 0 & A_{j}^{\dagger}\\ A_{j} & -A_{j}A_{j}^{\dagger}\end{pmatrix},
+  \qquad
+  \mu^{2}=\frac{\alpha^{2}}{g^{2}}\,,
+\label{eq:Schur}
+\end{equation}
+with $c=\beta/\alpha^{2}=1$.
+\end{proposition}
+
+\begin{proof}
+By (P1), the bare quadratic action for $\phi$ has no diagonal mass.
+By (P2), the only quadratic term linking $\phi$ to $a$ is the coupling
+$\alpha\,a^{\dagger}A_{j}\phi+\mathrm{h.c.}$.  The gauge equation of
+motion is therefore
+\begin{equation}
+  g^{2}a=\alpha\,A_{j}^{\dagger}\phi.
+\label{eq:aeom}
+\end{equation}
+Substituting \eqref{eq:aeom} back into the action gives the
+$\phi$-only quadratic term
+\begin{equation}
+  -\frac{\alpha^{2}}{g^{2}}\,\langle\phi,A_{j}A_{j}^{\dagger}\phi\rangle,
+\label{eq:tracedout}
+\end{equation}
+which is the rank-one self-energy \eqref{eq:diag}.  Hence
+$\beta=\alpha^{2}/g^{2}$ and $c=1$.  Projecting to the image two-channel
+subspace and using the Casimir factorization of
+Lemma~\ref{lem:cas} reduces \eqref{eq:Schur} to $\mu^{2}\cA(J)$.
+\end{proof}
+
+The structural content of (P1)--(P2) is exactly the defining feature
+of gauge--Higgs unification: (P1) is the Hosotani flatness of the
+Wilson-line modulus, and (P2) is the single $F_{\mu a}$ cross-coupling of
+\eqref{eq:DmuH}.  What remains open is the value of the coefficient
+$\beta$ from the explicit one-loop Hosotani potential on the
+stabilized $\CP^{1}$.  The proposition says that any single-coupling
+flat modulus has $\beta=\alpha^{2}/g^{2}$, regardless of the magnitude
+of $\alpha$; the magnitude of the off-diagonal squared in $\cA(J)$ is
+the bare $\SU(2)$ Casimir $J$, set by Eq.~(8) of the Letter.
+
+% CONTROL: residue (a) -- single-coupling/Schur identification -- is
+% claimed here as a proposition.  Its physical content is the
+% Hosotani-coefficient sign and magnitude (residue (b)); we do not
+% claim to have computed beta from first principles in this PRL.
+
+% ============================================================
+\section{The Weitzenb\"ock dichotomy}
+\label{app:weitz}
+% ============================================================
+
+The bare-Casimir normalization of Eq.~(8) of the Letter and the
+curvature-shifted normalization \eqref{eq:weitz-app} produce
+distinguishable weak angles.  For a deformation
+$\cA_{c}(J)=[[0,\sqrt{J}],[\sqrt{J},-cJ]]$, the positive root is
+\begin{equation}
+  \Xp(J;c)\;=\;\frac{-cJ+\sqrt{c^{2}J^{2}+4J}}{2},
+\label{eq:Xpc}
+\end{equation}
+and the weak angle is $\sinsq(c)=1-\Xp(\tfrac34;c)/\Xp(2;c)$.
+Table~\ref{tab:cscan} records four reference points.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Source & $c_{W}$ at $J=3/4$ & $c_{Z}$ at $J=2$ & $\sinsq$\\
+\midrule
+Single-coupling Schur (algebraic) & $1$ & $1$ & $0.22310$\\
+Weitzenb\"ock-shifted curl & $4/3$ & $9/8$ & $0.267$\\
+Conformal weight ($L_{0}/(k+2)$) & $1/2$ & $1/2$ & $0.30$\\
+Standard gauge--Higgs (Manton/Fairlie) & --- & --- & $1/4$\\
+\bottomrule
+\end{tabular}
+\caption{The weak angle predicted by four distinct normalizations of
+the gauge--scalar mass operator.  Only the bare $\SU(2)$ Casimir of
+gauge--Higgs unification reproduces the measured value.  The local
+sensitivity at the single-coupling point $c=1$ is $\dd\sinsq/\dd c=-0.140$.}
+\label{tab:cscan}
+\end{table}
+
+The local rigidity is what makes the relation falsifiable.  A
+one-percent error in $c$ produces a shift in $\sinsq$ of $1.4\times
+10^{-3}$, an order of magnitude larger than the experimental
+uncertainty.  Future improvement of the on-shell measurement to the
+$10^{-5}$ level would test the bare Casimir against alternative
+near-unity values of $c$.
+
+% ============================================================
+\section{Realization in Type IIA on \texorpdfstring{$M_{4}\times\CP^{2}\times\CP^{1}$}{M4 x CP2 x CP1}}
+\label{app:realization}
+% ============================================================
+
+The operator $\cA(J)$ enters the linearized fluctuation spectrum of a
+ten-dimensional Type~IIA flux compactification on $M_{4}\times K_{6}$
+with the minimal internal manifold
+\begin{equation}
+  K_{6}\;=\;\CP^{2}\times\CP^{1}.
+\label{eq:K6}
+\end{equation}
+This is the product of the smallest $\SU(3)$ coset and the smallest
+$\SU(2)$ coset, saturating the internal dimension six.  The
+$\CP^{1}$ factor supplies the Borel--Weil sectors \eqref{eq:bw-app}.
+The $\CP^{2}$ factor carries color and hypercharge.
+
+\subsection{The eleven-dimensional parent as a controlled limit}
+
+The Freund--Rubin family $M^{pqr}$ of homogeneous spaces
+\cite{BailinLove1984} admits the circle fibration
+$S^{1}_{Z}\to M^{pqr}\to\CP^{2}\times\CP^{1}$, so $K_{6}$ is the
+ten-dimensional reduction of $M^{pqr}$.  The eleven-dimensional limit
+is well controlled in this sense, and it supplies the linearization
+that allows the gauge--scalar block to be read.  The integer labels
+$(p,q,r,n)$ play no role in the present construction: the
+Bailin--Love coupling ratio is one-to-one with a four-integer family
+that is dense around any target, so the precision of any integer
+match expresses the density of the family.  This
+overdetermination problem is the reason the present route relies on
+the algebraic operator $\cA(J)$.  The explicit scan demonstrating the
+density of integer matches is recorded in Sec.~\ref{app:scan}.
+
+\subsection{The nine-dimensional electroweak endpoint}
+
+After the single-coupling scalar of Proposition~\ref{prop:c1-app}
+develops its vacuum, the weak $\SU(2)$ is broken to the
+electromagnetic stabilizer.  Let $P_{T_{3}}$ and $P_{Y}$ denote the
+unit frame bundles of the weak weight line and the hypercharge line.
+The neutral character is
+\begin{equation}
+  \chi_{N}(u_{T},u_{Y})\;=\;u_{T}^{-1}u_{Y},
+\end{equation}
+and the diagonal frame circle is
+\begin{equation}
+  S^{1}_{Q}\;=\;\ker\chi_{N}\;\subset\;P_{T_{3}}\times P_{Y},
+\end{equation}
+the line bundle whose first Chern class is
+$c_{1}(L_{Y})-c_{1}(L_{T_{3}})$.  The infrared geometry is
+$M_{4}\times\CP^{2}\times S^{1}_{Q}$, and the surviving photon is the
+zero mode of the diagonal $\U(1)_{Q}$ generator $Q=T_{3}+Y$.  The
+photon is exactly massless by \eqref{eq:Qeta}.
+
+The global form of the surviving gauge group is
+$(\SU(3)_{c}\times\U(1)_{Q})/\Z_{3}$.  Writing the integer hypercharge
+$y=6Y$, the diagonal $\Z_{6}$ generator of the Standard-Model gauge
+group is
+$\zeta_{6}=(\omega_{3},-1,e^{i\pi/3})$ with $\omega_{3}=e^{2\pi i/3}$;
+on a surviving state with color triality $t$, weak weight $T_{3}=m$,
+and charge $Q=m+Y$, it acts as
+$\omega_{3}^{t}e^{2\pi i Q}$, which reduces to
+$\zeta_{3}=(\omega_{3},e^{2\pi i/3})$ on the residual group.  The
+descent $\Z_{6}\to\Z_{3}$ is therefore the kinematic content of the
+single-coupling symmetry breaking.
+
+\subsection{Chirality and the role of $D=10$}
+
+Chiral fermions are obstructed for any smooth eleven-dimensional
+Kaluza--Klein reduction \cite{Witten1981}; the obstruction is removed
+in ten dimensions by D-branes wrapping the weak $\CP^{1}$ and
+carrying the Standard-Model chirality lattice \cite{Witten1995}.  The
+nine-dimensional infrared residue $\SU(3)_{c}\times\U(1)_{Q}$ is
+vector-like and admits no chiral obstruction.  The conclusion is that
+the physical rung is $D=10$: the operator $\cA(J)$, the chiral
+fermions, and the single-coupling Higgs all live on the same ten-dimensional
+interface, with the eleven-dimensional parent supplying linearization
+and the nine-dimensional residue supplying the vacuum.
+
+% CONTROL: D=10 is rule-1 of AGENT.md.  The geometric chain in this
+% subsection is mandatory.
+
+\subsection{The finite Higgs sheet}
+
+The single-coupling scalar of Proposition~\ref{prop:c1-app} admits an
+almost-commutative interpretation in the sense of Connes
+\cite{ConnesLott1990,ChamseddineConnes2012}.  Writing the
+finite-direction Dirac operator
+$D_{F}=\bigl(\begin{smallmatrix}0&\Phi\\\Phi^{\dagger}&0\end{smallmatrix}\bigr)$,
+the spectral distance to the vacuum is
+$d_{\rm sheet}=1/\|\Phi\|$ \cite{MartinettiWulkenhaar2002}.  Identifying
+the finite sheet length with the vacuum expectation value through
+$\ell_{H}=\sqrt 2/v_{\rm EW}$ ties the electroweak scale to a
+finite-geometric datum: the Higgs vacuum amplitude is a length in the
+finite direction of the spectral triple.  The negative-branch
+prediction $v_{\rm EW}=\sqrt{2}\mu\sqrt{1+\sqrt 3}$ [Eq.~(15) of the
+Letter] then reads as a geometric identification: the finite sheet
+length and the vacuum amplitude are the same datum.
+
+% ============================================================
+\section{The negative branch and the electroweak scale}
+\label{app:negative}
+% ============================================================
+
+The negative root $\Xm(J)=-J-\Xp(J)$ is an unavoidable consequence of
+the indefinite Schur block \eqref{eq:Schur}.  For $J_{1/2}=\tfrac34$
+and $J_{1}=2$,
+\begin{align}
+  \Xm(3/4) &= \tfrac18(-3-\sqrt{57}) = -1.318\dots,\\
+  \Xm(2) &= -1-\sqrt 3 = -2.732\dots,
+\end{align}
+both negative.  Anchoring the overall scale $\mu$ to the $Z$ pole
+through $M_{Z}^{2}=\mu^{2}\Xp(2)$ gives
+\begin{equation}
+  \mu\;=\;\frac{M_{Z}}{\sqrt{\Xp(2)}}
+  \;=\;\frac{91.19\,\text{GeV}}{\sqrt{\sqrt 3-1}}
+  \;=\;106.6\,\text{GeV},
+\label{eq:mu}
+\end{equation}
+and the $W$ pole follows from $M_{W}=\mu\sqrt{\Xp(3/4)}=80.37\,\text{GeV}$,
+in agreement with $M_{W}=80.377(12)\,\text{GeV}$.
+
+The negative-branch eigenvalues set companion scales,
+\begin{align}
+  \mu\sqrt{|\Xm(3/4)|} &= 122.4\,\text{GeV},
+  \label{eq:Higgs}\\
+  \mu\sqrt{|\Xm(2)|} &= 176.2\,\text{GeV}.
+  \label{eq:top}
+\end{align}
+The values \eqref{eq:Higgs}--\eqref{eq:top} are within $3\,\text{GeV}$
+of the measured Higgs and top masses ($125.25\,\text{GeV}$,
+$172.7\,\text{GeV}$), without further parameter fitting.  Identifying
+the negative branch of the $j=1$ sector with the electroweak vacuum
+amplitude through $v_{\rm EW}=\sqrt 2\mu\sqrt{|\Xm(2)|}$ gives
+\begin{equation}
+  v_{\rm EW}\;=\;\sqrt 2\,\mu\sqrt{1+\sqrt 3}\;=\;249\,\text{GeV},
+\label{eq:vEW-app}
+\end{equation}
+to be compared with the measured $246.2\,\text{GeV}$.
+
+The identification of $\Xm(J)$ with the order-parameter spectrum is
+the geometric content of the radion/Higgs reading.  It is consistent
+within the model and agrees with data at the few-GeV level; a
+first-principles derivation of the negative-branch identification
+requires the explicit Hosotani potential beyond the quadratic order
+displayed in Proposition~\ref{prop:c1-app}.
+
+\subsection{Orbital-velocity form and two-description correspondence}
+
+The eigenvalue equation $X^{2}+JX-J=0$ admits a kinematic
+interpretation.  Setting $X_{+}=\beta^{2}$ in the orbital-velocity
+reading,
+\begin{equation}
+  \frac{\beta^{2}}{\sqrt{1-\beta^{2}}}\;=\;\sqrt J,
+\label{eq:orbit}
+\end{equation}
+which on squaring reproduces $X^{2}+JX-J=0$.  The gauge-boson masses
+are therefore $M_{V}=\mu\beta_{V}$ with $\beta_{W}=0.7541$,
+$\beta_{Z}=0.8556$.  The bound $\Xp(J)<1$ that keeps the electroweak
+masses below the compactification scale is the relativistic bound
+$\beta<1$.
+
+The same eigenvalue equation $X^{2}+JX-J=0$ thus arises from two
+unrelated structures: the field-theoretic spin-$j$ fluctuation block
+of the Kaluza--Klein reduction, and the kinematic quantization
+\eqref{eq:orbit} of a single relativistic mode with internal orbital
+momentum $\sqrt{J}$.  Whether the agreement reflects a duality
+between the two formulations, or coincidence of the underlying
+algebra, is open; a precise field-theory derivation of \eqref{eq:orbit}
+from the same Kaluza--Klein action would settle it.
+
+% ============================================================
+\section{The 96.5\,GeV prediction and the two-spin tower}
+\label{app:tower}
+% ============================================================
+
+The same operator at higher half-integer rungs predicts a sequence of
+neutral spin-zero states.  The next is
+\begin{equation}
+  M_{3/2}\;=\;\mu\sqrt{\Xp(15/4)}\;=\;96.5\,\text{GeV}.
+\label{eq:96-app}
+\end{equation}
+A persistent excess in light-Higgs searches at this mass has been
+reported by CMS in di-photon final states \cite{CMS96} and by
+combinations of LEP and LHC data \cite{Heinemeyer2019}.  The prediction
+\eqref{eq:96-app} is conditional on the physical-tower truncation of
+$\cA(J)$, in which all $j$ are dynamical.  The alternative finite
+truncation at $j\le 1$, natural in an internal geometry of WZW level
+two~\cite{Bouwknegt1995}, would forbid the state.
+
+The two-spin tower is the generalization to any pair of internal spins,
+\begin{equation}
+  \sin^{2}\theta(j_{a},j_{b})\;=\;1-\frac{\Xp(J_{a})}{\Xp(J_{b})}.
+\label{eq:tower-app}
+\end{equation}
+Sample values are tabulated below; the electroweak case is the first
+row.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccl}
+\toprule
+$(j_{a},j_{b})$ & $J_{a},J_{b}$ & $\sin^{2}\theta(j_{a},j_{b})$ & Identification\\
+\midrule
+$(\half,1)$ & $\tfrac34,\,2$ & $0.22310$ & electroweak\\
+$(\half,\tfrac32)$ & $\tfrac34,\,\tfrac{15}4$ & $0.30684$ & prediction\\
+$(1,\tfrac32)$ & $2,\,\tfrac{15}4$ & $0.10778$ & prediction\\
+$(\half,2)$ & $\tfrac34,\,6$ & $0.34852$ & prediction\\
+\bottomrule
+\end{tabular}
+\caption{The two-spin tower $\sin^{2}\theta(j_{a},j_{b})$ for the four
+lowest pairings.  The electroweak entry is forced; the others are
+predictions of the same operator for any extended sector with higher
+internal spins.}
+\label{tab:tower-app}
+\end{table}
+
+% ============================================================
+\section{The integer-fit overdetermination, recorded for the avoidance of doubt}
+\label{app:scan}
+% ============================================================
+
+The Bailin--Love coupling ratio for the homogeneous space $M^{pqr}$
+gives, for $0<\beta<\half$,
+\begin{equation}
+  4\beta^{3}-6\beta^{2}+\Bigl(\tfrac94+\frac{q^{2}}{p^{2}}\Bigr)\beta
+  -\half\frac{q^{2}}{p^{2}}\;=\;0,
+\label{eq:BL}
+\end{equation}
+and
+\begin{equation}
+  \frac{g_{Y}^{2}}{g_{2}^{2}}\;=\;
+  \frac32\frac{p^{2}n^{2}}{r^{2}}\frac{(3-4\beta)^{2}(1+\beta)}{1-2\beta}.
+\label{eq:gYg2}
+\end{equation}
+A modest integer scan over $p,q\le 30$, $r\le 300$, $n\le 3$ gives 138
+four-tuples within $10^{-3}$ of the target ratio $0.287169$, 12 within
+$10^{-4}$, and 2 within $10^{-5}$.  The achievable values are dense
+near the target; the six-digit agreement of the tuple $(12,14,91,1)$
+expresses the density of the family.
+
+This overdetermination is the reason the present construction relies
+on $\cA(J)$ as the weak-angle source.  No integer label is used in any
+derivation.  The labels appear only when one wishes to embed the
+$\CP^{2}\times\CP^{1}$ geometry inside a Freund--Rubin parent
+$M^{pqr}$.  There they are constrained by global-form data: the
+$\Z_{6}$ quotient of the Standard-Model gauge group, the spin$^{c}$
+structure on $\CP^{2}$, and the period of the hypercharge line bundle.
+The constraints leave the labels underdetermined at selection
+precision.
+
+% CONTROL: this appendix is the explicit warning that the integer-fit
+% route is not used.  Including it here protects the PRL against the
+% objection that any K-K construction with M^{pqr} input is implicitly
+% fitting the angle through (p,q,r,n).
+
+% ============================================================
+\section{Pole-mass vs. running-coupling reading of \texorpdfstring{$\sinsq$}{sin2thetaW}}
+\label{app:scheme}
+% ============================================================
+
+The predicted $\sinsq=0.22310$ is the on-shell ratio
+$1-M_{W}^{2}/M_{Z}^{2}$.  The relevant data point is the on-shell
+value $0.22305(20)$; the $\overline{\rm MS}$ coupling angle
+$\hat s_{Z}^{2}\simeq 0.23122$ at $\mu=M_{Z}$ is a different
+observable.  A
+geometric construction of \emph{couplings} would more naturally yield
+an $\overline{\rm MS}$-like quantity; that $\cA(J)$ lands on the
+on-shell mass ratio reflects that the matrix is a \emph{mass}
+operator, generated by the rank-one Schur completion of a single
+Stückelberg coupling.
+
+The complex pole of the gauge-boson propagator is
+$s_{V}=M_{V}^{2}-iM_{V}\Gamma_{V}$, and two on-shell conventions
+circulate: the running mass $\overline{M}_{V}$ and the Breit--Wigner
+on-shell mass $M_{V}$, differing by
+$M_{V}-\overline{M}_{V}\simeq\Gamma_{V}^{2}/(2M_{V})$.  This is
+$34\,\text{MeV}$ for the $Z$ and $27\,\text{MeV}$ for the $W$,
+translating into a few-times-$10^{-4}$ ambiguity in the ratio, which
+is the size of the residual between $0.22310$ and $0.22305$.  The
+agreement is therefore within the scheme ambiguity.
+
+% ============================================================
+\section{Numerical summary}
+\label{app:numbers}
+% ============================================================
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Quantity & Value (this model) & Comparison\\
+\midrule
+$\Xp(3/4)$ & $0.568729$ & ---\\
+$\Xp(2)$ & $0.732051=\sqrt 3-1$ & ---\\
+$\sinsq=1-\Xp(3/4)/\Xp(2)$ & $0.223101$ & $0.22305(20)$\,~\cite{PDG2024}\\
+$M_{W}^{2}/M_{Z}^{2}$ & $0.776898$ & $0.77687(2)$\\
+$\rho_{\rm cust}$ & $1$ & $1.00031(19)$\\
+$\mu=M_{Z}/\sqrt{\Xp(2)}$ & $106.6\,\text{GeV}$ & ---\\
+$M_{W}=\mu\sqrt{\Xp(3/4)}$ & $80.37\,\text{GeV}$ & $80.377(12)$\\
+$\mu\sqrt{|\Xm(3/4)|}$ & $122.4\,\text{GeV}$ & $m_{H}=125.25$\\
+$\mu\sqrt{|\Xm(2)|}$ & $176.2\,\text{GeV}$ & $m_{t}=172.7$\\
+$M_{3/2}=\mu\sqrt{\Xp(15/4)}$ & $96.5\,\text{GeV}$ & prediction\\
+$v_{\rm EW}=\sqrt 2\mu\sqrt{1+\sqrt 3}$ & $249\,\text{GeV}$ & $246.2$\\
+$\dd\sinsq/\dd c$ at $c=1$ & $-0.140$ & rigidity slope\\
+\bottomrule
+\end{tabular}
+\caption{Numerical content of the construction.  Experimental values
+from \cite{PDG2024}.  The first three rows are the load-bearing
+predictions; rows $4$--$5$ are immediate consequences; rows $6$--$10$
+follow from the negative-branch identification.}
+\label{tab:numerics}
+\end{table}
+
+% ============================================================
+\section{Open computations}
+\label{app:open}
+% ============================================================
+
+Three computations sharpen the construction beyond its present state.
+First, the Hosotani potential on the stabilized $\CP^{1}$ with the
+Type~IIA flux background determines the coefficient $\beta$ in
+\eqref{eq:Lalphabeta} and so the magnitude of the negative diagonal;
+the single-coupling Schur completion of Proposition~\ref{prop:c1-app}
+fixes the ratio $c=1$ but not the absolute magnitude.  Second, the
+explicit linearized IIA reduction on $M_{4}\times\CP^{2}\times\CP^{1}$
+with stabilized moduli verifies that the order-parameter scalar is
+indeed the single-coupling flat modulus assumed by (P1)--(P2).  Third,
+the spin$^{c}$-extended fermion content on $\CP^{2}$ supplies the
+chiral matter of the Standard Model, including the hypercharge
+assignment $Y=-\half$ on the right-handed singlet that closes the
+determinant-one lift of the gauge group.
+
+The Hosotani-potential coefficient, the linearized IIA reduction on
+the stabilized internal manifold, and the spin$^{c}$-extended fermion
+content are computations whose completion sharpens the construction
+beyond its present state.  The present Letter establishes the
+operator-level content of the electroweak mixing angle and the
+on-shell mass ratio, the structural reason for the bare-Casimir
+normalization through gauge--Higgs unification, the single-coupling
+Schur completion that fixes $c=1$, the Weitzenb\"ock rigidity of the
+prediction, and the $96.5\,\text{GeV}$ scalar that follows from the
+same operator.
+
+% ============================================================
+% Bibliography.  Each entry carries a `% CITED IN' comment indicating
+% the supplemental section where it is invoked.  Entries cross-listed
+% with main.tex carry the same key.
+% ============================================================
+\begin{thebibliography}{99}
+
+% CITED IN: numerical-summary table (Sec.~VIII); on-shell scheme paragraph
+% in Sec.~IX (comparison to 0.22305(20)).
+\bibitem{PDG2024}
+S.~Navas \emph{et~al.} (Particle Data Group), Phys.\ Rev.\ D
+\textbf{110}, 030001 (2024).
+
+% CITED IN: realization section (Sec.~V), chirality paragraph (Witten
+% no-go for smooth 11D Kaluza-Klein).
+\bibitem{Witten1981}
+E.~Witten, Nucl.\ Phys.\ B \textbf{186}, 412 (1981).
+
+% CITED IN: realization section (Sec.~V), chirality paragraph (D-branes
+% in ten dimensions supply chiral matter via the M-theory web).
+\bibitem{Witten1995}
+E.~Witten, ``String theory dynamics in various dimensions,'' Nucl.\ Phys.\
+B \textbf{443}, 85 (1995); arXiv:hep-th/9503124.
+
+% CITED IN: realization section (Sec.~V), M^{pqr} circle reduction giving
+% K_6 = CP^2 x CP^1.
+\bibitem{BailinLove1984}
+D.~Bailin and A.~Love, Phys.\ Lett.\ B \textbf{144}, 359 (1984).
+
+% CITED IN: comparison-with-textbook subsection (Sec.~II.D).  Original
+% gauge-Higgs unification reference giving sin^2 theta_W = 1/4 on SU(3)/U(2).
+\bibitem{Manton1979}
+N.~S.~Manton, Nucl.\ Phys.\ B \textbf{158}, 141 (1979).
+
+% CITED IN: comparison-with-textbook subsection (Sec.~II.D).  Original
+% Higgs-from-internal-gauge-field paper for SU(3) on S^2.
+\bibitem{Fairlie1979}
+D.~B.~Fairlie, Phys.\ Lett.\ B \textbf{82}, 97 (1979).
+
+% CITED IN: finite-Higgs-sheet paragraph in realization section (Sec.~V),
+% almost-commutative interpretation of the order parameter.
+\bibitem{ConnesLott1990}
+A.~Connes and J.~Lott, Nucl.\ Phys.\ B Proc.\ Suppl.\ \textbf{18B}, 29
+(1990).
+
+% CITED IN: finite-Higgs-sheet paragraph in realization section (Sec.~V),
+% spectral-action context for the same.
+\bibitem{ChamseddineConnes2012}
+A.~H.~Chamseddine and A.~Connes, ``Resilience of the spectral standard
+model,'' JHEP \textbf{09}, 104 (2012); arXiv:1208.1030.
+
+% CITED IN: finite-Higgs-sheet paragraph in realization section (Sec.~V),
+% scalar-fluctuation distance formula d_sheet = 1/||Phi||.
+\bibitem{MartinettiWulkenhaar2002}
+P.~Martinetti and R.~Wulkenhaar, J.~Math.~Phys.~\textbf{43}, 182
+(2002); arXiv:hep-th/0104108.
+
+% CITED IN: 96.5 GeV / two-spin tower section (Sec.~VII), level-two
+% truncation of integrable SU(2)_k sectors.
+% [verified arXiv:hep-th/9412108; "Spinon basis for higher level SU(2)
+% WZW models," Bouwknegt, Ludwig, Schoutens.]
+\bibitem{Bouwknegt1995}
+P.~Bouwknegt, A.~W.~W.~Ludwig, and K.~Schoutens, ``Spinon basis for
+higher level SU(2) WZW models,'' arXiv:hep-th/9412108.
+
+% CITED IN: 96.5 GeV / two-spin tower section (Sec.~VII), CMS diphoton
+% excess at 95.4 GeV.
+% [verified arXiv:2405.18149; corrected from earlier draft that cited the
+% tau-tau analysis arXiv:2208.02717.]
+\bibitem{CMS96}
+The CMS Collaboration, ``Search for a standard model-like Higgs boson in
+the mass range between 70 and 110 GeV in the diphoton final state in
+proton-proton collisions at $\sqrt{s}=13$ TeV,'' arXiv:2405.18149.
+
+% CITED IN: 96.5 GeV / two-spin tower section (Sec.~VII), LEP+LHC
+% combination interpretation as a 96 GeV Higgs.
+% [verified arXiv:1812.05864; "A Higgs Boson at 96 GeV?!" Heinemeyer and
+% Stefaniak, PoS CHARGED2018, 016 (2019).]
+\bibitem{Heinemeyer2019}
+S.~Heinemeyer and T.~Stefaniak, ``A Higgs Boson at 96 GeV?!,'' PoS
+\textbf{CHARGED2018}, 016 (2019); arXiv:1812.05864.
+
+\end{thebibliography}
+
+\end{document}

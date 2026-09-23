@@ -1,0 +1,1019 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,array}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\WW}{\mathcal{W}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\Imop}{\operatorname{Im}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\eff}{\mathrm{eff}}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{definition}
+\newtheorem{example}[proposition]{Example}
+
+\title{D10 boundary-current advances for the de Vries slice}
+\author{dv2 working note}
+\date{2026-05-25}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This note collects the new calculations in the D10 boundary-current route to
+the de Vries electroweak number.  The construction uses Type IIA data on
+\(M_4\times\CP^2\times\CP^1\), a D0/M-circle probe side, and a D8-like
+boundary carrier \(\WW_9=M_4\times\CP^2\times S^1_Q\).  It gives a
+positive image-channel Feshbach algebra, gives \(\kappa_{\rm cur}=1\) on the
+full-current branch, and packages the scalar slice in the
+coupled variables \(\rho,\tau,v_Q,\lambda_H,\kappa_{\rm cur}\).  The new
+residue calculation shows that the raw Wilson second variation has residue
+\(J_j\), while the finite Feshbach pole requires unit residue.  The unit inverse
+image metric is the static Schur complement of the retained image oscillator.
+For a generic local oscillator the pole depends on a residue ratio
+\(r=\gamma/\alpha\).  A single current-displacement square forces \(r=1\).
+The mixed Chan--Paton sector \(H^0(\CP^1,\operatorname{Hom}(\OO(0),\OO(2j)))\)
+has the right rank: \(Q_j=A_jy_j/\sqrt{J_j}\) lies in \(\Im A_j\) for
+\(j>0\).  The current D10 boundary package contains no one-square Hom action
+that would lock its coefficient.
+The D8/Payen/RR source package also contains no term fixing the full-current placement:
+\(\kappa_{\rm cur}=1\) is a branch condition in the written action, while a
+horizontal-only image channel gives \(\sin^2\theta_W=0.242265\ldots\).
+The neutral scalar Hessian has enough coefficient freedom to fit the
+negative-branch scalar constants; it does not force them in the present action.
+The source-balance equations reduce any replacement source sector to a
+two-component lower-charge target; the minimal target is \(-h_Q^2\), not a
+field already present in the current D8/O8 package.
+A tower/moduli branch instead retains the \(j=3/2\) state, with mass
+\(96.54\,{\rm GeV}\) when the scale is fixed by \(M_Z\).
+\end{abstract}
+
+% The local string derivation of the inverse-image-metric contact is not printed
+% as a result here, because it has not been derived from the boundary action.
+
+\section{The de Vries datum}
+
+Let
+\begin{equation}
+  X_+(J)=\frac{-J+\sqrt{J^2+4J}}{2},
+  \qquad J=j(j+1).
+  \label{eq:xplus}
+\end{equation}
+The two electroweak slots use
+\begin{equation}
+  J_W=\frac34,\qquad J_Z=2.
+\end{equation}
+Then
+\begin{equation}
+  \sin^2\theta_{\rm dV}
+  =1-\frac{X_+(3/4)}{X_+(2)}
+  =0.2231013223008662,
+  \label{eq:dv-sin}
+\end{equation}
+and
+\begin{equation}
+  \frac{M_W}{M_Z}
+  =\sqrt{\frac{X_+(3/4)}{X_+(2)}}
+  =0.8814185598789793.
+  \label{eq:dv-ratio}
+\end{equation}
+The D10 calculation below asks whether this number is forced by local boundary
+dynamics, not only placed in a compatible parameter slice.
+
+\section{D10 carrier and probe story}
+
+The active ten-dimensional layer is Type IIA on
+\begin{equation}
+  M_4\times K_6,\qquad K_6=\CP^2\times\CP^1 .
+  \label{eq:d10}
+\end{equation}
+The M-circle reduction gives the string-frame form
+\begin{equation}
+  ds_{11}^2=e^{-2\Phi/3}ds_{10,\rm str}^2
+  +e^{4\Phi/3}(d\psi+C_1)^2,
+  \qquad F_2=dC_1 .
+  \label{eq:m-circle}
+\end{equation}
+The D0-brane is the electric probe of \(C_1\):
+\begin{equation}
+  S_{\rm D0,WZ}=\mu_0\int_{W_1}C_1,
+  \qquad Q_{\rm D0}\leftrightarrow P_\psi .
+  \label{eq:d0}
+\end{equation}
+The space-filling side in Type IIA is the D8-like boundary carrier
+\begin{equation}
+  \WW_9=M_4\times\CP^2\times S^1_Q.
+  \label{eq:w9}
+\end{equation}
+It is codimension one in \(K_6\).  The literal all-Neumann D9 row is retained
+only as an open-string control row.
+
+\begin{proposition}[Carrier/probe separation]
+The D0 and \(\WW_9\) rows test different pieces of one D10 background.  The
+D0 measures the M-circle/RR one-form.  The D8-like boundary carries the
+\(Q\)-preserving endpoint/current sector and can support the Chan--Paton
+representations used by the weak boundary modes.
+\end{proposition}
+
+\begin{proof}
+Equation \eqref{eq:d0} couples the D0 worldline to \(C_1\), the connection in
+\eqref{eq:m-circle}.  Equation \eqref{eq:w9} wraps the observed spacetime,
+the color \(\CP^2\), and the weak \(Q\)-circle, leaving one weak normal
+direction.  The worldvolume dimension and RR parity
+therefore match a Type IIA D8-like source, not a D9-brane.
+\end{proof}
+
+\section{Boundary action and photon protection}
+
+The weak endpoint spaces are
+\begin{equation}
+  V_j=H^0(\CP^1,\OO(2j)),\qquad j\in \tfrac12\mathbb Z_{\ge0}.
+  \label{eq:vj}
+\end{equation}
+Borel--Weil gives \(T^aT_a=j(j+1)\mathbf 1_{V_j}\).  The finite current branch
+keeps the level-two set
+\begin{equation}
+  j=0,\ \frac12,\ 1.
+  \label{eq:level-two}
+\end{equation}
+The tower branch keeps higher \(j\).
+
+The \(Q\)-preserving boundary field is a section
+\begin{equation}
+  \eta\in H^0(\CP^1,\OO(1))\otimes L_Y,
+  \qquad Q=T_3+Y.
+  \label{eq:eta}
+\end{equation}
+Choosing the lower doublet component \(\eta_0=v\) gives
+\begin{equation}
+  T_3\eta_0=-\frac12\eta_0,\qquad
+  Y\eta_0=\frac12\eta_0,\qquad
+  Q\eta_0=0.
+  \label{eq:qeta}
+\end{equation}
+
+\begin{proposition}[Photon protection]
+On the \(\eta=\eta_0\) boundary slice, the \(Q\)-connection has no mass term
+from \(\langle D\eta,D\eta\rangle\).
+\end{proposition}
+
+\begin{proof}
+The contribution proportional to the \(Q\)-connection is
+\(\ii A_QQ\eta_0\), which vanishes by \eqref{eq:qeta}.  Generators that do not
+annihilate \(\eta_0\) contribute quadratic terms
+\(\langle R\eta_0,R\eta_0\rangle A_R^2\).
+\end{proof}
+
+\section{Image-channel Feshbach algebra}
+
+Let \(e_a\), \(a=1,2,3\), be an orthonormal weak-current frame.  Define
+\begin{equation}
+  A_j:V_j\longrightarrow V_j\otimes\RR^3,\qquad
+  A_jp=\sum_{a=1}^3T_a^{(j)}p\otimes e_a .
+  \label{eq:aj}
+\end{equation}
+Then
+\begin{equation}
+  A_j^\dagger A_j=J_j\mathbf 1_{V_j},
+  \qquad J_j=j(j+1).
+  \label{eq:ajnorm}
+\end{equation}
+For \(j>0\), let \(q_j\in\Imop A_j\) and
+\begin{equation}
+  P_j=\frac{1}{J_j}A_jA_j^\dagger
+  \label{eq:proj}
+\end{equation}
+be the image projector.
+
+The positive image-channel quadratic form is
+\begin{equation}
+\begin{split}
+  S_{\rm quad}^{(j)}
+  =
+  \langle p_j,Bp_j\rangle
+  +\langle q_j,(B+\mu^2J_j)q_j\rangle
+  -\mu^2\langle q_j,A_jp_j\rangle
+  -\mu^2\langle A_jp_j,q_j\rangle .
+  \label{eq:squad}
+\end{split}
+\end{equation}
+Eliminating \(q_j\) gives
+\begin{equation}
+  \Gamma_j(B)
+  =
+  B-\mu^4A_j^\dagger(B+\mu^2J_j)^{-1}A_j
+  =
+  B-\frac{\mu^4J_j}{B+\mu^2J_j}.
+  \label{eq:gamma}
+\end{equation}
+With \(X=B/\mu^2\), the pole equation is
+\begin{equation}
+  X=\frac{J_j}{X+J_j},
+  \label{eq:feshbach-fixed}
+\end{equation}
+which is \eqref{eq:xplus}.
+
+\section{Canonical current metric}
+
+Let \(K_a\) be the weak Killing/current generators in the same internal metric
+that appears in the Kaluza--Klein reduction.  Define
+\begin{equation}
+  G^{(2)}_{ab}
+  =
+  \frac{1}{\Vol(\widehat K_6)}
+  \int_{\widehat K_6}\sqrt g\,g_{mn}K_a^mK_b^n .
+  \label{eq:metric}
+\end{equation}
+On the \(SU(2)\)-symmetric weak line,
+\begin{equation}
+  G^{(2)}_{ab}=L_2^2\delta_{ab},
+  \qquad e_a=\frac{K_a}{L_2}.
+  \label{eq:frame}
+\end{equation}
+In this frame \eqref{eq:ajnorm} gives
+\begin{equation}
+  \kappa_{\rm cur}=1.
+  \label{eq:kappaone}
+\end{equation}
+
+This conclusion is conditional on the boundary image channel using the full
+current \(K_{a,\rm full}\).  The Bailin--Love split has
+\begin{equation}
+  L_{2,BL}^2=L_{2,horiz}^2+L_{2,vert}^2
+  =(1+\beta)L_{2,horiz}^2 .
+  \label{eq:blsplit}
+\end{equation}
+If the endpoint image channel sees only the horizontal \(\CP^1\) current, then
+\begin{equation}
+  \kappa_h=\frac{L_{2,horiz}^2}{L_{2,BL}^2}
+  =\frac{1}{1+\beta}=0.7527390090748721,
+  \label{eq:kappah}
+\end{equation}
+and the deformed pole gives
+\begin{equation}
+  \sin^2\theta_W=0.24226537471822063.
+\end{equation}
+The Payen endpoint action supplies the representation tensor for the
+connection inserted into the boundary Wilson loop.  The D8 WZ term supplies RR
+charge data.  Neither term in the current source package fixes the placement
+of \(L_{2,vert}\) inside the endpoint current metric.
+
+\begin{proposition}[Full-current normalization]
+The boundary image map and the weak gauge metric share the same Casimir
+normalization on the full-current branch.  A horizontal-only boundary current
+changes the normalization to
+\[
+  \kappa_{\rm cur}=0.7527390090748721,
+  \qquad
+  \sin^2\theta=0.24226537471822063.
+\]
+\end{proposition}
+
+\begin{proof}
+Equation \eqref{eq:frame} orthonormalizes the same current vectors used in the
+Kaluza--Klein gauge metric.  Hence
+\[
+  A_j^\dagger A_j
+  =\sum_{a,b}T_a^{(j)}T_b^{(j)}\langle e_a,e_b\rangle
+  =\sum_aT_a^{(j)}T_a^{(j)}
+  =J_j\mathbf 1_{V_j}.
+\]
+Replacing the boundary image metric by only the horizontal component rescales
+the current frame by the recorded factor, which shifts the weak-angle output.
+\end{proof}
+
+\section{Wilson-contact residue}
+
+The static part of \eqref{eq:squad} is
+\begin{equation}
+  S_{\rm stat}
+  =
+  \mu^2J_j\|q_j\|^2
+  -\mu^2\langle q_j,A_jp_j\rangle
+  -\mu^2\langle A_jp_j,q_j\rangle .
+  \label{eq:stat}
+\end{equation}
+Completing the square in \(\Imop A_j\) gives
+\begin{equation}
+  S_{\rm stat}
+  =
+  \mu^2J_j\left\|q_j-\frac{A_jp_j}{J_j}\right\|^2
+  -\mu^2\|p_j\|^2.
+  \label{eq:contact-fixed}
+\end{equation}
+Thus the finite image-channel pole fixes the open-channel contact as
+\begin{equation}
+  C_{\rm req}=-\mu^2\mathbf 1_{V_j}.
+  \label{eq:creq}
+\end{equation}
+
+The Wilson factor expansion gives
+\begin{equation}
+  \frac{\delta^2W_j}{\delta\xi^a\delta\xi^b}\bigg|_{\xi=0}
+  \sim -\mu^2T_a^{(j)}T_b^{(j)}.
+  \label{eq:wilson2}
+\end{equation}
+In the orthonormal current frame this contracts to
+\begin{equation}
+  C_{\rm Wilson}
+  =
+  -\mu^2\sum_aT_a^{(j)}T_a^{(j)}
+  =
+  -\mu^2J_j\mathbf 1_{V_j}.
+  \label{eq:cwilson}
+\end{equation}
+Projection to the image does not change the coefficient:
+\begin{equation}
+  A_j^\dagger P_jA_j
+  =
+  A_j^\dagger A_j
+  =
+  J_j\mathbf 1_{V_j}.
+  \label{eq:projection-nochange}
+\end{equation}
+
+\begin{proposition}[Residue test]
+The raw Wilson second variation has residue \(J_j\), while the finite
+Feshbach pole requires unit residue.  The unit contact is
+\begin{equation}
+  -\mu^2A_j^\dagger
+  \left(A_jA_j^\dagger|_{\Imop A_j}\right)^{-1}
+  A_j
+  =
+  -\mu^2\mathbf 1_{V_j}.
+  \label{eq:inverse-image}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Equations \eqref{eq:contact-fixed} and \eqref{eq:creq} fix the contact required
+by the pole.  Equations \eqref{eq:cwilson} and \eqref{eq:projection-nochange}
+compute the contact from the Wilson Taylor term and from the projected image
+tensor.  On \(\Imop A_j\),
+\(A_jA_j^\dagger=J_j\mathbf 1\), so
+\[
+  A_j^\dagger
+  \left(A_jA_j^\dagger|_{\Imop A_j}\right)^{-1}
+  A_j
+  =
+  \frac{1}{J_j}A_j^\dagger A_j
+  =
+  \mathbf 1_{V_j}.
+\]
+\end{proof}
+
+If the inverse image metric is absent and the Wilson residue is used, the
+kernel becomes
+\begin{equation}
+  \Gamma_j(B)
+  =
+  B+\mu^2(1-J_j)
+  -\frac{\mu^4J_j}{B+\mu^2J_j}.
+  \label{eq:shifted}
+\end{equation}
+The pole equation is
+\begin{equation}
+  X+1-J_j-\frac{J_j}{X+J_j}=0.
+  \label{eq:shifted-pole}
+\end{equation}
+This changes the W and Z slots by different amounts and cannot be absorbed
+into one common scale.
+
+The inverse in \eqref{eq:inverse-image} is not a separate microscopic operator
+when \(q_j\) is retained.  It is the \(B=0\) Schur complement of the local
+image oscillator:
+\begin{equation}
+  \Gamma_j(0)
+  =
+  -\mu^2A_j^\dagger
+  \left(A_jA_j^\dagger|_{\Imop A_j}\right)^{-1}
+  A_j
+  =
+  -\mu^2\mathbf 1_{V_j}.
+  \label{eq:static-schur}
+\end{equation}
+The finite branch is shifted only if the raw Wilson \(T_aT_b\) term is also
+kept as a direct 1PI \(p_j\) contact.
+
+The endpoint action is linear in the source.  Therefore the Wilson second
+derivative is a connected two-current insertion rather than a microscopic
+quadratic seagull.  If \(q_j\) is retained as the local image-current channel,
+the connected response is represented by \(q_j\) exchange and should not be
+added again as a direct 1PI \(p_j\) contact.
+
+\subsection*{Coefficient lock}
+
+For a canonically normalized image oscillator, the most general single-pole
+quadratic form with the same tensor structure is
+\begin{equation}
+\begin{split}
+  S_j^{(2)}
+  ={}&\langle p_j,Bp_j\rangle
+  +\langle Q_j,(B+\alpha\mu^2A_jA_j^\dagger)Q_j\rangle\\
+  &-\gamma\mu^2\langle Q_j,A_jp_j\rangle
+  -\gamma\mu^2\langle A_jp_j,Q_j\rangle .
+  \label{eq:general-osc}
+\end{split}
+\end{equation}
+Eliminating \(Q_j\) gives
+\begin{equation}
+  \Gamma_j(B)
+  =
+  B-\frac{\gamma^2\mu^4J_j}{B+\alpha\mu^2J_j}.
+  \label{eq:general-gamma}
+\end{equation}
+With \(\mu_{\eff}^2=\alpha\mu^2\) and \(X=B/\mu_{\eff}^2\), the pole equation is
+\begin{equation}
+  X=\frac{r^2J_j}{X+J_j},
+  \qquad r=\frac{\gamma}{\alpha}.
+  \label{eq:r-ratio}
+\end{equation}
+The de Vries pole requires \(r=1\).
+
+The local square
+\begin{equation}
+  \alpha\mu^2\|A_j^\dagger Q_j-p_j\|^2
+  -\alpha\mu^2\|p_j\|^2
+  \label{eq:single-square}
+\end{equation}
+expands to \eqref{eq:general-osc} with \(\gamma=\alpha\).  Therefore a single
+current-displacement square gives the needed coefficient lock; a generic
+oscillator does not.
+
+DBI/Stueckelberg displacement terms have this one-square form, so they provide
+the right coefficient mechanism.  The present D8 normal displacement is only a
+scalar on \(\WW_9\), however; it is not a field in
+\(\Im A_j\subset V_j\otimes\RR^3\).  Thus the finite branch still requires an
+\(\Im A_j\) vector-bundle displacement supplied by the D8/open-current
+interface.
+
+The mixed Chan--Paton boundary-changing sector supplies a sharper candidate.
+For \(j>0\),
+\begin{equation}
+  H^0(\CP^1,\operatorname{Hom}(\OO(0),\OO(2j)))=V_j,
+  \qquad
+  U_j=\frac{1}{\sqrt{J_j}}A_j:V_j\to\Im A_j
+  \label{eq:hom-u}
+\end{equation}
+is an isometry.  Thus a mixed zero mode \(y_j\in V_j\) gives a canonical image
+field
+\begin{equation}
+  Q_j=U_jy_j=\frac{1}{\sqrt{J_j}}A_jy_j,
+  \qquad
+  A_j^\dagger Q_j=\sqrt{J_j}\,y_j .
+  \label{eq:hom-q}
+\end{equation}
+The desired current-displacement square is equivalent to
+\begin{equation}
+  \alpha\mu^2\|\sqrt{J_j}\,y_j-p_j\|^2
+  -\alpha\mu^2\|p_j\|^2 .
+  \label{eq:hom-square}
+\end{equation}
+This passes the field-content test but not the local-action test.  A generic
+Hom-mode quadratic form
+\begin{equation}
+\begin{split}
+  S_y^{(2)}
+  ={}&\langle p_j,Bp_j\rangle
+  +Z_y\langle y_j,By_j\rangle
+  +c_m\mu^2J_j\langle y_j,y_j\rangle\\
+  &-c_g\mu^2\sqrt{J_j}
+  \bigl(\langle y_j,p_j\rangle+\langle p_j,y_j\rangle\bigr)
+\end{split}
+\end{equation}
+gives
+\begin{equation}
+  \Gamma_j(B)=B-\frac{c_g^2\mu^4J_j}{Z_yB+c_m\mu^2J_j},
+  \qquad
+  r=\frac{c_g\sqrt{Z_y}}{c_m}.
+  \label{eq:hom-r}
+\end{equation}
+The de Vries pole requires \(c_m=c_g\sqrt{Z_y}\).  The mixed zero-mode
+statement supplies the bundle; it does not by itself supply this coefficient
+lock.
+
+The current source package contains no term of the form \eqref{eq:hom-square}.  The Payen
+endpoint action gives the representation, Wilson loop, and charge insertions
+\(T_a,T_aT_b\).  It is first order on the boundary and contains no propagating
+Hom-mode potential.  The D8 DBI/WZ package supplies geometric brane norms and
+RR charge data, but no term identifying the mixed Hom mode with the mismatch
+\(\sqrt{J_j}y_j-p_j\).  With the current action, the Hom sector therefore has
+the generic ratio \eqref{eq:hom-r}.
+
+\section{Finite branch and tower branch}
+
+The residue calculation separates two branches.
+
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.24\linewidth}
+>{\raggedright\arraybackslash}p{0.32\linewidth}
+>{\raggedright\arraybackslash}p{0.32\linewidth}@{}}
+\hline
+Branch & Spectrum rule & Phenomenological signal\\
+\hline
+Finite current branch &
+The level-two endpoint/current sector keeps \(j=0,\frac12,1\).  The Feshbach
+pole uses \eqref{eq:inverse-image}. &
+No \(j=3/2\) state in the retained weak boundary spectrum.\\
+Tower/moduli branch &
+The rotor or neighboring moduli slice keeps higher \(j\).  The natural gap is
+proportional to \(j(j+1)\). &
+The first extra positive branch is \(j=3/2\), near the low-mass diphoton window.\\
+\hline
+\end{tabular}
+\end{center}
+
+For \(j=3/2\), \(J=15/4\) and
+\begin{equation}
+  X_+\!\left(\frac{15}{4}\right)=0.8204823316059779.
+  \label{eq:x32}
+\end{equation}
+Fixing the common scale by \(M_Z=91.1880\,{\rm GeV}\) gives
+\begin{equation}
+  M_{3/2}
+  =
+  M_Z\sqrt{\frac{X_+(15/4)}{X_+(2)}}
+  =
+  96.53875533197167\,{\rm GeV}.
+  \label{eq:m32}
+\end{equation}
+Thus a tower/moduli branch places a neutral \(j=3/2\) mass inside the CMS Run 2
+low-mass diphoton search range and \(1.14\,{\rm GeV}\) above the reported
+\(95.4\,{\rm GeV}\) local feature.
+
+\section{Extra-mode gap check}
+
+The finite image operator is safe only on the image itself.  If the field is an
+unprojected element of \(V_j\otimes\mathbb R^3\), then
+\[
+  V_j\otimes\mathbb R^3=\Im A_j\oplus(\Im A_j)^\perp .
+\]
+On \(\Im A_j\), \(A_jA_j^\dagger=J_j\).  On the complement,
+\[
+  A_j^\dagger q_\perp=0,
+  \qquad
+  A_jA_j^\dagger q_\perp=0.
+\]
+Thus the quadratic operator \(B+\mu^2A_jA_j^\dagger\) gives denominator \(B\)
+on \(q_\perp\).  The complement is massless unless the action supplies the
+projection \(q_j=P_jq_j\) or a positive complement mass.
+
+The mixed Hom field avoids this complement because
+\[
+  y_j\in H^0(\CP^1,\operatorname{Hom}(\OO(0),\OO(2j)))=V_j,
+  \qquad
+  Q_j=\frac{1}{\sqrt{J_j}}A_jy_j\in\Im A_j.
+\]
+This fixes the finite field content, but the current D8/Payen/RR package
+contains no one-square Hom action.
+
+The rotor branch has the opposite problem.  With the \(Z\) fixing the scale,
+the next tower masses are
+\[
+\begin{array}{c|c}
+j & M_j\ {\rm GeV}\\
+\hline
+3/2 & 96.5388\\
+2 & 99.5795\\
+5/2 & 101.4539\\
+3 & 102.6807
+\end{array}
+\]
+and the large-\(j\) limit is \(106.57\,{\rm GeV}\).  The rotor branch is
+therefore not a high-gap branch.
+
+\section{Coupled selector potential}
+
+The boundary scale can be coupled to closed-string moduli by writing
+\(\mu_B=\mu_B(\rho,\tau)\).  The Type IIA scaling potential is
+\begin{equation}
+\begin{split}
+  V_{\rm bulk}
+  ={}&-B_R\tau^{-2}\rho^{-2}
+  +B_H\tau^{-2}\rho^{-6}
+  +B_0\tau^{-4}\rho^6
+  +B_2\tau^{-4}\rho^2\\
+  &+B_4\tau^{-4}\rho^{-2}
+  +B_6\tau^{-4}\rho^{-6}
+  +B_{\rm loc}\tau^{-3}.
+  \label{eq:vbulk}
+\end{split}
+\end{equation}
+Set
+\begin{equation}
+  J_v=1+\sqrt3,
+  \qquad
+  J_H=\frac{3+\sqrt{57}}{8},
+  \qquad
+  \lambda_{\rm dV}
+  =
+  \frac{J_H}{4J_v}
+  =
+  0.12067210653215474.
+  \label{eq:scalar-targets}
+\end{equation}
+The coupled selector potential is
+\begin{equation}
+\begin{split}
+  V_{\rm sel}
+  ={}&C_{\rm cur}(\rho,\tau)(\kappa_{\rm cur}-1)^2\\
+  &+C_v(\rho,\tau)
+  \left(v_Q^2-\mu_B(\rho,\tau)^2J_v\right)^2\\
+  &+C_H(\rho,\tau)(\lambda_H-\lambda_{\rm dV})^2,
+  \qquad C_{\rm cur},C_v,C_H>0.
+  \label{eq:vsel}
+\end{split}
+\end{equation}
+At the radial minimum \(h^2=2v_Q^2\), stationarity in the selector variables
+gives
+\begin{equation}
+  \kappa_{\rm cur}=1,
+  \qquad
+  v_Q^2=\mu_B(\rho,\tau)^2(1+\sqrt3),
+  \qquad
+  \lambda_H=\lambda_{\rm dV}.
+  \label{eq:selector}
+\end{equation}
+With \(v_{\rm EW}=\sqrt2\,v_Q\),
+\begin{equation}
+  M_H^2=2\lambda_Hv_{\rm EW}^2.
+  \label{eq:higgs}
+\end{equation}
+On the selector branch the squared selector terms vanish, so the \(\rho,\tau\)
+stationarity equations reduce to the bulk coefficient balances from
+\eqref{eq:vbulk}.
+
+The selector terms do not select \(\rho,\tau\) on that branch.  If
+\[
+  S_{\rm cur}=\kappa_{\rm cur}-1,\quad
+  S_v=v_Q^2-\mu_B(\rho,\tau)^2J_v,\quad
+  S_H=\lambda_H-\lambda_{\rm dV},
+\]
+then \(V_{\rm sel}=\sum_i C_i(\rho,\tau)S_i^2\), and at \(S_i=0\)
+\[
+  \partial_\rho V_{\rm sel}
+  =
+  \sum_i(\partial_\rho C_i)S_i^2
+  +2\sum_iC_iS_i\partial_\rho S_i
+  =0
+\]
+with the same statement for \(\partial_\tau\).  The bulk equations are
+therefore the only \(\rho,\tau\) stationarity equations in this written
+potential.
+
+Those bulk equations are two linear constraints on the seven coefficients
+\[
+  B_R,B_H,B_0,B_2,B_4,B_6,B_{\rm loc}.
+\]
+For instance, in the reduced coefficient slice
+\[
+  B_H=B_0=B_2=B_6=0,
+\]
+stationarity at any chosen \(\rho\) is obtained by
+\[
+  B_4=B_R\tau^2,
+  \qquad
+  B_{\rm loc}=-\frac{2}{3}B_R\tau\rho^{-2}.
+\]
+At \(\rho_*=9.463469757158872\), this gives
+\[
+  B_{\rm loc}=-0.007444027070759169\,B_R\tau .
+\]
+Thus the written vacuum potential supplies a coefficient-balance
+parametrization, not a selection of \(\rho_*\).  The source-balance obstruction
+below also removes the current D8/O8 localized source package as a global
+completion for \(B_{\rm loc}\).
+
+\section{Neutral scalar Hessian}
+
+The scalar constants in \eqref{eq:scalar-targets} are the absolute values of
+the negative root of the same quadratic as \eqref{eq:xplus}:
+\begin{equation}
+  |X_-(2)|=1+\sqrt3=J_v,
+  \qquad
+  |X_-(3/4)|=\frac{3+\sqrt{57}}{8}=J_H .
+  \label{eq:xminus-scalar}
+\end{equation}
+This extends the de Vries algebra to the scalar slice.  The local scalar
+Hessian test asks whether the boundary action forces this extension.
+
+For a canonically normalized neutral radial field \(h\), write
+\begin{equation}
+  V_h(h)=a(\rho,\tau)h^2+b(\rho,\tau)h^4+V_0(\rho,\tau),
+  \qquad b>0 .
+  \label{eq:vh-general}
+\end{equation}
+At a nonzero stationary point,
+\begin{equation}
+  h_0^2=-\frac{a}{2b},
+  \qquad
+  M_h^2=V_h''(h_0)=8bh_0^2=-4a .
+  \label{eq:hessian-general}
+\end{equation}
+The selector normalization is \(h_0^2=v_{\rm EW}^2=2v_Q^2\).  If
+\(v_Q^2=J_v\mu_B^2\), then
+\begin{equation}
+  \frac{M_h^2}{\mu_B^2}=16bJ_v .
+  \label{eq:mh-free-b}
+\end{equation}
+Equivalently,
+\begin{equation}
+  V_h=\frac{\lambda_H}{4}(h^2-2v_Q^2)^2
+  \quad\Rightarrow\quad
+  M_h^2=4\lambda_Hv_Q^2 .
+  \label{eq:vh-lambda}
+\end{equation}
+The scalar target \(M_h^2=J_H\mu_B^2\) is obtained by setting
+\begin{equation}
+  \lambda_H=\frac{J_H}{4J_v}.
+  \label{eq:lambda-target-repeat}
+\end{equation}
+Thus the scalar formula is internally consistent, but the coefficient
+\(b\), or equivalently \(\lambda_H\), is a free scalar coefficient in the
+present local potential.
+
+Adding neutral scalar mixing does not change this rank count.  For neutral
+variables \(\Phi^A=(h,\phi^i)\), the physical scalar masses are eigenvalues of
+\begin{equation}
+  H_{AB}=\frac{\partial^2V}{\partial\Phi^A\partial\Phi^B}.
+  \label{eq:neutral-hessian}
+\end{equation}
+Requiring one eigenvalue to be \(J_H\mu_B^2\) is one spectral condition on the
+entries of \(H_{AB}\).  Positivity restricts signs, but it does not select the
+square-root value \(J_H\).  The current scalar sector therefore realizes the
+negative branch as a compatible target, not as a forced Hessian eigenvalue.
+
+\section{Source balance}
+
+The D8/O8 WZ bookkeeping gives a compact source table.  Let
+\begin{equation}
+  \frac{F_Q}{2\pi}=f_mh_Q,\qquad f_m=\frac{2m+13}{2}.
+\end{equation}
+The D8 stack contributes
+\begin{equation}
+  Q_{D8}=N_8,\qquad
+  Q_{D6}=f_mN_8h_Q,\qquad
+  Q_{D4}=\frac{2(2m+13)^2-1}{16}N_8h_Q^2.
+\end{equation}
+The local O8 contribution is
+\begin{equation}
+  Q_{O8}=-16-\frac12h_Q^2.
+\end{equation}
+Spin-c integrality requires \(N_8\in16\mathbb Z\).  In a two-endpoint type I'
+bookkeeping with total stack \(N_{8,L}+N_{8,R}=32\), the total eight-charge
+cancels, but the induced lower vector is
+\begin{equation}
+  Q_{\rm lower}^{\rm total}
+  =
+  32f_mh_Q+
+  \left[2(2(2m+13)^2-1)-1\right]h_Q^2.
+  \label{eq:qlower}
+\end{equation}
+For the minimal spin-c lift,
+\begin{equation}
+  m=0:\qquad Q_{\rm lower}^{\rm total}=208h_Q+673h_Q^2.
+  \label{eq:qlower0}
+\end{equation}
+Thus the current source package does not pass the global tadpole test.  The
+eight-charge can be balanced, but no current bulk flux, image sector, K-theory
+identification, or extra localized source cancels \eqref{eq:qlower0}.
+
+More generally, let an added lower-source sector contribute
+\begin{equation}
+  Q_{\rm new}=\alpha h_Q+\beta h_Q^2 .
+  \label{eq:qnew}
+\end{equation}
+The lower Bianchi equations require
+\begin{equation}
+  \alpha=-\frac{N_LM_L+N_RM_R}{2},
+  \label{eq:alpha-target}
+\end{equation}
+and
+\begin{equation}
+  \beta=
+  -\left[
+  \frac{(2M_L^2-1)N_L+(2M_R^2-1)N_R}{16}-1
+  \right].
+  \label{eq:beta-target}
+\end{equation}
+For an unequal endpoint stack this is
+\begin{equation}
+  Q_{\rm new}=-16M h_Q-(4M^2-3)h_Q^2 ,
+  \qquad M\in2\mathbb Z+1.
+  \label{eq:unequal-source-target}
+\end{equation}
+For a balanced endpoint stack with \(M_R=-M_L\), the D6 entry vanishes and
+\begin{equation}
+  Q_{\rm new}=-(4M_L^2-3)h_Q^2 .
+  \label{eq:balanced-source-target}
+\end{equation}
+The minimal balanced choice \(M_L=\pm1\) therefore needs
+\begin{equation}
+  Q_{\rm new}=-h_Q^2 .
+  \label{eq:min-source-target}
+\end{equation}
+
+This obstruction is not removed by changing the two endpoint spin-c lifts
+inside the present type I' data.  Write \(M_i=2m_i+13\).  Unequal stack
+distributions leave
+\begin{equation}
+  Q_6=16M_i h_Q,
+\end{equation}
+which cannot vanish because \(M_i\) is odd.  Balanced stacks can cancel D6
+only when \(M_R=-M_L\).  Then
+\begin{equation}
+  Q_4=(4M_L^2-3)h_Q^2,
+\end{equation}
+whose minimum is \(h_Q^2\).  Thus the endpoint data alone cannot cancel all
+lower charges.
+
+Closed \(H\)-flux does not remove the obstruction on the selected spaces.  The
+product and flag cohomology rings have only even generators, hence
+\begin{equation}
+  H^3=H^5=0 .
+\end{equation}
+With no NS5 source, \([H]=0\), so the cohomology classes \([HF_0]\) and
+\([HF_2]\) vanish.  The existing NSNS flux entry in the potential scaffold is
+therefore not a cancellation of the lower source vector.
+
+Nor can the current lower vector be removed by a bare K-theory identification.
+For the product and flag spaces the cohomology is torsion-free and
+concentrated in even degree, so the rational Chern character detects the
+lower charge entries.  A nonzero rational \(h_Q\) or \(h_Q^2\) component is not
+K-theory equivalent to zero in the charge group used by the WZ action.
+
+The lower-only source requirement can be isolated.  In the same-lift source
+table, an added image sector with no D8 charge would need
+\begin{equation}
+  Q_{\rm img}=-208h_Q-673h_Q^2.
+\end{equation}
+The balanced opposite-lift endpoint package cancels the D6 part first and
+leaves the residual D4 source
+\begin{equation}
+  Q_4=(4M_L^2-3)h_Q^2,
+  \qquad M_L\in2\mathbb Z+1.
+\end{equation}
+The smallest residual is \(h_Q^2\).  Hence the minimal lower-only completion is
+a pure negative D4 image/source
+\begin{equation}
+  Q_{\rm img}=-h_Q^2.
+\end{equation}
+A literal anti-D4 or an O4-like image source has this charge type, but either
+choice is an enlargement of the source package and brings additional localized
+tension, backreaction, and potential coefficients.
+
+The O4 normalization is favorable.  The orientifold WZ coefficient
+\(-2^{p-5}\) gives an \(O4^-\) charge \(-1\) in the doubled type I' convention.
+Thus an \(O4^-\) fixed component on \(\{pt\}_{\CP^2}\times S^1_Q\) would supply
+\(-h_Q^2\).  The product fixed-locus geometry does not give this component by
+itself.  A holomorphic projective involution on \(\CP^2\) fixes
+\(\CP^0\sqcup\CP^1\), so with the \(RP^1\) fixed circle in \(\CP^1\) it
+produces O4 and O6 supports.  Standard complex conjugation fixes \(RP^2\) and
+therefore gives O6-type support after the \(\CP^1\) fixed circle is included.
+The O4 charge match therefore requires an enlarged O4/O6 source table rather
+than closing the present D8/O8 package.
+
+The enlarged holomorphic package still does not close the source table.  In the
+same doubled convention the companion \(O6^-\) carries \(-4h_Q\), so one
+product involution contributes
+\begin{equation}
+  Q_{O4/O6}=-4h_Q-h_Q^2 .
+\end{equation}
+The D8 endpoint D6 charge is
+\begin{equation}
+  Q_6^{D8}=\frac{N_LM_L+N_RM_R}{2}h_Q,
+  \qquad N_i\in\{0,16,32\},\quad M_i\in2\mathbb Z+1,
+\end{equation}
+hence \(Q_6^{D8}\in16\mathbb Z\,h_Q\).  It cannot cancel the single O6 unit.
+With \(k\) identical O4/O6 packages, D6 cancellation forces \(k\) to be a
+multiple of four, while the balanced endpoint D4 coefficient \(4M^2-3\) is
+\(1\) modulo \(8\).  Thus the O4/O6 enlargement does not close Milestone 6
+inside the current endpoint lattice.
+
+The source branch is therefore closed for the present compactification
+ansatz.  A standalone anti-D4 would cancel the minimal cohomology class, but it
+adds localized tension, an open sector, and backreaction not included in the
+boundary-current action.  An O4-only repair would require a different
+orientifold or topology.  A D6-bearing repair adds a new source sector and
+changes the Bianchi table.  Each option is a new compactification ansatz, not a
+completion of the current D8/O8 route.
+
+\begin{proposition}[Source-balance obstruction]
+For the current D8/O8 endpoint package on the selected product or flag
+topology, with closed \(H\), no NS5 source, rational WZ/K-theory charge
+detection, and only the tested product O4/O6 enlargement, the lower Bianchi
+classes cannot vanish.
+\end{proposition}
+
+\begin{proof}
+Endpoint D8/O8 data alone fail as follows.  Unequal endpoint stacks leave
+\(Q_6=16M_i h_Q\), which is nonzero for odd \(M_i\).  Balanced stacks cancel
+D6 only with \(M_R=-M_L\), and then leave
+\((4M_L^2-3)h_Q^2\), which is nonzero.  Closed \(H\) has no cohomology class on
+the selected spaces because \(H^3=H^5=0\), so the \(HF_0\) and \(HF_2\) terms
+cannot cancel these classes.  The rational Chern character detects the
+nonzero \(h_Q\) and \(h_Q^2\) entries on the torsion-free even cohomology
+spaces, so bare K-theory cannot identify the lower vector with zero.  The
+tested holomorphic O4/O6 package contributes \(-4k h_Q-kh_Q^2\).  D6
+cancellation forces \(k\) to be a multiple of four, but the balanced endpoint
+D4 coefficient is \(1\) modulo \(8\), and the unequal endpoint D4 equation
+\(4M_i^2-3=4M_i\) has no integer solution.  Thus all tested cancellation
+routes fail under the stated assumptions.
+\end{proof}
+
+\begin{proposition}
+Under the scoped assumptions above, the de Vries weak-angle relation is not
+forced by the D10 dynamics.  The construction is a
+compatibility framework: it contains the D10 carrier/probe geometry, the
+endpoint Casimirs, the finite image-channel algebra, and the full-current
+metric branch, but at least one mandatory pass condition fails on every route
+that would turn the algebraic match into a prediction.
+\end{proposition}
+
+\begin{proof}
+Milestone 1 fails as a forcing statement because the scoped action does not
+supply the one-square Hom/image term needed to lock the Feshbach residue.
+Milestone 2 selects the finite set only on an imposed finite branch; Borel-Weil
+alone gives a tower.  Milestone 3 gives \(\kappa_{\rm cur}=1\) only on the
+full-current branch, while the scoped source package does not select that
+branch.  Milestones 4 and 5 leave the bulk coefficients, boundary scale, and
+scalar Hessian as coefficient targets.  Milestone 6 fails global source balance
+by the preceding proposition and closes the current source branch.  Milestone 7
+therefore has no derived source/vacuum system from which to compute thresholds,
+scheme conversion, or branching.  Thus the de Vries number is compatible with
+the scoped route but is not a prediction of it.
+\end{proof}
+
+\section{Status of the construction}
+
+\begin{proposition}[Current result]
+The D10 boundary-current construction gives a coherent compatibility framework
+for the de Vries weak-angle number.  The canonical current metric gives
+\(\kappa_{\rm cur}=1\) on the full-current branch, but the written D8/Payen/RR
+source package contains no term fixing that branch.  The finite image-channel
+Feshbach algebra gives the de Vries pole only when the open-channel contact has
+unit residue.  The raw Wilson contact has residue \(J_j\), so ordinary Wilson
+expansion plus image projection does not force the finite pole when treated as
+a separate direct 1PI term.  In the retained-field action the Wilson second
+derivative is a connected response represented by \(q_j\) exchange.  The local
+oscillator must also satisfy the coefficient lock \(r=1\) in
+\eqref{eq:r-ratio}.  The mixed Hom sector supplies the right finite image
+field through \eqref{eq:hom-q}, but Payen plus the D8 DBI/WZ source package
+contains no one-square Hom action \eqref{eq:hom-square}.  The source
+table leaves the lower charge vector \eqref{eq:qlower0} uncancelled; after the
+best endpoint-lift cancellation it still needs a negative D4 image/source
+\(-h_Q^2\).  The \(O4^-\) charge magnitude matches this unit, but the product
+involutions add O6-type support.  The resulting O6 charge is incompatible with
+the current D8 endpoint lattice, so the source package is not closed.  The
+scoped source-balance obstruction above rules out the current D8/O8 package as
+a global compactification proof.  The extra-mode check also fails for the
+current action: an unprojected image field has a massless complement, while
+the rotor branch keeps a light tower.  The vacuum rank test shows that the
+written selector and bulk potential do not select \(\rho_*\).  The scalar
+Hessian rank test shows that the negative-branch scalar constants are fitted by
+free scalar coefficients in the present action.  The replacement-source
+equations \eqref{eq:alpha-target}--\eqref{eq:min-source-target} reduce the
+minimal source repair to \(-h_Q^2\), which is not supplied by the current
+package.  Accepting that repair changes the source content or topology, so the
+current compactification branch is not a proof branch.
+\end{proposition}
+
+\begin{proof}
+The compatibility framework is the collection of \eqref{eq:d10},
+\eqref{eq:w9}, \eqref{eq:vj}, \eqref{eq:qeta}, \eqref{eq:squad},
+\eqref{eq:kappaone}, and \eqref{eq:vsel}.  The Feshbach pole follows from
+\eqref{eq:gamma}.  The current metric follows from \eqref{eq:metric} and
+\eqref{eq:frame}.  The residue mismatch follows from comparing
+\eqref{eq:creq} with \eqref{eq:cwilson}.
+\end{proof}
+
+\begin{thebibliography}{9}
+
+\bibitem{Witten1995}
+E. Witten,
+``String theory dynamics in various dimensions,''
+Nucl. Phys. B \textbf{443}, 85--126 (1995).
+
+\bibitem{CMSHIG20002}
+CMS Collaboration,
+``Search for a standard model-like Higgs boson in the mass range between 70 and
+110 GeV in the diphoton final state in proton-proton collisions at
+\(\sqrt{s}=13\,{\rm TeV}\),''
+Phys. Lett. B \textbf{793}, 320--347 (2019);
+CMS-HIG-20-002 public result page.
+
+\bibitem{PDG2025}
+Particle Data Group,
+``Gauge and Higgs boson summary tables,''
+Review of Particle Physics (2025).
+
+\end{thebibliography}
+
+\end{document}

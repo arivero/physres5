@@ -44,6 +44,7 @@ then identify which claims are derived, which claims are numerical coincidences,
 - `prompts/` — prompts for Codex, GPT-5.5 Pro, referee review, and chapter work.
 - `context/` — project memory, source inventory, style rules, and completion criteria.
 - `references/pdfs/` — source PDFs copied from the sandbox.
+- `family/` — curated work from the sibling de Vries–Rivero projects (dv2, dvFable, physres6, marathon, kkorchestra, kkFable, signed-dv, golden, weak, and the chats workspace). Start with `family/IDEAS.md`; `family/README.md` maps the folders.
 - `scripts/` — build, test, context-pack, and project sanity scripts.
 
 ## Local quick start

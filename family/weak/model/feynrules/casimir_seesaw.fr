@@ -1,0 +1,214 @@
+(* ********************************************************************** *)
+(*                                                                          *)
+(*  Casimir-Locked Bosonic-Seesaw Model — FeynRules implementation          *)
+(*                                                                          *)
+(*  Field content (chat sec. 1-2):                                          *)
+(*    Standard Model gauge group SU(2)_L x U(1)_Y at the EW scale.          *)
+(*    Two SU(2)_L doublet scalars in (e, c) basis: PhiDe, PhiDc  (Y=1/2).   *)
+(*    Two SU(2)_L triplet scalars in (e, c) basis: PhiTe, PhiTc  (Y=0).     *)
+(*                                                                          *)
+(*  Casimir-locked seed mass matrix per irrep R:                            *)
+(*       M^2_R / m_0^2 = [[ 0,        sqrt(C2(R)) ],                        *)
+(*                        [ sqrt(C2(R)), -C2(R)   ]]                        *)
+(*    with  C2(R=2) = 3/4,  C2(R=3) = 2.                                    *)
+(*                                                                          *)
+(*  Diagonalisation (Phase 1 verified):                                     *)
+(*       lambda_{2,+} = m_0^2 (sqrt(57)-3)/8                                *)
+(*       lambda_{2,-} = -m_0^2 (sqrt(57)+3)/8                               *)
+(*       lambda_{3,+} = m_0^2 (sqrt(3)-1)                                   *)
+(*       lambda_{3,-} = -m_0^2 (sqrt(3)+1)                                  *)
+(*                                                                          *)
+(*  Author: autonomous research pipeline                                    *)
+(*  Date:   2026-05-16                                                      *)
+(*                                                                          *)
+(* ********************************************************************** *)
+
+M$ModelName = "CasimirSeesaw";
+
+M$Information = {
+  Authors      -> {"Autonomous Research Pipeline"},
+  Version      -> "1.0",
+  Date         -> "2026-05-16",
+  Institutions -> {"local"},
+  Emails       -> {"research@local"},
+  References   -> {
+    "arXiv:hep-ph/0606209  (Calmet, Oliver)",
+    "arXiv:hep-ph/0501059  (H.D. Kim)",
+    "arXiv:1211.7290       (Caracciolo, Parolini, Serone)",
+    "arXiv:hep-ph/9809470  (Chivukula, Dobrescu, Georgi, Hill)",
+    "arXiv:0708.3344       (Schucker)"
+  }
+};
+
+(* ********************************************************************** *)
+(*  Gauge groups                                                            *)
+(* ********************************************************************** *)
+
+M$GaugeGroups = {
+  U1Y == { Abelian -> True,
+           CouplingConstant -> g1,
+           GaugeBoson       -> B,
+           Charge           -> Y },
+  SU2L == { Abelian          -> False,
+            CouplingConstant -> gw,
+            GaugeBoson       -> Wi,
+            StructureConstant -> ep,
+            Representations  -> {Ta, SU2D},
+            Definitions      -> { Ta[a_,b_,c_] -> PauliSigma[a,b,c]/2,
+                                  ep -> Eps } }
+};
+
+(* ********************************************************************** *)
+(*  Parameters: m_0 (internal seed) is fixed by the EW input M_Z.           *)
+(* ********************************************************************** *)
+
+M$Parameters = {
+
+  (* Couplings *)
+  gw == { ParameterType -> Internal,
+          Value         -> Sqrt[4 Pi aEW / sw2],
+          Description   -> "SU(2)_L coupling, derived from aEW and sw2" },
+  g1 == { ParameterType -> Internal,
+          Value         -> Sqrt[4 Pi aEW / cw2],
+          Description   -> "U(1)_Y coupling, derived from aEW and cw2" },
+
+  (* Casimir-locked seed scale (chat eq. m_0 = M_Z / sqrt(sqrt(3)-1)) *)
+  m0 == { ParameterType -> Internal,
+          Value         -> MZ / Sqrt[Sqrt[3] - 1],
+          Description   -> "Internal seed scale, fixed by M_Z and triplet positive eigenvalue",
+          TeX           -> Subscript[m,0] },
+
+  (* Closed-form physical scalar masses *)
+  MphiDP == { ParameterType -> Internal,
+              Value         -> m0 Sqrt[(Sqrt[57] - 3)/8],
+              Description   -> "Doublet positive mass eigenstate (= M_W in this identification)" },
+  MphiDM == { ParameterType -> Internal,
+              Value         -> m0 Sqrt[(Sqrt[57] + 3)/8],
+              Description   -> "Doublet negative mass eigenstate (tachyonic seed; physical mass after EWSB)" },
+  MphiTP == { ParameterType -> Internal,
+              Value         -> m0 Sqrt[Sqrt[3] - 1],
+              Description   -> "Triplet positive mass eigenstate (= M_Z in this identification)" },
+  MphiTM == { ParameterType -> Internal,
+              Value         -> m0 Sqrt[Sqrt[3] + 1],
+              Description   -> "Triplet negative mass eigenstate" },
+
+  (* SM-like external EW inputs *)
+  aEW == { ParameterType -> External,
+           Value         -> 1/127.918,
+           Description   -> "EW alpha at M_Z" },
+  MZ  == { ParameterType -> External,
+           Value         -> 91.1880,
+           Description   -> "Measured M_Z (PDG 2024)" },
+  sw2 == { ParameterType -> Internal,
+           Value         -> 1 - (Sqrt[57] - 3)/(8 (Sqrt[3] - 1)),
+           Description   -> "Model prediction: sin^2(theta_W) = 1 - lambda_{2,+}/lambda_{3,+} = 0.2231013" },
+  cw2 == { ParameterType -> Internal,
+           Value         -> 1 - sw2 }
+};
+
+(* ********************************************************************** *)
+(*  Scalar fields                                                           *)
+(* ********************************************************************** *)
+
+M$ClassesDescription = {
+
+  (* Doublet pair: elementary and composite *)
+  S[11] == { ClassName        -> PhiDe,
+             SelfConjugate    -> False,
+             Indices          -> {Index[SU2D]},
+             QuantumNumbers   -> {Y -> 1/2},
+             Mass             -> 0,    (* mass entry comes from seed matrix below *)
+             Width            -> 0,
+             PropagatorLabel  -> "PhiDe",
+             PropagatorType   -> D,
+             PropagatorArrow  -> Forward,
+             Description      -> "SU(2)_L doublet, elementary channel (Y=1/2)" },
+
+  S[12] == { ClassName        -> PhiDc,
+             SelfConjugate    -> False,
+             Indices          -> {Index[SU2D]},
+             QuantumNumbers   -> {Y -> 1/2},
+             Mass             -> 0,
+             Width            -> 0,
+             Description      -> "SU(2)_L doublet, composite channel (Y=1/2)" },
+
+  (* Triplet pair: elementary and composite (real Y=0 triplets a la GM) *)
+  S[21] == { ClassName        -> PhiTe,
+             SelfConjugate    -> True,
+             Indices          -> {Index[SU2W]},
+             QuantumNumbers   -> {Y -> 0},
+             Mass             -> 0,
+             Width            -> 0,
+             Description      -> "SU(2)_L real triplet, elementary channel (Y=0)" },
+
+  S[22] == { ClassName        -> PhiTc,
+             SelfConjugate    -> True,
+             Indices          -> {Index[SU2W]},
+             QuantumNumbers   -> {Y -> 0},
+             Mass             -> 0,
+             Width            -> 0,
+             Description      -> "SU(2)_L real triplet, composite channel (Y=0)" }
+};
+
+(* ********************************************************************** *)
+(*  Lagrangian                                                              *)
+(* ********************************************************************** *)
+
+(* Yang-Mills kinetic terms come from M$GaugeGroups (FeynRules auto-generates).
+   Below we add the scalar kinetic terms and the Casimir-locked seed potential. *)
+
+LKinScalar :=
+    DC[PhiDe[i], mu] HC[DC[PhiDe[i], mu]]
+  + DC[PhiDc[i], mu] HC[DC[PhiDc[i], mu]]
+  + (1/2) DC[PhiTe[a], mu] DC[PhiTe[a], mu]
+  + (1/2) DC[PhiTc[a], mu] DC[PhiTc[a], mu];
+
+(* Casimir-locked seed potential.
+   For each irrep R, V_seed^R = (PhiR_e^*  PhiR_c^*) M^2_R (PhiR_e  PhiR_c)^T.
+   With M^2_R / m_0^2 = [[0, sqrt(C2)], [sqrt(C2), -C2]],
+   the explicit terms are:
+     R=2:  m_0^2 [ sqrt(3)/2 (PhiDe^* PhiDc + PhiDc^* PhiDe) - (3/4) PhiDc^* PhiDc ]
+     R=3:  m_0^2 [ sqrt(2)   (PhiTe . PhiTc)                  - 2     PhiTc . PhiTc ]
+*)
+
+VSeedDoublet :=
+    m0^2 ( Sqrt[3]/2 ( HC[PhiDe[i]] PhiDc[i] + HC[PhiDc[i]] PhiDe[i] )
+         - (3/4)     ( HC[PhiDc[i]] PhiDc[i] ) );
+
+VSeedTriplet :=
+    m0^2 ( Sqrt[2] ( PhiTe[a] PhiTc[a] )
+         - 2       ( PhiTc[a] PhiTc[a] ) );
+
+(* Minimal quartic potential preserving the doublet-only-VEV pattern.
+   Negative mass eigenstates Phi^d_-, Phi^t_- are the tachyonic seeds;
+   the doublet quartic stabilises EWSB at v = 246.22 GeV.
+   We write the quartics in the (e,c) basis directly; mass eigenstates
+   are recovered after diagonalisation.
+
+   lambda_d:  doublet self-quartic
+   lambda_t:  triplet self-quartic
+   lambda_dt: doublet-triplet portal (constrained by rho ~ 1)
+*)
+
+VQuartic :=
+    lamD  ( HC[PhiDc[i]] PhiDc[i] )^2
+  + lamT  ( PhiTc[a] PhiTc[a] )^2
+  + lamDT ( HC[PhiDc[i]] PhiDc[i] ) ( PhiTc[a] PhiTc[a] );
+
+LScalar := LKinScalar - VSeedDoublet - VSeedTriplet - VQuartic;
+
+(* Total Lagrangian (Yang-Mills auto-generated by FeynRules) *)
+
+LCasimirSeesaw := LScalar;
+
+(* ********************************************************************** *)
+(*  Sanity checks (run inside Mathematica/FeynRules):                       *)
+(*                                                                          *)
+(*    LoadModel["casimir_seesaw.fr"];                                       *)
+(*    CheckHermiticity[LCasimirSeesaw];                                     *)
+(*    CheckKineticTermNormalisation[LKinScalar];                            *)
+(*    CheckMassSpectrum[LCasimirSeesaw];                                    *)
+(*    WriteUFO[LCasimirSeesaw + L_SM_Gauge,                                 *)
+(*             Output -> "casimir_seesaw_UFO"];                             *)
+(*                                                                          *)
+(* ********************************************************************** *)

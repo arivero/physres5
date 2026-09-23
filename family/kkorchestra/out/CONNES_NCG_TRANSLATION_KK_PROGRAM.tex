@@ -1,0 +1,1812 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+
+\geometry{margin=1in}
+\setlength{\emergencystretch}{3em}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\RP}{\mathbb{RP}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\AF}{\mathcal A_F}
+\newcommand{\HB}{\mathcal H}
+\newcommand{\DF}{D_F}
+\newcommand{\DB}{D_B}
+\newcommand{\DA}{D_A}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\mzero}{\mathfrak m_0}
+\newcommand{\mthree}{\mathfrak m_3}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\Spin}{\operatorname{Spin}}
+\newcommand{\SU}{\operatorname{SU}}
+\newcommand{\U}{\operatorname{U}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\KO}{\operatorname{KO}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{A Connes-Style Translation of the \texorpdfstring{$\CP^2$}{CP2}/Aloff--Wallach Kaluza--Klein Programme}
+\author{KK Orchestra working manuscript}
+\date{June 1, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This manuscript translates the current \(\CP^2\)/Aloff--Wallach
+Kaluza--Klein programme into Connes-style noncommutative geometry.  The
+translation uses spectral triples, real structures, inner fluctuations,
+boundary triples, finite wall modules, and spectral-action language to
+separate five layers: compact geometry, endpoint diagnostics, the D6
+branch interface, the orthodox \(\mthree\) custodial Higgs block, and the
+open retained-response source problem.  The main conclusion is deliberately
+conservative.  The Connes vocabulary clarifies the missing object: a
+source-derived quadratic form on the retained anti-graph mismatch.  It also
+keeps the established electroweak result \(\rho=1\) in the single
+\(\mthree\) branch separate from any future De Vries-style spectral
+refinement.
+\end{abstract}
+
+\tableofcontents
+
+\section{Reading Guide}
+
+The document has two intended readers.
+
+\begin{itemize}[leftmargin=2em]
+  \item For a physicist, the translation explains which parts of the KK
+  model are ordinary gauge, Higgs, gravity, boundary, or defect physics.
+  It also records where a signed retained-response Hessian would need a
+  genuine source action.
+  \item For a geometer, the translation identifies the algebras, Hilbert
+  modules, Dirac operators, real structures, and boundary data attached to
+  the D5, D6, and D7 pieces.
+\end{itemize}
+
+\section{Local Corpus Map}
+
+The current produced corpus has the following NCG reading:
+\begin{center}
+\small
+\begin{tabular}{@{}L{0.46\linewidth}L{0.48\linewidth}@{}}
+\path{NCG_KK_QFT_CONNES_DICTIONARY.md}
+  & expandable KK/QFT/Connes reference dictionary,\\
+\path{M3_DOUBLET_CUSTODIAL_LECTURE.tex}
+  & custodial \(\mthree\) module and \(\rho=1\),\\
+\path{CUSTODIAL_3D_TO_7D_EXTENSION.md}
+  & Hopf-to-Aloff--Wallach custodial dictionary,\\
+\path{KK_HIGGSING_CUSTODIAL_MODEL.md}
+  & gauge-Higgs inner-fluctuation model,\\
+\path{KK_HIGGS_POTENTIALS_1D3D_5D7D.md}
+  & spectral-action and reduced-potential ledger,\\
+\path{GRAVITY_ACTION_D765_D321.md}
+  & metric-family and heat-coefficient control,\\
+\path{TRANSITION_1D3D_5D7D.md}
+  & family-of-triples transition dictionary,\\
+\path{D6_FERMION_BRIDGE.md}
+  & Spin\({}^c\) and branch-interface constraint sketch,\\
+\path{D6_DIRAC_BRANCH_DEFECT_SPECTRAL_FLOW.md}
+  & singular, APS, eta, and spectral-flow data.
+\end{tabular}
+\end{center}
+These files supply local evidence, filters, and source bookkeeping.  None of
+them replaces the retained boundary-source calculation for \(A_B\) on \(h\).
+
+\section{Legacy Discussion Coverage}
+
+The wider project discussion is assigned to current NCG homes in
+\cite{ncg-legacy-coverage}.  The table below records the manuscript-level
+reading.
+\begin{center}
+\small
+\begin{tabular}{@{}L{0.25\linewidth}L{0.42\linewidth}L{0.25\linewidth}@{}}
+\toprule
+Discussion family & NCG home & Status \\
+\midrule
+Hilo and KK source synthesis
+  & Source narrative and corpus control through source and produced-output
+    crosswalks.
+  & Source-status labels required before use. \\
+Custodial and \(\mthree\)
+  & Real or quaternionic doublet module, isotropic scalar metric, and
+    ordinary Higgs mass matrix.
+  & Orthodox \(\rho=1\) filter. \\
+Gauge-Higgs and scalar potentials
+  & Inner fluctuations, compact Dirac-family moduli, spectral-action
+    potentials, and branch Hessians.
+  & Ordinary Higgs and branch-selection layer. \\
+Transition and probe dimension
+  & Families of triples, compressed sector triples, and phase dictionaries.
+  & Phase and filtration layer. \\
+Witten-style tower
+  & Family \((\mathcal A_\epsilon,\mathcal H_\epsilon,D_\epsilon)\) with
+    labelled eigenfamily and source-computed gap.
+  & Dimension-growth criterion. \\
+D5 endpoint and electroweak charge
+  & Product endpoint triple, lens quotient module, flat characters,
+    \(Q_{\mathrm{EM}}\), and weak-inertia rows.
+  & Endpoint and charge-period filters. \\
+D6 branch corpus
+  & Boundary/singular triples, Schur packages, determinant packages,
+    auxiliary modules, finite wall modules, and twisted-line modules.
+  & Source-package search layer. \\
+Boundary, Calderon, and DtN work
+  & Boundary triple, Weyl function, Calderon projector, and finite-part
+    trace.
+  & Domain and spectral data. \\
+De Vries and golden-rule search
+  & Neutral multiplier \(\mu_r\), named source operator, retained package
+    \(P_B,A_B,m_B,\gamma_B,\sigma_r\).
+  & Target-for-derivation and obstruction ledger. \\
+Normalization and response metric
+  & Response trace on \(F_B\), map scale \(\gamma_B\), Schur weight \(w_B\),
+    and residual quotient.
+  & Trace-normalization package. \\
+Noncommutative, fuzzy, and CSDR repairs
+  & Finite/equivariant triples, fuzzy flag modules, projective
+    \(A_\theta\) modules, Morita and trace-selection data.
+  & Exotic repair candidates. \\
+Spin\({}^c\), fermion bridge, and division algebra
+  & Spin\({}^c\) Hilbert modules, finite Hilbert-space constraints,
+    real/quaternionic structures, and defect carriers.
+  & Bosonic constraints and carrier language. \\
+Relative gain, determinant, and finite trace
+  & Relative source functional, finite trace module, determinant second
+    variation, and counterterm rule.
+  & Conditional source routes. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The residual mathematical target across the table is the same retained source
+package:
+\[
+  P_B:F_B\to E_B,\qquad
+  K_B=P_B^\dagger A_BP_B,\qquad
+  m_B,\quad \gamma_B,\quad \sigma_r.
+\]
+A filename-level residual audit is recorded in
+\cite{ncg-file-residual-coverage}.  Notes that were only implicit in the
+family tables receive a Connes package class, an expansion anchor, and an
+allowed-use label there.
+
+Repository artifacts outside the current source-note-output corpus are
+covered in \cite{ncg-repository-artifact-coverage}.  Top-level ledgers,
+archives, task prompts, calculation artifacts, settings, and build auxiliaries
+enter as governance, source narrative, historical evidence, prompt material,
+calculation artifact, verification artifact, or no mathematical role.  Any
+mathematical reuse from those files still passes through a complete expansion
+block or a named current note.
+
+The original claims C1--C7 and task prompts T1--T6/R4/R5 are translated in
+\cite{ncg-claim-task-ledger}.  That ledger assigns them to the current package
+classes: branch/groupoid spectral data for C1, homogeneous compact triples for
+C2--C3 and T2, Spin\({}^c\) modules for C4/T1, gauge-inertia traces for
+C5/T3/R4, the \(\mthree\) custodial module for T4, source-library obstructions
+for T6, endpoint charge-factor diagnostics for R5, and the retained package
+\[
+  E_B,\quad F_B,\quad P_B,\quad A_B,\quad m_B,\quad \gamma_B,\quad \sigma_r
+\]
+for C7/T5.
+
+The wastebook correction history is translated in
+\cite{ncg-wastebook-correction}.  Its confirmed geometry, spin and
+Spin\({}^c\) corrections, gauge-inertia caveats, corrected literature entries,
+weak-angle alternatives, flipped colour/electroweak identification, and
+rejected spectral shorthand are assigned to package homes before reuse.  In
+particular, the old shorthand is replaced by the neutral retained-source
+notation
+\[
+  O_r^\dagger O_r=\mu_r\Id+\Delta_r,\qquad
+  P_B^\dagger A_BP_B\vert_r=\gamma_B^2\mu_r\Id+\sigma_r .
+\]
+The archived T/R verification reports are translated in
+\cite{ncg-archive-verification-ledger}.  They supply historical evidence for
+Spin\({}^c\) and index filters, compact metric families, gauge inertias,
+custodial mass matrices, source-origin obstructions, no-go evidence,
+weak-angle comparisons, and flipped endpoint diagnostics.  Current derivations
+still require the relevant operator, action, trace, and residuals in a live
+package note or in this manuscript.
+
+Calculation artifacts under \path{calc/} are translated in
+\cite{ncg-calculation-artifact-ledger}.  Topology scripts are assigned to
+Spin\({}^c\) and endpoint-period packages, metric scripts to compact spectral
+triples, weak-angle scripts and arrays to gauge-inertia packages, endpoint
+comparison scripts to representation diagnostics, custodial scripts to the
+\(\mthree\) ordinary Higgs Hessian, and cache files to no mathematical role.
+Any script-derived formula used here has to pass through a displayed expansion
+or a cited archive report before it enters an argument.
+
+Produced-output premise remediation is tracked in
+\cite{ncg-produced-remediation}.  Older boundary and vertical-sector formulas
+are read through named operator multipliers
+\[
+  P_{\mathrm{bd}}^\dagger P_{\mathrm{bd}}\vert_{E_j}
+    = x_0\mu_j^{\mathrm{bd}}\Id_{E_j}+\sigma_j^{\mathrm{bd}},
+  \qquad
+  M_{\mathrm{vert},r}=-\sum_a\rho_r(T_a)^2
+    =\mu_r^{\mathrm{vert}}\Id_{V_r}.
+\]
+These are direct boundary or representation readouts.  Retained-source use
+still requires one source package for
+\[
+  P_B,\quad A_B,\quad m_B,\quad \gamma_B,\quad \sigma_r .
+\]
+The note-layer shorthand remediation index
+\cite{ncg-note-multiplier-remediation} applies the same rule to older research
+notes that still contain representation or boundary multiplier abbreviations.
+Role-level produced-output anchors in
+\cite{ncg-produced-deliverable-anchors} give each current \texttt{out/}
+deliverable a Connes package form before reuse: manuscript, dictionary,
+custodial module, gauge-Higgs Hessian, potential, gravity, transition,
+Spin\({}^c\), or singular Dirac data.
+
+\section{Source-Route Corpus Map}
+
+The older D6 source-admission and deletion notes are read through the NCG
+package classes in \cite{ncg-source-audit-corpus}.  The current convention is
+\[
+  P_B:F_B\to E_B,\qquad
+  h=T_Bx-(q-P_Bp),\qquad
+  K_B=P_B^\dagger A_BP_B .
+\]
+Older notes that write \(q-P_{\mathrm{old}}^\dagger p\) translate by
+\[
+  P_B=P_{\mathrm{old}}^\dagger .
+\]
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{0.28\linewidth}L{0.34\linewidth}L{0.30\linewidth}@{}}
+\toprule
+Source-route family & NCG package & Use in the programme \\
+\midrule
+Folded collar and compliance
+  & Boundary Schur package with relaxed collar module \(Z_B\), Weyl scale
+    \(\Lambda_B\), and Schur weight \(W_B\).
+  & Candidate retained source after trace and response data agree. \\
+Boundary triple and Calderon
+  & \(D_{\min},D_{\max},\Gamma_0,\Gamma_1\), Weyl function, Calderon
+    projector, finite-part trace.
+  & Domain and spectral package; coefficient source only after \(K_B\) is derived. \\
+Local \(B_4\) routes
+  & Local module with variables \(u\), \(R_{\mathrm{def}}h\), and Hessian
+    blocks \(K_{\mathrm{loc}},J_{\mathrm{loc}},E_{\mathrm{loc}}\).
+  & Conditional Schur source after vacuum, Hessian, coupling, and trace are fixed. \\
+Determinant and gluing
+  & \(h\)-dependent operator family \(L_B(h)\), determinant, counterterm,
+    and finite trace.
+  & Candidate after sign, subtraction, zero modes, and counterterms are source data. \\
+Influence, constraint, and transmission
+  & Auxiliary module \(Z_B\), operator \(K_Z\), coupling \(J_Z\), contour or
+    constraint sign.
+  & Candidate after physical sign and response trace are derived. \\
+Finite wall and smoothing
+  & Finite or layered spectral module with finite trace and endpoint
+    representation.
+  & Candidate after blocks, traces, and limits are fixed. \\
+Twisted angular capacity
+  & Flat line \(L_\delta\) on \(E_B\), normal-disk capacity, and twisted
+    response module.
+  & Candidate after the bosonic line on \(h\) and normal-gradient coefficient are derived. \\
+Gravity, cone, and ordinary Higgs routes
+  & Compact metric, spectral-action, conical, Yang--Mills, or scalar
+    Hessian data.
+  & Stability, electroweak, and branch-selection filters. \\
+Endpoint and representation routes
+  & Product, quotient, Hopf/lens, finite-centre, and flat-character endpoint
+    modules.
+  & Charge, period, global-form, and roundness filters. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The common source-readout expansion is
+\[
+  K_B\vert_r=\gamma_B^2\mu_r\Id+\sigma_r,
+  \qquad
+  \|p_r\|_{\mathrm{kin}}^2=m_B\|p_r\|^2,
+\]
+so
+\[
+  k_r^{\mathrm{can}}=m_B^{-1}K_B\vert_r.
+\]
+When \(A_B\vert_r=w_B\Id+\Delta_r\), this becomes
+\[
+  k_r^{\mathrm{can}}
+    =\frac{w_B\gamma_B^2}{m_B}\mu_r+\delta_r^{\mathrm{can}} .
+\]
+The corpus map therefore has a positive role: it sorts local calculations
+into spectral packages.  It also keeps endpoint, ordinary Higgs, gravity,
+and direct boundary-energy data out of the retained-source coefficient
+unless they enter one of the source expansions above.
+
+\section{Source Library Map}
+
+The local source library in \texttt{docs/} enters through six roles:
+\[
+\begin{array}{ll}
+\text{Connes and spectral-action sources} & \text{vocabulary and formulas},\\
+\text{KK and Hilo transcripts} & \text{project source narrative},\\
+\text{Standard Model and Higgs sources} & \text{electroweak checks},\\
+\text{global-form and line-operator sources} & \text{endpoint period filters},\\
+\text{boundary, Calderon, defect, and CSDR digests}
+  & \text{candidate operators and modules},\\
+\text{Witten tower sources} & \text{infinite-family dimension criterion}.
+\end{array}
+\]
+The role map controls citation use.  Source material supplies anchors,
+filters, operators, or comparisons; the retained wall coefficient still
+requires a source expansion in one trace convention.
+The filename-level source audit in \cite{ncg-source-file-coverage} assigns
+each current \texttt{docs/} source file one of these roles and records its
+use boundary.
+The role-level expansion anchors in \cite{ncg-source-expansion-anchors}
+display the package forms behind those roles: almost-commutative triples,
+Higgs Hessians, endpoint line lattices, KK/CSDR reductions, boundary triples,
+defect determinants, and tower families.
+
+The translation completion audit in \cite{ncg-translation-completion-audit}
+records the corpus enumeration, coverage evidence, verification commands, and
+remaining retained-source target for the active Connes-translation objective.
+
+\section{Package Atlas}
+
+The package atlas in \cite{ncg-package-atlas} condenses the file coverage
+into reusable Connes data blocks.  The manuscript-level version is:
+\begin{center}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}L{0.20\linewidth}L{0.28\linewidth}L{0.27\linewidth}L{0.18\linewidth}@{}}
+\toprule
+Package & Algebra and Hilbert data & Operator or action & Source role \\
+\midrule
+Almost-commutative Standard Model
+  & \(C^\infty(M)\otimes\AF\), \(L^2(M,S)\otimes\mathcal H_F\),
+    \(J\), \(\gamma\).
+  & \(D_M\otimes1+\gamma_M\otimes\DF\), inner fluctuation \(\DA\).
+  & Source anchor for vocabulary and ordinary gauge-Higgs formulas. \\
+Homogeneous KK carrier
+  & \(C^\infty(Y_u)\), equivariant sectors, compact spin or
+    Spin\({}^c\) modules.
+  & Compact \(D_K(u)\), metric action, Killing generators, heat
+    coefficients.
+  & Gravity, gauge-inertia, and stability data. \\
+Custodial Higgs module
+  & Finite or compact weak algebra, \(\mthree\simeq\CC^2\), scalar module.
+  & Inner fluctuation, covariant derivative, scalar Hessian, vector mass
+    matrix.
+  & Orthodox \(\rho=1\) and triplet-hazard filter. \\
+Endpoint and lens package
+  & Product, quotient, or crossed-product endpoint algebra; flat
+    characters and \(Q_{\mathrm{EM}}\).
+  & Endpoint Dirac or quotient operator, period map, represented charges.
+  & Charge, global-form, and weak-inertia filters. \\
+Branch/interface package
+  & Singular or groupoid algebra, sheet Hilbert spaces, \(B_4\), \(E_B\),
+    \(F_B\).
+  & Sheet exchange, graph/anti-graph projectors, branch-domain operator,
+    APS/link data, boundary relation.
+  & Carrier for \(h\); coefficient absent without a source package. \\
+Boundary and Schur packages
+  & Boundary algebra, extension domain, \(Z_B\), retained module \(E_B\).
+  & \(\Gamma_0,\Gamma_1\), Weyl/Calderon data, Schur kernel on \(E_B\).
+  & Candidate source after operators and trace agree. \\
+Retained mismatch source
+  & Module algebra on \(h\in E_B\), \(p\in F_B\), map \(P_B:F_B\to E_B\).
+  & \(S_{\mathrm{mis}}^{(2)}=\frac12\langle h-P_Bp,A_B(h-P_Bp)\rangle\).
+  & Active target: \(A_B,m_B,\gamma_B,\sigma_r\). \\
+Determinant, finite, or auxiliary source
+  & \(h\)-dependent operator family, finite wall module, or auxiliary
+    module.
+  & Determinant Hessian, finite trace action, constraint or influence
+    Schur kernel.
+  & Candidate source after sign, counterterm, and trace are fixed. \\
+Fuzzy, noncommutative, Spin\({}^c\), and tower packages
+  & Finite matrices, projective \(A_\theta\) modules, Spin\({}^c\)
+    modules, or \((\mathcal A_\epsilon,\mathcal H_\epsilon)\).
+  & Finite Dirac block, noncommutative connection, index constraint, or
+    labelled \(D_\epsilon\) family.
+  & Repair, constraint, or dimension-growth criterion. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The table has a negative function as well.  Carrier packages and filters can
+reject a route or restrict modules, but the retained-source coefficient
+appears only in the row whose data include \(P_B,A_B,m_B,\gamma_B,\sigma_r\)
+in one convention.
+
+Every equation below has one of five roles.  A source anchor is imported
+from the Connes or Standard Model NCG vocabulary.  A derived statement is a
+calculation recorded in the project notes.  A conditional statement
+requires named hypotheses.  A filter constrains a source package without
+computing it.  An open target names data still absent from the project.
+
+\section{Mathematical Expansion Convention}
+
+The project uses compact dictionaries and crosswalks, but a row gets
+derivational use only after an expansion supplies variables, modules,
+operator or action, domain, first and second variation or spectral readout,
+normalization, residuals, and status label.  Claim-only prose can orient,
+compare, reject a shortcut, or name a target; it cannot supply a coefficient,
+period, multiplier, or equality.  The reusable rule is recorded in
+\cite{math-expansion}, and corpus coverage is recorded in
+\cite{math-expansion-coverage}.  The package atlas in
+\cite{ncg-package-atlas} records the algebra, Hilbert data, operator or
+action, trace, residual status, and anchors for the major Connes homes.  Each
+compact statement is read as expanded here, expanded in a named file, cited
+source, conditional target, filter, obstruction, or rejected shortcut before
+it can enter a derivation.
+In this manuscript, a source statement that lacks the variables, modules,
+maps, domain, variation or spectral readout, normalization, residuals, and use
+status is demoted to orientation or control text.  It supplies no source
+coefficient, endpoint period, sector multiplier, equality, or prediction.
+The present manuscript uses the following templates.
+
+\subsection{Retained Mismatch Source}
+
+The retained boundary source uses the orientation
+\[
+  P_B:F_B\longrightarrow E_B,\qquad
+  h\in E_B,\quad p\in F_B,
+\]
+where \(h\) is the anti-graph mismatch and \(p\) is the retained response.
+A positive mismatch source expands as
+\[
+  S_{\mathrm{mis}}^{(2)}(h,p)
+  =\frac12
+    \langle h-P_Bp,\ A_B(h-P_Bp)\rangle_{E_B}.
+\]
+Equivalently,
+\[
+\begin{aligned}
+  S_{\mathrm{mis}}^{(2)}(h,p)
+   ={}&\frac12\langle h,A_Bh\rangle_{E_B}
+       -\operatorname{Re}\langle h,A_BP_Bp\rangle_{E_B}  \\
+     &+\frac12
+       \langle p,P_B^\dagger A_BP_Bp\rangle_{F_B}.
+\end{aligned}
+\]
+The response-module kernel before canonical normalization is
+\[
+  K_B=P_B^\dagger A_BP_B .
+\]
+If
+\[
+  K_B\vert_r=\gamma_B^2\mu_r\Id+\sigma_r,
+  \qquad
+  \|p_r\|_{\mathrm{kin}}^2=m_B\|p_r\|_{F_B}^2,
+\]
+then the canonical sector readout is
+\[
+  K_r^{\mathrm{can}}
+    =m_B^{-1}K_B\vert_r
+    =\frac{\gamma_B^2}{m_B}\mu_r\Id
+      +m_B^{-1}\sigma_r .
+\]
+For scalar softness \(A_B\vert_r=w_B\Id+\Delta_r^A\), the common quotient is
+\[
+  q_B=\frac{w_B\gamma_B^2}{m_B}.
+\]
+The multiplier \(\mu_r\) stays neutral until \(P_B^\dagger A_BP_B\) has
+been computed from the source package.
+
+\subsection{Schur, Boundary, and Determinant Expansions}
+
+A local or finite auxiliary source uses variables \(z\) and \(h\):
+\[
+  S^{(2)}(h,z)
+    =\frac12\langle z,Kz\rangle
+     +\operatorname{Re}\langle z,JR h\rangle
+     +\frac12\langle Rh,ERh\rangle .
+\]
+Eliminating \(z\) gives
+\[
+  A_{\mathrm{eff}}
+    =R^\dagger(E-J^\dagger K^{-1}J)R.
+\]
+The finite scale belongs to \(K,J,E,R\) and to the trace used on the local
+module.
+
+A boundary or singular carrier records
+\[
+  D_{\min},\quad D_{\max},\quad
+  \Gamma_0,\quad \Gamma_1,
+\]
+and the Green form
+\[
+  \omega(\phi,\psi)
+  =\langle\Gamma_1\phi,\Gamma_0\psi\rangle
+   -\langle\Gamma_0\phi,\Gamma_1\psi\rangle .
+\]
+The Weyl or Calderon operator, extension relation, and finite-part trace
+provide domain and spectral data.  Source status begins when those data
+compute \(A_B\) or \(K_B=P_B^\dagger A_BP_B\) on the retained modules.
+
+A determinant route starts with an \(h\)-dependent family
+\[
+  L_B(h)=L_0+V_1[h]+\frac12V_2[h,h]+\cdots,\qquad G_0=L_0^{-1}.
+\]
+The second variation has the schematic form
+\[
+  \delta_h^2\log\det L_B
+   =\Tr(G_0V_2[\cdot,\cdot])
+    -\Tr(G_0V_1[\cdot]G_0V_1[\cdot])
+    +\delta_h^2 S_{\mathrm{ct}} .
+\]
+The sign, subtraction, zero-mode treatment, counterterm, and trace are part
+of the source data.
+
+\subsection{Endpoint, Gravity, and Tower Expansions}
+
+Endpoint rows record representation and period data:
+\[
+  \rho_{\mathrm{end}}(Q_{\mathrm{EM}}),\qquad
+  Q_{\mathrm{EM}}H_0=0,\qquad
+  \ker(\Phi_{\mathrm{period}}),\qquad
+  \chi:\mathbb Z_n\to \U(1).
+\]
+Gauge kinetic coefficients require normalized generators:
+\[
+  f_X=\Tr_F(\rho(T_X)^2)\,\mathcal I_X .
+\]
+The weak-angle ratio has prediction status only after the weak and
+hypercharge coefficients use the same normalization,
+\[
+  \sin^2\theta_W=\frac{f_2}{f_2+f_Y}.
+\]
+
+The higher-dimensional metric expansion has the form
+\[
+  g_D
+  =g_4
+   +G_{ab}(y,u)
+    (dy^a+K_i^{\,a}A^i)(dy^b+K_j^{\,b}A^j),
+\]
+and reduction of the Einstein--Hilbert or spectral action gives
+\[
+  S\mapsto
+  M_4^2R_4
+  +f_{ij}(u)F^iF^j
+  +G_{AB}(u)\partial u^A\partial u^B
+  -V(u)
+  +S_{\partial\mathrm{or\ defect}} .
+\]
+Dimension growth requires an infinite labelled family,
+\[
+  \lambda_n(\epsilon)^2
+  =\lambda_0(\epsilon)^2
+   +\frac{n^2}{R_{\mathrm{extra}}(\epsilon)^2}
+   +\mathrm{residual}_n(\epsilon),
+\]
+with a source-computed gap scale.  Finite multiplet restoration gives
+symmetry or phase restoration unless such a tower is present.
+
+\section{Connes Anchors}
+
+\subsection{Basic Spectral Data}
+
+Source anchor.  A spectral triple is written as
+\[
+  (\mathcal A,\mathcal H,D).
+\]
+In even or real cases the additional data are
+\[
+  \gamma,\qquad J,
+\]
+with \(J\) carrying the right action and the \(\KO\)-signs.  In an
+almost-commutative product the source convention used here is
+\[
+  \mathcal A=C^\infty(M)\otimes \AF,
+  \qquad
+  \mathcal H=L^2(M,S)\otimes \mathcal H_F,
+\]
+\[
+  D=D_M\otimes 1+\gamma_M\otimes \DF.
+\]
+The inner fluctuation has the source form
+\[
+  \DA=D+A+\epsilon' JAJ^{-1},
+  \qquad
+  A=\sum_i a_i[D,b_i].
+\]
+The bosonic action is read through the spectral action
+\[
+  \Tr f(\DA/\Lambda).
+\]
+
+Source anchor.  The Standard Model finite algebra used as the NCG reference
+is
+\[
+  \AF=\CC\oplus \HH\oplus M_3(\CC),
+\]
+with finite metric dimension zero and finite \(\KO\)-dimension six modulo
+eight.  The distinction between metric dimension and \(\KO\)-dimension is
+part of the translation: a finite algebra can carry \(\KO\)-signs without
+becoming a smooth six-dimensional compact space.
+
+\subsection{Source Dimension and Probe Dimension}
+
+Conditional statement.  A charged sector can resolve only the compressed
+algebra and operator available to that sector:
+\[
+  \mathcal A_{\mathrm{eff}}(E,q)
+    =\Pi_{E,q}\mathcal A_{\mathrm{parent}}\Pi_{E,q},
+  \qquad
+  P_{\mathrm{eff}}(E,q)
+    =\Pi_{E,q}P_{\mathrm{parent}}\Pi_{E,q}.
+\]
+Here \(E\) denotes the relevant energy or radius window and \(q\) denotes a
+charge or representation label.  This formula is a compatibility framework,
+not a source of the retained-response coefficient.
+The sector dictionary used in the notes is
+\[
+\begin{array}{ll}
+\text{neutral probe} & \text{trivial or suppressed internal action},\\
+\text{charged IR probe} & \text{endpoint, phase, lens, or boundary-character sector},\\
+\text{charged middle probe} & \text{branch, quotient, fuzzy, or groupoid sector},\\
+\text{charged UV probe} & \text{full carrier or infinite labelled tower sector}.
+\end{array}
+\]
+The neutral line is a coupling or representation constraint.  It cannot erase
+the charged-sector source data, and the observed sector dimension cannot
+replace the source expansion that computes \(A_B\).
+
+\subsection{KK, QFT, and Connes Layer Parallel}
+
+Diagnostic translation.  A proposed source relation should have three
+compatible readings: a KK geometric or boundary operator, a QFT quadratic
+source, and a Connes spectral representation.  The comparison below records
+where the current programme has structure and where the source equation
+remains absent.
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{0.14\linewidth}L{0.25\linewidth}L{0.25\linewidth}L{0.27\linewidth}@{}}
+\toprule
+Layer & KK reading & QFT reading & Connes reading \\
+\midrule
+Carrier metric
+  & Compact space, fibration, radius, shape, branch locus.
+  & Background fields and kinetic operator.
+  & Spectral triple \((\mathcal A,\mathcal H,D)\), possibly singular or groupoid. \\
+Gauge
+  & Bundle connection or off-diagonal metric.
+  & Yang--Mills connection and covariant derivative.
+  & Inner fluctuation \(\DA=D+A+\epsilon'JAJ^{-1}\). \\
+Scalar/Higgs
+  & Radius, shape, Wilson-line, boundary, or vertical deformation.
+  & Scalar multiplet, potential, and mass matrix.
+  & Finite/off-diagonal Dirac fluctuation or compact Dirac-family modulus. \\
+Branch interface
+  & Branched cover, fixed locus, collar, sheet exchange.
+  & Defect, boundary condition, interface field, or constrained boundary value.
+  & Singular triple, boundary triple, graph and anti-graph modules. \\
+Retained source
+  & Wall softness, boundary compliance, response map.
+  & Two-field Hessian, Schur complement, determinant, or constraint source.
+  & \(E_B,F_B,P_B,A_B,m_B,\gamma_B,\sigma_r\). \\
+Quantised labels
+  & Harmonic sectors, monopole sectors, flat characters.
+  & Multiplet, spin, isospin, and charge sectors.
+  & Irreducible modules, \(K\)-theory classes, finite representations. \\
+Endpoint
+  & D5 lens, \(S^5\times S^2\), D7 Aloff--Wallach, EM period.
+  & Charge lattice, line operators, global gauge group.
+  & Product, quotient, or crossed-product endpoint triples. \\
+Emergent dimension
+  & Closing compact gap and infinite labelled tower.
+  & KK tower with radius-dependent masses.
+  & Family \((\mathcal A_\epsilon,\mathcal H_\epsilon,D_\epsilon)\) with dimension-spectrum change. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The missing relation can enter only on a row where the same operator crosses
+all three readings and returns a trace-normalized source package.  A harmonic
+label without the QFT source action gives representation bookkeeping.  A QFT
+coefficient without the spectral module gives a fit.  A finite Connes block
+without the KK endpoint and trace convention gives an algebraic toy model.
+Thus the present negative result is specific: the endpoint, Higgs, and module
+rows are populated, while the retained-source row still lacks a
+cross-column operator.
+
+\section{The One-Line Source Problem}
+
+Open target.  The central NCG problem is to find a spectral, singular,
+boundary, determinant, or finite wall source that computes a boundary
+quadratic form on a retained mismatch \(h\).  The data should include
+\[
+  E_B,\quad F_B,\quad P_B,\quad A_B,\quad m_B,\quad \gamma_B,\quad \sigma_r.
+\]
+The intended meanings are:
+\[
+\begin{array}{ll}
+E_B & \text{Hilbert module for the anti-graph mismatch }h,\\
+F_B & \text{Hilbert module for the retained response }p,\\
+P_B:F_B\to E_B & \text{source-derived response map},\\
+A_B & \text{wall kernel or softness operator on }E_B,\\
+m_B & \text{response trace coefficient},\\
+\gamma_B & \text{map-to-trace normalization},\\
+\sigma_r & \text{residual sector shift}.
+\end{array}
+\]
+For a retained round sector the neutral source target is
+\[
+  P_B^\dagger A_B P_B\big|_r
+     =q_B\,\mu_r\,\Id+\sigma_r.
+\]
+The multiplier \(\mu_r\) is kept neutral until the named operator has been
+computed.  If a source returns a common \(q_B\) different from one, the
+output is a scaled relation.  If \(q_B\) or the residuals have unacceptable
+sector dependence, the branch leaves the unscaled comparison.
+
+Conditional normalization check.  For a compliance or soft-wall source with
+Schur weight \(W|_r=w_B\Id+\Delta_r^W\), response map
+\(P_B=\gamma_B P_0\), and response trace
+\(\|p_r\|_{\mathrm{kin}}^2=m_B|p_r|^2\), the canonical readout is
+\[
+  k_r^{\mathrm{can}}
+    =\left[\frac{w_B\gamma_B^2}{m_B}\right]\mu_r
+      +\delta_r^{\mathrm{can}} .
+\]
+For a folded-collar scalar Robin source in one branch trace convention, the
+same test reduces to
+\[
+  q_B=\kappa_B\gamma_B^2 .
+\]
+The unscaled branch therefore requires a source-computed value \(q_B=1\)
+with controlled residuals.  A common source-computed value different from
+one gives a scaled branch, and sector dependence rejects unscaled use.
+
+The normalization split has two separate quotients:
+\[
+  c_B=\frac{\beta_B}{\alpha_B^2},
+  \qquad
+  q_B=\frac{w_B\gamma_B^2}{m_B}.
+\]
+The first quotient controls the shape of the signed two-field Hessian.  The
+second controls the map scale after the response trace on \(F_B\) is used.
+The two tests can pass or fail independently.
+
+Conditional hierarchy check.  Let \(\Lambda_B\) be the boundary Weyl or
+Dirichlet-to-Neumann operator of the folded branch collar, with retained
+sector compression
+\[
+  \Pi_r\Lambda_B\Pi_r=\lambda_r\Id+\Xi_r .
+\]
+For scalar wall softness \(C_B\vert_r=\kappa_B\Id\), set
+\[
+  \epsilon_r=\frac{\kappa_B}{\lambda_r}.
+\]
+The soft-wall readout becomes
+\[
+  k_r^{\mathrm{can}}
+    =\frac{q_B}{1+\epsilon_r}\,\mu_r+\sigma_r^{\mathrm{can}} .
+\]
+Thus \(q_B\) alone does not admit the branch: the same D6 source has to
+compute \(\lambda_r\), the hierarchy \(\epsilon_r\), and the canonical
+sector shifts.  Hard-wall order returns to direct boundary spectral data.
+
+The operator search therefore has NCG status before it has numerical status.
+Candidate sources include a normalized group-action map, a boundary
+square-root operator, an interface polar modulus, a branch-link tangential
+operator, a finite interface block, or a Schur boundary source.  Each
+candidate has to state its algebra, Hilbert module, domain, trace convention,
+and residual terms before \(\mu_r\) can be evaluated.
+
+The normalized group-action reference package is expanded in
+\cite{ncg-equivariant-multiplier}.  For a unitary module \(V_r\) and
+orthonormal generators \(X_i\), it uses
+\[
+  P_{\mathrm{act},r}\psi
+    =\sum_i\rho_r(X_i)\psi\otimes e_i,
+  \qquad
+  P_{\mathrm{act},r}^{\dagger}P_{\mathrm{act},r}
+    =-\sum_i\rho_r(X_i)^2 .
+\]
+Irreducibility gives a neutral operator output
+\[
+  P_{\mathrm{act},r}^{\dagger}P_{\mathrm{act},r}
+     =\mu_r^{\mathrm{act}}\Id,\qquad
+  \mu_r^{\mathrm{act}}
+     =-\frac{1}{\dim V_r}\sum_i
+       \Tr_{V_r}\!\big(\rho_r(X_i)^2\big).
+\]
+If a D6 wall source produces
+\[
+  P_B=\gamma_B P_{\mathrm{act}}+P_{\mathrm{low}},
+  \qquad A_B=\kappa_B\Id+\Delta_B,
+\]
+then
+\[
+  P_B^\dagger A_BP_B\vert_r
+    =\kappa_B\gamma_B^2\mu_r^{\mathrm{act}}\Id+\sigma_r .
+\]
+The retained comparison still depends on
+\[
+  q_B=\kappa_B\gamma_B^2/m_B
+\]
+and on the residual norm.  The group action therefore computes the neutral
+multiplier, not the wall coefficient.
+
+\section{Geometry as Families of Spectral Triples}
+
+\subsection{Compact Metrics}
+
+Source anchor and conditional translation.  For a smooth compact internal
+space \(K_d\), the commutative internal triple is
+\[
+  \mathcal A_K=C^\infty(K_d),\qquad
+  \mathcal H_K=L^2(K_d,S_K),\qquad
+  D_K=D_{g_K(u)}.
+\]
+The parameter \(u\) denotes radion-free shape data.  Changing \(u\) changes
+the Dirac operator and hence the metric data of the triple.
+
+For a fibration metric with connection, the higher-dimensional Dirac
+operator has the schematic conditional form
+\[
+  D_{4+d}(g,u,A)
+   =D_4^{\mathrm{hor}}(A,u)
+    +\gamma_4\otimes D_K(u)
+    +\text{connection and curvature terms}.
+\]
+Those extra terms encode the O'Neill and mean-curvature corrections of the
+KK metric.
+
+\subsection{Spectral Action and Einstein-Hilbert Reduction}
+
+Source anchor.  The spectral action expansion has the form
+\[
+  \Tr f(D_{4+d}^2/\Lambda^2)
+  \sim \sum_k f_k\Lambda^k a_k(D_{4+d}^2).
+\]
+The relevant coefficients contain the volume term, scalar curvature,
+connection curvature, scalar kinetic terms from metric variation, and
+boundary or defect contributions when such structures are present.
+
+Derived bookkeeping.  In the Einstein-frame reduction the corresponding
+zero-mode data are
+\[
+  g^E_{\mu\nu},\qquad A^I_\mu,\qquad \phi,\qquad u^A.
+\]
+They translate respectively to the external Dirac operator, horizontal
+lifts or automorphism fluctuations, the overall spectral scale of \(D_K\),
+and the family \(D_K(u)\).
+
+Derived scaling warning.  For a common internal length \(L\),
+\[
+  \int_K \sqrt{g_K}\,R_K \sim L^{d-2}.
+\]
+Thus the D5, D6, and D7 compact sectors have far larger raw gravitational
+inertia than the D1, D2, and D3 prototypes.  The low-dimensional ladder is
+useful for topology and phase intuition, while the CP2-suspended ladder
+controls the quantitative compact action.
+
+\section{D1/D2/D3 and D5/D6/D7}
+
+\subsection{Low-Dimensional Prototype}
+
+Derived comparison.  The prototype triples are:
+\[
+\begin{array}{lll}
+D1 & S^1 & \text{circle triple, zero compact scalar curvature},\\
+D2 & S^2 & \text{two-dimensional axis triple, topological curvature integral},\\
+D3 & S^3 & \text{Hopf carrier, nonzero compact curvature}.
+\end{array}
+\]
+The prototype supports the familiar sequence from phase, to projective
+axis, to full Hopf orbit.  It does not provide the CP2-suspended action
+coefficients.
+
+\subsection{CP2-Suspended Carriers}
+
+Derived and conditional translation.  The D5 endpoint is the circle bundle
+\[
+  S^1\longrightarrow M_5(n)=S(O(n))\longrightarrow \CP^2.
+\]
+NCG treatment uses a quotient, crossed-product, boundary, or endpoint
+triple.  The connection curvature \(nF_{FS}\) enters the compact metric,
+and APS or Calderon data enter through boundary spectral terms.
+
+Derived and conditional translation.  The D6 mediator is
+\[
+  \CP^1\longrightarrow Y_6=\SU(3)/T^2\longrightarrow \CP^2.
+\]
+The spin\(^c\) adiabatic index argument can reduce to a CP2 calculation,
+but the gravity action still sees finite vertical fibre curvature.  The
+index limit and the metric stationarity equation are separate calculations.
+The CP2/S4 branch ingredient is
+\[
+  \pi_4:\CP^2\longrightarrow S^4,\qquad
+  \operatorname{Fix}(\mathrm{conj})=\RP^2,\qquad
+  B_4=p^{-1}(\RP^2)\subset Y_6 .
+\]
+The Connes package in \cite{ncg-cp2-s4-branch} represents the two-sheet
+complement by a singular or groupoid algebra, with graph and anti-graph
+boundary modules.  Its source expansion uses a finite-part trace \(R_B\), a
+local branch field \(z\), and the Schur kernel
+\[
+  A_{\mathrm{br}}
+  =
+  R_B^\dagger\!\left[
+      E_h
+      -E_hL_z(K_z+L_z^\dagger E_hL_z)^{-1}L_z^\dagger E_h
+    \right]R_B .
+\]
+Thus the branched cover supplies the D6 singular carrier and source template;
+the coefficient waits for \(K_z,E_h,L_z,R_B,P_B,m_B,\gamma_B\) in one trace
+convention.
+
+Derived and conditional translation.  The D7 carrier is
+\[
+  \SO(3)\longrightarrow X_{1,1}=\SU(3)/\U(1)_{1,1}
+  \longrightarrow \CP^2.
+\]
+The homogeneous metric split is
+\[
+  \mathfrak m=\mzero\oplus\mthree,\qquad
+  \dim_{\RR}\mzero=3,\qquad \dim_{\RR}\mthree=4.
+\]
+The ratio between the two metric scales remains a compactification shape
+variable.  It is a gravity datum, not a substitute for a boundary wall
+kernel.
+
+\section{Endpoint Filters}
+
+Filter.  The Standard-Model-shaped endpoint hierarchy used by this project
+is
+\[
+\begin{array}{ll}
+S^5\times S^2 & \text{primary product diagnostic},\\
+D5\text{ lens endpoint} & \text{flat-character and electromagnetic period test},\\
+D7\text{ Aloff--Wallach carrier} & \text{round response and custodial test},\\
+S^7 & \text{secondary comparison object}.
+\end{array}
+\]
+The product \(S^5\times S^2\) keeps the CP2 Hopf/lens data and the weak
+axis visible.  The seven-sphere is retained for restored-fibre intuition
+only when a source action connects it to the active carrier.
+
+Conditional endpoint triple.  The product diagnostic can be written as
+\[
+  \mathcal A_{\mathrm{prod}}
+    =C^\infty(S^5\times S^2)\otimes\mathcal A_F^{\mathrm{end}},
+  \qquad
+  \mathcal H_{\mathrm{prod}}
+    =L^2(S^5\times S^2,S)\otimes\mathcal H_F^{\mathrm{end}} .
+\]
+The D5 lens side can instead be represented by
+\[
+  C^\infty(M_5(n))
+  \quad\text{or}\quad
+  C^\infty(S^5)\rtimes \mathbb Z_n
+\]
+with flat-character data.  The endpoint calculation records the Hopf or
+lens period, the finite representation of \(Q_{\mathrm{EM}}\), and the
+chosen Standard-Model global form.  A comparison with the Aloff--Wallach
+carrier still has to state the map from the product fibre
+\(S^1_H\times S^2_W\) to the \(\SO(3)\) projective Hopf fibre.  These data
+test a D6 source package; they do not compute \(A_B\) or \(\kappa_B\).
+
+Conditional caveat.  A D=11 parent can carry a larger abelian charge algebra
+when the electromagnetic line remains a distinct low-energy period.  A
+\(B-L\)-type generator is therefore admissible in a parent bookkeeping
+algebra under the condition
+\[
+  Q_{\mathrm{EM}}\ \text{survives as a named endpoint line}.
+\]
+The caveat permits a D=11 \(B-L\) line alongside electromagnetic charge while
+keeping their endpoint roles distinct.
+The parent generator cannot replace \(Q_{\mathrm{EM}}\), and it cannot
+serve as the D5/D6/D7 wall coefficient source.
+
+Conditional charge-algebra form.  Let
+\(\mathfrak z_{11}\subset\mathfrak u(\mathcal A^{11}_F)\) be the abelian
+parent charge sector, represented on \(\mathcal H^{11}_F\) by \(\rho_{11}\).
+For an endpoint projection or quotient \(\Pi_{\mathrm{end}}\), define
+\[
+  \rho_{\mathrm{end}}(X)
+    =\Pi_{\mathrm{end}}\rho_{11}(X)\Pi_{\mathrm{end}} .
+\]
+The parent \(B-L\) line is compatible with the endpoint only under the
+independence test
+\[
+  \rho_{\mathrm{end}}(Q^{11}_{\mathrm{EM}})\ne 0,\qquad
+  \rho_{\mathrm{end}}(Q^{11}_{\mathrm{EM}})
+    \notin
+    \RR\,\rho_{\mathrm{end}}(Q^{11}_{B-L})
+      +\rho_{\mathrm{end}}(\mathfrak k_\Gamma),
+\]
+where \(\mathfrak k_\Gamma\) denotes the quotient-period kernel of the chosen
+Standard-Model global form.  Global-form and line-operator sources can test
+\(\Gamma\), charge periods, and fractionalization data.  They still act as
+endpoint filters rather than a source for \(P_B,A_B,m_B,\gamma_B\).
+
+\section{The D6 Branch Interface}
+
+\subsection{Three Objects}
+
+Derived translation.  The D6 branch material separates into:
+\[
+\begin{array}{ll}
+\text{link spinor spectral data} & A_{\mathrm{link}},H_{\mathrm{link}},D_{\mathrm{link}},J_{\mathrm{link}},G_B,\\
+\text{branch graph data} & A_{Br},H_{Br},D_{Br},\Pi_G,\Pi_A,\\
+\text{bosonic boundary module} & E_B,F_B,P_B,A_B,m_B.
+\end{array}
+\]
+The graph projection defines a domain condition.  The anti-graph projection
+defines the boundary coordinate.  A finite wall coefficient still needs a
+source.
+
+\subsection{Link Monodromy and Bosonic Boundary Data}
+
+Filter.  The link spinor problem carries eta, holonomy, and zero-mode
+constraints.  Current notes record a link angular shift, but the present
+bosonic mismatch module remains angular-neutral.  A twisted boundary repair
+would require
+\[
+  E_B^{tw}=E_B\otimes L_\delta,\qquad
+  F_B^{tw}=F_B\otimes L_\delta,\qquad
+  P_B^{tw}=P_B\otimes \Id_{L_\delta}.
+\]
+The display above is a conditional module change.  The line \(L_\delta\) has
+to act on \(h\), not only on link spinors, and the normal action coefficient
+still has to be derived.
+
+Conditional angular-capacity source.  If a D6 source derives the line
+\(L_\delta\) on the bosonic mismatch, the normal-circle algebra
+\(C^\infty(S^1)\) acts through a flat module with
+\[
+  D_\theta h=i(k+\delta_{\mathrm{eff}})h,\qquad
+  \mu_\delta=\operatorname{dist}(\delta_{\mathrm{eff}},\mathbb Z)>0 .
+\]
+The regular normal-disk Dirichlet form then has the small-core coefficient
+\[
+  \kappa_{\mathrm{ang}}
+    =2\pi a_B^\perp\mu_\delta .
+\]
+This coefficient has source status only after the D6 action supplies both
+the bosonic line on \(h\) and the normal-gradient scale \(a_B^\perp\).  In
+the current angular-neutral convention the regular core gives vanishing
+softness.
+
+\section{The \texorpdfstring{\(\mthree\)}{m3} Higgs Module}
+
+\subsection{Symmetric Branch}
+
+Derived electroweak control.  The Aloff--Wallach block
+\[
+  \mthree\simeq \CC^2\simeq \RR^4
+\]
+is one real irreducible \(U(2)\)-module.  In the symmetric branch
+\[
+  \langle H\rangle=0,
+\]
+equivariance gives
+\[
+  \operatorname{Hess}_H V\big|_0=m_{3,\mathrm{eff}}^2\,\Id_{\mthree}.
+\]
+The four real scalar components have one common mass.  The branch has no
+electroweak vacuum radius.
+
+\subsection{Broken Branch}
+
+Derived electroweak control.  When the source potential returns
+\[
+  m_{3,\mathrm{eff}}^2<0,\qquad \lambda_3>0,
+\]
+the vacuum can be written
+\[
+  \langle H\rangle=(0,v/\sqrt 2).
+\]
+The covariant derivative term gives
+\[
+  (M_A^2)_{ab}=K_H(T_a\langle H\rangle,T_b\langle H\rangle).
+\]
+The scalar Hessian splits into one radial direction and three Goldstone
+directions.  After gauge fixing, the three Goldstone coordinates supply the
+longitudinal modes of \(W^+\), \(W^-\), and \(Z\).
+
+\subsection{Custodial Condition}
+
+Derived electroweak control.  A single scalar metric on \(\mthree\) gives
+\[
+  \kappa_c=\kappa_n,\qquad \rho=1.
+\]
+The vertical block \(\mzero\) supplies a hazard.  The selected branch needs
+\[
+  \langle\Phi_0\rangle=0,\qquad
+  m_{0,\mathrm{eff}}^2+\lambda_{03}v^2/2>0.
+\]
+Endpoint, defect, or D6 source terms touching the Higgs block are
+compatible only when their induced quadratic form is scalar on \(\mthree\)
+or when their precision correction has been computed.
+
+\section{Finite Wall Modules and Relative Sources}
+
+\subsection{Finite Wall Module}
+
+Open target.  A finite wall source would contain
+\[
+  \mathcal A_{\mathrm{wall}},\quad
+  \mathcal H_{\mathrm{wall}},\quad
+  D_{\mathrm{wall}},\quad
+  J_{\mathrm{wall}},\quad
+  \gamma_{\mathrm{wall}},
+\]
+with retained spaces
+\[
+  E_B^{fin},\quad F_B^{fin},\quad Z_B.
+\]
+For a quadratic finite Schur parent, the source calculation would provide
+\[
+  K_F,\quad L_F,\quad E_F,\quad P_F,\quad m_F
+\]
+and compute
+\[
+  A_F
+  =E_F-E_F L_F(K_F+L_F^\dagger E_F L_F)^{-1}L_F^\dagger E_F.
+\]
+Finite charges, anomaly data, and endpoint flat characters filter the
+representation.  They do not replace this Schur calculation.
+
+\subsection{Relative Finite Source}
+
+Conditional source form.  A relative finite source has the schematic form
+\[
+  S_{\mathrm{rel}}(Q,R)=S_0(Q)-S_1(Q,R),
+\]
+where both \(S_0\) and \(S_1\) are defined by a spectral-action difference,
+determinant ratio, boundary improvement, or supertrace pairing before
+comparison.  A positive square alone gives stable mismatch energy.  The
+signed retained-response readout needs the relative source to be physical,
+not selected after the target relation is known.
+
+\subsection{Relative Determinant Source}
+
+Conditional source form.  A determinant or gluing route has to provide an
+\(h\)-dependent operator family
+\[
+  L_B(h;u)=L_0(u)+V_1[h;u]+\frac12 V_2[h,h;u]+\cdots ,
+  \qquad G_0=L_0(u)^{-1}.
+\]
+For a renormalized relative determinant,
+\[
+  \Gamma_{\mathrm{det}}(h;u)
+    =\frac{s}{2}\left(
+       \log\operatorname{Det}_{\mathrm{ren}}L_B(h;u)
+       -\log\operatorname{Det}_{\mathrm{ren}}L_B(0;u)
+     \right)+\Gamma_{\mathrm{ct}}(h;u),
+\]
+the quadratic retained kernel has the form
+\[
+  A_{\mathrm{det}}
+   =s\left[
+      \operatorname{Tr}_{wall}(G_0V_2)
+      -\operatorname{Tr}_{wall}(G_0V_1G_0V_1)
+    \right]+A_{\mathrm{ct}} .
+\]
+The determinant sign, subtraction reference, counterterm rule, and trace
+convention are source data.  Eta, spectral-flow, and flat-lift information
+remain filters unless they enter through this \(h\)-dependent family and
+produce a positive round kernel on the retained anti-graph module.
+
+\subsection{Auxiliary Wall Sources}
+
+Conditional source form.  Influence fields, gauge constraints, finite
+transmission multipliers, smoothing layers, and dynamical wall fields can be
+written as auxiliary modules over the branch algebra:
+\[
+  Z_B,\qquad K_Z,\qquad J_Z,\qquad E_Z .
+\]
+They produce a candidate kernel \(A_{\mathrm{aux}}\) on \(E_B\) by a Schur,
+constraint, influence, or layer calculation.  Linear influence and gauge
+constraint routes additionally need a physical sign or contour reading; a
+real Euclidean linear field gives a reduced stiffness unless a direct source
+term is present.  Positive wall-field parents have the Schur form
+\[
+  A_z=E_h-E_hL_z(K_z+L_z^\dagger E_hL_z)^{-1}L_z^\dagger E_h .
+\]
+Finite transmission gives \(A_y=B_y^\dagger K_y^{-1}B_y\) only after the
+multiplier has a physical source.  Smoothing layers give a boundary operator
+only after the thickness, endpoint condition, and density or mass are derived.
+Every variant then returns to the retained-sector test
+\[
+  A_{\mathrm{aux}}\vert_r=\kappa_B\Id+\Sigma_r^A,\qquad
+  q_B=\kappa_B\gamma_B^2 .
+\]
+
+\section{Gravity, Boundary, and Yang--Mills Terms}
+
+\subsection{Ordinary Gravity}
+
+Derived separation.  Compact gravity supplies radion, shape, graviphoton,
+and compact-potential data.  It does not supply the retained two-field
+source by itself.  Boundary spectral energy has the direct form
+\[
+  \langle q_r,P_{\partial}q_r\rangle.
+\]
+This stabilizes or shifts boundary modes.  It becomes a retained source
+only after a boundary, determinant, Schur, or extension construction
+introduces \(p\), \(P_B\), \(A_B\), and \(m_B\).
+
+\subsection{Ordinary Gauge-Higgs Sector}
+
+Derived separation.  The gauge-Higgs reduction computes the ordinary scalar
+potential and vector masses.  It can select the \(\mthree\) branch, suppress
+\(\mzero\), and protect \(\rho=1\).  The ordinary Hessian is a positive
+scalar or vector mass matrix, not the retained response block.  A gauge
+sector source for \(A_B\) would need a derived wall field, defect field, or
+finite Schur parent.
+
+\section{Objections and Consistency Checks}
+
+\subsection{Objections}
+
+The following routes are rejected as source derivations in the current
+workspace:
+\[
+\begin{array}{ll}
+\text{positive mismatch square} & \text{stable norm, no relative readout},\\
+\text{direct DtN energy} & \text{boundary stiffness, no retained }p,\\
+\text{Green form alone} & \text{mixed pairing, no response stiffness},\\
+\text{ordinary Higgs Hessian} & \text{gauge-Higgs masses, no wall kernel},\\
+\text{image response norm} & \text{loss of the multiplier spectrum},\\
+\text{endpoint topology} & \text{filter only},\\
+\text{link eta monodromy} & \text{spinor constraint, no bosonic }h\text{ line}.
+\end{array}
+\]
+
+\subsection{Consistency Checks}
+
+Any future source package should pass the following checks:
+\begin{enumerate}[leftmargin=2em]
+  \item Name the algebra, Hilbert modules, and operator.
+  \item Represent \(h\) and \(p\) as retained fields.
+  \item Compute \(P_B,A_B,m_B,\gamma_B\) in one trace convention.
+  \item Bound residual sector shifts.
+  \item Run the \(S^5\times S^2\), D5 lens, electromagnetic period, D7
+  roundness, and \(\rho=1\) filters.
+  \item Classify the output as unscaled, scaled, rejected, or still open.
+\end{enumerate}
+
+\section{Additional Translation Frontiers}
+
+\subsection{Tower Criterion for an Emergent Dimension}
+
+Conditional translation.  A Witten-style growth of an extra dimension has a
+spectral test.  One needs a family
+\[
+  (\mathcal A_\epsilon,\mathcal H_\epsilon,D_\epsilon)
+\]
+and an infinite labelled eigenfamily
+\[
+  \lambda_n(\epsilon)^2
+  =\lambda_0(\epsilon)^2+\frac{n^2}{R_{\mathrm{extra}}(\epsilon)^2}
+    +\mathrm{res}_n(\epsilon).
+\]
+The label \(n\) has to come from geometry, topology, a boundary spectrum, a
+flat-character lift, or a defect family, and the action has to compute the
+gap scale.  A finite restored \(\mthree\) multiplet gives symmetry
+restoration rather than this tower criterion.
+
+The Higgs-phase dictionary translates to a phase classification of the same
+spectral-family problem:
+\[
+\begin{array}{ll}
+D7/D3 & \text{symmetric carrier with the full }\mthree\simeq\CC^2
+         \text{ fluctuation block},\\
+D6/D2 & \text{selected branch, projective axis, or branch-cover mediator},\\
+D5/D1 & \text{phase, boundary, lens, eta, or flat-character endpoint}.
+\end{array}
+\]
+For probe statements one compresses the family by sector projectors,
+\[
+  D_{\mathrm{eff}}(E,q)
+    =\Pi_{E,q}D_\epsilon\Pi_{E,q}.
+\]
+The observed dimension is the spectral behaviour of \(D_{\mathrm{eff}}\).
+It does not by itself supply the retained-response coefficient.
+
+\subsection{\texorpdfstring{\(S^5\), \(\Spin(6)\), and Electromagnetism}{S5, Spin(6), and Electromagnetism}}
+
+Filter.  The D5 cover has the Hopf presentation
+\[
+  S^1\longrightarrow S^5\longrightarrow \CP^2 .
+\]
+In NCG language this can be treated as an equivariant endpoint triple, a
+quotient triple, or a crossed-product endpoint after the lens reduction.  The
+spin cover relation
+\[
+  \Spin(6)\simeq \SU(4)
+\]
+belongs to spinor, coefficient, or finite Hilbert modules.  It can organize a
+\(3+1\) representation check, while electromagnetic use still requires a
+derived map to \(Q_{\mathrm{EM}}\) and its period.  The D=11 \(B-L\) caveat
+above leaves that endpoint line distinct.
+
+\subsection{Noncommutative and Division-Algebra Repairs}
+
+Conditional translation.  Exotic middle layers can be represented by branch
+groupoids, finite or fuzzy triples, or by a noncommutative torus
+\[
+  A_\theta=\langle U,V\mid VU=\exp(2\pi i\theta)UV\rangle .
+\]
+The parameter \(\theta\), the projective module, or the finite Dirac block has
+to be selected by Morita equivalence, \(K\)-theory, real multiplication,
+\(\Spin^c\) compatibility, or a D6 source action before comparison.
+
+For a fuzzy or CSDR repair one should name a finite matrix sequence
+\[
+  \mathcal A_N,\mathcal H_N,D_N,J_N,\gamma_N,\Tr_N
+\]
+together with the isotropy embedding, equivariant field constraints,
+continuous flag-coset limit, finite spectrum, and trace convention.  For a
+higher noncommutative torus one uses
+\[
+  \mathcal A_\Theta
+   =\langle U_i\mid U_iU_j=\exp(2\pi i\Theta_{ij})U_jU_i\rangle
+\]
+with a projective module, connection, trace, and Morita or \(K\)-theory
+class.  These data become source candidates only when their action computes
+the retained package \(P_B,A_B,m_B,\gamma_B\).
+The finite fuzzy branch package in \cite{ncg-fuzzy-finite-package} makes the
+matrix source explicit.  It uses finite retained modules
+\[
+  E_B^N,\qquad F_B^N,\qquad Z_B^N
+\]
+and a finite quadratic action with operators
+\[
+  P_N:F_B^N\to E_B^N,\quad
+  K_N:Z_B^N\to Z_B^N,\quad
+  L_N:Z_B^N\to E_B^N,\quad
+  E_N:E_B^N\to E_B^N .
+\]
+Eliminating \(z_N\) gives
+\[
+  A_N^{\mathrm{wall}}
+  =
+    E_N
+    -E_NL_N(K_N+L_N^\dagger E_NL_N)^{-1}L_N^\dagger E_N .
+\]
+The retained finite response is then
+\[
+  K_N^{\mathrm{resp}}=P_N^\dagger A_N^{\mathrm{wall}}P_N,\qquad
+  K_N^{\mathrm{resp}}\vert_r
+    =\gamma_N^2\mu_{N,r}\Id+\sigma_{N,r}.
+\]
+Continuum use requires the limit of
+\[
+  \mathcal A_N,\ D_N,\ \Tr_N,\ E_B^N,\ F_B^N,\ P_N,\ A_N^{\mathrm{wall}}
+\]
+to match the branch or compact package before endpoint comparison.
+
+The noncommutative-torus projective-module package in
+\cite{ncg-nc-torus-projective-package} gives the parallel expansion for the
+irrational-quotient repair.  In the two-torus case,
+\[
+  A_\theta=\langle U,V\mid VU=e^{2\pi i\theta}UV\rangle_{\mathrm{sm}},
+  \qquad
+  \tau_\theta\!\left(\sum a_{mn}U^mV^n\right)=a_{00}.
+\]
+Choose a projective right \(A_\theta\)-module \(E_{p,q}\) with positive
+dimension
+\[
+  d_\theta=\tau_\theta(e_{p,q})>0
+\]
+and connection \(\nabla_i\) satisfying
+\[
+  \nabla_i(sa)=(\nabla_i s)a+s\,\delta_i(a),\qquad
+  F_{12}=[\nabla_1,\nabla_2].
+\]
+The torus Dirac operator is
+\[
+  D_\theta=\gamma^1\nabla_1+\gamma^2\nabla_2+D_{\mathrm{low}},
+  \qquad
+  \mathcal H_\theta=L^2(E_{p,q})\otimes\CC^2 .
+\]
+For the retained D6 variables one tensors the branch modules by \(E_{p,q}\):
+\[
+  E_B^\theta=E_B\otimes_{A_0}E_{p,q},\quad
+  F_B^\theta=F_B\otimes_{A_0}E_{p,q},\quad
+  Z_B^\theta=Z_B\otimes_{A_0}E_{p,q},
+\]
+with
+\[
+  h_\theta\in E_B^\theta,\qquad
+  p_\theta\in F_B^\theta,\qquad
+  z_\theta\in Z_B^\theta,\qquad
+  P_\theta:F_B^\theta\to E_B^\theta .
+\]
+The quadratic source is
+\[
+  S_\theta^{(2)}(z;h,p)
+  =\frac{1}{2}\tau_\theta\!\left[
+    \langle z,K_\theta z\rangle
+    +\langle h-P_\theta p-L_\theta z,
+      E_\theta(h-P_\theta p-L_\theta z)\rangle
+  \right].
+\]
+Its first variation in \(z\) gives
+\[
+  (K_\theta+L_\theta^\dagger E_\theta L_\theta)z
+  =L_\theta^\dagger E_\theta(h-P_\theta p),
+\]
+and Schur elimination gives
+\[
+  A_\theta^{\mathrm{wall}}
+  =
+    E_\theta
+    -E_\theta L_\theta
+     (K_\theta+L_\theta^\dagger E_\theta L_\theta)^{-1}
+     L_\theta^\dagger E_\theta .
+\]
+The retained response reads
+\[
+  K_\theta^{\mathrm{resp}}
+   =P_\theta^\dagger A_\theta^{\mathrm{wall}}P_\theta,\qquad
+  K_\theta^{\mathrm{resp}}\vert_r
+   =\gamma_\theta^2\mu_{\theta,r}\Id+\sigma_{\theta,r}.
+\]
+With a response trace norm
+\[
+  \|p_{\theta,r}\|_{\mathrm{kin}}^2
+   =m_\theta\|p_{\theta,r}\|^2,
+\]
+the canonical sector kernel is
+\[
+  k_{\theta,r}^{\mathrm{can}}
+   =m_\theta^{-1}K_\theta^{\mathrm{resp}}\vert_r .
+\]
+Thus a torus parameter has coefficient relevance only after the same
+projective module, trace, connection, Schur kernel, map normalization, and
+residuals have been selected before comparison.
+
+The D6 division-algebra clue has a compatible NCG role as a quaternionic real
+structure, auxiliary-field identity, or source-action constraint.  It can
+help select the \(\mthree\) branch and protect the isotropic doublet metric.
+It becomes a retained-response coefficient only after the D6 action supplies
+the quadratic form.
+
+Spin\(^c\), anomaly, and finite-Hilbert-space data enter the same constraint
+layer.  On the CP2 side one may use a twisted Hilbert module
+\[
+  \mathcal H_{\Spin^c,n}
+    =L^2(\CP^2,S_{\Spin^c}\otimes L_n)
+\]
+with a twisted Dirac operator \(D_{\Spin^c,n}\).  The line twist can constrain
+endpoint periods, flat lifts, finite modules, and branch trace bundles.  A
+fermion or auxiliary package affects the retained source only when the same
+spectral action, determinant, or D6 source expansion produces
+\(h,p,P_B,A_B,m_B\) in one convention.
+
+\section{Possible Completions}
+
+The most concrete NCG completions now available are:
+\[
+\begin{array}{ll}
+1 & \text{D6-local }B_4\text{ boundary source deriving }R_{\mathrm{def}},K_z,E_h,L_z,\\
+2 & \text{boundary extension with source-derived }R_{\mathrm{def}},K_B,E_{Bd},L_B,\\
+3 & \text{finite wall module computing }A_F\text{ and }m_F,\\
+4 & \text{localized D6 wall or influence field computing }A_B,\\
+5 & \text{relative determinant family }L_B(h)\text{ with fixed sign},\\
+6 & \text{twisted boundary module after }h\text{ carries }L_\delta.
+\end{array}
+\]
+Each route remains an open construction target until its quadratic expansion
+has been computed before comparison.
+
+For the first route, the boundary-extension package can be written with a
+positive boundary parent
+\[
+  S_B(z;h)=\frac{\tau}{2}\left(
+    \langle z,K_Bz\rangle_Z+
+    \langle R_{\mathrm{def}}h-L_Bz,
+      E_{Bd}(R_{\mathrm{def}}h-L_Bz)\rangle_{bd}
+  \right).
+\]
+Eliminating \(z\) gives the retained kernel
+\[
+  A_B=R_{\mathrm{def}}^\dagger
+  \left[
+    E_{Bd}
+    -E_{Bd}L_B(K_B+L_B^\dagger E_{Bd}L_B)^{-1}
+      L_B^\dagger E_{Bd}
+  \right]R_{\mathrm{def}}.
+\]
+The formula has algebraic status.  It becomes a source derivation only after
+the D6 boundary physics supplies \(R_{\mathrm{def}},K_B,E_{Bd},L_B\) and the
+same convention supplies \(P_B,m_B,\gamma_B\).
+The source-operator status ledger \cite{ncg-b4-source-operator-ledger}
+assembles the direct defect, positive local field, boundary-Higgs,
+boundary-triple, and determinant variants into the same retained readout.
+
+A first D6-local instantiation places a field \(z\) on the branch locus
+\(B_4\):
+\[
+  K_z=D_{B4,z}^{\dagger}D_{B4,z}+M_z^2+V_z,\qquad
+  E_h=e_h\Id+E_{\mathrm{curv}}+E_{\mathrm{branch}},\qquad
+  L_z=\ell_0\Id+L_1.
+\]
+In a commuting round sector,
+\[
+  A_{B4}\vert_r
+  =\frac{e_h(M_z^2+\nu_r)}{M_z^2+\nu_r+e_h\ell^2}\,\Id .
+\]
+The instantiation remains conditional until the D6 action derives the local
+operators, trace map, and response convention.
+
+The fixed-locus, boundary-Higgs, intrinsic endpoint, and twisted-source
+repairs can be compressed into one local expansion.  Let \(u_B\) denote the
+localized variables on \(B_4\), with source-selected vacuum \(u_0\).  The
+second variation has the form
+\[
+S_{\mathrm{loc}}^{(2)}
+ =\frac{\tau_B}{2}\left(
+   \langle \delta u,K_{\mathrm{loc}}\delta u\rangle
+   +2\operatorname{Re}\langle \delta u,
+       J_{\mathrm{loc}}R_{\mathrm{def}}h\rangle
+   +\langle R_{\mathrm{def}}h,
+       E_{\mathrm{loc}}R_{\mathrm{def}}h\rangle
+ \right),
+\]
+and Schur reduction gives
+\[
+  A_{\mathrm{loc}}
+  =R_{\mathrm{def}}^\dagger
+    \left(E_{\mathrm{loc}}
+      -J_{\mathrm{loc}}^\dagger K_{\mathrm{loc}}^{-1}J_{\mathrm{loc}}
+    \right)R_{\mathrm{def}}.
+\]
+The positive \(z\)-parent above is the case
+\[
+K_{\mathrm{loc}}=K_z+L_z^\dagger E_hL_z,\qquad
+J_{\mathrm{loc}}=-L_z^\dagger E_h,\qquad
+E_{\mathrm{loc}}=E_h.
+\]
+A boundary-Higgs scalar, twisted fixed-locus field, or intrinsic \(B_4\)
+endpoint operator therefore becomes useful only after the local D6 equations
+fix the vacuum, Hessian, coupling, and trace convention.
+
+\section{Conclusion}
+
+The Connes translation gives a sharper mathematical form of the programme.
+Compact metrics become families of spectral triples.  Endpoint spaces become
+filters through product, quotient, and homogeneous triples.  The D6 branch
+becomes a singular or groupoid interface with separate link, graph, and
+bosonic boundary modules.  The \(\mthree\) Higgs block becomes a real or
+quaternionic doublet module whose scalar metric gives the orthodox
+\(\rho=1\) result in the selected branch.
+
+The open object is still the same concrete source datum:
+\[
+  A_B\ \text{or}\ \kappa_B
+  \quad\text{on}\quad h,
+  \quad\text{with}\quad P_B,m_B,\gamma_B,\sigma_r
+  \quad\text{computed in one convention}.
+\]
+Until such a source is written and expanded, De Vries-style arithmetic
+belongs to possible completions rather than to the main derivation.
+
+\begin{thebibliography}{9}
+\raggedright
+
+\bibitem{connes-sm}
+A. Connes, \emph{Noncommutative Geometry and the Standard Model with
+Neutrino Mixing}, local transcription
+\path{docs/Connes_Noncommutative_Geometry_Standard_Model_Neutrino_Mixing_2006.md}.
+
+\bibitem{ccm}
+A. Chamseddine, A. Connes, and M. Marcolli, \emph{Gravity and the Standard
+Model with Neutrino Mixing}, local transcription
+\path{docs/Chamseddine_Connes_Marcolli_Gravity_Standard_Model_Neutrino_Mixing_2006.md}.
+
+\bibitem{kk-hilo}
+Project source synthesis, \emph{KaluzaKlein Hilo Higgsing KaluzaKlein
+Review}, local file
+\path{docs/KaluzaKlein_Hilo_Higgsing_KaluzaKlein_Review.md}.
+
+\bibitem{math-expansion}
+Project note, \emph{Mathematical Expansion Standard},
+\path{notes/Mathematical_Expansion_Standard.md}.
+
+\bibitem{math-expansion-coverage}
+Project note, \emph{Mathematical Expansion Coverage Audit},
+\path{notes/Mathematical_Expansion_Coverage_Audit.md}.
+
+\bibitem{ncg-ledger}
+Project note, \emph{NCG Translation Master Ledger},
+\path{notes/NCG_Translation_Master_Ledger.md}.
+
+\bibitem{ncg-outline}
+Project note, \emph{NCG Continuous Paper Outline},
+\path{notes/NCG_Continuous_Paper_Outline.md}.
+
+\bibitem{ncg-translation-completion-audit}
+Project note, \emph{NCG Translation Completion Audit},
+\path{notes/NCG_Translation_Completion_Audit.md}.
+
+\bibitem{ncg-boundary}
+Project note, \emph{NCG Boundary Extension Retained Kernel Package},
+\path{notes/NCG_Boundary_Extension_Retained_Kernel_Package.md}.
+
+\bibitem{ncg-cp2-s4-branch}
+Project note, \emph{NCG CP2 S4 Branched Cover Spectral Package},
+\path{notes/NCG_CP2_S4_Branched_Cover_Spectral_Package.md}.
+
+\bibitem{ncg-b4-local}
+Project note, \emph{NCG D6 B4 Local Boundary Source Candidate},
+\path{notes/NCG_D6_B4_Local_Boundary_Source_Candidate.md}.
+
+\bibitem{ncg-b4-local-consistency}
+Project note, \emph{NCG B4 Local Consistency Expansion},
+\path{notes/NCG_B4_Local_Consistency_Expansion.md}.
+
+\bibitem{ncg-weighted-quotient}
+Project note, \emph{NCG Weighted Quotient Source Triage Translation},
+\path{notes/NCG_Weighted_Quotient_Source_Triage_Translation.md}.
+
+\bibitem{ncg-soft-wall-dtn}
+Project note, \emph{NCG Soft Wall DtN Hierarchy Translation},
+\path{notes/NCG_Soft_Wall_DtN_Hierarchy_Translation.md}.
+
+\bibitem{ncg-twisted-angular}
+Project note, \emph{NCG Twisted Angular Capacity Translation},
+\path{notes/NCG_Twisted_Angular_Capacity_Translation.md}.
+
+\bibitem{ncg-relative-det}
+Project note, \emph{NCG Relative Determinant Gluing Source Translation},
+\path{notes/NCG_Relative_Determinant_Gluing_Source_Translation.md}.
+
+\bibitem{ncg-influence-constraint}
+Project note, \emph{NCG Influence Constraint Wall Source Translation},
+\path{notes/NCG_Influence_Constraint_Wall_Source_Translation.md}.
+
+\bibitem{ncg-layer-parallel}
+Project note, \emph{NCG KK QFT Connes Layer Parallel},
+\path{notes/NCG_KK_QFT_Connes_Layer_Parallel.md}.
+
+\bibitem{ncg-equivariant-multiplier}
+Project note, \emph{NCG Equivariant Group Action Multiplier Package},
+\path{notes/NCG_Equivariant_Group_Action_Multiplier_Package.md}.
+
+\bibitem{ncg-legacy-coverage}
+Project note, \emph{NCG Legacy Discussion Coverage Index},
+\path{notes/NCG_Legacy_Discussion_Coverage_Index.md}.
+
+\bibitem{ncg-file-residual-coverage}
+Project note, \emph{NCG File-Level Residual Coverage Audit},
+\path{notes/NCG_File_Level_Residual_Coverage_Audit.md}.
+
+\bibitem{ncg-repository-artifact-coverage}
+Project note, \emph{NCG Repository Artifact Coverage Audit},
+\path{notes/NCG_Repository_Artifact_Coverage_Audit.md}.
+
+\bibitem{ncg-claim-task-ledger}
+Project note, \emph{NCG Claim And Task Source Ledger},
+\path{notes/NCG_Claim_Task_Source_Ledger.md}.
+
+\bibitem{ncg-wastebook-correction}
+Project note, \emph{NCG Wastebook Correction Ledger},
+\path{notes/NCG_Wastebook_Correction_Ledger.md}.
+
+\bibitem{ncg-archive-verification-ledger}
+Project note, \emph{NCG Archive Verification Report Ledger},
+\path{notes/NCG_Archive_Verification_Report_Ledger.md}.
+
+\bibitem{ncg-calculation-artifact-ledger}
+Project note, \emph{NCG Calculation Artifact Ledger},
+\path{notes/NCG_Calculation_Artifact_Ledger.md}.
+
+\bibitem{ncg-produced-remediation}
+Project note, \emph{NCG Produced Output Premise Remediation Audit},
+\path{notes/NCG_Produced_Output_Premise_Remediation_Audit.md}.
+
+\bibitem{ncg-produced-deliverable-anchors}
+Project note, \emph{NCG Produced Deliverable Expansion Anchors},
+\path{notes/NCG_Produced_Deliverable_Expansion_Anchors.md}.
+
+\bibitem{ncg-note-multiplier-remediation}
+Project note, \emph{NCG Note Multiplier Shorthand Remediation Index},
+\path{notes/NCG_Note_Multiplier_Shorthand_Remediation_Index.md}.
+
+\bibitem{ncg-b4-source-operator-ledger}
+Project note, \emph{NCG B4 Source Operator Status Ledger},
+\path{notes/NCG_B4_Source_Operator_Status_Ledger.md}.
+
+\bibitem{ncg-package-atlas}
+Project note, \emph{NCG Package Atlas},
+\path{notes/NCG_Package_Atlas.md}.
+
+\bibitem{ncg-dictionary}
+Project reference, \emph{NCG KK QFT Connes Dictionary},
+\path{out/NCG_KK_QFT_CONNES_DICTIONARY.md}.
+
+\bibitem{ncg-scaled-unscaled}
+Project note, \emph{NCG Scaled Unscaled Source Normalization},
+\path{notes/NCG_Scaled_Unscaled_Source_Normalization.md}.
+
+\bibitem{ncg-coverage}
+Project note, \emph{NCG Discussion Coverage Audit},
+\path{notes/NCG_Discussion_Coverage_Audit.md}.
+
+\bibitem{ncg-probe-filtration}
+Project note, \emph{NCG Probe Filtration Dimension Translation},
+\path{notes/NCG_Probe_Filtration_Dimension_Translation.md}.
+
+\bibitem{ncg-produced-crosswalk}
+Project note, \emph{NCG Produced Output Crosswalk},
+\path{notes/NCG_Produced_Output_Crosswalk.md}.
+
+\bibitem{ncg-source-audit-corpus}
+Project note, \emph{NCG Source Audit Corpus Map},
+\path{notes/NCG_Source_Audit_Corpus_Map.md}.
+
+\bibitem{ncg-source-crosswalk}
+Project note, \emph{NCG Source Library Crosswalk},
+\path{notes/NCG_Source_Library_Crosswalk.md}.
+
+\bibitem{ncg-source-file-coverage}
+Project note, \emph{NCG Source Library File Coverage Audit},
+\path{notes/NCG_Source_Library_File_Coverage_Audit.md}.
+
+\bibitem{ncg-source-expansion-anchors}
+Project note, \emph{NCG Source Library Expansion Anchors},
+\path{notes/NCG_Source_Library_Expansion_Anchors.md}.
+
+\bibitem{ncg-d11-charge}
+Project note, \emph{NCG D11 Parent Charge EM Endpoint Translation},
+\path{notes/NCG_D11_Parent_Charge_EM_Endpoint_Translation.md}.
+
+\bibitem{ncg-s5s2-endpoint}
+Project note, \emph{NCG S5xS2 D5 Lens Endpoint Translation},
+\path{notes/NCG_S5xS2_D5_Lens_Endpoint_Translation.md}.
+
+\bibitem{ncg-tower-phase}
+Project note, \emph{NCG Tower Higgs Phase Dimension Translation},
+\path{notes/NCG_Tower_Higgs_Phase_Dimension_Translation.md}.
+
+\bibitem{ncg-nc-fuzzy}
+Project note, \emph{NCG Noncommutative Fuzzy Repair Translation},
+\path{notes/NCG_Noncommutative_Fuzzy_Repair_Translation.md}.
+
+\bibitem{ncg-fuzzy-finite-package}
+Project note, \emph{NCG Fuzzy Flag Finite Matrix Source Package},
+\path{notes/NCG_Fuzzy_Flag_Finite_Matrix_Source_Package.md}.
+
+\bibitem{ncg-nc-torus-projective-package}
+Project note, \emph{NCG Noncommutative Torus Projective Module Source Package},
+\path{notes/NCG_Noncommutative_Torus_Projective_Module_Source_Package.md}.
+
+\bibitem{ncg-spinc-division}
+Project note, \emph{NCG SpinC Division Algebra Bosonic Constraints},
+\path{notes/NCG_SpinC_Division_Algebra_Bosonic_Constraints.md}.
+
+\bibitem{ncg-multiplier-search}
+Project note, \emph{NCG Spectral Multiplier Operator Search},
+\path{notes/NCG_Spectral_Multiplier_Operator_Search.md}.
+
+\end{thebibliography}
+
+\end{document}

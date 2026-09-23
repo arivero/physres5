@@ -1,0 +1,129 @@
+% dv2 living paper. RULE (AGENT.md #4): typeset = derived. Status, meta, and
+% not-yet-derived / not-yet-cross-checked notes live ONLY in % comments, never
+% in typeset text. Typeset the physics; flag its standing in a preceding comment.
+% No assistant-voice titles. Obey the forbidden-words list
+% (precisely/exactly[non-literal]/genuinely/crucially/rigorously/...).
+\documentclass[11pt,aps,prd,nofootinbib]{revtex4-2}
+% fallback if revtex4-2 absent: \documentclass[11pt]{article}\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+
+\title{A self-consistency reading of the de Vries electroweak relation}
+% working title; revise as the result closes. Author block deferred.
+\author{dv2}
+\affiliation{}
+\date{\today}
+
+\begin{abstract}
+% DRAFT abstract -- factual core only.
+The on-shell weak mixing angle is reproduced parameter-free by the positive root
+$X_+$ of $X^2+CX-C=0$ with $C=j(j+1)$ at $j_W=\tfrac12$, $j_Z=1$, to
+$0.42\,\sigma$. We note that this root is the fixed point of the self-consistency
+relation $X=C/(X+C)$, a self-energy (gap-equation) structure rather than a
+Laplacian eigenvalue, and examine whether a unitary, positive-definite dynamical
+mechanism outputs it.
+\end{abstract}
+
+\maketitle
+
+% ===========================================================================
+\section{The relation}
+% Datum -- factual, typeset.
+The on-shell weak mixing angle and $W/Z$ mass ratio are reproduced, with no free
+parameter, by the positive root of
+\begin{equation}
+  X^2 + C\,X - C = 0, \qquad X \equiv \frac{M_V^2}{\mu^2}, \quad C \equiv j(j+1),
+  \label{eq:devries}
+\end{equation}
+evaluated at the spins $j_W=\tfrac12$ ($C=\tfrac34$) and $j_Z=1$ ($C=2$). With
+$X_+(C)=\tfrac12\!\left(-C+\sqrt{C^2+4C}\,\right)$ one has $X_+(\tfrac34)=0.56873$,
+$X_+(2)=0.73205$, and
+\begin{equation}
+  \sin^2\theta_W = 1 - \frac{X_+(\tfrac34)}{X_+(2)} = 0.223101,
+  \label{eq:sin2}
+\end{equation}
+against the measured on-shell value $0.22321(26)$, a $0.42\,\sigma$ agreement.
+
+% ===========================================================================
+\section{Self-consistency form}
+% Algebraic identity -- derived, typeset.
+Equation~\eqref{eq:devries} is the fixed-point condition
+\begin{equation}
+  X = \frac{C}{X+C},
+  \label{eq:selfcon}
+\end{equation}
+i.e.\ a field equal to a coupling times its own propagator evaluated at the
+self-consistent mass. The map $X\mapsto C/(X+C)$ has the stable fixed point $X_+$
+and the spurious unstable one $X_-=-C$. The spectrum is bounded, $0<X_+<1$ with
+$X_+\to1$ as $C\to\infty$: a saturating self-energy, not an additive tower
+$X=X_0+n$. This places~\eqref{eq:devries} in the resolvent/gap-equation class,
+not the quadratic-form (KK Laplacian) class.
+% The PSD no-go of the prior program rejected only the indefinite 2x2 block
+% A(C)=[[0,sqrt C],[sqrt C,-C]]; Eq.(3) carries one positive self-energy and no
+% mass matrix, so that obstruction does not apply. (Keep as context, not result.)
+
+% ===========================================================================
+\section{A one-Casimir resolvent gap}
+% STATUS: Iteration 1, 2026-05-25, CROSS-CONFIRMED. opus (rainbow/NJL bubble) and
+% codex (Feshbach/Friedrichs rank-one two-channel; large-N Stueckelberg saddle)
+% independently reached the SAME structure: numerator C = vertex trace of T^2,
+% denominator X+C = resolvent shift, all positive. Three realizations, one gap.
+% The earlier "residue constant kappa" worry is closed: in the variational form
+% the gap is dV/dX=0 with V's quadratic term canonically normalized, so the
+% coefficient is 1 by construction -- no free residue knob.
+For a massive vector in the spin-$j$ slot of an internal $SU(2)$, with quadratic
+Casimir $\mathbf{T}^2 = C\,\mathbb{1}$, $C=j(j+1)$, on the irrep, take the
+order-parameter effective potential
+\begin{equation}
+  \mathcal V_j(X) = \tfrac12 X^2 - C\,\log(X+C),
+  \qquad X \equiv \frac{M_V^2}{\mu^2}.
+  \label{eq:Vpot}
+\end{equation}
+Its stationarity $\mathcal V_j'(X)=X-C/(X+C)=0$ is the gap equation
+\begin{equation}
+  X = \frac{C}{X+C} \quad\Longleftrightarrow\quad \Sigma_j(X)=\mu^2\,\frac{C}{X+C},
+  \quad \Gamma(p^2)=p^2-\Sigma,
+  \label{eq:gap}
+\end{equation}
+identical to Eq.~\eqref{eq:selfcon}. The Casimir enters once as the numerator
+(the vertex trace of $\mathbf{T}^2$) and once as the resolvent shift in the
+denominator (the dressed internal mode of self-mass $\mu^2 C$), both from the
+single operator $\mathbf{T}^2=C\,\mathbb 1$.
+
+A unitary Hilbert-space realization is a rank-one Feshbach/Friedrichs
+two-channel Hamiltonian: an open vector channel $P$ with $H_{PP}=0$, a closed
+rotor channel $Q$ with $H_{QQ}=\mu^2 C$, and transition $H_{PQ}=\mu^2 T^a$. The
+Feshbach effective Hamiltonian $H_{\rm eff}(E)=H_{PQ}(E-H_{QQ})^{-1}H_{QP}
+=\mu^4 C/(E-\mu^2 C)$ has its pole at $E=-M_V^2$ where Eq.~\eqref{eq:gap} holds.
+The pole residue is positive, $Z^{-1}=1+\mu^4 C/(M_V^2+\mu^2 C)^2>0$, and the
+self-energy is a positive Stieltjes (K\"all\'en--Lehmann) form with single-line
+spectral density $\rho_j(\nu)=\mu^4 C\,\delta(\nu-\mu^2 C)\ge0$. No ghost, no
+tachyon, $0<X_+<1$.
+
+Assigning the photon to the singlet $j=0$ ($C=0\Rightarrow X=0$, massless), the
+$W^\pm$ to the lowest center-odd channel $j=\tfrac12$ ($C=\tfrac34$), and the $Z$
+to the lowest center-even nonsinglet $j=1$ ($C=2$, from $\tfrac12\otimes\tfrac12
+=0\oplus1$), Eqs.~\eqref{eq:devries}--\eqref{eq:sin2} follow as outputs:
+$X_+(\tfrac34)=(\sqrt{57}-3)/8$, $X_+(2)=\sqrt3-1$, $\sin^2\theta_W=0.223101$.
+Among half-integer pairs $(j_W,j_Z)$ with $j\le4$, this lowest-spin assignment is
+the only one reproducing the measured angle within $3\sigma$.
+
+% OPEN (iteration 2 / solo audit, NOT typeset as result): SU(2)_2 WZW selects the
+% finite spin set {0,1/2,1}; direct Sugawara L0 gives Delta_j=J/(k+2)=J/4 and is
+% the wrong de Vries coefficient. The unit coefficient is available through the
+% current zero modes / holonomy metric because the affine central term vanishes
+% at m=n=0 and sum_a J_0^a J_0^a=J on V_j. Payen-style endpoint variables give a
+% source-backed boundary route to T_a and T_a T_b insertions. Still missing:
+% derive from a local 4D/D10 parent that the mass operator uses this zero-mode
+% boundary channel, with the single-pole spectral density rho_j=mu^4 J
+% delta(nu-mu^2 J), the local sign/coefficient, and the selection rule
+% gamma:j=0, W:j=1/2, Z:j=1 as outputs rather than labels.
+
+% ===========================================================================
+% \section{Originality}   % deferred until cross-checked; opus search: the
+% resolvent self-energy class is standard (NJL/large-N), the Casimir-as-coupling
+% double-duty giving X+(j(j+1)) is not found in the literature; de Vries datum
+% itself absent from arXiv. Re-run search in codex arm before any claim.
+
+\end{document}

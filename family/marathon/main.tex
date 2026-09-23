@@ -1,0 +1,1133 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\geometry{margin=2.4cm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{remark}{Remark}
+
+\newcommand{\GeV}{\,\mathrm{GeV}}
+\newcommand{\MeVtext}{\,\mathrm{MeV}}
+\newcommand{\swsq}{\sin^2\theta_W}
+\newcommand{\Minf}{M_\infty}
+\newcommand{\Jvec}{\vec{J}}
+
+\title{A Casimir Ladder for the Electroweak Bosons:\\
+Exact Algebra of the de Vries--Rivero Ratio, a Boson Tower below $107\GeV$,\\
+and Falsifiable Consequences}
+
+\author{Claude Fable 5 (Anthropic)\thanks{This manuscript was produced by a
+language model as a demonstration of autonomous theoretical synthesis, under
+an explicit constraint of zero code execution: every closed form was derived
+symbolically and every decimal obtained by hand arithmetic from those closed
+forms. The source material is a corpus of research repositories maintained by
+A.~Rivero; Section~\ref{sec:provenance} states which results are inherited,
+which are reproved, and which are new. The bibliography was verified by a
+second model (Claude Sonnet) against arXiv and the published record; an
+adversarial referee report was solicited from an independent model (GPT-5.5,
+via the Codex CLI) on a first draft, and this version incorporates the
+resulting corrections --- including one genuine algebra error it caught. Both
+reports are archived alongside the source.}}
+\date{July 2, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study the two-parameter algebraic structure underlying a family of
+empirical electroweak mass relations first observed by H.~de~Vries and
+A.~Rivero in 2004--2006 and since investigated, by several independent
+routes, in a corpus of research programs. The structure is a one-line
+kernel: to an internal label $j$ with Casimir $J=j(j+1)$ associate the
+positive root $\lambda_+(J)$ of $\lambda^2+J\lambda-J=0$, and set
+$m^2(j)=\Minf^2\,\lambda_+(J)$ for a single scale $\Minf$. With the channel
+assignment $(\gamma,W,Z)=(0,\tfrac12,1)$ this gives
+$m_W/m_Z=\sqrt{\lambda_+(3/4)/\lambda_+(2)}=0.881419\ldots$, within
+$0.4\sigma$ of the 2024 on-shell world average. We prove three structural
+results. (i)~The kernel is the unique attractor of a nested Feshbach
+decimation with uniform rung data $(\sqrt J,\,J)$; we also record an
+obstruction the source literature passes over --- a \emph{flat}
+semi-infinite chain does not work, since the candidate boundary state is an
+embedded resonance for both physical Casimirs. (ii)~The mixing parameter
+implied by the kernel, $\swsq=1-\lambda_+(3/4)/\lambda_+(2)=
+\bigl(19-3\sqrt{19}+3\sqrt{3}-\sqrt{57}\bigr)/16=0.2231013\ldots$, has
+minimal polynomial $64x^4-304x^3+414x^2-190x+25$ over $\mathbb{Q}$: this is
+precisely the quartic postulated independently in a second research line,
+so two formulations believed merely numerically close are algebraically
+identical; moreover the quartic's four roots are exactly the four branch
+combinations $1-\lambda_a(J_W)/\lambda_b(J_Z)$, and the polynomial embeds
+in an explicit two-parameter family whose coefficients are polynomial in
+the channel Casimir and the ratio $\kappa=J_W/J_Z=3/8$ isolated
+independently by a custodial-EFT analysis. (iii)~The negative branch obeys
+two exact sum rules, and the
+popular identifications of its levels with $v/2$ and $v/\sqrt2$ are
+mutually inconsistent at the $1.8\%$ level, so at most one can be exact.
+The positive branch predicts a tower of states at $96.5$, $99.6$, $101.5$,
+$102.7\GeV$ accumulating at $\Minf=m_Z\sqrt{(1+\sqrt3)/2}=106.58\GeV$, with
+a label-conservation pattern that suppresses single production of the
+$j=3/2$ level --- compatible with the weak diphoton hints near
+$95$--$96\GeV$ and decisively testable at FCC-ee, with LEP~2 recasts above
+the $193\GeV$ pair threshold available already. We state which assumptions
+remain underived, give the failure conditions, and enumerate the trials
+factors any significance claim must price.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The ratio of the $W$ and $Z$ boson masses is, in the Standard Model (SM), a
+derived quantity: $m_W/m_Z=\cos\theta_W$ at tree level, with $\theta_W$
+fixed by the ratio of two independent gauge couplings. The SM assigns it no
+preferred value. It is therefore legitimate --- in the same exploratory
+spirit in which Koide's charged-lepton relation has been studied for four
+decades \cite{koide1982,koide1983prd,koide1990,koide2005,koide2018,foot1994}
+--- to ask whether the measured value singles out a simple algebraic
+structure, and, if one is found, to work out its full set of consequences so
+that data can kill it or promote it.
+
+An observation of this kind has an arXiv trail going back two decades. In
+November 2004 H.~de~Vries noted \cite{devries2004} that the on-shell weak
+mixing parameter agrees closely with a specific algebraic number built from
+the two smallest nontrivial $SU(2)$ Casimirs; the observation was developed
+in a joint preprint with A.~Rivero \cite{devriesrivero2005} and stated in
+kernel form --- the eigenvalue problem used in this paper, with the value
+$s^2_{dV}=0.22310132\ldots$ appearing verbatim --- in \cite{rivero2006}. A
+corpus of research repositories has since attacked the structure from
+several directions: as the secular equation of a two-channel kernel, as a
+root of an explicit quartic polynomial, as an eigenvalue problem for a
+Casimir-locked texture, and as a coefficient in a custodially symmetric
+effective field theory. The connections between these formulations had been
+checked numerically, never algebraically.
+
+This paper does three things.
+
+\emph{First}, it states the structure once, minimally, and derives its exact
+spectrum in closed form (Sections~\ref{sec:kernel},~\ref{sec:spectrum}).
+The kernel is a one-parameter family of $2\times2$ matrices; we prove it is
+equivalently the unique attractor of a nested decimation recursion with
+uniform rung data (Proposition~\ref{prop:ladder}), and we record an
+obstruction that the source literature passes over: a flat semi-infinite
+chain has the candidate state as an embedded resonance rather than an
+eigenvalue (Remark~\ref{rem:notchain}), which constrains what a microscopic
+origin can look like.
+
+\emph{Second}, it proves the algebraic equivalence of the formulations
+(Section~\ref{sec:theorem}). Theorem~\ref{thm:quartic} computes, via Galois
+conjugation in the biquadratic field $\mathbb{Q}(\sqrt3,\sqrt{19})$, the
+minimal polynomial of the mixing parameter implied by the kernel, and finds
+exactly the quartic $64x^4-304x^3+414x^2-190x+25$ that a separate research
+line had postulated as its fundamental object. What was believed to be two
+compatible proposals is one proposal.
+
+\emph{Third}, it extracts the falsifiable consequences derivable without new
+dynamical input (Sections~\ref{sec:data}--\ref{sec:negative}): a
+$2\times10^{-5}$-precision prediction for $m_W$ from $m_Z$ (at tree level,
+on-shell --- the scheme caveat is discussed at length); a tower of states
+between $96.5$ and $106.6\GeV$ with computable asymptotic spacing; a
+label-conservation pattern suppressing their single production; two exact
+sum rules for the negative branch; and a no-go
+(Lemma~\ref{lem:incompatible}) showing that the two popular vacuum-scale
+identifications of the negative branch cannot both be exact.
+
+Section~\ref{sec:casimir} records a further coincidence: the coefficient
+$\kappa=3/8=C_F/C_A$ of $SU(2)$, isolated independently by a custodial-EFT
+analysis of the same data, is the ratio $J_W/J_Z$ of the very Casimirs that
+enter the kernel. Section~\ref{sec:geometry} discusses which geometric
+mechanisms could produce the kernel
+\cite{manton1979,forgacsmanton1980,witten1981,salamstrathdee1982,duffnilssonpope1986,hosotani1983,rdss1983}
+and states, as numbered assumptions, exactly what a derivation would have to
+produce. Section~\ref{sec:falsification} collects the failure conditions,
+and Section~\ref{sec:provenance} the provenance, method, and the trials
+accounting that any significance claim must confront.
+
+Throughout, ``prediction'' means: output of the closed formulas given here,
+with stated inputs, at tree level, compared in the on-shell scheme. The
+scheme question is the single largest interpretive uncertainty and is
+treated in Section~\ref{sec:data}.
+
+\section{The kernel and the decimation recursion}
+\label{sec:kernel}
+
+\subsection{Definition}
+
+Fix a mass scale $\Minf$. To an internal label
+$j\in\{0,\tfrac12,1,\tfrac32,\dots\}$ with Casimir $J=j(j+1)$ associate the
+matrix
+\begin{equation}
+A(J)\;=\;\begin{pmatrix} 0 & \sqrt{J}\\[2pt] \sqrt{J} & -J\end{pmatrix},
+\label{eq:kernel}
+\end{equation}
+acting on a two-dimensional space spanned by a ``visible'' level (first
+slot) and a ``partner'' level (second slot), in units of $\Minf^2$. Its
+characteristic equation is
+\begin{equation}
+\lambda^2 + J\lambda - J \;=\; 0,
+\qquad
+\lambda_\pm(J)\;=\;\frac{-J\pm\sqrt{J^2+4J}}{2},
+\label{eq:secular}
+\end{equation}
+with $\lambda_+(J)\in(0,1)$ and $\lambda_-(J)<0$ for all $J>0$. The
+physical mass-squared assignments studied here are
+\begin{equation}
+m^2(j) \;=\; \Minf^2\,\lambda_+\!\bigl(j(j+1)\bigr)
+\qquad\text{(positive branch)},
+\label{eq:masses}
+\end{equation}
+with the channel assignment
+\begin{equation}
+\gamma \leftrightarrow j=0,\qquad
+W \leftrightarrow j=\tfrac12,\qquad
+Z \leftrightarrow j=1,
+\label{eq:channels}
+\end{equation}
+i.e.\ $J_\gamma=0$ (massless), $J_W=\tfrac34$, $J_Z=2$. The label $j$ is
+distinct from the gauged weak isospin of the SM (under which $W^\pm,Z$ form
+a triplet); it is a bookkeeping label of the construction, tentatively
+interpreted as a representation label of an internal (custodial-like)
+$SU(2)_i$, and assignment~\eqref{eq:channels} is an \emph{input}, inherited
+from \cite{rivero2006}, whose derivation is an open problem. We return to
+its status in Sections~\ref{sec:geometry} and~\ref{sec:provenance}.
+
+Two elementary properties of \eqref{eq:secular} are used repeatedly:
+\begin{equation}
+\lambda_+ + \lambda_- = -J, \qquad \lambda_+\lambda_- = -J
+\qquad\Longrightarrow\qquad
+|\lambda_-| - \lambda_+ = J,\quad \lambda_+|\lambda_-| = J,
+\label{eq:vieta}
+\end{equation}
+together with the rewriting $\lambda_+^2=J(1-\lambda_+)$ of
+\eqref{eq:secular} itself.
+
+\subsection{The resummation identity, and what it is not}
+
+The matrix \eqref{eq:kernel} looks like a fine-tuned two-state system. The
+following identity shows the same spectrum arises as the fixed point of a
+self-similar decimation, which widens the space of candidate microscopic
+origins.
+
+\begin{proposition}[Resummation identity]
+\label{prop:ladder}
+Let $f(X)=J/(J+X)$ on $[0,\infty)$, for fixed $J>0$. Then:
+\begin{enumerate}
+\item[(i)] the fixed points of $f$ are exactly the roots
+$\lambda_\pm(J)$ of \eqref{eq:secular};
+\item[(ii)] for every $X_0\ge0$ the iterates $X_{k+1}=f(X_k)$ converge to
+$\lambda_+(J)$;
+\item[(iii)] $f$ is the static (zero-frequency) Schur reduction of the
+two-level block
+$\bigl(\begin{smallmatrix}0&\sqrt J\\ \sqrt J&-(J+X)\end{smallmatrix}\bigr)$
+onto its visible slot: eliminating a partner that carries, besides the
+Casimir mass $-J$, the effective mass $-X$ handed up from the stage below,
+returns the effective visible mass $f(X)$. Hence any nested decimation
+scheme with uniform rung data $(\sqrt J,\,J)$ has $\lambda_+(J)$ as its
+unique attractor.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) $f(X)=X$ is $X(J+X)=J$, i.e.\ \eqref{eq:secular}.
+(ii) $f$ is a M\"obius transformation mapping $[0,\infty)$ into $(0,1]$,
+strictly decreasing, with $f([0,1])=[J/(J{+}1),1]$. Hence $f\circ f$ is
+increasing, so the even and odd subsequences of $(X_k)_{k\ge1}$ are
+monotone and confined to $[J/(J{+}1),1]$; each converges to a fixed point
+of $f\circ f$. Now $f\circ f$ is itself a M\"obius transformation and is
+distinct from the identity (e.g.\ $f(f(0))=J/(J{+}1)\ne0$), so it has at
+most two fixed points; the two fixed points $\lambda_\pm$ of $f$ already
+account for them, leaving no room for genuine $2$-cycles. Both subsequence
+limits lie in $(0,1]$ while $\lambda_-<0$, so both equal $\lambda_+$.
+(For the record, the multiplier is
+$|f'(\lambda_+)|=\lambda_+^2/J=1-\lambda_+<1$, using
+$\lambda_+^2=J(1-\lambda_+)$.)
+(iii) The Schur complement of the stated block onto the first slot at zero
+frequency is $0-\sqrt J\,\bigl(-(J+X)\bigr)^{-1}\sqrt J=J/(J+X)=f(X)$.
+\end{proof}
+
+\begin{remark}[What the ladder is not]
+\label{rem:notchain}
+It is tempting to read Proposition~\ref{prop:ladder} as the statement that
+a \emph{flat} semi-infinite chain --- the tridiagonal operator $T$ with
+diagonal $(0,-J,-J,\dots)$ and off-diagonals $\sqrt J$ --- possesses
+$\lambda_+$ as a boundary-localized eigenvalue. It does not. The tail of
+$T$ has essential spectrum $[-J-2\sqrt J,\,-J+2\sqrt J\,]$, and
+$\lambda_+$ lies inside this band precisely when
+$(\lambda_++J)^2<4J$, which by $\lambda_++J=J/\lambda_+$ and
+$\lambda_+^2=J(1-\lambda_+)$ reduces to $\lambda_+<\tfrac34$, i.e.\
+$J<\tfrac94$. Both physical values $J_W=\tfrac34$
+($\lambda_+=0.5687$) and $J_Z=2$ ($\lambda_+=0.7321$) satisfy this, so on
+the flat chain the candidate boundary state is an embedded resonance
+rather than an isolated eigenvalue. The correct reading of
+Proposition~\ref{prop:ladder} is therefore recursive-hierarchical, as in
+item (iii): each partner carries the effective mass of the stage below.
+Microscopic proposals must implement a nested decimation --- successive
+scales of a Kaluza--Klein-type recursion are the natural candidate ---
+rather than a flat chain. We state this obstruction explicitly because the
+source corpus passes over it.
+\end{remark}
+
+\section{Exact spectrum and the number field}
+\label{sec:spectrum}
+
+Evaluating \eqref{eq:secular} at the two physical Casimirs:
+\begin{align}
+\lambda_+\!\left(\tfrac34\right) &= \frac{\sqrt{57}-3}{8} = 0.568729\ldots,
+&
+\lambda_-\!\left(\tfrac34\right) &= -\frac{3+\sqrt{57}}{8} = -1.318729\ldots,
+\label{eq:lam34}\\[2pt]
+\lambda_+(2) &= \sqrt{3}-1 = 0.732051\ldots,
+&
+\lambda_-(2) &= -(1+\sqrt{3}) = -2.732051\ldots
+\label{eq:lam2}
+\end{align}
+The mass-squared ratio on the positive branch is
+\begin{equation}
+\rho \;\equiv\; \frac{m_W^2}{m_Z^2}
+\;=\;\frac{\lambda_+(3/4)}{\lambda_+(2)}
+\;=\;\frac{\sqrt{57}-3}{8(\sqrt3-1)}
+\;=\;\frac{3\sqrt{19}+\sqrt{57}-3\sqrt3-3}{16}
+\;=\;0.776899\ldots,
+\label{eq:rho}
+\end{equation}
+where we rationalized with $(\sqrt3-1)^{-1}=(\sqrt3+1)/2$ and used
+$\sqrt{57}=\sqrt3\sqrt{19}$. Hence
+\begin{equation}
+\frac{m_W}{m_Z} \;=\;\sqrt{\rho}\;=\;0.8814186\ldots,
+\qquad
+\swsq \;\equiv\; 1-\rho
+\;=\;\frac{19-3\sqrt{19}+3\sqrt3-\sqrt{57}}{16}
+\;=\;0.2231013\ldots
+\label{eq:sw}
+\end{equation}
+All these numbers live in the real biquadratic field
+$K=\mathbb{Q}(\sqrt3,\sqrt{19})$, of degree $4$ over $\mathbb{Q}$, with
+Galois group $\mathrm{Gal}(K/\mathbb{Q})\cong
+\mathbb{Z}/2\times\mathbb{Z}/2$ generated by
+\[
+\sigma:\ \sqrt3\mapsto-\sqrt3,\qquad
+\tau:\ \sqrt{19}\mapsto-\sqrt{19},
+\]
+each of which flips $\sqrt{57}$. A curiosity worth recording: since $K$ is
+biquadratic, every quantity in this construction is expressible by nested
+square roots alone --- in this model $\swsq$ is a ruler-and-compass
+constructible number.
+
+\section{The equivalence theorem}
+\label{sec:theorem}
+
+A second research line in the corpus posits, as its fundamental object, the
+quartic polynomial
+\begin{equation}
+P(x) \;=\; 64x^4-304x^3+414x^2-190x+25,
+\label{eq:quartic}
+\end{equation}
+one of whose roots is matched against electroweak data. The two lines were
+believed compatible because their decimal expansions agree. We now prove
+they are the same object.
+
+\begin{theorem}[The quartic is the minimal polynomial of the mixing
+parameter]
+\label{thm:quartic}
+Let $s=\swsq=\bigl(19-3\sqrt{19}+3\sqrt3-\sqrt{57}\bigr)/16$ as in
+\eqref{eq:sw}. Then the minimal polynomial of $s$ over $\mathbb{Q}$ is
+exactly $P(x)$ of \eqref{eq:quartic}, normalized to leading coefficient
+$64$. Consequently the kernel formulation \eqref{eq:kernel} with channels
+\eqref{eq:channels} and the quartic formulation \eqref{eq:quartic} define
+the same algebraic number, and the two research lines study one structure.
+\end{theorem}
+
+\begin{proof}
+The four Galois images of $s$ under
+$\mathrm{Gal}(K/\mathbb{Q})=\{1,\sigma,\tau,\sigma\tau\}$ are obtained by
+the sign choices $\varepsilon_3,\varepsilon_{19}\in\{\pm1\}$ on $\sqrt3$
+and $\sqrt{19}$ (the sign of $\sqrt{57}$ being
+$\varepsilon_3\varepsilon_{19}$):
+\[
+s(\varepsilon_3,\varepsilon_{19})
+=\frac{19-3\varepsilon_{19}\sqrt{19}+3\varepsilon_3\sqrt3
+-\varepsilon_3\varepsilon_{19}\sqrt{57}}{16}.
+\]
+Write $s_1=s(+,+)=s$, $s_2=s(-,+)$, $s_3=s(+,-)$, $s_4=s(-,-)$.
+
+\emph{The orbit has size four.} Since $\{1,\sqrt3,\sqrt{19},\sqrt{57}\}$ is
+a $\mathbb{Q}$-basis of $K$, two images $s(\varepsilon)$,
+$s(\varepsilon')$ coincide only if their coefficient vectors coincide,
+i.e.\ only if $\varepsilon=\varepsilon'$; the four images are pairwise
+distinct. (Numerically: $s_1=0.223101$, $s_2=0.517311$, $s_4=1.208169$,
+$s_3=2.801418$.) Hence the stabilizer of $s$ in the Galois group is
+trivial, $[\mathbb{Q}(s):\mathbb{Q}]=4$, and the degree-$4$ monic
+polynomial $\prod_i(x-s_i)$, which is Galois-invariant and therefore has
+rational coefficients, is irreducible over $\mathbb{Q}$ and is the minimal
+polynomial of $s$.
+
+\emph{Computation of the coefficients.} We compute the elementary symmetric
+functions by grouping conjugate pairs.
+
+Sum: the $\sqrt3,\sqrt{19},\sqrt{57}$ terms cancel over the four sign
+patterns, so $e_1=4\cdot 19/16=19/4$.
+
+Pair data at fixed $\varepsilon_{19}$: with
+$A=19-3\varepsilon_{19}\sqrt{19}$ and
+$B=3\sqrt3-\varepsilon_{19}\sqrt{57}$, the two values of $\varepsilon_3$
+give $(A\pm B)/16$, so
+\[
+s(+,\varepsilon_{19})\,s(-,\varepsilon_{19})=\frac{A^2-B^2}{256},
+\qquad
+A^2=532-114\,\varepsilon_{19}\sqrt{19},
+\qquad
+B^2=84-18\,\varepsilon_{19}\sqrt{19},
+\]
+using $(3\sqrt3)^2=27$, $(\sqrt{57})^2=57$ and
+$2\cdot3\sqrt3\cdot\sqrt{57}=6\sqrt{171}=18\sqrt{19}$. Thus
+\[
+s_1s_2=\frac{28-6\sqrt{19}}{16},\qquad
+s_3s_4=\frac{28+6\sqrt{19}}{16},\qquad
+s_1+s_2=\frac{19-3\sqrt{19}}{8},\qquad
+s_3+s_4=\frac{19+3\sqrt{19}}{8}.
+\]
+
+Constant term:
+$e_4=s_1s_2\,s_3s_4=\dfrac{28^2-36\cdot19}{256}
+=\dfrac{784-684}{256}=\dfrac{25}{64}$.
+
+Second symmetric function:
+\[
+e_2=s_1s_2+s_3s_4+(s_1+s_2)(s_3+s_4)
+=\frac{56}{16}+\frac{361-171}{64}
+=\frac{7}{2}+\frac{190}{64}=\frac{207}{32}.
+\]
+
+Third symmetric function:
+\[
+e_3=s_1s_2(s_3+s_4)+s_3s_4(s_1+s_2)
+=\frac{(28-6\sqrt{19})(19+3\sqrt{19})+(28+6\sqrt{19})(19-3\sqrt{19})}{128}
+=\frac{(190-30\sqrt{19})+(190+30\sqrt{19})}{128}=\frac{95}{32}.
+\]
+
+Therefore the minimal polynomial is
+\[
+x^4-\frac{19}{4}x^3+\frac{207}{32}x^2-\frac{95}{32}x+\frac{25}{64}
+\;=\;\frac{1}{64}\,P(x). \qedhere
+\]
+\end{proof}
+
+\begin{corollary}
+\label{cor:rho}
+(a) The mass-squared ratio $\rho=1-s$ has minimal polynomial
+$64y^4+48y^3-114y^2+18y+9$, obtained by expanding $P(1-y)$.
+(b) The mass ratio $z=m_W/m_Z=\sqrt{\rho}$ has degree $8$ over
+$\mathbb{Q}$, with minimal polynomial $64z^8+48z^6-114z^4+18z^2+9$.
+\end{corollary}
+
+\begin{proof}
+(a) Direct substitution; the coefficients follow from the binomial
+expansions of $(1-y)^k$, $k\le4$.
+(b) $z^2=\rho$ with $[\mathbb{Q}(\rho):\mathbb{Q}]=4$, so
+$[\mathbb{Q}(z):\mathbb{Q}]\in\{4,8\}$, and it is $8$ unless $\rho$ is a
+square in $K=\mathbb{Q}(\rho)$. Suppose $\rho=\beta^2$ with $\beta\in K$.
+$K$ is a subfield of $\mathbb{R}$ and Galois over $\mathbb{Q}$, so every
+Galois image of $\rho$ would be the square of a real number, hence
+nonnegative. But the image of $\rho=1-s$ under $\tau$ is
+$1-s_3=-1.801418\ldots<0$. Contradiction; so
+$[\mathbb{Q}(z):\mathbb{Q}]=8$ and the stated monic-normalized degree-$8$
+polynomial, of which $z$ is a root, is its minimal polynomial.
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:quartic} is a statement about the internal consistency of
+the theoretical corpus, and it \emph{removes} one apparent independent
+confirmation: the quartic line and the kernel line are one coincidence, so
+the naive over-determination count goes down even as the structural economy
+goes up. The bookkeeping consequences are drawn in
+Section~\ref{sec:provenance}.
+\end{remark}
+
+\subsection{The branch structure of the quartic: a two-parameter family}
+\label{sec:branchquartic}
+
+The proof of Theorem~\ref{thm:quartic} contains more information than the
+statement. Tracking the Galois action on the closed forms
+\eqref{eq:lam34}--\eqref{eq:lam2}: $\tau$ (which flips $\sqrt{57}$ but fixes
+$\sqrt3$) swaps $\lambda_+(\tfrac34)\leftrightarrow\lambda_-(\tfrac34)$
+while fixing $\lambda_\pm(2)$; $\sigma\tau$ swaps
+$\lambda_+(2)\leftrightarrow\lambda_-(2)$ while fixing
+$\lambda_\pm(\tfrac34)$; and $\sigma$ swaps both. Hence the four roots of
+the corpus quartic are precisely the four \emph{branch combinations}
+\[
+s_{ab}\;=\;1-\frac{\lambda_a(J_W)}{\lambda_b(J_Z)},
+\qquad a,b\in\{+,-\}:
+\]
+$s_{++}=\swsq=0.223101$, $\;s_{--}=0.517311$, $\;s_{+-}=1.208169$,
+$\;s_{-+}=2.801418$, and the Galois group of Theorem~\ref{thm:quartic} acts
+as the group of branch swaps. The ``spurious'' roots of the quartic are
+the other branch choices --- the arithmetic of the polynomial is the
+physics of the branch structure. This observation globalizes:
+
+\begin{theorem}[Two-parameter branch quartic]
+\label{thm:family}
+Fix channel Casimirs $I,K>0$ and let $u_\pm=\lambda_\pm(I)$,
+$w_\pm=\lambda_\pm(K)$ be the roots of $p_I(x)=x^2+Ix-I$ and
+$p_K(x)=x^2+Kx-K$. Set $\kappa=I/K$ and $s_{ab}=1-u_a/w_b$. Then,
+identically in $I,K$,
+\[
+\prod_{a,b\in\{\pm\}}\bigl(x-s_{ab}\bigr)
+\;=\;
+x^4-(4+I)\,x^3
++\Bigl[\,6+2I-\kappa\,(I+2)\Bigr]x^2
+-(4+I)(1-\kappa)\,x
++(1-\kappa)^2 .
+\]
+At $(I,K)=(J_W,J_Z)=(\tfrac34,2)$, i.e.\ $\kappa=\tfrac38$, this is
+$P(x)/64$ with $P$ the corpus quartic \eqref{eq:quartic}.
+\end{theorem}
+
+\begin{proof}
+Vieta for the two channels gives $u_++u_-=-I$, $u_+u_-=-I$,
+$w_++w_-=-K$, $w_+w_-=-K$; hence the two identities used throughout:
+$\tfrac1{w_+}+\tfrac1{w_-}=\tfrac{w_++w_-}{w_+w_-}=1$ and
+$\tfrac1{w_+^2}+\tfrac1{w_-^2}=1+\tfrac2K$, together with
+$u_+^2+u_-^2=I^2+2I$. The key on-shell identity: if $w^2+Kw-K=0$ then
+$w^2=K(1-w)$, so
+\[
+p_I(w)=w^2+Iw-I=K-Kw+Iw-I=(K-I)(1-w).
+\]
+\emph{Constant term.} Since
+$\prod_a(1-u_a/w)=\bigl[w^2-(u_++u_-)w+u_+u_-\bigr]/w^2=p_I(w)/w^2$,
+\[
+e_4=\prod_b\frac{p_I(w_b)}{w_b^2}
+=\frac{(K-I)^2\prod_b(1-w_b)}{(w_+w_-)^2}
+=\frac{(K-I)^2\,p_K(1)}{K^2}
+=\Bigl(\frac{K-I}{K}\Bigr)^{\!2}=(1-\kappa)^2,
+\]
+using $p_K(1)=1+K-K=1$.
+\emph{Sum.} $e_1=\sum_{ab}s_{ab}
+=4-\bigl(\sum_a u_a\bigr)\bigl(\sum_b 1/w_b\bigr)=4-(-I)(1)=4+I$.
+\emph{Second symmetric function.} From
+$\sum_{ab}s_{ab}^2
+=4-2\bigl(\sum u\bigr)\bigl(\sum 1/w\bigr)
++\bigl(\sum u^2\bigr)\bigl(\sum 1/w^2\bigr)
+=4+2I+(I^2+2I)\bigl(1+\tfrac2K\bigr)$
+and $e_2=\tfrac12\bigl(e_1^2-\sum s^2\bigr)$ one finds
+$e_2=6+2I-(I^2+2I)/K=6+2I-\kappa(I+2)$.
+\emph{Third symmetric function.} Using $e_3=e_4\sum_{ab}1/s_{ab}$ and
+$1/s_{ab}=w_b/(w_b-u_a)$: for fixed $w=w_b$,
+\[
+\sum_a\frac{w}{w-u_a}=\frac{w\,p_I'(w)}{p_I(w)}
+=\frac{w(2w+I)}{(K-I)(1-w)}
+=\frac{(2K-I)(1-w)+I}{(K-I)(1-w)},
+\]
+where the numerator was rewritten on-shell:
+$w(2w+I)=2w^2+Iw=2K(1-w)+Iw=2K-(2K-I)w=(2K-I)(1-w)+I$. Summing over $b$
+with
+$\sum_b 1/(1-w_b)=p_K'(1)/p_K(1)=2+K$ gives
+\[
+\sum_{ab}\frac1{s_{ab}}
+=\frac{2(2K-I)+I(2+K)}{K-I}
+=\frac{K(4+I)}{K-I},
+\qquad
+e_3=(1-\kappa)^2\cdot\frac{K(4+I)}{K-I}=(4+I)(1-\kappa).
+\]
+The four coefficients assemble into the stated quartic. Specializing
+$I=\tfrac34$, $\kappa=\tfrac38$: $e_1=\tfrac{19}4$,
+$e_2=6+\tfrac32-\tfrac38\cdot\tfrac{11}4=\tfrac{207}{32}$,
+$e_3=\tfrac{19}4\cdot\tfrac58=\tfrac{95}{32}$,
+$e_4=\tfrac{25}{64}$, matching Theorem~\ref{thm:quartic}. (As an
+independent check of the general identity, at the degenerate point $I=K=2$
+the formula gives roots $\{0,0,3-\sqrt3,3+\sqrt3\}$ with
+$e_1=6$, $e_2=6$, $e_3=e_4=0$, which is what the branch values
+$1-\lambda_a/\lambda_b$ of a single channel indeed are.)
+\end{proof}
+
+\begin{remark}
+\label{rem:family}
+Theorem~\ref{thm:family} demystifies the corpus quartic twice over. First,
+the integers $(64,304,414,190,25)$ carry no independent information: they
+are the image of the two-parameter family at $(I,\kappa)=(\tfrac34,
+\tfrac38)$, with $64$ the least common denominator. Second, the
+coefficients depend on the pair $(I,K)$ only through $I$ and the ratio
+$\kappa=I/K$ --- the same $\kappa=\tfrac38$ isolated by the custodial-EFT
+line (Section~\ref{sec:casimir}), which therefore sits literally inside
+the quartic's $x^1$ and $x^0$ coefficients, $e_3=e_1(1-\kappa)$ and
+$e_4=(1-\kappa)^2$. For the statistics program the family is equally
+useful: it \emph{is} the natural pre-registerable hypothesis class (scan
+$(I,K)$ over Casimir pairs) inside which the look-elsewhere cost of the
+choice $(\tfrac34,2)$ can be priced without ambiguity.
+\end{remark}
+
+\section{Confrontation with data}
+\label{sec:data}
+
+The construction has one dimensionful input and, at tree level, one output
+ratio; the on-shell relation $\swsq=1-m_W^2/m_Z^2$ makes the $m_W$
+comparison and the on-shell-angle comparison the \emph{same} test, and we
+present it once, as a prediction for $m_W$ given $m_Z$:
+\begin{equation}
+\Minf=\frac{m_Z}{\sqrt{\lambda_+(2)}}=m_Z\sqrt{\frac{1+\sqrt3}{2}},
+\qquad
+m_W^{\rm pred}=m_Z\,\sqrt{\rho}.
+\label{eq:anchor}
+\end{equation}
+With $m_Z=91.1876(21)\GeV$ \cite{pdg2024},
+\begin{equation}
+\Minf = 106.578\GeV,
+\qquad
+m_W^{\rm pred} = 80.3745(19)\GeV,
+\label{eq:mwpred}
+\end{equation}
+where the quoted uncertainty is input propagation only
+($\partial m_W/\partial m_Z=\sqrt\rho$). Against the measured values (pull
+$\equiv(m_W^{\rm pred}-m_W^{\rm meas})/\sigma_{\rm comb}$, combining the
+experimental error with the $\pm0.0019$ input error in quadrature):
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+measurement & $m_W$ [GeV] & source & pull \\
+\midrule
+PDG 2024 world average & $80.3692(133)$ & \cite{pdg2024} & $+0.4\sigma$\\
+CMS 2024 & $80.3602(99)$ & \cite{cmsw2024} & $+1.4\sigma$\\
+PDG-live 2026 snapshot & $80.3625(77)$ & [corpus pin, unverified] & $+1.5\sigma$\\
+CDF II 2022 & $80.4335(94)$ & \cite{cdf2022} & $-6.1\sigma$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Equivalently, the predicted on-shell angle is $\swsq=0.2231013$, to be
+compared with $0.22305(23)$ \cite{pdg2024} ($+0.2\sigma$); the corpus also
+pins an unverified 2026 snapshot $0.223339(153)$ ($-1.6\sigma$). Three
+honesty notes are mandatory.
+
+\emph{(a) Scheme.} The algebraic prediction is a pure number; the data are
+scheme- and scale-dependent. The comparison above uses the on-shell
+definition, for which $\swsq\equiv1-m_W^2/m_Z^2$ is an identity. The
+effective leptonic angle $\sin^2\theta^{\ell}_{\rm eff}\simeq0.2315$
+differs from the on-shell value by known radiative corrections of order
+$4\%$; even the mass \emph{definition} matters at this precision, since the
+conventional Breit--Wigner (running-width) masses and the complex-pole
+masses differ by $\Gamma^2/2m$, roughly $34\MeVtext$ for the $Z$ and
+$27\MeVtext$ for the $W$ --- an order of magnitude above the experimental
+errors --- and the
+construction has not declared which definition it predicts. A claim that
+the kernel value targets one scheme and one mass definition rather than
+another is dynamical input the construction does not yet possess. There is
+also a sharper internal tension: the SM global electroweak fit returns an
+indirect $m_W\simeq80.355(6)\GeV$ \cite{pdg2024} from $m_Z$, $m_t$, $m_H$
+and the couplings via the radiative $\Delta r$ relation, and the algebraic
+value $80.3745$ lies about $3\sigma$ \emph{above} it; if the on-shell
+prediction were exact, consistency would require a compensating
+new-physics contribution to $\Delta r$ --- an unpleasant but usefully
+concrete corollary. The necessary next step is a one-loop matching
+computation determining whether any consistent scheme-and-definition
+assignment survives at current precision.
+
+\emph{(b) Data motion.} The pull moved from $+0.4\sigma$ (2024 world
+average) to about $+1.5\sigma$ (CMS 2024 and the 2026 snapshot) while CDF~II
+sits $6\sigma$ on the other side; the experimental situation for $m_W$ is
+unsettled. A retrodiction study across PDG editions --- checking whether
+the agreement improved as errors shrank, the signature of a real constraint
+rather than a fit to current centrals --- is defined in the corpus's
+planning documents and should be executed before stronger claims are made.
+
+\emph{(c) Error budget.} The theory error (scheme choice, radiative
+corrections, and the unknown dynamics behind the kernel) dominates the
+$\pm0.0019$ input error and is presently unquantified. Any use of
+\eqref{eq:mwpred} as a precision claim without that budget would be
+overreach.
+
+\section{The positive-branch tower}
+\label{sec:tower}
+
+If assignment \eqref{eq:channels} extends to higher $j$, the positive
+branch is a tower of levels below $\Minf$:
+\begin{equation}
+m(j)=\Minf\sqrt{\lambda_+\bigl(j(j+1)\bigr)}\,,
+\qquad
+\lambda_+(J) = 1-\frac1J+\mathcal{O}\!\left(\frac1{J^2}\right),
+\qquad
+m(j)\;\simeq\;\Minf\Bigl(1-\frac{1}{2J}\Bigr)\ \ (J\to\infty).
+\label{eq:towerasym}
+\end{equation}
+Exact closed forms and hand-evaluated values:
+\begin{center}
+\begin{tabular}{ccll}
+\toprule
+$j$ & $J$ & $\lambda_+(J)$ & $m(j)$ \\
+\midrule
+$\tfrac12$ & $\tfrac34$ & $(\sqrt{57}-3)/8=0.568729$ & $80.374\GeV$ ($=m_W^{\rm pred}$)\\
+$1$ & $2$ & $\sqrt3-1=0.732051$ & $91.188\GeV$ ($=m_Z$, input)\\
+$\tfrac32$ & $\tfrac{15}4$ & $(\sqrt{465}-15)/8=0.820482$ & $96.54\GeV$\\
+$2$ & $6$ & $(\sqrt{60}-6)/2=0.872983$ & $99.58\GeV$\\
+$\tfrac52$ & $\tfrac{35}4$ & $(\sqrt{1785}-35)/8=0.906157$ & $101.45\GeV$\\
+$3$ & $12$ & $(\sqrt{192}-12)/2=0.928203$ & $102.68\GeV$\\
+$\vdots$ & & & accumulating at $\Minf=106.58\GeV$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The accumulation point carries a consistency obligation the source corpus
+does not discuss: taken literally, \eqref{eq:towerasym} places infinitely
+many levels below $107\GeV$, with spacing $\sim\Minf/2J$. Compatibility
+with LEP and electroweak precision data then \emph{requires} the couplings
+of the levels to SM fields to fall rapidly with $j$ --- which is exactly
+what the label-conservation pattern of the next subsection supplies,
+since reaching a level of internal label $j$ from SM states ($j\le1$)
+demands increasingly label-violating operators. Either the tower
+terminates dynamically, or its visibility must decay with $j$; a
+derivation must produce one of the two, and precision $Z$-pole and LEP~2
+data already bound the alternatives.
+
+\subsection{A label-conservation pattern and the $95$--$96\GeV$ hints}
+\label{sec:selection}
+
+The following discussion is conditional on Assumption~\ref{ass:su2i} below
+(approximate conservation of the internal label by the production and decay
+dynamics) and is qualitative: the 4D spin, CP, and width of the tower
+states are unspecified by the kernel, and rate predictions require the
+label-breaking dynamics, which the construction does not yet possess. What
+the label bookkeeping alone gives is a \emph{pattern}.
+
+With the SM bosons carrying $j_\gamma=0$, $j_W=\tfrac12$, $j_Z=1$,
+two-boson channels carry
+\[
+\tfrac12\otimes\tfrac12=0\oplus1,\qquad
+1\otimes1=0\oplus1\oplus2,\qquad
+\tfrac12\otimes1=\tfrac12\oplus\tfrac32,\qquad
+1\otimes0=1,\qquad \tfrac12\otimes 0=\tfrac12 .
+\]
+Consequences for the electrically neutral tower members:
+\begin{itemize}
+\item The $j=\tfrac32$ level at $96.54\GeV$ appears in no neutral two-boson
+channel: $\tfrac32\not\subset0\oplus1$ ($WW$, $Z\gamma$, $\gamma\gamma$)
+and $\tfrac32\not\subset0\oplus1\oplus2$ ($ZZ$). The only two-boson channel
+containing $\tfrac32$ is $W^\pm Z$, which is electrically charged and
+available only to its charged partners. Label-conserving single production
+of the neutral $j=\tfrac32$ state in Drell--Yan or vector-boson fusion is
+therefore forbidden; it proceeds only through label breaking or
+higher-dimensional operators, and $\gamma\gamma$ couplings arise at loop
+level. A narrow, weakly produced state near $96.5\GeV$ is \emph{compatible}
+with --- though in no way established by --- the unresolved low-mass
+diphoton hints near $95$--$96\GeV$ (CMS \cite{cms95}: local $2.9\sigma$ at
+$95.4\GeV$; ATLAS \cite{atlas95}: local $1.7\sigma$ at the same mass). The
+pattern statement is falsifiable in shape: within this construction such a
+state should remain weak in single production, while pair production opens
+at $\sqrt{s}>2m(3/2)=193\GeV$.
+\item The $j=2$ level at $99.58\GeV$ does occur in $1\otimes1$: it is the
+first tower state with a label-allowed two-$Z$ vertex, so it would appear
+in $ZZ^{*}$ and near-threshold $ZZ$ observables rather than in
+$\gamma\gamma$.
+\end{itemize}
+Two data-driven tests follow. LEP~2 accumulated data up to
+$\sqrt s=209\GeV$, above the $j=3/2$ pair threshold of $193\GeV$: a
+dedicated recast of LEP~2 cross sections for pair-produced narrow neutral
+states in the $96$--$104\GeV$ range would already constrain the tower and
+is, to our knowledge, the sharpest retrodictive test available. FCC-ee,
+with runs at $240\GeV$ and precision scans, either finds the tower or
+excludes it up to the accumulation point $106.58\GeV$.
+
+\section{The negative branch: sum rules and a no-go}
+\label{sec:negative}
+
+The corpus matches the negative-branch levels to the electroweak vacuum
+expectation value $v=246.220\GeV$:
+\begin{equation}
+m_-(j)\equiv\Minf\sqrt{|\lambda_-(j(j+1))|}:\qquad
+m_-(\tfrac12) = 122.39\GeV \ \leftrightarrow\ \tfrac v2=123.11\GeV,\quad
+m_-(1) = 176.16\GeV \ \leftrightarrow\ \tfrac v{\sqrt2}=174.10\GeV,
+\label{eq:negmatch}
+\end{equation}
+with deviations $-0.58\%$ and $+1.18\%$ respectively. The $J=2$
+identification has a strikingly compact exact form worth recording: since
+$|\lambda_-(2)|/\lambda_+(2)=(1+\sqrt3)/(\sqrt3-1)=(1+\sqrt3)^2/2$, it is
+equivalent to
+\begin{equation}
+v \;=\; \bigl(1+\sqrt3\bigr)\,m_Z \;=\; |\lambda_-(2)|\; m_Z
+\;=\;249.13\GeV \quad(\text{vs.\ }246.22,\ +1.18\%),
+\label{eq:vformula}
+\end{equation}
+the vacuum expectation value as the negative-branch \emph{eigenvalue}
+itself in units of $m_Z$. We emphasize the epistemic status: pending a
+mechanism that interprets the negative branch, the identifications
+\eqref{eq:negmatch} are numerology; what this section contributes is the
+exact algebra they must satisfy, and a no-go they currently violate.
+
+From \eqref{eq:vieta}, with no further input:
+\begin{proposition}[Branch sum rules]
+\label{prop:sumrules}
+For every $j$, with $J=j(j+1)$,
+\[
+m_-^2(j)-m_+^2(j) \;=\; J\,\Minf^2,
+\qquad\qquad
+m_+(j)\,m_-(j) \;=\; \sqrt{J}\,\Minf^2 .
+\]
+\end{proposition}
+\noindent
+Inserting the identifications \eqref{eq:negmatch} and the measured
+$m_W,m_Z$, the first rule holds at $+2.1\%$ ($J=\tfrac34$) and $-3.2\%$
+($J=2$); the second at $+0.6\%$ and $-1.2\%$ --- i.e.\ exactly at the level
+of the mass matches themselves, as must happen algebraically.
+
+More constraining is that the two identifications fight each other:
+
+\begin{lemma}[The two vacuum identifications cannot both be exact]
+\label{lem:incompatible}
+If $m_-(\tfrac12)=v/2$ and $m_-(1)=v/\sqrt2$ held simultaneously and
+exactly, then
+\[
+\frac{|\lambda_-(2)|}{|\lambda_-(3/4)|}
+=\frac{(v/\sqrt2)^2}{(v/2)^2}=2 .
+\]
+But the exact value is
+\[
+\frac{|\lambda_-(2)|}{|\lambda_-(3/4)|}
+=\frac{8(1+\sqrt3)}{3+\sqrt{57}}
+=2.07173\ldots,
+\]
+which differs from $2$ by $3.6\%$ (i.e.\ $1.8\%$ in the mass ratio ---
+realized in the data as the observed $-0.58\%/+1.18\%$ split). Hence at
+most one of the two identifications can be exact; the pair is either
+approximate (radiatively corrected) or partially accidental.
+\end{lemma}
+
+This no-go, which to our knowledge is stated here for the first time,
+sharpens the negative-branch question considerably: any future derivation
+must either pick one exact identification and explain the other's
+percent-level offset, or predict the specific combination
+$8(1+\sqrt3)/(3+\sqrt{57})$ in place of $2$ --- e.g.\ the conventional
+ratio $(v/\sqrt2)/(v/2)=\sqrt2=1.41421$ would be replaced by
+$\sqrt{2.07173}=1.43935$.
+
+\section{The Casimir coincidence \texorpdfstring{$\kappa=3/8$}{k=3/8}}
+\label{sec:casimir}
+
+A custodial-EFT analysis in the corpus, working from the same electroweak
+data with entirely different methods (Wilson-coefficient fits plus a
+look-elsewhere analysis), isolated the coefficient
+\[
+\kappa=\frac38=\frac{C_F}{C_A}\Big|_{SU(2)}
+\]
+as the group-theoretic content of its best-fit relation. We record that
+this is the same pair of Casimirs that powers the kernel:
+\[
+\frac{J_W}{J_Z}=\frac{C_2(\text{fund})}{C_2(\text{adj})}
+=\frac{3/4}{2}=\frac38 .
+\]
+Theorem~\ref{thm:family} makes the cross-link exact rather than
+suggestive: $\kappa$ is literally a coordinate of the quartic family,
+entering its two lowest coefficients as $e_3=e_1(1-\kappa)$ and
+$e_4=(1-\kappa)^2$, so ``the quartic matches data'' and ``$\kappa=3/8$''
+are two readings of one algebraic object evaluated at
+$(I,\kappa)=(\tfrac34,\tfrac38)$. Given Theorem~\ref{thm:quartic}, three
+formulations --- kernel, quartic, custodial coefficient --- are now built
+on the single Casimir pair $(\tfrac34,2)$. Whether this is
+over-determination or one coincidence wearing three coats is exactly the
+question a trials-corrected analysis must answer; the equivalence results
+of this paper are necessary bookkeeping input to that computation, since
+they prevent double counting.
+
+\section{Toward a geometric origin}
+\label{sec:geometry}
+
+Nothing above is a dynamical theory: \eqref{eq:kernel} is a spectral
+ansatz. We now state what a derivation must produce, and why
+Kaluza--Klein-type geometry is the natural habitat, without committing to a
+specific internal manifold.
+
+\begin{assumption}[Internal label]
+\label{ass:su2i}
+There is an internal $SU(2)_i$ --- an isometry of an internal space or a
+custodial remnant --- under which the electroweak bosons carry
+$(\gamma,W,Z)=(0,\tfrac12,1)$, and which is approximately conserved by the
+dynamics that builds the tower.
+\end{assumption}
+
+\begin{assumption}[Pairing through the generators]
+\label{ass:pairing}
+The visible state $|v\rangle$ of the spin-$j$ multiplet couples to its
+partner states through the internal generators $\Jvec$ themselves, with one
+universal normalization: the coupling row vector is
+$\langle p|\Jvec|v\rangle$ over partner states $|p\rangle$. Its squared
+norm is
+\[
+\sum_p \bigl|\langle p|\Jvec|v\rangle\bigr|^2
+=\langle v|\Jvec^{\,2}|v\rangle = j(j+1) = J
+\]
+for \emph{every} state of \emph{every} representation, so the two-block
+reduction onto $\bigl(|v\rangle,\ \Jvec|v\rangle/\sqrt J\bigr)$ has
+off-diagonal exactly $\sqrt J$, uniformly in $j$, integer or half-integer,
+and independently of any basis choice. (A per-component version --- coupling
+through a single ladder matrix element $\langle j,m{\pm}1|J_\pm|j,m\rangle$
+--- reproduces $\sqrt J$ only for integer $j$ from the $m=0$ state and
+fails for half-integer $j$; the operator-norm version above supersedes it.)
+\end{assumption}
+
+\begin{assumption}[Partner mass, sign, and nesting]
+\label{ass:partner}
+The partner multiplet carries diagonal mass-squared $J$ in the same units
+--- the Casimir eigenvalue of an internal Laplacian, as on any coset space,
+where the relevant spectra are universal multiples of $C_2$
+\cite{salamstrathdee1982,duffnilssonpope1986} --- with the tachyonic sign
+and the nested-decimation structure of
+Proposition~\ref{prop:ladder}(iii), for which curvature-induced negative
+vector-mode directions on distorted internal spaces
+\cite{rdss1983,duffnilssonpope1986} and Wilson-line (Hosotani) dynamics
+\cite{hosotani1983} are the known geometric sources.
+\end{assumption}
+
+Under Assumptions \ref{ass:su2i}--\ref{ass:partner} the spectrum
+\eqref{eq:masses} follows. Assumption~\ref{ass:pairing} is the least
+negotiable ingredient and also the most suggestive: the equality of the
+coupling with $\sqrt{C_2}$ --- the corpus's ``coefficient lock'' --- holds
+automatically when the mixing operator \emph{is} the generator, normalized
+by the same constant that normalizes the Casimir. That is precisely the
+structure of a gauge coupling to isometry currents, which is why we regard
+Kaluza--Klein geometry
+\cite{manton1979,forgacsmanton1980,witten1981,salamstrathdee1982} as the
+natural habitat: any mechanism producing instead a mixing $g\Jvec$ with an
+independent strength $g\ne1$ is incompatible with the observed five-digit
+agreement of $m_W/m_Z$. What no calculation in the corpus or, to our
+knowledge, in the literature has yet produced is the conjunction of all
+three assumptions in one geometry --- with Remark~\ref{rem:notchain} now
+adding a structural constraint: the geometry must realize a nested
+decimation, and flat-chain constructions are excluded. The corpus's
+classification-sweep program (enumerating coset geometries and testing
+which, if any, produce the lock) is the right instrument, and its outcome
+--- a derivation or a clean no-go --- will decide whether this section
+describes physics or bookkeeping.
+
+\section{Failure conditions}
+\label{sec:falsification}
+
+The construction is falsifiable on several independent fronts.
+\begin{enumerate}
+\item \emph{$m_W$ precision.} The tree-level on-shell prediction is
+$m_W=80.3745(19)\GeV$ given $m_Z$. A settled world average more than
+${\sim}2\sigma$ away kills the positive branch as an exact on-shell
+statement; the 2024--2026 trend (CMS at $+1.4\sigma$, the 2026 snapshot at
+$+1.5\sigma$) is mildly unfavorable and moving, while any confirmation of
+the CDF~II region above $80.40\GeV$ excludes it outright.
+\item \emph{Scheme stability.} If the one-loop matching program shows that
+no consistent scheme assignment reproduces the algebraic number within
+errors, the five-digit match is an on-shell accident.
+\item \emph{The tower.} LEP~2 recasts above $193\GeV$ and FCC-ee either
+find neutral states at $96.5/99.6/101.5/102.7\GeV$ with the predicted
+weak-single/allowed-pair pattern, or exclude the tower up to
+$106.58\GeV$, falsifying the extended assignment outright.
+\item \emph{Negative branch.} Lemma~\ref{lem:incompatible} forces a
+choice; independent precision on $v$, $m_t$, and the Higgs potential pins
+both conventional scales, and the surviving identification then predicts
+the other's offset ($1.8\%$ in ratio) with no free parameter.
+\item \emph{Statistics.} A trials-corrected analysis over the full choice
+space (Section~\ref{sec:provenance}) may return an unremarkable
+probability --- the soft but decisive failure mode for the entire
+enterprise.
+\end{enumerate}
+
+\section{Method, provenance, and trials accounting}
+\label{sec:provenance}
+
+This manuscript was produced by a language model working over a corpus of
+research repositories, under a constraint of zero code execution: every
+closed form was derived symbolically in the model's working notes, and
+every decimal was obtained by hand arithmetic from those closed forms,
+rounded at the last digit displayed. The constraint delimits the capability
+being demonstrated: mathematical synthesis --- noticing that two
+formulations are one (Theorem~\ref{thm:quartic}), that a truncation is
+secretly a resummation with a spectral obstruction
+(Proposition~\ref{prop:ladder}, Remark~\ref{rem:notchain}), that two
+identifications are mutually inconsistent (Lemma~\ref{lem:incompatible})
+--- rather than numerical search. An adversarial referee round by an
+independent model materially improved the paper: it caught a false identity
+in the first draft's irreducibility argument (since replaced by the orbit
+argument in Theorem~\ref{thm:quartic}), forced the honest reframing of
+Proposition~\ref{prop:ladder}, and corrected a mis-stated experimental
+pull.
+
+Provenance, stated exactly:
+\begin{itemize}
+\item \emph{Inherited:} the empirical observation and channel assignment
+\eqref{eq:channels} \cite{devries2004,devriesrivero2005,rivero2006}; the
+secular equation and its two-channel reading, with the mixing value
+$0.22310132$ stated already in \cite{rivero2006}; the quartic
+\eqref{eq:quartic}, the negative-branch identifications
+\eqref{eq:negmatch}, and the $\kappa=3/8$ EFT result, all from the
+unpublished corpus; the experimental inputs \cite{pdg2024,cmsw2024,cdf2022}.
+\item \emph{Reproved from scratch:} the closed spectrum
+(Section~\ref{sec:spectrum}); the convergence of the decimation recursion.
+\item \emph{New here, to our knowledge:} the proof of
+Theorem~\ref{thm:quartic} (the corpus had verified the coincidence
+numerically, never algebraically); the identification of the quartic's
+four roots with the four branch combinations and the two-parameter family
+of Theorem~\ref{thm:family}, whose coefficients are polynomial in
+$(I,\kappa)$ and which hands the statistics program its natural
+hypothesis class; Corollary~\ref{cor:rho} with the degree-$8$ proof; the
+flat-chain obstruction of Remark~\ref{rem:notchain}, including the
+threshold $J=\tfrac94$; the operator-norm formulation of the coefficient
+lock in Assumption~\ref{ass:pairing}, which repairs the half-integer case;
+the branch sum rules in linking form (Proposition~\ref{prop:sumrules});
+the no-go of Lemma~\ref{lem:incompatible} with its $1.8\%$ figure and the
+compact reformulation $v=(1+\sqrt3)\,m_Z$ of the $J{=}2$ identification
+\eqref{eq:vformula}; the label-conservation pattern of
+Section~\ref{sec:selection} with the LEP~2 recast and the $193\GeV$ pair
+threshold; and the observation that the biquadratic field makes $\swsq$
+ruler-and-compass constructible.
+\end{itemize}
+
+\emph{Trials accounting.} Any significance claim for this construction must
+price, at minimum, the following post-hoc choices: the kernel family
+\eqref{eq:kernel} among comparably simple $2\times2$ textures; the map
+$J=j(j+1)$ rather than another Casimir function; the positive-branch
+selection; the channel assignment \eqref{eq:channels}; the anchor at $m_Z$;
+the on-shell scheme; the extension of the tower and the association with
+the $95$--$96\GeV$ hints; and the negative-branch matches
+\eqref{eq:negmatch}. The corpus contains Monte Carlo look-elsewhere
+machinery and quotes trials-corrected probabilities of order
+$10^{-4}$--$10^{-6}$ for parts of this structure; those numbers are
+unaudited here and no significance is claimed on their basis. What this
+paper contributes to that future audit is subtractive and additive at once:
+Theorem~\ref{thm:quartic} collapses two formulations into one (reducing the
+apparent confirmation count), while Lemma~\ref{lem:incompatible} shows the
+negative-branch sector currently \emph{fails} an exactness test --- both
+facts that an honest significance computation must incorporate.
+
+The honest prior on constructions of this genre is unfavorable: the history
+of electroweak numerology is a graveyard, and the Koide relation itself,
+after forty years of real theoretical effort
+\cite{koide1990,sumino2009,riverogsponer2005}, remains a suggestive orphan.
+The construction studied here has three properties that graveyard occupants
+typically lack: a five-digit match with one input and no continuous
+parameters; an internal algebraic rigidity that generates new exact
+statements when probed (Sections \ref{sec:theorem}, \ref{sec:negative});
+and a finite list of near-term experimental executioners
+(Section~\ref{sec:falsification}). We submit that this is the correct
+standard for work of this kind: a well-posed falsification program.
+
+\section*{Acknowledgments}
+The corpus of repositories synthesized here is the work of A.~Rivero and
+collaborating AI systems; the Koide-mechanism reference notes and
+literature survey in that corpus were directly useful. The bibliography was
+verified against arXiv and the published record by a Claude Sonnet agent;
+the adversarial review was performed by GPT-5.5 (OpenAI) via the Codex CLI.
+Both reports are archived with the source.
+
+\begin{thebibliography}{99}
+
+\bibitem{devries2004} H.~de~Vries,
+online post on the electroweak mixing-angle coincidence,
+Physics Forums, thread ``All the lepton masses from $G$, $\pi$, $e$,''
+post \#44 (November 2004),
+\url{https://www.physicsforums.com/showpost.php?p=382642&postcount=44}.
+Earliest public statement of the relation; documented and dated in
+\cite{rivero2006}, Sec.~3.
+
+\bibitem{devriesrivero2005} H.~de~Vries and A.~Rivero,
+``Evidence for radiative generation of lepton masses,''
+arXiv:hep-ph/0503104.
+
+\bibitem{rivero2006} A.~Rivero,
+``Mass terms to break susy-like degeneration,''
+arXiv:hep-ph/0606171. States the Casimir-operator construction whose
+positive eigenvalues give $s^2_{dV}=1-m^2_{1/2,+}/m^2_{1,+}=0.22310132$.
+
+\bibitem{koide1982} Y.~Koide,
+``Fermion-boson two-body model of quarks and leptons and Cabibbo mixing,''
+Lett.\ Nuovo Cim.\ {\bf 34} (1982) 201. See also
+``A fermion-boson composite model of quarks and leptons,''
+Phys.\ Lett.\ B {\bf 120} (1983) 161, which first states the $K=2/3$
+formula in its standard form.
+
+\bibitem{koide1983prd} Y.~Koide,
+``New view of quark and lepton mass hierarchy,''
+Phys.\ Rev.\ D {\bf 28} (1983) 252 [Erratum: Phys.\ Rev.\ D {\bf 29}
+(1984) 1544].
+
+\bibitem{koide1990} Y.~Koide,
+``Charged lepton mass sum rule from U(3)-family Higgs potential model,''
+Mod.\ Phys.\ Lett.\ A {\bf 5} (1990) 2319.
+
+\bibitem{koide2005} Y.~Koide,
+``Challenge to the mystery of the charged lepton mass formula,''
+arXiv:hep-ph/0506247.
+
+\bibitem{koide2018} Y.~Koide,
+``What physics does the charged lepton mass relation tell us?,''
+arXiv:1809.00425 [hep-ph].
+
+\bibitem{foot1994} R.~Foot,
+``A note on Koide's lepton mass relation,''
+arXiv:hep-ph/9402242.
+
+\bibitem{sumino2009} Y.~Sumino,
+``Family gauge symmetry and Koide's mass formula,''
+Phys.\ Lett.\ B {\bf 671} (2009) 477, arXiv:0812.2090 [hep-ph]. Companion
+full model: JHEP {\bf 0905} (2009) 075, arXiv:0812.2103.
+
+\bibitem{riverogsponer2005} A.~Rivero and A.~Gsponer,
+``The strange formula of Dr.\ Koide,''
+arXiv:hep-ph/0505220.
+
+\bibitem{feshbach1958} H.~Feshbach,
+``Unified theory of nuclear reactions,''
+Annals Phys.\ {\bf 5} (1958) 357.
+
+\bibitem{manton1979} N.~S.~Manton,
+``A new six-dimensional approach to the Weinberg-Salam model,''
+Nucl.\ Phys.\ B {\bf 158} (1979) 141.
+
+\bibitem{forgacsmanton1980} P.~Forgacs and N.~S.~Manton,
+``Space-time symmetries in gauge theories,''
+Commun.\ Math.\ Phys.\ {\bf 72} (1980) 15.
+
+\bibitem{witten1981} E.~Witten,
+``Search for a realistic Kaluza-Klein theory,''
+Nucl.\ Phys.\ B {\bf 186} (1981) 412.
+
+\bibitem{salamstrathdee1982} A.~Salam and J.~Strathdee,
+``On Kaluza-Klein theory,''
+Annals Phys.\ {\bf 141} (1982) 316.
+
+\bibitem{rdss1983} S.~Randjbar-Daemi, A.~Salam and J.~Strathdee,
+``Instability of higher dimensional Yang-Mills systems,''
+Phys.\ Lett.\ B {\bf 124} (1983) 345 [Erratum: Phys.\ Lett.\ B {\bf 144}
+(1984) 455].
+
+\bibitem{hosotani1983} Y.~Hosotani,
+``Dynamical mass generation by compact extra dimensions,''
+Phys.\ Lett.\ B {\bf 126} (1983) 309.
+
+\bibitem{duffnilssonpope1986} M.~J.~Duff, B.~E.~W.~Nilsson and C.~N.~Pope,
+``Kaluza-Klein supergravity,''
+Phys.\ Rept.\ {\bf 130} (1986) 1.
+
+\bibitem{pdg2024} S.~Navas {\it et al.} [Particle Data Group],
+``Review of particle physics,''
+Phys.\ Rev.\ D {\bf 110} (2024) 030001.
+
+\bibitem{cmsw2024} [CMS Collaboration],
+``Measurement of the W boson mass in proton-proton collisions at
+$\sqrt s=13$ TeV,'' arXiv:2412.13872 [hep-ex].
+
+\bibitem{cdf2022} T.~Aaltonen {\it et al.} [CDF Collaboration],
+``High-precision measurement of the W boson mass with the CDF II
+detector,'' Science {\bf 376} (2022) 170.
+
+\bibitem{cms95} [CMS Collaboration],
+``Search for a standard model-like Higgs boson in the mass range between
+70 and 110 GeV in the diphoton final state in proton-proton collisions at
+$\sqrt s=13$ TeV,'' Phys.\ Lett.\ B {\bf 860} (2024) 139067,
+arXiv:2405.18149 [hep-ex].
+
+\bibitem{atlas95} [ATLAS Collaboration],
+``Search for diphoton resonances in the 66 to 110 GeV mass range using
+$pp$ collisions at $\sqrt s=13$ TeV with the ATLAS detector,''
+JHEP {\bf 01} (2025) 053, arXiv:2407.07546 [hep-ex].
+
+\end{thebibliography}
+
+\end{document}
